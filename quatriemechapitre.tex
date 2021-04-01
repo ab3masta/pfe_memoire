@@ -1,0 +1,684 @@
+\chapter{Le Deep Learning et les Techniques de Détection d'intrusions}
+\minitoc
+\thispagestyle{empty}
+\newpage	
+	
+	\section{Introduction}
+Comme nous l'avons vu dans les chapitres précédents qu'une fois que les appareils connectés à l'Internet, ils deviennent vulnérables à d'éventuelles attaques informatiques et avec la croissance du nombre d'objets connectés ainsi que les menaces dont fait face l'IoT, il est fortement primordial d'assurer la sécurité des données et des objets connectés.\\  
+	La meilleure façon de protéger un réseau ou un système informatique est de détecter les attaques et de se défendre avant même qu’elles ne se produisent. Pour cela beaucoup font appel aux systèmes de détection d’intrusion(IDS) et des systèmes de prévention d'intrusions (IPS) afin de détecter les attaques que peut subir une machine ou le réseau.\\Ces systèmes de surveillance du réseau et des hôtes sont devenus pratiquement indispensables dû à l'incessant accroissement en nombre et en dangerosité des attaques ces dernières années.
+	
+Par exemple pour assurer l'intégrité des maisons et la sécurité de leurs propriétaires certaines personnes équipent leurs  maisons de systèmes d'alarme qui se déclenchent pour prévenir les propriétaires ou les autorités contre toute effraction ou intrusion dans la maison. \\
+De même que le système d'alarme signale l'intrusion dans une maison, le système de détection d'intrusion signale aussi l'intrusion dans une machine ou dans un réseau.\\    
+
+Les systèmes de détection d'intrusion tiennent leur origine de l'armée Américaine qui a initié pour la première fois les techniques de détection d’intrusions en 1980 \cite{refids}. Par la suite plusieurs projets de recherches sur le sujet ont vu le jour dont certains furent couronnés de succès. Avec l'apparition du machine learning et du deep learning de récents travaux utilisant ses techniques d'apprentissages intelligentes ont données des résultats promettants \cite{refidsann} \cite{6664371} \cite{articleids}.\\
+  
+  Dans ce chapitre, nous présentons premièrement les systèmes de détection d'intrusion, ses diverses caractéristiques, les différents types d'IDS. Ensuite nous exposons le Deep Learning, son origine et ses différents modèles. Enfin on présentera notre approche résiliente pour l'identification et la détection des attaques DDoS dans les réseaux IoT basée sur les modèles de Deep Learning.	
+	\section{systémes de détection d'intrusion}
+	\subsection{Définition }
+Un Système de détection d'intrusion(IDS) est un composant logiciel ou matériel spécialisé, dont le rôle est de surveiller l'activité d'un réseau ou d'un hôte en vue de détecter toute effraction dans l’utilisation des ressources.\\
+L’ef{\kern0pt}fraction ou l’intrusion est définie comme une pénétration illégale dans un système, une tentative d’un utilisateur du système d'obtenir des privilèges non autorisés, ou bien toute tentative de viol de la politique de sécurité \cite{zaidi}. Cela veut dire qu'elle peut être d'origine intérieure ou  d'origine extérieure.\\
+
+Vu l'évolution de la complexité des attaques et l'hétérogénéité du trafic des objets connectés ainsi que les dif{\kern0pt}férents paramètres entrant en jeu dans le processus de détection, la détection des intrusions devient une tâche très complexe. Néanmoins, il existe plusieurs travaux de recherches qui ont abouti à de multiples approches et de résultats promet{\kern0pt}tants.
+\subsection{Architecture de base d'un IDS}
+Plusieurs architectures ont été proposées pour décrire les dif{\kern0pt}férents éléments intervenants dans un système de détection d’intrusion. Il y a trois modules communs à la majorité des architectures IDS proposées\cite{zaidi} : la source de données, l’analyseur des données et le module des réponses.
+\begin{itemize}
+\item\textbf{la source de donnnées :} ou senseur joue le rôle de collecteur d'informations, telles que les données de trafic sur le réseau ou les données log et les transmet ensuite à l'analyseur. Un IDS peut contenir plusieurs senseurs qui doivent être placée à une position stratégique pour une meilleure qualité de détection du système.
+\item\textbf{L'analyseur :} son rôle est d'analyser les données reçues des senseurs et indiquer s'il y a eu anomalie ou pas.
+\item\textbf{Le module de réponse :} comme son nom l'indique, il s'occupe de la réponse de l'IDS face aux anomalies détectées. Ça peut être un simple message d’alerte, une sauvegarde dans un fichier log ou bien une interruption de la connexion.   
+\end{itemize}
+\subsubsection{Architecture CIDF}
+Le Common Intrusion Detection Framework (CIDF) est un effort visant à développer des protocoles et des interfaces de programmation d'application afin que les projets de recherches sur la détection d'intrusion puissent partager des informations et des ressources pour que les composants de détection d'intrusion puissent être réutilisés dans d'autres systèmes \cite{refcief}.
+L'architecture CIDF, utilise quatre modules : Générateur d'événements, Analyseur d'événements, Unité de réponse et une Base de données d'événements. Les trois premiers modules jouent les mêmes rôles que ceux cités dans la section précédente. Tandis que la Base de données des événements est utilisée pour le stockage des évènements et des données analysées \cite{zaidi}
+\cidf
+\subsubsection{L’architecture IDWG}
+Dans l'architecture proposée par le groupe Intrusion Detection exchange format Working Group (IDWG) de l'IETF, on trouve les trois modules cités précédemment couplés avec d’autres composants. Dans cette architecture, l’objectif était la définition d’un standard de communication entre les composants d'un IDS. Cette architecture définit un format d'échange de message pour les IDS. 
+\idwg
+Cette architecture est composée des modules suivants\cite{zaidi} :
+\begin{itemize}
+\item \textbf{source de données :} c’est l’interface entre le système surveillé et l’IDS, elle fait la collecte d’informations sur les activités du système.
+\item \textbf{Capteur :}chargé de filtrer et de formater les informations brutes envoyées par la source de données. Le résultat de ce traitement sera un message formaté, appelé aussi événement, il représente l'unité de base dans un scénario d'attaque.
+\item \textbf{Analyseur :} permet d’analyser les évènements générés par le capteur. S’il détecte une activité intrusive, il émet une alerte qui est un message sous un format standard. Dans cette architecture, le capteur et l’analyseur forment ensemble une sonde.
+\item \textbf{Manager :}en plus de la notification des alertes, il offre à l’administrateur la possibilité de configurer une sonde et de gérer les alertes envoyées par l’analyseur.
+\end{itemize} 
+\subsection{Classification des systèmes de détection d'intrusion}
+Les IDS peuvent être classés selon leur architecture, la provenance de leurs données ainsi que selon leur approche de détection et de réponse\cite{articletypeids}. La figure \ref{ids} résume ses dif{\kern0pt}férents types d'IDS\label{classification}
+\typeids
+\subsubsection{L’emplacement d’IDS }
+%généralement placée derrière le par-feu pour une meilleur
+Il existe trois types d'IDS selon l'emplacement de la source de l'information où ils opèrent. Ces sources d'information représentent les paquets capturés à partir des réseaux, des fichiers des systèmes d'exploitation, des logiciels ou encore à partir des fichiers log.
+\paragraph{Détection d'intrusion basée sur l'hôte (HIDS) : }
+Un système de détection d'intrusion basé sur l'hôte est un IDS spécifique à un hôte unique. il analyse exclusivement l'information concernant cet hôte et surveille son système contre les attaques internes et externes. 
+L'IDS est installé sur le système lui-même, une Position idéal pour filtrer avec précision l'ensemble du trafic venant d'extérieur vers cet hôte. 
+Les HIDS sont en général placés sur des machines sensibles, susceptibles de subir des attaques et possédantes des données sensibles pour l’entreprise.
+\hids
+\paragraph{ Détection d'Intrusion basée sur une application (AIDS):} 
+Les IDS basés sur les applications (AIDS) sont un sous-groupe des IDS
+hôtes. Ils contrôlent l'interaction entre un utilisateur et une application en ajoutant des fichiers log afin de fournir de plus amples informations sur les activités d'une application particulière. Un AIDS se situe
+au niveau de la communication entre un utilisateur et l’application surveillée.
+L’avantage de cet IDS est sa capacité de détecter et d’empêcher des
+commandes particulières dont l'utilisateur pourrait se servir avec le programme et
+de surveiller chaque transaction entre l’utilisateur et l’application. De plus, les données sont décodées dans un contexte connu, leur analyse est donc plus fine et précise. Par contre, du fait que cet IDS n’agit pas au niveau du noyau, la sécurité assurée est plus faible, notamment l'attaques de type "Cheval de Troie". Ce type d’IDS est utile pour surveiller l’activité d’une application sensible, mais son utilisation s'effectue en général en association avec un HIDS. Il faudra dans ce cas contrôler le taux d’utilisation CPU des IDS afin de ne pas compromettre les performances de la machine.\cite{reftypeids}
+\paragraph{ La Détection d'Intrusion Réseau (NIDS) :}
+Un IDS basé sur le réseau est un IDS qui examine le trafic réseau en analysant les paquets par rapport à une base de données contenant des signatures d'attaques connues afin de détecter les anomalies. Il est défini juste à l'entrée du réseau ou entre le réseau et le serveur. L'avantage de cela est que ça permet d'analyser efficacement et rigoureusement le trafic venant de l'extérieur vers le réseau.\\ 
+L'implantation d’un NIDS sur un réseau se fait de la façon suivante : des
+capteurs sont placés aux endroits stratégiques du réseau et génèrent des alertes s’ils détectent une attaque. Ces alertes sont envoyées à une console sécurisée, qui les analyse et les traites éventuellement. Cette console est généralement située sur un réseau isolé, qui relie uniquement les capteurs et la console. Dans le cadre de réseaux IoT, l'IDS peut être placé au niveau de l'IoT gateway.
+\nids
+\subsubsection{Mode de détection }
+Les systèmes de détection d'intrusion ont été conçu de telle sorte qu'ils puissent détecter et identifier efficacement les menaces.
+Deux modes de détection ont été proposées : l'approche comportementale et la
+reconnaissance de signatures.
+\paragraph{L'Approche comportementale :}\label{comportement}
+ La détection d'intrusion par l'approche comportementale consiste à détecter le comportement d'un trafic d'intrus(attaque) par rapport à un profil de trafic habituel(normal) en ce qui concerne la bande passante et le protocole. 
+ \begin{comment}
+ Sa mise en œuvre comprend : 
+\begin{itemize}
+\item envoie le jeu de donnée normale(le trafic normal)
+\item  phase d'apprentissage au cours de laquelle les IDS apprennent le fonctionnement "normal" des entités surveillés.
+\item phase de comparaison de tout le trafic réseau à ce comportement normal appris.
+\item déclencher une alerte en cas d'une incohérence avec le comportement normal connu
+À titre d’exemple, un projet très ambitieux a été sponsorisé par la DARPA (en 98 et 99), en collaboration avec le laboratoire Lincoln du MIT \cite{refdarpa}. L'objectif était de fournir un jeu de données d'apprentissage comprenant trafic de fond et activités intrusives (c’est-à-dire du trafic intrusif ou des événements systèmes causés par des attaques). Le trafic de fond était déduit des données statistiques collectées sur le réseau des bases de l’Air Force alors que les attaques étaient générées par des scripts créés spécialement, mais aussi par des scripts collectés à travers des sites spécialisés et des listes de diffusion. Les données collectées concernaient à la fois des HIDS et des NIDS.\\ 
+\end{itemize}
+\end{comment} 
+Dans le cas du HIDS, ce type de détection peut être basé sur des informations telles que le taux d’utilisation CPU, l’activité sur le disque, les horaires de connexion ou d’utilisation de certains fichiers (horaires de bureau…).\\
+\textbf{Avantages : } les IDS basés sur l'approche comportementale ont des capacités de détecter tous les types d'attaques y compris les Zéro day attaques.
+Cette approche permet de produire l'information utile pour la définition des
+signatures des IDS à base de signatures\cite{reftypeids}.\\
+\textbf{Inconvénients :} Le grand défaut de cette approche est le grand nombre de fausses alertes dues aux comportements imprévisibles des utilisateurs du réseau. Elle exige souvent l’historique à long terme des évènements enregistrés afin de caractériser les modèles normaux de comportement \cite{reftypeids}.
+\paragraph{La reconnaissance de signature :}
+La détection d'intrusion basée sur la reconnaissance de signatures consiste à la détection d'attaques en recherchant des signatures spécifiques, tels que des séquences d'octets dans le trafic réseau ou des séquences d'instructions malveillantes connues utilisées par des logiciels malveillants. Une signature permet de définir les caractéristiques d’une attaque, au niveau des differentes couches protocolaires du modèle (TCP/IP). Ces signatures proviennent en général des antivirus qui donnent une signature spécifique à chaque types d'attaques. \\
+C'est une approche qui utilise les connaissances accumulées sur les attaques spécifiques et les vulnérabilités du système
+\begin{comment}
+ Sa mise en œuvre comprend : 
+\begin{itemize}
+\item un jeu de donnée contenant les signatures des attaques connues
+\item  phase d'apprentissage au cours de laquelle les IDS apprennent les signatures des attaques.
+\item phase de comparaison des données des entités surveillés par rapport aux signatures des attaques connues.
+\item déclencher une alerte en cas de similarité entre des données et la base de signature.
+\end{itemize}
+\end{comment}
+\textbf{Avantages : } le plus grand avantage des systèmes de détection d'intrusion basés sur la reconnaissance de signature est qu'il détectent de façon très efficace les attaques dont ils disposent de leur signature sans produire un grand nombre de fausses alertes. \\ 
+\textbf{Les inconvénients :}
+Les IDS basés sur la reconnaissance de signature ne peuvent pas détecter les attaques dont ils ne possèdent pas les signatures. De ce fait, il nécessite des mises à jour fréquentes de sa base de signature.
+Les pirates contournent facilement ces types d'IDS en utilisant les techniques dites "d'évasion" qui consistent à faire varier les signatures des attaques de tels sorte que les IDS ne les reconnaissent plus.
+\subsubsection{Types de réponse}
+les IDS étant des systèmes très réactifs donc chaque fois qu'une intrusion est détectée, le système déclenche une alerte. cette section décrit comment le système réagira à l'alerte déclenchée. Il existe deux types de réponses : réponse passive et réponse active.
+La majorité des IDS existants fournissent une réponse passive. Par contre la réponse active est plus ou moins implémentée\cite{articlepa}.
+\paragraph{ La réponse passive :}
+La réponse passive d’un IDS consiste à enregistrer les intrusions détectées dans un fichier log qui sera analysé par l'administrateur du système. Cette réaction peut être aussi par l'envoie d'un email ou l'ouverture d'une fenêtre console contenant les détails de l'intrusion. Il est à noter que ce type d'IDS n’empêche pas directement une attaque de se produire, c'est à la charge de l'administrateur système de prendre la décision d'appliquer la politique de sécurité nécessaire pour empêcher l'intrusion de se produire. 
+\paragraph{ La réponse active :} 
+En plus d'être un IDS passif, Un IDS actif peut stopper une attaque au moment de sa détection. Pour cela, à la détection d'une attaque l'IDS prend des décisions pour modifier l'environnement du système attaqué sans l'intervention requise d'une personne. Cette altération peut consister à la déconnexion de l'attaquant ou la ré-configuration des mécanismes réseaux pour bloquer toutes les connections provenant de la même adresse source.
+\subsubsection{La fréquence d'utilisation }
+Le mode d'utilisation d'un IDS peut être choisi selon les besoins en fonction du mode d'utilisation : continue (online) ou périodique (offline). 
+\paragraph{Utilisation continue :}
+L'utilisation continue est une analyse en temps réel(online) c'est-à-dire la détection d'attaques se fait au moment où elle se produit. Le principal avantage est que les alertes sont lancées dès que les attaques sont détectées. Cet état de veille coute cher en termes de ressources et nécessite des algorithmes plus complexes que ceux d'une analyse différé.\cite{reftmqb} 
+\paragraph{ Utilisation périodique :}
+L'utilisation périodique est une analyse différé(offline) cela veut dire que L'analyse s'effectue sur des données stockées (non fraîches) dans des fichiers logs. Elle est préférable pour avoir une défense plus fiable du point de vue du temps de calcul. En effet pour un IDS online le temps de calcul de l'IDS doit être supérieur au temps du trafic réseau, ce qui est difficilement atteignable et peut affecter considérablement le trafic réseau.
+\subsection{Exemples d'IDS existants }
+Le marché des IDS est très vaste. Certains produits sont gratuits et d'autres
+payants. Voici quelques exemples d'IDS :\\
+\textbf{Snort:}
+Snort a été créé par Cisco et est considéré comme le leader de l'industrie du NIDS. Il est gratuit et disponible sur Windows et Linux \cite{snort}.  \\
+\textbf{Ossec :}
+OSSEC est un HIDS gratuit. Il effectue l'analyse des journaux, la vérification de l'intégrité, la surveillance du registre Windows, la détection des rootkits, les alertes en temps réel et la réponse active. Il fonctionne sur la plupart des systèmes d'exploitation notamment Linux, OpenBSD, FreeBSD, MacOS, Solaris et Windows. \cite{ossec}\\
+\textbf{Zeek :} Zeek est le nouveau nom de l'ancien IDS "Bro", c'est un analyseur de trafic réseau passif et open source. Il analyse le trafic réseau à la recherche de signes d'activités suspectes. Il est disponible sur Linux, FreeBSD, macOS \cite{zeek}\\
+\textbf{Prelude :} Prelude est un IDS hybride (HIDS et NIDS), appelé aussi un système de gestion des informations de sécurité et des événements. Prelude collecte, normalise, trie et détecte les anomalies liés à la sécurité  des entités surveillées. \cite{prelude} 
+\begin{comment}
+\subsection{Evaluation des IDS}
+
+\end{comment}
+\subsection{Critère de choix d'un IDS}
+Comme nous l'avons vu dans la section \ref{classification} qu'il existe plusieurs types d'IDS. Chacun de ces IDS présentent des avantages et des faiblesses, c'est pourquoi, il est indispensable de choisir son IDS selon certains critères bien spécifiques. Les critères de sélection sont détaillés ci-dessous \cite{refsecuriteinfo}
+\begin{itemize}
+\item\textbf{Réactivité :} Un IDS doit être en mesure de détecter les zero day attaques ou nouveaux types d'attaques. Par exemple, l'IDS par l'approche comportementale \ref{comportement}. 
+\item \textbf{Facilité d'utilisation et d'adaptabilité :} Un IDS doit être facile à utiliser et surtout s'adapter au contexte dans lequel il doit opérer. Il est inutile d'avoir un IDS émettant des alertes en moins de 10 secondes si les ressources nécessaires à une réaction ne sont pas disponibles pour agir dans les mêmes contraintes de temps \cite{refsecuriteinfo}.
+\item\textbf{Performance :} l'installation d'un IDS ne doit en aucun cas affecter les performance des systèmes surveillés. ni affecter la vitesse du trafic réseau. De plus, il faut toujours avoir la certitude que l'IDS a la capacité de traiter toute l'information à sa disposition. Par exemple un IDS réseau doit être capable de traiter l'ensemble du flux pouvant se présenter à un instant donné sans jamais supprimer de paquets car dans le cas contraire il devient trivial de masquer les attaques en augmentant la quantité d'information.\cite{refsecuriteinfo}
+\item\textbf{Fiabilité :} Un IDS est fiable s'il détecte quasiment tous les vraie positifs (alerte que lorsqu'il y a attaque) et moins de faux de positifs.
+\end{itemize}
+\section{Le Deep Learning}
+\begin{comment}Dans cette section on donnera un aperçu sur le deep learning, son origine, ses avancées récentes dans les systèmes de détections d'intrusions.\end{comment}
+\subsection{Définition et Historique}
+Le Deep Learning(DL) ou apprentissage profond est un sous-domaine particulièrement puissant du Machine Learning(ML)ou apprentissage automatique. Ce dernier étant aussi un sous-domaine de l'intelligence artificielle(IA) qui consiste à doter les systèmes informatiques de capacité d'apprendre sans être explicitement programm.\cite{refclassroom}.
+\dl
+ Le Deep Learning tient ses origines de l'avancement des algorithmes des réseaux de neurones artificiels \ref{RNA}.
+Contrairement aux réseaux de neurones artificiels, les méthodes d'apprentissage profond utilisent plusieurs couches cachés(réseau profond) d'où son nom Deep learning en référence aux nombres de couches cachées leurs permettant de résoudre des problèmes complexes\cite{refbookdl}.\\
+Les algorithmes à base de DL sont devenus très populaires ces dernières années notamment avec leur succès dans la résolution de problèmes complexes pourtant 
+les fondements de ces méthodes ne sont pas si récents. En effet leurs origines remontent en 1943 lorsque McCulloch et Pitts \cite{refhistoiredl} ont publié une étude présentant le modèle mathématique basé sur le neurone biologique. Cela a été mis en œuvre par la suite dans les années 50 par l'invention du Perceptron par le chercheur Frank Rosenblatt\cite{Rosenblatt58theperceptron} ainsi que les travaux de Yan LeCun en 1989\cite{yanlecun1} sur les réseaux de neurones convolutifs.
+Longtemps délaissé entre 1989 et 2000 par la communauté scientifique, c'est grâce à l'avènement des données massives(Big Data) et des puissances de calcul phénoménales des processeurs graphiques(GPU) que les chercheurs Yann Le Cun, Yoshua Bengio et Geoffrey Hinton décident en 2003 \cite{yannlecun} de démarrer un programme de recherche dénommé \textit{conspiration de l'apprentissage profond} pour remettre au goût du jour les réseaux neuronaux. 
+Suivront de nombreux développements des réseaux de neurones convolutifs et les réseaux de neurones profonds(deep learning) qui en découlent en 2012 et ouvrent la voie à de nombreux champs d'application comme la vision, le traitement du langage, la reconnaissance de la parole ou à la cybersécurité.
+\subsection{Les réseaux de neurones artificiels}\label{RNA}
+Les réseaux de neurones artificiels (RNA) sont des algorithmes d'apprentissage automatique inspirés du système nerveux humain. Ils sont constitués d'une interconnexion de neurones artificiels ou formels \ref{atn}. Les réseaux de neurones se distinguent par leur architecture, leur niveau de complexité (le nombre de neurones, présence ou non de boucles), par le type de fonctions d'activation utilisé ainsi que par l'objectif visé : apprentissage supervisé ou non \cite{Kim2018}
+\subsubsection{Neurone artificiel :}\label{atn} Un neurone artificiel est une abstraction mathématique très simplifiée d’un neurone du cerveau humain. Un neurone biologique reçoit des signaux électriques par ses dendrites, les transforme dans ses synapses et s’active ou non en fonction des signaux reçus. Si un neurone biologique s’active, cela signifie qu’il transmet le signal électrique reçu à d’autres neurones\cite{bioneurone}.\\
+	 Comme pour le neurone biologique le neurone formel reçoit des valeurs en entrée, pondère ces valeurs avec des poids (ou coefficients) et retourne une valeur en sortie en fonction de la somme des valeurs pondérées. L'action d'envoyer une valeur par le neurone s'appelle alors une activation. La figure \ref{atnn} illustre un neurone artificiel.
+\neurone
+	\begin{equation}\label{eqpondere}
+	\text{Somme pondérée }    z = \sum_{i=1}^n (X_i \times W_i) + bias
+	\end{equation}
+	\begin{equation}
+		\textbf{Fonction d'activation }  y = \varphi (z)
+	\end{equation}
+\subsubsection{Reseaux de neurones Profonds(DNN)}\label{dnn}
+Comme son nom l'indique, un réseau de neurones profond(DNN) est un réseau composé de multiples couches successives. Une couche est un ensemble de neurones n’ayant pas de connexion entre eux. un modèle de deep learning est dit profond s'il comporte au moins 2 couches cachées, et plus un modèle est profond, plus il apprend et réalise des taches comme les humains. 
+\begin{comment}
+La figure \ref{perceptro} presente un DNN composé d'une couche d’entrée(3 neurones)qui lit les entrées, deux couches cachés et une couche de sortie qui fournit la réponse du système. L’algorithme que les perceptrons utilisent la rétropropagation du gradient pour mettre à jour leurs poids ce qui les permet d'avoir moins d’erreur dans leur prédiction\cite{RNNCNN}. Nous avons utilisé dans ce mémoire cette représentation dans la définition de notre modèle de deep learning.
+\perceptron 
+\end{comment} 
+Les éléments essentiels qui constituent un DNN sont :\\
+\textbf{- La Couche d'entrée} : représente les données d'entrées du réseaux. Par exemple, pour les données textuelles, il peut s'agir de mots ou des personnes, pour une image, il peut s'agir de valeurs pixels brutes provenant de différents canaux de couleur.\\
+\textbf{- Les couches cachées :}
+Les couches cachées sont des couches situées entre les couches d'entrée et de sortie. Le nombre de couches cachées rend le réseau profond, c'est pourquoi ils sont appelés réseaux de neurones profonds (DNN) et le processus d'apprentissage dans le DNN est le DL\cite{yakuz}.\\
+\textbf{- La couche de sortie :}
+La couche de sortie représente les valeurs de sortie du réseau. En général, le nombre de neurones dans la couche de sortie est égale au nombre de classe de sortie.\\
+\textbf{Les fonctions d'activations : }
+La fonction d'activation définit la manière dont chaque neurone artificiel réagit face aux signaux entrants et sortants d'un neurone. Elle permet le passage ou non d’information si un certain seuil est atteint et s'applique sur la fonction suivante : $x = \sum( entrée * poids ) + biais$
+\begin{comment}
+\paragraph*{-La fonction Step :}Elle renvoi tout le temps 1 pour un signal positif, et 0 pour un signal négatif.\\
+\begin{minipage}{.4\textwidth}
+\[
+ f(x) = 
+  \begin{cases} 
+   0 & \text{si } x < 0 \\
+   1       & \text{si } x \geq 0
+  \end{cases}
+\] 
+\end{minipage}
+\begin{minipage}{.3\textwidth}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines=middle,
+    xmax=6,
+    xmin=-6,
+    ymin=-0.05,
+    ymax=2.05,
+    xlabel={$x$},
+    ylabel={$y$}]
+\addplot [domain=-5.5:0, samples=100, thick, blue] {min(0,1)};
+\addplot [domain=-0:5.5, samples=100, thick, blue] {max(0,1)};
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+\end{comment}
+\paragraph*{- La fonction Sigmoïde :} est utilisé en couche de sortie pour la classification binaire. Ses valeurs sont comprises entre 0 et 1. Son souci est sa perte d'information dans la phase de feed forward et de backpropagation\cite{sigm}.\\
+\begin{minipage}{.4\textwidth}
+\begin{equation}
+	\text{sigmoïde}(x)=\frac{1}{1+e^{-x}}
+\end{equation} 
+\end{minipage}
+\begin{minipage}{.3\textwidth}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines=middle,
+    xmax=10,
+    xmin=-10,
+    ymin=-0.05,
+    ymax=1.05,
+    xlabel={$x$},
+    ylabel={$y$}
+]
+\addplot [domain=-8.5:8.5, samples=100, thick, blue] {1/(1+exp(-x))};
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+\paragraph*{- Fonction tangente hyperbolique (tanh) : } 
+La différence fondamentale entre les fonctions tanh et sigmoïde est que tanh est centré sur 0. Sa plage de sortie est comprise entre [-1, 1] et est plus efficace que sigmoïde \cite{livredlE}. Cependant elle souffre encore du problème de disparition du gradient \\
+\begin{minipage}{.4\textwidth}
+\begin{equation}
+	\text{tanh}(x)= \frac{e^{x}-e^{-x}}{e^{x}+e^{-x}}
+	\label{eqtanh}
+\end{equation} 
+\end{minipage}
+\begin{minipage}{.3\textwidth}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines=middle,
+    xmax=10,
+    xmin=-10,
+    ymin=-1.05,
+    ymax=1.05,
+    xlabel={$x$},
+    ylabel={$y$}]
+\addplot [domain=-9.5:9.5, samples=100,
+     thick, blue] {(exp(x) - exp(-x))/(exp(x) + exp(-x))};
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+\paragraph*{- Fonction ReLU : }
+Une Unité Linéaire Rectifiée(ReLU) est l'une des fonctions d'activations la plus courante et la plus populaire actuellement à cause de sa rapidité dans l'entrainement des Réseaux de neurones profonds. En effet La fonction ReLU traite le problème du gradient de disparition des précédentes fonctions d'activation (sigmoïde et tanh) ainsi qu'une propagation efficace du gradient dans les réseaux profonds \cite{livredlE}. Elle est très utilisée dans les CNN, RBM, et a un intervalle de sortie $[0, +\infty[$. ReLU souffre du phénomène de ‘Dying ReLU’, auquel on préférera les variantes de ReLU notamment : Leaky ReLU, Parametric ReLU(PReLU), Randomized Leaky (ReLU)etc.\\
+\begin{minipage}{.4\textwidth}
+\[
+ \text{ReLU}(x) = 
+  \begin{cases} 
+   max(0,x) & \text{si } x \geq 0 \\
+   0      & \text{si }  x < 0
+  \end{cases}
+\] 
+\end{minipage}
+\begin{minipage}{.3\textwidth}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines=middle,
+    xmax=6,
+    xmin=-6,
+    ymin=-0.05,
+    ymax=5.05,
+    xlabel={$x$},
+    ylabel={$y$}]
+\addplot [domain=-5.5:5.5, samples=100, thick, blue] {max(0, x)};
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+\paragraph*{- La Fonction Softmax :} est utilisée sur la dernière couche pour générer des probabilités décimales à chaque classe(sortie) d'un problème de multi-classification à plusieurs sorties \cite{livredlE} tel que la somme de ces probabilités décimales soit égale à 1. Son intervalle de sortie est $[0, 1]$ : 
+\begin{minipage}{.4\textwidth}
+\begin{equation}
+ \text{Softmax}(x_i) = \frac{e^{x_i}}{\sum_{j=1}^k e^{x_j}}
+ \label{eqsoft}
+\end{equation} 
+\end{minipage}
+\begin{comment}
+\begin{minipage}{.3\textwidth}
+\pgfmathdeclarefunction{sumexp}{3}{%
+\begingroup%
+\pgfkeys{/pgf/fpu,/pgf/fpu/output format=fixed}%
+\pgfmathsetmacro{\myx}{#1}%
+\pgfmathtruncatemacro{\myxmin}{#2}%
+\pgfmathtruncatemacro{\myxmax}{#3}%
+\pgfmathsetmacro{\mysum}{0}%
+\pgfplotsforeachungrouped\XX in {\myxmin,...,\myxmax}%
+{\pgfmathsetmacro{\mysum}{\mysum+exp(\XX)}}%
+\pgfmathparse{\mysum+exp(#1)}%
+\pgfmathsmuggle\pgfmathresult\endgroup%
+}%
+\begin{tikzpicture}
+            \begin{axis}[
+            axis lines=middle,,
+            ylabel=$y$,
+            xlabel=$x$,
+            xmin=-10,
+            xmax=10,
+            ymin=-5.05,
+    		ymax=5.05]
+               \addplot[blue,domain=-5:5,samples=100] 
+               {exp(x)/ (\sum_1^5 exp(x))};
+            \end{axis}
+        \end{tikzpicture}
+\end{minipage}
+\end{comment}
+\subsection{Classification des modèles de Deep Learning}\label{model}
+Selon l'architecture et les techniques utilisées par le modèle, Aminanto et  Muhamad Erza \cite{Kim2018} classent les modèles de deep learning en trois catégories : Apprentissage supervisé(génératif), apprentissage non supervisé(discriminatif) et architecture hybride. La figure \ref{typedl} présente une illustration simplifiée de ces différents modèles.
+\typedl
+\subsubsection{Apprentissage supervisé}
+L'apprentissage supervisé est le type d'apprentissage où les modèles apprennent et classent des éléments selon une classe donnée. Une classe représente un groupe d'éléments ayant les mêmes similarités. Les données de la classe cible sont nécessaires pendant la phase d'apprentissage. Le modèle créerait une base de connaissance à partir des informations apprises qu'il utilisera par la suite  pour déterminer la correspondance d'une donnée avec une classe cible. \\
+Avec l’apprentissage supervisé, la machine peut apprendre à faire une certaine tâche en étudiant des exemples de cette tâche. Par exemple, elle peut apprendre à reconnaître une photo de chien après qu’on lui ait montré des millions de photos de chiens. Ou bien, elle peut apprendre à traduire le français en chinois après avoir vu des millions d’exemples de traduction français-chinois\cite{refgm}.
+\paragraph{Les réseaux de neurones convolutifs : }
+inventé par Yann Lecun \cite{yannlecun}, les réseaux convolutifs sont une forme particulière de réseau neuronal multicouches dont l’architecture des connexions est inspirée de celle du cortex visuel des mammifères.
+Ils contiennent en général trois types de couches : des couches de convolution, des couches de regroupement(pooling) et des couches entièrement connectées(full connected). Une couche convolutive, est basée comme son nom l’indique sur le principe mathématique de convolution, et cherche à repérer la présence d’un motif (dans un signal ou dans une image par exemple)\cite{convolution}.\\
+  La couche convolutive détecte les connexions des entités locales de la couche précédente et la couche de regroupement s'occupe de la tâche de fusionner les entités sémantiquement similaires en une seule entité, enfin la couche entièrement connectée rassemble ces informations pour fournir la sortie(Output). 
+ La Figure \ref{cnn} présente une architecture classique d’un réseau de neurones convolutif. Une image est fournie en entrée (input) et est convoluée avec des filtres (première couche de convolution) dont les cartes d’activation sont regroupées et concaténées en sortie. 
+ Cette technique est généralement employée pour les techniques de traitement d'image.
+%\cnn
+ \subsubsection{Apprentissage non supervisé}
+Contrairement à  l'apprentissage supervisé, l'apprentissage non supervisé se fait de façon totalement autonome, c'est-à-dire que les données sont envoyées au modèle sans lui fournir des étiquètes attendus comme sortie. Cette technique est utilisée dans la détection d'anomalies, la cybsersécurité, mais aussi dans le dépistage précoce de maladies.\paragraph{ Auto encodeurs : }
+L’idée de base derrière les auto-encodeurs est d’encodé des informations et d’apprendre une représentation (encodage) d’un ensemble de données. L’ensemble du réseau ressemble à un sablier, avec des couches cachées plus petites que les couches d’entrées et de sorties. La plus petite couche est toujours au milieu et représente l’endroit où l’information est la plus compressée (le bottleneck). La première moitié est dénommée l'encodage, la seconde moitié le décodage.
+%\autoencodeur
+\paragraph{Réseaux de neurones récurrents (RNN) :}
+Dans un réseau neuronal traditionnel, nous supposons que toutes les entrées (et les sorties) sont indépendantes les unes des autres. Mais pour de nombreuses tâches, cela est une mauvaise conception. Par exemple, si on veut prédire le prochain mot dans une phrase, il faut connaître les mots qui sont venus avant. Les RNN répondent à ce genre de conception en conservant des informations dans leurs unités cachées un «vecteur d'état» qui contiennent implicitement des informations sur l'historique de tous les éléments passés dans la séquence \cite{RNNCNN}. Ils sont appelés récurrents car ils possèdent des connexions récurrentes, c'est-à-dire qu'ils exécutent la même tâche pour chaque élément d’une séquence dont la  sortie est dépendante des calculs précédents. Ils sont beaucoup utilisés dans la prédiction des textes.
+Néanmoins, ce transfert d’information à double sens rend leurs entrainements beaucoup plus compliqués, et ce n’est que récemment que des méthodes efficaces ont été mises au point comme les réseaux à large mémoire court-terme(LSTM)\cite{LSTM}. L'utilisation des réseaux LSTM ont révolutionné la reconnaissance de la voix par les machines (Speech Recognition) et la génération automatique de texte
+\paragraph{Machines de Boltzmann :}
+Les machines de Boltzmann(BM) sont des modèles de Deep Learning génératifs non déterministes capables de prendre des décisions stochastiques\cite{bt}. Un BM est non déterministe du fait qu'il n'a pas de sortie typique comme les autres modèles classiques de deep learning. Elles ont été inventées par Geoffrey Hinton et Terry Sejnowski\cite{histoirebm}. Les BMs sont composées de deux catégories de neurones : les neurones visibles et les neurones  cachés. Dans un réseau BM, tous les neurones sont connectés entre eux qu'ils soient dans la catégorie visible ou dans la catégorie cachée. La Machine Boltzmann restreinte(RBM)\cite{RBM} est un BM personnalisé sans connexions entre les neurones cachés ni entre les neurones visibles(entrées).
+\subsubsection{Hybride }
+L'architecture profonde hybride combine à la fois des architectures génératives(supervisé) et discriminatives(non supervisé). Un exemple d'architecture hybride est le Réseau Génerateur Adversatif(GAN).
+\paragraph{ Génerateurs Adversatifs :} sont constitués de                                                                                                              deux réseaux travaillant en parallèle, l’un ayant pour tâche de générer du contenu (le générateur) et l’autre d’en juger la qualité (le discriminateur). L’objectif des réseaux génératif est d'augmenter le taux d’erreur du réseau discriminant(c’est-à-dire de "tromper" le discriminateur en produisant de nouveaux cas qui semblent provenir de la vraie distribution de la population d’entraînement) \cite{cnn}.
+\section{\'Etudes expérimentales}
+Cette section présente les différents outils matériels et logiciels utilisés pour la réalisation de notre approche basée sur le deep learning. Premièrement, nous présentons les outils utilisés ensuite l'architecture de notre modèle, une étude du Dataset utilisé ainsi que quelques interfaces graphiques de l'application réalisée. Enfin, on présente nos résultats obtenus ainsi qu'une comparaison avec les autres travaux dans la littérature.   
+\subsection{Outils de développement}
+les outils matériels et logiciels utilisés pour le développement sont : 
+\subsubsection{Materiels}
+Notre IDS a été réalisé et testé sur 2 PCs (Personnal Computer)dont les caractéristiques sont les suivants :
+\begin{table}[H]
+\centering
+\begin{tabular}{cccc}
+  \toprule
+   \textbf{Marque} & \textbf{CPU} & \textbf{RAM} & \textbf{OS} \\
+   \midrule
+     \textbf{HP Notebook} & AMD Radeon R4 2GHz & 8Go & Windows10 64bits \\
+     \textbf{THOSIBA TECRA} & Intel Core i3 2GHz & 8GO & Windows10 64bits \\
+  \bottomrule
+\end{tabular}
+\caption{Caractéristiques du matériels utilisés}
+\label{tabmat}
+\end{table}
+\subsubsection{JAVA} 
+Java est un langage de programmation orienté objet crée par Sun Microsystems (aujourd'hui racheté par Oracle) \cite{java}. Plus de 10 millions de développeurs et plus de 15 milliards de périphériques tournent sur java. Connu pour sa portabilité, c’est un langage très populaire car il met à la disposition des développeurs les API, les Framework ainsi que les bibliothèques(library) nécessaires pour la création de programmes riche et robuste. 
+Pour la réalisation de notre projet nous avons opté pour la version 1.8 du JDK et le framework JavaFX(pour GUI) qui est devenu depuis la version 8, une référence pour la création des interfaces graphiques.
+\subsubsection{DeepLearning4j}
+Comme son nom l'indique Deeplearning4J (DL4J) est un framework Java pour le deep learning pour tirer profit de sa portabilité. Il est distribué sous la licence Apache 2.0, open source et écrit en Java et Scala \cite{dl4j}. DL4J a été initié fin 2013 en tant que projet chez Skymind qui rejoint en 2017 la Fondation Eclipse pour sa mise en œuvre. DL4J est actuellement le seul Framework de deep learning qui intègre Hadoop et Spark pour l'entrainement des réseaux de neurones. En effet DL4J utilise Map-Reduce et Spark pour entraîner le réseau tout en s'appuyant sur d'autres bibliothèques notamment les librairies ND4J, DataVec etc. DL4J traite la phase de chargement des données et des algorithmes d'entraînement comme des processus séparés c'est-à-dire distribués le traitement en s'appuyant sur Map-Reduce et spark. Cette séparation du traitement lui offre une grande flexibilité.
+DL4J fonctionne sur des CPU et des GPU distribués et possède à la fois une version communautaire et une version entreprise.
+\subsubsection{IDE IntelliJ}
+IntelliJ est un environnement de développement intégré (IDE) pour le développement de logiciels. Il propose de nombreux outils pour faciliter le développement dont l’auto-complétion syntaxique, une vérification d’erreur en live, différents outils de compilation, des outils de debugging avancés, etc.
+\subsection{Mise en œuvre}
+Nous avons développé notre approche résiliente avec le langage de programmation JAVA et le framework DL4J. Pour l'entrainement et nos differents tests nous avons utilisé les datasets IoT Botnet et NSL-KDD.
+nous présenterons seulement la mise en œuvre en utilisant le dataset IoT Botnet vu que les procédures pré-traitement, entrainement et test sont similaires pour les deux datasets. 
+%\newpage
+Le développement de notre approche suit l'architecture  suivant :
+\architecture
+ \subsubsection{Choix du Dataset : }
+ \begin{comment}
+Pour le choix du jeu de données, nous avons opté pour deux types de jeux de données notamment NSL-KDD et Bot IoT 2020. 
+\textbf{NSL-KDD :}\\
+Le Dataset NSL-KDD \cite{nslkdd} est une version amélioré du dataset KDD99 \cite{kdd}, proposé en 2010 par les chercheurs dans le domaine de détection d'intrusions dans les réseaux afin de résoudre certains problèmes de redondance apparu dans la base KDD 99. NSL-KDD est considéré comme une référence dans l'évaluation des systèmes détection  d'intrusions. Il présente les améliorations apportés à KDD99 en éliminant les enregistrements redondants dans les données d'apprentissage(Training set) et en supprimant aussi les enregistrements double dans les données de test (Testing set) de KDD99. Il est composé de 41 caractéristiques résumé dans le tableaux ci-dessous : 
+\nslkdd
+\end{comment}
+\textbf{IoT Botnet:}\\
+Le dataset Bot-IoT a été développé à l'Université de New South Wales Canberra en Australie \cite{botiot1}. Ce dernier contenait 46 caractéristiques et deux types de trafics réseaux (normal et anormal). Ce dataset reflète des trafics générées depuis un environnement de réseaux IoT.
+ En Mars 2020 les chercheurs Imtiaz Ullah et Qusay Mahmoud de l'université Ontario Oshawa au Canada ont mis au point IoT Botnet \cite{botiot2020} une version améliorée du dataset Bot-IoT précédent. Le fichier CSV résultant est l'IoT Botnet composé de 83 caractéristiques et 5 catégories de trafic réseaux : normal, DDoS, DoS, Reconnaissance ou Theft. La figure ci-dessous  montre un résumé des attaques.
+\iot 
+Les étapes d'entrainement et d'évaluation de notre modèle ont été réaliser en utilisant 10\% des données du dataset IoT Botnet. Ces 10\% aussi ont été diviser en deux datasets : un dataset pour l'entrainement(training data) et un dataset pour le test(testing data) comme montre ci-dessous \ref{architecture}. 
+\graphe
+\subsubsection{Préparation des données(pre-processing):} 
+Le pré-traitement des données est la phase au cours de laquelle les données sont transformées, pour les amener à un état tel que la machine puisse facilement les comprendre et les analyser. Il consiste à une élimination des données bruités, une normalisation et une transformations des données. Cette phase de pré-traitement est appliquée à la fois aux données d'entrainements et aux données de tests. Une portion de code sous DL4J de cette phase est présentée ci dessous.
+\lstset{
+		frame=tb,
+		tabsize=2,
+		numbers=left,
+		commentstyle=\color{green},
+		keywordstyle=\color{blue},
+		stringstyle=\color{red}	
+	}
+\begin{lstlisting}[language=Java, caption={Préparation des données(instances normales) pour l'AE}]
+	// Schema transformations
+		// Features selection and transformation
+		transformProcess = new TransformProcess.Builder(schema)
+				.removeAllColumnsExceptFor(
+					"Src_IP", "Dst_Port",                                                                                                                                                             				"Protocol","Flow_Duration",
+                    "Flow_Byts_s", "Flow_Pkts_s", "Flow_IAT_Mean",
+                    "Flow_IAT_Std", "Flow_IAT_Max",
+                    "Flow_IAT_Min", "Fwd_IAT_Tot", "Fwd_IAT_Mean",
+                    "Subflow_Fwd_Pkts", "Subflow_Fwd_Byts",
+                    "Subflow_Bwd_Pkts", "Subflow_Bwd_Byts", "Cat")
+        .categoricalToInteger("Src_IP")
+        .categoricalToInteger("Cat")
+        .build(); 
+	public void preprocessingA(String fileNormalInstances){
+        try{// Load Training Set A
+            RecordReader rrTrainA = new CSVRecordReader(0, ',');
+            File fileTrainA = new ClassPathResource(
+            fileNormalInstances).getFile();
+            rrTrainA.initialize(new FileSplit(fileTrainA));
+	 RecordReader tpRecordReaderTrainA = 
+            new TransformProcessRecordReader(
+            rrTrainA, transformProcess);
+            this.iteratorTrainA = new RecordReaderDataSetIterator(
+            tpRecordReaderTrainA, batchSize, labelIndex, numClasses);
+            // Features Normalisation
+            normalizer = new NormalizerMinMaxScaler();
+            normalizer.fit(iteratorTrainA);
+            iteratorTrainA.setPreProcessor(normalizer);
+        } catch (Exception e){
+            e.printStackTrace();}}   
+\end{lstlisting}
+Après le pré-traitement, les caractéristiques pertinentes résultantes de notre Dataset sont résumées dans le tableau \ref{features}.
+\begin{comment}
+\begin{table}[H]
+\begin{tabular}{ll}
+ \hline
+ \textbf{Nom de la caractéristique}&\textbf{Explication}\\
+ \hline 
+  Src IP & ip source \\
+  \hline
+   Flow IAT Min & Durée minimale \\
+  \hline 
+   Flow IAT Max & Durée maximale \\
+   \hline
+    Fwd IAT Tot & Durée totale\\
+ \hline 
+  Dst Port & port destination \\
+  \hline
+   Fwd IAT Mean &  Durée moyenne \\
+  \hline 
+ 	Protocol & protocole\\
+  \hline
+  Subflow Fwd Pkts & Nombre de paquets  destination à la source \\
+  \hline
+  Flow Duration & La  durée totale \\
+  \hline
+  Subflow Fwd Bkts & nombre de paquets destination à la source\\
+  \hline 
+  Flow Byts/s & Nombre total d'octets dans la transaction \\
+  \hline
+   Flow Pkts/s & Nombre total de paquets dans la transaction\\
+  \hline  
+  Subflow Bwd Pkts & Nombre d'octets de destination à source \\ 
+  \hline
+  Subflow Bwd Byts & Nombre d'octets source-destination \\ 
+  \hline
+  Flow IAT Mean & État de la transaction \\
+\hline  
+  Flow IAT Std & Écart type des enregistrements agrégés\\
+  \hline 
+\end{tabular}
+\caption{Les Caractéristiques sélectionnées du Dataset  }
+\label{features}
+
+\end{table}
+ \end{comment}  
+  \begin{table}[H]
+\begin{tabular}{ll}
+ \hline
+ \textbf{Nom de la caractéristique}&\textbf{Nom de la caractéristique}\\
+ \hline 
+  Src IP & Protocol\\
+  \hline
+   Flow IAT Min & Flow IAT Max\\
+  \hline 
+    Fwd IAT Tot &  Dst Port\\
+ \hline 
+   Fwd IAT Mean &  Subflow Fwd Pkts \\
+  \hline 
+  Flow Duration & Subflow Fwd Bkts \\
+  \hline
+  Flow Byts/s &  Flow Pkts/s\\
+  \hline
+  Subflow Bwd Pkts &Subflow Bwd Byts\\ 
+  \hline
+  Flow IAT Mean & Flow IAT Std\\
+\hline   
+\end{tabular}
+\caption{Les Caractéristiques sélectionnées du Dataset }
+\label{features}
+\end{table}
+\subsubsection{Définition du modèle}
+Nous avons construis notre modèle en combinant les modèles AE et DNN discutés dans les sections précédentes pour pouvoir profiter des capacités d'apprentissage supervisé et non supervisé. Le modèle AE comporte 5 couches dont le nombre de neurones à l'entrée et en sortie est égale à 16 qui correspond au nombre de caractéristiques des données après pré-traitement.La figure \ref{model} présente la structure de l'AE.
+\modelAE
+Le Modèle DNN comporte 5 couches dont le nombre de neurones à l'entrée est égale à 16 et le nombre de neurones en sortie égale à 5 qui correspond au nombre des classes(type de trafic).La figure \ref{modelDNN} présente la structure du DNN.
+\modelDNN
+\subsubsection{Entrainement et test du modèle}
+Une fois la configuration du Modèle et le pré-traitement des données terminés, nous arrivons à la phase d'apprentissage qui est l'une des phases les plus importantes du Deep Learning. Sur notre training set, nous avons récupéré et sauvegardé dans un fichier (IoT-Bot-6train-Normal.csv) toutes les entrées normales(sortie normale). Ce fichier a été envoyé à l'auto encodeur pour permettre au modèle d'apprendre efficacement la représentation des  données de trafics normaux. L'idée derrière est de permettre au modèle d'apprendre et de créer une base de connaissance du trafic normal. Au début, les poids sont initialisés aléatoirement, le modèle encode en utilisant :
+\begin{equation}
+h_n = f_\theta(x_n) = \sigma(W{x_n}+b)
+\label{eq5}
+\end{equation} 
+et décode les données. en appliquant : 
+\begin{equation}
+g_i = k_\theta(h_n) = \sigma(W{h_n}+b)
+\label{eq6}
+\end{equation}
+on obtient ainsi à la sortie de l'AE les  meilleurs poids et les meilleurs représentation des données.\\
+
+Nous soumettons ensuite le training set complet(normaux et attaques) au modèle DNN. Les paramètres poids et bias obtenus à la sortie de l'AE sont utilisés comme paramètres d'initialisation du DNN. Le DNN effectue le traitement en utilisant la formule  \ref{eqpondere}. La fonction d'activation tanh \ref{eqtanh} est utilisée sur les couches cachées et softmax \ref{eqsoft} sur la dernière couche. Nous avons utilisé aussi les fonction d'optimisations Stochastic Gradient-Descent(SGD) et la fonction de perte Mean squared logarithmic error (MSLE). Au bout de 50 epochs, nous avons obtenu des résultats très satisfaisants.\\
+Pour le test de notre modèle, nous avons utilisé le même processus que celui utilisé précédemment pour entrainer le modèle, mais en utilisant cette fois-ci le dataset dédié pour le test(testing data). L'algorithme ci-dessous présente le processus d'entrainement de notre modèle : \\
+\begin{comment}
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwResult{Write here the result }
+ %initialization\;
+ \textbf{Entrée:} Training data \textit{X} = \{$x_{1}$,$x_{2}$,...,$x_{m}$\}: pour le pre-training non supervisé avec AE \;
+\textit{Y} = \{$y_{1}$,$y_{2}$,...,$y_{p}$\}: pour l'apprentissage supervisé avec DNN\;
+	Avec un nombre de couches L\; 
+\textbf{ Debut}\;
+Initialiser \{\textit{$W_{l}$}, \textit{$b_{l}$}\};\;	 Couche d'encodage;\;
+ \While{}{
+ % instructions\;
+ Pour \textit{l} de 1 à L faire;  \>   \>  \\ 
+	  \>  Initialiser \{\textit{$W_{l}$}, \textit{$b_{l}$}\}; \>  \\ 
+	 Couche d'encodage;
+  \eIf{condition}{
+   instructions1\;
+   instructions2\;
+   }{
+   instructions3\;
+  }
+ }
+ \caption{How to write algorithms}
+\end{algorithm}
+\end{comment}
+
+	\begin{minipage}{1pt}
+		\begin{tabbing}
+	\hspace{0.75cm}\=\hspace{0.75cm}\=\kill
+	 \textbf{Entrée:} Training data \textit{X} = \{$x_{1}$,$x_{2}$,...,$x_{m}$\}: pour le pre-training non supervisé avec AE, \>   \>  \\
+	  \>  \> \textit{Y} = \{$y_{1}$,$y_{2}$,...,$y_{p}$\}: pour l'apprentissage supervisé avec DNN, \\
+	  \>  \> Nombre de couches L; \\
+	 Debut \>   \>  \\ 
+	 Pour \textit{l} de 1 à L faire;  \>   \>  \\ 
+	  \>  Initialiser \{\textit{$W_{l}$}, \textit{$b_{l}$}\}; \>  \\ 
+	 Couche d'encodage; \>   \>  \\ 
+	  \>  Calculer l'encodage ou la représentation cachée à l'aide de l'équation \ref{eq5}; \>  \\  
+	 Couche de décodage; \>   \>  \\ 
+	  \>  Tant que perte <> critère d'arrêt faire; \>  \\ 
+	  \>   \> Calculer \textit{$g_{l}$} en utilisant l'équation  \ref{eq6} et donner label $\hat{x}_{n}$ à la couche de sortie; \\ 
+	  \>   \> Calculer la fonction de perte : MSLE \\ 
+	  \>   \> Mettre à jour les paramètres de couche $\theta$ = \{\textit{W}, \textit{b}\}; \\ 
+	  \>  fin tant que; \>  \\ 
+	 fin pour; \>   \>  \\ 
+	 Classifieur: Dense Neural Network, fonction d'activation Softmax à la couche de sortie; \>   \>  \\ 
+	  \>  Initialiser \{\textit{$W_{l+1}$}, \textit{$b_{l+1}$}\} par les poids et biais optimaux de l'AE; \>  \\ 
+	  \>  Calculez les étiquettes pour chaque échantillon $y_{n}$ de l'ensemble de données 
+	  d'entraînement Y; \>  \\ 
+	  \>  Effectuer une rétro-propagation de manière supervisée pour régler les paramètres \>  \\
+	   \>   \> de toutes les couches, fonction de perte : categorical cross-entropy; \\ 
+	 fin; \>   \>  \\ 
+	 \textbf{Sortie:} Classes labels\>   \>  \\ 
+	\end{tabbing} 
+	\end{minipage}	
+	\newpage
+\subsubsection{Interface}
+Quelques interfaces graphiques de l'IDS implémenté :
+\data
+\analyse
+\apprentissage
+\evaluation
+\prediction
+\subsection{\'Evaluation }
+ Dans la littérature de nombreux chercheurs utilisent une variété de paramètres pour mesurer quantitativement les performances des IDS. La plupart évalue leur IDS en utilisant le taux de réussite(trafic correctement analysé) et le taux de fausse alertes\cite{refevaluation}.
+Les performances de notre IDS sont évalués par rapport à son taux de Réussite(Accuracy)et son taux de faux positifs et sa précision. Elles sont calculées par rapport aux paramètres suivants : \\
+   Vrai positif (TP) : une attaque correctement détectée lors du test.\\
+   Faux positif (FP) : une activité normale détectée comme attaque lors du test\\ 
+   Vrai négatif (TN) : une activité normale correctement détectée lors du test.\\
+   Faux négatif (FN) : une attaque détectée comme activité normale lors du test.\\
+
+\textbf{Accuracy (taux de réussite) :} indique le pourcentage des activités normales et attaques correctement détectées.  Il est calculé en effectuant le rapport entre les détections correctes et les détections totales.  
+\begin{equation}
+\text{Accuracy} = \frac{TP + TN}{FP+FN+TP+TN}
+\end{equation}
+\textbf{Le taux de Faux Positifs (FPR) :} indique le pourcentage des fausses alertes. Il est obtenu en effectuant le rapport entre le nombre de trafic incorrectement classés comme intrusions et le nombre total de trafic normal.
+\begin{equation}
+\text{FPR} = \frac{FP}{FP+TN}
+\end{equation}
+\textbf{La précision :} La précision révèle le pourcentage d'attaques détectées par un IDS qui sont des attaques réelles.
+\begin{equation}
+\text{precision} = \frac{TP}{TP + FP}
+\end{equation}
+\textbf{Recall (taux de détection) :} indique le pourcentage d'attaques détectées par rapport à toutes les attaques présentées dans le dataset. Il est le rapport entre le nombre d'intrusions correctement détectées et le nombre total d'intrusions.
+\begin{equation}
+\text{Recall} = \frac{TP}{FN + TP }
+\end{equation}
+\textbf{F Score (Moyenne harmonique) :} est la moyenne harmonique F combine le rappel et la précision en un nombre compris entre 0 et 1.
+\begin{equation}
+\text{F Score } = 2 \times \frac{precision \times rappel}{precision+rappel}
+\end{equation}
+\begin{comment}
+Nous avons testé et évalué notre IDS  avec deux datasets différents pour être sûr de la fiabilité de notre modèle. nous avons utilisé premièrement Bot Iot 2020 pour répondre aux objectifs de notre mémoire ensuite nous avons utilisé NSL-KDD.de notre IDS.\\
+\end{comment}
+ Dans la matrice de confusion ci-dessous les éléments de la diagonale représente le nombre d'éléments classifiés correctement par le modèle .  
+\begin{table}[H]
+\begin{tabular}{ccccccc}
+  \toprule
+    \multirow{2}{*}{} & \multicolumn{6}{c}{\textbf{Classe prédite}} \\
+    \cmidrule{2-7} & \textbf{Classifié}	$\longrightarrow$ & \textbf{Normal} & \textbf{DDoS} & \textbf{DoS} & \textbf{Reconn}& \textbf{Theft} \\
+  \midrule
+    \multirow{5}{*}{\textbf{Classe réelle}} & \textbf{Normal} & 29238 & 1 & 4 & 11 & 0\\
+    \cmidrule{2-7}            & \textbf{DDOS} & 0 & 26684  & 357 & 19 & 0 \\
+    \cmidrule{2-7}            & \textbf{DOS} & 0 & 718 & 26033 & 79 & 0  \\
+    \cmidrule{2-7}            & \textbf{Reconn} & 2 & 59 & 175 & 17909 & 0 \\
+    \cmidrule{2-7}            & \textbf{Theft} & 0 & 0 & 0 & 13 & 25\\
+  \bottomrule
+\end{tabular}
+\caption{Matrice de confusion résultante du test du dataset Bot IoT 2020}
+\end{table}
+\begin{table}[H]
+\centering
+\begin{tabular}{cccc}
+  \toprule
+   \textbf{Type d'attaque} & \textbf{Precision(\%)} & \textbf{Recall(\%)} & \textbf{F Score (\%)} \\
+   \midrule
+   	 \textbf{Normal}  & 99.99  & 99.94 & 99.96\\
+     \textbf{DDoS}  & 97.16 & 98.61 & 97.88 \\
+     \textbf{DOS}  & 97.98 & 97.02 & 97.58  \\
+     \textbf{Reconn} &  99.32 & 98.69 & 99.01 \\
+     \textbf{Theft} & 1.0 & 65.78 & 79.36 \\
+   \midrule
+    \textbf{Moyenne} & 98.89 & 92.01 & 94.75 \\
+   \midrule
+  \multicolumn{2}{c}{$\text{Accuracy} = 98.58\%$} & \multicolumn{2}{c}{$\text{FPR} = 0.38\%$}\\
+ \bottomrule
+\end{tabular}
+\caption{Les résultats obtenu du tests du dataset Bot IoT avec un taux de réussite 98.58\% et un taux de faux positifs de 0.38\% }
+\label{tab1}
+\end{table}
+\begin{table}[H]
+\centering
+\begin{tabular}{cccccc}
+  \toprule
+   \textbf{Dataset} & \textbf{Accuracy} & \textbf{FPR} & \textbf{Precision} & \textbf{Recall} & \textbf{F Score} \\
+   \midrule
+     \textbf{Bot IoT} & 98.58\% &0.38\%& 98.89\%  & 92.01\% & 94.75\% \\
+     \textbf{NSL-KDD} & 99.12\% & 0.32\% & 97.42\% & 78.75\% & 82.48\%\\
+  \bottomrule
+\end{tabular}
+\caption{Comparaison des resultats de tests des deux datasets}
+\label{tab2}
+\end{table}
+\subsection{Comparaison avec d'autres approches}
+ Le tableau \ref{tab3} présente une comparaison entre notre approche proposée et d'autres approches présentes dans la littérature avec les mêmes techniques de détection d'intrusion basées sur le deep learning. Cette comparaison est basée sur les performances obtenues en termes de taux de réussite(accuracy) et le dataset utilisé.
+ \begin{table}[H]
+\begin{tabular}{cccc}
+  \toprule
+   \textbf{Méthodes} & \textbf{L'année} & \textbf{Dataset} & \textbf{Accuracy(taux de reussite)}\\
+   \midrule
+   \textbf{CNN}   \cite{refcnn} & 2020 & Bot IoT & 91.27\% \\
+     \textbf{FNN} \cite{reffnn} & 2019 & Bot IoT & 95.1\%  \\
+    \textbf{CNN}  \cite {refc2n} & 2020 & NSLKDD & 86.95\%  \\
+     \textbf{AE} \cite{refcompa5} & 2018 & NSK KDD & 87\%  \\
+     \textbf{MLP} \cite{reftemon} & 2018 & NSL-KDD  & 93.57\% \\
+\midrule  
+\multirow{2}{*}{\textbf{Notre Approche}}&\multirow{2}{*}{2020}&Bot IoT & 98.58\% \\
+ \cmidrule{3-4} 											&{}& NSL-KDD & 99.12\% \\
+  \bottomrule
+\end{tabular}
+\caption{comparaison de notre approche avec d'autres approches dans la littérature}
+\label{tab3}
+\end{table} 
+\section{Discussion}
+Sur la base des résultats expérimentaux présentés ci-dessus, nous constatons l'efficacité de l'approche proposée pour l'identification et la détection des attaques DDoS. En terme de trafic correctement analysé(taux de réussite) par l'IDS et le taux de faux positifs(FPR) notre approche s'avère efficace vis-à-vis des résultats obtenus. 
+Les résultats ont démontrés que l'utilisation des modèles de deep learning sur des datasets pour la détection d'intrusion n'implique pas toujours de bonnes performances et ne reflète pas souvent la réalité sur le terrain. Ainsi, avoir de bonnes performances dans la détection  est lié au bon choix du modèle de deep learning utilisé, ses paramètres et du bon dataset. Il est à noté que l'IDS implémenté dans ce projet de fin d'études n'est pas dédiée à la détection d'intrusion en temps réel ni d'empêcher une attaque de se produire. Il est plutôt destiné à analyser un trafic réseau stocké à posteriori dans un fichier log et alerte l'administrateur en cas de détection d'une intrusion, c'est à ce dernier de prendre les actions appropriées pour pour endiguer l'intrusion en cours.
+\section{Conclusion}
+\begin{comment}
+Les IDS jouent un rôle très important dans le processus de protection des systèmes
+d’information. Les IDS sont très efficaces dans la détection des activités malveillantes et des
+tentatives d'intrusions s'ils sont bien configurés. Cependant, avec les réseaux de nouvelles générations caractérisés par une grande dynamique de changement et des mutations rapides, les IDS doivent faire face à des problèmes très pertinents, tels que, les vitesses de transfert très élevées et le grand nombre d’attaques.
+Pour avoir une sécurité optimale Il est très utile de coupler les systèmes de détection entre eux ou avec un par-feu. Par exemple placer des NIDS, HIDS  dans le même réseau.\\
+Le choix d'un IDS doit être basé sur un certain nombre de critères notamment la fiabilité, la réactivité, la facilité de mise en œuvre, sa performance ainsi que plusieurs canaux d'alertes. L'IDS doit aussi avoir une bonne détection, générer peu de fausses alarmes. pour cela il faut tenir compte des algorithmes, ainsi que les techniques utilisées dans la conception et l’implémentation de l’IDS notamment les réseaux de neurones, algorithmes génétiques etc.%\cite{refeval}
+\end{comment}
+Dans ce dernier chapitre nous avons présenté notre approche proposée. Nous avons présenté d'abord les IDS de façon générale ensuite le Deep learning et à la fin nous avons implémenté  notre approche résiliente pour l'identification et la détection des attaques DDoS. 
+Elle est réalisée avec l'exploitation successives des techniques d'apprentissage non supervisé (Auto encodeur) et supervisé (DNN). Notre approche a été testé et validé sur les datasets IoT Botnet et NSL-KDD  pour l'apprentissage et le test.
+Les résultats obtenus sont très satisfaisants et prouvent l'efficacité de notre approche avec un taux de réussite(Accuracy) de 98.58\% et un taux de faux positifs de 0.38\%.
+

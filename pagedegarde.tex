@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           Page de Garde		         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter 
+\def\@specialite{Spécialité}
+\newcommand{\specialite}[1]{
+  \def\@specialite{#1}
+}
+\def\@directeur{directeur}
+\newcommand{\directeur}[1]{
+  \def\@directeur{#1}
+}
+\def\@encadrant{encadrant}
+\newcommand{\encadrant}[1]{
+  \def\@encadrant{#1}
+}
+\def\@jurya{}{}{}
+\newcommand{\jurya}[3]{
+  \def\@jurya{#1,	& #2	& #3\\}
+}
+\def\@juryb{}{}{}
+\newcommand{\juryb}[3]{
+  \def\@juryb{#1,	& #2	& #3\\}
+}
+\def\@juryc{}{}{}
+\newcommand{\juryc}[3]{
+  \def\@juryc{#1,	& #2	& #3\\}
+}
+\def\@juryd{}{}{}
+\newcommand{\juryd}[3]{
+  \def\@juryd{#1,	& #2	& #3\\}
+}
+\def\@jurye{}{}{}
+\newcommand{\jurye}[3]{
+  \def\@jurye{#1,	& #2	& #3\\}
+}
+\def\@juryf{}{}{}
+\newcommand{\juryf}[3]{
+  \def\@juryf{#1,	& #2	& #3\\}
+}
+\def\@juryg{}{}{}
+\newcommand{\juryg}[3]{
+  \def\@juryg{#1,	& #2	& #3\\}
+}
+\def\@juryh{}{}{}
+\newcommand{\juryh}[3]{
+  \def\@juryh{#1,	& #2	& #3\\}
+}
+\def\@juryi{}{}{}
+\newcommand{\juryi}[3]{
+  \def\@juryi{#1,	& #2	& #3\\}
+}
+\makeatother 
+\newcommand\EtiquetteThesep{%
+	\put(-10,10){%
+		\parbox[t][\paperheight]{\paperwidth}{%
+			\hfill
+			\colorbox{black}{		
+				\begin{minipage}[b]{3em}
+					\centering\Huge\textcolor{white}{M\\A\\S\\T\\E\\R\\}
+					\vspace{0.3cm}
+				\end{minipage}
+			}
+		}
+	}
+}
+
+\makeatletter
+\newcommand{\pagedegardec}{\newgeometry{top=2.5cm, bottom=2cm, left=2cm, right=1cm}
+ 
+\AddToShipoutPicture*{\EtiquetteThese}
+  \begin{titlepage}
+	\centering	
+\begin{minipage}{1\textwidth}
+	\begin{center}
+		\large\ministere{}
+	\end{center}				
+\end{minipage}
+
+\includegraphics[width=0.2\linewidth]{img/uc2.png}
+    \vspace{1cm}
+    	\begin{minipage}{1\textwidth}\raggedright
+    		\begin{tabular}{>{\bfseries}llr}
+			 \large Ann\'{e}e&:\enspace\textbf{\the\year} \\
+			 \large \No d'ordre&: \\
+			 \large Série&:\\
+			\end{tabular}
+		\end{minipage}      
+    	{\Large{\textbf{M\'EMOIRE}}}\\
+    	\vspace{0.5cm}
+    	\textit{pour obtenir le diplôme}\\
+    	\vspace{0.5cm}
+    	{\Large{\textbf{MASTER en Informatique}}}\\
+    	\vspace{0.5cm}
+    	 {\textbf{Option :} Réseaux et Systèmes Distribués}\\
+    \vspace{0.5cm}
+    \begin{tcolorbox}[colback=white,boxrule=0pt,toprule=3pt,bottomrule=3pt,arc=0pt,top=0mm,right=0mm,left=0mm,bottom=0mm,boxsep=0.7mm]{
+    		\begin{tcolorbox}[colback=white, boxrule=0pt,toprule=1pt,bottomrule=1pt,arc=0pt,enlarge bottom by=-0.9mm, auto outer arc]
+    			\centering
+    			{\Large\textbf{\@title}}
+    		\end{tcolorbox}
+    	}
+    \end{tcolorbox}
+    \vspace{0.5cm}
+    	\textit{présentée et soutenue publiquement par}\\
+    \vspace{0.5cm}
+    	{\Large {\bfseries \@author}} \\
+    \vspace{0.5cm}
+    	le 10 juillet 2019\\   
+    %et soutenu publiquement
+    \vspace{1cm}
+	\begin{tabular}{>{\bfseries}llr}
+		\large Encadré par\\
+		\@jurya
+		\@juryb
+		\\ Jury \\
+		\@juryc
+		\@juryd
+	\end{tabular}
+	\vfill 
+  \end{titlepage}
+\restoregeometry  
+\nopagebreak  
+}
+\makeatother

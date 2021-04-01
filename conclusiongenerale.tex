@@ -1,0 +1,15 @@
+\addcontentsline{toc}{part}{Conclusion Générale}
+\chapter*{Conclusion Générale et Perspectives }
+\markboth{\textbf{CONCLUSION G\'EN\'ERALE ET PERSPECTIVES }}{}
+\thispagestyle{empty}
+	\section*{Conclusion Générale}
+Les attaques informatiques sont en forte hausse ces dernières années et représentent un réel risque qui menace l'IoT, les applications et les systèmes d'information des entreprises. Vue les enjeux économiques et politiques que cela représente, il est très urgent de pouvoir identifier ces attaques et d'y répondre avant qu'elles ne se produisent et fassent de gros dommages. Cela nous a conduit dans ce mémoire, vers la mise en œuvre d'un système de détection d'intrusion comme moyen d'identification des attaques, dans le but de minimiser les pertes que cela pourrait engendrer. Pour réaliser notre approche, nous nous sommes basés sur les modèles du deep learning qui sont devenus très populaires ces dernières années en raison de leur capacité de résoudre des problèmes complexes en un temps record.\\
+
+Premièrement nous avons fait l'état de lieu des problèmes de cybersécurité qui menace L'IoT et les éventuelles solutions afin de réduire ces menaces en utilisant les systèmes de détection d'intrusion. Ensuite nous avons implémente notre approche en appliquant les modèles de deep learning aux datasets IoT Botnet et NSL-KDD. Chacun de ces datasets contiennent des trafics normaux et malicieux. Les trafics malicieux présentent plusieurs types d'entrées d'attaques spécialement l'attaque de type DDoS. On a combiné les deux modèles de deep learning notamment les auto-encodeurs et le DNN pour pouvoir bénéficier de leur riche opportunité de détecter de nouvelles variantes d'attaques et les attaques dites zero-day attaques.\\
+
+Enfin, notre IDS offline réalisé répond à la majorité des objectifs tracés dans ce travail, en effet notre approche résiliente peut détecter à peine n'importe quel type d'attaques spécialement l'attaques de Type DDoS avec de très bonne précision et les attaques zéros-days avec de très bonne performance en alertant l'administrateur du système par un message de notification indiquant le type d'intrusion en cours.
+	\section*{Perpectives}
+A la fin de ce projet de fin d'études, nous avons dégagé les perspectives suivantes à développer dans l'avenir pour une amélioration de ce travail : \\
+— Un premier objectif serait d'implémenter un IDS online qui analyserait le trafic réseau en temps réel sans avoir besoin d'utiliser le jeu de données NSL KDD et Bot IoT.\\
+— Intégrer une gestion multi tâches des alertes dans l'IDS (alerte envoyer à un email ou stocker dans un fichier log).\\
+— Générer et Tester avec son propre jeu de données en simulant par exemple le trafic IoT par l'utilisation de Cooja sur Contiki OS. 

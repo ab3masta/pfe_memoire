@@ -1,0 +1,105 @@
+\documentclass[a4paper,12pt]{report}
+%\usepackage{biblatex}
+%\usepackage[sectionbib]{chapterbib}%%% REFERENCE PAR CHARPITRE %%%
+\usepackage[french,english]{babel}
+\usepackage[nottoc]{tocbibind} 
+\frenchbsetup{StandardLists=true}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{pgfplots}
+%\usepackage[glenn]{fncychap}
+% chargement des packages necessaire pour les code/script
+\usepackage{tcolorbox}
+\usepackage{listings,xcolor}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage{booktabs}
+% chargement des packages pour les tableaux
+\usepackage{verbatim}
+\usepackage{multirow} %
+\usepackage{colortbl} %
+\usepackage{spreadtab}
+\usepackage{booktabs}
+\usepackage{slashbox}
+\usepackage{fancybox,ctable}
+\usepackage{xstring}
+\usepackage{float} 
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[font={small}]{caption}
+%\usepackage[light, largesmallcaps]{kpfonts}%%%% LE FONT DE BASE DU TEXTE %%%%
+\usepackage[top=2.5cm, bottom=2cm, left=3cm, right=2.5cm,
+			headheight=15pt]{geometry}
+
+\input{commandesPerso/perso}
+\usepackage{array}%%%%%%%%%AFFICHAGE DES LETTRES EN VERTICALE
+\usepackage{eso-pic}% Nécessaire pour mettre des images en arrière plan
+%\usepackage{newtxtext,newtxmath}
+%\input{pagedegarde}
+%%%%%%%%%%%%%%% HEADER FOOTER %%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\fancyhf{}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\lhead{\leftmark}
+\cfoot{\thepage}
+\pagestyle{fancy}			
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\bfseries\Large}
+  {\filright\MakeUppercase{\chaptertitlename} \Huge\thechapter}
+  {1ex}
+  {\titlerule\vspace{0.5ex}\center}
+  [\vspace{1ex}\titlerule]
+\usepackage[french]{minitoc}%%%% Tables de matière par chapitre  
+\usepackage[colorlinks=true,linkcolor=blue, citecolor=blue]{hyperref}
+\usepackage{setspace}
+\setstretch{1,4}
+
+\dominitoc
+\setcounter{minitocdepth}{1}
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4} 
+\begin{document}
+\fontfamily{ptm}\selectfont
+
+\begin{singlespace}
+\pagedegarde 
+\end{singlespace}
+\pagenumbering{roman}
+\input{abstractresume}%%%%% RESUME DU MEMOIRE FRANCAIS ET EN ANGLAIS %%%%%
+\selectlanguage{french}
+\setcounter{page}{5}%%%%%%%%%% debut numeros de pied de pages %%%%%%%%%%%%%%
+\begin{singlespace}
+\tableofcontents
+\listoffigures
+\listoftables
+\input{acronymes}
+\end{singlespace}
+
+\clearpage %%%%pour avoir le pied de page roman %%%%%%%%%%%%
+ %%%%%%%%%%%%%%%pour ajuster les minitocs%%%%%%%%%%%%%%%%%%%%%%%
+\selectlanguage{french}
+\pagenumbering{arabic}
+\input{introduction}
+\firstpart
+\adjustmtc[2]
+\input{premierchapitre}
+\input{deuxiemechapitre}
+\input{troisiemechapitre}
+%%%%%%%%CONTRIBUTIONS%%%%%%%%%%
+\secondpart
+\input{quatriemechapitre}
+\input{conclusiongenerale}
+%%%%%%%%%% REFERENCES BIBLIOGRAPHIQUES %%%%%%%%%
+\clearpage	
+\begin{singlespace}
+\bibliographystyle{ieeetr}
+\markboth{Bibliographie}{}
+\bibliography{biblo}
+\end{singlespace}		
+\end{document}
