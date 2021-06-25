@@ -1,0 +1,53 @@
+\begin{thebibliography}{10}
+
+\bibitem{Scheuer2012}
+O.~Scheuer and B.~M. McLaren, {\em Educational Data Mining}, pp.~1075--1079.
+\newblock Boston, MA: Springer US, 2012.
+
+\bibitem{data_mining_concepts_techniques}
+J.~Han and M.~Kamber, {\em Data Mining: Concepts and Techniques}.
+\newblock 01 2000.
+
+\bibitem{Educational_data_mining_a_survey_from_1995_to_2005}
+C.~Romero and S.~Ventura, ``Educational data mining: A survey from 1995 to
+  2005,'' {\em Expert Systems with Applications}, vol.~33, pp.~135--146, 07
+  2007.
+
+\bibitem{buche:tel-00011223}
+C.~Buche, {\em {Un syst{\`e}me tutoriel intelligent et adaptatif pour
+  l'apprentissage de comp{\'e}tences en environnement virtuel de formation}}.
+\newblock Theses, {Universit{\'e} de Bretagne occidentale - Brest}, Nov. 2005.
+
+\bibitem{handbook_of_educational_data_mining}
+C.~Romero, S.~Ventura, M.~Pechenizkiy, and R.~Baker, {\em Handbook of
+  Educational Data Mining}.
+\newblock 10 2010.
+
+\bibitem{state_of_educational_data_mining_in_2009_a_review_and_future_visions}
+R.~Baker and K.~Yacef, ``The state of educational data mining in 2009: A review
+  and future visions,'' {\em Journal of Educational Data Mining}, vol.~1,
+  pp.~3--17, 01 2009.
+
+\bibitem{dm_tuteurs}
+S.~Bendjebar, {\em Utilisation des Techniques de Data Mining pour la
+  Modélisation des Tuteurs}.
+\newblock Theses, Université 8 mai 1945 Guelma, 2016.
+
+\bibitem{learner_model__adaptive_learning}
+L.~Nguyen and P.~Do, ``Learner model in adaptive learning,'' {\em Proceedings
+  of World Academy of Science, Engineering and Technology}, vol.~45,
+  pp.~396--401, 01 2008.
+
+\bibitem{user_modelling_help_systems}
+R.~Winkels, ``User modelling in help systems.,'' vol.~438, pp.~184--193, 06
+  1990.
+
+\bibitem{user_learner_modeling_workbench}
+A.~Paiva and J.~Self, ``Tagus — a user and learner modeling workbench,'' {\em
+  User Modeling and User-Adapted Interaction}, vol.~4, pp.~197--226, 09 1994.
+
+\bibitem{psycho_oncology}
+S.~Greer, ``Psycho‐oncology: Its aims, achievements and future tasks,'' {\em
+  Psycho‐Oncology}, vol.~3, pp.~87 -- 101, 07 1994.
+
+\end{thebibliography}

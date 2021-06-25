@@ -1,208 +1,180 @@
-\chapter{Internet des objets}\label{chap1}
+\chapter{Educational data minig}\label{chap1}
 \minitoc
 \thispagestyle{empty}
 \newpage	
 	
-	\section{Introduction}
-	Le concept  d’Internet des Objets (IoT) a été proposé en 1999 par le laboratoire Auto-ID du MIT \cite{hu2016security}. Imaginons un monde où des milliards d'objets peuvent détecter, communiquer et partager des informations, tous interconnectés via des réseaux IP publics ou privés. Ces objets interconnectés ont des données régulièrement collectées, analysées et utilisées pour initier l'action, fournissant une intelligence pour la planif{\kern0pt}ication, la gestion et la prise de décision \cite{patel2016iot}. C'est le monde de l'Internet des objets (IoT).\\
-	Un exemple de base de tels objets comprend les thermostats et les systèmes de surveillance et de contrôle HVAC (chauf{\kern0pt}fage, ventilation, climatisation) qui forment les composants des maisons intelligentes. Il existe également d'autres domaines et environnements dans lesquels l’IoT peut jouer un rôle remarquable notamment dans les domaines de la santé, du transports, l'automatisation industrielle et la réponse d'urgence aux catastrophes naturelles et d'origine humaine dont la prise de décision humaine est dif{\kern0pt}f{\kern0pt}icile.\\
-	
-	L'idée de base de ce concept d’IoT est l'omniprésence autour de nous d'une variété de choses ou d'objets tels que des réseaux Wi-Fi, des réseaux cellulaires, des étiquettes d'identif{\kern0pt}ication par radiofréquence (RFID), des capteurs, des actionneurs, des téléphones mobiles, etc.  Grâce à des schémas d'adressage uniques ces objets sont capables d'interagir et coopérer entre eux  pour atteindre des objectifs communs bien défini \cite{atzori2010iot}.\\
-	
-	Dans ce chapitre, nous présentons l’Internet des Objets, son origine , ses divers caractéristiques. Puis une illustration de ses dif{\kern0pt}férentes architectures, ses domaines d’application où il introduit de l’intelligence, ainsi que les enjeux et les déf{\kern0pt}is que l’on peut rencontrer les réseaux des objets connectés.
-	\section{Historique}
-	Le premier \og objet \fg{}  connecté à l’Internet a été un grille-pain. En 1990, John Romkey, ingénieur logiciel et premier évangéliste d'Internet, en avait construit un qui pourrait être allumé et éteint sur Internet. Romkey a laissé tomber quelques tranches de pain dans le grille-pain et, à l'aide d'un ordinateur maladroit, a allumé le grille-pain. Il faudra encore une décennie avant d'autre personne utilise l'expression « Internet des objets », mais le petit grille-pain magique de Romkey montre à quoi pourrait ressembler un monde d'objets connectés à Internet \cite{pardes2020iot}.\\
-	 Le terme \og Internet of Things \fg{} lui-même a été inventé en 1999 dans le laboratoire Auto-ID du MIT lorsque le britannique Kevin Ashton (pionnier de la technologie) l'a mis dans une présentation pour l’entreprise Procter \& Gamble. Le terme « Auto-ID » fait référence à toute grande classe de technologies d'identif{\kern0pt}ication utilisées dans l'industrie pour automatiser, réduire les erreurs et augmenter l'ef{\kern0pt}f{\kern0pt}icacité. Ces technologies comprennent les codes à barres, les cartes à puce, les capteurs, la reconnaissance vocale et la biométrie \cite{sundmaeker2010vision}. Ashton, qui travaillait alors dans l'optimisation de la chaîne d'approvisionnement, a remarqué que l'optimisation dépend directement de la vitesse de transmission et de traitement des données. Cela peut prendre des jours pour les personnes qui collectent les données. De plus, conf{\kern0pt}ier la tâche à des ordinateurs n’était pas envisageable car dépourvus d’organes sensoriels, ils étaient dépendants des informations que des opérateurs humains voulaient bien leur fournir. L'utilisation de l'identif{\kern0pt}ication par radiofréquence (RFID) a permis d'accélérer le processus de transfert de données directement entre les appareils. Il avait une idée des choses à collecter, traiter et transmettre sans intervention humaine.\\
+    \section{Introduction}
+    
+    Du fait que les systèmes informatisés conservent des journaux détaillés des interactions utilisateur-système, ces journaux 
+    détaillés qui sont généralement dans une grande base de données ouvrent de nouvelles opportunités pour étudier ces données récolter.\\
+    
+    L'EDM emprunte et étend des domaines connexes tels que l'apprentissage automatique (l'étude des programmes informatiques 
+    qui apprennent et s'améliorent avec des données empiriques), l’exploration de texte (approches pour trouver des modèles 
+    dans texte en langue) et statistiques. D'autres influences importantes sont la psychométrie (l'étude des instruments 
+    psychologiques pour mesurer les compétences et les traits humains) et l'analyse des journaux Web (approches pour identifier 
+    les profils d'utilisateurs et la navigation modèles d'utilisateurs du site Web). \\
+    Dans ce chapitre, nous présentons les techniques d'exploration de données, et un ensemble de techinique d'analyse pour 
+    une variété de problèmes dans la recherche en éducation et développement technologique (Romero et al. 2010; International
+    Working Group on Educational Data Mining, n. d.) \cite{Scheuer2012}. \\
 
-	Alors qu’à domicile l'internet est devenu omniprésent et que le Wi-Fi s'est accéléré, le rêve de la maison intelligente a commencé à ressembler davantage à une réalité. Les entreprises ont commencé à présenter de plus en plus de ces inventions: des cafetières « intelligentes », des fours qui préparent des biscuits avec un minutage précis et des réfrigérateurs qui ont automatiquement réapprovisionné le lait périmé. Le premier d'entre eux, le réfrigérateur connecté à Internet de LG, a été lancé sur le marché en 2000. Il pourrait faire le point sur le contenu des étagères, et les dates d'expiration.
+    \section{Data mining}
 
-\begin{table}[H]
-	\begin{center}
-	\begin{tabular}{|p{3cm}|p{8cm}|}
-	\hline 
-	\multicolumn{2}{|c|}{\textbf{Internet des objets au f{\kern0pt}il des années}} \\ 
-	\hline 
-	1990 & John Romkey crée le premier appareil IoT: un grille-pain qu'il contrôle avec son ordinateur \\ 
-	\hline 
-	1999 & Kevin Ashton invente le terme « Internet des objets » pour décrire un système où Internet est connecté au monde physique via des capteurs omniprésents \\ 
-	\hline 
-	2000 & LG présente son premier réfrigérateur connecté avec un prix de 20 000 \$ \\ 
-	\hline 
-	2008 & La première conférence Internet des Objets au monde se tient à Zurich, en Suisse \\ 
-	\hline 
-	2010 & Tony Fadell fonde Nest, qui développe des appareils électroménagers intelligents et des systèmes de gestion des bâtiments. \\ 
-	\hline 
-	2013 & Oxford Dictionary ajoute le terme « Internet of Things » \\ 
-	\hline 
-	2014 & Amazon présente le haut-parleur Echo, ainsi que l'assistant vocal Alexa, une nouvelle façon de contrôler la maison intelligente \\ 
-	\hline 
-	2016 & Un logiciel malveillant appelé Mirai a exploité des vulnérabilités dans plus de 600000 appareils IoT pour créer une attaque massive par déni de service distribué (\textbf{DDoS}). \\ 
-	\hline 
-	2020 & Selon certaines estimations, le nombre d'appareils connectés à Internet dépasse 20 milliards. Et les prévisions suggèrent que d'ici 2030, environ 50 milliards de ces appareils IoT seront utilisés dans le monde \cite{statista2020iot}.
-	 \\ 
-	\hline 
-	\end{tabular} 
-	\end{center}
-	\caption{Internet des Objets au f{\kern0pt}il des années}
-\end{table}
+    \subsection{Définition}
 
-	\section{Déf{\kern0pt}inition}
-	Le Cluster des projets européens de recherche sur l'Internet des objets (CERP-IoT) déf{\kern0pt}init l’Internet des objets comme : « une infrastructure dynamique d’un réseau global. Ce réseau global a des capacités d’auto-conf{\kern0pt}iguration basée sur des standards et des protocoles de communication interopérables. Dans ce réseau, les objets physiques et virtuels ont des identités, des attributs physiques, des personnalités virtuelles et des interfaces intelligentes, et ils sont intégrés au réseau d’une façon transparente » \cite{sundmaeker2010vision}.\\
-Cette vision de l’Internet des objets introduira une nouvelle dimension aux technologies de l’information et de la communication : en plus des deux dimensions temporelle et spatiale qui permettent aux personnes de se connecter de n’importe où à n’importe quel moment, nous aurons une nouvelle dimension « objet » qui leur permettra de se connecter à n’importe quel objet \cite{challal2012securite} (Smartphone, tablettes, capteurs, caméras de vidéo surveillance, etc.). Un objet connecté a une valeur lorsqu’il est connecté à d’autres objets et consorts logiciels, par exemple : une montre connectée n’a d’intérêt qu’au sein d’un écosystème orienté santé/bien-être, qui va bien au-delà de connaître l’heure.\\
-	L’Internet des Objets a pour but de permettre aux objets d’être connecté à tout moment, en tout lieu, avec n’importe quoi et n’importe qui en utilisant n’importe quel chemin / réseau et n’importe quel service \cite{patel2016iot}.\\
-	
-	\begin{figure}[H]
-		\begin{center}
-			\includegraphics{IMAGES/ORIGINALS/Internet_des_Objets}
-		\end{center}
-		\caption{Internet des Objets}
-	\end{figure}
+    "L'exploration de données est un processus itératif et interactif dont l'objectif est la découverte de modèles de données valides,
+    nouveaux, utiles et compréhensibles dans de grandes bases de données." (Talbi, 2015) \\
+    L'exploration de données, également appelée découverte de connaissances dans une base de données,
+    fait référence à l'extraction de connaissances à partir de grandes quantités de données. Elle est
+    utilisée pour extraire de grands volumes de données pour découvrir des modèles cachés et des 
+    relations utiles dans la prise de décision. Bien que l'exploration de données et la découverte 
+    de connaissances de base de données soient souvent traitées comme des synonymes, elles font en 
+    fait partie du processus de découverte des connaissances. La séquence des étapes identifiées lors
+    de l'extraction des connaissances à partir des données est illustrée à la figure \ref{extraction_connaissances} \cite{data_mining_concepts_techniques}.  \\
+    L'exploration de données est un domaine interdisciplinaire utilisant à la fois des techniques 
+    d'apprentissage automatique, de reconnaissance de formes et l'utilisation de statistiques, de bases de 
+    données et de visualisation pour déterminer les façons d'utiliser l'extraction d'informations à partir de 
+    très grandes bases de données (Cabena et al., 1998).
 
-L’Internet des Objets peut être déf{\kern0pt}ini également comme « des données et des appareils disponibles en permanence à travers l’internet » \cite{hu2016security}.\\
-Un objet connecté est un objet possédant la capacité d’échanger des données avec d’autres entités physiques ou numériques.\\
-À peu près n'importe quel objet physique peut être transformé en un appareil IoT s'il peut être connecté à Internet pour être contrôlé ou communiquer des informations avec le réseau indépendamment de l’action humaine.\\
-Pour illustrer, prenons un exemple dans le domaine de l’habitat intelligent, aussi connu sous le nom de Smart Home. Imaginez que votre réfrigérateur devienne intelligent. Un réfrigérateur capable de vous dire en temps réel le type de denrées qu’il y a à l’intérieur et capable de passer commande pour vous quand vous avez besoin de vous réapprovisionner. Ce genre de réfrigérateur est un exemple typique d'objet connecté. La figure \ref{iot} illustre ce réseau d'objets connectés
-	\begin{figure}[H]
+    \begin{figure}[H]
 		\begin{center}
-			\includegraphics[width=16cm,height=14cm]{IMAGES/ORIGINALS/Internet_des_Objets_2}
+			\includegraphics{images/chapitre1/Les étapes de l'extraction de connaissances à partir de données}
 		\end{center}
-		\caption{Internet des Objets}
-	\end{figure}	
-	\section{Caractéristiques}
-	Les caractéristiques fondamentales de l'IoT sont les suivantes \cite{patel2016iot}\cite{vermesan2014iot}\\
-	\textbf{Inter connectivité}: en ce qui concerne l'IoT, tout peut être inter connecté avec l'infrastructure mondiale d'information et de communication.\\
-	\textbf{Services liés aux objets}: l'IoT est capable de fournir des services liés aux objets dans les limites des objets, tels que la protection de la vie privée et la cohérence sémantique entre les objets physiques et les objets virtuels associés. Af{\kern0pt}in de fournir des services liés aux objets dans les contraintes des objets, les technologies du monde physique et du monde de l'information vont changer.\\
-	\textbf{Hétérogénéité}: les appareils de l'IoT sont hétérogènes car basés sur dif{\kern0pt}férentes  plates-formes matérielles et réseaux. Ils peuvent interagir avec d'autres appareils ou plates-formes de services via dif{\kern0pt}férents réseaux.\\
-\textbf{Changements dynamiques}: l'état des appareils change de manière dynamique, par exemple, le sommeil et le réveil, connectés et / ou déconnectés ainsi que le contexte des appareils, y compris l'emplacement et la vitesse. De plus, le nombre d'appareils peut changer dynamiquement.\\
-	\textbf{Échelle énorme}: le nombre d'appareils qui doivent être gérés et qui communiquent entre eux sera au moins d'un ordre de grandeur supérieur à celui des appareils connectés à l'Internet actuel. Encore plus critique sera la gestion des données générées et leur interprétation à des f{\kern0pt}ins d'application. Cela concerne la sémantique des données, ainsi que la gestion ef{\kern0pt}f{\kern0pt}icace des données.\\
-	\textbf{Sécurité}: à mesure que nous tirons profit de l'IoT, nous ne devons pas négliger la sécurité. En tant que créateurs et destinataires de l'IoT, nous devons concevoir des objets pour la sécurité. Cela comprend la sécurité de nos données personnelles et la sécurité de notre bien-être physique. Sécuriser les points de terminaison, les réseaux et les données se déplaçant sur tout cela signif{\kern0pt}ie créer un paradigme de sécurité qui évoluera.\\
-	\textbf{Intelligence} : L'IoT est livré avec la combinaison d'algorithmes et de calcul, de logiciels et de matériel qui le rendent intelligent. Ce qui le rend encore plus intelligent, ce sont les données qu’il recueille à travers un capteur. L'intelligence ambiante dans l'IoT améliore ses capacités qui facilitent les choses pour répondre de manière intelligente à une situation particulière et les aide à ef{\kern0pt}fectuer des tâches spécif{\kern0pt}iques. Malgré toute la popularité des technologies intelligentes, l'intelligence dans l'IoT ne concerne que les moyens d'interaction entre les appareils, tandis que l'interaction utilisateur et appareil est obtenue par des méthodes d'entrée standard et une interface utilisateur graphique.\\
-	\textbf{Connectivité}: la connectivité permet l'accessibilité et la compatibilité du réseau. L'accessibilité se fait sur un réseau tandis que la compatibilité of{\kern0pt}fre la capacité commune de consommer et de produire des données.
-	\section{Architecture de l’IoT}	
-	L’IoT devrait être capable d’interconnecter des milliards d’objets hétérogènes via le réseau internet, ainsi il est judicieux d’adopter une architecture flexible.\\	
-Le modèle de base est une architecture à trois-couches comportant les couches Application, Réseau, et Perception. D’autres modèles ont été proposé récemment qui ajoutent plus d’abstraction aux architectures des objets connectés. La f{\kern0pt}igure ci-dessous illustre les dif{\kern0pt}férentes catégories de l’architecture IoT \cite{al2015iot}.
-	\begin{figure}[H]
+    \caption{Les étapes de l'extraction de connaissances à partir de données}
+    \label{extraction_connaissances}
+    \end{figure}
+    
+    \subsection{Les méthodes du data mining}
+    Le clustering et la classification sont deux tâches fondamentales dans l'exploration de données.
+    La classification est principalement utilisée comme méthode d'apprentissage supervisé, le clustering pour 
+    l'apprentissage non supervisé (certains modèles de clustering sont pour les deux). Le but du clustering est descriptif, 
+    celui de la classification est prédictif (Veyssieres et Plant, 1998). \\
+    « Comprendre notre monde nécessite de conceptualiser les similitudes et les différences entre les entités qui 
+    le composent » (Tyron et Bailey, 1970) \cite{Educational_data_mining_a_survey_from_1995_to_2005}. De ce fait, certains coefficients de corrélations sont utilisés pour 
+    calculer la similarité entre deux éléments ou plusieurs et, des métriques et les critères de liaison permettent 
+    qu’en ta eux de déterminer le lien entre plusieurs entités afin de les groupées dans une même classe 
+    (c’est le cas du clustering). \\
+    Certaines méthodes comme : rule of association, preaching, neural networks, decision trees sont utilisé aussi pour 
+    explorer et analyser des jeux de données.
+
+    \section{Intelligent Tutorial Systems (ITS)}
+
+    \subsection{Définition}
+    Les systèmes de tutorat intelligents (ITS) sont des environnements d'apprentissage informatisés issus de l'IALT 
+    (Intelligent Computer Assisted Instruction) qui visent à personnaliser la formation. En effet, ils ont été développés 
+    pour répondre aux limites du CAI (Computer Assisted Instruction) en utilisant l'intelligence artificielle pour mettre 
+    en œuvre des systèmes plus flexibles et interactifs qui s'adaptent « aux besoins spécifiques de l'apprenant en évaluant 
+    et en diagnostiquant ses problèmes afin de fournir les assistances » (Buche C., 2005). L'objectif est de mimer le 
+    comportement d'un tuteur humain en sa qualité de pédagogue expert et d'expert dans le domaine. Ainsi, tout comme 
+    un tuteur, un logiciel de ce type a le potentiel d'amener l'apprenant à accomplir une tâche et à fournir un retour 
+    sur leurs actions. ITS répond ainsi à la nécessité de placer l'apprenant au centre du processus d'apprentissage \cite{buche:tel-00011223}. \\
+    Les ITS sont essentiellement un environnement de résolution de problèmes ou d'exercice. Ils favorisent l'apprentissage 
+    dans un domaine spécifique en guidant et en aidant l'apprenant. Parfois, ils exposent d'abord le contenu de la matière 
+    à l’apprenant ; parfois ils présentent directement les exercices qui permettront à l'apprenant d'assimiler les 
+    connaissances \cite{handbook_of_educational_data_mining}.
+
+    \begin{figure}[H]
 		\begin{center}
-			\includegraphics[width=\textwidth]{IMAGES/ORIGINALS/diverses_architectures_de_l'IoT}
+			\includegraphics[width=\textwidth]{images/chapitre1/ITS architecture}
 		\end{center}
-		\caption{Diverses architectures de l'IoT}
-	\end{figure}
-	\subsection{Architecture à trois couches}
-	\subsubsection{Couche perception }
-La première couche de l’IoT, les Objets (appareils) ou couche perception, est un organe sensoriel de l’IoT et représente les capteurs physiques de l’IoT qui essaie de recueillir et traiter les données. Un capteur de température permet de traduire l'amplitude de la température en une tension électrique. Cette couche comprend principalement des éléments avec des étiquettes RFID, capteurs, et autre terminaux. Elle détecte les données de l’environnement. Certains facteurs sont pris en charge par la couche physique tels que : ressource, hétérogénéité, déploiement, protocoles.
-	\subsubsection{Couche réseau}
-La couche réseau est chargée de récupérer les données collectées du capteur. L’échange des données se fait via cette couche. Ainsi, la couche réseau peut agréger les données dans sa propre base de données ou un stockage cloud.
-	\subsubsection{Couche application}
-La couche application ou la couche interface utilisateur contient les méthodes d’interaction avec les applications de l’utilisateur.
-	\subsection{Architecture à cinq couches}
-	\subsubsection{Couche Objets}
-La première couche de l’IoT, les Objets (appareils) ou couche perception, représente les capteurs physiques de l’IoT qui essaie de recueillir et traiter les données. Cette couche comprend les capteurs et les actionneurs qui fonctionnent dif{\kern0pt}féremment. Un capteur de température permet de traduire l’amplitude de la température en une tension électrique. On a d’autres grandeur mesurable tels que pression, luminosité, position, vitesse. Quant aux actionneurs, ils permettent d’agir dans le monde physique en changeant son état. Un actionneur peut allumer un appareil à distance. La couche perception collecte les informations du capteur, numérise et transmet les données à la couche Abstraction Objet via un canal sécurisé.
-	\subsubsection{Couche Abstraction Objet}
-La couche Abstraction Objet transfert les données produit par la couche perception à la couche Gestion Service à travers des canaux sécurisés. Les données peuvent être transféré via des technologies variés tels que RFID, GSM(2G), UMTS(3G), LTE(4G), WI-FI, Bluetooth, Zigbee, etc. En plus, d’autres fonctions comme Cloud Computing et le traitement de gestion de données sont gérés par cette couche.
-	\subsubsection{Couche Gestion des Services}
-La couche Gestion des Services garantit la fourniture des services en fonction de la demande de l'utilisateur dans un environnement réseau hétérogène.
-	\subsubsection{Couche Application}
-La couche Application fournit les services demandés par les clients. Par exemple, la couche application peut fournir les mesures de température au client qui demande cette information.
-Elle couvre dif{\kern0pt}férentes applications, à savoir: ville intelligente, transport intelligent, soins de santé, agriculture intelligente, maison intelligente, etc.
-	\subsubsection{Couche Business}
-La couche métier(gestion) est chargée de gérer l’ensemble des activités et des services comme les modèles métiers. Elle aide à construire un graphique, un organigramme, un modèle métier, une prise de décision etc. basé sur les données reçues de la couche Application.
-	\section*{Domaines d’application}
-Il existe une panoplie de domaines d’application extrêmement diverses pour les secteurs de l’internet des objets, du machine to machine et des objets connectés. Parmi ces principaux domaines, nous citons : la smart city, la domotique, les transports, la santé, l’industrie, l’agriculture.
-	\begin{figure}[H]
-		\begin{center}
-			\includegraphics{IMAGES/ORIGINALS/Application_IoT}
-		\end{center}
-		\caption{Domaines d'application de l'IoT}
-	\end{figure}
-		\subsection*{ Smart city }
-Dans les villes intelligentes, il améliore la qualité de vie des habitants en utilisant les nouvelles technologies pour accroître l’ef{\kern0pt}f{\kern0pt}icacité des services, optimiser l’éclairage, de maîtriser la consommation d’énergie et de réduire l’impact écologique des activités urbaines.
-		\subsection*{Domotique }
-		La domotique regroupe l’ensemble des technologies permettant l’automatisation des équipements d’un habitat. Elle vise à apporter des solutions techniques pour répondre aux besoins de confort (gestion d’énergie, optimisation de l’éclairage et du chauf{\kern0pt}fage), de sécurité(alarme) et de communication (commandes à distance) \cite{locqueneux2015domotique}.\\
-		La domotique couvre trois domaines principaux :
-		\begin{itemize}
-			\item Confort de la vie quotidienne : l’IoT permettra aux propriétaires de villa de déclencher arrosage, fermeture des fenêtres ou tonte du gazon en fonction des informations transmises par les capteurs disposés dans le jardin.
-			\item Assurer la protection des personnes et des biens par la prévention des risques d’accident (incendies, fuite de gaz, etc.).
-			\item Faciliter les économies d’énergie grâce à la réaction maitrisée d’une maison intelligente.
-		\end{itemize}
-		\subsection*{Santé }
-		Dans le domaine de la santé, l’internet des objets of{\kern0pt}frira une sécurité accrue à un patient dont un capteur est intégré sur le corps qui donne la possibilité d’être monitoré à distance.\\
-Il peut informer un patient quand il est temps de prendre le médicament. En outre, cela pourrait éventuellement informer le médecin d’une situation d’urgence lui permettant ainsi de localiser le patient grâce à l’objet connecté
-\subsection*{Transport }
-		Des voitures connectées ou autonomes aux systèmes de transports intelligents, l’IoT pourra sauver des vies, réduire le traf{\kern0pt}ic et minimiser l’impact des véhicules sur l’environnement.
+    \caption{ITS architecture}
+    \label{itsArchitecture}
+    \end{figure}
+
+    \subsection{ITS architecture}
+    L'architecture conceptuelle d'un ITS est illustrée à la figure \ref{itsArchitecture} et comprend : \cite{handbook_of_educational_data_mining}
+    \begin{itemize}
+		    \item[$\bullet$] \textbf{Un modèle de l'interface :} qui représente la couche de communication entre l'apprenant et le système, c'est-à-dire les interactions entre l'apprenant et le système. Cette interface peut faire varier le type d'environnement d'apprentissage et l'objectif étant de privilégier une approche de conception qui ne gêne pas l'apprentissage. La qualité de l'interaction peut influencer les résultats d'apprentissage. Par conséquent, les principaux problèmes avec les interfaces d'apprentissage sont les problèmes d'interaction personne / machine. Pour surmonter ces problèmes, il faut prêter attention à la convivialité pour que la charge mentale associée à l’interface soit négligeable, ainsi qu’à l’utilité en facilitant l’accès, en permettant l’accès au domaine d’apprentissage et en soutenant la métacognition de l’apprenant. Les tendances actuelles s'orientent vers des dialogues tutoriels en langage naturel, l'intégration de la dimension affective dans l'interaction et les interfaces tangibles.
 		
-		\subsection*{Industrie }
-		Dans le secteur industriel, le machine to machine peut augmenter énormément la productivité et la performance d’une usine. Par exemple, supposons un réseau de capteurs polyvalents qui suit à distance et pilote le fonctionnement des machines en leur donnant la possibilité de déclencher elles-mêmes un réapprovisionnement en matières premières.
-		
-		\subsection*{Agriculture :}
-		L’internet des objets à un impact énorme sur le domaine de l’agriculture. Les éleveurs en bénéf{\kern0pt}icient en ef{\kern0pt}fectuant un suivi plus précis de l’alimentation, de la santé et de la sécurité du bétail. Ils peuvent aussi géolocaliser leur bétail en temps réel. Les agriculteurs peuvent aussi recueillir des données sur les engrais et les pesticides nécessaires à leurs cultures \cite{krigman2018agriculture}.
-	
-	\section{Enjeux et déf{\kern0pt}is de l’IoT}
-	L’internet des objets soulève un nombre important de questions, mais le plus important porte certainement sur la sécurité. Beaucoup de produit connectés, dont certains que nous utilisons au quotidien af{\kern0pt}f{\kern0pt}ichent un réel manque de maturité impliquant de nouvelles préoccupation notamment autour de la conf{\kern0pt}identialité et la sécurité des données.\\
-Mirai est un exemple type de cyberattaques résultant de menaces de sécurité liées à l’IoT.
+		    \item[$\bullet$] \textbf{Modèle du domaine :} également appelé modèle expert, il représente l'expertise de l'enseignant dans le domaine, c'est-à-dire ce qui doit être enseigné. Elle peut être modélisée de trois manières : une approche « boîte noire » : appliquer toute méthode de raisonnement sur le domaine inexpliqué, sans aucune transparence pour l'utilisateur ; un système expert peut expliquer son raisonnement et un modèle cognitif : simuler la manière dont les humains utilisent les connaissances.
+        
+        \item[$\bullet$] \textbf{Un modèle d'apprentissage :} qui peut personnaliser l'apprentissage en tenant compte des spécificités de l'apprenant.
+        
+        \item[$\bullet$] \textbf{Un modèle éducatif :} qui sait enseigner.
 
-\begin{table}[H]
-	\begin{center}
-	\begin{tabular}{|p{3cm}|p{10cm}|}
-		\hline 
-\textbf{Enjeux} & \textbf{Déf{\kern0pt}is} \\ 
-		\hline 
-Architecture & De nombreux chercheurs ont proposé diverses architectures non encore standardisé. \\ 
-		\hline 
-Sécurité & L’échange d’information entre des milliards d’objets connecté sur internet se fait via une connexion réseau sans f{\kern0pt}il. \\ 
-		\hline 
-Conf{\kern0pt}identialité & Les opérations d’accès aux prof{\kern0pt}ils entre objets sans interférences sont dif{\kern0pt}f{\kern0pt}iciles. \\ 
-		\hline 
-Intéroperabilité & Communication machine à machine (M2M), un déf{\kern0pt}i de l’IoT dû à la nécessité de gérer un grand nombre d’objets hétérogènes qui appartiennent à dif{\kern0pt}férentes plates-formes. \\ 
-		\hline 
-Disponibilité & La capacité à fournir des services à tout moment, n’importe où et n’importe quoi est un déf{\kern0pt}is. \\ 
-		\hline 
-Mobilité & L'utilisateur ou les appareils qui se connectent peuvent obtenir les services lors de leurs déplacements, ce qui constitue un déf{\kern0pt}i. \\ 
-		\hline 
-Scalabilité & La possibilité d'ajouter de nouveaux appareils qui n'af{\kern0pt}fecte pas la qualité de services existent est un déf{\kern0pt}i. \\ 
-		\hline 
-	\end{tabular} 
-	\end{center}
-	\caption{Enjeux et déf{\kern0pt}is de l'IoT}
-\end{table}
-	\section{Sécurité, conf{\kern0pt}identialité (privacy) en IoT}
-L’IoT nécessite cinq phases, de la collecte des données, du stockage, du traitement, de la transmission des données à la livraison des données aux utilisateurs f{\kern0pt}inaux sur demande ou non \cite{hu2016security}. Les capteurs collectent dans de nombreux cas des données extrêmement sensible (personnelles). En ef{\kern0pt}fet les objets connectés produisent de grandes quantités de données à la phase de collecte de données et le traitement de cette masse de données implique de nouvelles préoccupations notamment autour de la conf{\kern0pt}identialité et la sécurité des données.
-	\begin{figure}[H]
+    \end{itemize}
+    
+    \section{Educational Data mining}
+    \subsection{Définition}
+    La communauté d'exploration de données appliquée dans l'éducation a défini ce terme comme suit : 
+    « L'exploration de données appliquée dans l'éducation est une discipline qui concerne le développement de méthodes
+     permettant d'explorer les types uniques de données provenant des milieux éducatifs. Ces méthodes sont utilisées 
+     pour mieux comprendre le comportement des apprenants et environnement de leur apprentissage. » \cite{state_of_educational_data_mining_in_2009_a_review_and_future_visions} \\
+    L'exploration de données éducatives (EDM) vise à développer, rechercher et appliquer des méthodes informatisées
+     pour détecter des modèles dans de grandes collections de données éducatives qui seraient autrement difficiles 
+     ou impossibles à analyser en raison de l'énorme volume de données dans lesquelles elles existent \cite{Educational_data_mining_a_survey_from_1995_to_2005}. \\
+    Ce domaine est une forme d'intersection des trois domaines principaux tels que : l'informatique, l'éducation 
+    et les statistiques illustrés dans la figure \ref{domaine_exploration_données}.
+
+    \begin{figure}[H]
 		\begin{center}
-			\includegraphics[width=\textwidth]{IMAGES/ORIGINALS/Défis_de_sécurité_IoT}
+			\includegraphics[width=\textwidth]{images/chapitre1/Principaux domaines liés à l'exploration de données éducatives}
 		\end{center}
-		\caption{Déf{\kern0pt}is de sécurité IoT}
-	\end{figure}
+    \caption{Principaux domaines liés à l'exploration de données éducatives}
+    \label{domaine_exploration_données}
+    \end{figure}
 
-	\subsection{Sécurité pour l’IoT}
-La sécurité est l’af{\kern0pt}faire de tous, elle concerne chacun de nous. Si vous achetez un verrou « intelligent » pour votre porte d’entrée, il est fort probable que vous allez vous faire pirater dans un premier temps puis cambrioler. L’IoT a des avantages et apporte tous celui d’internet à des éléments comme les thermostats et les ampoules par exemple mais sans oublier qu’il apporte également les problèmes d’internet. A présent que les gens ont leur réfrigérateurs, sonnettes, télévisions, ampoules, caméras de sécurité, haut-parleur connectés au Wi-Fi, presque tous les appareils de la maison peuvent être compromis ou rendu inutiles. En ef{\kern0pt}fet les objets connectés peuvent servir de point d’accès à votre réseau avec vos portables, votre PC, bref toute votre vie.\\
+    Les techniques d'exploration de données (EDM) sont devenues plus importantes dans la recherche et le développement en raison du développement rapide de la technologie, de la croissance rapide des connaissances humaines et de l'augmentation du nombre de personnes détenant des systèmes d'enseignement informatisé. \\
+    
+    \subsection{Processus d'application du DM en éducation}
+    Le processus d'application de l'exploration de données appliqué dans l'éducation peut être considéré comme
+    un cycle itératif de formulation, de test et de raffinement d'hypothèses. Dans ce processus, l'objectif n'est pas seulement de transformer les données en connaissances, mais aussi de filtrer les connaissances extraites pour savoir comment les modifier. \\
+    L’environnement éducatif pour améliorer l’apprentissage des apprenants est présenté dans la figure \ref{dataMiningProcess}. Des études ont montré que l'application de l'EDM est similaire au processus Knowledge from Data (KDD). Ce processus commence par la collecte de données à utiliser à partir de l'environnement éducatif. \\
+    Les données brutes obtenues nécessitent un nettoyage et un prétraitement tels que : fusion de données hétérogènes, traitement des données manquantes, conversion de données d'une source de données à une autre, et données, etc. Cette phase nécessite souvent l'utilisation de certaines données techniques minières. \\
+    Le résultat de ce dernier est un modèle capable de structurer les données stockées. Enfin, la dernière étape est l'interprétation et l'évaluation des résultats obtenus \cite{dm_tuteurs}.
 
-La menace qui pèse sur les appareils connectés à Internet ne vient pas uniquement du fait qu’ils sont connectés à Internet, mais aussi parce que les fabricants d’appareils n’ont pas toujours conçu leurs produits en privilégiant la sécurité. À mesure que l'IoT se répand largement, les cyberattaques risquent de devenir de plus en plus physiques (et pas simplement virtuelles) \cite{clearfield2013rethinkingsiot}. Les appareils contrôlés par ordinateur dans les automobiles, tels que les freins, les moteurs, les serrures, les klaxons, les systèmes de chauf{\kern0pt}fage et les tableaux de bord, se sont révélés vulnérables aux attaquants qui ont accès au réseau de bord \cite{andy2013hackers,boyle2010proof}. La possibilité qu'un intrus puisse démarrer à distance le chauf{\kern0pt}fage, régler le climatiseur, déverrouiller les portes, déployer des airbags pendant que vous conduisez sans accident ou tourner le volant d'une voiture en marche est en ef{\kern0pt}fet inquiétante, ef{\kern0pt}frayante.\\
+    \begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=\textwidth]{images/chapitre1/Data mining application process applied in education}
+		\end{center}
+    \caption{Data mining application process applied in education}
+    \label{dataMiningProcess}
+    \end{figure}
 
-Jusque-là l’essentiel des dommages subit par l’IoT a été causé par les botnets. En septembre 2016, une attaque a été mis en place par des centaines de milliers d’objets connecté piraté pour former un énorme botnet appelé Mirai. Ce malware a exploité des vulnérabilités (que les fabricants d’objet connecté ne prenaient pas en compte) dans plus de 600 000 appareils IoT pour créer une attaque massive par déni de service distribué (DDoS). Il avait pour objectif de dénoncer les risques de l’IoT.\\
+    \subsubsection{Les méthodes d’analyse et d’exploration appliquer dans EDM}
+    Certaines méthodes du data mining ont été largement appliquées sur les données issues des systèmes éducatif 
+    afin d’obtenir des connaissances cacher et des modèles. Les méthodes du data mining ont été appliquer dans 
+    plusieurs domaines de recherche tels que : le e-learning, le système de tuteur intelligent, text mining, 
+    réseaux sociaux, web mining, etc. Les méthodes d’analyse et d'exploration de données éducatives sont 
+    tirées de diverses sources littéraires, notamment l'apprentissage automatique, la psychométrie et d'autres 
+    domaines de la modélisation informatique, des statistiques et de la visualisation de l'information. \\
 
-En raison de la vulnérabilité du WPA2(protocole qui sécurise les échanges en Wi-Fi), tout ce qui est connecté à un réseau Wi-Fi risque d’être piraté \cite{kasperski201krack}. L'année suivante après Mirai, une attaque appelée KRACK acronyme de Key Reinstallation Attack (attaque de réinstallation de clé) a infecté presque tous les appareils connectés à Internet connectés au Wi-Fi. L'attaque était paralysante et dif{\kern0pt}f{\kern0pt}icile à résister, en partie parce que l'Internet des objets fonctionne sur de nombreux systèmes d'exploitation essentiellement dif{\kern0pt}férent. Lorsqu'un téléphone ou un ordinateur est touché par un virus, les fabricants de logiciels sont généralement prompts à émettre un correctif. Mais des choses comme les routeurs ou les sonnettes connectées à Internet ne sont pas mis à jour aussi régulièrement que les systèmes d’exploitation informatique pour se protéger contre les vulnérabilités, et beaucoup d'entre elles n'ont pas été construites avec le même type de protocoles de sécurité que les ordinateurs \cite{pardes2020iot}. C’est une réalité, l’IoT nous rend encore plus connecter et cette connexion de tous les instants vient avec son l’eau de risque qu’on ne peut pas ignorer. Les menaces virtuelles vont s’immiscer dans le monde physique, ce qui signif{\kern0pt}ie que le piratage des appareils peut avoir des conséquences dangereuses dans le monde réel.\\
+    \begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=\textwidth]{images/chapitre1/edm techniques}
+		\end{center}
+		\caption{EDM techniques}
+    \end{figure}
 
-L'IoT n'est pas encore arrivé à maturité et est extrêmement vulnérable à toutes sortes de menaces et d'attaques ou vol de données. Les systèmes de prévention ou de récupération utilisés dans le réseau traditionnel et Internet ne peuvent pas être utilisés dans l'IoT en raison de sa connectivité \cite{hu2016security}. Les raisons de sa vulnérabilité sont multiples \cite{atzori2010iot}. Primo, souvent ses composants passent la plupart du temps sans surveillance; et ainsi, il est facile de les attaquer physiquement. Secundo, la plupart des communications sont sans f{\kern0pt}il, ce qui rend l'écoute extrêmement simple. Enf{\kern0pt}in, la plupart des composants IoT sont caractérisés par de faibles capacités en termes à la fois d'énergie et de ressources informatiques (c'est particulièrement le cas pour les composants passifs) et, par conséquent, ils ne peuvent pas mettre en œuvre des schémas complexes prenant en charge la sécurité.\\
-La sécurité des informations et du réseau doit être dotée de propriétés telles que, la conf{\kern0pt}identialité, l'intégrité, l'identif{\kern0pt}ication et la disponibilité. Plus précisément, les problèmes majeurs de l’IoT liés à la sécurité concernent l'authentif{\kern0pt}ication et l'intégrité des données \cite{atzori2010iot} : \\
+    \paragraph{L'induction de modèle supervisée}
 
-	\begin{itemize}
-		\item[$\bullet$] L'authentif{\kern0pt}ication est requise pour établir une connexion entre les appareils et l'échange de nombre de clés publiques et privées via le nœud pour empêcher le vol de données. L'authentif{\kern0pt}ication est dif{\kern0pt}f{\kern0pt}icile car elle nécessite généralement des infrastructures d'authentif{\kern0pt}ication et des serveurs appropriés qui atteignent leur objectif grâce à l'échange de messages appropriés avec d'autres nœuds. Dans l'IoT, de telles approches ne sont pas réalisables étant donné que les étiquettes RFID passives ne peuvent pas échanger trop de messages avec les serveurs d'authentif{\kern0pt}ication. Le même raisonnement s'applique (de manière moins restrictive) aux nœuds de capteur également.\\
-		
-		\item[$\bullet$] Les solutions d'intégrité des données doivent garantir qu'un adversaire ne peut pas modif{\kern0pt}ier les données de la transaction sans que le système détecte le changement. En d’autre terme, elles garantissent que les données qui sont arrivées au nœud récepteur sont inchangées et restent telles que transmises par la source (expéditeur). Un autre facteur critique qui influence l'intégrité des données est la robustesse et les capacités de tolérance aux pannes du système IoT. Les réseaux de capteurs, tels que les solutions RFID, sont également confrontés à d'autres problèmes qui limitent leur capacité à surmonter les problèmes d'intégrité, car bon nombre de leurs composants passent la plupart du temps sans être pris en charge, sans surveillance \cite{musonda2018iot}. Les données peuvent être modif{\kern0pt}iées par des attaquants pendant qu'elles sont stockées dans le nœud ou lorsqu'elles traversent le réseau \cite{karygiannis2007guidelines}. Pour protéger les données contre ces types d'attaque, les protections en lecture et en écriture ainsi que les méthodes d'authentif{\kern0pt}ication sont généralement des solutions courantes à ces problèmes. Les ressources trouvées dans les systèmes IoT courants ne prennent pas en charge les techniques cryptographiques (permettant de stocker, traiter et partager des données protégées sans que le contenu de l'information soit accessible à d'autres parties) typiques en raison des ressources limitées disponibles \cite{musonda2018iot}. L'intégrité de l'Internet des objets doit non seulement être protégée des sources externes mais également des processus internes, tels que l'intégrité des services.
-	\end{itemize}
-	\subsection{Conf{\kern0pt}identialité pour l’IoT}
-Il y a ensuite la question de la conf{\kern0pt}identialité. La conf{\kern0pt}identialité des données est une condition pour que les données ne soient disponibles que pour les utilisateurs autorisés. Elle consiste à garder les données privées plutôt que de les autoriser à être disponibles dans le domaine public.\\
-L’IoT représente un environnement dans lequel la vie privée des individus est fortement menacée. Si des caméras et des microphones sont installés autour de votre maison, ils vous regardent et vous écoutent. Tout dans l'internet des objets collecte des données et toutes ces données sont d’une valeur inestimable. Ainsi, lorsque les entreprises gagneront de l'argent en vous vendant des objets connectés intelligents en premier lieu, leur modèle commercial IoT implique probablement la vente d'au moins certaines de ces données également. Ce qui arrive à ces données est une question de conf{\kern0pt}identialité d'une importance vitale. Toutes les entreprises de maisons intelligentes ne construisent pas leur modèle commercial autour de la collecte et de la vente de vos données, mais certaines le font \cite{ranger2020iot}.\\
+    L'induction de modèle supervisée comprend des techniques d'apprentissage automatique qui déduisent des modèles de prédiction à partir de instances d'entraînement pour lesquelles les valeurs d'un attribut cible sont connues. Les modèles de prédiction acceptent
+    instances en entrée (généralement décrites comme un vecteur d'attribut) et en sortie une prédiction pour la cible attribut. Les modèles qui prédisent des valeurs cibles catégorielles sont appelés modèles de classification ; des modèles qui prédire les valeurs cibles continues sont appelés modèles de régression. Les modèles de prédiction peuvent être basés sur
+    différentes représentations, par exemple, les arbres de décision, les machines à vecteurs de support (les deux classifications) et modèle de régression linéaire (régression) \cite{Scheuer2012}.
 
-De nombreux appareils de dernière génération dans nos maisons sont équipés d'une connectivité qui permet une grande commodité, mais cet avantage a un prix (des risques potentiels d'espionnage et de sécurité). En janvier 2014, Forbes a répertorié de nombreux appareils connectés à Internet tels que des téléviseurs, des appareils de cuisine, des modems(et ISP), des, des caméras, des thermostats(chauf{\kern0pt}fage et climatisation), et des équipements de buanderie qui peuvent déjà « espionner des personnes dans leur propre maison » \cite{steinberg2014spying}. Cela signif{\kern0pt}ie que les détails les plus f{\kern0pt}ins de votre vie personnelle, tels que exposés par votre réfrigérateur intelligent, votre télévision intelligent ou votre haut-parleur intelligent, peuvent être recueillis et vendus à quelqu'un d'autre ou pour faire du chantage. Google et Apple ont tous deux admis, l'an dernier, que les enregistrements capturés par leurs haut-parleurs intelligents étaient examinés par des entrepreneurs, y compris des extraits audio maladroits et intimes.\\
-La sécurisation des échanges de données est nécessaire pour éviter de perdre ou de compromettre la conf{\kern0pt}identialité.
+    \paragraph{L'induction de modèle non supervisée}
 
+    L'induction de modèle non supervisée comprend des techniques d'apprentissage automatique qui déduisent des modèles à partir d'instances d'apprentissage pour lesquelles les valeurs d'un attribut cible ne sont pas connues. 
+    Les méthodes non supervisées utilisent une approche ascendante, c'est-à-dire que les modèles et les structures 
+    sont recherchés dans l'espace d'entrée sans catégories cibles explicitement définies ni exemples étiquetés. 
+    Une approche largement utilisée est le clustering, qui est utilisé pour identifier des groupes d'instances dans 
+    un ensemble d'apprentissage qui sont « similaires » à certains égards. En règle générale, une sorte de mesure de 
+    distance (par exemple, la distance euclidienne) est utilisée pour décider de la similitude des instances. Une fois un 
+    ensemble de clusters a été déterminé, de nouvelles instances peuvent être classées en déterminant le cluster le plus 
+    proche. Un algorithme de clustering bien connu est le clustering k-means \cite{Scheuer2012}.
+    
+    \paragraph{L'estimation des paramètres}
+    L'estimation des paramètres comprend des techniques statistiques pour déduire des paramètres de modèles probabilistes à partir d’un jeu de données. Ces modèles peuvent être utilisés pour prédire la probabilité d'événements d'intérêt. L'approche est basée sur l'hypothèse que le modèle a une forme paramétrique donnée (par exemple, une distribution gaussienne avec les paramètres moyenne et variance). Un exemple d'application en EDM est l'estimation des paramètres Bayesian Knowledge Tracing (BKT). Le BKT est utilisé pour déterminer la probabilité qu'un élève maîtrise une compétence sur la base de l'historique des performances passées. Un modèle BKT peut être compris comme un réseau bayésien dynamique avec quatre paramètres (priorité, estimation, glissement et taux d'apprentissage). Ces paramètres peuvent être déterminés, par exemple, avec l'algorithme Espérance-Maximisation. Aussi l’utilisation de la théorie des réponses aux items (Item Response Theory IRT) permet de capter plus de nuances dans le comportement humais et d’estimer la capacité de l’apprenant à réussir un item et aussi d’estimer la difficulté, la discrimination des items \cite{Scheuer2012}.
 
-	\section{Conclusion}
-L’IoT est un concept en évolution constante dont l’objectif est d’étendre le réseau internet en interconnectant les objets connectés, ainsi ef{\kern0pt}fectué des échanges de données aux objets du monde physique. Ces objets connectés à internet peuvent prendre la forme de n’importe quel objet du quotidien.\\
-Le terme \og Internet des Objets \fg{} a été inventé en 1999, initialement pour promouvoir la technologie RFID. Il existe plusieurs architectures de l’IoT tels que l’architecture basé trois-couches, basé sur middleware, basé sur SOA et basé cinq-couches.\\
-Le résultat attendu des objets connectés est de s’adapter non seulement à nos besoins mais aussi à notre environnement.\\
-Tout appareil connecté à Internet présente un risque élevé, et les appareils IoT ne font pas exception. L’IoT peut être vu comme « Interconnections of Threats » c’est-à-dire interconnexions des menaces dû à l’extension du réseau internet. La sécurité et la conf{\kern0pt}identialité des données sont de grands déf{\kern0pt}is dans l’IoT. Lors de la transmission transparente des données, il est important de se cacher des appareils d'observation sur Internet qui sont susceptibles de nous espionner.\\
-Dans le prochain chapitre, nous allons aborder les notions de base de la sécurité informatique.
+    \paragraph{L'exploration de relations (Relationship mining)}
+    L'exploration de relations concerne l'identification des relations entre les variables, des relations qui peuvent être de nature associative, corrélationnelle, séquentielle ou causale. Par exemple, une approche courante de l'exploration de règles d'association consiste à apprendre les règles SI-ALORS qui dépassent un seuil minimum de « support » et de « confiance ». La prise en charge indique la fréquence relative des transactions qui correspondent à la fois aux parties IF et ALORS de la règle. La confiance dénote la fréquence relative des transactions qui correspondent à la partie THEN de la règle dans l'ensemble de transactions qui correspondent à la partie IF. Apriori est, par exemple, un algorithme de règle d'association classique. Un exemple d'application en EDM est l'identification d'erreurs qui se produisent fréquemment ensemble (par exemple, les étudiants qui ont commis les erreurs A et B ont également souvent commis l'erreur C) \cite{Scheuer2012}.
+    
+    \paragraph{La distillation des données pour le jugement humain (Distillation of data for human judgment)}
+    La distillation des données pour le jugement humain vise à représenter les données de manière intelligible à l'aide de statistiques, méthodes de visualisation et interfaces d'information interactives. Par exemple, les performances moyennes les scores peuvent être calculés pour chaque élève et présentés à un enseignant par ordre croissant dans un graphique à barres. Un autre exemple est les courbes d'apprentissage, qui tracent les performances d'un élève (par exemple, le temps de réponse) par rapport au nombre d'occasions de pratiquer une compétence. Une courbe d'apprentissage idéale montre que la performance s'améliore en douceur et de façon monotone, suivant approximativement une loi de puissance ou une fonction exponentielle. D'un autre côté, les courbes d'apprentissage avec des pointes indiquent qu'une autre compétence pourrait interférer avec la compétence réellement modélisée, c'est-à-dire que le modèle de compétence pourrait être amélioré \cite{Scheuer2012}.
+    
+    \paragraph{Discovery with models}
+    Discovery with models (découverte avec des modèles) comprend des approches qui amorcent des modèles déjà existants pour faire des découvertes plutôt que de calculer de nouveaux modèles à partir de zéro. Par exemple, un modèle de prédiction pourrait être appliqué à un ensemble de données pour prédire les valeurs d'une catégorie cible d'intérêt. Les prédictions elles-mêmes pourraient être utilisés à nouveau comme données dans d'autres analyses, par exemple, ils pourraient être corrélés avec une catégorie cible d’un autre modèle de prédiction. Un autre exemple consiste à scruter les différentes composantes d'un modèle de prédiction pour en savoir plus sur les facteurs qui influencent la prédiction \cite{Scheuer2012}.
+    
+    \section{Conclusion}
+    Dans ce chapitre, nous avons passé en revue le domaine de l'exploration de données éducatives, en présentant brièvement ses applications et ses techniques. L'application des méthodes d'exploration de données dans le secteur de l'éducation est un phénomène intéressant. Les techniques d'exploration de données dans les organisations éducatives nous aident à en apprendre davantage sur les performances des apprenants, le comportement des apprenants, la conception des programmes et à motiver les apprenants sur divers paramètres.
 	
 	

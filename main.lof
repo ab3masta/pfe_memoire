@@ -1,50 +1,28 @@
 \babel@toc {english}{}
 \babel@toc {french}{}
-\babel@toc {english}{}
 \babel@toc {french}{}
-\babel@toc {french}{}
-\contentsline {xpart}{\'Etat de l'art}{5}{part.1}%
+\contentsline {xpart}{\'Etat de l'art}{2}{part.1}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Internet des objets}{5}{chapter.1}%
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Internet des Objets\relax }}{9}{figure.caption.8}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Internet des Objets\relax }}{10}{figure.caption.9}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Diverses architectures de l'IoT\relax }}{12}{figure.caption.10}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Domaines d'application de l'IoT\relax }}{14}{figure.caption.11}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Déf{\kern 0pt}is de sécurité IoT\relax }}{17}{figure.caption.13}%
+\contentsline {xchapter}{Educational data minig}{2}{chapter.1}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Les étapes de l'extraction de connaissances à partir de données\relax }}{4}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces ITS architecture\relax }}{5}{figure.caption.7}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Principaux domaines liés à l'exploration de données éducatives\relax }}{7}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Data mining application process applied in education\relax }}{8}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces EDM techniques\relax }}{9}{figure.caption.10}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sécurité informatique et Cybersécurité}{22}{chapter.2}%
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Critères de sécurité informatique \cite {ref4}\relax }}{24}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Accès à une ressource \cite {ref4}\relax }}{27}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Application de sécurité informatique \cite {ref4}\relax }}{28}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces main-in-the-middle\relax }}{36}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Ransomware\relax }}{39}{figure.caption.18}%
+\contentsline {xchapter}{Modèle de l'apprenant et découverte des prérequis}{12}{chapter.2}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Composantes du modèle de l'apprenant\relax }}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Deux alternatives pour modéliser les relations d'agrégation.\relax }}{19}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Agrégation de modélisation de réseau bayésien et relations préalables simultanément\relax }}{21}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Modèles d'équations structurelles\relax }}{22}{figure.caption.16}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Attaques DDoS}{43}{chapter.3}%
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Architecture d'attaque DDoS\relax }}{45}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Attaque HTTP Flood\relax }}{47}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Attaque SYN Flood\relax }}{49}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Attaque Smurf\relax }}{50}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Attaque DNS Flood\relax }}{51}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Attaque ICMP Flood\relax }}{52}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Architecture d'attaque par amplification DNS\relax }}{54}{figure.caption.25}%
-\contentsline {xpart}{Contributions}{60}{part.2}%
+\contentsline {xchapter}{L'approche items-to-skills mapping}{23}{chapter.3}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Le Deep Learning et les Techniques de Détection d'intrusions}{60}{chapter.4}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces l’architecture CIDF \cite {zaidi}\relax }}{63}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces L’architecture IDWG \cite {zaidi}\relax }}{64}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Classification des différents types d'IDS \cite {reftypeids}\relax }}{65}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces La détection d'intrusion basée sur l'hôte \cite {refphototypids}\relax }}{66}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces La Détection d'Intrusion Réseau (NIDS) \cite {refphototypids}\relax }}{67}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Position du Deep Learning dans l'IA \cite {refclassroom}\relax }}{71}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Représentation d'un neurone formel\relax }}{72}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces classification des modèles de deep learning\relax }}{75}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces L'architecture de notre approche \relax }}{80}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Résumé des attaques du Dataset Iot Botnet \cite {kdd}\relax }}{81}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Nombres d'éléments par types de datasets\relax }}{81}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Structure de l'AE\relax }}{84}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Structure du DNN\relax }}{85}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces structure du dataset\relax }}{88}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Analyse des données\relax }}{88}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Entrainement du modèle DNN\relax }}{89}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Evaluation du modèle\relax }}{89}{figure.caption.44}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces prédiction d'attaques\relax }}{90}{figure.caption.45}%
+\contentsline {xchapter}{Fiabilité et l'accord pour les données d'observations}{25}{chapter.4}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Inférence bayésienne et la théorie de la réponse aux items}{27}{chapter.5}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Clustering}{29}{chapter.6}%
+\contentsline {xpart}{Contributions}{32}{part.2}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Contribution and Results}{32}{chapter.7}%

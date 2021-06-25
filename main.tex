@@ -39,7 +39,7 @@
 \usepackage{array}%%%%%%%%%AFFICHAGE DES LETTRES EN VERTICALE
 \usepackage{eso-pic}% Nécessaire pour mettre des images en arrière plan
 %\usepackage{newtxtext,newtxmath}
-%\input{pagedegarde}
+\input{pagedegarde}
 %%%%%%%%%%%%%%% HEADER FOOTER %%%%%%%%%%%%%%%%
 \usepackage{fancyhdr}
 \fancyhf{}
@@ -68,10 +68,10 @@
 \fontfamily{ptm}\selectfont
 
 \begin{singlespace}
-\pagedegarde 
+\pagedegarde
 \end{singlespace}
 \pagenumbering{roman}
-\input{abstractresume}%%%%% RESUME DU MEMOIRE FRANCAIS ET EN ANGLAIS %%%%%
+%%\input{abstractresume}%%%%% RESUME DU MEMOIRE FRANCAIS ET EN ANGLAIS %%%%%
 \selectlanguage{french}
 \setcounter{page}{5}%%%%%%%%%% debut numeros de pied de pages %%%%%%%%%%%%%%
 \begin{singlespace}
@@ -85,15 +85,18 @@
  %%%%%%%%%%%%%%%pour ajuster les minitocs%%%%%%%%%%%%%%%%%%%%%%%
 \selectlanguage{french}
 \pagenumbering{arabic}
-\input{introduction}
+%%\input{introduction}
 \firstpart
 \adjustmtc[2]
 \input{premierchapitre}
 \input{deuxiemechapitre}
 \input{troisiemechapitre}
+\input{quatriemechapitre}
+\input{cinquiemechapitre}
+\input{sixiemechapitre}
 %%%%%%%%CONTRIBUTIONS%%%%%%%%%%
 \secondpart
-\input{quatriemechapitre}
+\input{septiemechapitre}
 \input{conclusiongenerale}
 %%%%%%%%%% REFERENCES BIBLIOGRAPHIQUES %%%%%%%%%
 \clearpage	

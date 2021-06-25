@@ -1,0 +1,78 @@
+///////////////////         Chapitre 1          //////////////////////
+
+@Inbook{Scheuer2012,
+author="Scheuer, Oliver and McLaren, Bruce M.",
+editor="Seel, Norbert M.",
+title="Educational Data Mining",
+bookTitle="Encyclopedia of the Sciences of Learning",
+year="2012",
+publisher="Springer US",
+address="Boston, MA",
+pages="1075--1079",
+isbn="978-1-4419-1428-6",
+doi="10.1007/978-1-4419-1428-6_618",
+url="https://doi.org/10.1007/978-1-4419-1428-6_618"
+}
+@book{data_mining_concepts_techniques,
+author = {Han, Jiawei and Kamber, Micheline},
+year = {2000},
+month = {01},
+pages = {},
+title = {Data Mining: Concepts and Techniques},
+isbn = {1-55860-489-8},
+journal = {San Francisco: Morgan kaufmann;}
+}
+@article{Educational_data_mining_a_survey_from_1995_to_2005,
+author = {Romero, Cristóbal and Ventura, Sebastian},
+year = {2007},
+month = {07},
+pages = {135-146},
+title = {Educational data mining: A survey from 1995 to 2005},
+volume = {33},
+journal = {Expert Systems with Applications},
+doi = {10.1016/j.eswa.2006.04.005}
+}
+@phdthesis{buche:tel-00011223,
+  TITLE = {{Un syst{\`e}me tutoriel intelligent et adaptatif pour l'apprentissage de comp{\'e}tences en environnement virtuel de formation}},
+  AUTHOR = {Buche, C{\'e}dric},
+  URL = {https://tel.archives-ouvertes.fr/tel-00011223},
+  SCHOOL = {{Universit{\'e} de Bretagne occidentale - Brest}},
+  YEAR = {2005},
+  MONTH = Nov,
+  KEYWORDS = {virtual environment for training ; multi-agent system ; intelligent tutoring system ; classifiers system. ; syst{\`e}me de classeurs ; Environnement virtuel de formation ; syst{\`e}me multi-agents ; syst{\`e}me tutoriel intelligent ; syst{\`e}me de classeurs.},
+  TYPE = {Theses},
+  PDF = {https://tel.archives-ouvertes.fr/tel-00011223/file/rapportThese_CedricBuche.pdf},
+  HAL_ID = {tel-00011223},
+  HAL_VERSION = {v1},
+}
+
+@book{handbook_of_educational_data_mining,
+author = {Romero, C., Ventura, S., Pechenizkiy, M., & Baker},
+year = {2010},
+title = {Handbook of Educational Data Mining (1st ed.)},
+isbn = {1-55860-489-8},
+journal = {CRC Press},
+doi = {https://doi.org/10.1201/b10274}
+}
+
+@article{state_of_educational_data_mining_in_2009_a_review_and_future_visions,
+author = {Baker, Ryan and Yacef, Kalina},
+year = {2009},
+month = {01},
+pages = {3-17},
+title = {The State of Educational Data Mining in 2009: A Review and Future Visions},
+volume = {1},
+journal = {Journal of Educational Data Mining}
+}
+
+@phdthesis{Data_mining_pour_la_modélisation_des_tuteurs,
+  TITLE = {Utilisation des Techniques de Data Mining pour la Modélisation des Tuteurs},
+  AUTHOR = {S. Bendjebar},
+  URL = {https://tel.archives-ouvertes.fr/tel-00011223},
+  SCHOOL = {Université 8 mai 1945 Guelma},
+  YEAR = {2016},
+  TYPE = {Theses},
+  PDF = {http://dspace.univ-guelma.dz:8080/xmlui/handle/123456789/84},
+}
+
+/////////////////////////////            Chapitre 2        ///////////////////////////

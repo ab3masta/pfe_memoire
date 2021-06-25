@@ -1,162 +1,62 @@
 \babel@toc {english}{}
 \babel@toc {french}{}
-\babel@toc {english}{}
+\contentsline {chapter}{Table des figures}{vii}{chapter*.3}%
+\contentsline {chapter}{Liste des tableaux}{viii}{chapter*.4}%
+\contentsline {part}{Liste des Acronymes}{viii}{chapter*.4}%
 \babel@toc {french}{}
-\contentsline {chapter}{Table des figures}{ix}{chapter*.3}%
-\contentsline {chapter}{Liste des tableaux}{x}{chapter*.4}%
-\contentsline {part}{Liste des Acronymes}{x}{chapter*.4}%
-\babel@toc {french}{}
-\contentsline {part}{Introduction Générale}{1}{chapter*.5}%
-\contentsline {part}{I\hspace {1em}\'Etat de l'art}{4}{part.1}%
-\contentsline {xpart}{\'Etat de l'art}{5}{part.1}%
-\contentsline {chapter}{\numberline {1}Internet des objets}{5}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Introduction}{6}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Historique}{6}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Déf{\kern 0pt}inition}{8}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Caractéristiques}{10}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Architecture de l’IoT}{12}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Architecture à trois couches}{12}{subsection.1.5.1}%
-\contentsline {subsubsection}{\numberline {1.5.1.1}Couche perception }{12}{subsubsection.1.5.1.1}%
-\contentsline {subsubsection}{\numberline {1.5.1.2}Couche réseau}{12}{subsubsection.1.5.1.2}%
-\contentsline {subsubsection}{\numberline {1.5.1.3}Couche application}{13}{subsubsection.1.5.1.3}%
-\contentsline {subsection}{\numberline {1.5.2}Architecture à cinq couches}{13}{subsection.1.5.2}%
-\contentsline {subsubsection}{\numberline {1.5.2.1}Couche Objets}{13}{subsubsection.1.5.2.1}%
-\contentsline {subsubsection}{\numberline {1.5.2.2}Couche Abstraction Objet}{13}{subsubsection.1.5.2.2}%
-\contentsline {subsubsection}{\numberline {1.5.2.3}Couche Gestion des Services}{13}{subsubsection.1.5.2.3}%
-\contentsline {subsubsection}{\numberline {1.5.2.4}Couche Application}{13}{subsubsection.1.5.2.4}%
-\contentsline {subsubsection}{\numberline {1.5.2.5}Couche Business}{14}{subsubsection.1.5.2.5}%
-\contentsline {section}{\numberline {1.6}Enjeux et déf{\kern 0pt}is de l’IoT}{16}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Sécurité, conf{\kern 0pt}identialité (privacy) en IoT}{16}{section.1.7}%
-\contentsline {subsection}{\numberline {1.7.1}Sécurité pour l’IoT}{17}{subsection.1.7.1}%
-\contentsline {subsection}{\numberline {1.7.2}Conf{\kern 0pt}identialité pour l’IoT}{20}{subsection.1.7.2}%
-\contentsline {section}{\numberline {1.8}Conclusion}{21}{section.1.8}%
-\contentsline {chapter}{\numberline {2}Sécurité informatique et Cybersécurité}{22}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introduction : }{23}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Les objectifs de sécurité informatique : }{24}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}La confidentialité : }{24}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}L’intégrité :}{25}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}La Disponibilité :}{25}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}La traçabilité : }{26}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}L’authentification et l’identification :}{26}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}La non-répudiation et l’imputabilité : }{27}{subsection.2.2.6}%
-\contentsline {section}{\numberline {2.3}Application de la sécurité informatique : }{27}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}La cybersécurité :}{28}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}La sécurité des réseau : }{29}{subsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.2.1}Protocoles TLS/SSL :}{29}{subsubsection.2.3.2.1}%
-\contentsline {subsubsection}{\numberline {2.3.2.2}Le protocole IPSec :}{29}{subsubsection.2.3.2.2}%
-\contentsline {subsection}{\numberline {2.3.3}La sécurité logique et applicative :}{30}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}La sécurité des informations : }{30}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}La sécurité d'exploitation : }{31}{subsection.2.3.5}%
-\contentsline {section}{\numberline {2.4}Anatomie d'une attaque :}{31}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Les types de menaces et d’attaques : }{32}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}La cybercriminalité : }{32}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}DDoS (Distributed Denied of Service) : }{33}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}L'ingénierie sociale : }{33}{subsection.2.5.3}%
-\contentsline {subsubsection}{\numberline {2.5.3.1}L’Hameçonnage : }{34}{subsubsection.2.5.3.1}%
-\contentsline {subsubsection}{\numberline {2.5.3.2}Le vishing : }{34}{subsubsection.2.5.3.2}%
-\contentsline {subsection}{\numberline {2.5.4}Attaque par brute force et par dictionnaire : }{35}{subsection.2.5.4}%
-\contentsline {subsection}{\numberline {2.5.5}Attaque par Homme du milieu :}{35}{subsection.2.5.5}%
-\contentsline {subsection}{\numberline {2.5.6}Logiciels Malveillants (Malware) :}{36}{subsection.2.5.6}%
-\contentsline {subsubsection}{\numberline {2.5.6.1}Les virus : }{36}{subsubsection.2.5.6.1}%
-\contentsline {subsubsection}{\numberline {2.5.6.2}Chevaux de Troie : }{37}{subsubsection.2.5.6.2}%
-\contentsline {subsubsection}{\numberline {2.5.6.3}Les keyloggers : }{37}{subsubsection.2.5.6.3}%
-\contentsline {subsubsection}{\numberline {2.5.6.4}Les vers : }{37}{subsubsection.2.5.6.4}%
-\contentsline {subsubsection}{\numberline {2.5.6.5}Les logiciels espions : }{38}{subsubsection.2.5.6.5}%
-\contentsline {subsubsection}{\numberline {2.5.6.6}Les botnets : }{38}{subsubsection.2.5.6.6}%
-\contentsline {subsubsection}{\numberline {2.5.6.7}Ransomwares : }{39}{subsubsection.2.5.6.7}%
-\contentsline {section}{\numberline {2.6}Les services et mécanismes de sécurité : }{40}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Audit de sécurité :}{40}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Journalisation (logs) :}{40}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}Antivirus :}{40}{subsection.2.6.3}%
-\contentsline {subsection}{\numberline {2.6.4}Utilisation de VPN :}{41}{subsection.2.6.4}%
-\contentsline {subsection}{\numberline {2.6.5}Systèmes de détection d'intrusion (IDS) :}{41}{subsection.2.6.5}%
-\contentsline {subsection}{\numberline {2.6.6}Les pare feu : }{41}{subsection.2.6.6}%
-\contentsline {subsection}{\numberline {2.6.7}La reprise après sinistre et la continuité des activités : }{41}{subsection.2.6.7}%
-\contentsline {subsection}{\numberline {2.6.8}La formation des utilisateurs finaux : }{42}{subsection.2.6.8}%
-\contentsline {section}{\numberline {2.7}Conclusion : }{42}{section.2.7}%
-\contentsline {chapter}{\numberline {3}Attaques DDoS}{43}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduction}{44}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Définition d’attaque DDoS}{45}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Principe de fonctionnement des attaques DDoS}{46}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Catégories d’attaque DDoS}{46}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Attaques de la couche d’application}{47}{subsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.1.1}HTTP Flood}{47}{subsubsection.3.4.1.1}%
-\contentsline {subsubsection}{\numberline {3.4.1.2}Slowloris}{48}{subsubsection.3.4.1.2}%
-\contentsline {subsubsection}{\numberline {3.4.1.3}Imitation de la navigation des utilisateurs}{48}{subsubsection.3.4.1.3}%
-\contentsline {subsection}{\numberline {3.4.2}Attaques d'épuisement d'état TCP}{48}{subsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.2.1}SYN Flood}{49}{subsubsection.3.4.2.1}%
-\contentsline {subsubsection}{\numberline {3.4.2.2}Attaque Smurf}{50}{subsubsection.3.4.2.2}%
-\contentsline {subsubsection}{\numberline {3.4.2.3}DNS Flood}{51}{subsubsection.3.4.2.3}%
-\contentsline {subsection}{\numberline {3.4.3}Attaques volumétriques}{51}{subsection.3.4.3}%
-\contentsline {subsubsection}{\numberline {3.4.3.1}UDP Flood}{52}{subsubsection.3.4.3.1}%
-\contentsline {subsubsection}{\numberline {3.4.3.2}ICMP Flood}{52}{subsubsection.3.4.3.2}%
-\contentsline {subsubsection}{\numberline {3.4.3.3}Fragmentation IP/ICMP}{53}{subsubsection.3.4.3.3}%
-\contentsline {subsubsection}{\numberline {3.4.3.4}Amplification DNS}{54}{subsubsection.3.4.3.4}%
-\contentsline {subsection}{\numberline {3.4.4}Attaques Zero-day}{54}{subsection.3.4.4}%
-\contentsline {section}{\numberline {3.5}Motivations}{55}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Cyberactivisme}{55}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Vandalisme}{55}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Concurrence}{56}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Extorsion}{56}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Diversion}{56}{subsection.3.5.5}%
-\contentsline {section}{\numberline {3.6}Prévention contre les attaques DDoS}{56}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Rate limiting}{57}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Routage de trou noir (blackhole routing)}{57}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Pare-feu d’application web}{58}{subsection.3.6.3}%
-\contentsline {section}{\numberline {3.7}Conclusion}{58}{section.3.7}%
-\contentsline {part}{II\hspace {1em}Contributions}{59}{part.2}%
-\contentsline {xpart}{Contributions}{60}{part.2}%
-\contentsline {chapter}{\numberline {4}Le Deep Learning et les Techniques de Détection d'intrusions}{60}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{61}{section.4.1}%
-\contentsline {section}{\numberline {4.2}systémes de détection d'intrusion}{62}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Définition }{62}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Architecture de base d'un IDS}{62}{subsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.2.1}Architecture CIDF}{63}{subsubsection.4.2.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2.2}L’architecture IDWG}{63}{subsubsection.4.2.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Classification des systèmes de détection d'intrusion}{64}{subsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.3.1}L’emplacement d’IDS }{65}{subsubsection.4.2.3.1}%
-\contentsline {paragraph}{\numberline {4.2.3.1.1}Détection d'intrusion basée sur l'hôte (HIDS) : }{65}{paragraph.4.2.3.1.1}%
-\contentsline {paragraph}{\numberline {4.2.3.1.2} Détection d'Intrusion basée sur une application (AIDS):}{66}{paragraph.4.2.3.1.2}%
-\contentsline {paragraph}{\numberline {4.2.3.1.3} La Détection d'Intrusion Réseau (NIDS) :}{66}{paragraph.4.2.3.1.3}%
-\contentsline {subsubsection}{\numberline {4.2.3.2}Mode de détection }{67}{subsubsection.4.2.3.2}%
-\contentsline {paragraph}{\numberline {4.2.3.2.1}L'Approche comportementale :}{67}{paragraph.4.2.3.2.1}%
-\contentsline {paragraph}{\numberline {4.2.3.2.2}La reconnaissance de signature :}{68}{paragraph.4.2.3.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3.3}Types de réponse}{68}{subsubsection.4.2.3.3}%
-\contentsline {paragraph}{\numberline {4.2.3.3.1} La réponse passive :}{68}{paragraph.4.2.3.3.1}%
-\contentsline {paragraph}{\numberline {4.2.3.3.2} La réponse active :}{69}{paragraph.4.2.3.3.2}%
-\contentsline {subsubsection}{\numberline {4.2.3.4}La fréquence d'utilisation }{69}{subsubsection.4.2.3.4}%
-\contentsline {paragraph}{\numberline {4.2.3.4.1}Utilisation continue :}{69}{paragraph.4.2.3.4.1}%
-\contentsline {paragraph}{\numberline {4.2.3.4.2} Utilisation périodique :}{69}{paragraph.4.2.3.4.2}%
-\contentsline {subsection}{\numberline {4.2.4}Exemples d'IDS existants }{69}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Critère de choix d'un IDS}{70}{subsection.4.2.5}%
-\contentsline {section}{\numberline {4.3}Le Deep Learning}{71}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Définition et Historique}{71}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Les réseaux de neurones artificiels}{72}{subsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.2.1}Neurone artificiel :}{72}{subsubsection.4.3.2.1}%
-\contentsline {subsubsection}{\numberline {4.3.2.2}Reseaux de neurones Profonds(DNN)}{73}{subsubsection.4.3.2.2}%
-\contentsline {subsection}{\numberline {4.3.3}Classification des modèles de Deep Learning}{75}{subsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.3.1}Apprentissage supervisé}{76}{subsubsection.4.3.3.1}%
-\contentsline {paragraph}{\numberline {4.3.3.1.1}Les réseaux de neurones convolutifs : }{76}{paragraph.4.3.3.1.1}%
-\contentsline {subsubsection}{\numberline {4.3.3.2}Apprentissage non supervisé}{76}{subsubsection.4.3.3.2}%
-\contentsline {paragraph}{\numberline {4.3.3.2.1} Auto encodeurs : }{77}{paragraph.4.3.3.2.1}%
-\contentsline {paragraph}{\numberline {4.3.3.2.2}Réseaux de neurones récurrents (RNN) :}{77}{paragraph.4.3.3.2.2}%
-\contentsline {paragraph}{\numberline {4.3.3.2.3}Machines de Boltzmann :}{77}{paragraph.4.3.3.2.3}%
-\contentsline {subsubsection}{\numberline {4.3.3.3}Hybride }{77}{subsubsection.4.3.3.3}%
-\contentsline {paragraph}{\numberline {4.3.3.3.1} Génerateurs Adversatifs :}{78}{paragraph.4.3.3.3.1}%
-\contentsline {section}{\numberline {4.4}\'Etudes expérimentales}{78}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Outils de développement}{78}{subsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.1.1}Materiels}{78}{subsubsection.4.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.4.1.2}JAVA}{78}{subsubsection.4.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.4.1.3}DeepLearning4j}{79}{subsubsection.4.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.4.1.4}IDE IntelliJ}{79}{subsubsection.4.4.1.4}%
-\contentsline {subsection}{\numberline {4.4.2}Mise en œuvre}{79}{subsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.1}Choix du Dataset : }{80}{subsubsection.4.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.4.2.2}Préparation des données(pre-processing):}{81}{subsubsection.4.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.3}Définition du modèle}{83}{subsubsection.4.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.4.2.4}Entrainement et test du modèle}{85}{subsubsection.4.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.4.2.5}Interface}{88}{subsubsection.4.4.2.5}%
-\contentsline {subsection}{\numberline {4.4.3}\'Evaluation }{90}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Comparaison avec d'autres approches}{92}{subsection.4.4.4}%
-\contentsline {section}{\numberline {4.5}Discussion}{92}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Conclusion}{93}{section.4.6}%
-\contentsline {part}{Conclusion Générale}{93}{section.4.6}%
+\contentsline {part}{I\hspace {1em}\'Etat de l'art}{1}{part.1}%
+\contentsline {xpart}{\'Etat de l'art}{2}{part.1}%
+\contentsline {chapter}{\numberline {1}Educational data minig}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Data mining}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Définition}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Les méthodes du data mining}{4}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Intelligent Tutorial Systems (ITS)}{4}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Définition}{4}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}ITS architecture}{5}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Educational Data mining}{6}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Définition}{6}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Processus d'application du DM en éducation}{7}{subsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.2.1}Les méthodes d’analyse et d’exploration appliquer dans EDM}{8}{subsubsection.1.4.2.1}%
+\contentsline {paragraph}{\numberline {1.4.2.1.1}L'induction de modèle supervisée}{9}{paragraph.1.4.2.1.1}%
+\contentsline {paragraph}{\numberline {1.4.2.1.2}L'induction de modèle non supervisée}{9}{paragraph.1.4.2.1.2}%
+\contentsline {paragraph}{\numberline {1.4.2.1.3}L'estimation des paramètres}{10}{paragraph.1.4.2.1.3}%
+\contentsline {paragraph}{\numberline {1.4.2.1.4}L'exploration de relations (Relationship mining)}{10}{paragraph.1.4.2.1.4}%
+\contentsline {paragraph}{\numberline {1.4.2.1.5}La distillation des données pour le jugement humain (Distillation of data for human judgment)}{10}{paragraph.1.4.2.1.5}%
+\contentsline {paragraph}{\numberline {1.4.2.1.6}Discovery with models}{11}{paragraph.1.4.2.1.6}%
+\contentsline {section}{\numberline {1.5}Conclusion}{11}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Modèle de l'apprenant et découverte des prérequis}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Learner Model}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Définition}{13}{subsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Caractéristiques des méthodes utilisées pour la modélisation de l'apprenant}{13}{subsubsection.2.2.1.1}%
+\contentsline {subsection}{\numberline {2.2.2}Composantes du modèle de l'apprenant}{16}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}Modèle cognitif}{17}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}Modèle d'inférence}{17}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.3}Modèle émotionnel}{17}{subsubsection.2.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.2.4}Utilitaire du modèle de l'apprenant}{18}{subsubsection.2.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.2.5}Types de modèles d'apprentissage}{18}{subsubsection.2.2.2.5}%
+\contentsline {section}{\numberline {2.3}Modèle de compétence}{18}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Granularité}{19}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Relations pré-requises}{20}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Découverte des prérequis}{21}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Conclusion}{22}{section.2.5}%
+\contentsline {chapter}{\numberline {3}L'approche items-to-skills mapping}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{24}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Conclusion}{24}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Fiabilité et l'accord pour les données d'observations}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{26}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Conclusion}{26}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Inférence bayésienne et la théorie de la réponse aux items}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{28}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Conclusion}{28}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Clustering}{29}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{30}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Conclusion}{30}{section.6.2}%
+\contentsline {part}{II\hspace {1em}Contributions}{31}{part.2}%
+\contentsline {xpart}{Contributions}{32}{part.2}%
+\contentsline {chapter}{\numberline {7}Contribution and Results}{32}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduction}{33}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Conclusion}{33}{section.7.2}%
+\contentsline {part}{Conclusion Générale}{33}{section.7.2}%
+\contentsline {chapter}{Bibliographie}{35}{chapter*.18}%

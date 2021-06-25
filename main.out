@@ -1,155 +1,57 @@
 \BOOKMARK [0][-]{chapter*.3}{Table des figures}{}% 1
 \BOOKMARK [0][-]{chapter*.4}{Liste des tableaux}{}% 2
 \BOOKMARK [-1][-]{chapter*.4}{Liste des Acronymes}{}% 3
-\BOOKMARK [-1][-]{chapter*.5}{Introduction G\351n\351rale}{}% 4
-\BOOKMARK [-1][-]{part.1}{I \311tat de l'art}{}% 5
-\BOOKMARK [0][-]{chapter.1}{Internet des objets}{part.1}% 6
-\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.2}{Historique}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.3}{D\351finition}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.4}{Caract\351ristiques}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.5}{Architecture de l\220IoT}{chapter.1}% 11
-\BOOKMARK [2][-]{subsection.1.5.1}{Architecture \340 trois couches}{section.1.5}% 12
-\BOOKMARK [3][-]{subsubsection.1.5.1.1}{Couche perception }{subsection.1.5.1}% 13
-\BOOKMARK [3][-]{subsubsection.1.5.1.2}{Couche r\351seau}{subsection.1.5.1}% 14
-\BOOKMARK [3][-]{subsubsection.1.5.1.3}{Couche application}{subsection.1.5.1}% 15
-\BOOKMARK [2][-]{subsection.1.5.2}{Architecture \340 cinq couches}{section.1.5}% 16
-\BOOKMARK [3][-]{subsubsection.1.5.2.1}{Couche Objets}{subsection.1.5.2}% 17
-\BOOKMARK [3][-]{subsubsection.1.5.2.2}{Couche Abstraction Objet}{subsection.1.5.2}% 18
-\BOOKMARK [3][-]{subsubsection.1.5.2.3}{Couche Gestion des Services}{subsection.1.5.2}% 19
-\BOOKMARK [3][-]{subsubsection.1.5.2.4}{Couche Application}{subsection.1.5.2}% 20
-\BOOKMARK [3][-]{subsubsection.1.5.2.5}{Couche Business}{subsection.1.5.2}% 21
-\BOOKMARK [1][-]{section.1.6}{Enjeux et d\351fis de l\220IoT}{chapter.1}% 22
-\BOOKMARK [1][-]{section.1.7}{S\351curit\351, confidentialit\351 \(privacy\) en IoT}{chapter.1}% 23
-\BOOKMARK [2][-]{subsection.1.7.1}{S\351curit\351 pour l\220IoT}{section.1.7}% 24
-\BOOKMARK [2][-]{subsection.1.7.2}{Confidentialit\351 pour l\220IoT}{section.1.7}% 25
-\BOOKMARK [1][-]{section.1.8}{Conclusion}{chapter.1}% 26
-\BOOKMARK [0][-]{chapter.2}{S\351curit\351 informatique et Cybers\351curit\351}{part.1}% 27
-\BOOKMARK [1][-]{section.2.1}{Introduction : }{chapter.2}% 28
-\BOOKMARK [1][-]{section.2.2}{Les objectifs de s\351curit\351 informatique : }{chapter.2}% 29
-\BOOKMARK [2][-]{subsection.2.2.1}{La confidentialit\351 : }{section.2.2}% 30
-\BOOKMARK [2][-]{subsection.2.2.2}{L\220int\351grit\351 :}{section.2.2}% 31
-\BOOKMARK [2][-]{subsection.2.2.3}{La Disponibilit\351 :}{section.2.2}% 32
-\BOOKMARK [2][-]{subsection.2.2.4}{La tra\347abilit\351 : }{section.2.2}% 33
-\BOOKMARK [2][-]{subsection.2.2.5}{L\220authentification et l\220identification :}{section.2.2}% 34
-\BOOKMARK [2][-]{subsection.2.2.6}{La non-r\351pudiation et l\220imputabilit\351 : }{section.2.2}% 35
-\BOOKMARK [1][-]{section.2.3}{Application de la s\351curit\351 informatique : }{chapter.2}% 36
-\BOOKMARK [2][-]{subsection.2.3.1}{La cybers\351curit\351 :}{section.2.3}% 37
-\BOOKMARK [2][-]{subsection.2.3.2}{La s\351curit\351 des r\351seau : }{section.2.3}% 38
-\BOOKMARK [3][-]{subsubsection.2.3.2.1}{Protocoles TLS/SSL :}{subsection.2.3.2}% 39
-\BOOKMARK [3][-]{subsubsection.2.3.2.2}{Le protocole IPSec :}{subsection.2.3.2}% 40
-\BOOKMARK [2][-]{subsection.2.3.3}{La s\351curit\351 logique et applicative :}{section.2.3}% 41
-\BOOKMARK [2][-]{subsection.2.3.4}{La s\351curit\351 des informations : }{section.2.3}% 42
-\BOOKMARK [2][-]{subsection.2.3.5}{La s\351curit\351 d'exploitation : }{section.2.3}% 43
-\BOOKMARK [1][-]{section.2.4}{Anatomie d'une attaque :}{chapter.2}% 44
-\BOOKMARK [1][-]{section.2.5}{Les types de menaces et d\220attaques : }{chapter.2}% 45
-\BOOKMARK [2][-]{subsection.2.5.1}{La cybercriminalit\351 : }{section.2.5}% 46
-\BOOKMARK [2][-]{subsection.2.5.2}{DDoS \(Distributed Denied of Service\) : }{section.2.5}% 47
-\BOOKMARK [2][-]{subsection.2.5.3}{L'ing\351nierie sociale : }{section.2.5}% 48
-\BOOKMARK [3][-]{subsubsection.2.5.3.1}{L\220Hame\347onnage : }{subsection.2.5.3}% 49
-\BOOKMARK [3][-]{subsubsection.2.5.3.2}{Le vishing : }{subsection.2.5.3}% 50
-\BOOKMARK [2][-]{subsection.2.5.4}{Attaque par brute force et par dictionnaire : }{section.2.5}% 51
-\BOOKMARK [2][-]{subsection.2.5.5}{Attaque par Homme du milieu :}{section.2.5}% 52
-\BOOKMARK [2][-]{subsection.2.5.6}{Logiciels Malveillants \(Malware\) :}{section.2.5}% 53
-\BOOKMARK [3][-]{subsubsection.2.5.6.1}{Les virus : }{subsection.2.5.6}% 54
-\BOOKMARK [3][-]{subsubsection.2.5.6.2}{Chevaux de Troie : }{subsection.2.5.6}% 55
-\BOOKMARK [3][-]{subsubsection.2.5.6.3}{Les keyloggers : }{subsection.2.5.6}% 56
-\BOOKMARK [3][-]{subsubsection.2.5.6.4}{Les vers : }{subsection.2.5.6}% 57
-\BOOKMARK [3][-]{subsubsection.2.5.6.5}{Les logiciels espions : }{subsection.2.5.6}% 58
-\BOOKMARK [3][-]{subsubsection.2.5.6.6}{Les botnets : }{subsection.2.5.6}% 59
-\BOOKMARK [3][-]{subsubsection.2.5.6.7}{Ransomwares : }{subsection.2.5.6}% 60
-\BOOKMARK [1][-]{section.2.6}{Les services et m\351canismes de s\351curit\351 : }{chapter.2}% 61
-\BOOKMARK [2][-]{subsection.2.6.1}{Audit de s\351curit\351 :}{section.2.6}% 62
-\BOOKMARK [2][-]{subsection.2.6.2}{Journalisation \(logs\) :}{section.2.6}% 63
-\BOOKMARK [2][-]{subsection.2.6.3}{Antivirus :}{section.2.6}% 64
-\BOOKMARK [2][-]{subsection.2.6.4}{Utilisation de VPN :}{section.2.6}% 65
-\BOOKMARK [2][-]{subsection.2.6.5}{Syst\350mes de d\351tection d'intrusion \(IDS\) :}{section.2.6}% 66
-\BOOKMARK [2][-]{subsection.2.6.6}{Les pare feu : }{section.2.6}% 67
-\BOOKMARK [2][-]{subsection.2.6.7}{La reprise apr\350s sinistre et la continuit\351 des activit\351s : }{section.2.6}% 68
-\BOOKMARK [2][-]{subsection.2.6.8}{La formation des utilisateurs finaux : }{section.2.6}% 69
-\BOOKMARK [1][-]{section.2.7}{Conclusion : }{chapter.2}% 70
-\BOOKMARK [0][-]{chapter.3}{Attaques DDoS}{part.1}% 71
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 72
-\BOOKMARK [1][-]{section.3.2}{D\351finition d\220attaque DDoS}{chapter.3}% 73
-\BOOKMARK [1][-]{section.3.3}{Principe de fonctionnement des attaques DDoS}{chapter.3}% 74
-\BOOKMARK [1][-]{section.3.4}{Cat\351gories d\220attaque DDoS}{chapter.3}% 75
-\BOOKMARK [2][-]{subsection.3.4.1}{Attaques de la couche d\220application}{section.3.4}% 76
-\BOOKMARK [3][-]{subsubsection.3.4.1.1}{HTTP Flood}{subsection.3.4.1}% 77
-\BOOKMARK [3][-]{subsubsection.3.4.1.2}{Slowloris}{subsection.3.4.1}% 78
-\BOOKMARK [3][-]{subsubsection.3.4.1.3}{Imitation de la navigation des utilisateurs}{subsection.3.4.1}% 79
-\BOOKMARK [2][-]{subsection.3.4.2}{Attaques d'\351puisement d'\351tat TCP}{section.3.4}% 80
-\BOOKMARK [3][-]{subsubsection.3.4.2.1}{SYN Flood}{subsection.3.4.2}% 81
-\BOOKMARK [3][-]{subsubsection.3.4.2.2}{Attaque Smurf}{subsection.3.4.2}% 82
-\BOOKMARK [3][-]{subsubsection.3.4.2.3}{DNS Flood}{subsection.3.4.2}% 83
-\BOOKMARK [2][-]{subsection.3.4.3}{Attaques volum\351triques}{section.3.4}% 84
-\BOOKMARK [3][-]{subsubsection.3.4.3.1}{UDP Flood}{subsection.3.4.3}% 85
-\BOOKMARK [3][-]{subsubsection.3.4.3.2}{ICMP Flood}{subsection.3.4.3}% 86
-\BOOKMARK [3][-]{subsubsection.3.4.3.3}{Fragmentation IP/ICMP}{subsection.3.4.3}% 87
-\BOOKMARK [3][-]{subsubsection.3.4.3.4}{Amplification DNS}{subsection.3.4.3}% 88
-\BOOKMARK [2][-]{subsection.3.4.4}{Attaques Zero-day}{section.3.4}% 89
-\BOOKMARK [1][-]{section.3.5}{Motivations}{chapter.3}% 90
-\BOOKMARK [2][-]{subsection.3.5.1}{Cyberactivisme}{section.3.5}% 91
-\BOOKMARK [2][-]{subsection.3.5.2}{Vandalisme}{section.3.5}% 92
-\BOOKMARK [2][-]{subsection.3.5.3}{Concurrence}{section.3.5}% 93
-\BOOKMARK [2][-]{subsection.3.5.4}{Extorsion}{section.3.5}% 94
-\BOOKMARK [2][-]{subsection.3.5.5}{Diversion}{section.3.5}% 95
-\BOOKMARK [1][-]{section.3.6}{Pr\351vention contre les attaques DDoS}{chapter.3}% 96
-\BOOKMARK [2][-]{subsection.3.6.1}{Rate limiting}{section.3.6}% 97
-\BOOKMARK [2][-]{subsection.3.6.2}{Routage de trou noir \(blackhole routing\)}{section.3.6}% 98
-\BOOKMARK [2][-]{subsection.3.6.3}{Pare-feu d\220application web}{section.3.6}% 99
-\BOOKMARK [1][-]{section.3.7}{Conclusion}{chapter.3}% 100
-\BOOKMARK [-1][-]{part.2}{II Contributions}{}% 101
-\BOOKMARK [0][-]{chapter.4}{Le Deep Learning et les Techniques de D\351tection d'intrusions}{part.2}% 102
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 103
-\BOOKMARK [1][-]{section.4.2}{syst\351mes de d\351tection d'intrusion}{chapter.4}% 104
-\BOOKMARK [2][-]{subsection.4.2.1}{D\351finition }{section.4.2}% 105
-\BOOKMARK [2][-]{subsection.4.2.2}{Architecture de base d'un IDS}{section.4.2}% 106
-\BOOKMARK [3][-]{subsubsection.4.2.2.1}{Architecture CIDF}{subsection.4.2.2}% 107
-\BOOKMARK [3][-]{subsubsection.4.2.2.2}{L\220architecture IDWG}{subsection.4.2.2}% 108
-\BOOKMARK [2][-]{subsection.4.2.3}{Classification des syst\350mes de d\351tection d'intrusion}{section.4.2}% 109
-\BOOKMARK [3][-]{subsubsection.4.2.3.1}{L\220emplacement d\220IDS }{subsection.4.2.3}% 110
-\BOOKMARK [4][-]{paragraph.4.2.3.1.1}{D\351tection d'intrusion bas\351e sur l'h\364te \(HIDS\) : }{subsubsection.4.2.3.1}% 111
-\BOOKMARK [4][-]{paragraph.4.2.3.1.2}{ D\351tection d'Intrusion bas\351e sur une application \(AIDS\):}{subsubsection.4.2.3.1}% 112
-\BOOKMARK [4][-]{paragraph.4.2.3.1.3}{ La D\351tection d'Intrusion R\351seau \(NIDS\) :}{subsubsection.4.2.3.1}% 113
-\BOOKMARK [3][-]{subsubsection.4.2.3.2}{Mode de d\351tection }{subsection.4.2.3}% 114
-\BOOKMARK [4][-]{paragraph.4.2.3.2.1}{L'Approche comportementale :}{subsubsection.4.2.3.2}% 115
-\BOOKMARK [4][-]{paragraph.4.2.3.2.2}{La reconnaissance de signature :}{subsubsection.4.2.3.2}% 116
-\BOOKMARK [3][-]{subsubsection.4.2.3.3}{Types de r\351ponse}{subsection.4.2.3}% 117
-\BOOKMARK [4][-]{paragraph.4.2.3.3.1}{ La r\351ponse passive :}{subsubsection.4.2.3.3}% 118
-\BOOKMARK [4][-]{paragraph.4.2.3.3.2}{ La r\351ponse active :}{subsubsection.4.2.3.3}% 119
-\BOOKMARK [3][-]{subsubsection.4.2.3.4}{La fr\351quence d'utilisation }{subsection.4.2.3}% 120
-\BOOKMARK [4][-]{paragraph.4.2.3.4.1}{Utilisation continue :}{subsubsection.4.2.3.4}% 121
-\BOOKMARK [4][-]{paragraph.4.2.3.4.2}{ Utilisation p\351riodique :}{subsubsection.4.2.3.4}% 122
-\BOOKMARK [2][-]{subsection.4.2.4}{Exemples d'IDS existants }{section.4.2}% 123
-\BOOKMARK [2][-]{subsection.4.2.5}{Crit\350re de choix d'un IDS}{section.4.2}% 124
-\BOOKMARK [1][-]{section.4.3}{Le Deep Learning}{chapter.4}% 125
-\BOOKMARK [2][-]{subsection.4.3.1}{D\351finition et Historique}{section.4.3}% 126
-\BOOKMARK [2][-]{subsection.4.3.2}{Les r\351seaux de neurones artificiels}{section.4.3}% 127
-\BOOKMARK [3][-]{subsubsection.4.3.2.1}{Neurone artificiel :}{subsection.4.3.2}% 128
-\BOOKMARK [3][-]{subsubsection.4.3.2.2}{Reseaux de neurones Profonds\(DNN\)}{subsection.4.3.2}% 129
-\BOOKMARK [2][-]{subsection.4.3.3}{Classification des mod\350les de Deep Learning}{section.4.3}% 130
-\BOOKMARK [3][-]{subsubsection.4.3.3.1}{Apprentissage supervis\351}{subsection.4.3.3}% 131
-\BOOKMARK [4][-]{paragraph.4.3.3.1.1}{Les r\351seaux de neurones convolutifs : }{subsubsection.4.3.3.1}% 132
-\BOOKMARK [3][-]{subsubsection.4.3.3.2}{Apprentissage non supervis\351}{subsection.4.3.3}% 133
-\BOOKMARK [4][-]{paragraph.4.3.3.2.1}{ Auto encodeurs : }{subsubsection.4.3.3.2}% 134
-\BOOKMARK [4][-]{paragraph.4.3.3.2.2}{R\351seaux de neurones r\351currents \(RNN\) :}{subsubsection.4.3.3.2}% 135
-\BOOKMARK [4][-]{paragraph.4.3.3.2.3}{Machines de Boltzmann :}{subsubsection.4.3.3.2}% 136
-\BOOKMARK [3][-]{subsubsection.4.3.3.3}{Hybride }{subsection.4.3.3}% 137
-\BOOKMARK [4][-]{paragraph.4.3.3.3.1}{ G\351nerateurs Adversatifs :}{subsubsection.4.3.3.3}% 138
-\BOOKMARK [1][-]{section.4.4}{\311tudes exp\351rimentales}{chapter.4}% 139
-\BOOKMARK [2][-]{subsection.4.4.1}{Outils de d\351veloppement}{section.4.4}% 140
-\BOOKMARK [3][-]{subsubsection.4.4.1.1}{Materiels}{subsection.4.4.1}% 141
-\BOOKMARK [3][-]{subsubsection.4.4.1.2}{JAVA}{subsection.4.4.1}% 142
-\BOOKMARK [3][-]{subsubsection.4.4.1.3}{DeepLearning4j}{subsection.4.4.1}% 143
-\BOOKMARK [3][-]{subsubsection.4.4.1.4}{IDE IntelliJ}{subsection.4.4.1}% 144
-\BOOKMARK [2][-]{subsection.4.4.2}{Mise en \234uvre}{section.4.4}% 145
-\BOOKMARK [3][-]{subsubsection.4.4.2.1}{Choix du Dataset : }{subsection.4.4.2}% 146
-\BOOKMARK [3][-]{subsubsection.4.4.2.2}{Pr\351paration des donn\351es\(pre-processing\):}{subsection.4.4.2}% 147
-\BOOKMARK [3][-]{subsubsection.4.4.2.3}{D\351finition du mod\350le}{subsection.4.4.2}% 148
-\BOOKMARK [3][-]{subsubsection.4.4.2.4}{Entrainement et test du mod\350le}{subsection.4.4.2}% 149
-\BOOKMARK [3][-]{subsubsection.4.4.2.5}{Interface}{subsection.4.4.2}% 150
-\BOOKMARK [2][-]{subsection.4.4.3}{\311valuation }{section.4.4}% 151
-\BOOKMARK [2][-]{subsection.4.4.4}{Comparaison avec d'autres approches}{section.4.4}% 152
-\BOOKMARK [1][-]{section.4.5}{Discussion}{chapter.4}% 153
-\BOOKMARK [1][-]{section.4.6}{Conclusion}{chapter.4}% 154
-\BOOKMARK [-1][-]{section.4.6}{Conclusion G\351n\351rale}{}% 155
+\BOOKMARK [-1][-]{part.1}{I \311tat de l'art}{}% 4
+\BOOKMARK [0][-]{chapter.1}{Educational data minig}{part.1}% 5
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Data mining}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.2.1}{D\351finition}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.2}{Les m\351thodes du data mining}{section.1.2}% 9
+\BOOKMARK [1][-]{section.1.3}{Intelligent Tutorial Systems \(ITS\)}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.3.1}{D\351finition}{section.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.3.2}{ITS architecture}{section.1.3}% 12
+\BOOKMARK [1][-]{section.1.4}{Educational Data mining}{chapter.1}% 13
+\BOOKMARK [2][-]{subsection.1.4.1}{D\351finition}{section.1.4}% 14
+\BOOKMARK [2][-]{subsection.1.4.2}{Processus d'application du DM en \351ducation}{section.1.4}% 15
+\BOOKMARK [3][-]{subsubsection.1.4.2.1}{Les m\351thodes d\220analyse et d\220exploration appliquer dans EDM}{subsection.1.4.2}% 16
+\BOOKMARK [4][-]{paragraph.1.4.2.1.1}{L'induction de mod\350le supervis\351e}{subsubsection.1.4.2.1}% 17
+\BOOKMARK [4][-]{paragraph.1.4.2.1.2}{L'induction de mod\350le non supervis\351e}{subsubsection.1.4.2.1}% 18
+\BOOKMARK [4][-]{paragraph.1.4.2.1.3}{L'estimation des param\350tres}{subsubsection.1.4.2.1}% 19
+\BOOKMARK [4][-]{paragraph.1.4.2.1.4}{L'exploration de relations \(Relationship mining\)}{subsubsection.1.4.2.1}% 20
+\BOOKMARK [4][-]{paragraph.1.4.2.1.5}{La distillation des donn\351es pour le jugement humain \(Distillation of data for human judgment\)}{subsubsection.1.4.2.1}% 21
+\BOOKMARK [4][-]{paragraph.1.4.2.1.6}{Discovery with models}{subsubsection.1.4.2.1}% 22
+\BOOKMARK [1][-]{section.1.5}{Conclusion}{chapter.1}% 23
+\BOOKMARK [0][-]{chapter.2}{Mod\350le de l'apprenant et d\351couverte des pr\351requis}{part.1}% 24
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.2}{Learner Model}{chapter.2}% 26
+\BOOKMARK [2][-]{subsection.2.2.1}{D\351finition}{section.2.2}% 27
+\BOOKMARK [3][-]{subsubsection.2.2.1.1}{Caract\351ristiques des m\351thodes utilis\351es pour la mod\351lisation de l'apprenant}{subsection.2.2.1}% 28
+\BOOKMARK [2][-]{subsection.2.2.2}{Composantes du mod\350le de l'apprenant}{section.2.2}% 29
+\BOOKMARK [3][-]{subsubsection.2.2.2.1}{Mod\350le cognitif}{subsection.2.2.2}% 30
+\BOOKMARK [3][-]{subsubsection.2.2.2.2}{Mod\350le d'inf\351rence}{subsection.2.2.2}% 31
+\BOOKMARK [3][-]{subsubsection.2.2.2.3}{Mod\350le \351motionnel}{subsection.2.2.2}% 32
+\BOOKMARK [3][-]{subsubsection.2.2.2.4}{Utilitaire du mod\350le de l'apprenant}{subsection.2.2.2}% 33
+\BOOKMARK [3][-]{subsubsection.2.2.2.5}{Types de mod\350les d'apprentissage}{subsection.2.2.2}% 34
+\BOOKMARK [1][-]{section.2.3}{Mod\350le de comp\351tence}{chapter.2}% 35
+\BOOKMARK [2][-]{subsection.2.3.1}{Granularit\351}{section.2.3}% 36
+\BOOKMARK [2][-]{subsection.2.3.2}{Relations pr\351-requises}{section.2.3}% 37
+\BOOKMARK [1][-]{section.2.4}{D\351couverte des pr\351requis}{chapter.2}% 38
+\BOOKMARK [1][-]{section.2.5}{Conclusion}{chapter.2}% 39
+\BOOKMARK [0][-]{chapter.3}{L'approche items-to-skills mapping}{part.1}% 40
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 41
+\BOOKMARK [1][-]{section.3.2}{Conclusion}{chapter.3}% 42
+\BOOKMARK [0][-]{chapter.4}{Fiabilit\351 et l'accord pour les donn\351es d'observations}{part.1}% 43
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.2}{Conclusion}{chapter.4}% 45
+\BOOKMARK [0][-]{chapter.5}{Inf\351rence bay\351sienne et la th\351orie de la r\351ponse aux items}{part.1}% 46
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.2}{Conclusion}{chapter.5}% 48
+\BOOKMARK [0][-]{chapter.6}{Clustering}{part.1}% 49
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 50
+\BOOKMARK [1][-]{section.6.2}{Conclusion}{chapter.6}% 51
+\BOOKMARK [-1][-]{part.2}{II Contributions}{}% 52
+\BOOKMARK [0][-]{chapter.7}{Contribution and Results}{part.2}% 53
+\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 54
+\BOOKMARK [1][-]{section.7.2}{Conclusion}{chapter.7}% 55
+\BOOKMARK [-1][-]{section.7.2}{Conclusion G\351n\351rale}{}% 56
+\BOOKMARK [0][-]{chapter*.18}{Bibliographie}{section.7.2}% 57
