@@ -2052,6 +2052,8 @@ INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\main.bbl
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\main.bbl
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\main.bbl
 INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
+INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
+INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 OUTPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\main.maf
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\main.mtc
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\main.mtc
@@ -2075,8 +2077,6 @@ INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\main.mtc2
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\main.mtc2
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\main.mtc1
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\main.mtc1
-INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
-INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\main.aux
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\main.out
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\main.out

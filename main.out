@@ -25,33 +25,34 @@
 \BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 25
 \BOOKMARK [1][-]{section.2.2}{Learner Model}{chapter.2}% 26
 \BOOKMARK [2][-]{subsection.2.2.1}{D\351finition}{section.2.2}% 27
-\BOOKMARK [3][-]{subsubsection.2.2.1.1}{Caract\351ristiques des m\351thodes utilis\351es pour la mod\351lisation de l'apprenant}{subsection.2.2.1}% 28
-\BOOKMARK [2][-]{subsection.2.2.2}{Composantes du mod\350le de l'apprenant}{section.2.2}% 29
-\BOOKMARK [3][-]{subsubsection.2.2.2.1}{Mod\350le cognitif}{subsection.2.2.2}% 30
-\BOOKMARK [3][-]{subsubsection.2.2.2.2}{Mod\350le d'inf\351rence}{subsection.2.2.2}% 31
-\BOOKMARK [3][-]{subsubsection.2.2.2.3}{Mod\350le \351motionnel}{subsection.2.2.2}% 32
-\BOOKMARK [3][-]{subsubsection.2.2.2.4}{Utilitaire du mod\350le de l'apprenant}{subsection.2.2.2}% 33
-\BOOKMARK [3][-]{subsubsection.2.2.2.5}{Types de mod\350les d'apprentissage}{subsection.2.2.2}% 34
-\BOOKMARK [1][-]{section.2.3}{Mod\350le de comp\351tence}{chapter.2}% 35
-\BOOKMARK [2][-]{subsection.2.3.1}{Granularit\351}{section.2.3}% 36
-\BOOKMARK [2][-]{subsection.2.3.2}{Relations pr\351-requises}{section.2.3}% 37
-\BOOKMARK [1][-]{section.2.4}{D\351couverte des pr\351requis}{chapter.2}% 38
-\BOOKMARK [1][-]{section.2.5}{Conclusion}{chapter.2}% 39
-\BOOKMARK [0][-]{chapter.3}{L'approche items-to-skills mapping}{part.1}% 40
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 41
-\BOOKMARK [1][-]{section.3.2}{Conclusion}{chapter.3}% 42
-\BOOKMARK [0][-]{chapter.4}{Fiabilit\351 et l'accord pour les donn\351es d'observations}{part.1}% 43
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.2}{Conclusion}{chapter.4}% 45
-\BOOKMARK [0][-]{chapter.5}{Inf\351rence bay\351sienne et la th\351orie de la r\351ponse aux items}{part.1}% 46
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 47
-\BOOKMARK [1][-]{section.5.2}{Conclusion}{chapter.5}% 48
-\BOOKMARK [0][-]{chapter.6}{Clustering}{part.1}% 49
-\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 50
-\BOOKMARK [1][-]{section.6.2}{Conclusion}{chapter.6}% 51
-\BOOKMARK [-1][-]{part.2}{II Contributions}{}% 52
-\BOOKMARK [0][-]{chapter.7}{Contribution and Results}{part.2}% 53
-\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 54
-\BOOKMARK [1][-]{section.7.2}{Conclusion}{chapter.7}% 55
-\BOOKMARK [-1][-]{section.7.2}{Conclusion G\351n\351rale}{}% 56
-\BOOKMARK [0][-]{chapter*.18}{Bibliographie}{section.7.2}% 57
+\BOOKMARK [2][-]{subsection.2.2.2}{Caract\351ristiques des m\351thodes utilis\351es pour la mod\351lisation de l'apprenant}{section.2.2}% 28
+\BOOKMARK [2][-]{subsection.2.2.3}{Composantes du mod\350le de l'apprenant}{section.2.2}% 29
+\BOOKMARK [3][-]{subsubsection.2.2.3.1}{Mod\350le cognitif}{subsection.2.2.3}% 30
+\BOOKMARK [3][-]{subsubsection.2.2.3.2}{Mod\350le d'inf\351rence}{subsection.2.2.3}% 31
+\BOOKMARK [3][-]{subsubsection.2.2.3.3}{Mod\350le \351motionnel}{subsection.2.2.3}% 32
+\BOOKMARK [2][-]{subsection.2.2.4}{Utilitaire du mod\350le de l'apprenant}{section.2.2}% 33
+\BOOKMARK [2][-]{subsection.2.2.5}{Types de mod\350les d'apprentissage}{section.2.2}% 34
+\BOOKMARK [2][-]{subsection.2.2.6}{Contenu du mod\350le de l'apprenant}{section.2.2}% 35
+\BOOKMARK [1][-]{section.2.3}{Mod\350le de comp\351tence}{chapter.2}% 36
+\BOOKMARK [2][-]{subsection.2.3.1}{Granularit\351}{section.2.3}% 37
+\BOOKMARK [2][-]{subsection.2.3.2}{Relations pr\351-requises}{section.2.3}% 38
+\BOOKMARK [1][-]{section.2.4}{D\351couverte des pr\351requis}{chapter.2}% 39
+\BOOKMARK [1][-]{section.2.5}{Conclusion}{chapter.2}% 40
+\BOOKMARK [0][-]{chapter.3}{L'approche items-to-skills mapping}{part.1}% 41
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 42
+\BOOKMARK [1][-]{section.3.2}{Conclusion}{chapter.3}% 43
+\BOOKMARK [0][-]{chapter.4}{Fiabilit\351 et l'accord pour les donn\351es d'observations}{part.1}% 44
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.2}{Conclusion}{chapter.4}% 46
+\BOOKMARK [0][-]{chapter.5}{Inf\351rence bay\351sienne et la th\351orie de la r\351ponse aux items}{part.1}% 47
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.2}{Conclusion}{chapter.5}% 49
+\BOOKMARK [0][-]{chapter.6}{Clustering}{part.1}% 50
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 51
+\BOOKMARK [1][-]{section.6.2}{Conclusion}{chapter.6}% 52
+\BOOKMARK [-1][-]{part.2}{II Contributions}{}% 53
+\BOOKMARK [0][-]{chapter.7}{Contribution and Results}{part.2}% 54
+\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 55
+\BOOKMARK [1][-]{section.7.2}{Conclusion}{chapter.7}% 56
+\BOOKMARK [-1][-]{section.7.2}{Conclusion G\351n\351rale}{}% 57
+\BOOKMARK [0][-]{chapter*.18}{Bibliographie}{section.7.2}% 58

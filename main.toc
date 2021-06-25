@@ -29,34 +29,35 @@
 \contentsline {section}{\numberline {2.1}Introduction}{13}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Learner Model}{13}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Définition}{13}{subsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.1}Caractéristiques des méthodes utilisées pour la modélisation de l'apprenant}{13}{subsubsection.2.2.1.1}%
-\contentsline {subsection}{\numberline {2.2.2}Composantes du modèle de l'apprenant}{16}{subsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.1}Modèle cognitif}{17}{subsubsection.2.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2.2}Modèle d'inférence}{17}{subsubsection.2.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.3}Modèle émotionnel}{17}{subsubsection.2.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.2.4}Utilitaire du modèle de l'apprenant}{18}{subsubsection.2.2.2.4}%
-\contentsline {subsubsection}{\numberline {2.2.2.5}Types de modèles d'apprentissage}{18}{subsubsection.2.2.2.5}%
-\contentsline {section}{\numberline {2.3}Modèle de compétence}{18}{section.2.3}%
+\contentsline {subsection}{\numberline {2.2.2}Caractéristiques des méthodes utilisées pour la modélisation de l'apprenant}{13}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Composantes du modèle de l'apprenant}{16}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Modèle cognitif}{17}{subsubsection.2.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.3.2}Modèle d'inférence}{17}{subsubsection.2.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.2.3.3}Modèle émotionnel}{17}{subsubsection.2.2.3.3}%
+\contentsline {subsection}{\numberline {2.2.4}Utilitaire du modèle de l'apprenant}{18}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Types de modèles d'apprentissage}{18}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Contenu du modèle de l'apprenant}{18}{subsection.2.2.6}%
+\contentsline {section}{\numberline {2.3}Modèle de compétence}{19}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Granularité}{19}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Relations pré-requises}{20}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Découverte des prérequis}{21}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Conclusion}{22}{section.2.5}%
-\contentsline {chapter}{\numberline {3}L'approche items-to-skills mapping}{23}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduction}{24}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Conclusion}{24}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Fiabilité et l'accord pour les données d'observations}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{26}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Conclusion}{26}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Inférence bayésienne et la théorie de la réponse aux items}{27}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{28}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Conclusion}{28}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Clustering}{29}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introduction}{30}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Conclusion}{30}{section.6.2}%
-\contentsline {part}{II\hspace {1em}Contributions}{31}{part.2}%
-\contentsline {xpart}{Contributions}{32}{part.2}%
-\contentsline {chapter}{\numberline {7}Contribution and Results}{32}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Introduction}{33}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Conclusion}{33}{section.7.2}%
-\contentsline {part}{Conclusion Générale}{33}{section.7.2}%
-\contentsline {chapter}{Bibliographie}{35}{chapter*.18}%
+\contentsline {section}{\numberline {2.4}Découverte des prérequis}{22}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Conclusion}{23}{section.2.5}%
+\contentsline {chapter}{\numberline {3}L'approche items-to-skills mapping}{24}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{25}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Conclusion}{25}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Fiabilité et l'accord pour les données d'observations}{26}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Conclusion}{27}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Inférence bayésienne et la théorie de la réponse aux items}{28}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Conclusion}{29}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Clustering}{30}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{31}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Conclusion}{31}{section.6.2}%
+\contentsline {part}{II\hspace {1em}Contributions}{32}{part.2}%
+\contentsline {xpart}{Contributions}{33}{part.2}%
+\contentsline {chapter}{\numberline {7}Contribution and Results}{33}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduction}{34}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Conclusion}{34}{section.7.2}%
+\contentsline {part}{Conclusion Générale}{34}{section.7.2}%
+\contentsline {chapter}{Bibliographie}{36}{chapter*.18}%

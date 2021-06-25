@@ -50,4 +50,87 @@ A.~Paiva and J.~Self, ``Tagus — a user and learner modeling workbench,'' {\em
 S.~Greer, ``Psycho‐oncology: Its aims, achievements and future tasks,'' {\em
   Psycho‐Oncology}, vol.~3, pp.~87 -- 101, 07 1994.
 
+\bibitem{student_model_centered_architecture}
+P.~Brusilovsky, ``Student model centered architecture for intelligent learning
+  environments,'' 01 1994.
+
+\bibitem{knowledge_based_scheduling_program}
+I.~Goldstein and B.~Roberts, ``Nudge, a knowledge-based scheduling program,''
+  {\em Proceedings of IJCAI-77}, 01 1977.
+
+\bibitem{Elster1987self}
+J.~Elster, {\em The Multiple Self}.
+\newblock Cambridge University Press, 1987.
+
+\bibitem{modeles_outils_applications}
+R.~Nkambou, ``Modélisation des connaissances de la matière dans un système
+  tutoriel intelligent : modèles, outils et applications /,'' 06 2021.
+
+\bibitem{inproceedings}
+E.~Ragnemalm, ``Collaborative dialogue with a learning companion as a source of
+  inforamtion on student reasoning.,'' pp.~650--658, 01 1996.
+
+\bibitem{state_student_modelling}
+P.~Holt, S.~Dubs, M.~Jones, and J.~Greer, ``The state of student modelling" in
+  student modelling: The key to individualized knowledge-based inst,'' 06 2021.
+
+\bibitem{gestionnaire_modele_apprenant}
+D.~Fragne, ``Proposition de l'architecture de l'agent gestionnaire du modèle
+  de l'apprenant dans un système tuteur multi-agents en apprentissage de la
+  lecture : contribution au projet amical,'' 12 2009.
+
+\bibitem{log_Files_to_Assessment_Metrics}
+J.~Gobert, M.~Pedro, J.~Raziuddin, and R.~Baker, ``From log files to assessment
+  metrics: Measuring students' science inquiry skills using educational data
+  mining,'' {\em Journal of the Learning Sciences}, vol.~22, pp.~521--563, 10
+  2013.
+
+\bibitem{bayesian_networks_student_model_engineering}
+E.~Millán, T.~Loboda, and J.~L.~P. de-la Cruz, ``Bayesian networks for student
+  model engineering,'' vol.~55, no.~4, pp.~1663--1683, 2010.
+
+\bibitem{adaptive_assessment_using_granularity_hierarchies_and_bayesian_nets}
+J.~Collins, J.~Greer, and S.~Huang, ``Adaptive assessment using granularity
+  hierarchies and bayesian nets,'' 02 1970.
+
+\bibitem{hierarchical_representation_evaluation_of_Student_in_ITS}
+J.~M.~P. Tch{\'e}tagni and R.~Nkambou, ``Hierarchical representation and
+  evaluation of the student in an intelligent tutoring system,'' in {\em
+  Intelligent Tutoring Systems} (S.~A. Cerri, G.~Gouard{\`e}res, and
+  F.~Paragua{\c{c}}u, eds.), (Berlin, Heidelberg), pp.~708--717, Springer
+  Berlin Heidelberg, 2002.
+
+\bibitem{learner_model_in_distributed_environment}
+C.~Carmona and R.~Conejo, ``A learner model in a distributed environment,'' in
+  {\em Adaptive Hypermedia and Adaptive Web-Based Systems} (P.~M.~E. De~Bra and
+  W.~Nejdl, eds.), (Berlin, Heidelberg), pp.~353--359, Springer Berlin
+  Heidelberg, 2004.
+
+\bibitem{Effect_Model_Granularity_on_Student_Performance_Prediction_Using_Bayesian_Networks}
+Z.~A. Pardos, N.~T. Heffernan, B.~Anderson, and C.~L. Heffernan, ``The effect
+  of model granularity on student performance prediction using bayesian
+  networks,'' in {\em User Modeling 2007} (C.~Conati, K.~McCoy, and
+  G.~Paliouras, eds.), (Berlin, Heidelberg), pp.~435--439, Springer Berlin
+  Heidelberg, 2007.
+
+\bibitem{Student_Modelling_Based_on_Belief_Networks}
+J.~Reye, ``Student modelling based on belief networks,'' {\em International
+  Journal of Artificial Intelligence in Education}, vol.~14, pp.~63--96, 2004.
+\newblock 1.
+
+\bibitem{Prerequisite_Relations_in_Multilayered_Bayesian_Student_Model}
+C.~Carmona, E.~Mill{\'a}n, J.~L. P{\'e}rez-de-la Cruz, M.~Trella, and
+  R.~Conejo, ``Introducing prerequisite relations in a multi-layered bayesian
+  student model,'' in {\em User Modeling 2005} (L.~Ardissono, P.~Brna, and
+  A.~Mitrovic, eds.), (Berlin, Heidelberg), pp.~347--356, Springer Berlin
+  Heidelberg, 2005.
+
+\bibitem{Discovering_Prerequisite_Relationships_among_Knowledge_Components}
+I.~Goldin, r.~scheines, and e.~silver, ``Discovering prerequisite relationships
+  among knowledge components,'' 01 2014.
+
+\bibitem{Structural_Equations_with_Latent_Variables}
+K.~Bollen, ``Structural equations with latent variables, new york,'' {\em Wiley
+  Interscience}, 01 1989.
+
 \end{thebibliography}

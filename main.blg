@@ -8,45 +8,53 @@ Database file #1: biblo.bib
 Warning--empty publisher in data_mining_concepts_techniques
 Warning--empty publisher in handbook_of_educational_data_mining
 Warning--empty booktitle in user_modelling_help_systems
-You've used 11 entries,
+Warning--empty journal in student_model_centered_architecture
+Warning--empty journal in modeles_outils_applications
+Warning--empty booktitle in inproceedings
+Warning--empty journal in state_student_modelling
+Warning--empty journal in gestionnaire_modele_apprenant
+Warning--empty journal in bayesian_networks_student_model_engineering
+Warning--empty booktitle in adaptive_assessment_using_granularity_hierarchies_and_bayesian_nets
+Warning--empty booktitle in Discovering_Prerequisite_Relationships_among_Knowledge_Components
+You've used 28 entries,
             1876 wiz_defined-function locations,
-            549 strings with 5238 characters,
-and the built_in function-call counts, 2829 in all, are:
-= -- 297
-> -- 78
+            646 strings with 8980 characters,
+and the built_in function-call counts, 7150 in all, are:
+= -- 688
+> -- 263
 < -- 0
-+ -- 31
-- -- 20
-* -- 185
-:= -- 390
-add.period$ -- 16
-call.type$ -- 11
-change.case$ -- 8
++ -- 98
+- -- 70
+* -- 510
+:= -- 1008
+add.period$ -- 35
+call.type$ -- 28
+change.case$ -- 24
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 147
-empty$ -- 271
-format.name$ -- 20
-if$ -- 706
+cite$ -- 39
+duplicate$ -- 382
+empty$ -- 700
+format.name$ -- 70
+if$ -- 1742
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 12
-newline$ -- 41
-num.names$ -- 11
-pop$ -- 38
+int.to.str$ -- 28
+missing$ -- 30
+newline$ -- 94
+num.names$ -- 36
+pop$ -- 121
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 110
+skip$ -- 242
 stack$ -- 0
-substring$ -- 198
-swap$ -- 64
+substring$ -- 438
+swap$ -- 137
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 26
-width$ -- 13
-write$ -- 107
-(There were 3 warnings)
+warning$ -- 11
+while$ -- 67
+width$ -- 30
+write$ -- 258
+(There were 11 warnings)
