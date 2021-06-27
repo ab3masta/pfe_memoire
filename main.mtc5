@@ -1,2 +1,18 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Introduction}{\reset@font\mtcSfont 25}{section.3.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Conclusion}{\reset@font\mtcSfont 25}{section.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Knowledge (La connaissance)}{\reset@font\mtcSfont 25}{section.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Définition}{\reset@font\mtcSSfont 25}{subsection.3.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Knowledge component (Composante connaissance)}{\reset@font\mtcSSfont 25}{subsection.3.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.3}Les types de composante de connaissance}{\reset@font\mtcSSfont 26}{subsection.3.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Items-to-skills mapping}{\reset@font\mtcSfont 27}{section.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.1}Définition}{\reset@font\mtcSSfont 27}{subsection.3.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.2}items-to-skills mapping Structure}{\reset@font\mtcSSfont 27}{subsection.3.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.2.1}Model-Based approach}{\reset@font\mtcSSSfont 27}{subsubsection.3.3.2.1}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {3.3.2.1.1}Définition}{\reset@font\mtcPfont 27}{paragraph.3.3.2.1.1}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {3.3.2.1.2}Model Based Techniques}{\reset@font\mtcPfont 28}{paragraph.3.3.2.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.3}Similarity-based approach (Item-Similarity)}{\reset@font\mtcSSfont 29}{subsection.3.3.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.3.1}Définition}{\reset@font\mtcSSSfont 29}{subsubsection.3.3.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.3.2}Processus de similarité des items (éléments)}{\reset@font\mtcSSSfont 30}{subsubsection.3.3.3.2}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {3.3.3.2.1}Input Data}{\reset@font\mtcPfont 31}{paragraph.3.3.3.2.1}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {3.3.3.2.2}Computed Data}{\reset@font\mtcPfont 32}{paragraph.3.3.3.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.3.3.3}Item-Similarity measures}{\reset@font\mtcSSSfont 33}{subsubsection.3.3.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}Conclusion}{\reset@font\mtcSfont 33}{section.3.4}}
