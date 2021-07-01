@@ -11,29 +11,32 @@
 \contentsline {figure}{\numberline {1.5}{\ignorespaces EDM techniques\relax }}{9}{figure.caption.10}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Modèle de l'apprenant et découverte des prérequis}{12}{chapter.2}%
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Composantes du modèle de l'apprenant\relax }}{16}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Deux alternatives pour modéliser les relations d'agrégation.\relax }}{20}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Composantes du modèle de l'apprenant\relax }}{15}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Deux alternatives pour modéliser les relations d'agrégation.\relax }}{19}{figure.caption.14}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Agrégation de modélisation de réseau bayésien et relations préalables simultanément\relax }}{21}{figure.caption.15}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Modèles d'équations structurelles\relax }}{22}{figure.caption.16}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{L'approche items-to-skills mapping}{24}{chapter.3}%
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Knowledge Component\relax }}{26}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Items-to-skills mapping Structure\relax }}{27}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Model based\relax }}{28}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Q-matrix\relax }}{29}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Illustration de l'approche générale de l'analyse des éléments basée sur les similitudes des éléments.\relax }}{30}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces L'approche générale du calcul et de l'application de la similarité des éléments.\relax }}{31}{figure.caption.22}%
+\contentsline {xchapter}{L'approche items-to-skills mapping}{23}{chapter.3}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Knowledge Component\relax }}{25}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Items-to-skills mapping Structure\relax }}{26}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Model based\relax }}{27}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Q-matrix\relax }}{28}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Illustration de l'approche générale de l'analyse des éléments basée sur les similitudes des éléments.\relax }}{29}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces L'approche générale du calcul et de l'application de la similarité des éléments.\relax }}{30}{figure.caption.22}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Fiabilité et l'accord pour les données d'observations}{34}{chapter.4}%
+\contentsline {xchapter}{Fiabilité et l'accord pour les données d'observations}{33}{chapter.4}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Inférence bayésienne et la théorie de la réponse aux items}{36}{chapter.5}%
+\contentsline {xchapter}{Inférence bayésienne et la théorie de la réponse aux items}{35}{chapter.5}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Clustering}{38}{chapter.6}%
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Distances intracluster et intercluster.\relax }}{41}{figure.caption.27}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Données en 2 dimensions\relax }}{46}{figure.caption.28}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Dendrogramme\relax }}{47}{figure.caption.29}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Les étapes de l'algorithme k-means.\relax }}{50}{figure.caption.30}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces La méthode Elbow.\relax }}{52}{figure.caption.31}%
-\contentsline {xpart}{Contributions}{55}{part.2}%
+\contentsline {xchapter}{Clustering Hard et Soft}{37}{chapter.6}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Distances intracluster et intercluster.\relax }}{40}{figure.caption.27}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering les points de données en 2 dimensions}}}{45}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Dendrogramme}}}{45}{subfigure.2.2}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Distances intracluster et intercluster.\relax }}{45}{figure.caption.29}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Les étapes de l'algorithme k-means.\relax }}{48}{figure.caption.30}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces La méthode Elbow.\relax }}{50}{figure.caption.31}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering les points de données en 2 dimensions}}}{52}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Dendrogramme}}}{52}{subfigure.5.2}%
+\contentsline {xpart}{Contributions}{58}{part.2}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Contribution and Results}{55}{chapter.7}%
+\contentsline {xchapter}{Contribution and Results}{58}{chapter.7}%

@@ -9,17 +9,20 @@
 \contentsline {table}{\numberline {2.1}{\ignorespaces Caractéristiques des méthodes utilisées pour la modélisation des apprenants partie[1]\relax }}{14}{table.caption.11}%
 \contentsline {table}{\numberline {2.2}{\ignorespaces Caractéristiques des méthodes utilisées pour la modélisation des apprenants partie[2]\relax }}{15}{table.caption.12}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{L'approche items-to-skills mapping}{24}{chapter.3}%
-\contentsline {table}{\numberline {3.1}{\ignorespaces La matrice d’accord pour deux items\relax }}{33}{table.caption.23}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Ccv\relax }}{33}{table.caption.24}%
+\contentsline {xchapter}{L'approche items-to-skills mapping}{23}{chapter.3}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces La matrice d’accord pour deux items\relax }}{32}{table.caption.23}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Ccv\relax }}{32}{table.caption.24}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Fiabilité et l'accord pour les données d'observations}{34}{chapter.4}%
+\contentsline {xchapter}{Fiabilité et l'accord pour les données d'observations}{33}{chapter.4}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Inférence bayésienne et la théorie de la réponse aux items}{36}{chapter.5}%
+\contentsline {xchapter}{Inférence bayésienne et la théorie de la réponse aux items}{35}{chapter.5}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Clustering}{38}{chapter.6}%
-\contentsline {table}{\numberline {6.1}{\ignorespaces Les métriques \relax }}{40}{table.caption.25}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces Les critères de liaison \relax }}{41}{table.caption.26}%
-\contentsline {xpart}{Contributions}{55}{part.2}%
+\contentsline {xchapter}{Clustering Hard et Soft}{37}{chapter.6}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Les métriques \relax }}{39}{table.caption.25}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Les critères de liaison \relax }}{40}{table.caption.26}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Les autres méthodes de clustering\relax }}{53}{table.caption.33}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Caractéristiques \relax }}{55}{table.caption.34}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces Caractéristiques \relax }}{56}{table.caption.35}%
+\contentsline {xpart}{Contributions}{58}{part.2}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Contribution and Results}{55}{chapter.7}%
+\contentsline {xchapter}{Contribution and Results}{58}{chapter.7}%

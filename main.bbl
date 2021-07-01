@@ -133,4 +133,189 @@ I.~Goldin, r.~scheines, and e.~silver, ``Discovering prerequisite relationships
 K.~Bollen, ``Structural equations with latent variables, new york,'' {\em Wiley
   Interscience}, 01 1989.
 
+\bibitem{huang1998extensions}
+Z.~Huang, ``Extensions to the k-means algorithm for clustering large data sets
+  with categorical values,'' {\em Data mining and knowledge discovery}, vol.~2,
+  no.~3, pp.~283--304, 1998.
+
+\bibitem{sasirekha2013agglomerative}
+K.~Sasirekha and P.~Baby, ``Agglomerative hierarchical clustering
+  algorithm-a,'' {\em International Journal of Scientific and Research
+  Publications}, vol.~83, p.~83, 2013.
+
+\bibitem{yang1993survey}
+M.~Yang, ``A survey of hierarchical clustering,'' {\em Mathl. Comput.
+  Modelling}, vol.~18, no.~11, pp.~1--16, 1993.
+
+\bibitem{zhou2016method}
+S.~Zhou, Z.~Xu, and F.~Liu, ``Method for determining the optimal number of
+  clusters based on agglomerative hierarchical clustering,'' {\em IEEE
+  transactions on neural networks and learning systems}, vol.~28, no.~12,
+  pp.~3007--3017, 2016.
+
+\bibitem{zhong2011minimum}
+C.~Zhong, D.~Miao, and P.~Fr{\"a}nti, ``Minimum spanning tree based
+  split-and-merge: A hierarchical clustering method,'' {\em Information
+  Sciences}, vol.~181, no.~16, pp.~3397--3410, 2011.
+
+\bibitem{maulik2002performance}
+U.~Maulik and S.~Bandyopadhyay, ``Performance evaluation of some clustering
+  algorithms and validity indices,'' {\em IEEE Transactions on pattern analysis
+  and machine intelligence}, vol.~24, no.~12, pp.~1650--1654, 2002.
+
+\bibitem{kumar2014performance}
+V.~Kumar, J.~K. Chhabra, and D.~Kumar, ``Performance evaluation of distance
+  metrics in the clustering algorithms,'' {\em INFOCOMP Journal of Computer
+  Science}, vol.~13, no.~1, pp.~38--52, 2014.
+
+\bibitem{jain1988algorithms}
+A.~K. Jain and R.~C. Dubes, {\em Algorithms for clustering data}.
+\newblock Prentice-Hall, Inc., 1988.
+
+\bibitem{pang2005introduction}
+T.~Pang-Ning, M.~Steinbach, and V.~Kumar, ``Introduction to data mining
+  addison-wesley,'' 2005.
+
+\bibitem{murtagh2012algorithms}
+F.~Murtagh and P.~Contreras, ``Algorithms for hierarchical clustering: an
+  overview,'' {\em Wiley Interdisciplinary Reviews: Data Mining and Knowledge
+  Discovery}, vol.~2, no.~1, pp.~86--97, 2012.
+
+\bibitem{gurrutxaga2010sep}
+I.~Gurrutxaga, I.~Albisua, O.~Arbelaitz, J.~I. Mart{\'\i}n, J.~Muguerza, J.~M.
+  P{\'e}rez, and I.~Perona, ``Sep/cop: An efficient method to find the best
+  partition in hierarchical clustering based on a new cluster validity index,''
+  {\em Pattern Recognition}, vol.~43, no.~10, pp.~3364--3373, 2010.
+
+\bibitem{wu2004clustering}
+S.~Wu and T.~W. Chow, ``Clustering of the self-organizing map using a
+  clustering validity index based on inter-cluster and intra-cluster density,''
+  {\em Pattern Recognition}, vol.~37, no.~2, pp.~175--188, 2004.
+
+\bibitem{Finding_Groups_in_Data_An_Introduction_To_Cluster_Analysis}
+L.~Kaufman and P.~Rousseeuw, {\em Finding Groups in Data: An Introduction To
+  Cluster Analysis}.
+\newblock 01 1990.
+
+\bibitem{roux2018comparative}
+M.~Roux, ``A comparative study of divisive and agglomerative hierarchical
+  clustering algorithms,'' {\em Journal of Classification}, vol.~35, no.~2,
+  pp.~345--366, 2018.
+
+\bibitem{williams1959multivariate}
+W.~T. Williams and J.~M. Lambert, ``Multivariate methods in plant ecology: I.
+  association-analysis in plant communities,'' {\em The Journal of Ecology},
+  pp.~83--101, 1959.
+
+\bibitem{macnaughton1964dissimilarity}
+P.~Macnaughton-Smith, W.~Williams, M.~Dale, and L.~Mockett, ``Dissimilarity
+  analysis: a new technique of hierarchical sub-division,'' {\em Nature},
+  vol.~202, no.~4936, pp.~1034--1035, 1964.
+
+\bibitem{hubert1973monotone}
+L.~Hubert, ``Monotone invariant clustering procedures,'' {\em Psychometrika},
+  vol.~38, no.~1, pp.~47--62, 1973.
+
+\bibitem{roux1991basic}
+M.~Roux, ``Basic procedures in hierarchical cluster analysis,'' in {\em Applied
+  multivariate analysis in SAR and environmental studies}, pp.~115--135,
+  Springer, 1991.
+
+\bibitem{roux1995divisive}
+M.~Roux, ``About divisive methods in hierarchical clustering,'' {\em Data
+  Science and Its Applications}, pp.~101--106, 1995.
+
+\bibitem{sun2008clustering}
+J.-G. Sun, J.~Liu, and L.-Y. Zhao, ``Clustering algorithms research,'' {\em
+  Journal of software}, vol.~19, no.~1, pp.~48--61, 2008.
+
+\bibitem{na2010research}
+S.~Na, L.~Xumin, and G.~Yong, ``Research on k-means clustering algorithm: An
+  improved k-means clustering algorithm,'' in {\em 2010 Third International
+  Symposium on intelligent information technology and security informatics},
+  pp.~63--67, Ieee, 2010.
+
+\bibitem{fahim2006efficient}
+A.~Fahim, A.~Salem, F.~A. Torkey, and M.~Ramadan, ``An efficient enhanced
+  k-means clustering algorithm,'' {\em Journal of Zhejiang University-Science
+  A}, vol.~7, no.~10, pp.~1626--1633, 2006.
+
+\bibitem{nazeer2009improving}
+K.~A. Nazeer and M.~Sebastian, ``Improving the accuracy and efficiency of the
+  k-means clustering algorithm,'' in {\em Proceedings of the world congress on
+  engineering}, vol.~1, pp.~1--3, Citeseer, 2009.
+
+\bibitem{zadeh1965information}
+L.~A. Zadeh, ``Information and control,'' {\em Fuzzy sets}, vol.~8, no.~3,
+  pp.~338--353, 1965.
+
+\bibitem{ruspini1969new}
+E.~H. Ruspini, ``A new approach to clustering,'' {\em Information and control},
+  vol.~15, no.~1, pp.~22--32, 1969.
+
+\bibitem{bora2014comparative}
+D.~J. Bora, D.~Gupta, and A.~Kumar, ``A comparative study between fuzzy
+  clustering algorithm and hard clustering algorithm,'' {\em arXiv preprint
+  arXiv:1404.6059}, 2014.
+
+\bibitem{taherpour2018application}
+A.~Taherpour, A.~Cheshmeh~Sefidi, A.~Bemani, and T.~Hamule, ``Application of
+  fuzzy c-means algorithm for the estimation of asphaltene precipitation,''
+  {\em Petroleum Science and Technology}, vol.~36, no.~3, pp.~239--243, 2018.
+
+\bibitem{rezaee1998new}
+M.~R. Rezaee, B.~P. Lelieveldt, and J.~H. Reiber, ``A new cluster validity
+  index for the fuzzy c-mean,'' {\em Pattern recognition letters}, vol.~19,
+  no.~3-4, pp.~237--246, 1998.
+
+\bibitem{ZHANG20081205}
+Y.~Zhang, W.~Wang, X.~Zhang, and Y.~Li, ``A cluster validity index for fuzzy
+  clustering,'' {\em Information Sciences}, vol.~178, no.~4, pp.~1205--1218,
+  2008.
+
+\bibitem{dunn1974well}
+J.~C. Dunn, ``Well-separated clusters and optimal fuzzy partitions,'' {\em
+  Journal of cybernetics}, vol.~4, no.~1, pp.~95--104, 1974.
+
+\bibitem{Saitta2008}
+S.~Saitta, B.~Raphael, and I.~F.~C. Smith, ``A comprehensive validity index for
+  clustering,'' {\em Intelligent Data Analysis}, vol.~12, pp.~529--548, 2008.
+\newblock 6.
+
+\bibitem{calinski1974dendrite}
+T.~Cali{\'n}ski and J.~Harabasz, ``A dendrite method for cluster analysis,''
+  {\em Communications in Statistics-theory and Methods}, vol.~3, no.~1,
+  pp.~1--27, 1974.
+
+\bibitem{davies1979cluster}
+D.~L. Davies and D.~W. Bouldin, ``A cluster separation measure,'' {\em IEEE
+  transactions on pattern analysis and machine intelligence}, no.~2,
+  pp.~224--227, 1979.
+
+\bibitem{kaufman2009finding}
+L.~Kaufman and P.~J. Rousseeuw, {\em Finding groups in data: an introduction to
+  cluster analysis}, vol.~344.
+\newblock John Wiley \& Sons, 2009.
+
+\bibitem{bezdek1974numerical}
+J.~C. Bezdek, ``Numerical taxonomy with fuzzy sets,'' {\em Journal of
+  mathematical biology}, vol.~1, no.~1, pp.~57--71, 1974.
+
+\bibitem{bezdek1973cluster}
+J.~C. Bezdek, ``Cluster validity with fuzzy sets,'' 1973.
+
+\bibitem{wu2005cluster}
+K.-L. Wu and M.-S. Yang, ``A cluster validity index for fuzzy clustering,''
+  {\em pattern recognition letters}, vol.~26, no.~9, pp.~1275--1291, 2005.
+
+\bibitem{fukuyama1989new}
+Y.~Fukuyama, ``A new method of choosing the number of clusters for the fuzzy
+  c-mean method,'' in {\em Proc. 5th Fuzzy Syst. Symp., 1989}, pp.~247--250,
+  1989.
+
+\bibitem{xie1991validity}
+X.~L. Xie and G.~Beni, ``A validity measure for fuzzy clustering,'' {\em IEEE
+  Transactions on pattern analysis and machine intelligence}, vol.~13, no.~8,
+  pp.~841--847, 1991.
+
 \end{thebibliography}

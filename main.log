@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.2.13)  27 JUN 2021 16:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.2.13)  1 JUL 2021 01:49
 entering extended mode
 **d:/codeSourceFolder/1111____PFE/pfe_memoire/main.tex
 (d:/codeSourceFolder/1111____PFE/pfe_memoire/main.tex
@@ -440,33 +440,66 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \rotheadsize=\dimen291
 \c@nlinenum=\count308
 \TeXr@lab=\toks39
+) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+ (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+ (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen292
+\captionmargin@=\dimen293
+\captionwidth=\dimen294
+\caption@tempdima=\dimen295
+\caption@indent=\dimen296
+\caption@parindent=\dimen297
+\caption@hangindent=\dimen298
+Package caption Info: Standard document class detected.
+Package caption Info: french babel package is loaded.
+)
+\c@caption@flags=\count309
+\c@continuedfloat=\count310
+Package caption Info: listings package is loaded.
+)
+\c@KVtest=\count311
+\sf@farskip=\skip63
+\sf@captopadj=\dimen299
+\sf@capskip=\skip64
+\sf@nearskip=\skip65
+\c@subfigure=\count312
+\c@subfigure@save=\count313
+\c@lofdepth=\count314
+\c@subtable=\count315
+\c@subtable@save=\count316
+\c@lotdepth=\count317
+\sf@top=\skip66
+\sf@bottom=\skip67
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks40
-\minrowclearance=\skip63
+\minrowclearance=\skip68
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/spreadtab\spreadtab.sty
 Package: spreadtab 2019/02/27 v0.5 Spreadsheet features for table environments (CT)
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
-\integerpart=\count309
-\decimalpart=\count310
+\integerpart=\count318
+\decimalpart=\count319
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp.sty
 Package: fp 1995/04/02
  `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/fp\defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count311
+\actioncount=\count320
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count312
-\FP@xia=\count313
-\FP@xib=\count314
-\FP@xfa=\count315
-\FP@xfb=\count316
-\FP@rega=\count317
-\FP@regb=\count318
-\FP@regs=\count319
-\FP@times=\count320
+\FP@xs=\count321
+\FP@xia=\count322
+\FP@xib=\count323
+\FP@xfa=\count324
+\FP@xfb=\count325
+\FP@rega=\count326
+\FP@regb=\count327
+\FP@regs=\count328
+\FP@times=\count329
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-addons.sty
 Package: fp-addons 1995/03/15
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-snap.sty
@@ -479,7 +512,7 @@ Package: fp-trigo 1995/04/14
 Package: fp-pas 1994/08/29
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count321
+\FPseed=\count330
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eqn.sty
 Package: fp-eqn 1995/04/03
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-upn.sty
@@ -487,27 +520,27 @@ Package: fp-upn 1996/10/21
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eval.sty
 Package: fp-eval 1995/04/03
 )) spreadtab message: FP calc engine now active
-\ST@count=\count322
-\ST@colcount=\count323
-\ST@colcount@i=\count324
-\ST@rowcount=\count325
-\ST@rowcount@i=\count326
-\ST@intpart=\count327
+\ST@count=\count331
+\ST@colcount=\count332
+\ST@colcount@i=\count333
+\ST@rowcount=\count334
+\ST@rowcount@i=\count335
+\ST@intpart=\count336
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/slashbox\slashbox.sty
 slashbox style by K.Yasuoka, May 1993.
 \@slashboxa=\box72
 \@slashboxb=\box73
 \@slashboxc=\box74
-\@slashboxwd=\count328
-\@slashboxht=\count329
-\@slashsepl=\dimen292
-\@slashsepr=\dimen293
+\@slashboxwd=\count337
+\@slashboxht=\count338
+\@slashsepl=\dimen300
+\@slashsepr=\dimen301
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/fancybox\fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \@fancybox=\box75
-\shadowsize=\dimen294
+\shadowsize=\dimen302
 \@Sbox=\box76
 \do@VerbBox=\toks41
 \the@fancyput=\toks42
@@ -527,54 +560,54 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 \XKV@toks=\toks45
 \XKV@tempa@toks=\toks46
 )
-\XKV@depth=\count330
+\XKV@depth=\count339
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen295
-\TX@old@table=\dimen296
-\TX@old@col=\dimen297
-\TX@target=\dimen298
-\TX@delta=\dimen299
-\TX@cols=\count331
+\TX@col@width=\dimen303
+\TX@old@table=\dimen304
+\TX@old@col=\dimen305
+\TX@target=\dimen306
+\TX@delta=\dimen307
+\TX@cols=\count340
 \TX@ftn=\toks47
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count332
-\rotFPtop=\skip64
-\rotFPbot=\skip65
+\c@r@tfl@t=\count341
+\rotFPtop=\skip69
+\rotFPbot=\skip70
 \rot@float@box=\box77
 \rot@mess@toks=\toks48
 )
 
 Package ctable Warning:  Transparency disabled: incompatible with tikz package  on input line 36.
 
-\@CTframesep=\dimen300
-\@dfltCTframesep=\dimen301
-\@CTframerule=\dimen302
-\@dfltCTframerule=\dimen303
-\@CTwidth=\dimen304
-\@dfltCTwidth=\dimen305
-\@CTcaptionskip=\dimen306
-\@dfltCTcaptionskip=\dimen307
-\@CTmaxwidth=\dimen308
-\@dfltCTmaxwidth=\dimen309
-\@CTmincapwidth=\dimen310
-\@dfltCTmincapwidth=\dimen311
-\@CTfooterwidth=\dimen312
-\@dfltCTfooterwidth=\dimen313
-\@CTw=\dimen314
-\@CTfloatwidth=\dimen315
-\@CToldsep=\dimen316
-\@CToldrule=\dimen317
+\@CTframesep=\dimen308
+\@dfltCTframesep=\dimen309
+\@CTframerule=\dimen310
+\@dfltCTframerule=\dimen311
+\@CTwidth=\dimen312
+\@dfltCTwidth=\dimen313
+\@CTcaptionskip=\dimen314
+\@dfltCTcaptionskip=\dimen315
+\@CTmaxwidth=\dimen316
+\@dfltCTmaxwidth=\dimen317
+\@CTmincapwidth=\dimen318
+\@dfltCTmincapwidth=\dimen319
+\@CTfooterwidth=\dimen320
+\@dfltCTfooterwidth=\dimen321
+\@CTw=\dimen322
+\@CTfloatwidth=\dimen323
+\@CToldsep=\dimen324
+\@CToldrule=\dimen325
 \CT@t=\box78
-\@CTcurftwidth=\dimen318
+\@CTcurftwidth=\dimen326
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count333
+\c@float@type=\count342
 \float@exts=\toks49
 \float@box=\box79
 \@float@everytoks=\toks50
@@ -622,23 +655,23 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
 Package: microtype 2020/12/07 v2.8 Micro-typographical refinements (RS)
 \MT@toks=\toks53
-\MT@count=\count334
+\MT@count=\count343
 LaTeX Info: Redefining \textls on input line 788.
-\MT@outer@kern=\dimen319
+\MT@outer@kern=\dimen327
 LaTeX Info: Redefining \textmicrotypecontext on input line 1358.
-\MT@listname@count=\count335
+\MT@listname@count=\count344
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdftex.def
 File: microtype-pdftex.def 2020/12/07 v2.8 Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 915.
 LaTeX Info: Redefining \lslig on input line 915.
-\MT@outer@space=\skip66
+\MT@outer@space=\skip71
 )
 Package microtype Info: Loading configuration file microtype.cfg.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
 File: microtype.cfg 2020/12/07 v2.8 microtype main configuration file (RS)
 )) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
-\@mathmargin=\skip67
+\@mathmargin=\skip72
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
@@ -646,101 +679,82 @@ Package: amstext 2000/06/29 v2.01 AMS text
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks54
-\ex@=\dimen320
+\ex@=\dimen328
 )) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen321
+\pmbraise@=\dimen329
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count336
+\inf@bad=\count345
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count337
-\leftroot@=\count338
+\uproot@=\count346
+\leftroot@=\count347
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count339
-\DOTSCASE@=\count340
+\classnum@=\count348
+\DOTSCASE@=\count349
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
 \Mathstrutbox@=\box81
 \strutbox@=\box82
-\big@size=\dimen322
+\big@size=\dimen330
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count341
-\c@MaxMatrixCols=\count342
+\macc@depth=\count350
+\c@MaxMatrixCols=\count351
 \dotsspace@=\muskip16
-\c@parentequation=\count343
-\dspbrk@lvl=\count344
+\c@parentequation=\count352
+\dspbrk@lvl=\count353
 \tag@help=\toks55
-\row@=\count345
-\column@=\count346
-\maxfields@=\count347
+\row@=\count354
+\column@=\count355
+\maxfields@=\count356
 \andhelp@=\toks56
-\eqnshift@=\dimen323
-\alignsep@=\dimen324
-\tagshift@=\dimen325
-\tagwidth@=\dimen326
-\totwidth@=\dimen327
-\lineht@=\dimen328
+\eqnshift@=\dimen331
+\alignsep@=\dimen332
+\tagshift@=\dimen333
+\tagwidth@=\dimen334
+\totwidth@=\dimen335
+\lineht@=\dimen336
 \@envbody=\toks57
-\multlinegap=\skip68
-\multlinetaggap=\skip69
+\multlinegap=\skip73
+\multlinetaggap=\skip74
 \mathdisplay@stack=\toks58
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2020/10/26 v3.5g Customizing captions (AR)
- (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen329
-\captionmargin@=\dimen330
-\captionwidth=\dimen331
-\caption@tempdima=\dimen332
-\caption@indent=\dimen333
-\caption@parindent=\dimen334
-\caption@hangindent=\dimen335
-Package caption Info: Standard document class detected.
-Package caption Info: french babel package is loaded.
-)
-\c@caption@flags=\count348
-\c@continuedfloat=\count349
-Package caption Info: float package is loaded.
-Package caption Info: listings package is loaded.
-Package caption Info: rotating package is loaded.
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count350
-\Gm@cntv=\count351
-\c@Gm@tempcnt=\count352
-\Gm@bindingoffset=\dimen336
-\Gm@wd@mp=\dimen337
-\Gm@odd@mp=\dimen338
-\Gm@even@mp=\dimen339
-\Gm@layoutwidth=\dimen340
-\Gm@layoutheight=\dimen341
-\Gm@layouthoffset=\dimen342
-\Gm@layoutvoffset=\dimen343
+\Gm@cnth=\count357
+\Gm@cntv=\count358
+\c@Gm@tempcnt=\count359
+\Gm@bindingoffset=\dimen337
+\Gm@wd@mp=\dimen338
+\Gm@odd@mp=\dimen339
+\Gm@even@mp=\dimen340
+\Gm@layoutwidth=\dimen341
+\Gm@layoutheight=\dimen342
+\Gm@layouthoffset=\dimen343
+\Gm@layoutvoffset=\dimen344
 \Gm@dimlist=\toks59
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (d:/codeSourceFolder\1111____PFE\pfe_memoire\commandesPerso/perso.tex) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen344
-\ESO@tempdimb=\dimen345
+\ESO@tempdima=\dimen345
+\ESO@tempdimb=\dimen346
 ) (d:/codeSourceFolder\1111____PFE\pfe_memoire\pagedegarde.tex) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box83
-\beforetitleunit=\skip70
-\aftertitleunit=\skip71
-\ttl@plus=\dimen346
-\ttl@minus=\dimen347
+\beforetitleunit=\skip75
+\aftertitleunit=\skip76
+\ttl@plus=\dimen347
+\ttl@minus=\dimen348
 \ttl@toksa=\toks60
-\titlewidth=\dimen348
-\titlewidthlast=\dimen349
-\titlewidthfirst=\dimen350
+\titlewidth=\dimen349
+\titlewidthlast=\dimen350
+\titlewidthfirst=\dimen351
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/minitoc\minitoc.sty
 Package: minitoc 2018/07/12 v62 Package minitoc
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/minitoc\mtcmess.sty
@@ -749,8 +763,8 @@ Package: mtcmess 2006/03/14
 Package minitoc Info: I0001
 (minitoc)             *** minitoc package, version 62 ***.
 \tf@mtc=\write7
-\mtcindent=\skip72
-\mtcskipamount=\skip73
+\mtcindent=\skip77
+\mtcskipamount=\skip78
 Package minitoc Info: I0005
 (minitoc)             compatible with hyperref.
 Package minitoc Info: I0023
@@ -776,11 +790,11 @@ Package minitoc Info: I0031
 
 \openout7 = `main.mtc0'.
 
-\c@mtc=\count353
-\c@minitocdepth=\count354
-\c@ptc=\count355
-\c@parttocdepth=\count356
-\ptcindent=\skip74
+\c@mtc=\count360
+\c@minitocdepth=\count361
+\c@ptc=\count362
+\c@parttocdepth=\count363
+\ptcindent=\skip79
 Package minitoc Info: I0010
 (minitoc)             The english language is selected.
 (minitoc)              on input line 4910.
@@ -821,9 +835,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen351
-\Hy@linkcounter=\count357
-\Hy@pagecounter=\count358
+\@linkdim=\dimen352
+\Hy@linkcounter=\count364
+\Hy@pagecounter=\count365
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -833,7 +847,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count359
+\Hy@SavedSpaceFactor=\count366
 Package hyperref Info: Option `colorlinks' set `true' on input line 4338.
 Package hyperref Info: Hyper figures OFF on input line 4464.
 Package hyperref Info: Link nesting OFF on input line 4469.
@@ -842,21 +856,21 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count360
+\c@Hy@tempcnt=\count367
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5076.
-\XeTeXLinkMargin=\dimen352
+\XeTeXLinkMargin=\dimen353
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count361
-\Field@Width=\dimen353
-\Fld@charsize=\dimen354
+\Fld@menulength=\count368
+\Field@Width=\dimen354
+\Fld@charsize=\dimen355
 Package hyperref Info: Hyper figures OFF on input line 6347.
 Package hyperref Info: Link nesting OFF on input line 6352.
 Package hyperref Info: Hyper index ON on input line 6355.
@@ -870,9 +884,9 @@ LaTeX Info: Redefining \pageref on input line 6421.
 Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi package
 with kernel methods
 )
-\Hy@abspage=\count362
-\c@Item=\count363
-\c@Hfootnote=\count364
+\Hy@abspage=\count369
+\c@Item=\count370
+\c@Hfootnote=\count371
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
@@ -881,8 +895,8 @@ File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
 with kernel methods
 )
-\Fld@listcount=\count365
-\c@bookmark@seq@number=\count366
+\Fld@listcount=\count372
+\c@bookmark@seq@number=\count373
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
@@ -890,12 +904,12 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
-\Hy@SectionHShift=\skip75
+\Hy@SectionHShift=\skip80
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 Package minitoc Info: I0024
-(minitoc)             PREPARING MINITOCS FROM main.toc on input line 66.
+(minitoc)             PREPARING MINITOCS FROM main.toc on input line 68.
 Package minitoc Info: I0033
 (minitoc)             Writing main.mtc1.
 \openout7 = `main.mtc1'.
@@ -936,47 +950,47 @@ Package minitoc Info: I0033
 (minitoc)             Writing main.mtc10.
 \openout7 = `main.mtc10'.
 
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 69.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 71.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count367
+\l__kernel_color_stack_int=\count374
 \l__pdf_internal_box=\box86
 ) (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Info: Redefining \degres on input line 69.
-LaTeX Info: Redefining \dots on input line 69.
-LaTeX Info: Redefining \up on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Info: Redefining \degres on input line 71.
+LaTeX Info: Redefining \dots on input line 71.
+LaTeX Info: Redefining \up on input line 71.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count368
-\scratchdimen=\dimen355
+\scratchcounter=\count375
+\scratchdimen=\dimen356
 \scratchbox=\box87
-\nofMPsegments=\count369
-\nofMParguments=\count370
+\nofMPsegments=\count376
+\nofMParguments=\count377
 \everyMPshowfont=\toks62
-\MPscratchCnt=\count371
-\MPscratchDim=\dimen356
-\MPnumerator=\count372
-\makeMPintoPDFobject=\count373
+\MPscratchCnt=\count378
+\MPscratchDim=\dimen357
+\MPnumerator=\count379
+\makeMPintoPDFobject=\count380
 \everyMPtoPDFconversion=\toks63
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -984,27 +998,29 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 )
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into your preamble.
- on input line 69.
+ on input line 71.
 
-\c@lstlisting=\count374
-LaTeX Info: Redefining \microtypecontext on input line 69.
+\c@lstlisting=\count381
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \microtypecontext on input line 71.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 69.
+LaTeX Info: Redefining \showhyphens on input line 71.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: hyperref package is loaded.
-Package caption Info: End \AtBeginDocument code.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1039,6 +1055,12 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+\c@minilofdepth=\count382
+\c@minilotdepth=\count383
+\c@partlofdepth=\count384
+\c@partlotdepth=\count385
+\c@sectlofdepth=\count386
+\c@sectlotdepth=\count387
 Package minitoc(hints) Info: I0049
 (minitoc(hints))             ==> You requested the hints option. 
 (minitoc(hints))             Some hints are eventually given below.
@@ -1072,7 +1094,7 @@ Package minitoc(hints) Warning: W0023
 (minitoc(hints))                --- It may be the consequence 
 (minitoc(hints))                of loading the ``hyperref'' package.
 
-Package hyperref Info: Link coloring ON on input line 69.
+Package hyperref Info: Link coloring ON on input line 71.
 (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -1080,16 +1102,16 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count375
+\c@section@level=\count388
 )
-LaTeX Info: Redefining \ref on input line 69.
-LaTeX Info: Redefining \pageref on input line 69.
-LaTeX Info: Redefining \nameref on input line 69.
+LaTeX Info: Redefining \ref on input line 71.
+LaTeX Info: Redefining \pageref on input line 71.
+LaTeX Info: Redefining \nameref on input line 71.
  (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.out) (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.out)
 \@outlinefile=\write8
 \openout8 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 70.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 72.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
@@ -1127,32 +1149,32 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 73.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 75.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 73.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 75.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 73.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 75.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 73.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 75.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 73.
+(Font)              <12> on input line 75.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 73.
+(Font)              <8> on input line 75.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 73.
-<Images/Logo.png, id=416, 229.8186pt x 145.9854pt>
+(Font)              <6> on input line 75.
+<Images/Logo.png, id=440, 229.8186pt x 145.9854pt>
 File: Images/Logo.png Graphic file (type png)
 <use Images/Logo.png>
-Package pdftex.def Info: Images/Logo.png  used on input line 73.
+Package pdftex.def Info: Images/Logo.png  used on input line 75.
 (pdftex.def)             Requested size: 102.42836pt x 65.06464pt.
  [1{C:/Users/abdou/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
@@ -1193,7 +1215,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
  (d:/codeSourceFolder\1111____PFE\pfe_memoire\acronymes.tex [9
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 3--8
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
 
  []
 
@@ -1202,7 +1224,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--8
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.91 \firstpart
+l.93 \firstpart
                 [1
 
 
@@ -1227,7 +1249,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--19
  []
 
 [3]
-<images/chapitre1/Les Ã©tapes de l'extraction de connaissances Ã  partir de donnÃ©es.png, id=642, 382.93062pt x 163.10938pt>
+<images/chapitre1/Les Ã©tapes de l'extraction de connaissances Ã  partir de donnÃ©es.png, id=676, 382.93062pt x 163.10938pt>
 File: images/chapitre1/Les Ã©tapes de l'extraction de connaissances Ã  partir de donnÃ©es.png Graphic file (type png)
 <use images/chapitre1/Les Ã©tapes de l'extraction de connaissances Ã  partir de donnÃ©es.png>
 Package pdftex.def Info: images/chapitre1/Les Ã©tapes de l'extraction de connaissances Ã  partir de donnÃ©es.png  used on input line 40.
@@ -1239,13 +1261,13 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
  [4 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre1/Les Ã©tapes de l'extraction de connaissances Ã  partir de donnÃ©es.png>]
-<images/chapitre1/ITS architecture.png, id=654, 1405.25pt x 702.625pt>
+<images/chapitre1/ITS architecture.png, id=688, 1405.25pt x 702.625pt>
 File: images/chapitre1/ITS architecture.png Graphic file (type png)
 <use images/chapitre1/ITS architecture.png>
 Package pdftex.def Info: images/chapitre1/ITS architecture.png  used on input line 77.
 (pdftex.def)             Requested size: 441.01773pt x 220.5025pt.
  [5 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre1/ITS architecture.png>]
-<images/chapitre1/Principaux domaines liÃ©s Ã  l'exploration de donnÃ©es Ã©ducatives.png, id=668, 1003.75pt x 702.625pt>
+<images/chapitre1/Principaux domaines liÃ©s Ã  l'exploration de donnÃ©es Ã©ducatives.png, id=702, 1003.75pt x 702.625pt>
 File: images/chapitre1/Principaux domaines liÃ©s Ã  l'exploration de donnÃ©es Ã©ducatives.png Graphic file (type png)
 <use images/chapitre1/Principaux domaines liÃ©s Ã  l'exploration de donnÃ©es Ã©ducatives.png>
 Package pdftex.def Info: images/chapitre1/Principaux domaines liÃ©s Ã  l'exploration de donnÃ©es Ã©ducatives.png  used on input line 110.
@@ -1256,7 +1278,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--117
  []
 
 [7 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre1/Principaux domaines liÃ©s Ã  l'exploration de donnÃ©es Ã©ducatives.png>]
-<images/chapitre1/Data mining application process applied in education.png, id=682, 2007.5pt x 803.0pt>
+<images/chapitre1/Data mining application process applied in education.png, id=716, 2007.5pt x 803.0pt>
 File: images/chapitre1/Data mining application process applied in education.png Graphic file (type png)
 <use images/chapitre1/Data mining application process applied in education.png>
 Package pdftex.def Info: images/chapitre1/Data mining application process applied in education.png  used on input line 127.
@@ -1266,7 +1288,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--140
 
  []
 
-<images/chapitre1/edm techniques.png, id=683, 2007.5pt x 903.375pt>
+<images/chapitre1/edm techniques.png, id=717, 2007.5pt x 903.375pt>
 File: images/chapitre1/edm techniques.png Graphic file (type png)
 <use images/chapitre1/edm techniques.png>
 Package pdftex.def Info: images/chapitre1/edm techniques.png  used on input line 143.
@@ -1280,230 +1302,30 @@ Chapitre 2.
 (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.mtc4) [12
 
 ]
-Underfull \hbox (badness 5133) in paragraph at lines 24--24
-\T1/lmr/bx/n/12 (+20) Modèle dif-fé-
+Underfull \hbox (badness 1515) in paragraph at lines 28--28
+[]|\T1/lmr/m/n/12 (+20) Modélisation des connais-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-[]|\T1/lmr/m/n/12 (+20) Modélisation des
+Underfull \hbox (badness 1895) in paragraph at lines 28--28
+\T1/lmr/m/n/12 (+20) Identification des la-cunes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-\T1/lmr/m/n/12 (+20) connais-sances de
+Underfull \hbox (badness 8170) in paragraph at lines 36--36
+[]|\T1/lmr/m/n/12 (+20) Classification des ap-pre-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-\T1/lmr/m/n/12 (+20) Identification des
+Underfull \hbox (badness 3525) in paragraph at lines 37--37
+[]|\T1/lmr/m/n/12 (+20) Initialisation de nou-veau
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-\T1/lmr/m/n/12 (+20) la-cunes dans les
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+[]|\T1/lmr/m/n/12 (+20) -Consommation de res-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-\T1/lmr/m/n/12 (+20) connais-sances des
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-[]|\T1/lmr/m/n/12 (+20) -Haute ex-pres-si-vité
- []
-
-
-Underfull \hbox (badness 3872) in paragraph at lines 26--26
-\T1/lmr/m/n/12 (+20) des pro-blèmes com-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-\T1/lmr/m/n/12 (+20) - uti-li-sa-tion de la
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
-[]|\T1/lmr/bx/n/12 (+20) Modèle d'er-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-[]|\T1/lmr/m/n/12 (+20) Identification des
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-\T1/lmr/m/n/12 (+20) er-reurs et fausses
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
-[]|\T1/lmr/m/n/12 (+20) Identification des
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
-\T1/lmr/m/n/12 (+20) er-reurs et fausses
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
-\T1/lmr/m/n/12 (+20) croyances de l'ap-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
-\T1/lmr/m/n/12 (+20) pre-nant dans un
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
-[]|\T1/lmr/m/n/12 (+20) Classification des
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
-\T1/lmr/m/n/12 (+20) ap-pre-nants se-lon
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
-\T1/lmr/m/n/12 (+20) des ca-rac-té-ris-tiques
- []
-
-
-Underfull \hbox (badness 4132) in paragraph at lines 33--33
-\T1/lmr/m/n/12 (+20) com-munes, les plus
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
-\T1/lmr/m/n/12 (+20) d'ap-pren-tis-sage, le
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 34--34
-\T1/lmr/m/n/12 (+20) veau ca-rac-té-ris-tiques
- []
-
-
-Underfull \hbox (badness 6825) in paragraph at lines 38--39
-\T1/lmr/m/n/12 (+20) aux re-la-tions entre
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--43
-[]|\T1/lmr/m/n/12 (+20) -Expression lin-guis-
- []
-
-
-Underfull \hbox (badness 2205) in paragraph at lines 41--43
-\T1/lmr/m/n/12 (+20) tique du ni-veau de
- []
-
-
-Underfull \hbox (badness 6910) in paragraph at lines 44--45
-\T1/lmr/m/n/12 (+20) -Grande ex-pres-si-vité
- []
-
-
-Overfull \hbox (35.77356pt too wide) in paragraph at lines 19--49
-[][] 
- []
-
-
-Underfull \hbox (badness 2547) in paragraph at lines 59--59
-[]|\T1/lmr/bx/n/12 (+20) Réseau Bayé-
- []
-
-
-Underfull \hbox (badness 4303) in paragraph at lines 60--62
-\T1/lmr/m/n/12 (+20) -Prédiction des per-
- []
-
-
-Underfull \hbox (badness 1817) in paragraph at lines 63--65
-\T1/lmr/m/n/12 (+20) ter à un en-vi-ron-ne-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
-[]|\T1/lmr/m/n/12 (+20) -Consommation de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
-\T1/lmr/m/n/12 (+20) -Difficulté à com-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
-\T1/lmr/m/n/12 (+20) -Grand nombre de
- []
-
-
-Overfull \hbox (5.41425pt too wide) in paragraph at lines 69--69
-[]|\T1/lmr/bx/n/12 (-20) Programmation
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
-[]|\T1/lmr/m/n/12 (+20) - Re-com-man-da-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
-\T1/lmr/m/n/12 (+20) -Prédiction des
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
-\T1/lmr/m/n/12 (+20) per-for-mances des
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
-\T1/lmr/m/n/12 (+20) -Amélioration des
- []
-
-
-Underfull \hbox (badness 1701) in paragraph at lines 73--75
-\T1/lmr/m/n/12 (+20) -des re-cherches puis-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--75
-\T1/lmr/m/n/12 (+20) de pro-blèmes com-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
-[]|\T1/lmr/m/n/12 (+20) -Grand Ex-pres-si-ve-
- []
-
-
-Underfull \hbox (badness 5403) in paragraph at lines 80--82
-\T1/lmr/m/n/12 (+20) -gestion des in-cer-ti-
- []
-
-
-Underfull \hbox (badness 6252) in paragraph at lines 83--83
-[]|\T1/lmr/m/n/12 (+20) La com-plexité aug-
- []
-
-
-Overfull \hbox (35.77356pt too wide) in paragraph at lines 54--85
-[][] 
- []
-
-<images/chapitre2/Learner_model.png, id=726, 596.2275pt x 382.5492pt>
-File: images/chapitre2/Learner_model.png Graphic file (type png)
-<use images/chapitre2/Learner_model.png>
-Package pdftex.def Info: images/chapitre2/Learner_model.png  used on input line 92.
-(pdftex.def)             Requested size: 441.01773pt x 282.96521pt.
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 29.85403pt, for example:
@@ -1512,6 +1334,40 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [13]
+Underfull \hbox (badness 1888) in paragraph at lines 66--68
+[]|\T1/lmr/m/n/12 (+20) -Apprendre et pré-dire le
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
+[]|\T1/lmr/m/n/12 (+20) -Consommation de res-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+\T1/lmr/m/n/12 (+20) -Prédiction des per-for-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+\T1/lmr/m/n/12 (+20) -Amélioration des al-go-
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 79--81
+\T1/lmr/m/n/12 (+20) -des re-cherches puis-santes
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 85--85
+[]|\T1/lmr/m/n/12 (+20) -Évaluation et pré-dic-tion
+ []
+
+
+Underfull \hbox (badness 4967) in paragraph at lines 89--89
+[]|\T1/lmr/m/n/12 (+20) La com-plexité aug-mente
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 29.85403pt, for example:
@@ -1520,6 +1376,12 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [14]
+<images/chapitre2/Learner_model.png, id=773, 596.2275pt x 382.5492pt>
+File: images/chapitre2/Learner_model.png Graphic file (type png)
+<use images/chapitre2/Learner_model.png>
+Package pdftex.def Info: images/chapitre2/Learner_model.png  used on input line 98.
+(pdftex.def)             Requested size: 441.01773pt x 282.96521pt.
+
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 29.85403pt, for example:
@@ -1527,7 +1389,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
-[15]
+[15 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/Learner_model.png>]
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 29.85403pt, for example:
@@ -1535,7 +1397,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
-[16 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/Learner_model.png>]
+[16]
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 29.85403pt, for example:
@@ -1544,18 +1406,10 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [17]
-
-Package fancyhdr Warning: \headheight is too small (15.0pt): 
-(fancyhdr)                Make it at least 29.85403pt, for example:
-(fancyhdr)                \setlength{\headheight}{29.85403pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
-
-[18]
-<images/chapitre2/Two_Aggregation_relationships.png, id=773, 609.77812pt x 216.81pt>
+<images/chapitre2/Two_Aggregation_relationships.png, id=801, 609.77812pt x 216.81pt>
 File: images/chapitre2/Two_Aggregation_relationships.png Graphic file (type png)
 <use images/chapitre2/Two_Aggregation_relationships.png>
-Package pdftex.def Info: images/chapitre2/Two_Aggregation_relationships.png  used on input line 155.
+Package pdftex.def Info: images/chapitre2/Two_Aggregation_relationships.png  used on input line 161.
 (pdftex.def)             Requested size: 441.01773pt x 156.81104pt.
 
 
@@ -1565,8 +1419,8 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
-[19]
-Overfull \hbox (7.54727pt too wide) in paragraph at lines 164--165
+[18]
+Overfull \hbox (7.54727pt too wide) in paragraph at lines 170--171
 []\T1/ptm/m/n/12 Dans ces ap-proches, les mo-dèles de com-pé-tences n'im-pliquent que les élé-ments de connais-
  []
 
@@ -1577,11 +1431,11 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
-[20 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/Two_Aggregation_relationships.png>]
-<images/chapitre2/aggregationModelisation.png, id=797, 569.12625pt x 317.53632pt>
+[19 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/Two_Aggregation_relationships.png>]
+<images/chapitre2/aggregationModelisation.png, id=827, 569.12625pt x 317.53632pt>
 File: images/chapitre2/aggregationModelisation.png Graphic file (type png)
 <use images/chapitre2/aggregationModelisation.png>
-Package pdftex.def Info: images/chapitre2/aggregationModelisation.png  used on input line 180.
+Package pdftex.def Info: images/chapitre2/aggregationModelisation.png  used on input line 186.
 (pdftex.def)             Requested size: 441.01773pt x 246.06871pt.
 
 
@@ -1591,11 +1445,11 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
-[21 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/aggregationModelisation.png>]
-<images/chapitre2/ModÃ¨les d'Ã©quations structurelles.png, id=809, 623.83063pt x 235.37938pt>
+[20]
+<images/chapitre2/ModÃ¨les d'Ã©quations structurelles.png, id=838, 623.83063pt x 235.37938pt>
 File: images/chapitre2/ModÃ¨les d'Ã©quations structurelles.png Graphic file (type png)
 <use images/chapitre2/ModÃ¨les d'Ã©quations structurelles.png>
-Package pdftex.def Info: images/chapitre2/ModÃ¨les d'Ã©quations structurelles.png  used on input line 193.
+Package pdftex.def Info: images/chapitre2/ModÃ¨les d'Ã©quations structurelles.png  used on input line 199.
 (pdftex.def)             Requested size: 441.01773pt x 166.40579pt.
 
 
@@ -1605,7 +1459,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
-[22 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/ModÃ¨les d'Ã©quations structurelles.png>]) (d:/codeSourceFolder\1111____PFE\pfe_memoire\troisiemechapitre.tex
+[21 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/aggregationModelisation.png>]) (d:/codeSourceFolder\1111____PFE\pfe_memoire\troisiemechapitre.tex
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 29.85403pt, for example:
@@ -1613,28 +1467,28 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
-[23]
+[22 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/ModÃ¨les d'Ã©quations structurelles.png>]
 Chapitre 3.
 \openout7 = `main.mtc'.
 
 \openout7 = `main.mtc'.
 
-(d:/codeSourceFolder\1111____PFE\pfe_memoire\main.mtc5) [24
+(d:/codeSourceFolder\1111____PFE\pfe_memoire\main.mtc5) [23
 
-] [25]
-<images/chapitre3/Knowledge_component.png, id=840, 1104.125pt x 401.5pt>
+] [24]
+<images/chapitre3/Knowledge_component.png, id=870, 1104.125pt x 401.5pt>
 File: images/chapitre3/Knowledge_component.png Graphic file (type png)
 <use images/chapitre3/Knowledge_component.png>
 Package pdftex.def Info: images/chapitre3/Knowledge_component.png  used on input line 20.
 (pdftex.def)             Requested size: 441.01773pt x 160.37047pt.
- [26 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Knowledge_component.png>]
-<images/chapitre3/Items_to_skills_mappin_structure.png, id=847, 1104.125pt x 501.875pt>
+ [25 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Knowledge_component.png>]
+<images/chapitre3/Items_to_skills_mappin_structure.png, id=877, 1104.125pt x 501.875pt>
 File: images/chapitre3/Items_to_skills_mappin_structure.png Graphic file (type png)
 <use images/chapitre3/Items_to_skills_mappin_structure.png>
 Package pdftex.def Info: images/chapitre3/Items_to_skills_mappin_structure.png  used on input line 51.
 (pdftex.def)             Requested size: 441.01773pt x 200.46309pt.
- [27 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Items_to_skills_mappin_structure.png>]
-<images/chapitre3/Model_based.png, id=854, 525.965pt x 154.07562pt>
+ [26 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Items_to_skills_mappin_structure.png>]
+<images/chapitre3/Model_based.png, id=884, 525.965pt x 154.07562pt>
 File: images/chapitre3/Model_based.png Graphic file (type png)
 <use images/chapitre3/Model_based.png>
 Package pdftex.def Info: images/chapitre3/Model_based.png  used on input line 64.
@@ -1644,34 +1498,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
-<images/chapitre3/q_matrix.png, id=855, 584.68437pt x 162.6075pt>
+<images/chapitre3/q_matrix.png, id=885, 584.68437pt x 162.6075pt>
 File: images/chapitre3/q_matrix.png Graphic file (type png)
 <use images/chapitre3/q_matrix.png>
 Package pdftex.def Info: images/chapitre3/q_matrix.png  used on input line 82.
 (pdftex.def)             Requested size: 441.01773pt x 122.6575pt.
-[28 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Model_based.png>]
-<images/chapitre3/Illustration_item_smilarity.png, id=862, 363.3575pt x 196.23312pt>
+[27 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Model_based.png>]
+<images/chapitre3/Illustration_item_smilarity.png, id=892, 363.3575pt x 196.23312pt>
 File: images/chapitre3/Illustration_item_smilarity.png Graphic file (type png)
 <use images/chapitre3/Illustration_item_smilarity.png>
 Package pdftex.def Info: images/chapitre3/Illustration_item_smilarity.png  used on input line 95.
 (pdftex.def)             Requested size: 441.01773pt x 238.17937pt.
- [29 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/q_matrix.png>]
-<images/chapitre3/calcul_application_similarity.png, id=869, 577.15625pt x 282.05376pt>
+ [28 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/q_matrix.png>]
+<images/chapitre3/calcul_application_similarity.png, id=899, 577.15625pt x 282.05376pt>
 File: images/chapitre3/calcul_application_similarity.png Graphic file (type png)
 <use images/chapitre3/calcul_application_similarity.png>
 Package pdftex.def Info: images/chapitre3/calcul_application_similarity.png  used on input line 108.
 (pdftex.def)             Requested size: 441.01773pt x 215.53369pt.
- [30 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Illustration_item_smilarity.png>]
+ [29 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Illustration_item_smilarity.png>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 118.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [31 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/calcul_application_similarity.png>] [32]) (d:/codeSourceFolder\1111____PFE\pfe_memoire\quatriemechapitre.tex [33]
+) [30 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/calcul_application_similarity.png>] [31]) (d:/codeSourceFolder\1111____PFE\pfe_memoire\quatriemechapitre.tex [32]
 Chapitre 4.
 \openout7 = `main.mtc'.
 
 \openout7 = `main.mtc'.
 
-(d:/codeSourceFolder\1111____PFE\pfe_memoire\main.mtc6) [34
+(d:/codeSourceFolder\1111____PFE\pfe_memoire\main.mtc6) [33
 
 ]) (d:/codeSourceFolder\1111____PFE\pfe_memoire\cinquiemechapitre.tex
 
@@ -1681,13 +1535,13 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
-[35]
+[34]
 Chapitre 5.
 \openout7 = `main.mtc'.
 
 \openout7 = `main.mtc'.
 
-(d:/codeSourceFolder\1111____PFE\pfe_memoire\main.mtc7) [36
+(d:/codeSourceFolder\1111____PFE\pfe_memoire\main.mtc7) [35
 
 ]) (d:/codeSourceFolder\1111____PFE\pfe_memoire\sixiemechapitre.tex
 
@@ -1697,85 +1551,264 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
-[37]
+[36]
 Chapitre 6.
 \openout7 = `main.mtc'.
 
 \openout7 = `main.mtc'.
 
-(d:/codeSourceFolder\1111____PFE\pfe_memoire\main.mtc8) [38
+(d:/codeSourceFolder\1111____PFE\pfe_memoire\main.mtc8) [37
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 7--10
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[39]
-Overfull \hbox (6.27158pt too wide) in paragraph at lines 22--31
+[38]
+Overfull \hbox (6.27158pt too wide) in paragraph at lines 21--31
  [][] 
  []
 
 
-Overfull \hbox (30.26167pt too wide) in paragraph at lines 41--54
+Overfull \hbox (30.26167pt too wide) in paragraph at lines 40--54
  [][] 
  []
 
-<images/chapitre6/inter-intra_clusters__distnce.png, id=929, 636.3775pt x 405.515pt>
+<images/chapitre6/inter-intra_clusters__distnce.png, id=976, 636.3775pt x 405.515pt>
 File: images/chapitre6/inter-intra_clusters__distnce.png Graphic file (type png)
 <use images/chapitre6/inter-intra_clusters__distnce.png>
 Package pdftex.def Info: images/chapitre6/inter-intra_clusters__distnce.png  used on input line 62.
 (pdftex.def)             Requested size: 441.01773pt x 281.0246pt.
-[40] [41 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/inter-intra_clusters__distnce.png>] [42]
+[39] [40 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/inter-intra_clusters__distnce.png>]
+<images/chapitre6/single_linkage.png, id=988, 798.985pt x 581.17125pt>
+File: images/chapitre6/single_linkage.png Graphic file (type png)
+<use images/chapitre6/single_linkage.png>
+Package pdftex.def Info: images/chapitre6/single_linkage.png  used on input line 83.
+(pdftex.def)             Requested size: 239.69734pt x 174.35272pt.
+<images/chapitre6/complet_linkage.png, id=992, 798.985pt x 581.17125pt>
+File: images/chapitre6/complet_linkage.png Graphic file (type png)
+<use images/chapitre6/complet_linkage.png>
+Package pdftex.def Info: images/chapitre6/complet_linkage.png  used on input line 116.
+(pdftex.def)             Requested size: 239.69734pt x 174.35272pt.
+ [41 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/single_linkage.png> <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/complet_linkage.png>] [42]
 
-LaTeX Warning: Command \` invalid in math mode on input line 154.
+LaTeX Warning: Command \` invalid in math mode on input line 203.
 
 [43]
-Overfull \hbox (2.60286pt too wide) in paragraph at lines 159--162
-\T1/ptm/m/n/12 semble donné d'ob-jets de don-nées. Il peut être classé comme ag-glo-mé-ra-tif ou di-vi-seur. L'avan-
- []
-
-[44]
-<images/chapitre6/agglo_clustering.png, id=963, 208.5975pt x 149.796pt>
+<images/chapitre6/agglo_clustering.png, id=1035, 798.985pt x 581.17125pt>
 File: images/chapitre6/agglo_clustering.png Graphic file (type png)
 <use images/chapitre6/agglo_clustering.png>
-Package pdftex.def Info: images/chapitre6/agglo_clustering.png  used on input line 175.
-(pdftex.def)             Requested size: 441.01773pt x 316.702pt.
- [45]
-<images/chapitre6/dendrogram.png, id=968, 485.56406pt x 344.03531pt>
+Package pdftex.def Info: images/chapitre6/agglo_clustering.png  used on input line 224.
+(pdftex.def)             Requested size: 199.16928pt x 144.87566pt.
+<images/chapitre6/dendrogram.png, id=1036, 798.985pt x 577.15625pt>
 File: images/chapitre6/dendrogram.png Graphic file (type png)
 <use images/chapitre6/dendrogram.png>
-Package pdftex.def Info: images/chapitre6/dendrogram.png  used on input line 184.
-(pdftex.def)             Requested size: 441.01773pt x 312.46892pt.
- [46 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/agglo_clustering.png>] [47 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/dendrogram.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 196--200
+Package pdftex.def Info: images/chapitre6/dendrogram.png  used on input line 226.
+(pdftex.def)             Requested size: 199.16928pt x 143.87479pt.
+ [44]
+<images/chapitre6/hierarchical_agglo_divisive.png, id=1047, 1505.625pt x 903.375pt>
+File: images/chapitre6/hierarchical_agglo_divisive.png Graphic file (type png)
+<use images/chapitre6/hierarchical_agglo_divisive.png>
+Package pdftex.def Info: images/chapitre6/hierarchical_agglo_divisive.png  used on input line 237.
+(pdftex.def)             Requested size: 225.834pt x 135.5004pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--248
 
  []
 
-[48] [49]
-<images/chapitre6/kmeans_steps.png, id=986, 214.182pt x 81.7965pt>
+[45 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/agglo_clustering.png> <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/dendrogram.png> <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/hierarchical_agglo_divisive.png>] [46] [47]
+<images/chapitre6/kmeans_steps.png, id=1084, 214.182pt x 81.7965pt>
 File: images/chapitre6/kmeans_steps.png Graphic file (type png)
 <use images/chapitre6/kmeans_steps.png>
-Package pdftex.def Info: images/chapitre6/kmeans_steps.png  used on input line 233.
+Package pdftex.def Info: images/chapitre6/kmeans_steps.png  used on input line 283.
 (pdftex.def)             Requested size: 441.01773pt x 168.4452pt.
- [50 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/kmeans_steps.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 256--258
+ [48 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/kmeans_steps.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
 
  []
 
 LaTeX Info: Symbol \textasciiacute not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 259.
-<images/chapitre6/elbow_methods.png, id=995, 189.873pt x 146.1825pt>
+            Default family used instead on input line 308.
+[49]
+<images/chapitre6/elbow_methods.png, id=1105, 727.71875pt x 486.81876pt>
 File: images/chapitre6/elbow_methods.png Graphic file (type png)
 <use images/chapitre6/elbow_methods.png>
-Package pdftex.def Info: images/chapitre6/elbow_methods.png  used on input line 268.
-(pdftex.def)             Requested size: 441.01773pt x 339.58748pt.
-[51]) [52 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/elbow_methods.png>] [53] [54
+Package pdftex.def Info: images/chapitre6/elbow_methods.png  used on input line 317.
+(pdftex.def)             Requested size: 441.01773pt x 295.0351pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--336
+
+ []
+
+[50 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/elbow_methods.png>] [51]
+
+LaTeX Warning: Command \textless invalid in math mode on input line 343.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 351.
+
+<images/chapitre6/data_for_fuzzy.png, id=1127, 1067.99pt x 620.3175pt>
+File: images/chapitre6/data_for_fuzzy.png Graphic file (type png)
+<use images/chapitre6/data_for_fuzzy.png>
+Package pdftex.def Info: images/chapitre6/data_for_fuzzy.png  used on input line 360.
+(pdftex.def)             Requested size: 199.16928pt x 115.67506pt.
+<images/chapitre6/fuzzyExemple.png, id=1128, 1067.99pt x 620.3175pt>
+File: images/chapitre6/fuzzyExemple.png Graphic file (type png)
+<use images/chapitre6/fuzzyExemple.png>
+Package pdftex.def Info: images/chapitre6/fuzzyExemple.png  used on input line 362.
+(pdftex.def)             Requested size: 199.16928pt x 115.67506pt.
+[52 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/data_for_fuzzy.png> <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/fuzzyExemple.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 380--380
+[]|\T1/lmr/bx/n/12 (+20) Distribution
+ []
+
+
+Underfull \hbox (badness 2213) in paragraph at lines 380--380
+\T1/lmr/bx/n/12 (+20) ba-sed Clus-te-
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 380--380
+\T1/lmr/m/n/12 (+20) don-nées, les clus-ters
+ []
+
+
+Underfull \hbox (badness 4132) in paragraph at lines 380--380
+\T1/lmr/m/n/12 (+20) sont dé-ri-vés de di-
+ []
+
+
+Underfull \hbox (badness 7522) in paragraph at lines 380--380
+\T1/lmr/m/n/12 (+20) peut pas être
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--380
+\T1/lmr/m/n/12 (+20) Mo-dels, DB-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+\T1/lmr/bx/n/12 (+20) Clus-te-ring
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+\T1/lmr/bx/n/12 (+20) (Model-based
+ []
+
+
+Underfull \hbox (badness 7522) in paragraph at lines 381--381
+\T1/lmr/m/n/12 (+20) peut pas être
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+[]|\T1/lmr/m/n/12 (+20) DENCAST,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--382
+[]|\T1/lmr/bx/n/12 (+20) Constraint
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--382
+\T1/lmr/bx/n/12 (+20) vi-sed Clus-te-
+ []
+
+
+Overfull \hbox (1.09206pt too wide) in paragraph at lines 382--382
+[]|\T1/lmr/m/n/12 (-20) Surapprentissage,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--382
+\T1/lmr/m/n/12 (+20) ca-tion er-ro-née,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--382
+\T1/lmr/m/n/12 (+20) en-sembles de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--382
+\T1/lmr/m/n/12 (+20) don-nées plus
+ []
+
+
+Underfull \hbox (badness 7291) in paragraph at lines 382--382
+[]|\T1/lmr/m/n/12 (+20) Decision Trees,
+ []
+
+
+Underfull \hbox (badness 5652) in paragraph at lines 382--382
+\T1/lmr/m/n/12 (+20) Gra-dient Boos-
+ []
+
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 403--403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--404
+[]|\T1/lmr/bx/n/12 (+20) Indice
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--404
+\T1/lmr/bx/n/12 (+20) Calinski-
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 405--405
+\T1/lmr/m/n/12 (+20) un rap-port entre la ma-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--406
+[]|\T1/lmr/bx/n/12 (+20) Indice
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--406
+\T1/lmr/bx/n/12 (+20) Davies-
+ []
+
+
+Underfull \hbox (badness 5460) in paragraph at lines 406--406
+[]|\T1/lmr/m/n/12 (+20) Semblable à l'in-dice de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--406
+\T1/lmr/m/n/12 (+20) Dunn, l'in-dice Davies-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
+[]|\T1/lmr/bx/n/12 (+20) Indice
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
+\T1/lmr/bx/n/12 (+20) de sil-
+ []
+
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 425--425
+[]|$\OML/lmm/m/it/12 V[] \OT1/lmr/m/n/12 (+20) = [] \OML/lmm/m/it/12 PCAES[] \OT1/lmr/m/n/12 (+20) = [] [] \OML/lmm/m/it/12 u[]=u[] \OMS/lmsy/m/n/12  
+ []
+
+
+Underfull \hbox (badness 5345) in paragraph at lines 426--426
+[]|$\OML/lmm/m/it/12 V[] \OT1/lmr/m/n/12 (+20) = \OML/lmm/m/it/12 J[]\OT1/lmr/m/n/12 (+20) (\OML/lmm/m/it/12 U; V\OT1/lmr/m/n/12 (+20) ) \OMS/lmsy/m/n/12   \OML/lmm/m/it/12 K[]\OT1/lmr/m/n/12 (+20) (\OML/lmm/m/it/12 U; V\OT1/lmr/m/n/12 (+20) ) = [] [] \OML/lmm/m/it/12 u[] [][] \OMS/lmsy/m/n/12  
+ []
+
+[55]) [56] [57
 
 ] (d:/codeSourceFolder\1111____PFE\pfe_memoire\septiemechapitre.tex
 Chapitre 7.
@@ -1783,14 +1816,14 @@ Chapitre 7.
 
 \openout7 = `main.mtc'.
 
-(d:/codeSourceFolder\1111____PFE\pfe_memoire\main.mtc9) [55
+(d:/codeSourceFolder\1111____PFE\pfe_memoire\main.mtc9) [58
 
-]) (d:/codeSourceFolder\1111____PFE\pfe_memoire\conclusiongenerale.tex [56]) [57
+]) (d:/codeSourceFolder\1111____PFE\pfe_memoire\conclusiongenerale.tex [59]) [60
 
-] (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.bbl [58
+] (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.bbl [61
 
 
-])
+] [62] [63] [64])
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the main.maf file.
@@ -1807,24 +1840,24 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the main.log file.
 
-[59] (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.aux)
+[65] (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BE98E9CE136AA41E44C599A208833A8E;8352.
+(rerunfilecheck)             Checksum: 3982B2607E5E4FB8B19D4CDDD3753656;8873.
  ) 
 Here is how much of TeX's memory you used:
- 40420 strings out of 479696
- 894318 string characters out of 2867115
- 1364627 words of memory out of 3000000
- 56138 multiletter control sequences out of 15000+200000
- 483369 words of font info for 128 fonts, out of 3000000 for 9000
+ 40774 strings out of 479696
+ 900991 string characters out of 2867115
+ 1377520 words of memory out of 3000000
+ 56385 multiletter control sequences out of 15000+200000
+ 488007 words of font info for 147 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,19n,115p,1592b,665s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 108i,19n,111p,1738b,665s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{cite.buche\\penalty\040\\@M\040\040:tel-00011223} has been referenced but does not exist, replaced by a fixed one
 
 {C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\Users\abdou\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on d:/codeSourceFolder\1111____PFE\pfe_memoire\main.pdf (66 pages, 1657741 bytes).
+Output written on d:/codeSourceFolder\1111____PFE\pfe_memoire\main.pdf (72 pages, 1914790 bytes).
 PDF statistics:
- 1160 PDF objects out of 1200 (max. 8388607)
- 237 named destinations out of 1000 (max. 500000)
- 41390 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1360 PDF objects out of 1440 (max. 8388607)
+ 299 named destinations out of 1000 (max. 500000)
+ 43511 words of extra memory for PDF output out of 51595 (max. 10000000)
 
