@@ -3,16 +3,16 @@
 \thispagestyle{empty}
 \newpage
 \section{Introduction}
-Les systèmes éducatifs contiennent un grand nombre d'items (problèmes, questions). Ces éléments sont proposés aux apprenants à résoudre. Ceci est particulièrement vrai pour les systèmes adaptatifs, qui tentent de présenter des éléments adaptés à différents types d'apprenants. La gestion d’un grand nombre d’éléments est très difficile. Ainsi, les systèmes éducatifs collectent des données sur les performances des apprenants et ces données peuvent être utilisées pour obtenir un aperçu des propriétés des éléments. [1] \\
+Les systèmes éducatifs contiennent un grand nombre d'items (problèmes, questions). Ces éléments sont proposés aux apprenants à résoudre. Ceci est particulièrement vrai pour les systèmes adaptatifs, qui tentent de présenter des éléments adaptés à différents types d'apprenants. La gestion d’un grand nombre d’éléments est très difficile. Ainsi, les systèmes éducatifs collectent des données sur les performances des apprenants et ces données peuvent être utilisées pour obtenir un aperçu des propriétés des éléments. \cite{pelanek2018measuring} \\
 Dans ce chapitre, nous présentons les approches pour mapper les éléments aux compétences. En outre, nous décrivons les concepts de l'approche de similarité avec ses différentes catégories, et nous représentons les différentes mesures de similitude telles que Pearson, Kappa, Yule et Fisher.
 \section{Knowledge (La connaissance)}
 \subsection{Définition}
 "Compréhension ou information sur un sujet que vous obtenez par expérience ou étude, soit connue par une personne ou par des personnes". [Dictionnaire Cambridge] La « connaissance » en éducation est constituée de faits de base alors que les composants de connaissance peuvent être des procédures, des schémas d'intégration, des stratégies de raisonnement complexes, des compétences métacognitives ..., c'est-à-dire (1er niveau de la taxonomie de Bloom (1956)). \\
-La « connaissance » en philosophie est une « croyance vraie justifiée » alors que notre utilisation des éléments de connaissance comprend à la fois une connaissance incorrecte (fausse) et une connaissance implicite (sans croyance ou justification explicite). [2]
+La « connaissance » en philosophie est une « croyance vraie justifiée » alors que notre utilisation des éléments de connaissance comprend à la fois une connaissance incorrecte (fausse) et une connaissance implicite (sans croyance ou justification explicite) \cite{bloom1956taxonomy}.
 
 \subsection{Knowledge component (Composante connaissance)}
-Un élément de connaissance est une description d'une structure mentale ou d'un processus qu'un apprenant utilise, seul ou en combinaison avec d'autres éléments de connaissance, pour accomplir les étapes d'une tâche ou d'un problème. (Koedinger, Corbett \& Perfetti, 2012) Les items qui requièrent la même compétence pour différents apprenants constituent une composante de connaissance (KC) [3]. \\
-Composante de connaissance est un terme que nous utilisons tous les jours comme concept, principe, fait ou compétence, et des termes de sciences cognitives comme schéma, règle de production, idée fausse ou facette. [4]
+Un élément de connaissance est une description d'une structure mentale ou d'un processus qu'un apprenant utilise, seul ou en combinaison avec d'autres éléments de connaissance, pour accomplir les étapes d'une tâche ou d'un problème. (Koedinger, Corbett \& Perfetti, 2012) Les items qui requièrent la même compétence pour différents apprenants constituent une composante de connaissance (KC) \cite{nazaretsky2018kappa}. \\
+Composante de connaissance est un terme que nous utilisons tous les jours comme concept, principe, fait ou compétence, et des termes de sciences cognitives comme schéma, règle de production, idée fausse ou facette. \cite{vanlehn2006behavior}
 La description de la composante de connaissance est présentée dans la figure \ref{knowledge_component}.
 
 \begin{figure}[H]
@@ -24,11 +24,11 @@ La description de la composante de connaissance est présentée dans la figure \
 \end{figure}
 \textbf{\underline{Exemple :}}
 "Si l'angle A = 60 et (A = B, C = 60) Alors triangle équilatéral." \\
-L'élève peut dessiner un triangle équilatéral sans être capable de décrire la règle. Une grande partie de ce que les apprenants de première langue savent de leur langue maternelle implique des éléments de connaissances implicites. Pertinence : la plupart des composants de connaissance explicites impliquent de nombreux composants de connaissance tacites (compétences innées ou acquises, le savoir-faire et l'expérience). La réponse et la fonctionnalité sont liées par la composante de connaissance, où les deux peuvent être externes, dans le monde, comme des signaux dans un stimulus et une réponse motrice ou interne, dans l'esprit, comme des fonctionnalités inférées et un nouvel objectif. [4].
+L'élève peut dessiner un triangle équilatéral sans être capable de décrire la règle. Une grande partie de ce que les apprenants de première langue savent de leur langue maternelle implique des éléments de connaissances implicites. Pertinence : la plupart des composants de connaissance explicites impliquent de nombreux composants de connaissance tacites (compétences innées ou acquises, le savoir-faire et l'expérience). La réponse et la fonctionnalité sont liées par la composante de connaissance, où les deux peuvent être externes, dans le monde, comme des signaux dans un stimulus et une réponse motrice ou interne, dans l'esprit, comme des fonctionnalités inférées et un nouvel objectif\cite{vanlehn2006behavior}.
 
 \subsection{Les types de composante de connaissance}
 
-La composante de connaissance est une représentation mentale de : [5]
+La composante de connaissance est une représentation mentale de : \cite{chang2006learning}
 
 \begin{itemize}
     \item[$\bullet$] \textbf{Connaissance du domaine :} faits, concepts, principes, règles, procédures, stratégies.
@@ -41,7 +41,7 @@ La composante de connaissance est une représentation mentale de : [5]
 
 \section{Items-to-skills mapping}
 \subsection{Définition}
-Mapper les éléments aux compétences latentes est l'automatisation de la découverte des compétences derrière les éléments de question à des fins d'ingénierie cognitive est hors de portée dans l'état actuel de la recherche, des moyens pour aider à déterminer le nombre de compétences et les compétences communes entre les éléments est un effort raisonnable au milieu -terme. [6]
+Mapper les éléments aux compétences latentes est l'automatisation de la découverte des compétences derrière les éléments de question à des fins d'ingénierie cognitive est hors de portée dans l'état actuel de la recherche, des moyens pour aider à déterminer le nombre de compétences et les compétences communes entre les éléments est un effort raisonnable au milieu -terme \cite{desmarais2013matrix}.
 
 \subsection{items-to-skills mapping Structure}
 Il existe deux approches de la cartographie des éléments aux compétences présentées dans la figure \ref{items_to_skills_mapping}:
@@ -56,8 +56,8 @@ Il existe deux approches de la cartographie des éléments aux compétences pré
 
 \subsubsection{Model-Based approach}
 \paragraph{Définition}
-La construction d'un modèle simplifié qui explique les données observées. Basé sur une matrice de réponses des apprenants aux éléments, le modèle prédit les réponses de l'apprenant. Le modèle attribue plusieurs compétences latentes aux apprenants et utilise une cartographie des éléments aux facteurs latents correspondants. Ce type de modèle peut souvent être exprimé naturellement à l'aide de la multiplication matricielle, c'est-à-dire que l'ajustement d'un modèle conduit à une factorisation matricielle. Une fois que nous obtenons le résultat après avoir ajusté le modèle aux données, nous avons désigné les items avec la même valeur d'un facteur latent comme « similaires ». Cette approche conduit naturellement à plusieurs composantes de connaissance par compétence. [1] Le modèle basé sur le modèle présenté dans la figure \ref{model_based} développe un modèle de notation des utilisateurs, les algorithmes de cette catégorie adoptent une approche probabiliste en calculant la valeur attendue de la prédiction de l'utilisateur et en tenant compte des notes de l'utilisateur sur d'autres éléments. [8] \\
-Le processus de modèle peut être produit par différents algorithmes d'apprentissage automatique tels que le réseau bayésien, le clustering et l'approche basée sur des règles. [7]
+La construction d'un modèle simplifié qui explique les données observées. Basé sur une matrice de réponses des apprenants aux éléments, le modèle prédit les réponses de l'apprenant. Le modèle attribue plusieurs compétences latentes aux apprenants et utilise une cartographie des éléments aux facteurs latents correspondants. Ce type de modèle peut souvent être exprimé naturellement à l'aide de la multiplication matricielle, c'est-à-dire que l'ajustement d'un modèle conduit à une factorisation matricielle. Une fois que nous obtenons le résultat après avoir ajusté le modèle aux données, nous avons désigné les items avec la même valeur d'un facteur latent comme « similaires ». Cette approche conduit naturellement à plusieurs composantes de connaissance par compétence. \cite{pelanek2018measuring} Le modèle basé sur le modèle présenté dans la figure \ref{model_based} développe un modèle de notation des utilisateurs, les algorithmes de cette catégorie adoptent une approche probabiliste en calculant la valeur attendue de la prédiction de l'utilisateur et en tenant compte des notes de l'utilisateur sur d'autres éléments \cite{item_based_recommendation_algo}. \\
+Le processus de modèle peut être produit par différents algorithmes d'apprentissage automatique tels que le réseau bayésien, le clustering et l'approche basée sur des règles \cite{breese2013empirical}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -68,13 +68,13 @@ Le processus de modèle peut être produit par différents algorithmes d'apprent
 \end{figure}
 
 Cette approche guide des composants de connaissances différents et multiples par compétence. Le modèle est généralement calculé à l'aide d'une technique d'optimisation qui ne mène qu'à des optima locaux (par exemple, une descente de gradient). \\
-Dans les systèmes recommandés, cette approche est utilisée pour la mise en œuvre du filtrage collaboratif ; elle est souvent appelée "Décomposition en valeurs singulières" (SVD). [9] 
+Dans les systèmes recommandés, cette approche est utilisée pour la mise en œuvre du filtrage collaboratif ; elle est souvent appelée "Décomposition en valeurs singulières" (SVD) \cite{koren2011advances}. 
 
 \paragraph{Model Based Techniques}
 Dans le contexte pédagogique, de nombreuses variantes de l'approche basée sur les modèles ont été proposées : \\
 
 \begin{itemize}
-    \item[$\bullet$] \textbf{Q-matrix :} Est une matrice binaire illustrée à la figure 4 montrant la relation entre les éléments de test et les attributs ou concepts latents ou sous-jacents (Birenbaum, et al., 1993). Les états de connaissance ont été attribués aux apprenants en fonction de leurs réponses aux tests et de la matrice q construite. [10]
+    \item[$\bullet$] \textbf{Q-matrix :} Est une matrice binaire illustrée à la figure 4 montrant la relation entre les éléments de test et les attributs ou concepts latents ou sous-jacents (Birenbaum, et al., 1993). Les états de connaissance ont été attribués aux apprenants en fonction de leurs réponses aux tests et de la matrice q construite \cite{barnes2005q}.
 \end{itemize}
 
 \begin{figure}[H]
@@ -87,7 +87,7 @@ Dans le contexte pédagogique, de nombreuses variantes de l'approche basée sur 
 
 \subsection{Similarity-based approach (Item-Similarity)}
 \subsubsection{Définition}
-En statistiques et en mathématiques, la mesure de similarité ou la fonction de similarité est une fonction à valeur réelle qui mesure la similarité entre deux éléments. Les valeurs de similarité entre les éléments sont quantifiées par l'observation de la performance des utilisateurs sur les éléments, qu'il s'agisse de négatif ou non [11]. La mesure des similitudes est une étape très importante dans une analyse plus approfondie telle que le regroupement des éléments, ce qui est utile à plusieurs égards. [12]  \\
+En statistiques et en mathématiques, la mesure de similarité ou la fonction de similarité est une fonction à valeur réelle qui mesure la similarité entre deux éléments. Les valeurs de similarité entre les éléments sont quantifiées par l'observation de la performance des utilisateurs sur les éléments, qu'il s'agisse de négatif ou non \cite{nithya2017calculating}. La mesure des similitudes est une étape très importante dans une analyse plus approfondie telle que le regroupement des éléments, ce qui est utile à plusieurs égards. \cite{pelanek2018measuring}  \\
 Dans cette approche, nous calculons directement une mesure de similarité pour chaque paire d'éléments. Ces similitudes sont ensuite utilisées pour faire le clustering, pour faire la visualisation en projetant ces éléments dans un plan a 2 ou 3 dimensions, ou pour faire d’autre analyse en essayant de récupérer les éléments les plus similaire. Cette approche est illustrée à la figure \ref{illustration_item_similarity}. 
 
 \begin{figure}[H]
@@ -98,10 +98,10 @@ Dans cette approche, nous calculons directement une mesure de similarité pour c
 \label{illustration_item_similarity}
 \end{figure}
 
-Dans l'apprentissage éducatif, la définition de la similarité des éléments a été analysée en utilisant la corrélation des réponses des apprenants et les temps de résolution des problèmes, ainsi qu'en utilisant les mauvaises réponses des apprenants. [12]
+Dans l'apprentissage éducatif, la définition de la similarité des éléments a été analysée en utilisant la corrélation des réponses des apprenants et les temps de résolution des problèmes, ainsi qu'en utilisant les mauvaises réponses des apprenants. \cite{pelanek2018measuring}
 
 \subsubsection{Processus de similarité des items (éléments)}
-Une étape importante de l'approche basée sur les items consiste à calculer le degré de similitude entre chaque paire d’items, puis à sélectionner les éléments les plus similaires. Il peut être décrit comme l'opération de calcul de similarité entre deux éléments i et j, où il s'agit d'abord de définir les utilisateurs qui ont évalué ces deux éléments, puis d'appliquer une technique de calcul de similarité pour déterminer le score de similarité entre i et j. [13] La figure \ref{calcul_application_similarity} ci-dessous montre l'approche générale du calcul et de l'application de la similarité des items.
+Une étape importante de l'approche basée sur les items consiste à calculer le degré de similitude entre chaque paire d’items, puis à sélectionner les éléments les plus similaires. Il peut être décrit comme l'opération de calcul de similarité entre deux éléments i et j, où il s'agit d'abord de définir les utilisateurs qui ont évalué ces deux éléments, puis d'appliquer une technique de calcul de similarité pour déterminer le score de similarité entre i et j. \cite{item_based_recommendation_algo} La figure \ref{calcul_application_similarity} ci-dessous montre l'approche générale du calcul et de l'application de la similarité des items.
 
 \begin{figure}[H]
 	\begin{center}

@@ -5,6 +5,8 @@ Reallocating 'name_of_file' (item size: 1) to 7 items.
 The style file: ieeetr.bst
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 Database file #1: biblo.bib
+Warning--entry type for "iris_dataset" isn't style-file defined
+--line 779 of file biblo.bib
 Warning--empty publisher in data_mining_concepts_techniques
 Warning--empty publisher in handbook_of_educational_data_mining
 Warning--empty booktitle in user_modelling_help_systems
@@ -19,45 +21,45 @@ Warning--empty booktitle in Discovering_Prerequisite_Relationships_among_Knowled
 Warning--empty journal in pang2005introduction
 Warning--empty publisher in Finding_Groups_in_Data_An_Introduction_To_Cluster_Analysis
 Warning--empty journal in bezdek1973cluster
-You've used 67 entries,
+You've used 80 entries,
             1876 wiz_defined-function locations,
-            878 strings with 15123 characters,
-and the built_in function-call counts, 18802 in all, are:
-= -- 1947
-> -- 593
+            942 strings with 17438 characters,
+and the built_in function-call counts, 21843 in all, are:
+= -- 2242
+> -- 708
 < -- 0
-+ -- 225
-- -- 158
-* -- 1316
-:= -- 2564
-add.period$ -- 78
-call.type$ -- 67
-change.case$ -- 60
++ -- 269
+- -- 189
+* -- 1513
+:= -- 2994
+add.period$ -- 92
+call.type$ -- 80
+change.case$ -- 72
 chr.to.int$ -- 0
-cite$ -- 81
-duplicate$ -- 992
-empty$ -- 1803
-format.name$ -- 158
-if$ -- 4636
+cite$ -- 94
+duplicate$ -- 1156
+empty$ -- 2117
+format.name$ -- 189
+if$ -- 5381
 int.to.chr$ -- 0
-int.to.str$ -- 67
-missing$ -- 72
-newline$ -- 215
-num.names$ -- 75
-pop$ -- 214
+int.to.str$ -- 80
+missing$ -- 82
+newline$ -- 255
+num.names$ -- 88
+pop$ -- 271
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 701
+skip$ -- 802
 stack$ -- 0
-substring$ -- 1414
-swap$ -- 420
+substring$ -- 1584
+swap$ -- 475
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 14
-while$ -- 201
-width$ -- 69
-write$ -- 661
-(There were 14 warnings)
+while$ -- 233
+width$ -- 82
+write$ -- 780
+(There were 15 warnings)

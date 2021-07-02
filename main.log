@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.2.13)  1 JUL 2021 01:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.2.13)  2 JUL 2021 02:15
 entering extended mode
 **d:/codeSourceFolder/1111____PFE/pfe_memoire/main.tex
 (d:/codeSourceFolder/1111____PFE/pfe_memoire/main.tex
@@ -1302,6 +1302,11 @@ Chapitre 2.
 (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.mtc4) [12
 
 ]
+Underfull \hbox (badness 5133) in paragraph at lines 27--27
+\T1/lmr/bx/n/12 (+20) Modèle dif-fé-
+ []
+
+
 Underfull \hbox (badness 1515) in paragraph at lines 28--28
 []|\T1/lmr/m/n/12 (+20) Modélisation des connais-
  []
@@ -1309,6 +1314,11 @@ Underfull \hbox (badness 1515) in paragraph at lines 28--28
 
 Underfull \hbox (badness 1895) in paragraph at lines 28--28
 \T1/lmr/m/n/12 (+20) Identification des la-cunes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\T1/lmr/bx/n/12 (+20) Modèle d'er-
  []
 
 
@@ -1322,11 +1332,6 @@ Underfull \hbox (badness 3525) in paragraph at lines 37--37
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
-[]|\T1/lmr/m/n/12 (+20) -Consommation de res-
- []
-
-
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 29.85403pt, for example:
 (fancyhdr)                \setlength{\headheight}{29.85403pt}.
@@ -1334,13 +1339,33 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [13]
+Underfull \hbox (badness 2547) in paragraph at lines 65--65
+[]|\T1/lmr/bx/n/12 (+20) Réseau Bayé-
+ []
+
+
 Underfull \hbox (badness 1888) in paragraph at lines 66--68
 []|\T1/lmr/m/n/12 (+20) -Apprendre et pré-dire le
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 72--74
-[]|\T1/lmr/m/n/12 (+20) -Consommation de res-
+[]|\T1/lmr/m/n/12 (+20) -Consommation de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
+\T1/lmr/m/n/12 (+20) -Difficulté à com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
+\T1/lmr/m/n/12 (+20) -Grand nombre de
+ []
+
+
+Overfull \hbox (5.41425pt too wide) in paragraph at lines 75--75
+[]|\T1/lmr/bx/n/12 (-20) Programmation
  []
 
 
@@ -1364,8 +1389,8 @@ Underfull \hbox (badness 2460) in paragraph at lines 85--85
  []
 
 
-Underfull \hbox (badness 4967) in paragraph at lines 89--89
-[]|\T1/lmr/m/n/12 (+20) La com-plexité aug-mente
+Underfull \hbox (badness 6252) in paragraph at lines 89--89
+[]|\T1/lmr/m/n/12 (+20) La com-plexité aug-
  []
 
 
@@ -1476,19 +1501,19 @@ Chapitre 3.
 (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.mtc5) [23
 
 ] [24]
-<images/chapitre3/Knowledge_component.png, id=870, 1104.125pt x 401.5pt>
+<images/chapitre3/Knowledge_component.png, id=877, 1104.125pt x 401.5pt>
 File: images/chapitre3/Knowledge_component.png Graphic file (type png)
 <use images/chapitre3/Knowledge_component.png>
 Package pdftex.def Info: images/chapitre3/Knowledge_component.png  used on input line 20.
 (pdftex.def)             Requested size: 441.01773pt x 160.37047pt.
  [25 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Knowledge_component.png>]
-<images/chapitre3/Items_to_skills_mappin_structure.png, id=877, 1104.125pt x 501.875pt>
+<images/chapitre3/Items_to_skills_mappin_structure.png, id=889, 1104.125pt x 501.875pt>
 File: images/chapitre3/Items_to_skills_mappin_structure.png Graphic file (type png)
 <use images/chapitre3/Items_to_skills_mappin_structure.png>
 Package pdftex.def Info: images/chapitre3/Items_to_skills_mappin_structure.png  used on input line 51.
 (pdftex.def)             Requested size: 441.01773pt x 200.46309pt.
  [26 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Items_to_skills_mappin_structure.png>]
-<images/chapitre3/Model_based.png, id=884, 525.965pt x 154.07562pt>
+<images/chapitre3/Model_based.png, id=900, 525.965pt x 154.07562pt>
 File: images/chapitre3/Model_based.png Graphic file (type png)
 <use images/chapitre3/Model_based.png>
 Package pdftex.def Info: images/chapitre3/Model_based.png  used on input line 64.
@@ -1498,19 +1523,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
-<images/chapitre3/q_matrix.png, id=885, 584.68437pt x 162.6075pt>
+<images/chapitre3/q_matrix.png, id=903, 584.68437pt x 162.6075pt>
 File: images/chapitre3/q_matrix.png Graphic file (type png)
 <use images/chapitre3/q_matrix.png>
 Package pdftex.def Info: images/chapitre3/q_matrix.png  used on input line 82.
 (pdftex.def)             Requested size: 441.01773pt x 122.6575pt.
 [27 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Model_based.png>]
-<images/chapitre3/Illustration_item_smilarity.png, id=892, 363.3575pt x 196.23312pt>
+<images/chapitre3/Illustration_item_smilarity.png, id=916, 363.3575pt x 196.23312pt>
 File: images/chapitre3/Illustration_item_smilarity.png Graphic file (type png)
 <use images/chapitre3/Illustration_item_smilarity.png>
 Package pdftex.def Info: images/chapitre3/Illustration_item_smilarity.png  used on input line 95.
 (pdftex.def)             Requested size: 441.01773pt x 238.17937pt.
  [28 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/q_matrix.png>]
-<images/chapitre3/calcul_application_similarity.png, id=899, 577.15625pt x 282.05376pt>
+<images/chapitre3/calcul_application_similarity.png, id=926, 577.15625pt x 282.05376pt>
 File: images/chapitre3/calcul_application_similarity.png Graphic file (type png)
 <use images/chapitre3/calcul_application_similarity.png>
 Package pdftex.def Info: images/chapitre3/calcul_application_similarity.png  used on input line 108.
@@ -1574,18 +1599,18 @@ Overfull \hbox (30.26167pt too wide) in paragraph at lines 40--54
  [][] 
  []
 
-<images/chapitre6/inter-intra_clusters__distnce.png, id=976, 636.3775pt x 405.515pt>
-File: images/chapitre6/inter-intra_clusters__distnce.png Graphic file (type png)
-<use images/chapitre6/inter-intra_clusters__distnce.png>
-Package pdftex.def Info: images/chapitre6/inter-intra_clusters__distnce.png  used on input line 62.
-(pdftex.def)             Requested size: 441.01773pt x 281.0246pt.
-[39] [40 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/inter-intra_clusters__distnce.png>]
-<images/chapitre6/single_linkage.png, id=988, 798.985pt x 581.17125pt>
+<images/chapitre6/iris_inter_intra_clusters.png, id=1003, 987.69pt x 690.58pt>
+File: images/chapitre6/iris_inter_intra_clusters.png Graphic file (type png)
+<use images/chapitre6/iris_inter_intra_clusters.png>
+Package pdftex.def Info: images/chapitre6/iris_inter_intra_clusters.png  used on input line 62.
+(pdftex.def)             Requested size: 441.01773pt x 308.34506pt.
+[39] [40 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/iris_inter_intra_clusters.png>]
+<images/chapitre6/single_linkage.png, id=1015, 798.985pt x 581.17125pt>
 File: images/chapitre6/single_linkage.png Graphic file (type png)
 <use images/chapitre6/single_linkage.png>
 Package pdftex.def Info: images/chapitre6/single_linkage.png  used on input line 83.
 (pdftex.def)             Requested size: 239.69734pt x 174.35272pt.
-<images/chapitre6/complet_linkage.png, id=992, 798.985pt x 581.17125pt>
+<images/chapitre6/complet_linkage.png, id=1019, 798.985pt x 581.17125pt>
 File: images/chapitre6/complet_linkage.png Graphic file (type png)
 <use images/chapitre6/complet_linkage.png>
 Package pdftex.def Info: images/chapitre6/complet_linkage.png  used on input line 116.
@@ -1595,18 +1620,18 @@ Package pdftex.def Info: images/chapitre6/complet_linkage.png  used on input lin
 LaTeX Warning: Command \` invalid in math mode on input line 203.
 
 [43]
-<images/chapitre6/agglo_clustering.png, id=1035, 798.985pt x 581.17125pt>
+<images/chapitre6/agglo_clustering.png, id=1062, 798.985pt x 581.17125pt>
 File: images/chapitre6/agglo_clustering.png Graphic file (type png)
 <use images/chapitre6/agglo_clustering.png>
 Package pdftex.def Info: images/chapitre6/agglo_clustering.png  used on input line 224.
 (pdftex.def)             Requested size: 199.16928pt x 144.87566pt.
-<images/chapitre6/dendrogram.png, id=1036, 798.985pt x 577.15625pt>
+<images/chapitre6/dendrogram.png, id=1063, 798.985pt x 577.15625pt>
 File: images/chapitre6/dendrogram.png Graphic file (type png)
 <use images/chapitre6/dendrogram.png>
 Package pdftex.def Info: images/chapitre6/dendrogram.png  used on input line 226.
 (pdftex.def)             Requested size: 199.16928pt x 143.87479pt.
  [44]
-<images/chapitre6/hierarchical_agglo_divisive.png, id=1047, 1505.625pt x 903.375pt>
+<images/chapitre6/hierarchical_agglo_divisive.png, id=1075, 1505.625pt x 903.375pt>
 File: images/chapitre6/hierarchical_agglo_divisive.png Graphic file (type png)
 <use images/chapitre6/hierarchical_agglo_divisive.png>
 Package pdftex.def Info: images/chapitre6/hierarchical_agglo_divisive.png  used on input line 237.
@@ -1617,194 +1642,194 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--248
  []
 
 [45 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/agglo_clustering.png> <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/dendrogram.png> <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/hierarchical_agglo_divisive.png>] [46] [47]
-<images/chapitre6/kmeans_steps.png, id=1084, 214.182pt x 81.7965pt>
+<images/chapitre6/kmeans_steps.png, id=1115, 214.182pt x 81.7965pt>
 File: images/chapitre6/kmeans_steps.png Graphic file (type png)
 <use images/chapitre6/kmeans_steps.png>
-Package pdftex.def Info: images/chapitre6/kmeans_steps.png  used on input line 283.
+Package pdftex.def Info: images/chapitre6/kmeans_steps.png  used on input line 280.
 (pdftex.def)             Requested size: 441.01773pt x 168.4452pt.
  [48 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/kmeans_steps.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
 
  []
 
 LaTeX Info: Symbol \textasciiacute not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 308.
+            Default family used instead on input line 305.
 [49]
-<images/chapitre6/elbow_methods.png, id=1105, 727.71875pt x 486.81876pt>
+<images/chapitre6/elbow_methods.png, id=1136, 727.71875pt x 486.81876pt>
 File: images/chapitre6/elbow_methods.png Graphic file (type png)
 <use images/chapitre6/elbow_methods.png>
-Package pdftex.def Info: images/chapitre6/elbow_methods.png  used on input line 317.
-(pdftex.def)             Requested size: 441.01773pt x 295.0351pt.
+Package pdftex.def Info: images/chapitre6/elbow_methods.png  used on input line 314.
+(pdftex.def)             Requested size: 363.85847pt x 243.40878pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--336
+Underfull \hbox (badness 10000) in paragraph at lines 329--333
 
  []
 
 [50 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/elbow_methods.png>] [51]
 
-LaTeX Warning: Command \textless invalid in math mode on input line 343.
+LaTeX Warning: Command \textless invalid in math mode on input line 340.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 351.
+LaTeX Warning: Command \textless invalid in math mode on input line 348.
 
-<images/chapitre6/data_for_fuzzy.png, id=1127, 1067.99pt x 620.3175pt>
+<images/chapitre6/data_for_fuzzy.png, id=1158, 1067.99pt x 620.3175pt>
 File: images/chapitre6/data_for_fuzzy.png Graphic file (type png)
 <use images/chapitre6/data_for_fuzzy.png>
-Package pdftex.def Info: images/chapitre6/data_for_fuzzy.png  used on input line 360.
+Package pdftex.def Info: images/chapitre6/data_for_fuzzy.png  used on input line 357.
 (pdftex.def)             Requested size: 199.16928pt x 115.67506pt.
-<images/chapitre6/fuzzyExemple.png, id=1128, 1067.99pt x 620.3175pt>
+<images/chapitre6/fuzzyExemple.png, id=1161, 1067.99pt x 620.3175pt>
 File: images/chapitre6/fuzzyExemple.png Graphic file (type png)
 <use images/chapitre6/fuzzyExemple.png>
-Package pdftex.def Info: images/chapitre6/fuzzyExemple.png  used on input line 362.
+Package pdftex.def Info: images/chapitre6/fuzzyExemple.png  used on input line 359.
 (pdftex.def)             Requested size: 199.16928pt x 115.67506pt.
 [52 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/data_for_fuzzy.png> <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/fuzzyExemple.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 380--380
+Underfull \hbox (badness 10000) in paragraph at lines 377--377
 []|\T1/lmr/bx/n/12 (+20) Distribution
  []
 
 
-Underfull \hbox (badness 2213) in paragraph at lines 380--380
+Underfull \hbox (badness 2213) in paragraph at lines 377--377
 \T1/lmr/bx/n/12 (+20) ba-sed Clus-te-
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 380--380
+Underfull \hbox (badness 1019) in paragraph at lines 377--377
 \T1/lmr/m/n/12 (+20) don-nées, les clus-ters
  []
 
 
-Underfull \hbox (badness 4132) in paragraph at lines 380--380
+Underfull \hbox (badness 4132) in paragraph at lines 377--377
 \T1/lmr/m/n/12 (+20) sont dé-ri-vés de di-
  []
 
 
-Underfull \hbox (badness 7522) in paragraph at lines 380--380
+Underfull \hbox (badness 7522) in paragraph at lines 377--377
 \T1/lmr/m/n/12 (+20) peut pas être
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--380
+Underfull \hbox (badness 10000) in paragraph at lines 377--377
 \T1/lmr/m/n/12 (+20) Mo-dels, DB-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--381
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
 \T1/lmr/bx/n/12 (+20) Clus-te-ring
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--381
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
 \T1/lmr/bx/n/12 (+20) (Model-based
  []
 
 
-Underfull \hbox (badness 7522) in paragraph at lines 381--381
+Underfull \hbox (badness 7522) in paragraph at lines 378--378
 \T1/lmr/m/n/12 (+20) peut pas être
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--381
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
 []|\T1/lmr/m/n/12 (+20) DENCAST,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--382
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
 []|\T1/lmr/bx/n/12 (+20) Constraint
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--382
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
 \T1/lmr/bx/n/12 (+20) vi-sed Clus-te-
  []
 
 
-Overfull \hbox (1.09206pt too wide) in paragraph at lines 382--382
+Overfull \hbox (1.09206pt too wide) in paragraph at lines 379--379
 []|\T1/lmr/m/n/12 (-20) Surapprentissage,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--382
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
 \T1/lmr/m/n/12 (+20) ca-tion er-ro-née,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--382
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
 \T1/lmr/m/n/12 (+20) en-sembles de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--382
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
 \T1/lmr/m/n/12 (+20) don-nées plus
  []
 
 
-Underfull \hbox (badness 7291) in paragraph at lines 382--382
+Underfull \hbox (badness 7291) in paragraph at lines 379--379
 []|\T1/lmr/m/n/12 (+20) Decision Trees,
  []
 
 
-Underfull \hbox (badness 5652) in paragraph at lines 382--382
+Underfull \hbox (badness 5652) in paragraph at lines 379--379
 \T1/lmr/m/n/12 (+20) Gra-dient Boos-
  []
 
 [53]
-Underfull \hbox (badness 10000) in paragraph at lines 403--403
+Underfull \hbox (badness 10000) in paragraph at lines 400--400
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \hbox (badness 10000) in paragraph at lines 401--401
 []|\T1/lmr/bx/n/12 (+20) Indice
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--404
+Underfull \hbox (badness 10000) in paragraph at lines 401--401
 \T1/lmr/bx/n/12 (+20) Calinski-
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 405--405
+Underfull \hbox (badness 1668) in paragraph at lines 402--402
 \T1/lmr/m/n/12 (+20) un rap-port entre la ma-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
+Underfull \hbox (badness 10000) in paragraph at lines 403--403
 []|\T1/lmr/bx/n/12 (+20) Indice
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
+Underfull \hbox (badness 10000) in paragraph at lines 403--403
 \T1/lmr/bx/n/12 (+20) Davies-
  []
 
 
-Underfull \hbox (badness 5460) in paragraph at lines 406--406
+Underfull \hbox (badness 5460) in paragraph at lines 403--403
 []|\T1/lmr/m/n/12 (+20) Semblable à l'in-dice de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--406
+Underfull \hbox (badness 10000) in paragraph at lines 403--403
 \T1/lmr/m/n/12 (+20) Dunn, l'in-dice Davies-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 407--407
+Underfull \hbox (badness 10000) in paragraph at lines 404--404
 []|\T1/lmr/bx/n/12 (+20) Indice
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 407--407
+Underfull \hbox (badness 10000) in paragraph at lines 404--404
 \T1/lmr/bx/n/12 (+20) de sil-
  []
 
 [54]
-Underfull \hbox (badness 10000) in paragraph at lines 425--425
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
 []|$\OML/lmm/m/it/12 V[] \OT1/lmr/m/n/12 (+20) = [] \OML/lmm/m/it/12 PCAES[] \OT1/lmr/m/n/12 (+20) = [] [] \OML/lmm/m/it/12 u[]=u[] \OMS/lmsy/m/n/12  
  []
 
 
-Underfull \hbox (badness 5345) in paragraph at lines 426--426
+Underfull \hbox (badness 5345) in paragraph at lines 423--423
 []|$\OML/lmm/m/it/12 V[] \OT1/lmr/m/n/12 (+20) = \OML/lmm/m/it/12 J[]\OT1/lmr/m/n/12 (+20) (\OML/lmm/m/it/12 U; V\OT1/lmr/m/n/12 (+20) ) \OMS/lmsy/m/n/12   \OML/lmm/m/it/12 K[]\OT1/lmr/m/n/12 (+20) (\OML/lmm/m/it/12 U; V\OT1/lmr/m/n/12 (+20) ) = [] [] \OML/lmm/m/it/12 u[] [][] \OMS/lmsy/m/n/12  
  []
 
@@ -1842,22 +1867,22 @@ Package minitoc(hints) Warning: W0024
 
 [65] (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3982B2607E5E4FB8B19D4CDDD3753656;8873.
+(rerunfilecheck)             Checksum: 5A367482DC3A744AF3933E904A38D252;8843.
  ) 
 Here is how much of TeX's memory you used:
- 40774 strings out of 479696
- 900991 string characters out of 2867115
- 1377520 words of memory out of 3000000
- 56385 multiletter control sequences out of 15000+200000
- 488007 words of font info for 147 fonts, out of 3000000 for 9000
+ 40794 strings out of 479696
+ 901440 string characters out of 2867115
+ 1378123 words of memory out of 3000000
+ 56398 multiletter control sequences out of 15000+200000
+ 487722 words of font info for 144 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,19n,111p,1738b,665s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{cite.buche\\penalty\040\\@M\040\040:tel-00011223} has been referenced but does not exist, replaced by a fixed one
 
 {C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\Users\abdou\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on d:/codeSourceFolder\1111____PFE\pfe_memoire\main.pdf (72 pages, 1914790 bytes).
+Output written on d:/codeSourceFolder\1111____PFE\pfe_memoire\main.pdf (72 pages, 1904976 bytes).
 PDF statistics:
- 1360 PDF objects out of 1440 (max. 8388607)
- 299 named destinations out of 1000 (max. 500000)
+ 1396 PDF objects out of 1440 (max. 8388607)
+ 312 named destinations out of 1000 (max. 500000)
  43511 words of extra memory for PDF output out of 51595 (max. 10000000)
 

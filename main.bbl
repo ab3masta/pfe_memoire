@@ -133,6 +133,62 @@ I.~Goldin, r.~scheines, and e.~silver, ``Discovering prerequisite relationships
 K.~Bollen, ``Structural equations with latent variables, new york,'' {\em Wiley
   Interscience}, 01 1989.
 
+\bibitem{pelanek2018measuring}
+R.~Pel{\'a}nek, T.~Effenberger, M.~Van{\v{e}}k, V.~Sassmann, and D.~Gmiterko,
+  ``Measuring item similarity in introductory programming,'' in {\em
+  Proceedings of the Fifth Annual ACM Conference on Learning at Scale},
+  pp.~1--4, 2018.
+
+\bibitem{bloom1956taxonomy}
+B.~S. Bloom {\em et~al.}, ``Taxonomy of educational objectives. vol. 1:
+  Cognitive domain,'' {\em New York: McKay}, vol.~20, no.~24, p.~1, 1956.
+
+\bibitem{nazaretsky2018kappa}
+T.~Nazaretsky, S.~Hershkovitz, and G.~Alexandron, ``Kappa learning: A new
+  method for measuring similarity between educational items using performance
+  data,'' {\em arXiv preprint arXiv:1812.08390}, 2018.
+
+\bibitem{vanlehn2006behavior}
+K.~VanLehn, ``The behavior of tutoring systems,'' {\em International journal of
+  artificial intelligence in education}, vol.~16, no.~3, pp.~227--265, 2006.
+
+\bibitem{chang2006learning}
+N.~M. Chang, {\em Learning to discriminate and generalize through problem
+  comparisons}.
+\newblock PhD thesis, Carnegie Mellon University, 2006.
+
+\bibitem{desmarais2013matrix}
+M.~C. Desmarais and R.~Naceur, ``A matrix factorization method for mapping
+  items to skills and for enhancing expert-based q-matrices,'' in {\em
+  International Conference on Artificial Intelligence in Education},
+  pp.~441--450, Springer, 2013.
+
+\bibitem{item_based_recommendation_algo}
+B.~Sarwar, G.~Karypis, J.~Konstan, and J.~Riedl, ``Item-based collaborative
+  filtering recommendation algorithms,'' {\em Proceedings of ACM World Wide Web
+  Conference}, vol.~1, 08 2001.
+
+\bibitem{breese2013empirical}
+J.~S. Breese, D.~Heckerman, and C.~Kadie, ``Empirical analysis of predictive
+  algorithms for collaborative filtering,'' {\em arXiv preprint
+  arXiv:1301.7363}, 2013.
+
+\bibitem{koren2011advances}
+Y.~Koren and R.~Bell, ``Advances in collaborative filtering. recommender
+  systems handbook, francesco ricci, lior rokach, bracha shapira, paul b.
+  kantor editors, chapter 5,'' 2011.
+
+\bibitem{barnes2005q}
+T.~Barnes, ``The q-matrix method: Mining student response data for knowledge,''
+  in {\em American Association for Artificial Intelligence 2005 Educational
+  Data Mining Workshop}, pp.~1--8, Pittsburgh, PA: AAAI Press, 2005.
+
+\bibitem{nithya2017calculating}
+S.~Nithya, A.~Srinivasan, M.~Senthilkumar, {\em et~al.}, ``Calculating the
+  user-item similarity using pearson's and cosine correlation,'' in {\em 2017
+  International Conference on Trends in Electronics and Informatics (ICEI)},
+  pp.~1000--1004, IEEE, 2017.
+
 \bibitem{huang1998extensions}
 Z.~Huang, ``Extensions to the k-means algorithm for clustering large data sets
   with categorical values,'' {\em Data mining and knowledge discovery}, vol.~2,
@@ -196,6 +252,10 @@ S.~Wu and T.~W. Chow, ``Clustering of the self-organizing map using a
 L.~Kaufman and P.~Rousseeuw, {\em Finding Groups in Data: An Introduction To
   Cluster Analysis}.
 \newblock 01 1990.
+
+\bibitem{edwards1965method}
+A.~W. Edwards and L.~L. Cavalli-Sforza, ``A method for cluster analysis,'' {\em
+  Biometrics}, pp.~362--375, 1965.
 
 \bibitem{roux2018comparative}
 M.~Roux, ``A comparative study of divisive and agglomerative hierarchical
@@ -262,6 +322,9 @@ D.~J. Bora, D.~Gupta, and A.~Kumar, ``A comparative study between fuzzy
 A.~Taherpour, A.~Cheshmeh~Sefidi, A.~Bemani, and T.~Hamule, ``Application of
   fuzzy c-means algorithm for the estimation of asphaltene precipitation,''
   {\em Petroleum Science and Technology}, vol.~36, no.~3, pp.~239--243, 2018.
+
+\bibitem{iris_dataset}
+R.A.Fisher, ``iris,'' 2018.
 
 \bibitem{rezaee1998new}
 M.~R. Rezaee, B.~P. Lelieveldt, and J.~H. Reiber, ``A new cluster validity

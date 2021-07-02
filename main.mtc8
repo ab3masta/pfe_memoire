@@ -16,10 +16,10 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.4.2}Clustering hiérarchique agglomératif}{\reset@font\mtcSSfont 44}{subsection.6.4.2}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.4.2.1}Exemple de clustering agglomératif}{\reset@font\mtcSSSfont 44}{subsubsection.6.4.2.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.4.3}Clustering hiérarchique divisive}{\reset@font\mtcSSfont 45}{subsection.6.4.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.4.3.1}Procédures de fractionnement des clusters}{\reset@font\mtcSSSfont 46}{subsubsection.6.4.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.4.3.2}Evaluations des bipartitions}{\reset@font\mtcSSSfont 46}{subsubsection.6.4.3.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.4.3.3}Déterminations de niveaux de nœuds }{\reset@font\mtcSSSfont 46}{subsubsection.6.4.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.4.4}Conclusion}{\reset@font\mtcSSfont 47}{subsection.6.4.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.4.4}Procédures de fractionnement des clusters}{\reset@font\mtcSSfont 46}{subsection.6.4.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.4.5}Evaluations des bipartitions}{\reset@font\mtcSSfont 46}{subsection.6.4.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.4.6}Déterminations de niveaux de nœuds }{\reset@font\mtcSSfont 46}{subsection.6.4.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.4.7}Conclusion}{\reset@font\mtcSSfont 47}{subsection.6.4.7}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.5}Le clustering partitionnel}{\reset@font\mtcSfont 47}{section.6.5}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.5.1}K-means clustering}{\reset@font\mtcSSfont 47}{subsection.6.5.1}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.5.1.1}Le fonctionnement de l’algorithme k-means}{\reset@font\mtcSSSfont 47}{subsubsection.6.5.1.1}}

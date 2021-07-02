@@ -30,13 +30,13 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Clustering Hard et Soft}{37}{chapter.6}%
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Distances intracluster et intercluster.\relax }}{40}{figure.caption.27}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering les points de données en 2 dimensions}}}{45}{subfigure.2.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Dendrogramme}}}{45}{subfigure.2.2}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Distances intracluster et intercluster.\relax }}{45}{figure.caption.29}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Les éléments du dataset.}}}{45}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Le dendrogramme.}}}{45}{subfigure.2.2}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces La direction du clustering hiérarchique agglomérative et divisive.\relax }}{45}{figure.caption.29}%
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Les étapes de l'algorithme k-means.\relax }}{48}{figure.caption.30}%
 \contentsline {figure}{\numberline {6.4}{\ignorespaces La méthode Elbow.\relax }}{50}{figure.caption.31}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering les points de données en 2 dimensions}}}{52}{subfigure.5.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Dendrogramme}}}{52}{subfigure.5.2}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Les éléments du dataset Iris \cite {iris_dataset}.}}}{52}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Illustration du degré d’appartenance des éléments au cluster.}}}{52}{subfigure.5.2}%
 \contentsline {xpart}{Contributions}{58}{part.2}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Contribution and Results}{58}{chapter.7}%

@@ -59,7 +59,7 @@ Puisque le clustering est une méthode qui cherche à minimiser l'inertie au sei
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=\textwidth]{images/chapitre6/inter-intra_clusters__distnce.png}
+		\includegraphics[width=\textwidth]{images/chapitre6/iris_inter_intra_clusters.png}
 	\end{center}
 \caption{Distances intracluster et intercluster.}
 \label{inter_intra_clusters}
@@ -221,39 +221,36 @@ Et pour obtenir le nombre de clusters optimal avec le dendrogramme, la méthode 
 
 \begin{figure}[H]
 	\centering
-    \subfloat[\centering les points de données en 2 dimensions]{{\includegraphics[width=7cm]{images/chapitre6/agglo_clustering.png} \label{agglo_clustering} }}%
+    \subfloat[\centering Les éléments du dataset.]{{\includegraphics[width=7cm]{images/chapitre6/agglo_clustering.png} \label{agglo_clustering} }}%
     \qquad
-    \subfloat[\centering Dendrogramme]{{\includegraphics[width=7cm]{images/chapitre6/dendrogram.png} } \label{dendrogramme}}%
+    \subfloat[\centering Le dendrogramme.]{{\includegraphics[width=7cm]{images/chapitre6/dendrogram.png} } \label{dendrogramme}}%
     %\caption{Dendrogramme}%
 \end{figure}
 
 
 \subsection{Clustering hiérarchique divisive}
 Le principe de base du clustering divisif a été publié sous le nom d'algorithme DIANA (Divisive Analysis Clustering) \cite{Finding_Groups_in_Data_An_Introduction_To_Cluster_Analysis}. Contrairement au clustering hiérarchique agglomératif, le clustering hiérarchique divisif suit une approche descendante dans laquelle tous les points de données appartiennent à un seul grand cluster et celui-ci est divisé en groupes plus petits en fonction d'une logique de terminaison ou d'un point au-delà duquel il n'y aura plus de division de points de données. Le principe du clustering divisif est illustrer par la figure ci-dessous. \\
-Le fractionnement est effectué de manière récursive au fur et à mesure que l'on descend dans la hiérarchie et il existe \(\displaystyle 2^{n-1}-1 \)  façons de diviser un ensemble de n objets en deux sous-ensembles \cite{roux2018comparative}. Par conséquent le fractionnement prend top du temps sur la recherche de toutes les bipartitions possibles. Le clustering hiérarchique divisif procède par le fractionnement des clusters en deux clusters les moins similaires en utilisant des critères de type distance ou rapport et ensuite détermine les niveaux des nœuds (qui représente les groupes obtenus dans le dendrogramme).
+Le fractionnement est effectué de manière récursive au fur et à mesure que l'on descend dans la hiérarchie et il existe \(\displaystyle 2^{n-1}-1 \) \cite{edwards1965method}  façons de diviser un ensemble de n objets en deux sous-ensembles \cite{roux2018comparative}. Par conséquent le fractionnement prend top du temps sur la recherche de toutes les bipartitions possibles. Le clustering hiérarchique divisif procède par le fractionnement des clusters en deux clusters les moins similaires en utilisant des critères de type distance ou rapport et ensuite détermine les niveaux des nœuds (qui représente les groupes obtenus dans le dendrogramme).
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.15]{images/chapitre6/hierarchical_agglo_divisive.png}
 	\end{center}
-\caption{Distances intracluster et intercluster.}
+\caption{La direction du clustering hiérarchique agglomérative et divisive.}
 \label{hierarchical_agglo_divisive_illust}
 \end{figure}
 
-\subsubsection{Procédures de fractionnement des clusters}
-Un certain nombre de procédures de fractionnement ont été conçus dans le passé. La procédure de Williams Et Lambert (1959) \cite{williams1959multivariate} est dite monothéique dans le sens où les ensembles d'objets sont divisé en fonction des valeurs d'une seule variable. Cette idée a été mise à jour en utilisant une composante principale au lieu d'une seule variable (algorithme Principal Directions Divisive Partitioning ou PDDP par Boley 1997) \cite{roux2018comparative}. \\
-Une autre approche pour contourner la complexité du fractionnement consiste à extraire un ou plusieurs objets, de l'ensemble à fractionner. Macnaughton-Smith et al. (1964) \cite{macnaughton1964dissimilarity} ont proposé de sélectionner le plus objet distant du cluster comme graine pour un nouveau cluster distinct. Puis ils s'agrègent à ceci amorce les objets qui sont plus proches du nouveau sous-ensemble que du reste du cluster actuel \cite{roux2018comparative}. \\
-Une idée similaire a été développée par Hubert (1973) \cite{hubert1973monotone}, il a suggéré d'utiliser une paire d'objets comme germes de la nouvelle bipartition. Son choix a été de sélectionner les deux objets qui sont les plus dissemblables, puis de construire les deux sous-clusters en fonction des distances (ou fonction des distances) à ces graines \cite{roux2018comparative}. \\
-Exploitant cette idée, Roux \cite{roux1991basic} \cite{roux1995divisive} considérait bipartitions générées par toutes les paires d'objets, en conservant la bipartition avec la meilleure évaluation de certains critères a priori \cite{roux2018comparative}. \\
+\subsection{Procédures de fractionnement des clusters}
+Un certain nombre de procédures de fractionnement ont été conçus dans le passé. La procédure de Williams Et Lambert (1959) \cite{williams1959multivariate} est dite monothéique dans le sens où les ensembles d’objets sont divisé en fonction des valeurs d’une seule variable. Cette idée a été mise à jour en utilisant une composante principale au lieu d’une seule variable (algorithme Principal Directions Divisive Partitioning ou PDDP par Boley 1997) \cite{roux2018comparative}. \\
+Une autre approche pour contourner la complexité du fractionnement consiste à extraire un ou plusieurs objets, de l’ensemble à fractionner. Macnaughton-Smith et al. (1964) \cite{macnaughton1964dissimilarity} ont proposé de sélectionner l’objet le plus distant comme center d’un nouveau cluster éloigné, puis les objets (les éléments du data set) les plus proche s’agrègent vers ce nouveau cluster \cite{roux2018comparative}. \\
+Une idée similaire a été développée par Hubert (1973) \cite{hubert1973monotone}, qui suggéré d’utiliser une paire d’objets comme point d’origine de la nouvelle bipartition. Son choix a été de sélectionner les deux objets qui sont les plus dissemblables, puis de construire les deux sous-clusters en fonction des distances à ces points d’origines \cite{roux2018comparative}. \\
+Exploitant cette idée, Roux \cite{roux1991basic} \cite{roux1995divisive} considérait les bipartitions générées par toutes les paires d'objets, en conservant la bipartition avec la meilleure évaluation de certains critères a priori \cite{roux2018comparative}. \\
 
-\subsubsection{Evaluations des bipartitions}
-Quel que soit le critère retenu, une série de très bonnes bipartitions ne se traduit pas automatiquement par une bonne hiérarchie.
-Les critères qui permettent d’évaluer les bipartitions sont de deux types : critère de type distance et les critères de type rapport.
+\subsection{Evaluations des bipartitions}
+Quel que soit le critère retenu, une série de très bonnes bipartitions ne se traduit pas automatiquement par une bonne hiérarchie. Les critères qui permettent d’évaluer les bipartitions sont de deux types : critère de type distance et les critères de type rapport. L’idée est donc de prendre en compte non seulement les dissemblances entre les clusters, mais aussi les dissemblances avec les éléments de deux clusters. Ces critères qui sont appelé aussi indice de validité sont énoncé dans le tableau \ref{validity_index_hard}.
 
-\subsubsection{Déterminations de niveaux de nœuds }
-Pour l’algorithme agglomératif, la valeur du critère devient le niveau du nœud correspondant, et le dendrogramme ne montre aucun croisement (ou inversion) des branches.
-Malheureusement, les procédures qui divisent, en général, ne bénéficient pas de cette propriété, en raison du non-optimalité des fractionnements successifs. Une règle est alors nécessaire pour obtenir des niveaux cohérents et une véritable représentation arborescente.
-
+\subsection{Déterminations de niveaux de nœuds }
+Pour l’algorithme agglomératif, la valeur de l’indice de validité obtenu pour l’estimation du nombre optimale de clusters devient le niveau du nœud correspondant, et le dendrogramme ne montre aucun croisement (ou inversion) des branches. Malheureusement, les procédures qui divisent, en général, ne bénéficient pas de cette propriété, en raison du non-optimalité des fractionnements successifs. Une règle est alors nécessaire pour obtenir des niveaux cohérents et une véritable représentation arborescente \cite{roux2018comparative}.
 \subsection{Conclusion}
 Le clustering hiérarchique dans la recherche d'informations identifie donc des groupements ou regroupements des « objets » étudiés qui représentent le mieux certaines relations de similitude. Il permet ainsi d’obtenir des résultats dans une hiérarchie de cluster appelé dendrogramme. Et si le dendrogramme ne présente aucun croisement des branches, la visualisation de ce dernier permet de voir comment les différents sous-clusters sont liés les uns aux autres et à quelle distance sont les points de données.
 \section{Le clustering partitionnel}
@@ -314,7 +311,7 @@ d’un cluster \(\displaystyle (X_{i}) \) et le centre \(\displaystyle (U_{i}) \
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=\textwidth]{images/chapitre6/elbow_methods.png}
+		\includegraphics[scale=0.5]{images/chapitre6/elbow_methods.png}
 	\end{center}
 	\caption{La méthode Elbow.}
 	\label{elbow_methods}
@@ -357,9 +354,9 @@ Enfin le centroïde d’un cluster est la moyenne de tous les points, pondérée
 
 \begin{figure}[!h]
     \centering
-    \subfloat[\centering les points de données en 2 dimensions]{{\includegraphics[width=7cm]{images/chapitre6/data_for_fuzzy.png} \label{data_for_fuzzy} }}%
+    \subfloat[\centering Les éléments du dataset Iris \cite{iris_dataset}.]{{\includegraphics[width=7cm]{images/chapitre6/data_for_fuzzy.png} \label{data_for_fuzzy} }}%
     \qquad
-    \subfloat[\centering Dendrogramme]{{\includegraphics[width=7cm]{images/chapitre6/fuzzyExemple.png} } \label{fuzzy_example}}%
+    \subfloat[\centering Illustration du degré d’appartenance des éléments au cluster.]{{\includegraphics[width=7cm]{images/chapitre6/fuzzyExemple.png} } \label{fuzzy_example}}%
     %\caption{Dendrogramme}%
 \end{figure}
 
@@ -391,8 +388,8 @@ Le clustering hiérarchique et partitionnel présente des différences essentiel
 Les algorithmes supervisés ont beaucoup de métriques pour vérifier leur qualité d'ajustement comme la précision, la valeur r carré, la sensibilité, la spécificité, etc. Concernant les algorithmes non supervisés et plus précisément les algorithmes de clustering l’indice de validité de cluster est utilisé pour mesurer la qualité de la partition trouvée et aussi les partitions optimales. L’indice de validité de cluster est utilisé donc pour mesurer la qualité des clusters et pour rechercher le nombre optimal de clusters lorsque le nombre de clusters dans les données l'ensemble n'est pas connu à l'avance \cite{rezaee1998new}. Il utilise les propriétés des clusters telles que la compacité (ou la variation) et la séparation (ou l'isolement) qui sont souvent considérées comme des caractéristiques majeures permettant de valider les clusters. La compacité indique la variation ou la dispersion des données au sein d'un cluster, et la séparation indique l'isolement des clusters les uns des autres \cite{ZHANG20081205} . Plusieurs indices de validité courants sont énoncés dans le tableau suivant :
 \begin{table}[H]
 	\centering
-	\addtolength{\leftskip} {-4.5cm}
-	\addtolength{\rightskip}{-4cm}
+	\addtolength{\leftskip} {-4cm}
+	\addtolength{\rightskip}{-4.5cm}
 	\begin{tabular}{|m{2cm}|m{5cm}|m{12cm}|}
 	\hline
 	\rowcolor{blueforest}
@@ -406,14 +403,14 @@ Les algorithmes supervisés ont beaucoup de métriques pour vérifier leur quali
 	\textbf{Indice Davies-Bouldin} & Semblable à l'indice de Dunn, l'indice Davies-Bouldin \cite{davies1979cluster} identifie des clusters éloignés les uns des autres et compacte.  & \(\displaystyle DB_{k} = \frac{1}{k} \sum_{i=1}^{k} max_{j=1,...,k;i \neq j} \Bigg \{ \frac{diam(c_{i}) + diam(c_{j})}{d(z_{i},z_{j})} \Bigg \}  \) \newline où le diamètre d'un cluster est : \(\displaystyle diam(c_{i}) = \sqrt{\frac{1}{n_{i}} \sum_{x \in c_{i}} d(x,z_{i})^{2}}  \), avec \(\displaystyle n_{i}  \) le nombre de points et \(\displaystyle z_{i}  \) le centre de gravité du cluster \(\displaystyle c_{i}  \). Puisque l'objectif est d'obtenir des clusters avec des distances intra-clusters minimales, les petites valeurs de \(\displaystyle DB  \) sont intéressantes. Par conséquent, cet index est minimisé lors de la recherche du meilleur nombre de clusters \cite{Saitta2008}. \\ \hline
 	\textbf{Indice de silhouette} & La statistique de silhouette \cite{kaufman2009finding} est une autre façon bien connue d'estimer le nombre de groupes dans une donnée ensemble. L'indice Silhouette (SI) calcule pour chaque point une largeur en fonction de son appartenance à groupe. Cette largeur de silhouette est alors une moyenne sur l'ensemble des observations.  & \(\displaystyle SI_{k} = \frac{1}{k} \sum_{i=1}^{n} \frac{(b_{i} - a_{i})}{\max (a_{i},b_{i})}  \), \newline où \(\displaystyle n  \) est le nombre total de points, \(\displaystyle a_{i}  \) est la distance moyenne entre le point \(\displaystyle i  \) et tous les autres points de son propre cluster et \(\displaystyle b_{i}  \) est le minimum des dissemblances moyennes entre \(\displaystyle i  \) et les points d'autres clusters. Enfin, la partition avec le \(\displaystyle SI  \) le plus élevé est considérée comme optimale \cite{Saitta2008}. \\ \hline
 	\end{tabular}
-	\caption{Caractéristiques }
-	\label{Caracteristiques }
+	\caption{Indice de validité du clustering Hard}
+	\label{validity_index_hard}
 \end{table}
 
 \begin{table}[H]
 	\centering
-	\addtolength{\leftskip} {-4.5cm}
-	\addtolength{\rightskip}{-4cm}
+	\addtolength{\leftskip} {-4cm}
+	\addtolength{\rightskip}{-4.5cm}
 	\begin{tabular}{|m{7cm}|m{12cm}|}
 	\hline
 	\rowcolor{blueforest}
@@ -426,9 +423,9 @@ Les algorithmes supervisés ont beaucoup de métriques pour vérifier leur quali
 	  \textbf{Fonction de validité proposée par Fukuyama et Sugeno \cite{fukuyama1989new} }  & \(\displaystyle V_{FS} = J_{m}(U,V) - K_{m}(U,V) = \sum_{i=1}^{c}\sum_{j=1}^{n} u_{ij}^{m} \left\lVert x_{j} - v_{i} \right\rVert^{2} - \sum_{i=1}^{c}\sum_{j=1}^{n} u_{ij}^{m} \left\lVert v_{i} - \overline{v} \right\rVert^{2} \) , \newline où \(\displaystyle \overline{v} = \sum_{j=1}^{n} x_{j}/n \) . \\ \hline
 	  \textbf{Fonction de validité proposée par Xie et Beni \cite{xie1991validity}  }  & \(\displaystyle V_{XB} = \frac{J_{m}(U,V)/n}{Sep(V)} = \frac{\sum_{i=1}^{c}\sum_{j=1}^{n} u_{ij}^{m} \left\lVert x_{j} - v_{i} \right\rVert^{2} }{n\min_{i \neq j} \left\lVert v_{i} - v_{j} \right\rVert^{2} } \) \\ \hline
 	\end{tabular}
-	\caption{Caractéristiques }
-	\label{Caracteristiques2}
+	\caption{Indice de validité du clustering Soft}
+	\label{validity_index_soft}
 \end{table}
 
 \section{Conclusion}
-  
+Nous avons passé en revue dans cette partie le clustering qui est une méthode de l’apprentissage automatique non-supervisé et les techniques qu’il utilise pour l’extraction des clusters. Plusieurs objectif pousse à utiliser certaines techniques de clustering comme le clustering partitionnel et hiérarchique qui forme des clusters où chaque élément appartient à un seul cluster et le clustering flou (fuzzy) où chaque élément peut appartenir à plusieurs clusters avec un degré d’appartenance. Ensuite après l’extraction des clusters, les indices de validité de clusters peuvent être utilisé pour évaluer la qualité des clusters obtenue où détecter à l’avance le nombre de clusters optimale avant d’utiliser les algorithmes.
