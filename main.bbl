@@ -139,6 +139,11 @@ R.~Pel{\'a}nek, T.~Effenberger, M.~Van{\v{e}}k, V.~Sassmann, and D.~Gmiterko,
   Proceedings of the Fifth Annual ACM Conference on Learning at Scale},
   pp.~1--4, 2018.
 
+\bibitem{knowledge_definition}
+{Wikipedia contributors}, ``knowledge: definition of knowledge in oxford
+  dictionary (american english) (us),'' 2004.
+\newblock Archived from the original on 14 July 2010.
+
 \bibitem{bloom1956taxonomy}
 B.~S. Bloom {\em et~al.}, ``Taxonomy of educational objectives. vol. 1:
   Cognitive domain,'' {\em New York: McKay}, vol.~20, no.~24, p.~1, 1956.
@@ -157,11 +162,15 @@ N.~M. Chang, {\em Learning to discriminate and generalize through problem
   comparisons}.
 \newblock PhD thesis, Carnegie Mellon University, 2006.
 
-\bibitem{desmarais2013matrix}
-M.~C. Desmarais and R.~Naceur, ``A matrix factorization method for mapping
-  items to skills and for enhancing expert-based q-matrices,'' in {\em
-  International Conference on Artificial Intelligence in Education},
-  pp.~441--450, Springer, 2013.
+\bibitem{desmarais2012mapping}
+M.~C. Desmarais, ``Mapping question items to skills with non-negative matrix
+  factorization,'' {\em ACM SIGKDD Explorations Newsletter}, vol.~13, no.~2,
+  pp.~30--36, 2012.
+
+\bibitem{baker2009state}
+R.~S. Baker, K.~Yacef, {\em et~al.}, ``The state of educational data mining in
+  2009: A review and future visions,'' {\em Journal of educational data
+  mining}, vol.~1, no.~1, pp.~3--17, 2009.
 
 \bibitem{item_based_recommendation_algo}
 B.~Sarwar, G.~Karypis, J.~Konstan, and J.~Riedl, ``Item-based collaborative

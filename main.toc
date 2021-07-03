@@ -44,22 +44,22 @@
 \contentsline {section}{\numberline {2.5}Conclusion}{22}{section.2.5}%
 \contentsline {chapter}{\numberline {3}L'approche items-to-skills mapping}{23}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introduction}{24}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Knowledge (La connaissance)}{24}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Knowledge}{24}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Définition}{24}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Knowledge component (Composante connaissance)}{24}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Knowledge component}{24}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Les types de composante de connaissance}{25}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Items-to-skills mapping}{26}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Définition}{26}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}items-to-skills mapping Structure}{26}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}Model-Based approach}{26}{subsubsection.3.3.2.1}%
-\contentsline {paragraph}{\numberline {3.3.2.1.1}Définition}{26}{paragraph.3.3.2.1.1}%
-\contentsline {paragraph}{\numberline {3.3.2.1.2}Model Based Techniques}{27}{paragraph.3.3.2.1.2}%
-\contentsline {subsection}{\numberline {3.3.3}Similarity-based approach (Item-Similarity)}{28}{subsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.3.1}Définition}{28}{subsubsection.3.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}Model-Based approach}{27}{subsubsection.3.3.2.1}%
+\contentsline {paragraph}{\numberline {3.3.2.1.1}Définition}{27}{paragraph.3.3.2.1.1}%
+\contentsline {paragraph}{\numberline {3.3.2.1.2}Model Based Techniques}{28}{paragraph.3.3.2.1.2}%
+\contentsline {subsection}{\numberline {3.3.3}Similarity-based approach}{29}{subsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}Définition}{29}{subsubsection.3.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.3.2}Processus de similarité des items (éléments)}{29}{subsubsection.3.3.3.2}%
 \contentsline {paragraph}{\numberline {3.3.3.2.1}Input Data}{30}{paragraph.3.3.3.2.1}%
-\contentsline {paragraph}{\numberline {3.3.3.2.2}Computed Data}{31}{paragraph.3.3.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.3.3.3}Item-Similarity measures}{32}{subsubsection.3.3.3.3}%
+\contentsline {paragraph}{\numberline {3.3.3.2.2}Computed Data}{30}{paragraph.3.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}Item-Similarity measures}{31}{subsubsection.3.3.3.3}%
 \contentsline {section}{\numberline {3.4}Conclusion}{32}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Fiabilité et l'accord pour les données d'observations}{33}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introduction}{34}{section.4.1}%

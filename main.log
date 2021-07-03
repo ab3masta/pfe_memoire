@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.2.13)  2 JUL 2021 02:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.2.13)  3 JUL 2021 04:22
 entering extended mode
 **d:/codeSourceFolder/1111____PFE/pfe_memoire/main.tex
 (d:/codeSourceFolder/1111____PFE/pfe_memoire/main.tex
@@ -1401,11 +1401,11 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [14]
-<images/chapitre2/Learner_model.png, id=773, 596.2275pt x 382.5492pt>
-File: images/chapitre2/Learner_model.png Graphic file (type png)
-<use images/chapitre2/Learner_model.png>
-Package pdftex.def Info: images/chapitre2/Learner_model.png  used on input line 98.
-(pdftex.def)             Requested size: 441.01773pt x 282.96521pt.
+<images/chapitre2/Composante_modele_apprenant.png, id=773, 1806.75pt x 1204.5pt>
+File: images/chapitre2/Composante_modele_apprenant.png Graphic file (type png)
+<use images/chapitre2/Composante_modele_apprenant.png>
+Package pdftex.def Info: images/chapitre2/Composante_modele_apprenant.png  used on input line 98.
+(pdftex.def)             Requested size: 441.01773pt x 294.01152pt.
 
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
@@ -1414,7 +1414,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
-[15 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/Learner_model.png>]
+[15 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/Composante_modele_apprenant.png>]
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 29.85403pt, for example:
@@ -1431,11 +1431,11 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [17]
-<images/chapitre2/Two_Aggregation_relationships.png, id=801, 609.77812pt x 216.81pt>
-File: images/chapitre2/Two_Aggregation_relationships.png Graphic file (type png)
-<use images/chapitre2/Two_Aggregation_relationships.png>
-Package pdftex.def Info: images/chapitre2/Two_Aggregation_relationships.png  used on input line 161.
-(pdftex.def)             Requested size: 441.01773pt x 156.81104pt.
+<images/chapitre2/Modèles-d'équations-structurelles.png, id=801, 1806.75pt x 803.0pt>
+File: images/chapitre2/Modèles-d'équations-structurelles.png Graphic file (type png)
+<use images/chapitre2/Modèles-d'équations-structurelles.png>
+Package pdftex.def Info: images/chapitre2/Modèles-d'équations-structurelles.png  used on input line 161.
+(pdftex.def)             Requested size: 441.01773pt x 196.00768pt.
 
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
@@ -1456,12 +1456,12 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
-[19 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/Two_Aggregation_relationships.png>]
-<images/chapitre2/aggregationModelisation.png, id=827, 569.12625pt x 317.53632pt>
-File: images/chapitre2/aggregationModelisation.png Graphic file (type png)
-<use images/chapitre2/aggregationModelisation.png>
-Package pdftex.def Info: images/chapitre2/aggregationModelisation.png  used on input line 186.
-(pdftex.def)             Requested size: 441.01773pt x 246.06871pt.
+[19 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/Modèles-d'équations-structurelles.png>]
+<images/chapitre2/bayesian_network_modeling_aggregationai.png, id=826, 1806.75pt x 803.0pt>
+File: images/chapitre2/bayesian_network_modeling_aggregationai.png Graphic file (type png)
+<use images/chapitre2/bayesian_network_modeling_aggregationai.png>
+Package pdftex.def Info: images/chapitre2/bayesian_network_modeling_aggregationai.png  used on input line 186.
+(pdftex.def)             Requested size: 441.01773pt x 196.00768pt.
 
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
@@ -1471,11 +1471,11 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [20]
-<images/chapitre2/Modèles d'équations structurelles.png, id=838, 623.83063pt x 235.37938pt>
-File: images/chapitre2/Modèles d'équations structurelles.png Graphic file (type png)
-<use images/chapitre2/Modèles d'équations structurelles.png>
-Package pdftex.def Info: images/chapitre2/Modèles d'équations structurelles.png  used on input line 199.
-(pdftex.def)             Requested size: 441.01773pt x 166.40579pt.
+<images/chapitre2/modèle_equation_structurelles.png, id=838, 1806.75pt x 803.0pt>
+File: images/chapitre2/modèle_equation_structurelles.png Graphic file (type png)
+<use images/chapitre2/modèle_equation_structurelles.png>
+Package pdftex.def Info: images/chapitre2/modèle_equation_structurelles.png  used on input line 199.
+(pdftex.def)             Requested size: 441.01773pt x 196.00768pt.
 
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
@@ -1484,7 +1484,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
-[21 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/aggregationModelisation.png>]) (d:/codeSourceFolder\1111____PFE\pfe_memoire\troisiemechapitre.tex
+[21 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/bayesian_network_modeling_aggregationai.png>]) (d:/codeSourceFolder\1111____PFE\pfe_memoire\troisiemechapitre.tex
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
 (fancyhdr)                Make it at least 29.85403pt, for example:
@@ -1492,7 +1492,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
-[22 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/Modèles d'équations structurelles.png>]
+[22 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/modèle_equation_structurelles.png>]
 Chapitre 3.
 \openout7 = `main.mtc'.
 
@@ -1500,48 +1500,47 @@ Chapitre 3.
 
 (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.mtc5) [23
 
-] [24]
-<images/chapitre3/Knowledge_component.png, id=877, 1104.125pt x 401.5pt>
+]
+<images/chapitre3/Knowledge_component.png, id=870, 1907.125pt x 903.375pt>
 File: images/chapitre3/Knowledge_component.png Graphic file (type png)
 <use images/chapitre3/Knowledge_component.png>
-Package pdftex.def Info: images/chapitre3/Knowledge_component.png  used on input line 20.
-(pdftex.def)             Requested size: 441.01773pt x 160.37047pt.
- [25 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Knowledge_component.png>]
-<images/chapitre3/Items_to_skills_mappin_structure.png, id=889, 1104.125pt x 501.875pt>
-File: images/chapitre3/Items_to_skills_mappin_structure.png Graphic file (type png)
-<use images/chapitre3/Items_to_skills_mappin_structure.png>
-Package pdftex.def Info: images/chapitre3/Items_to_skills_mappin_structure.png  used on input line 51.
-(pdftex.def)             Requested size: 441.01773pt x 200.46309pt.
- [26 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Items_to_skills_mappin_structure.png>]
-<images/chapitre3/Model_based.png, id=900, 525.965pt x 154.07562pt>
+Package pdftex.def Info: images/chapitre3/Knowledge_component.png  used on input line 18.
+(pdftex.def)             Requested size: 441.01773pt x 208.90219pt.
+ [24] [25 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Knowledge_component.png>]
+<images/chapitre3/Items_mapping_structure.png, id=892, 1405.25pt x 803.0pt>
+File: images/chapitre3/Items_mapping_structure.png Graphic file (type png)
+<use images/chapitre3/Items_mapping_structure.png>
+Package pdftex.def Info: images/chapitre3/Items_mapping_structure.png  used on input line 48.
+(pdftex.def)             Requested size: 441.01773pt x 252.00287pt.
+ [26]
+<images/chapitre3/Model_based.png, id=903, 525.965pt x 154.07562pt>
 File: images/chapitre3/Model_based.png Graphic file (type png)
 <use images/chapitre3/Model_based.png>
-Package pdftex.def Info: images/chapitre3/Model_based.png  used on input line 64.
+Package pdftex.def Info: images/chapitre3/Model_based.png  used on input line 61.
 (pdftex.def)             Requested size: 441.01773pt x 129.19693pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+ [27 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Items_mapping_structure.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-<images/chapitre3/q_matrix.png, id=903, 584.68437pt x 162.6075pt>
+<images/chapitre3/q_matrix.png, id=913, 584.68437pt x 162.6075pt>
 File: images/chapitre3/q_matrix.png Graphic file (type png)
 <use images/chapitre3/q_matrix.png>
-Package pdftex.def Info: images/chapitre3/q_matrix.png  used on input line 82.
+Package pdftex.def Info: images/chapitre3/q_matrix.png  used on input line 79.
 (pdftex.def)             Requested size: 441.01773pt x 122.6575pt.
-[27 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Model_based.png>]
-<images/chapitre3/Illustration_item_smilarity.png, id=916, 363.3575pt x 196.23312pt>
+[28 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Model_based.png> <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/q_matrix.png>]
+<images/chapitre3/Illustration_item_smilarity.png, id=925, 241.40187pt x 172.14313pt>
 File: images/chapitre3/Illustration_item_smilarity.png Graphic file (type png)
 <use images/chapitre3/Illustration_item_smilarity.png>
-Package pdftex.def Info: images/chapitre3/Illustration_item_smilarity.png  used on input line 95.
-(pdftex.def)             Requested size: 441.01773pt x 238.17937pt.
- [28 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/q_matrix.png>]
-<images/chapitre3/calcul_application_similarity.png, id=926, 577.15625pt x 282.05376pt>
+Package pdftex.def Info: images/chapitre3/Illustration_item_smilarity.png  used on input line 92.
+(pdftex.def)             Requested size: 241.40128pt x 172.14268pt.
+ [29 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Illustration_item_smilarity.png>]
+<images/chapitre3/calcul_application_similarity.png, id=935, 577.15625pt x 282.05376pt>
 File: images/chapitre3/calcul_application_similarity.png Graphic file (type png)
 <use images/chapitre3/calcul_application_similarity.png>
-Package pdftex.def Info: images/chapitre3/calcul_application_similarity.png  used on input line 108.
+Package pdftex.def Info: images/chapitre3/calcul_application_similarity.png  used on input line 105.
 (pdftex.def)             Requested size: 441.01773pt x 215.53369pt.
- [29 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Illustration_item_smilarity.png>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 118.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 115.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [30 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/calcul_application_similarity.png>] [31]) (d:/codeSourceFolder\1111____PFE\pfe_memoire\quatriemechapitre.tex [32]
@@ -1599,18 +1598,18 @@ Overfull \hbox (30.26167pt too wide) in paragraph at lines 40--54
  [][] 
  []
 
-<images/chapitre6/iris_inter_intra_clusters.png, id=1003, 987.69pt x 690.58pt>
+<images/chapitre6/iris_inter_intra_clusters.png, id=1009, 987.69pt x 690.58pt>
 File: images/chapitre6/iris_inter_intra_clusters.png Graphic file (type png)
 <use images/chapitre6/iris_inter_intra_clusters.png>
 Package pdftex.def Info: images/chapitre6/iris_inter_intra_clusters.png  used on input line 62.
 (pdftex.def)             Requested size: 441.01773pt x 308.34506pt.
 [39] [40 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/iris_inter_intra_clusters.png>]
-<images/chapitre6/single_linkage.png, id=1015, 798.985pt x 581.17125pt>
+<images/chapitre6/single_linkage.png, id=1021, 798.985pt x 581.17125pt>
 File: images/chapitre6/single_linkage.png Graphic file (type png)
 <use images/chapitre6/single_linkage.png>
 Package pdftex.def Info: images/chapitre6/single_linkage.png  used on input line 83.
 (pdftex.def)             Requested size: 239.69734pt x 174.35272pt.
-<images/chapitre6/complet_linkage.png, id=1019, 798.985pt x 581.17125pt>
+<images/chapitre6/complet_linkage.png, id=1025, 798.985pt x 581.17125pt>
 File: images/chapitre6/complet_linkage.png Graphic file (type png)
 <use images/chapitre6/complet_linkage.png>
 Package pdftex.def Info: images/chapitre6/complet_linkage.png  used on input line 116.
@@ -1620,18 +1619,18 @@ Package pdftex.def Info: images/chapitre6/complet_linkage.png  used on input lin
 LaTeX Warning: Command \` invalid in math mode on input line 203.
 
 [43]
-<images/chapitre6/agglo_clustering.png, id=1062, 798.985pt x 581.17125pt>
+<images/chapitre6/agglo_clustering.png, id=1068, 798.985pt x 581.17125pt>
 File: images/chapitre6/agglo_clustering.png Graphic file (type png)
 <use images/chapitre6/agglo_clustering.png>
 Package pdftex.def Info: images/chapitre6/agglo_clustering.png  used on input line 224.
 (pdftex.def)             Requested size: 199.16928pt x 144.87566pt.
-<images/chapitre6/dendrogram.png, id=1063, 798.985pt x 577.15625pt>
+<images/chapitre6/dendrogram.png, id=1069, 798.985pt x 577.15625pt>
 File: images/chapitre6/dendrogram.png Graphic file (type png)
 <use images/chapitre6/dendrogram.png>
 Package pdftex.def Info: images/chapitre6/dendrogram.png  used on input line 226.
 (pdftex.def)             Requested size: 199.16928pt x 143.87479pt.
  [44]
-<images/chapitre6/hierarchical_agglo_divisive.png, id=1075, 1505.625pt x 903.375pt>
+<images/chapitre6/hierarchical_agglo_divisive.png, id=1081, 1505.625pt x 903.375pt>
 File: images/chapitre6/hierarchical_agglo_divisive.png Graphic file (type png)
 <use images/chapitre6/hierarchical_agglo_divisive.png>
 Package pdftex.def Info: images/chapitre6/hierarchical_agglo_divisive.png  used on input line 237.
@@ -1642,7 +1641,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--248
  []
 
 [45 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/agglo_clustering.png> <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/dendrogram.png> <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/hierarchical_agglo_divisive.png>] [46] [47]
-<images/chapitre6/kmeans_steps.png, id=1115, 214.182pt x 81.7965pt>
+<images/chapitre6/kmeans_steps.png, id=1121, 214.182pt x 81.7965pt>
 File: images/chapitre6/kmeans_steps.png Graphic file (type png)
 <use images/chapitre6/kmeans_steps.png>
 Package pdftex.def Info: images/chapitre6/kmeans_steps.png  used on input line 280.
@@ -1656,7 +1655,7 @@ LaTeX Info: Symbol \textasciiacute not provided by
             font family ptm in TS1 encoding.
             Default family used instead on input line 305.
 [49]
-<images/chapitre6/elbow_methods.png, id=1136, 727.71875pt x 486.81876pt>
+<images/chapitre6/elbow_methods.png, id=1142, 727.71875pt x 486.81876pt>
 File: images/chapitre6/elbow_methods.png Graphic file (type png)
 <use images/chapitre6/elbow_methods.png>
 Package pdftex.def Info: images/chapitre6/elbow_methods.png  used on input line 314.
@@ -1673,12 +1672,12 @@ LaTeX Warning: Command \textless invalid in math mode on input line 340.
 
 LaTeX Warning: Command \textless invalid in math mode on input line 348.
 
-<images/chapitre6/data_for_fuzzy.png, id=1158, 1067.99pt x 620.3175pt>
+<images/chapitre6/data_for_fuzzy.png, id=1164, 1067.99pt x 620.3175pt>
 File: images/chapitre6/data_for_fuzzy.png Graphic file (type png)
 <use images/chapitre6/data_for_fuzzy.png>
 Package pdftex.def Info: images/chapitre6/data_for_fuzzy.png  used on input line 357.
 (pdftex.def)             Requested size: 199.16928pt x 115.67506pt.
-<images/chapitre6/fuzzyExemple.png, id=1161, 1067.99pt x 620.3175pt>
+<images/chapitre6/fuzzyExemple.png, id=1167, 1067.99pt x 620.3175pt>
 File: images/chapitre6/fuzzyExemple.png Graphic file (type png)
 <use images/chapitre6/fuzzyExemple.png>
 Package pdftex.def Info: images/chapitre6/fuzzyExemple.png  used on input line 359.
@@ -1848,7 +1847,7 @@ Chapitre 7.
 ] (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.bbl [61
 
 
-] [62] [63] [64])
+] [62] [63] [64] [65])
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the main.maf file.
@@ -1865,24 +1864,24 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the main.log file.
 
-[65] (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.aux)
+[66] (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5A367482DC3A744AF3933E904A38D252;8843.
+(rerunfilecheck)             Checksum: 0816C4A6F97E0A319EDD09D60FD92F35;8775.
  ) 
 Here is how much of TeX's memory you used:
- 40794 strings out of 479696
- 901440 string characters out of 2867115
- 1378123 words of memory out of 3000000
- 56398 multiletter control sequences out of 15000+200000
- 487722 words of font info for 144 fonts, out of 3000000 for 9000
+ 40800 strings out of 479696
+ 901660 string characters out of 2867115
+ 1378241 words of memory out of 3000000
+ 56399 multiletter control sequences out of 15000+200000
+ 487819 words of font info for 145 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,19n,111p,1738b,665s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{cite.buche\\penalty\040\\@M\040\040:tel-00011223} has been referenced but does not exist, replaced by a fixed one
 
 {C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\Users\abdou\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on d:/codeSourceFolder\1111____PFE\pfe_memoire\main.pdf (72 pages, 1904976 bytes).
+Output written on d:/codeSourceFolder\1111____PFE\pfe_memoire\main.pdf (73 pages, 1696776 bytes).
 PDF statistics:
- 1396 PDF objects out of 1440 (max. 8388607)
- 312 named destinations out of 1000 (max. 500000)
+ 1409 PDF objects out of 1440 (max. 8388607)
+ 315 named destinations out of 1000 (max. 500000)
  43511 words of extra memory for PDF output out of 51595 (max. 10000000)
 
