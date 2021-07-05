@@ -20,23 +20,25 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Knowledge Component\relax }}{25}{figure.caption.17}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Items-to-skills mapping Structure\relax }}{27}{figure.caption.18}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Model based\relax }}{28}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Q-matrix\relax }}{28}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Illustration de l'approche générale de l'analyse des éléments basée sur la similarité des éléments.\relax }}{29}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces L'approche générale du calcul et de l'application de la similarité des éléments.\relax }}{30}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Q-matrix\relax }}{29}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Illustration de l'approche générale de l'analyse des éléments basée sur la similarité des éléments.\relax }}{30}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces L'approche générale du calcul et de l'application de la similarité des éléments.\relax }}{31}{figure.caption.22}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Fiabilité et l'accord pour les données d'observations}{33}{chapter.4}%
+\contentsline {xchapter}{Inférence bayésienne et la théorie de la réponse aux items}{34}{chapter.4}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces La distribution à priori, à posteriori et celle de la fonction de vraisemblance.\relax }}{38}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \relax }}{40}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \relax }}{43}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces \relax }}{44}{figure.caption.28}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Inférence bayésienne et la théorie de la réponse aux items}{35}{chapter.5}%
+\contentsline {xchapter}{Clustering Hard et Soft}{47}{chapter.5}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Distances intracluster et intercluster.\relax }}{50}{figure.caption.31}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Les éléments du dataset.}}}{55}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Le dendrogramme.}}}{55}{subfigure.2.2}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces La direction du clustering hiérarchique agglomérative et divisive.\relax }}{55}{figure.caption.33}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Les étapes de l'algorithme k-means.\relax }}{58}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces La méthode Elbow.\relax }}{60}{figure.caption.35}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Les éléments du dataset Iris \cite {iris_dataset}.}}}{62}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Illustration du degré d’appartenance des éléments au cluster.}}}{62}{subfigure.5.2}%
+\contentsline {xpart}{Contributions}{68}{part.2}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Clustering Hard et Soft}{37}{chapter.6}%
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Distances intracluster et intercluster.\relax }}{40}{figure.caption.27}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Les éléments du dataset.}}}{45}{subfigure.2.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Le dendrogramme.}}}{45}{subfigure.2.2}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces La direction du clustering hiérarchique agglomérative et divisive.\relax }}{45}{figure.caption.29}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Les étapes de l'algorithme k-means.\relax }}{48}{figure.caption.30}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces La méthode Elbow.\relax }}{50}{figure.caption.31}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Les éléments du dataset Iris \cite {iris_dataset}.}}}{52}{subfigure.5.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Illustration du degré d’appartenance des éléments au cluster.}}}{52}{subfigure.5.2}%
-\contentsline {xpart}{Contributions}{58}{part.2}%
-\addvspace {10\p@ }
-\contentsline {xchapter}{Contribution and Results}{58}{chapter.7}%
+\contentsline {xchapter}{Contribution and Results}{68}{chapter.6}%

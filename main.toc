@@ -1,8 +1,8 @@
 \babel@toc {english}{}
 \babel@toc {french}{}
-\contentsline {chapter}{Table des figures}{viii}{chapter*.3}%
-\contentsline {chapter}{Liste des tableaux}{ix}{chapter*.4}%
-\contentsline {part}{Liste des Acronymes}{ix}{chapter*.4}%
+\contentsline {chapter}{Table des figures}{ix}{chapter*.3}%
+\contentsline {chapter}{Liste des tableaux}{x}{chapter*.4}%
+\contentsline {part}{Liste des Acronymes}{x}{chapter*.4}%
 \babel@toc {french}{}
 \contentsline {part}{I\hspace {1em}\'Etat de l'art}{1}{part.1}%
 \contentsline {xpart}{\'Etat de l'art}{2}{part.1}%
@@ -56,59 +56,75 @@
 \contentsline {paragraph}{\numberline {3.3.2.1.2}Model Based Techniques}{28}{paragraph.3.3.2.1.2}%
 \contentsline {subsection}{\numberline {3.3.3}Similarity-based approach}{29}{subsection.3.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.3.1}Définition}{29}{subsubsection.3.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.3.2}Processus de similarité des items (éléments)}{29}{subsubsection.3.3.3.2}%
-\contentsline {paragraph}{\numberline {3.3.3.2.1}Input Data}{30}{paragraph.3.3.3.2.1}%
-\contentsline {paragraph}{\numberline {3.3.3.2.2}Computed Data}{30}{paragraph.3.3.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.3.3.3}Item-Similarity measures}{31}{subsubsection.3.3.3.3}%
-\contentsline {section}{\numberline {3.4}Conclusion}{32}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Fiabilité et l'accord pour les données d'observations}{33}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{34}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Conclusion}{34}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Inférence bayésienne et la théorie de la réponse aux items}{35}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{36}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Conclusion}{36}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Clustering Hard et Soft}{37}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introduction}{38}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Les métriques}{39}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Critère de liaison}{39}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Distance inter-cluster}{40}{subsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.1}Distance de liaison unique}{41}{subsubsection.6.3.1.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.2}Distance de liaison complète}{41}{subsubsection.6.3.1.2}%
-\contentsline {subsubsection}{\numberline {6.3.1.3}Distance de liaison moyenne}{42}{subsubsection.6.3.1.3}%
-\contentsline {subsubsection}{\numberline {6.3.1.4}Centroïde Linkage Distance}{42}{subsubsection.6.3.1.4}%
-\contentsline {subsubsection}{\numberline {6.3.1.5}Distance de liaison moyenne du centre de gravité}{42}{subsubsection.6.3.1.5}%
-\contentsline {subsection}{\numberline {6.3.2}Distance intra-cluster}{42}{subsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.2.1}Distance de diamètre complet}{42}{subsubsection.6.3.2.1}%
-\contentsline {subsubsection}{\numberline {6.3.2.2}Distance de diamètre moyen}{43}{subsubsection.6.3.2.2}%
-\contentsline {subsubsection}{\numberline {6.3.2.3}Diamètre barycentre Distance}{43}{subsubsection.6.3.2.3}%
-\contentsline {section}{\numberline {6.4}Le clustering hiérarchique}{43}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Introduction}{43}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Clustering hiérarchique agglomératif}{44}{subsection.6.4.2}%
-\contentsline {subsubsection}{\numberline {6.4.2.1}Exemple de clustering agglomératif}{44}{subsubsection.6.4.2.1}%
-\contentsline {subsection}{\numberline {6.4.3}Clustering hiérarchique divisive}{45}{subsection.6.4.3}%
-\contentsline {subsection}{\numberline {6.4.4}Procédures de fractionnement des clusters}{46}{subsection.6.4.4}%
-\contentsline {subsection}{\numberline {6.4.5}Evaluations des bipartitions}{46}{subsection.6.4.5}%
-\contentsline {subsection}{\numberline {6.4.6}Déterminations de niveaux de nœuds }{46}{subsection.6.4.6}%
-\contentsline {subsection}{\numberline {6.4.7}Conclusion}{47}{subsection.6.4.7}%
-\contentsline {section}{\numberline {6.5}Le clustering partitionnel}{47}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}K-means clustering}{47}{subsection.6.5.1}%
-\contentsline {subsubsection}{\numberline {6.5.1.1}Le fonctionnement de l’algorithme k-means}{47}{subsubsection.6.5.1.1}%
-\contentsline {subsubsection}{\numberline {6.5.1.2}Les étapes de l’algorithme}{47}{subsubsection.6.5.1.2}%
-\contentsline {subsubsection}{\numberline {6.5.1.3}Les lacunes de l’algorithme k-means}{49}{subsubsection.6.5.1.3}%
-\contentsline {subsubsection}{\numberline {6.5.1.4}Les solutions aux lacunes de l’algorithme k-means}{49}{subsubsection.6.5.1.4}%
-\contentsline {section}{\numberline {6.6}Fuzzy clustering}{50}{section.6.6}%
-\contentsline {subsection}{\numberline {6.6.1}Introduction}{50}{subsection.6.6.1}%
-\contentsline {subsection}{\numberline {6.6.2}Fuzzy C-means clustering :}{51}{subsection.6.6.2}%
-\contentsline {subsubsection}{\numberline {6.6.2.1}Algorithme FCM :}{52}{subsubsection.6.6.2.1}%
-\contentsline {subsection}{\numberline {6.6.3}Conclusion}{52}{subsection.6.6.3}%
-\contentsline {section}{\numberline {6.7}Les autres méthodes de clustering}{53}{section.6.7}%
-\contentsline {section}{\numberline {6.8}La différence entre le clustering hiérarchique, partitionnel et Fuzzy clustering}{54}{section.6.8}%
-\contentsline {section}{\numberline {6.9}Indice de validité du clustering}{54}{section.6.9}%
-\contentsline {section}{\numberline {6.10}Conclusion}{56}{section.6.10}%
-\contentsline {part}{II\hspace {1em}Contributions}{57}{part.2}%
-\contentsline {xpart}{Contributions}{58}{part.2}%
-\contentsline {chapter}{\numberline {7}Contribution and Results}{58}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Introduction}{59}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Conclusion}{59}{section.7.2}%
-\contentsline {part}{Conclusion Générale}{59}{section.7.2}%
-\contentsline {chapter}{Bibliographie}{61}{chapter*.37}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}Processus de similarité des items (éléments)}{30}{subsubsection.3.3.3.2}%
+\contentsline {paragraph}{\numberline {3.3.3.2.1}Input Data}{31}{paragraph.3.3.3.2.1}%
+\contentsline {paragraph}{\numberline {3.3.3.2.2}Computed Data}{31}{paragraph.3.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}Item-Similarity measures}{32}{subsubsection.3.3.3.3}%
+\contentsline {section}{\numberline {3.4}Conclusion}{33}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Inférence bayésienne et la théorie de la réponse aux items}{34}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{35}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Inférence bayésienne}{36}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Définition}{36}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}probabilité conditionnelle et théorème de bayes}{36}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}L’approche Bayésienne}{37}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Théorème de bayes dans la cadre de l’application de l’approche Bayésienne}{37}{subsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}Posterior distribution}{38}{subsubsection.4.2.4.1}%
+\contentsline {subsubsection}{\numberline {4.2.4.2}Likelihood}{39}{subsubsection.4.2.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.4.3}Prior distribution}{39}{subsubsection.4.2.4.3}%
+\contentsline {subsubsection}{\numberline {4.2.4.4}Chaine de Markov Monte Carlo (MCMC)}{39}{subsubsection.4.2.4.4}%
+\contentsline {subsection}{\numberline {4.2.5}Model selection}{40}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}La théorie des réponses aux items}{41}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Les Modèles TRI}{42}{subsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}Les modèles à un, deux ou trois paramètres}{42}{subsubsection.4.3.1.1}%
+\contentsline {paragraph}{\numberline {4.3.1.1.1}Le modèle Rasch}{43}{paragraph.4.3.1.1.1}%
+\contentsline {section}{\numberline {4.4}Un ajustement bayésien des réponses aux items avec Stan}{45}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}IRT avec Stan}{45}{subsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1.1}Déclaration des données}{45}{subsubsection.4.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.4.1.2}Les paramètres du model de Rasch (1PL)}{46}{subsubsection.4.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.4.1.3}Le model de Rasch}{46}{subsubsection.4.4.1.3}%
+\contentsline {section}{\numberline {4.5}Conclusion}{46}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Clustering Hard et Soft}{47}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{48}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Les métriques}{49}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Critère de liaison}{49}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Distance inter-cluster}{50}{subsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.1}Distance de liaison unique}{51}{subsubsection.5.3.1.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.2}Distance de liaison complète}{51}{subsubsection.5.3.1.2}%
+\contentsline {subsubsection}{\numberline {5.3.1.3}Distance de liaison moyenne}{52}{subsubsection.5.3.1.3}%
+\contentsline {subsubsection}{\numberline {5.3.1.4}Centroïde Linkage Distance}{52}{subsubsection.5.3.1.4}%
+\contentsline {subsubsection}{\numberline {5.3.1.5}Distance de liaison moyenne du centre de gravité}{52}{subsubsection.5.3.1.5}%
+\contentsline {subsection}{\numberline {5.3.2}Distance intra-cluster}{52}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}Distance de diamètre complet}{52}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {5.3.2.2}Distance de diamètre moyen}{53}{subsubsection.5.3.2.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.3}Diamètre barycentre Distance}{53}{subsubsection.5.3.2.3}%
+\contentsline {section}{\numberline {5.4}Le clustering hiérarchique}{53}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Introduction}{53}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Clustering hiérarchique agglomératif}{54}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}Exemple de clustering agglomératif}{54}{subsubsection.5.4.2.1}%
+\contentsline {subsection}{\numberline {5.4.3}Clustering hiérarchique divisive}{55}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Procédures de fractionnement des clusters}{56}{subsection.5.4.4}%
+\contentsline {subsection}{\numberline {5.4.5}Evaluations des bipartitions}{56}{subsection.5.4.5}%
+\contentsline {subsection}{\numberline {5.4.6}Déterminations de niveaux de nœuds }{56}{subsection.5.4.6}%
+\contentsline {subsection}{\numberline {5.4.7}Conclusion}{57}{subsection.5.4.7}%
+\contentsline {section}{\numberline {5.5}Le clustering partitionnel}{57}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}K-means clustering}{57}{subsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.1.1}Le fonctionnement de l’algorithme k-means}{57}{subsubsection.5.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.5.1.2}Les étapes de l’algorithme}{57}{subsubsection.5.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.5.1.3}Les lacunes de l’algorithme k-means}{59}{subsubsection.5.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.5.1.4}Les solutions aux lacunes de l’algorithme k-means}{59}{subsubsection.5.5.1.4}%
+\contentsline {section}{\numberline {5.6}Fuzzy clustering}{60}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Introduction}{60}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Fuzzy C-means clustering :}{61}{subsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.1}Algorithme FCM :}{62}{subsubsection.5.6.2.1}%
+\contentsline {subsection}{\numberline {5.6.3}Conclusion}{62}{subsection.5.6.3}%
+\contentsline {section}{\numberline {5.7}Les autres méthodes de clustering}{63}{section.5.7}%
+\contentsline {section}{\numberline {5.8}La différence entre le clustering hiérarchique, partitionnel et Fuzzy clustering}{64}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Indice de validité du clustering}{64}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Conclusion}{66}{section.5.10}%
+\contentsline {part}{II\hspace {1em}Contributions}{67}{part.2}%
+\contentsline {xpart}{Contributions}{68}{part.2}%
+\contentsline {chapter}{\numberline {6}Contribution and Results}{68}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{69}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Conclusion}{69}{section.6.2}%
+\contentsline {part}{Conclusion Générale}{69}{section.6.2}%
+\contentsline {chapter}{Bibliographie}{71}{chapter*.41}%

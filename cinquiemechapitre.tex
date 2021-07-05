@@ -4,6 +4,226 @@
 \newpage
 
 \section{Introduction}
+Lors du 25e anniversaire de la Psychometric Society en 1961, Harold Gulliksen a décrit « le problème de la théorie des tests » comme « la relation entre la capacité de l'individu et son score au test" (Gulliksen, 1961). Vingt-cinq ans plus tard, Charles Lewis a observé qu' « une grande partie des progrès récents de la théorie des tests a été réalisée en traitant l'étude de la relation entre les réponses à un ensemble d'items de test et un trait hypothétique (ou traits) d'un individu comme un problème d'inférence statistique" (Lewis, 1986), apportant ainsi des solutions à des problèmes autrefois insolubles tels que l'adaptation des tests aux candidats individuels (par exemple, Lord, 1980, chap. 10), le tri des relations dans les modèles de réussite dans les systèmes scolaires hiérarchiques (par exemple, Aitkin \& Longford, 1986) et l’estimation des paramètre des modèles IRT. Et les concepts et outils d'inférence statistique aider à expliquer les relations entre les preuves et l'inférence sur les connaissances, l'apprentissage et les réalisations des élèves que ce qui est traditionnellement associé à la théorie des tests standard et aux résultats standardisés \cite{mislevy1994evidence}. \\
+L'inférence peut être défini comme un raisonnement à partir de ce que nous savons et de ce que nous observons jusqu'aux explications, conclusions ou prédictions parce que nous raisonnons toujours en présence d'incertitude et les informations avec lesquelles nous travaillons sont généralement incomplètes, peu concluantes, se prêtent à plus d’une explication. L’utilisation de l’inférence bayésienne permet donc d’estimer à partir d’observations les paramètres d’écrivant la distribution de probabilité en tenant compte des informations supplémentaire appelé aussi des informations apriori. Par exemple dans le cas où on cherche à estimer les paramètre \(\displaystyle \theta1 \) et \(\displaystyle \theta2 \) venant du problème où 30\% des machines à sous ont une probabilité \(\displaystyle \theta1 \)  de donner 1EUR, le reste a une probabilité \(\displaystyle \theta2 \).\\
+L'évaluation pédagogique concerne l'inférence sur les connaissances, les compétences et les réalisations des élèves, c’est-à-dire qu’il existe un intérêt pour l'étude des variables latentes \cite{azevedo2011bayesian}, utilisé surtout dans La théorie de la réponse aux items (TRI). Parce que les données ne sont jamais aussi complètes et sans équivoque qu'elles garantissent la certitude, la théorie des tests a évolué en partie pour répondre aux questions de poids, de couverture et d'importation des données. Les concepts et techniques qui en résultent peuvent être considérés comme des applications de principes plus généraux d'inférence en présence d’incertitude. Comme le dit Glen Shafer (cité dans Pearl, 1988) « La probabilité n'est pas vraiment une question de nombres ; il s'agit de la structure du raisonnement. ». \\
+Dans cette partie nous verrons l’inférence bayésienne appliquer à la théorie des réponses aux items et la plateforme Stan qui permet d’appliquer cette inférence à partir des données.\\
+
+\section{Inférence bayésienne}
+\subsection{Définition}
+L'inférence bayésienne est une méthode d'apprentissage des valeurs des paramètres dans les modèles statistiques à partir de données. L'inférence bayésienne est une approche entièrement probabiliste, dont les résultats sont des distributions de probabilité. Une autre caractéristique distinctive de l'inférence bayésienne est l'utilisation d'informations a priori dans les analyses. L'inférence bayésienne ne concerne pas un modèle statistique particulier, en fait, une multitude de modèles statistiques et de machine learning (que ce soit : la régression linéaire, la régression logistique, les réseaux de neurones artificiels, ...) peuvent être « entrainé » de manière bayésienne ou non bayésienne. L'inférence bayésienne peut être résumée comme étant une méthode d'apprentissage à partir de données.
+
+\subsection{probabilité conditionnelle et théorème de bayes}
+Les probabilités conditionnelles jouent un rôle central dans le processus d'inférence sur le monde incertain. La probabilité conditionnelle est définie comme la probabilité qu'un événement ou un résultat se produise, sur la base de l'occurrence d'un événement ou d'un résultat précédent. La probabilité conditionnelle fait référence aux chances qu'un résultat se produise étant donné qu'un autre événement s'est également produit. Il est souvent indiqué comme la probabilité de B étant donné A et s'écrit P(B|A), où la probabilité de B dépend de celle que A se produise. La formule de la probabilité conditionnelle est :
+
+\begin{equation}
+	Pr(B|A) = \frac{Pr(A|B)}{Pr(A)}
+	\label{conditionnelle_probability}
+\end{equation}
+
+Le théorème de Bayes , du nom du mathématicien britannique du XVIIIe siècle Thomas Bayes, est une formule mathématique permettant de déterminer la probabilité conditionnelle. Le théorème fournit un moyen de réviser les prédictions ou théories existantes (probabilités de mise à jour) compte tenu de preuves nouvelles ou supplémentaires. Dans de nombreux problèmes d'analyse de données, le théorème de bayes fourni la possibilité de déduire la valeur des paramètres d'un modèle à partir de données. Le théorème de bayes est défini par la formule suivante :
+
+\begin{equation}
+	Pr(B|A) = \frac{Pr(A|B)*Pr(B)}{Pr(A)}
+	\label{theoreme_bayes}
+\end{equation}
+Ou \(\displaystyle Pr(B|A) \) est la probabilité de l’évènement B sachant A. L’équation \ref{theoreme_bayes} peut être interpréter comme suit :
+
+\begin{equation}
+	Pr(hypothesis|data) = \frac{Pr(data|hypothesis)*Pr(hypothesis)}{Pr(data)}
+	\label{theoreme_bayes2}
+\end{equation}
+
+
+\(\displaystyle Pr(hypothesis|data) \) est la probabilité d’une hypothèse qu’on cherche sachant les données. En appliquant le théorème de Bayes, \(\displaystyle Pr(hypothesis|data) \)  est le produit de la probabilité des données sachant l’hypothèse \(\displaystyle Pr(data|hypothesis) \) qui peut être aussi un modèle et la probabilité de l’hypothèse \(\displaystyle Pr(hypothesis) \) ensuite divisé par la probabilité des données \(\displaystyle Pr(data) \). Cette hypothèse est généralement quelque chose d’inobservé ou inconnu qu’on cherche à obtenir à partir des données. Par exemple pour les modèles de régression linéaire, c’est les paramètres du modèle qu’on cherche à estimer. Le théorème de bayes permet donc d’obtenir la probabilité de l’hypothèse sachant les données récolter.
+
+\subsection{L’approche Bayésienne}
+L’approche Bayésienne se base sur l’idée d’avoir certaines croyances préalables sur le système et puis mettre à jour ces croyances sur la base des données observées. C’est-à-dire avoir des connaissances a priori sur les paramètres inconnus. Ces connaissances prennent la forme d’une loi sur l’espace des paramètres qui s’appelle la loi a priori. L’approche bayésienne cherche donc à combiner d’une part l’information empirique obtenu sur les paramètres et l’interprétation des valeurs plus subjective (il y’a certaines idées sur les valeurs que les paramètres pourrait avoir). Cette procédure de mise à jour est basée sur le théorème de Bayes.
+
+\subsection{Théorème de bayes dans la cadre de l’application de l’approche Bayésienne}
+En remplaçant hypothèse (hypothesis) par \(\displaystyle \theta \) de l’équation \ref{theoreme_bayes2} comme étant le paramètre à estimer on obtient donc :
+
+\begin{equation}
+	Pr(\theta|data) = \frac{Pr(data|\theta)*Pr(\theta)}{Pr(data)}
+	\label{theoreme_bayes3}
+\end{equation}
+Où,
+\begin{itemize}
+    \item \(\displaystyle Pr(\theta|data) \) (Posterior distribution) : est la distribution à posteriori du paramètre \(\displaystyle \theta \). C’est l’estimation de \(\displaystyle \theta \) a posteriori (après avoir vu les données).
+    \item \(\displaystyle Pr(data|\theta) \) (Likelihood) : c’est la vraisemblance qui est capturer à partir des données sachant le model utiliser pour faire l’inférence.
+    \item \(\displaystyle Pr(\theta) \) (prior distribution) : c’est la distribution a priori sur le paramètre \(\displaystyle \theta \). 
+    \item \(\displaystyle Pr(data) \) : qui est la probabilité des données.
+\end{itemize}
+
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre5/prior_likelihood_posterior.png}
+	\end{center}
+	\caption{La distribution à priori, à posteriori et celle de la fonction de vraisemblance.}
+	\label{prior_likelihood_posterior}
+\end{figure}
+
+\subsubsection{Posterior distribution}
+La probabilité postérieure est la probabilité qu'un événement se produise après que toutes les informations sur le système étudier aient été prises en compte. Elle est étroitement liée à la probabilité antérieure, qui est la probabilité qu'un événement se produise avant la pris en compte de nouvelles preuves. Elle est comme un ajustement sur la probabilité antérieure.
+
+\begin{equation}
+    \begin{split}
+		Posterior \hspace{5pt} probability = prior \hspace{5pt} probability + new \hspace{5pt} evidence. \\
+        Posterior \hspace{5pt} Distribution = Prior \hspace{5pt} Distribution + Likelihood \hspace{5pt} Function.
+	\end{split}
+	\label{posterior_probability_distribution}
+\end{equation}
+
+Par exemple, les données historiques suggèrent qu'environ 60\% des étudiants qui commencent l'université obtiendront leur diplôme dans les 6 ans. C'est la probabilité a priori. Cependant, ce chiffre est en réalité bien inférieur. Alors les preuves collecter peuvent suggérer que le chiffre réel est en fait plus proche de 50\% ; c'est la probabilité postérieure. \\
+La distribution à posteriori est un moyen de résumer les connaissances ou les informations sur les quantités incertaines en analyse bayésienne. C'est une combinaison de la distribution a priori et de la fonction de vraisemblance, qui indique les informations contenues dans les données observées (les « nouvelles preuves »).
+
+\subsubsection{Likelihood}
+Habituellement lorsque l’on parle de distribution de probabilité, on suppose que nous connaissons les valeurs des paramètres. Aussi appelé fonction de vraisemblance (ou plus simplement vraisemblance), c’est une fonction des paramètres d'un modèle statistique calculée à partir de données observées \cite{fisher1922mathematical}. C’est-à-dire la probabilité d’observer les données sous un certain model. Par exemple, la probabilité des données sachant \(\displaystyle \theta \) en utilisant \ref{theoreme_bayes3}.
+En inférence bayésienne, cette vraisemblance peut être interprète comme la densité de probabilité des données conditionnellement à une valeur des paramètres et comme une mesure de l'information apportée par les données sur la valeur des paramètres.
+
+\subsubsection{Prior distribution}
+La distribution à priori capture la connaissance ou l’information apriori. Elle permet de mettre en forme les connaissances ou les informations avant de faire l’expérimentation. Ces sont des distribution subjective sans tenir compte des données. \\
+Ensuite Il y’a la probabilité des données, qui est défini par :
+
+\begin{equation}
+	Pr(data) = \int_{}^{}  \,L(data|\theta)Pr(\theta)d\theta .
+	\label{probability_of_data}
+\end{equation}
+
+Le calcule d’une intégrale avec un seul paramètres (intégrale a une dimension) est possible mais lorsqu’il y’a plus d’un paramètre, cette dernière devient une intégrale multiple qui est difficile voire impossible à calculer. \\
+L’approche Bayésienne d’aujourd’hui utilise des méthodes de simulation MCMC (chaine de Markov Monte Carlo) pour passer outre ce problème de calcule d’intégrale multiple. Nous verrons dans la section suivantes les chaines de Markov de Monte Carlo et leurs méthodes.
+
+\subsubsection{Chaine de Markov Monte Carlo (MCMC)}
+Malheureusement, dans la plupart des cas pratiques, il est impossible d'obtenir une solution analytique pour la distribution a posteriori. Le dénominateur sous la forme continue du théorème de Bayes consiste en une intégrale sur un espace potentiellement de grande dimension. L'un des moyens de résoudre ce problème est d'obtenir des échantillons de la distribution a posteriori. Ces échantillons sont distribués selon la distribution a posteriori.  \\
+Habituellement, les méthodes dites de Markov Chain Monte Carlo (MCMC) sont utilisées pour obtenir des échantillons à partir d'une distribution. Ces méthodes partent des valeurs initiales des paramètres. Ensuite, de nouvelles valeurs sont proposées et acceptées selon certaines fonctions de proposition et d'acceptation. Ce processus de proposition et d'acceptation est répété plusieurs fois pour créer un grand nombre d'échantillons. Différentes méthodes diffèrent principalement dans leurs implémentations des fonctions de proposition et d'acceptation. \\
+Les méthodes MCMC peuvent nécessiter un certain post-traitement des échantillons obtenus - par exemple, il peut être nécessaire d'ignorer les premiers (souvent des centaines ou des milliers) échantillons, car « ils ont été collectés loin des valeurs des paramètres pertinents » par exemple la figure ci-dessous. De plus, les échantillons sont généralement corrélés et donc souvent, seul un nième échantillon (après le retrait des échantillons initiaux) est retenu. De plus, les méthodes peuvent échouer (pour donner des échantillons représentatifs de la distribution). Il existe des moyens de diagnostiquer cela, par exemple en créant plusieurs « chaînes d'échantillonnage » (et en comparant leurs résultats). \\
+
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre5/mcmc_iterations.png}
+	\end{center}
+	\caption{}
+	\label{mcmc_iterations}
+\end{figure}
+
+Plusieurs méthodes sont utilisées pour construire ces chaines comme : Metropolis-Hastings, Gibbs sampler, Metropolis-within-Gibbs, HMC etc.
+
+\subsection{Model selection}
+Pour faire de la sélection de model il faut vérifier s’il y’a un effet des valeurs des paramètres sur la variable cible (par exemple sur la réussite ou pas à un item). \\
+Dans le cadre fréquentiste, l’idée est de pénalisé les modèles qui ont trop de paramètres. Pour le faire il y’a \(\displaystyle AIC \)  :
+
+\begin{equation}
+	AIC = -2 \log (L(\widehat{\theta_{1}},...,\widehat{\theta_{k}} )) + 2K.
+	\label{aic_formula}
+\end{equation}
+
+Avec \(\displaystyle L \) la vraisemblance et \(\displaystyle k \) le nombre de paramètres \(\displaystyle \theta \), et \\
+\(\displaystyle -2 \log (L(\widehat{\theta_{1}},...,\widehat{\theta_{k}} )) \) est la déviance qui mesure la qualité de l’ajustement du model de donnée. Plus il y’a de paramètres plus cette quantité est petite et mieux le model est ajuster aux données. \\
+\(\displaystyle 2k \) : c’est la pénalité, plus il y’a des paramètres plus cette quantité augmente. Cette pénalité est un équilibre entre l’ajustement du model des données et la complexité du model qui est capturer par le nombre de paramètres. \\ \\
+
+En bayésien il y’a WAIC (Watanabe Akaike Information Criteria) définit par :
+
+\begin{equation}
+	WAIC = -2\sum_{i=1}^{n} \log E\left[ p(y_{i}|\theta) \right] + 2p_{WAIC}
+	\label{waic_formula}
+\end{equation}
+
+Où \(\displaystyle E\left[ p(y_{i}|\theta) \right] \) est la moyenne a posteriori de la vraisemblance de la ième observation.
+\(\displaystyle Pwaic \)  est le nombre effectif de paramètres calculés en utilisant la variance postérieure de la vraisemblance.
+La valeur de waic est la somme entre la deviance + le nombre de paramètre pwaic.
+
+\section{La théorie des réponses aux items}
+La théorie des réponses aux items (TRI) aussi appelé théorie des traits latents, théorie du vrai score fort ou théorie moderne des tests mentaux est un paradigme pour la conception, l’analyse et la notation des test et des questionnaires \cite{fisher1922mathematical}. TRI intervient dans la mesure ou la théorie classique n’apporte pas toujours des réponses satisfaisantes. Par exemple un item jugé facile ou difficile peut ne plus l’être dans un échantillon différent qu’il appartenait.
+
+Dans cette situation, la théorie des réponses aux items tente de produire des propriétés de l’item qui soit indépendante d’un groupe particulier d’individus. En d'autres termes, il s'agit de parvenir à l'élaboration d'instruments de mesure dont les caractéristiques ne soient pas excessivement influencées par tel ou tel autre groupe de référence : ce qui, d'une certaine manière, conduit à définir des échelles qualifiées parfois d'"absolues" \cite{xcv_wiki}. La première tentative de développement de ce type d’échelle remontre au début des années 1950 (échelle de Guttman). Initialement, ils reposaient sur un modèle totalement déterministe qui a ensuite été remplacé par un modèle plus réaliste de type probabiliste (modèle de Rasch). Ces modèles reposent sur l’hypothèse selon laquelle la réponse d’un individu a un item est déterminée ou peut être expliquer par deux facteurs qui sont :
+
+\begin{itemize}
+	\item D’une part, certains attributs du sujet (sa compétence par exemple), qui, n'étant pas directement accessibles à l'observation et à la mesure, sont généralement qualifiés de traits latents \cite{xcv_wiki} ;
+	\item D’autre part, les propriétés de l'item lui-même, notamment, sa difficulté, son pouvoir de discrimination, sans oublier le rôle que la "chance" (réponses "au hasard") peut jouer dans certains cas \cite{xcv_wiki}.
+\end{itemize}
+
+Sur le plan technique et mathématique, la théorie des réponses aux items utilise des modèles à un, deux ou trois paramètre(s), qui établissent la relation fondamentale entre le trait latent de l'individu (son niveau de compétence par exemple) et la probabilité pour cet individu de réussir un item donné. Cette relation est formalisée par une fonction (appelée fonction caractéristique de l'item), et peut être représentée géométriquement par une courbe (la courbe caractéristique de l'item). La forme la plus simple de cette fonction est celle qui repose sur le modèle de Rasch \cite{xcv_wiki}.\\
+L'objectif de la méthode est double, il s'agit, d'une part, d'estimer les propriétés métriques des items (calcul des paramètres dits de difficulté, de discrimination et, éventuellement, de pseudo-chance) et, d'autre part, d'estimer le niveau de l'individu par rapport au trait latent considéré. Par ailleurs, ces estimations sont supposées indépendantes des échantillons particuliers (d'individus d'une part et d'items de l'autre) à partir desquels l'étude est réalisée \cite{xcv_wiki}.
+
+\subsection{Les Modèles TRI}
+On distingue deux familles de modèle IRT : les modèles unidimensionnels qui nécessitent une seule dimension de trait et les modèles multidimensionnels qui sont supposées provenir de plusieurs traits. Cependant, en raison de la complexité considérablement accrue, la majorité des recherches et des applications IRT utilisent un modèle unidimensionnel.
+\subsubsection{Les modèles à un, deux ou trois paramètres}
+Les modèles IRT se distingue par le nombre de paramètre qu’il utilise. Le modèle à paramètre unique (1PL) suppose tous les éléments qui correspondent au modèle ont la même difficulté, de sorte que ces éléments sont décrits par un seul paramètre. C’est le cas du modèle de Rasch. Le modèle dit à deux paramètre (2PL) fait appel au paramètre de difficulté et de discrimination par exemple le modèle de Birnbaum. Par contre le modèle a trois paramètres (3PL) est celui dont les items ont des réponses à choix multiple (deux ou plusieurs options de réponse proposées). \\
+Il en résulte des modèles à un paramètre ayant la propriété d'objectivité spécifique, ce qui signifie que le rang de la difficulté de l'item est le même pour tous les répondants indépendamment de la capacité, et que le rang de la capacité de la personne est le même pour les items indépendamment de la difficulté. Ainsi, les modèles à 1 paramètre (comme ceux de Rasch) sont indépendants de l'échantillon, une propriété qui n'est pas valable pour les modèles à deux et trois paramètres [2]. \\
+Le modèle général de Birnbaum, auquel le modèle de Rasch se rattache est plus complexe car il admet des courbes d’allures différentes pour chacun des items et suppose donc d’estimer plus d’un paramètre par item puisqu’il tient également compte du pouvoir discriminant de chacun d’eux. Le modèle proposé par Lazarsfeld est en quelque sorte une simplification du modèle général de Birnbaum puisqu’il postule des distributions linéaires de pentes variables [8]. \\
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre5/irt_models.jpg}
+	\end{center}
+	\caption{}
+	\label{irt_models}
+\end{figure}
+\paragraph{Le modèle Rasch}
+La structure cumulative ou d’emboitement des items obtenue par le scalogramme de Guttman rend les analyses exploratoires traditionnelles mal appropriées (AFC par exemple) [6]. Dans cette situation Rasch a proposé en 1960 une représentation numérique des niveaux de compétences de sujets et de difficulté d’items. Le modèle de Rasch qui est le modèle a un paramètre (1PL), est considéré comme l’approche la plus simple pour modéliser la relation entre le trait latent et la probabilité de réussir correctement un item. Dans le modèle de Rasch chaque sujet est caractérisé par un niveau \(\displaystyle \theta i \) d’aptitude \(\displaystyle (i=1,...,N) \) sur un continuum numérique latent.
+Le modèle de Rasch cherche a donné du sens non pas seulement au classement des sujets par compétences, non pas seulement au classement des items par difficultés mais le modèle cherche à donner du sens dans le fait que les coordonnées d’un sujet peuvent être directement et numériquement comparer à la difficulté d’un item pour qu’on puisse dire par exemple que ce sujet à la compétence nécessaire pour pouvoir résoudre l’item de tel difficulté. Donc ça devient possible de les comparer directement à partir du moment où on les projette sur une seule et même dimension (cet \(\displaystyle \theta i \) de sujet et \(\displaystyle \beta i \) d’item). La probabilité de réussir l’item est une fonction croissante de la différence \(\displaystyle \theta i - \beta j\).
+Rasch propose la fonction logistique suivant :
+
+\begin{equation}
+    \begin{split}
+		P(x_{1},...,x_{n} | \theta, \beta_{1},...,\beta_{n}) = \prod_{j=1}^{n} P(x_{j}| \theta, \beta_{j}), \hspace{10pt} avec, \\
+		P(x_{j}| \theta, \beta_{j}) = \frac{\exp \left[x_{j}(\theta - \beta_{j})\right]  }{1+ \exp (\theta - \beta_{j})}
+	\end{split}
+	\label{posterior_probability_distribution}
+\end{equation}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre5/parameters_probability.png}
+	\end{center}
+	\caption{}
+	\label{parameters_probability}
+\end{figure}
+Où \(\displaystyle x_{j} \)  est la réponse à l'élément \(\displaystyle j \) (1 pour correcte, 0 pour incorrecte). La figure \ref{parameters_probability} montre les probabilités de réponse correcte à trois éléments, avec les paramètres de difficulté - 1 , 0 et + 1, en fonction de theta. Des valeurs faibles de theta indiquent des chances plus faibles de réponse correcte et des valeurs élevées indiquent des chances plus élevées.
+
+\section{Un ajustement bayésien des réponses aux items avec Stan}
+Stan est une plate-forme pour la modélisation statistique, l'analyse de données et la prédiction dans les sciences sociales, biologiques et physiques, l'ingénierie et les affaires.
+Il permet de spécifier les fonctions de densité de log afin d’obtenir :
+
+\begin{itemize}
+	\item Inférence statistique bayésienne complète avec échantillonnage MCMC (NUTS, HMC)
+	\item Inférence bayésienne approximative avec inférence variationnelle (ADVI)
+	\item Estimation du maximum de vraisemblance pénalisée avec optimisation (L-BFGS)
+\end{itemize}
+
+La bibliothèque mathématique de Stan fournit des fonctions de probabilité différentiables et une algèbre linéaire (C++ autodiff).
+Stan s'interface avec les langages d'analyse de données les plus populaires (R, Python, shell, MATLAB, Julia, Stata) et fonctionne sur toutes les principales plates-formes (Linux, Mac, Windows).
+
+\subsection{IRT avec Stan}
+La théorie de l'item-réponse (TRI) modélise la situation dans laquelle un certain nombre d'étudiants répondent chacun à une ou plusieurs questions d'un groupe de questions de test. Le modèle est basé sur des paramètres pour la capacité des étudiants, la difficulté des questions, et dans des modèles plus articulés, le caractère discriminant des questions et la probabilité de deviner correctement ; (Gelman et Hill 2007 , pp. 314-320).
+\subsubsection{Déclaration des données}
+
+\begin{lstlisting}[language=Stan]
+	data {
+	  int<lower=0> J; // number of schools 
+	  real y[J]; // estimated treatment effects
+	  real<lower=0> sigma[J]; // s.e. of effect estimates 
+	}
+	parameters {
+	  real mu; 
+	  real<lower=0> tau;
+	  real eta[J];
+	}
+	transformed parameters {
+	  real theta[J];
+	  for (j in 1:J)
+		theta[j] <- mu + tau * eta[j];
+	}
+	model {
+	  eta ~ normal(0, 1);
+	  y ~ normal(theta, sigma);
+	}
+\end{lstlisting}
+
+\subsubsection{Les paramètres du model de Rasch (1PL)}
+\subsubsection{Le model de Rasch}
 
 \section{Conclusion}
 
