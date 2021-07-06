@@ -30,15 +30,15 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces \relax }}{43}{figure.caption.27}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces \relax }}{44}{figure.caption.28}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Clustering Hard et Soft}{47}{chapter.5}%
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Distances intracluster et intercluster.\relax }}{50}{figure.caption.31}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Les éléments du dataset.}}}{55}{subfigure.2.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Le dendrogramme.}}}{55}{subfigure.2.2}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces La direction du clustering hiérarchique agglomérative et divisive.\relax }}{55}{figure.caption.33}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Les étapes de l'algorithme k-means.\relax }}{58}{figure.caption.34}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces La méthode Elbow.\relax }}{60}{figure.caption.35}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Les éléments du dataset Iris \cite {iris_dataset}.}}}{62}{subfigure.5.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Illustration du degré d’appartenance des éléments au cluster.}}}{62}{subfigure.5.2}%
-\contentsline {xpart}{Contributions}{68}{part.2}%
+\contentsline {xchapter}{Clustering Hard et Soft}{48}{chapter.5}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Distances intracluster et intercluster.\relax }}{51}{figure.caption.31}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Les éléments du dataset.}}}{56}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Le dendrogramme.}}}{56}{subfigure.2.2}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces La direction du clustering hiérarchique agglomérative et divisive.\relax }}{56}{figure.caption.33}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Les étapes de l'algorithme k-means.\relax }}{59}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces La méthode Elbow.\relax }}{61}{figure.caption.35}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Les éléments du dataset Iris \cite {iris_dataset}.}}}{63}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Illustration du degré d’appartenance des éléments au cluster.}}}{63}{subfigure.5.2}%
+\contentsline {xpart}{Contributions}{69}{part.2}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Contribution and Results}{68}{chapter.6}%
+\contentsline {xchapter}{Contribution and Results}{69}{chapter.6}%

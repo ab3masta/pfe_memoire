@@ -150,9 +150,9 @@ L'objectif de la méthode est double, il s'agit, d'une part, d'estimer les propr
 \subsection{Les Modèles TRI}
 On distingue deux familles de modèle IRT : les modèles unidimensionnels qui nécessitent une seule dimension de trait et les modèles multidimensionnels qui sont supposées provenir de plusieurs traits. Cependant, en raison de la complexité considérablement accrue, la majorité des recherches et des applications IRT utilisent un modèle unidimensionnel.
 \subsubsection{Les modèles à un, deux ou trois paramètres}
-Les modèles IRT se distingue par le nombre de paramètre qu’il utilise. Le modèle à paramètre unique (1PL) suppose tous les éléments qui correspondent au modèle ont la même difficulté, de sorte que ces éléments sont décrits par un seul paramètre. C’est le cas du modèle de Rasch. Le modèle dit à deux paramètre (2PL) fait appel au paramètre de difficulté et de discrimination par exemple le modèle de Birnbaum. Par contre le modèle a trois paramètres (3PL) est celui dont les items ont des réponses à choix multiple (deux ou plusieurs options de réponse proposées). \\
-Il en résulte des modèles à un paramètre ayant la propriété d'objectivité spécifique, ce qui signifie que le rang de la difficulté de l'item est le même pour tous les répondants indépendamment de la capacité, et que le rang de la capacité de la personne est le même pour les items indépendamment de la difficulté. Ainsi, les modèles à 1 paramètre (comme ceux de Rasch) sont indépendants de l'échantillon, une propriété qui n'est pas valable pour les modèles à deux et trois paramètres [2]. \\
-Le modèle général de Birnbaum, auquel le modèle de Rasch se rattache est plus complexe car il admet des courbes d’allures différentes pour chacun des items et suppose donc d’estimer plus d’un paramètre par item puisqu’il tient également compte du pouvoir discriminant de chacun d’eux. Le modèle proposé par Lazarsfeld est en quelque sorte une simplification du modèle général de Birnbaum puisqu’il postule des distributions linéaires de pentes variables [8]. \\
+Les modèles IRT se distingue par le nombre de paramètre qu’il utilise. Le modèle à paramètre unique (1PL) suppose tous les éléments qui correspondent au modèle ont la même difficulté, de sorte que ces éléments sont décrits par un seul paramètre. C’est le cas du modèle de Rasch. Le modèle dit à deux paramètre (2PL) fait appel au paramètre de difficulté et de discrimination par exemple le modèle de Birnbaum. Par contre le modèle a trois paramètres (3PL) est celui qui cherche à estimer en plus le paramètre de difficulté et de discrimination, la pseudo chance. \\
+Il en résulte des modèles à un paramètre ayant la propriété d'objectivité spécifique, ce qui signifie que le rang de la difficulté de l'item est le même pour tous les répondants indépendamment de la capacité, et que le rang de la capacité de la personne est le même pour les items indépendamment de la difficulté. Ainsi, les modèles à 1 paramètre (comme ceux de Rasch) sont indépendants de l'échantillon, une propriété qui n'est pas valable pour les modèles à deux et trois paramètres \cite{fisher1922mathematical}. \\
+Le modèle général de Birnbaum, auquel le modèle de Rasch se rattache est plus complexe car il admet des courbes d’allures différentes pour chacun des items et suppose donc d’estimer plus d’un paramètre par item puisqu’il tient également compte du pouvoir discriminant de chacun d’eux. Le modèle proposé par Lazarsfeld est en quelque sorte une simplification du modèle général de Birnbaum puisqu’il postule des distributions linéaires de pentes variables \cite{yvonnick_2019}. \\
 
 \begin{figure}[H]
 	\begin{center}
@@ -162,9 +162,9 @@ Le modèle général de Birnbaum, auquel le modèle de Rasch se rattache est plu
 	\label{irt_models}
 \end{figure}
 \paragraph{Le modèle Rasch}
-La structure cumulative ou d’emboitement des items obtenue par le scalogramme de Guttman rend les analyses exploratoires traditionnelles mal appropriées (AFC par exemple) [6]. Dans cette situation Rasch a proposé en 1960 une représentation numérique des niveaux de compétences de sujets et de difficulté d’items. Le modèle de Rasch qui est le modèle a un paramètre (1PL), est considéré comme l’approche la plus simple pour modéliser la relation entre le trait latent et la probabilité de réussir correctement un item. Dans le modèle de Rasch chaque sujet est caractérisé par un niveau \(\displaystyle \theta i \) d’aptitude \(\displaystyle (i=1,...,N) \) sur un continuum numérique latent.
-Le modèle de Rasch cherche a donné du sens non pas seulement au classement des sujets par compétences, non pas seulement au classement des items par difficultés mais le modèle cherche à donner du sens dans le fait que les coordonnées d’un sujet peuvent être directement et numériquement comparer à la difficulté d’un item pour qu’on puisse dire par exemple que ce sujet à la compétence nécessaire pour pouvoir résoudre l’item de tel difficulté. Donc ça devient possible de les comparer directement à partir du moment où on les projette sur une seule et même dimension (cet \(\displaystyle \theta i \) de sujet et \(\displaystyle \beta i \) d’item). La probabilité de réussir l’item est une fonction croissante de la différence \(\displaystyle \theta i - \beta j\).
-Rasch propose la fonction logistique suivant :
+La structure cumulative ou d’emboitement des items obtenue par le scalogramme de Guttman rend les analyses exploratoires traditionnelles mal appropriées (AFC par exemple) . Dans cette situation Rasch a proposé en 1960 une représentation numérique des niveaux de compétences de sujets et de difficulté d’items. Le modèle de Rasch qui est le modèle a un paramètre (1PL), est considéré comme l’approche la plus simple pour modéliser la relation entre le trait latent et la probabilité de réussir correctement un item. Dans le modèle de Rasch chaque sujet est caractérisé par un niveau \(\displaystyle \theta i \) d’aptitude \(\displaystyle (i=1,...,N) \) sur un continuum numérique latent.
+Le modèle de Rasch cherche a donné du sens non pas seulement au classement des sujets par compétences, non pas seulement au classement des items par difficultés mais le modèle cherche à donner du sens dans le fait que les coordonnées d’un sujet peuvent être directement et numériquement comparer à la difficulté d’un item pour qu’on puisse dire par exemple que ce sujet à la compétence nécessaire pour pouvoir résoudre l’item de tel difficulté. Donc ça devient possible de les comparer directement à partir du moment où on les projette sur une seule et même dimension (cet \(\displaystyle \theta i \) de sujet et \(\displaystyle \beta i \) d’item). La probabilité de réussir l’item est une fonction croissante de la différence \(\displaystyle \theta i - \beta j\) \cite{yvonnick_2019}.
+Rasch propose la fonction logistique suivant \cite{mislevy1994evidence}:
 
 \begin{equation}
     \begin{split}
@@ -181,7 +181,7 @@ Rasch propose la fonction logistique suivant :
 	\caption{}
 	\label{parameters_probability}
 \end{figure}
-Où \(\displaystyle x_{j} \)  est la réponse à l'élément \(\displaystyle j \) (1 pour correcte, 0 pour incorrecte). La figure \ref{parameters_probability} montre les probabilités de réponse correcte à trois éléments, avec les paramètres de difficulté - 1 , 0 et + 1, en fonction de theta. Des valeurs faibles de theta indiquent des chances plus faibles de réponse correcte et des valeurs élevées indiquent des chances plus élevées.
+Où \(\displaystyle x_{j} \)  est la réponse à l'élément \(\displaystyle j \) (1 pour correcte, 0 pour incorrecte). La figure \ref{parameters_probability} montre les probabilités de réponse correcte à trois éléments, avec les paramètres de difficulté - 1 , 0 et + 1, en fonction de theta. Des valeurs faibles de theta indiquent des chances plus faibles de réponse correcte et des valeurs élevées indiquent des chances plus élevées \cite{mislevy1994evidence}.
 
 \section{Un ajustement bayésien des réponses aux items avec Stan}
 Stan est une plate-forme pour la modélisation statistique, l'analyse de données et la prédiction dans les sciences sociales, biologiques et physiques, l'ingénierie et les affaires.
@@ -194,36 +194,62 @@ Il permet de spécifier les fonctions de densité de log afin d’obtenir :
 \end{itemize}
 
 La bibliothèque mathématique de Stan fournit des fonctions de probabilité différentiables et une algèbre linéaire (C++ autodiff).
-Stan s'interface avec les langages d'analyse de données les plus populaires (R, Python, shell, MATLAB, Julia, Stata) et fonctionne sur toutes les principales plates-formes (Linux, Mac, Windows).
+Stan peut être avec les langages d'analyse de données les plus populaires (R, Python, shell, MATLAB, Julia, Stata) et fonctionne sur toutes les principales plates-formes (Linux, Mac, Windows).
 
 \subsection{IRT avec Stan}
-La théorie de l'item-réponse (TRI) modélise la situation dans laquelle un certain nombre d'étudiants répondent chacun à une ou plusieurs questions d'un groupe de questions de test. Le modèle est basé sur des paramètres pour la capacité des étudiants, la difficulté des questions, et dans des modèles plus articulés, le caractère discriminant des questions et la probabilité de deviner correctement ; (Gelman et Hill 2007 , pp. 314-320).
+La théorie de l'item-réponse (TRI) modélise la situation dans laquelle un certain nombre d'étudiants répondent chacun à une ou plusieurs questions d'un groupe de questions de test. Le modèle est basé sur des paramètres pour la capacité des étudiants, la difficulté des questions, et dans des modèles plus articulés, le caractère discriminant des questions et la probabilité de deviner correctement \cite{data_analysis_irt}.
 \subsubsection{Déclaration des données}
-
-\begin{lstlisting}[language=Stan]
-	data {
-	  int<lower=0> J; // number of schools 
-	  real y[J]; // estimated treatment effects
-	  real<lower=0> sigma[J]; // s.e. of effect estimates 
-	}
-	parameters {
-	  real mu; 
-	  real<lower=0> tau;
-	  real eta[J];
-	}
-	transformed parameters {
-	  real theta[J];
-	  for (j in 1:J)
-		theta[j] <- mu + tau * eta[j];
-	}
-	model {
-	  eta ~ normal(0, 1);
-	  y ~ normal(theta, sigma);
-	}
+Les données fournies pour un modèle IRT peuvent être déclarées comme suit pour tenir compte du fait que tous les étudiants ne sont pas tenus de répondre à toutes les questions.
+\begin{lstlisting}[language=Stan,basicstyle=\scriptsize\color{white},backgroundcolor = \color{blueforest}]
+data {
+// numbers of things
+int<lower=1> N;  // number of observations
+int<lower=1> I;  // items,  number of questions  
+int<lower=1> S;  // subjects,  number of users 
+// data
+int<lower=1,upper=I> item[N];
+int<lower=1,upper=S> subject[N];
+int<lower=0,upper=1> grade[N];
+}
 \end{lstlisting}
-
+Dans cette déclaration il y’a le nombre R un entier positif qui est le nombre d’observation, où pour toute valeus n de 1 à R grade[n] est la reponse obtenu par l’etudiant subject[n] à la question item[n].
 \subsubsection{Les paramètres du model de Rasch (1PL)}
+Le modèle IRT 1PL, également connu sous le nom de modèle Rasch, a un paramètre (1P) pour les questions (items).
+Les paramètres du modèle sont déclarés comme suit.
+
+\begin{lstlisting}[language=Stan,basicstyle=\scriptsize\color{white},backgroundcolor = \color{blueforest}]
+parameters {
+// parameters
+real ability[S];             //  alpha: ability of student
+real difficulty[I];          //  beta: difficulty of question
+real delta;                   // mean student ability
+}
+\end{lstlisting}
+Le paramètre ability[J] est le coefficient de capacité de l'élève Si et difficulty[I] le coefficient de difficulté de la question Ii. La paramétrisation non standard utilisée ici comprend également un terme d'interception delta, qui représente la réponse moyenne de l'étudiant à la question moyenne. [10] 
+
 \subsubsection{Le model de Rasch}
 
+\begin{lstlisting}[language=Stan,basicstyle=\scriptsize\color{white},backgroundcolor = \color{blueforest}]
+model {
+ability ~ std_normal();         
+difficulty ~ std_normal();   
+delta ~ normal(0.75,1);
+for(n in 1:N)
+ grade[n] ~ bernoulli_logit(ability[subject[n]] - difficulty[item[n]] + delta);
+}
+\end{lstlisting}
+
+\subsubsection{Les predictions}
+
+\begin{lstlisting}[language=Stan,basicstyle=\scriptsize\color{white},backgroundcolor = \color{blueforest}]
+generated quantities {
+int<lower=0,upper=1> y_pred[N];
+vector[N] log_lik;
+for(n in 1:N)
+ y_pred[n] = bernoulli_logit_rgn(ability[subject[n]] - difficulty[item[n]] + delta);
+ log_lik[n] = bernoulli_logit_lpmf( grade[n] | ability[subject[n]] - difficulty[item[n]]
+  + delta);
+}
+\end{lstlisting}
 \section{Conclusion}
 

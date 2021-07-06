@@ -6,7 +6,7 @@ The style file: ieeetr.bst
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 Database file #1: biblo.bib
 Warning--entry type for "iris_dataset" isn't style-file defined
---line 852 of file biblo.bib
+--line 871 of file biblo.bib
 Warning--empty publisher in data_mining_concepts_techniques
 Warning--empty publisher in handbook_of_educational_data_mining
 Warning--empty booktitle in user_modelling_help_systems
@@ -18,48 +18,50 @@ Warning--empty journal in gestionnaire_modele_apprenant
 Warning--empty journal in bayesian_networks_student_model_engineering
 Warning--empty booktitle in adaptive_assessment_using_granularity_hierarchies_and_bayesian_nets
 Warning--empty booktitle in Discovering_Prerequisite_Relationships_among_Knowledge_Components
+Warning--empty chapter and pages in data_analysis_irt
+Warning--empty publisher in data_analysis_irt
 Warning--empty journal in pang2005introduction
 Warning--empty publisher in Finding_Groups_in_Data_An_Introduction_To_Cluster_Analysis
 Warning--empty journal in bezdek1973cluster
-You've used 86 entries,
+You've used 88 entries,
             1876 wiz_defined-function locations,
-            974 strings with 18334 characters,
-and the built_in function-call counts, 23245 in all, are:
-= -- 2398
-> -- 739
+            984 strings with 18593 characters,
+and the built_in function-call counts, 23551 in all, are:
+= -- 2423
+> -- 751
 < -- 0
-+ -- 283
-- -- 197
-* -- 1607
-:= -- 3182
-add.period$ -- 98
-call.type$ -- 86
-change.case$ -- 78
++ -- 288
+- -- 200
+* -- 1628
+:= -- 3224
+add.period$ -- 101
+call.type$ -- 88
+change.case$ -- 79
 chr.to.int$ -- 0
-cite$ -- 100
-duplicate$ -- 1222
-empty$ -- 2258
-format.name$ -- 197
-if$ -- 5732
+cite$ -- 104
+duplicate$ -- 1235
+empty$ -- 2298
+format.name$ -- 200
+if$ -- 5807
 int.to.chr$ -- 0
-int.to.str$ -- 86
-missing$ -- 86
-newline$ -- 274
-num.names$ -- 93
-pop$ -- 283
+int.to.str$ -- 88
+missing$ -- 88
+newline$ -- 281
+num.names$ -- 95
+pop$ -- 297
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 858
+skip$ -- 865
 stack$ -- 0
 substring$ -- 1691
-swap$ -- 505
+swap$ -- 506
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 14
-while$ -- 250
-width$ -- 88
-write$ -- 839
-(There were 15 warnings)
+warning$ -- 16
+while$ -- 252
+width$ -- 90
+write$ -- 855
+(There were 17 warnings)

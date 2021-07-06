@@ -82,49 +82,50 @@
 \contentsline {subsubsection}{\numberline {4.4.1.1}Déclaration des données}{45}{subsubsection.4.4.1.1}%
 \contentsline {subsubsection}{\numberline {4.4.1.2}Les paramètres du model de Rasch (1PL)}{46}{subsubsection.4.4.1.2}%
 \contentsline {subsubsection}{\numberline {4.4.1.3}Le model de Rasch}{46}{subsubsection.4.4.1.3}%
-\contentsline {section}{\numberline {4.5}Conclusion}{46}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Clustering Hard et Soft}{47}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{48}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Les métriques}{49}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Critère de liaison}{49}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Distance inter-cluster}{50}{subsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.1.1}Distance de liaison unique}{51}{subsubsection.5.3.1.1}%
-\contentsline {subsubsection}{\numberline {5.3.1.2}Distance de liaison complète}{51}{subsubsection.5.3.1.2}%
-\contentsline {subsubsection}{\numberline {5.3.1.3}Distance de liaison moyenne}{52}{subsubsection.5.3.1.3}%
-\contentsline {subsubsection}{\numberline {5.3.1.4}Centroïde Linkage Distance}{52}{subsubsection.5.3.1.4}%
-\contentsline {subsubsection}{\numberline {5.3.1.5}Distance de liaison moyenne du centre de gravité}{52}{subsubsection.5.3.1.5}%
-\contentsline {subsection}{\numberline {5.3.2}Distance intra-cluster}{52}{subsection.5.3.2}%
-\contentsline {subsubsection}{\numberline {5.3.2.1}Distance de diamètre complet}{52}{subsubsection.5.3.2.1}%
-\contentsline {subsubsection}{\numberline {5.3.2.2}Distance de diamètre moyen}{53}{subsubsection.5.3.2.2}%
-\contentsline {subsubsection}{\numberline {5.3.2.3}Diamètre barycentre Distance}{53}{subsubsection.5.3.2.3}%
-\contentsline {section}{\numberline {5.4}Le clustering hiérarchique}{53}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Introduction}{53}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Clustering hiérarchique agglomératif}{54}{subsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.2.1}Exemple de clustering agglomératif}{54}{subsubsection.5.4.2.1}%
-\contentsline {subsection}{\numberline {5.4.3}Clustering hiérarchique divisive}{55}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}Procédures de fractionnement des clusters}{56}{subsection.5.4.4}%
-\contentsline {subsection}{\numberline {5.4.5}Evaluations des bipartitions}{56}{subsection.5.4.5}%
-\contentsline {subsection}{\numberline {5.4.6}Déterminations de niveaux de nœuds }{56}{subsection.5.4.6}%
-\contentsline {subsection}{\numberline {5.4.7}Conclusion}{57}{subsection.5.4.7}%
-\contentsline {section}{\numberline {5.5}Le clustering partitionnel}{57}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}K-means clustering}{57}{subsection.5.5.1}%
-\contentsline {subsubsection}{\numberline {5.5.1.1}Le fonctionnement de l’algorithme k-means}{57}{subsubsection.5.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.5.1.2}Les étapes de l’algorithme}{57}{subsubsection.5.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.5.1.3}Les lacunes de l’algorithme k-means}{59}{subsubsection.5.5.1.3}%
-\contentsline {subsubsection}{\numberline {5.5.1.4}Les solutions aux lacunes de l’algorithme k-means}{59}{subsubsection.5.5.1.4}%
-\contentsline {section}{\numberline {5.6}Fuzzy clustering}{60}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}Introduction}{60}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}Fuzzy C-means clustering :}{61}{subsection.5.6.2}%
-\contentsline {subsubsection}{\numberline {5.6.2.1}Algorithme FCM :}{62}{subsubsection.5.6.2.1}%
-\contentsline {subsection}{\numberline {5.6.3}Conclusion}{62}{subsection.5.6.3}%
-\contentsline {section}{\numberline {5.7}Les autres méthodes de clustering}{63}{section.5.7}%
-\contentsline {section}{\numberline {5.8}La différence entre le clustering hiérarchique, partitionnel et Fuzzy clustering}{64}{section.5.8}%
-\contentsline {section}{\numberline {5.9}Indice de validité du clustering}{64}{section.5.9}%
-\contentsline {section}{\numberline {5.10}Conclusion}{66}{section.5.10}%
-\contentsline {part}{II\hspace {1em}Contributions}{67}{part.2}%
-\contentsline {xpart}{Contributions}{68}{part.2}%
-\contentsline {chapter}{\numberline {6}Contribution and Results}{68}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introduction}{69}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Conclusion}{69}{section.6.2}%
-\contentsline {part}{Conclusion Générale}{69}{section.6.2}%
-\contentsline {chapter}{Bibliographie}{71}{chapter*.41}%
+\contentsline {subsubsection}{\numberline {4.4.1.4}Les predictions}{46}{subsubsection.4.4.1.4}%
+\contentsline {section}{\numberline {4.5}Conclusion}{47}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Clustering Hard et Soft}{48}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{49}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Les métriques}{50}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Critère de liaison}{50}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Distance inter-cluster}{51}{subsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.1}Distance de liaison unique}{52}{subsubsection.5.3.1.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.2}Distance de liaison complète}{52}{subsubsection.5.3.1.2}%
+\contentsline {subsubsection}{\numberline {5.3.1.3}Distance de liaison moyenne}{53}{subsubsection.5.3.1.3}%
+\contentsline {subsubsection}{\numberline {5.3.1.4}Centroïde Linkage Distance}{53}{subsubsection.5.3.1.4}%
+\contentsline {subsubsection}{\numberline {5.3.1.5}Distance de liaison moyenne du centre de gravité}{53}{subsubsection.5.3.1.5}%
+\contentsline {subsection}{\numberline {5.3.2}Distance intra-cluster}{53}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}Distance de diamètre complet}{53}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {5.3.2.2}Distance de diamètre moyen}{54}{subsubsection.5.3.2.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.3}Diamètre barycentre Distance}{54}{subsubsection.5.3.2.3}%
+\contentsline {section}{\numberline {5.4}Le clustering hiérarchique}{54}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Introduction}{54}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Clustering hiérarchique agglomératif}{55}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}Exemple de clustering agglomératif}{55}{subsubsection.5.4.2.1}%
+\contentsline {subsection}{\numberline {5.4.3}Clustering hiérarchique divisive}{56}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Procédures de fractionnement des clusters}{57}{subsection.5.4.4}%
+\contentsline {subsection}{\numberline {5.4.5}Evaluations des bipartitions}{57}{subsection.5.4.5}%
+\contentsline {subsection}{\numberline {5.4.6}Déterminations de niveaux de nœuds }{57}{subsection.5.4.6}%
+\contentsline {subsection}{\numberline {5.4.7}Conclusion}{58}{subsection.5.4.7}%
+\contentsline {section}{\numberline {5.5}Le clustering partitionnel}{58}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}K-means clustering}{58}{subsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.1.1}Le fonctionnement de l’algorithme k-means}{58}{subsubsection.5.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.5.1.2}Les étapes de l’algorithme}{58}{subsubsection.5.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.5.1.3}Les lacunes de l’algorithme k-means}{60}{subsubsection.5.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.5.1.4}Les solutions aux lacunes de l’algorithme k-means}{60}{subsubsection.5.5.1.4}%
+\contentsline {section}{\numberline {5.6}Fuzzy clustering}{61}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Introduction}{61}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Fuzzy C-means clustering :}{62}{subsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.1}Algorithme FCM :}{63}{subsubsection.5.6.2.1}%
+\contentsline {subsection}{\numberline {5.6.3}Conclusion}{63}{subsection.5.6.3}%
+\contentsline {section}{\numberline {5.7}Les autres méthodes de clustering}{64}{section.5.7}%
+\contentsline {section}{\numberline {5.8}La différence entre le clustering hiérarchique, partitionnel et Fuzzy clustering}{65}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Indice de validité du clustering}{65}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Conclusion}{67}{section.5.10}%
+\contentsline {part}{II\hspace {1em}Contributions}{68}{part.2}%
+\contentsline {xpart}{Contributions}{69}{part.2}%
+\contentsline {chapter}{\numberline {6}Contribution and Results}{69}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{70}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Conclusion}{70}{section.6.2}%
+\contentsline {part}{Conclusion Générale}{70}{section.6.2}%
+\contentsline {chapter}{Bibliographie}{72}{chapter*.41}%

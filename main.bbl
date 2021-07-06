@@ -217,6 +217,14 @@ R.~A. Fisher, ``On the mathematical foundations of theoretical statistics,''
 \bibitem{xcv_wiki}
 ``Item response theory - wikipedia.''
 
+\bibitem{yvonnick_2019}
+Y.~Noël, ``Introduction aux modèles de réponse à l'item (mri),'' Jan 2019.
+
+\bibitem{data_analysis_irt}
+A.~Gelman and J.~Hill, {\em Data Analysis Using Regression And
+  Multilevel/Hierarchical Models}, vol.~3.
+\newblock 11 2006.
+
 \bibitem{huang1998extensions}
 Z.~Huang, ``Extensions to the k-means algorithm for clustering large data sets
   with categorical values,'' {\em Data mining and knowledge discovery}, vol.~2,
