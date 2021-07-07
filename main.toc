@@ -82,7 +82,7 @@
 \contentsline {subsubsection}{\numberline {4.4.1.1}Déclaration des données}{45}{subsubsection.4.4.1.1}%
 \contentsline {subsubsection}{\numberline {4.4.1.2}Les paramètres du model de Rasch (1PL)}{46}{subsubsection.4.4.1.2}%
 \contentsline {subsubsection}{\numberline {4.4.1.3}Le model de Rasch}{46}{subsubsection.4.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.4.1.4}Les predictions}{46}{subsubsection.4.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.4.1.4}Les predictions}{47}{subsubsection.4.4.1.4}%
 \contentsline {section}{\numberline {4.5}Conclusion}{47}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Clustering Hard et Soft}{48}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Introduction}{49}{section.5.1}%

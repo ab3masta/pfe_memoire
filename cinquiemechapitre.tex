@@ -198,9 +198,12 @@ Stan peut être avec les langages d'analyse de données les plus populaires (R, 
 
 \subsection{IRT avec Stan}
 La théorie de l'item-réponse (TRI) modélise la situation dans laquelle un certain nombre d'étudiants répondent chacun à une ou plusieurs questions d'un groupe de questions de test. Le modèle est basé sur des paramètres pour la capacité des étudiants, la difficulté des questions, et dans des modèles plus articulés, le caractère discriminant des questions et la probabilité de deviner correctement \cite{data_analysis_irt}.
+
 \subsubsection{Déclaration des données}
-Les données fournies pour un modèle IRT peuvent être déclarées comme suit pour tenir compte du fait que tous les étudiants ne sont pas tenus de répondre à toutes les questions.
-\begin{lstlisting}[language=Stan,basicstyle=\scriptsize\color{white},backgroundcolor = \color{blueforest}]
+Les données fournies pour un modèle IRT peuvent être déclarées comme suit pour tenir compte du fait que tous les étudiants ne sont pas tenus de répondre à toutes les questions. Ces données sont dans le bloc « data » où les informations pertinentes sur les données et les données elles-mêmes sont spécifier.
+
+\newpage
+\begin{lstlisting}[language=Stan,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!40},rulecolor=\color{blue},numberstyle=\normalfont\tiny\color{white}]
 data {
 // numbers of things
 int<lower=1> N;  // number of observations
@@ -212,12 +215,12 @@ int<lower=1,upper=S> subject[N];
 int<lower=0,upper=1> grade[N];
 }
 \end{lstlisting}
-Dans cette déclaration il y’a le nombre R un entier positif qui est le nombre d’observation, où pour toute valeus n de 1 à R grade[n] est la reponse obtenu par l’etudiant subject[n] à la question item[n].
-\subsubsection{Les paramètres du model de Rasch (1PL)}
-Le modèle IRT 1PL, également connu sous le nom de modèle Rasch, a un paramètre (1P) pour les questions (items).
-Les paramètres du modèle sont déclarés comme suit.
+Dans cette déclaration il y’a \(\displaystyle N \) un entier positif qui est le nombre d’observation, où pour toute valeurs \(\displaystyle n \) de \(\displaystyle 1 \) à \(\displaystyle N \) \(\displaystyle grade[n] \) est la réponse obtenue par l’étudiant \(\displaystyle subject[n] \) à la question \(\displaystyle item[n] \).
 
-\begin{lstlisting}[language=Stan,basicstyle=\scriptsize\color{white},backgroundcolor = \color{blueforest}]
+\subsubsection{Les paramètres du model de Rasch (1PL)}
+Les paramètres du modèle IRT (1PL), également connu sous le nom de modèle Rash sont :
+
+\begin{lstlisting}[language=Stan,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!40},rulecolor=\color{blue},numberstyle=\normalfont\tiny\color{white}]
 parameters {
 // parameters
 real ability[S];             //  alpha: ability of student
@@ -225,11 +228,11 @@ real difficulty[I];          //  beta: difficulty of question
 real delta;                   // mean student ability
 }
 \end{lstlisting}
-Le paramètre ability[J] est le coefficient de capacité de l'élève Si et difficulty[I] le coefficient de difficulté de la question Ii. La paramétrisation non standard utilisée ici comprend également un terme d'interception delta, qui représente la réponse moyenne de l'étudiant à la question moyenne. [10] 
+Le paramètre  \(\displaystyle ability_{i} \) est le coefficient de capacité de l'élève \(\displaystyle S_{i} \) et \(\displaystyle difficulty_{j} \) le coefficient de difficulté de la question \(\displaystyle I_{j} \). La paramétrisation non standard utilisée ici comprend également un terme d'interception delta, qui représente la réponse moyenne de l'étudiant à la question moyenne \cite{data_analysis_irt}.
 
 \subsubsection{Le model de Rasch}
 
-\begin{lstlisting}[language=Stan,basicstyle=\scriptsize\color{white},backgroundcolor = \color{blueforest}]
+\begin{lstlisting}[language=Stan,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!40},rulecolor=\color{blue},numberstyle=\normalfont\tiny\color{white}]
 model {
 ability ~ std_normal();         
 difficulty ~ std_normal();   
@@ -238,10 +241,23 @@ for(n in 1:N)
  grade[n] ~ bernoulli_logit(ability[subject[n]] - difficulty[item[n]] + delta);
 }
 \end{lstlisting}
+Ce modèle utilise la distribution de \(\displaystyle Bernoulli \) paramétrée en  \(\displaystyle logit \).
+
+Si \(\displaystyle \alpha \in \mathbb{R} \), alors pour \(\displaystyle y \in \{ 0,1 \} \), 
+
+\begin{equation}
+    BernoulliLogit(y|\alpha) = BernoulliLogit(y|logit^{-1} (\alpha)) = \Bigg \{ 
+\begin{tabular}{@{}l@{}}
+    \(\displaystyle logit^{-1} (\alpha)\)  if y = 1, et \\
+    \(\displaystyle 1-logit^{-1}(\alpha) \)  if y = 0. 
+\end{tabular}
+\end{equation}
+
 
 \subsubsection{Les predictions}
+Ce bloc est utilisé pour calculer de nouvelles variables et d'obtenir leur distributions postérieures correspondantes comme prédire des nouvelles valeurs où récupérer le log-vraisemblance, qui est utilisée pour calculer l’indice de l'ajustement du modèle à des fins de comparaison et de sélection de modèles.
 
-\begin{lstlisting}[language=Stan,basicstyle=\scriptsize\color{white},backgroundcolor = \color{blueforest}]
+\begin{lstlisting}[language=Stan,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!40},rulecolor=\color{blue},numberstyle=\normalfont\tiny\color{white}]
 generated quantities {
 int<lower=0,upper=1> y_pred[N];
 vector[N] log_lik;
