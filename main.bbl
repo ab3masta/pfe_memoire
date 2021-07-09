@@ -417,4 +417,45 @@ X.~L. Xie and G.~Beni, ``A validity measure for fuzzy clustering,'' {\em IEEE
   Transactions on pattern analysis and machine intelligence}, vol.~13, no.~8,
   pp.~841--847, 1991.
 
+\bibitem{craigloewen_msft}
+Craigloewen-Msft, ``Comparing wsl 1 and wsl 2.''
+
+\bibitem{python_cours}
+``Python.''
+  \href{https://pythonprogramminglanguage.com}{\color{blue}{https://pythonprogramminglanguage.com}}.
+\newblock accessed: 09-July-2021.
+
+\bibitem{anaconda_website}
+``Anaconda.''
+  \href{https://www.anaconda.com/}{\color{blue}{https://www.anaconda.com/}}.
+\newblock accessed: 09-July-2021.
+
+\bibitem{conda_website}
+``Conda.''
+  \href{https://conda.io/en/latest/}{\color{blue}{https://conda.io/en/latest/}}.
+\newblock accessed: 09-July-2021.
+
+\bibitem{tosi2009matplotlib}
+S.~Tosi, {\em Matplotlib for Python Developers: Build Remarkable Publication
+  Quality Plots the Easy Way}.
+\newblock From technologies to solutions, Packt Publishing, 2009.
+
+\bibitem{stan}
+``Stan documentation.''
+  \href{https://mc-stan.org/users/documentation/}{\color{blue}{https://mc-stan.org/users/documentation/}}.
+\newblock accessed: 09-July-2021.
+
+\bibitem{pystan}
+A.~Riddell, A.~Hartikainen, and M.~Carter, ``pystan (3.2.0).'' PyPI, Mar. 2021.
+
+\bibitem{arviz_2019}
+R.~Kumar, C.~Carroll, A.~Hartikainen, and O.~Martin, ``Arviz a unified library
+  for exploratory analysis of bayesian models in python,'' {\em Journal of Open
+  Source Software}, vol.~4, no.~33, p.~1143, 2019.
+
+\bibitem{arviz}
+``Exploratory analysis of bayesian models.''
+  \href{https://arviz-devs.github.io/arviz/}{\color{blue}{https://arviz-devs.github.io/arviz/}}.
+\newblock accessed: 09-July-2021.
+
 \end{thebibliography}

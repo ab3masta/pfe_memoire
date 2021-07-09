@@ -4,6 +4,154 @@
 \newpage
 
 \section{Introduction}
+Nous présentons dans ce chapitre les notions vues dans les chapitres précédents appliquer à un dataset. Partant de la collecte et la préparation du dataset, de l’application de la théorie des réponses aux items pour un ajustement bayésiens des réponses obtenues par les apprenants, jusqu’aux clustering hard et soft des items basés sur la similarité.
+
+\section{Approche proposée}
+
+
+\section{Implémentations et résultats expérimentaux}
+
+\subsection{Outils de développement}
+les outils matériels et logiciels utilisés pour le développement sont :
+
+\subsubsection{Materiels}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{cccc}
+    \toprule
+     \textbf{Marque} & \textbf{CPU} & \textbf{RAM} & \textbf{OS} \\
+     \midrule
+       \textbf{Lenovo Y40-80} & AMD Intel Core i5 2.20 GHz & 16Go & Windows10 64bits \\ \hline
+       \multicolumn{4}{m{14cm}}{\centering Et Linux Ubuntu 20.04 LTS installé sur WSL2 }\\
+    \bottomrule
+  \end{tabular}
+  \caption{Caractéristiques du matériels utilisés}
+  \label{tabmat}
+\end{table}
+
+\textbf{WSL2 :} Windows Subsystem for Linux (WSL) est une couche de compatibilité permettant d'exécuter des exécutables binaires Linux de manière native sur Windows 10 et Windows Server 2019. WSL2 est une version améliorer de WSL1 qui introduit d'importants changements, notamment la présence d'un véritable noyau Linux \cite{craigloewen_msft} via un sous-ensemble de fonctionnalités Hyper-V. 
+
+
+\begin{table}[H]
+	\centering
+	\addtolength{\leftskip} {-4cm}
+	\addtolength{\rightskip}{-4.5cm}
+	\begin{tabular}{|m{5cm}|m{14cm}|}
+	\hline
+	\rowcolor{blueforest}
+	\color{white} \textbf{Outils | Packages} & \color{white} \textbf{Description}  \\
+	\hline\hline
+	\multicolumn{2}{|m{19cm}|}{\centering Les outils utilisés sur windows 10 : }\\ \hline
+	\begin{center}
+	    \begin{minipage}{.3\textwidth}
+      \includegraphics[width=\textwidth]{images/chapitre7/python.png}
+    \end{minipage}
+	\end{center}
+	\centering \textbf{Python} & Créé par le développeur Guido Van Rossum et publié pour la première fois en 1991. Il permet aux programmeurs d'utiliser différents styles de programmation pour créer des programmes simples ou complexes. Python est l'un des langages de programmation les plus populaires pour la science des données. C'est un langage de programmation de haut niveau, structuré, open source, interprété et dynamique. Il est multiparadigme, multi-plateforme et multi-usages. La syntaxe de Python aide les programmeurs à coder en moins d'étapes par rapport à d'autres langages comme JAVA ou C++, ce qui facilite le travail et le rend plus rapide, facile et amusant à faire. Il possède une bibliothèque standard complète et volumineuse dotée d'une gestion automatique de la mémoire et de fonctionnalités dynamiques \cite{python_cours}. Dans notre travail, nous avons utilisé Python 3.5 intégré à Anaconda. \\ \hline
+  \begin{center}
+	    \begin{minipage}{.3\textwidth}
+      \includegraphics[width=\textwidth]{images/chapitre7/anaconda.png}
+    \end{minipage}
+	\end{center}
+	\centering \textbf{Anaconda} & Anaconda est une distribution libre et open source \cite{anaconda_website} des langages de programmation Python et R appliqué au développement d'applications dédiées à la science des données et à l'apprentissage automatique (traitement de données à grande échelle, analyse prédictive, calcul scientifique), qui vise à simplifier la gestion des paquets et de déploiement. Les versions de paquetages sont gérées par le système de gestion de paquets conda \cite{conda_website} et est adapté pour Windows, Linux et MacOS. Anaconda fournit interface graphique qui permet de lancer des applications, de gérer les librairies avec gestionnaire de paquets conda, et les environnements de développement. Plusieurs applications sont disponibles par défaut comme JupyterLab, Jupyter Notebook, QtConsole5, Spyder, Glue, Orange, RStudio, Visual Studio Code.  \\ \hline
+  
+  \begin{center}
+    \begin{minipage}{.3\textwidth}
+    \includegraphics[width=\textwidth]{images/chapitre7/jupyter.png}
+  \end{minipage}
+  \end{center}
+  \centering \textbf{Jupyter Notebook} & est un environnement de programmation interactif basé sur le web utilisé pour programmer en python, R, Ruby, Julia ou encore Scala qui permet de réalisé des notebooks contenant à la fois du texte en markdown et du code en Julia, Python, R etc.  \\ \hline
+
+  \begin{center}
+    \begin{minipage}{.3\textwidth}
+    \includegraphics[width=\textwidth]{images/chapitre7/scikit_learn.png}
+  \end{minipage}
+  \end{center}
+  \centering \textbf{Scikit-learn} & est une bibliothèque libre Python destinée à l'apprentissage automatique. Elle propose un ensemble d'outils efficace clé en main pour l’analyse et l’exploration de données. Cette bibliothèque prend en charge les algorithmes de classifications, de régression, du clustering, la réduction de dimensionnalité et de prétraitement des données pour l'extraction et la normalisation des caractéristiques.  \\ \hline
+
+  \end{tabular}
+	\caption{Indice de validité du clustering Hard}
+	\label{tools}
+\end{table}
+
+\newpage
+
+\begin{table}[H]
+	\centering
+	\addtolength{\leftskip} {-4cm}
+	\addtolength{\rightskip}{-4.5cm}
+	\begin{tabular}{|m{5cm}|m{14cm}|}
+	\hline
+	\rowcolor{blueforest}
+	\color{white} \textbf{Outils | Packages} & \color{white} \textbf{Description}  \\
+	\hline\hline
+  %  >>>>>>>>>>>>>>
+	\begin{center}
+	    \begin{minipage}{.3\textwidth}
+      \includegraphics[width=\textwidth]{images/chapitre7/python.png}
+    \end{minipage}
+	\end{center}
+  \centering \textbf{Pandas} & Pandas est une bibliothèque écrite en Python qui permet la manipulation et l'analyse des données. Elle propose en particulier des structures de données et des opérations de manipulation de tableaux numériques et de séries temporelles. Elle propose principalement comme structures de données les Series, DataFrames, Panels, Panels4D. Et aussi des fonctionnalités comme la manipuler des données aisément et efficacement avec des index pouvant être des chaines de caractères, des outils pour lire et écrire des données structurées, gestion des données manquantes, le tri, le redimensionnement et , fusion et jointure de large volume de données et analyse de séries temporelles. \\ \hline
+  % <<<<<<<<<<<<<<
+
+  %  >>>>>>>>>>>>>>
+  \begin{center}
+	    \begin{minipage}{.3\textwidth}
+      \includegraphics[width=\textwidth]{images/chapitre7/anaconda.png}
+    \end{minipage}
+	\end{center}
+	\centering \textbf{Numpy} & est une bibliothèque python pour le calcul scientifique qui fournit un objet tableau multidimensionnel, divers objets dérivés (tels que des tableaux et des matrices masqués) et un assortiment de routines pour des opérations rapides sur des tableaux, notamment mathématiques, logiques, manipulation de forme, tri, sélection, transformées de Fourier discrètes, algèbre linéaire de base, opérations statistiques de base, simulation aléatoire etc.  \\ \hline
+  % <<<<<<<<<<<<<<
+  \begin{center}
+    \begin{minipage}{.3\textwidth}
+    \includegraphics[width=\textwidth]{images/chapitre7/jupyter.png}
+  \end{minipage}
+  \end{center}
+  \centering \textbf{Matplotlib} & Matplotlib est une bibliothèque du langage de programmation Python destinée à tracer et visualiser des données sous formes de graphiques en 2 ou 3 dimensions \cite{tosi2009matplotlib}. Cette bibliothèque permet de produire divers tracés par exemple des histogrammes, des fonctions de Rosenbrock, spirale logarithmique, graphiques d'erreurs, nuages de points etc.  \\ \hline
+
+  \end{tabular}
+	\caption{Indice de validité du clustering Hard}
+	\label{tools}
+\end{table}
+
+\newpage
+
+\begin{table}[H]
+	\centering
+	\addtolength{\leftskip} {-4cm}
+	\addtolength{\rightskip}{-4.5cm}
+	\begin{tabular}{|m{5cm}|m{14cm}|}
+	\hline
+	\rowcolor{blueforest}
+	\color{white} \textbf{Outils | Packages} & \color{white} \textbf{Description}  \\
+	\hline\hline
+	\multicolumn{2}{|m{19cm}|}{\centering Les outils utilisés sur windows 10 : }\\ \hline
+	\begin{center}
+	    \begin{minipage}{.3\textwidth}
+      \includegraphics[width=\textwidth]{images/chapitre7/python.png}
+    \end{minipage}
+	\end{center}
+	\centering \textbf{Stan} & Stan \cite{stan} est une plate-forme pour la modélisation statistique, l’analyse de données et la prédiction dans les sciences sociales, biologiques et physiques, l’ingénierie et les affaires. Il permet de spécifier les fonctions de densité de log afin d’obtenir une inférence statistique bayésienne complète avec échantillonnage MCMC (NUTS, HMC), une inférence bayésienne approximative avec inférence variationnelle (ADVI), une estimation du maximum de vraisemblance pénalisée avec optimisation (L-BFGS). La bibliothèque mathématique de Stan fournit des fonctions de probabilité différentiables et une algèbre linéaire (C++ autodiff). Stan peut être utilisé avec les langages d’analyse de données les plus populaires (R, Python, shell, MATLAB, Julia, Stata) et fonctionne sur toutes les principales plates-formes (Linux, Mac, Windows). Dans l’implémentation nous avons utilisé Pystan \cite{pystan} qui est une interface Python pour Stan, un package pour l'inférence bayésienne. \\ \hline
+  \begin{center}
+	    \begin{minipage}{.3\textwidth}
+      \includegraphics[width=\textwidth]{images/chapitre7/anaconda.png}
+    \end{minipage}
+	\end{center}
+	\centering \textbf{ArviZ} & ArviZ \cite{arviz_2019} est un package Python pour l'analyse exploratoire des modèles bayésiens. Comprend des fonctions d'analyse postérieure, de stockage de données, de diagnostic d'échantillons, de vérification de modèle et de comparaison. Ce package de fournir des outils backend indépendants pour les diagnostics et les visualisations de l'inférence bayésienne en Python, en convertissant d'abord les données d'inférence en objets xarray \cite{arviz}.  \\ \hline
+  
+  \end{tabular}
+	\caption{Indice de validité du clustering Hard}
+	\label{tools}
+\end{table}
+
+\subsection{Collecte et préparation des données}
+\href{https://kdd.org/kdd-cup/view/kdd-cup-2010-student-performance-evaluation/Intro}{\color{blue}{KDD Cup 2010}} est une compétition d'exploration de données éducatives dans laquelle les participants sont chargés de prédire les performances des élèves aux problèmes algébriques en fonction des informations concernant les performances passées. \\
+\textbf{Algèbre I 2005-2006} est un jeu de données qui est fournit pour débuter et se familiarisé avec le format et le développement d’un modèle d’apprentissage.
+
+\subsection{IRT}
+
+\subsection{Clustering}
 
 \section{Conclusion}
 

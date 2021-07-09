@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.2.13)  7 JUL 2021 16:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.2.13)  9 JUL 2021 16:56
 entering extended mode
 **d:/codeSourceFolder/1111____PFE/pfe_memoire/main.tex
 (d:/codeSourceFolder/1111____PFE/pfe_memoire/main.tex
@@ -921,7 +921,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 Package minitoc Info: I0024
-(minitoc)             PREPARING MINITOCS FROM main.toc on input line 72.
+(minitoc)             PREPARING MINITOCS FROM main.toc on input line 74.
 Package minitoc Info: I0033
 (minitoc)             Writing main.mtc1.
 \openout7 = `main.mtc1'.
@@ -958,7 +958,7 @@ Package minitoc Info: I0033
 (minitoc)             Writing main.mtc9.
 \openout7 = `main.mtc9'.
 
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 75.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 77.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
@@ -969,28 +969,34 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `posterior_probability_distribution' multiply defined.
 
+
+LaTeX Warning: Label `tools' multiply defined.
+
+
+LaTeX Warning: Label `tools' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Info: Redefining \degres on input line 75.
-LaTeX Info: Redefining \dots on input line 75.
-LaTeX Info: Redefining \up on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Info: Redefining \degres on input line 77.
+LaTeX Info: Redefining \dots on input line 77.
+LaTeX Info: Redefining \up on input line 77.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count375
@@ -1010,7 +1016,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 )
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into your preamble.
- on input line 75.
+ on input line 77.
 
 \c@lstlisting=\count381
 Package caption Info: Begin \AtBeginDocument code.
@@ -1019,14 +1025,14 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 75.
+LaTeX Info: Redefining \microtypecontext on input line 77.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 75.
+LaTeX Info: Redefining \showhyphens on input line 77.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1106,7 +1112,7 @@ Package minitoc(hints) Warning: W0023
 (minitoc(hints))                --- It may be the consequence 
 (minitoc(hints))                of loading the ``hyperref'' package.
 
-Package hyperref Info: Link coloring ON on input line 75.
+Package hyperref Info: Link coloring ON on input line 77.
 (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -1116,14 +1122,14 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count388
 )
-LaTeX Info: Redefining \ref on input line 75.
-LaTeX Info: Redefining \pageref on input line 75.
-LaTeX Info: Redefining \nameref on input line 75.
+LaTeX Info: Redefining \ref on input line 77.
+LaTeX Info: Redefining \pageref on input line 77.
+LaTeX Info: Redefining \nameref on input line 77.
  (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.out) (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.out)
 \@outlinefile=\write8
 \openout8 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 76.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 78.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
@@ -1161,44 +1167,44 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 79.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 81.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 79.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 81.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 79.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 81.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 79.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 81.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 79.
+(Font)              <12> on input line 81.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 79.
+(Font)              <8> on input line 81.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 79.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
+(Font)              <6> on input line 81.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
  (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<Images/Logo.png, id=508, 229.8186pt x 145.9854pt>
+<Images/Logo.png, id=536, 229.8186pt x 145.9854pt>
 File: Images/Logo.png Graphic file (type png)
 <use Images/Logo.png>
-Package pdftex.def Info: Images/Logo.png  used on input line 79.
+Package pdftex.def Info: Images/Logo.png  used on input line 81.
 (pdftex.def)             Requested size: 102.42836pt x 65.06464pt.
  [1{C:/Users/abdou/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
@@ -1260,7 +1266,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--15
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.97 \firstpart
+l.99 \firstpart
                 [1
 
 
@@ -1285,7 +1291,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--19
  []
 
 [3]
-<images/chapitre1/Les étapes de l'extraction de connaissances à partir de données.png, id=774, 382.93062pt x 163.10938pt>
+<images/chapitre1/Les étapes de l'extraction de connaissances à partir de données.png, id=817, 382.93062pt x 163.10938pt>
 File: images/chapitre1/Les étapes de l'extraction de connaissances à partir de données.png Graphic file (type png)
 <use images/chapitre1/Les étapes de l'extraction de connaissances à partir de données.png>
 Package pdftex.def Info: images/chapitre1/Les étapes de l'extraction de connaissances à partir de données.png  used on input line 40.
@@ -1297,13 +1303,13 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
  [4 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre1/Les étapes de l'extraction de connaissances à partir de données.png>]
-<images/chapitre1/ITS architecture.png, id=786, 1405.25pt x 702.625pt>
+<images/chapitre1/ITS architecture.png, id=829, 1405.25pt x 702.625pt>
 File: images/chapitre1/ITS architecture.png Graphic file (type png)
 <use images/chapitre1/ITS architecture.png>
 Package pdftex.def Info: images/chapitre1/ITS architecture.png  used on input line 77.
 (pdftex.def)             Requested size: 441.01773pt x 220.5025pt.
  [5 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre1/ITS architecture.png>]
-<images/chapitre1/Principaux domaines liés à l'exploration de données éducatives.png, id=801, 1003.75pt x 702.625pt>
+<images/chapitre1/Principaux domaines liés à l'exploration de données éducatives.png, id=844, 1003.75pt x 702.625pt>
 File: images/chapitre1/Principaux domaines liés à l'exploration de données éducatives.png Graphic file (type png)
 <use images/chapitre1/Principaux domaines liés à l'exploration de données éducatives.png>
 Package pdftex.def Info: images/chapitre1/Principaux domaines liés à l'exploration de données éducatives.png  used on input line 110.
@@ -1314,7 +1320,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--117
  []
 
 [7 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre1/Principaux domaines liés à l'exploration de données éducatives.png>]
-<images/chapitre1/Data mining application process applied in education.png, id=814, 2007.5pt x 803.0pt>
+<images/chapitre1/Data mining application process applied in education.png, id=857, 2007.5pt x 803.0pt>
 File: images/chapitre1/Data mining application process applied in education.png Graphic file (type png)
 <use images/chapitre1/Data mining application process applied in education.png>
 Package pdftex.def Info: images/chapitre1/Data mining application process applied in education.png  used on input line 127.
@@ -1324,7 +1330,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--140
 
  []
 
-<images/chapitre1/edm techniques.png, id=815, 2007.5pt x 903.375pt>
+<images/chapitre1/edm techniques.png, id=858, 2007.5pt x 903.375pt>
 File: images/chapitre1/edm techniques.png Graphic file (type png)
 <use images/chapitre1/edm techniques.png>
 Package pdftex.def Info: images/chapitre1/edm techniques.png  used on input line 143.
@@ -1437,7 +1443,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [14]
-<images/chapitre2/Composante_modele_apprenant.png, id=871, 1806.75pt x 1204.5pt>
+<images/chapitre2/Composante_modele_apprenant.png, id=914, 1806.75pt x 1204.5pt>
 File: images/chapitre2/Composante_modele_apprenant.png Graphic file (type png)
 <use images/chapitre2/Composante_modele_apprenant.png>
 Package pdftex.def Info: images/chapitre2/Composante_modele_apprenant.png  used on input line 98.
@@ -1467,7 +1473,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [17]
-<images/chapitre2/Modèles-d'équations-structurelles.png, id=900, 1806.75pt x 803.0pt>
+<images/chapitre2/Modèles-d'équations-structurelles.png, id=943, 1806.75pt x 803.0pt>
 File: images/chapitre2/Modèles-d'équations-structurelles.png Graphic file (type png)
 <use images/chapitre2/Modèles-d'équations-structurelles.png>
 Package pdftex.def Info: images/chapitre2/Modèles-d'équations-structurelles.png  used on input line 161.
@@ -1493,7 +1499,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [19 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre2/Modèles-d'équations-structurelles.png>]
-<images/chapitre2/bayesian_network_modeling_aggregationai.png, id=924, 1806.75pt x 803.0pt>
+<images/chapitre2/bayesian_network_modeling_aggregationai.png, id=967, 1806.75pt x 803.0pt>
 File: images/chapitre2/bayesian_network_modeling_aggregationai.png Graphic file (type png)
 <use images/chapitre2/bayesian_network_modeling_aggregationai.png>
 Package pdftex.def Info: images/chapitre2/bayesian_network_modeling_aggregationai.png  used on input line 186.
@@ -1507,7 +1513,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [20]
-<images/chapitre2/modèle_equation_structurelles.png, id=936, 1806.75pt x 803.0pt>
+<images/chapitre2/modèle_equation_structurelles.png, id=979, 1806.75pt x 803.0pt>
 File: images/chapitre2/modèle_equation_structurelles.png Graphic file (type png)
 <use images/chapitre2/modèle_equation_structurelles.png>
 Package pdftex.def Info: images/chapitre2/modèle_equation_structurelles.png  used on input line 199.
@@ -1537,19 +1543,19 @@ Chapitre 3.
 (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.mtc5) [23
 
 ]
-<images/chapitre3/Knowledge_component.png, id=969, 1907.125pt x 903.375pt>
+<images/chapitre3/Knowledge_component.png, id=1012, 1907.125pt x 903.375pt>
 File: images/chapitre3/Knowledge_component.png Graphic file (type png)
 <use images/chapitre3/Knowledge_component.png>
 Package pdftex.def Info: images/chapitre3/Knowledge_component.png  used on input line 18.
 (pdftex.def)             Requested size: 441.01773pt x 208.90219pt.
  [24] [25 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Knowledge_component.png>]
-<images/chapitre3/Items_mapping_structure.png, id=990, 1405.25pt x 803.0pt>
+<images/chapitre3/Items_mapping_structure.png, id=1033, 1405.25pt x 803.0pt>
 File: images/chapitre3/Items_mapping_structure.png Graphic file (type png)
 <use images/chapitre3/Items_mapping_structure.png>
 Package pdftex.def Info: images/chapitre3/Items_mapping_structure.png  used on input line 48.
 (pdftex.def)             Requested size: 441.01773pt x 252.00287pt.
  [26]
-<images/chapitre3/Model_based.png, id=1001, 2509.375pt x 1003.75pt>
+<images/chapitre3/Model_based.png, id=1044, 2509.375pt x 1003.75pt>
 File: images/chapitre3/Model_based.png Graphic file (type png)
 <use images/chapitre3/Model_based.png>
 Package pdftex.def Info: images/chapitre3/Model_based.png  used on input line 61.
@@ -1559,19 +1565,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-<images/chapitre3/q_matrix.png, id=1011, 2509.375pt x 1003.75pt>
+<images/chapitre3/q_matrix.png, id=1054, 2509.375pt x 1003.75pt>
 File: images/chapitre3/q_matrix.png Graphic file (type png)
 <use images/chapitre3/q_matrix.png>
 Package pdftex.def Info: images/chapitre3/q_matrix.png  used on input line 79.
 (pdftex.def)             Requested size: 441.01773pt x 176.39404pt.
 [28 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/Model_based.png>]
-<images/chapitre3/Illustration_item_smilarity.png, id=1022, 241.40187pt x 172.14313pt>
+<images/chapitre3/Illustration_item_smilarity.png, id=1065, 241.40187pt x 172.14313pt>
 File: images/chapitre3/Illustration_item_smilarity.png Graphic file (type png)
 <use images/chapitre3/Illustration_item_smilarity.png>
 Package pdftex.def Info: images/chapitre3/Illustration_item_smilarity.png  used on input line 92.
 (pdftex.def)             Requested size: 241.40128pt x 172.14268pt.
  [29 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre3/q_matrix.png>]
-<images/chapitre3/calcul_application_similarity.png, id=1033, 577.15625pt x 282.05376pt>
+<images/chapitre3/calcul_application_similarity.png, id=1076, 577.15625pt x 282.05376pt>
 File: images/chapitre3/calcul_application_similarity.png Graphic file (type png)
 <use images/chapitre3/calcul_application_similarity.png>
 Package pdftex.def Info: images/chapitre3/calcul_application_similarity.png  used on input line 105.
@@ -1617,7 +1623,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [37]
-<images/chapitre5/prior_likelihood_posterior.png, id=1090, 721.69624pt x 238.39063pt>
+<images/chapitre5/prior_likelihood_posterior.png, id=1133, 721.69624pt x 238.39063pt>
 File: images/chapitre5/prior_likelihood_posterior.png Graphic file (type png)
 <use images/chapitre5/prior_likelihood_posterior.png>
 Package pdftex.def Info: images/chapitre5/prior_likelihood_posterior.png  used on input line 61.
@@ -1647,7 +1653,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [39]
-<images/chapitre5/mcmc_iterations.png, id=1105, 590.205pt x 262.48062pt>
+<images/chapitre5/mcmc_iterations.png, id=1148, 590.205pt x 262.48062pt>
 File: images/chapitre5/mcmc_iterations.png Graphic file (type png)
 <use images/chapitre5/mcmc_iterations.png>
 Package pdftex.def Info: images/chapitre5/mcmc_iterations.png  used on input line 105.
@@ -1695,7 +1701,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [42]
-<images/chapitre5/irt_models.jpg, id=1131, 540.48734pt x 387.49022pt>
+<images/chapitre5/irt_models.jpg, id=1174, 540.48734pt x 387.49022pt>
 File: images/chapitre5/irt_models.jpg Graphic file (type jpg)
 <use images/chapitre5/irt_models.jpg>
 Package pdftex.def Info: images/chapitre5/irt_models.jpg  used on input line 159.
@@ -1709,7 +1715,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [43 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre5/irt_models.jpg>]
-<images/chapitre5/parameters_probability.png, id=1139, 561.59813pt x 352.31625pt>
+<images/chapitre5/parameters_probability.png, id=1182, 561.59813pt x 352.31625pt>
 File: images/chapitre5/parameters_probability.png Graphic file (type png)
 <use images/chapitre5/parameters_probability.png>
 Package pdftex.def Info: images/chapitre5/parameters_probability.png  used on input line 179.
@@ -1781,18 +1787,18 @@ Overfull \hbox (30.26167pt too wide) in paragraph at lines 40--54
  [][] 
  []
 
-<images/chapitre6/iris_inter_intra_clusters.png, id=1236, 987.69pt x 690.58pt>
+<images/chapitre6/iris_inter_intra_clusters.png, id=1279, 987.69pt x 690.58pt>
 File: images/chapitre6/iris_inter_intra_clusters.png Graphic file (type png)
 <use images/chapitre6/iris_inter_intra_clusters.png>
 Package pdftex.def Info: images/chapitre6/iris_inter_intra_clusters.png  used on input line 62.
 (pdftex.def)             Requested size: 441.01773pt x 308.34506pt.
 [50] [51 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/iris_inter_intra_clusters.png>]
-<images/chapitre6/single_linkage.png, id=1247, 798.985pt x 581.17125pt>
+<images/chapitre6/single_linkage.png, id=1290, 798.985pt x 581.17125pt>
 File: images/chapitre6/single_linkage.png Graphic file (type png)
 <use images/chapitre6/single_linkage.png>
 Package pdftex.def Info: images/chapitre6/single_linkage.png  used on input line 83.
 (pdftex.def)             Requested size: 239.69734pt x 174.35272pt.
-<images/chapitre6/complet_linkage.png, id=1251, 798.985pt x 581.17125pt>
+<images/chapitre6/complet_linkage.png, id=1294, 798.985pt x 581.17125pt>
 File: images/chapitre6/complet_linkage.png Graphic file (type png)
 <use images/chapitre6/complet_linkage.png>
 Package pdftex.def Info: images/chapitre6/complet_linkage.png  used on input line 116.
@@ -1802,18 +1808,18 @@ Package pdftex.def Info: images/chapitre6/complet_linkage.png  used on input lin
 LaTeX Warning: Command \` invalid in math mode on input line 203.
 
 [54]
-<images/chapitre6/agglo_clustering.png, id=1294, 798.985pt x 581.17125pt>
+<images/chapitre6/agglo_clustering.png, id=1337, 798.985pt x 581.17125pt>
 File: images/chapitre6/agglo_clustering.png Graphic file (type png)
 <use images/chapitre6/agglo_clustering.png>
 Package pdftex.def Info: images/chapitre6/agglo_clustering.png  used on input line 224.
 (pdftex.def)             Requested size: 199.16928pt x 144.87566pt.
-<images/chapitre6/dendrogram.png, id=1295, 798.985pt x 577.15625pt>
+<images/chapitre6/dendrogram.png, id=1338, 798.985pt x 577.15625pt>
 File: images/chapitre6/dendrogram.png Graphic file (type png)
 <use images/chapitre6/dendrogram.png>
 Package pdftex.def Info: images/chapitre6/dendrogram.png  used on input line 226.
 (pdftex.def)             Requested size: 199.16928pt x 143.87479pt.
  [55]
-<images/chapitre6/hierarchical_agglo_divisive.png, id=1307, 1505.625pt x 903.375pt>
+<images/chapitre6/hierarchical_agglo_divisive.png, id=1350, 1505.625pt x 903.375pt>
 File: images/chapitre6/hierarchical_agglo_divisive.png Graphic file (type png)
 <use images/chapitre6/hierarchical_agglo_divisive.png>
 Package pdftex.def Info: images/chapitre6/hierarchical_agglo_divisive.png  used on input line 237.
@@ -1824,7 +1830,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--248
  []
 
 [56 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/agglo_clustering.png> <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/dendrogram.png> <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre6/hierarchical_agglo_divisive.png>] [57] [58]
-<images/chapitre6/kmeans_steps.png, id=1347, 3011.25pt x 1505.625pt>
+<images/chapitre6/kmeans_steps.png, id=1390, 3011.25pt x 1505.625pt>
 File: images/chapitre6/kmeans_steps.png Graphic file (type png)
 <use images/chapitre6/kmeans_steps.png>
 Package pdftex.def Info: images/chapitre6/kmeans_steps.png  used on input line 280.
@@ -1838,7 +1844,7 @@ LaTeX Info: Symbol \textasciiacute not provided by
             font family ptm in TS1 encoding.
             Default family used instead on input line 305.
 [60]
-<images/chapitre6/elbow_methods.png, id=1368, 727.71875pt x 486.81876pt>
+<images/chapitre6/elbow_methods.png, id=1411, 727.71875pt x 486.81876pt>
 File: images/chapitre6/elbow_methods.png Graphic file (type png)
 <use images/chapitre6/elbow_methods.png>
 Package pdftex.def Info: images/chapitre6/elbow_methods.png  used on input line 314.
@@ -1855,12 +1861,12 @@ LaTeX Warning: Command \textless invalid in math mode on input line 340.
 
 LaTeX Warning: Command \textless invalid in math mode on input line 348.
 
-<images/chapitre6/data_for_fuzzy.png, id=1390, 1067.99pt x 620.3175pt>
+<images/chapitre6/data_for_fuzzy.png, id=1433, 1067.99pt x 620.3175pt>
 File: images/chapitre6/data_for_fuzzy.png Graphic file (type png)
 <use images/chapitre6/data_for_fuzzy.png>
 Package pdftex.def Info: images/chapitre6/data_for_fuzzy.png  used on input line 357.
 (pdftex.def)             Requested size: 199.16928pt x 115.67506pt.
-<images/chapitre6/fuzzyExemple.png, id=1393, 1067.99pt x 620.3175pt>
+<images/chapitre6/fuzzyExemple.png, id=1436, 1067.99pt x 620.3175pt>
 File: images/chapitre6/fuzzyExemple.png Graphic file (type png)
 <use images/chapitre6/fuzzyExemple.png>
 Package pdftex.def Info: images/chapitre6/fuzzyExemple.png  used on input line 359.
@@ -2025,12 +2031,55 @@ Chapitre 6.
 
 (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.mtc8) [69
 
-]) (d:/codeSourceFolder\1111____PFE\pfe_memoire\conclusiongenerale.tex [70]) [71
+]
+<images/chapitre7/python.png, id=1508, 1156.32pt x 1154.3125pt>
+File: images/chapitre7/python.png Graphic file (type png)
+<use images/chapitre7/python.png>
+Package pdftex.def Info: images/chapitre7/python.png  used on input line 48.
+(pdftex.def)             Requested size: 132.30666pt x 132.06503pt.
+<images/chapitre7/anaconda.png, id=1510, 1758.57pt x 873.2625pt>
+File: images/chapitre7/anaconda.png Graphic file (type png)
+<use images/chapitre7/anaconda.png>
+Package pdftex.def Info: images/chapitre7/anaconda.png  used on input line 54.
+(pdftex.def)             Requested size: 132.30666pt x 65.69173pt.
+<images/chapitre7/jupyter.png, id=1513, 822.272pt x 822.272pt>
+File: images/chapitre7/jupyter.png Graphic file (type png)
+<use images/chapitre7/jupyter.png>
+Package pdftex.def Info: images/chapitre7/jupyter.png  used on input line 61.
+(pdftex.def)             Requested size: 132.30666pt x 132.30647pt.
+<images/chapitre7/scikit_learn.png, id=1514, 903.375pt x 606.265pt>
+File: images/chapitre7/scikit_learn.png Graphic file (type png)
+<use images/chapitre7/scikit_learn.png>
+Package pdftex.def Info: images/chapitre7/scikit_learn.png  used on input line 68.
+(pdftex.def)             Requested size: 132.30666pt x 88.78963pt.
+ [70] [71 <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre7/python.png> <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre7/anaconda.png> <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre7/jupyter.png> <d:/codeSourceFolder/1111____PFE/pfe_memoire/images/chapitre7/scikit_learn.png>]
+File: images/chapitre7/python.png Graphic file (type png)
+<use images/chapitre7/python.png>
+Package pdftex.def Info: images/chapitre7/python.png  used on input line 92.
+(pdftex.def)             Requested size: 132.30666pt x 132.06503pt.
+File: images/chapitre7/anaconda.png Graphic file (type png)
+<use images/chapitre7/anaconda.png>
+Package pdftex.def Info: images/chapitre7/anaconda.png  used on input line 101.
+(pdftex.def)             Requested size: 132.30666pt x 65.69173pt.
+File: images/chapitre7/jupyter.png Graphic file (type png)
+<use images/chapitre7/jupyter.png>
+Package pdftex.def Info: images/chapitre7/jupyter.png  used on input line 108.
+(pdftex.def)             Requested size: 132.30666pt x 132.30647pt.
+ [72]
+File: images/chapitre7/python.png Graphic file (type png)
+<use images/chapitre7/python.png>
+Package pdftex.def Info: images/chapitre7/python.png  used on input line 132.
+(pdftex.def)             Requested size: 132.30666pt x 132.06503pt.
+File: images/chapitre7/anaconda.png Graphic file (type png)
+<use images/chapitre7/anaconda.png>
+Package pdftex.def Info: images/chapitre7/anaconda.png  used on input line 138.
+(pdftex.def)             Requested size: 132.30666pt x 65.69173pt.
+) (d:/codeSourceFolder\1111____PFE\pfe_memoire\conclusiongenerale.tex [73]) [74
 
-] (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.bbl [72
+] (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.bbl [75
 
 
-] [73] [74] [75] [76])
+] [76] [77] [78] [79])
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the main.maf file.
@@ -2047,28 +2096,28 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the main.log file.
 
-[77] (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.aux)
+[80] (d:/codeSourceFolder\1111____PFE\pfe_memoire\main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9AA0741664FD61AFC63BBA78B56C09AF;10353.
+(rerunfilecheck)             Checksum: EAC0B74F190434A20CB1FDA0743536D5;10894.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 42279 strings out of 479696
- 921536 string characters out of 2867115
- 1468096 words of memory out of 3000000
- 57752 multiletter control sequences out of 15000+200000
- 504455 words of font info for 166 fonts, out of 3000000 for 9000
+ 42357 strings out of 479696
+ 922981 string characters out of 2867115
+ 1468629 words of memory out of 3000000
+ 57792 multiletter control sequences out of 15000+200000
+ 504910 words of font info for 171 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,19n,111p,1738b,1729s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{cite.buche\\penalty\040\\@M\040\040:tel-00011223} has been referenced but does not exist, replaced by a fixed one
 
  <C:\Users\abdou\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on d:/codeSourceFolder\1111____PFE\pfe_memoire\main.pdf (85 pages, 2448408 bytes).
+Output written on d:/codeSourceFolder\1111____PFE\pfe_memoire\main.pdf (88 pages, 2718721 bytes).
 PDF statistics:
- 1655 PDF objects out of 1728 (max. 8388607)
- 399 named destinations out of 1000 (max. 500000)
- 49811 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1748 PDF objects out of 2073 (max. 8388607)
+ 422 named destinations out of 1000 (max. 500000)
+ 49887 words of extra memory for PDF output out of 51595 (max. 10000000)
 

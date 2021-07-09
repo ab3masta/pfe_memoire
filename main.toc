@@ -126,6 +126,13 @@
 \contentsline {xpart}{Contributions}{69}{part.2}%
 \contentsline {chapter}{\numberline {6}Contribution and Results}{69}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Introduction}{70}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Conclusion}{70}{section.6.2}%
-\contentsline {part}{Conclusion Générale}{70}{section.6.2}%
-\contentsline {chapter}{Bibliographie}{72}{chapter*.41}%
+\contentsline {section}{\numberline {6.2}Approche proposée}{70}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Implémentations et résultats expérimentaux}{70}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Outils de développement}{70}{subsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.1}Materiels}{70}{subsubsection.6.3.1.1}%
+\contentsline {subsection}{\numberline {6.3.2}Collecte et préparation des données}{73}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}IRT}{73}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Clustering}{73}{subsection.6.3.4}%
+\contentsline {section}{\numberline {6.4}Conclusion}{73}{section.6.4}%
+\contentsline {part}{Conclusion Générale}{73}{section.6.4}%
+\contentsline {chapter}{Bibliographie}{75}{chapter*.45}%

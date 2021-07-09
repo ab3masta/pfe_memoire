@@ -121,6 +121,13 @@
 \BOOKMARK [-1][-]{part.2}{II Contributions}{}% 121
 \BOOKMARK [0][-]{chapter.6}{Contribution and Results}{part.2}% 122
 \BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 123
-\BOOKMARK [1][-]{section.6.2}{Conclusion}{chapter.6}% 124
-\BOOKMARK [-1][-]{section.6.2}{Conclusion G\351n\351rale}{}% 125
-\BOOKMARK [0][-]{chapter*.41}{Bibliographie}{section.6.2}% 126
+\BOOKMARK [1][-]{section.6.2}{Approche propos\351e}{chapter.6}% 124
+\BOOKMARK [1][-]{section.6.3}{Impl\351mentations et r\351sultats exp\351rimentaux}{chapter.6}% 125
+\BOOKMARK [2][-]{subsection.6.3.1}{Outils de d\351veloppement}{section.6.3}% 126
+\BOOKMARK [3][-]{subsubsection.6.3.1.1}{Materiels}{subsection.6.3.1}% 127
+\BOOKMARK [2][-]{subsection.6.3.2}{Collecte et pr\351paration des donn\351es}{section.6.3}% 128
+\BOOKMARK [2][-]{subsection.6.3.3}{IRT}{section.6.3}% 129
+\BOOKMARK [2][-]{subsection.6.3.4}{Clustering}{section.6.3}% 130
+\BOOKMARK [1][-]{section.6.4}{Conclusion}{chapter.6}% 131
+\BOOKMARK [-1][-]{section.6.4}{Conclusion G\351n\351rale}{}% 132
+\BOOKMARK [0][-]{chapter*.45}{Bibliographie}{section.6.4}% 133

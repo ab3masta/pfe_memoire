@@ -7,6 +7,12 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 Database file #1: biblo.bib
 Warning--entry type for "iris_dataset" isn't style-file defined
 --line 871 of file biblo.bib
+Warning--entry type for "python_cours" isn't style-file defined
+--line 888 of file biblo.bib
+Warning--entry type for "anaconda_website" isn't style-file defined
+--line 893 of file biblo.bib
+Warning--entry type for "conda_website" isn't style-file defined
+--line 899 of file biblo.bib
 Warning--empty publisher in data_mining_concepts_techniques
 Warning--empty publisher in handbook_of_educational_data_mining
 Warning--empty booktitle in user_modelling_help_systems
@@ -23,45 +29,45 @@ Warning--empty publisher in data_analysis_irt
 Warning--empty journal in pang2005introduction
 Warning--empty publisher in Finding_Groups_in_Data_An_Introduction_To_Cluster_Analysis
 Warning--empty journal in bezdek1973cluster
-You've used 88 entries,
+You've used 97 entries,
             1876 wiz_defined-function locations,
-            984 strings with 18593 characters,
-and the built_in function-call counts, 23551 in all, are:
-= -- 2423
-> -- 751
+            1019 strings with 19701 characters,
+and the built_in function-call counts, 24812 in all, are:
+= -- 2545
+> -- 789
 < -- 0
-+ -- 288
-- -- 200
-* -- 1628
-:= -- 3224
-add.period$ -- 101
-call.type$ -- 88
-change.case$ -- 79
++ -- 306
+- -- 209
+* -- 1684
+:= -- 3380
+add.period$ -- 115
+call.type$ -- 97
+change.case$ -- 87
 chr.to.int$ -- 0
-cite$ -- 104
-duplicate$ -- 1235
-empty$ -- 2298
-format.name$ -- 200
-if$ -- 5807
+cite$ -- 113
+duplicate$ -- 1289
+empty$ -- 2466
+format.name$ -- 209
+if$ -- 6143
 int.to.chr$ -- 0
-int.to.str$ -- 88
-missing$ -- 88
-newline$ -- 281
-num.names$ -- 95
-pop$ -- 297
+int.to.str$ -- 97
+missing$ -- 91
+newline$ -- 314
+num.names$ -- 99
+pop$ -- 354
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 865
+skip$ -- 907
 stack$ -- 0
-substring$ -- 1691
-swap$ -- 506
+substring$ -- 1699
+swap$ -- 516
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 16
-while$ -- 252
-width$ -- 90
-write$ -- 855
-(There were 17 warnings)
+while$ -- 257
+width$ -- 99
+write$ -- 930
+(There were 20 warnings)
