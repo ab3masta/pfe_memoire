@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{Scheuer2012}
 O.~Scheuer and B.~M. McLaren, {\em Educational Data Mining}, pp.~1075--1079.
@@ -420,10 +420,17 @@ X.~L. Xie and G.~Beni, ``A validity measure for fuzzy clustering,'' {\em IEEE
 \bibitem{craigloewen_msft}
 Craigloewen-Msft, ``Comparing wsl 1 and wsl 2.''
 
+\bibitem{10.5555/1593511}
+G.~Van~Rossum and F.~L. Drake, {\em Python 3 Reference Manual}.
+\newblock Scotts Valley, CA: CreateSpace, 2009.
+
 \bibitem{python_cours}
 ``Python.''
   \href{https://pythonprogramminglanguage.com}{\color{blue}{https://pythonprogramminglanguage.com}}.
 \newblock accessed: 09-July-2021.
+
+\bibitem{anaconda_citation}
+``Anaconda software distribution,'' 2020.
 
 \bibitem{anaconda_website}
 ``Anaconda.''
@@ -434,6 +441,37 @@ Craigloewen-Msft, ``Comparing wsl 1 and wsl 2.''
 ``Conda.''
   \href{https://conda.io/en/latest/}{\color{blue}{https://conda.io/en/latest/}}.
 \newblock accessed: 09-July-2021.
+
+\bibitem{Kluyver2016jupyter}
+T.~Kluyver, B.~Ragan-Kelley, F.~P{\'e}rez, B.~Granger, M.~Bussonnier,
+  J.~Frederic, K.~Kelley, J.~Hamrick, J.~Grout, S.~Corlay, P.~Ivanov, D.~Avila,
+  S.~Abdalla, and C.~Willing, ``Jupyter notebooks -- a publishing format for
+  reproducible computational workflows,'' in {\em Positioning and Power in
+  Academic Publishing: Players, Agents and Agendas} (F.~Loizides and
+  B.~Schmidt, eds.), pp.~87 -- 90, IOS Press, 2016.
+
+\bibitem{pedregosa2011scikit}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, {\em et~al.},
+  ``Scikit-learn: Machine learning in python,'' {\em Journal of machine
+  learning research}, vol.~12, no.~Oct, pp.~2825--2830, 2011.
+
+\bibitem{mckinney2010data}
+W.~McKinney {\em et~al.}, ``Data structures for statistical computing in
+  python,'' in {\em Proceedings of the 9th Python in Science Conference},
+  vol.~445, pp.~51--56, Austin, TX, 2010.
+
+\bibitem{2020NumPy-Array}
+C.~R. Harris, K.~J. Millman, S.~J. van~der Walt, R.~Gommers, P.~Virtanen,
+  D.~Cournapeau, E.~Wieser, J.~Taylor, S.~Berg, N.~J. Smith, R.~Kern, M.~Picus,
+  S.~Hoyer, M.~H. van Kerkwijk, M.~Brett, A.~Haldane, J.~Fernández~del Río,
+  M.~Wiebe, P.~Peterson, P.~Gérard-Marchant, K.~Sheppard, T.~Reddy,
+  W.~Weckesser, H.~Abbasi, C.~Gohlke, and T.~E. Oliphant, ``Array programming
+  with {NumPy},'' {\em Nature}, vol.~585, p.~357–362, 2020.
+
+\bibitem{hunter2007matplotlib}
+J.~D. Hunter, ``Matplotlib: A 2d graphics environment,'' {\em Computing in
+  science \& engineering}, vol.~9, no.~3, pp.~90--95, 2007.
 
 \bibitem{tosi2009matplotlib}
 S.~Tosi, {\em Matplotlib for Python Developers: Build Remarkable Publication

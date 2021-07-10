@@ -29,45 +29,45 @@ Warning--empty publisher in data_analysis_irt
 Warning--empty journal in pang2005introduction
 Warning--empty publisher in Finding_Groups_in_Data_An_Introduction_To_Cluster_Analysis
 Warning--empty journal in bezdek1973cluster
-You've used 97 entries,
+You've used 104 entries,
             1876 wiz_defined-function locations,
-            1019 strings with 19701 characters,
-and the built_in function-call counts, 24812 in all, are:
-= -- 2545
-> -- 789
+            1060 strings with 21605 characters,
+and the built_in function-call counts, 27356 in all, are:
+= -- 2753
+> -- 977
 < -- 0
-+ -- 306
-- -- 209
-* -- 1684
-:= -- 3380
-add.period$ -- 115
-call.type$ -- 97
-change.case$ -- 87
++ -- 371
+- -- 267
+* -- 1890
+:= -- 3762
+add.period$ -- 123
+call.type$ -- 104
+change.case$ -- 93
 chr.to.int$ -- 0
-cite$ -- 113
-duplicate$ -- 1289
-empty$ -- 2466
-format.name$ -- 209
-if$ -- 6143
+cite$ -- 120
+duplicate$ -- 1402
+empty$ -- 2663
+format.name$ -- 267
+if$ -- 6737
 int.to.chr$ -- 0
-int.to.str$ -- 97
-missing$ -- 91
-newline$ -- 314
-num.names$ -- 99
-pop$ -- 354
+int.to.str$ -- 104
+missing$ -- 98
+newline$ -- 336
+num.names$ -- 107
+pop$ -- 384
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 907
+skip$ -- 997
 stack$ -- 0
-substring$ -- 1699
-swap$ -- 516
+substring$ -- 1833
+swap$ -- 570
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 16
-while$ -- 257
-width$ -- 99
-write$ -- 930
+while$ -- 276
+width$ -- 107
+write$ -- 998
 (There were 20 warnings)

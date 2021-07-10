@@ -1881,6 +1881,20 @@ INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\acronymes.tex
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\acronymes.tex
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\acronymes.tex
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\acronymes.tex
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\introduction.tex
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\introduction.tex
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\introduction.tex
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\introduction.tex
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\introduction.tex
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\introduction.tex
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\introduction.tex
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\introduction.tex
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\introduction.tex
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\introduction.tex
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\introduction.tex
+INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
+INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
 INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\premierchapitre.tex
@@ -1914,8 +1928,6 @@ INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\main.mtc3
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\main.mtc3
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\main.mtc3
 INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
-INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
-INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre1\Les étapes de l'extraction de connaissances à partir de données.png
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre1\Les étapes de l'extraction de connaissances à partir de données.png
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre1\Les étapes de l'extraction de connaissances à partir de données.png
@@ -1942,7 +1954,6 @@ INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre1\Data mining a
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre1\Data mining application process applied in education.png
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre1\Data mining application process applied in education.png
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre1\Data mining application process applied in education.png
-INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre1\edm techniques.png
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre1\edm techniques.png
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre1\edm techniques.png
@@ -2279,26 +2290,41 @@ INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\scikit_learn.
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\scikit_learn.png
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\scikit_learn.png
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\scikit_learn.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\python.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\python.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\python.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\python.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\anaconda.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\anaconda.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\anaconda.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\anaconda.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\jupyter.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\jupyter.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\jupyter.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\jupyter.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\python.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\python.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\python.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\python.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\anaconda.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\anaconda.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\anaconda.png
-INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\anaconda.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\pandas.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\pandas.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\pandas.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\pandas.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\pandas.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\pandas.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\pandas.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\numpy.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\numpy.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\numpy.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\numpy.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\numpy.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\numpy.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\numpy.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\matplotlib.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\matplotlib.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\matplotlib.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\matplotlib.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\matplotlib.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\matplotlib.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\matplotlib.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\stan.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\stan.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\stan.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\stan.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\stan.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\stan.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\stan.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\arviz2.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\arviz2.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\arviz2.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\arviz2.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\arviz2.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\arviz2.png
+INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\images\chapitre7\arviz2.png
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\conclusiongenerale.tex
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\conclusiongenerale.tex
 INPUT d:\codeSourceFolder\1111____PFE\pfe_memoire\conclusiongenerale.tex
