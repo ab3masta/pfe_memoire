@@ -1,3 +1,4 @@
+
 \chapter{Contribution and Results}
 \minitoc
 \thispagestyle{empty}
@@ -148,7 +149,43 @@ les outils matériels et logiciels utilisés pour le développement sont :
 
 \subsection{Collecte et préparation des données}
 \href{https://kdd.org/kdd-cup/view/kdd-cup-2010-student-performance-evaluation/Intro}{\color{blue}{KDD Cup 2010}} est une compétition d'exploration de données éducatives dans laquelle les participants sont chargés de prédire les performances des élèves aux problèmes algébriques en fonction des informations concernant les performances passées. \\
-\textbf{Algèbre I 2005-2006} est un jeu de données qui est fournit pour débuter et se familiarisé avec le format et le développement d’un modèle d’apprentissage.
+\textbf{Algèbre I 2005-2006} \cite{blog_kdd} est un jeu de données qui est fourni pour débuter et se familiarisé avec le format et le développement d’un modèle d’apprentissage. Une brève description du dataset initial avant l’étape du pre-processing est dans le tableau \ref{dataset_features_describe}.
+
+\begin{table}[H]
+	\centering
+	\addtolength{\leftskip} {-4cm}
+	\addtolength{\rightskip}{-4.5cm}
+	\begin{tabular}{|m{5cm}|m{8cm}|m{4cm}|}
+	\hline
+	\rowcolor{blueforest}
+	\color{white} \textbf{Caractéristique} & \color{white} \textbf{Description}  & \color{white} \textbf{Nombre Total}\\
+	\hline
+	\multicolumn{3}{|m{17cm}|}{\centering le nombre total de transactions = 809694. }\\ \hline
+    \textbf{Anon Student Id} &  identifiant unique et anonyme d'un étudiant & 574 \\ \hline
+    \textbf{Problem Name} &  identifiant unique d'un problème & 1084 \\ \hline 
+    \textbf{Correct First Attempt} &  l'évaluation par le tuteur de la première tentative de l'étudiant 1 si correcte, 0 sinon. &  \\ \hline
+
+    \multicolumn{3}{|m{17cm}|}{ \centering Et 11 autres carateristiques du dataset : \textbf{Row}, \textbf{Problem View}, \textbf{Step Start Time}, etc.} \\ \hline
+  \end{tabular}
+	\caption{Description et statistiques du jeu de données.}
+	\label{dataset_features_describe}
+\end{table}
+
+\newpage
+Les étapes suivies pour la collecte et la préparation du dataset sont illustré par la figure.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre7/preprocessing_steps.png}
+	\end{center}
+	\caption{Le pre-processing du dataset.}
+	\label{datatset_pre-processing}
+\end{figure}
+
+\begin{description}
+    \item[\textbf{Première étape : }] dans notre travail, nous nous concentrons sur la performance de l'apprenant qui est liée à l'item, au résultat obtenu par l'apprenant : (correct/incorrect soit 0 ou 1), ou en prenant un indice (hint).
+    \item[\textbf{Deuxième étape : }] seulement les apprenants ayant au moins 10 interactions avec les items ont été sélectionner. Les valeurs qui ne sont pas binaire (0 ou 1) dans la colonne « correct » sont éliminées. Les valeurs de la colonne « user\char`_id »  et « item\char`_id » sont encoder et où « id = 0 » est remplacer le nombre total des apprenants et des items respectivement. L’encodage permet d’encoder les identifiants en valeur numérique, parce que le modèle IRT prend seulement des valeurs numériques à partir de 1. La colonne « answers\char`_using\char`_hint » ajouter au dataset sera utilisé pour calculer la matrice de similarité entre items selon notre critère : réponse correcte avec aide (hints) et sans aide, et incorrecte avec aide et sans aide.
+\end{description}
 
 \subsection{IRT}
 

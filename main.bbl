@@ -496,4 +496,8 @@ R.~Kumar, C.~Carroll, A.~Hartikainen, and O.~Martin, ``Arviz a unified library
   \href{https://arviz-devs.github.io/arviz/}{\color{blue}{https://arviz-devs.github.io/arviz/}}.
 \newblock accessed: 09-July-2021.
 
+\bibitem{blog_kdd}
+S.~Blog, ``Kdd cup 2010 : Student performance evaluation.''
+  \href{https://kdd.org/kdd-cup/view/kdd-cup-2010-student-performance-evaluation/Data}{\color{blue}{https://kdd.org/kdd-cup/view/kdd-cup-2010-student-performance-evaluation/Data}}.
+
 \end{thebibliography}
