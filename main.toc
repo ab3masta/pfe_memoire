@@ -1,4 +1,4 @@
-\babel@toc {french}{}
+\babel@toc {english}{}
 \babel@toc {french}{}
 \contentsline {chapter}{Table des figures}{ix}{chapter*.3}%
 \contentsline {chapter}{Liste des tableaux}{x}{chapter*.4}%
@@ -82,7 +82,7 @@
 \contentsline {subsection}{\numberline {4.4.1}IRT avec Stan}{48}{subsection.4.4.1}%
 \contentsline {subsubsection}{\numberline {4.4.1.1}Déclaration des données}{48}{subsubsection.4.4.1.1}%
 \contentsline {subsubsection}{\numberline {4.4.1.2}Les paramètres du model de Rasch (1PL)}{49}{subsubsection.4.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.4.1.3}Le model de Rasch}{49}{subsubsection.4.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.4.1.3}Le modèle de Rasch}{49}{subsubsection.4.4.1.3}%
 \contentsline {subsubsection}{\numberline {4.4.1.4}Les predictions}{50}{subsubsection.4.4.1.4}%
 \contentsline {section}{\numberline {4.5}Conclusion}{50}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Clustering Hard et Soft}{51}{chapter.5}%
@@ -137,7 +137,7 @@
 \contentsline {subsubsection}{\numberline {6.3.3.1}Spécification et chargement du modèle}{78}{subsubsection.6.3.3.1}%
 \contentsline {subsubsection}{\numberline {6.3.3.2}Compilation du modèle et échantillonnage }{79}{subsubsection.6.3.3.2}%
 \contentsline {subsubsection}{\numberline {6.3.3.3}Résultats d’échantillonnage, diagnostique du modèle, prédiction et validation}{79}{subsubsection.6.3.3.3}%
-\contentsline {subsection}{\numberline {6.3.4}Clustering hard et soft de la matrice de similarité}{82}{subsection.6.3.4}%
-\contentsline {section}{\numberline {6.4}Conclusion}{82}{section.6.4}%
-\contentsline {part}{Conclusion Générale}{82}{section.6.4}%
-\contentsline {chapter}{Bibliographie}{84}{chapter*.52}%
+\contentsline {subsection}{\numberline {6.3.4}Clustering hard et soft de la matrice de similarité}{83}{subsection.6.3.4}%
+\contentsline {section}{\numberline {6.4}Conclusion}{83}{section.6.4}%
+\contentsline {part}{Conclusion Générale}{83}{section.6.4}%
+\contentsline {chapter}{Bibliographie}{85}{chapter*.54}%

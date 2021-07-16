@@ -255,22 +255,23 @@ Nous n’avons pas utilisé le bloc « generated quantities » parce qu’en ajo
 \subsubsection{Compilation du modèle et échantillonnage }
 
 Après avoir spécifier le modèle, la compilation (en code c++) est faite en utilisant la fonction \colorbox{gray!30}{stan.build()} qui prend en paramètre le modèle , les données et random\char`_seed qui contrôle l’effet aléatoire. Le script est :
-\begin{lstlisting}[language=Stan,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+\begin{lstlisting}[language=Stan,basicstyle=\normalsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalsize\tiny\color{white}]
 	posteriori = stan.build(_1pl_model,data=train_data,random_seed=2021)
 \end{lstlisting}
 
 Une fois le modèle compiler avec les données, la méthode \colorbox{gray!30}{sample()} fait des échantillonnages dans les distributions spécifier dans le modèle. La méthode \colorbox{gray!30}{sample()} prend en paramètre \colorbox{gray!30}{num\char`_chains}   le nombre de chaine  qui sont exécuter en parallèle, \colorbox{gray!30}{num\char`_samples}  le nombre d’échantillon à générer, \colorbox{gray!30}{num\char`_warmup}  le nombre d’échantillon initial à rejeter qui sont généralement loin d'être optimales et \colorbox{gray!30}{num\char`_thin} spécifie un intervalle d'échantillonnage auquel les échantillons sont conservés.
 
-\begin{lstlisting}[language=Stan,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
-	fit = posteriori.sample(num_chains=2, num_samples=50000,num_warmup=1000,num_thin=1)
+\begin{lstlisting}[language=Stan,basicstyle=\normalsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalsize\tiny\color{white}]
+	fit = posteriori.sample(num_chains=2, num_samples=50000,
+	      num_warmup=1000,num_thin=1)
 \end{lstlisting}
 
 
 
 \subsubsection{Résultats d’échantillonnage, diagnostique du modèle, prédiction et validation}
 
-Une fois l'échantillonnage terminé, l'objet \colorbox{gray!30}{stanfit} renvoyer par la méthode \colorbox{gray!30}{sample()} contient la sortie dérivée de l’ajustement du modèle c’est-à dire les résultats de l'inférence. Les résultats obtenus par notre modèle sont affichés dans le tableau de la figure \ref{stanfit_object}.
 
+Une fois l’échantillonnage terminé, l’objet \colorbox{gray!30}{stanfit} renvoyer par la méthode \colorbox{gray!30}{sample()} contient la sortie dérivée de l’ajustement du modèle c’est-à dire les résultats de l’inférence. L’objet \colorbox{gray!30}{fit} du modèle est afficher dans le tableau de la figure \ref{stanfit_object}. La figure \ref{model_trace-plot} affiche les distributions postérieures des paramètres du modèle pour toute les itérations et la figure \ref{params_posterior_distribution} la moyenne des distributions postérieures.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/chapitre7/stanfit_object.png}
@@ -284,10 +285,17 @@ Une fois l'échantillonnage terminé, l'objet \colorbox{gray!30}{stanfit} renvoy
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/chapitre7/model_plot-trace.png}
 	\end{center}
-	\caption{L’objet stanfit de notre modèle.}
+	\caption{Les distributions postérieures du modèle.}
 	\label{model_trace-plot}
 \end{figure}
 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre7/params_posterior_distribution.png}
+	\end{center}
+	\caption{La moyenne des distributions postérieures du modèle.}
+	\label{params_posterior_distribution}
+\end{figure}
 
 En plus des valeurs des paramètres du modèle, le tableau de la figure contient également d’autre valeurs des paramètres utilisés par l'échantillonneur qui vont servir de diagnostique.
 L'étiquette \colorbox{gray!30}{lp\char`_\char`_} est pour les densités logarithmiques (jusqu'à une constante additive), \colorbox{gray!30}{accept\char`_stat\char`_\char`_} est pour les probabilités d'acceptation, \colorbox{gray!30}{stepsize\char`_\char`_} est pour la taille de pas de l'intégrateur leapfrog pour simuler l'hamiltonien, \colorbox{gray!30}{treedepth\char`_\char`_} est la profondeur de l'arbre exploré par l'échantillonneur sans demi-tour (Journal base 2 du nombre d'évaluations de densité et de gradient log), \colorbox{gray!30}{n\char`_leapfrog\char`_\char`_} est le nombre d'évaluations de densité et de gradient, \colorbox{gray!30}{divergent\char`_\char`_} est un indicateur indiquant une instabilité numérique lors de l'intégration numérique entraînant la non conservation de l'hamiltonien, et \colorbox{gray!30}{energy\char`_\char`_} est la valeur hamiltonienne. \\
@@ -302,8 +310,6 @@ L'étiquette \colorbox{gray!30}{lp\char`_\char`_} est pour les densités logarit
 	\label{bfmi_of_model}
 \end{figure}
 
-\newpage
-
 \textbf{Le Rhat :} un Rhat > 1.1 indique généralement des problèmes d'ajustement et si Rhat est d'environ 1, alors il n’y aura aucune diminution de la variance d'échantillonnage, quelle que soit la durée d’itération, et donc la chaîne de Markov est susceptible (mais pas garantie) d'avoir convergé. Celui ne notre modèle est d'environ 1 pour tous les paramètres.
 
 \begin{figure}[H]
@@ -313,7 +319,30 @@ L'étiquette \colorbox{gray!30}{lp\char`_\char`_} est pour les densités logarit
 	\caption{Le Rhat du modèle.}
 	\label{output_of_rhat}
 \end{figure}
-\textbf{Vérification des divergences }: aucune divergence dans le modèle comme le montre la figure.
+\textbf{Vérification des divergences }: aucune divergence dans le modèle comme le montre la figure \ref{diverging_output}.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre7/diverging_output.png}
+	\end{center}
+	\caption{La sortie de la divergence du modèle.}
+	\label{diverging_output}
+\end{figure}
+
+Ensuite après diagnostique du modèle, les valeurs des paramètres obtenu peuvent être utilisé pour faire des prédictions postérieures en utilisant la fonction logistique de Rasch \ref{posterior_probability_distribution} ou bien faire des prédictions directement en utilisant le bloc generated quantities \ref{generated_quantities} et aussi récupérer le log de vraisemblance (log likelihood) qui est utilisé pour comparer plusieurs modèles (sélection de modèle). Mais l’utilisation de ce bloc entraine un coût de calcul et d'utilisation de la mémoire.
+
+\begin{lstlisting}[language=Python,label={answersusinghint},stringstyle=\color{deepgreen},basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+ability = np.mean(fit['ability'],axis=1)
+difficulty = np.mean(fit['difficulty'],axis=1)
+y_pred = []
+for i in range(0,len(needed)):
+	diff = train_data['item'][i] # Item index
+	abilt = train_data['subject'][i] # Subject index
+	p = np.exp(ability[abilt - 1 ] - difficulty[diff - 1])/(1+np.exp(ability[abilt - 1] 
+	   - difficulty[diff - 1]))
+	y_pred.append(p)
+y_pred = np.round(y_pred).astype(int)
+\end{lstlisting}
 
 \subsection{Clustering hard et soft de la matrice de similarité}
 
