@@ -43,3 +43,7 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Contribution and Results}{72}{chapter.6}%
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Le pre-processing du dataset.\relax }}{77}{figure.caption.46}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces L’objet stanfit de notre modèle.\relax }}{80}{figure.caption.47}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces L’objet stanfit de notre modèle.\relax }}{80}{figure.caption.48}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces BFMI du modèle.\relax }}{81}{figure.caption.49}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Le Rhat du modèle.\relax }}{82}{figure.caption.50}%

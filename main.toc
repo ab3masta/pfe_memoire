@@ -133,8 +133,11 @@
 \contentsline {subsubsection}{\numberline {6.3.1.1}Materiels}{73}{subsubsection.6.3.1.1}%
 \contentsline {subsubsection}{\numberline {6.3.1.2}Outils et packages}{74}{subsubsection.6.3.1.2}%
 \contentsline {subsection}{\numberline {6.3.2}Collecte et préparation des données}{76}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}IRT}{78}{subsection.6.3.3}%
-\contentsline {subsection}{\numberline {6.3.4}Clustering}{78}{subsection.6.3.4}%
-\contentsline {section}{\numberline {6.4}Conclusion}{78}{section.6.4}%
-\contentsline {part}{Conclusion Générale}{78}{section.6.4}%
-\contentsline {chapter}{Bibliographie}{80}{chapter*.48}%
+\contentsline {subsection}{\numberline {6.3.3}Modèle IRT pour une inférence bayésienne}{78}{subsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.1}Spécification et chargement du modèle}{78}{subsubsection.6.3.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.3.2}Compilation du modèle et échantillonnage }{79}{subsubsection.6.3.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3.3}Résultats d’échantillonnage, diagnostique du modèle, prédiction et validation}{79}{subsubsection.6.3.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Clustering hard et soft de la matrice de similarité}{82}{subsection.6.3.4}%
+\contentsline {section}{\numberline {6.4}Conclusion}{82}{section.6.4}%
+\contentsline {part}{Conclusion Générale}{82}{section.6.4}%
+\contentsline {chapter}{Bibliographie}{84}{chapter*.52}%

@@ -128,8 +128,11 @@
 \BOOKMARK [3][-]{subsubsection.6.3.1.1}{Materiels}{subsection.6.3.1}% 128
 \BOOKMARK [3][-]{subsubsection.6.3.1.2}{Outils et packages}{subsection.6.3.1}% 129
 \BOOKMARK [2][-]{subsection.6.3.2}{Collecte et pr\351paration des donn\351es}{section.6.3}% 130
-\BOOKMARK [2][-]{subsection.6.3.3}{IRT}{section.6.3}% 131
-\BOOKMARK [2][-]{subsection.6.3.4}{Clustering}{section.6.3}% 132
-\BOOKMARK [1][-]{section.6.4}{Conclusion}{chapter.6}% 133
-\BOOKMARK [-1][-]{section.6.4}{Conclusion G\351n\351rale}{}% 134
-\BOOKMARK [0][-]{chapter*.48}{Bibliographie}{section.6.4}% 135
+\BOOKMARK [2][-]{subsection.6.3.3}{Mod\350le IRT pour une inf\351rence bay\351sienne}{section.6.3}% 131
+\BOOKMARK [3][-]{subsubsection.6.3.3.1}{Sp\351cification et chargement du mod\350le}{subsection.6.3.3}% 132
+\BOOKMARK [3][-]{subsubsection.6.3.3.2}{Compilation du mod\350le et \351chantillonnage }{subsection.6.3.3}% 133
+\BOOKMARK [3][-]{subsubsection.6.3.3.3}{R\351sultats d\220\351chantillonnage, diagnostique du mod\350le, pr\351diction et validation}{subsection.6.3.3}% 134
+\BOOKMARK [2][-]{subsection.6.3.4}{Clustering hard et soft de la matrice de similarit\351}{section.6.3}% 135
+\BOOKMARK [1][-]{section.6.4}{Conclusion}{chapter.6}% 136
+\BOOKMARK [-1][-]{section.6.4}{Conclusion G\351n\351rale}{}% 137
+\BOOKMARK [0][-]{chapter*.52}{Bibliographie}{section.6.4}% 138
