@@ -329,9 +329,9 @@ L'étiquette \colorbox{gray!30}{lp\char`_\char`_} est pour les densités logarit
 	\label{diverging_output}
 \end{figure}
 
-Ensuite après diagnostique du modèle, les valeurs des paramètres obtenu peuvent être utilisé pour faire des prédictions postérieures en utilisant la fonction logistique de Rasch \ref{posterior_probability_distribution} ou bien faire des prédictions directement en utilisant le bloc generated quantities \ref{generated_quantities} et aussi récupérer le log de vraisemblance (log likelihood) qui est utilisé pour comparer plusieurs modèles (sélection de modèle). Mais l’utilisation de ce bloc entraine un coût de calcul et d'utilisation de la mémoire.
+Ensuite après diagnostique du modèle, les valeurs des paramètres obtenu peuvent être utilisé pour faire des prédictions postérieures en utilisant la fonction logistique de Rasch \ref{posterior_probability_distribution} ou bien faire des prédictions directement en utilisant le bloc generated quantities \ref{generated_quantities} et aussi récupérer le log de vraisemblance (log likelihood) qui est utilisé pour comparer plusieurs modèles (sélection de modèle). Mais l’utilisation de ce bloc entraine un coût de calcul et d'utilisation de la mémoire. Le script est utilisé pour prédire la probabilité de réussite à un item \ref{pred_script}. C’est ainsi que l’ajustement bayésien des réponses aux items a été fait avec un modèle d’inférence bayésien.
 
-\begin{lstlisting}[language=Python,label={answersusinghint},stringstyle=\color{deepgreen},basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+\begin{lstlisting}[language=Python,label={pred_script},stringstyle=\color{deepgreen},basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
 ability = np.mean(fit['ability'],axis=1)
 difficulty = np.mean(fit['difficulty'],axis=1)
 y_pred = []
@@ -343,6 +343,39 @@ for i in range(0,len(needed)):
 	y_pred.append(p)
 y_pred = np.round(y_pred).astype(int)
 \end{lstlisting}
+
+Nous terminons donc cette étape avec la validation des prédictions faite par le script. Plusieurs métriques peuvent être utilisé pour valider les prédictions d’un modèle de classification parce qu’on a deux classes (réponses correcte ou incorrecte).
+
+\begin{itemize}
+	\item \textbf{Accuracy :}
+	\item \textbf{Mean squared error :}
+	\item \textbf{Roc auc score :}
+	\item \textbf{Cohen kappa :}	
+\end{itemize}
+Celui du modèle sont afficher dans le tableau et roc\char`_auc\char`_score est illustré par la figure.
+
+\begin{minipage}{\textwidth}
+	\begin{minipage}[b]{0.49\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{images/chapitre7/roc_auc.png}
+	\captionof{figure}{A table beside a figure}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.49\textwidth}
+	\centering
+	\begin{tabular}{|m{3cm}|m{3cm}|}
+	\hline
+	\rowcolor{blueforest}
+	\color{white} \textbf{Métriques} & \color{white} \textbf{valeurs}  \\
+	\hline\hline
+	mse & 0.421189 \\ \hline
+	kappa & 0.1587 \\ \hline
+	auc & 0.611 \\ \hline
+	acc & 0.57881 \\ \hline
+	\end{tabular}
+	\captionof{table}{A table beside a figure}
+	\end{minipage}
+\end{minipage}
 
 \subsection{Clustering hard et soft de la matrice de similarité}
 
