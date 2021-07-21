@@ -148,6 +148,7 @@ les outils matériels et logiciels utilisés pour le développement sont :
 \end{table}
 
 \subsection{Collecte et préparation des données}
+\label{collect_encoding}
 \href{https://kdd.org/kdd-cup/view/kdd-cup-2010-student-performance-evaluation/Intro}{\color{blue}{KDD Cup 2010}} est une compétition d'exploration de données éducatives dans laquelle les participants sont chargés de prédire les performances des élèves aux problèmes algébriques en fonction des informations concernant les performances passées. \\
 \textbf{Algèbre I 2005-2006} \cite{blog_kdd} est un jeu de données qui est fourni pour débuter et se familiarisé avec le format et le développement d’un modèle d’apprentissage. Une brève description du dataset initial avant l’étape du pre-processing est dans le tableau \ref{dataset_features_describe}.
 
@@ -243,7 +244,7 @@ model {
 \end{lstlisting}
 Nous n’avons pas utilisé le bloc « generated quantities » parce qu’en ajoutant ce bloc la taille de modèle ajusté devient déraisonnablement grande. Avant de charger et compiler le modèle, Stan prend les données dans un dictionnaire, où les noms des clés doivent être identiques aux noms spécifiés dans la section data du modèle. Les données de notre dataset dans format dictionnaire est :
 
-\begin{lstlisting}[language=Stan,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+\begin{lstlisting}[language=Python,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
 	{'I': 1084,
 	'N': 809660,
 	'S': 569,
@@ -378,6 +379,89 @@ Celui du modèle sont afficher dans le tableau et roc\char`_auc\char`_score est 
 \end{minipage}
 
 \subsection{Clustering hard et soft de la matrice de similarité}
+
+\subsubsection{Création de la matrice de similarité}
+Les données collecter dans la partie [\ref{collect_encoding}] et ceux de l’ajustement bayésien avec le modèle de Rasch (c’est-à dire les prédictions faites faire le modèle d’inférence bayésien) sont utilisée pour créer la matrice de réponse selon quatre catégories : correct avec aide (CH) et sans aide (CS), et incorrect avec aide (IH) et sans aide (IS). La matrice de réponses est ensuite utilisée pour créer la matrice de similarité entre items avec le coefficient de kappa. La figure \ref{similarity_steps} illustre toutes les étapes. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre7/similarity_steps.png}
+	\end{center}
+	\caption{Les étapes de calcule de la matrice de similarité.}
+	\label{similarity_steps}
+\end{figure}
+
+Le script utiliser pour calculer la matrice des sommes des réponses est :
+\begin{lstlisting}[language=Python,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+	def createSumMatrix(data):
+    column_names = data['item_id'].unique()
+    rows_name = ["CH","CS","IH","IS"]
+    columns = pd.DataFrame(columns = column_names)
+    index = pd.DataFrame(rows_name, columns = ['catégories'])
+    sumOfAnswers_df = pd.concat([index,columns], axis=1)
+    sumOfAnswers_df = sumOfAnswers_df.set_index("catégories")
+    sumOfAnswers_df = sumOfAnswers_df.replace(np.nan,0)
+    column_name = data['item_id'].unique()
+    rows_name = data['user_id'].unique()
+    for i in tqdm(rows_name):
+        for j in column_name:
+            dictVal = data[(data["user_id"] == i) & (data["item_id"] == j)]['answers_using_hint'].value_counts()
+            chVal = sumOfAnswers_df.loc["CH",j]
+            csVal = sumOfAnswers_df.loc["CS",j]
+            ihVal = sumOfAnswers_df.loc["IH",j]
+            isVal = sumOfAnswers_df.loc["IS",j]
+            if len(dictVal) != 0:
+                for key, value in dictVal.items():
+                    key = int(key)
+                    if key == 1:
+                        chVal = int(chVal) + value
+                    elif key == 2:
+                        csVal = int(csVal) + value
+                    elif key == 3:
+                        ihVal = int(ihVal) + value
+                    elif key == 4:
+                        isVal = int(isVal) + value
+                sumOfAnswers_df.loc["CH",j] = chVal
+                sumOfAnswers_df.loc["CS",j] = csVal
+                sumOfAnswers_df.loc["IH",j] = ihVal
+                sumOfAnswers_df.loc["IS",j] = isVal
+	return sumOfAnswers_df
+	
+\end{lstlisting}
+
+La matrice de similarité entre items est calculée avec le code \ref{similarity_code}.
+\begin{lstlisting}[language=Python,label={similarity_code}, basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+	def item_to_item_similarity1(data):
+    column_names = data.columns
+    columns = pd.DataFrame(columns = column_names)
+    items = pd.DataFrame(column_names, columns = ['item_id'])
+    items_similarity = pd.concat([items,columns], axis=1)
+    items_similarity = items_similarity.set_index("item_id")
+    index = data.columns
+    for i in tqdm(index):
+        for j in index:
+            val = cohen_kappa_score(data[i],data[j])
+            items_similarity.loc[i,j] = val
+    return items_similarity
+\end{lstlisting}
+
+\subsubsection{Analyse en composantes principales (ACP)}
+
+
+\begin{lstlisting}[language=Python,label={pca_code}, basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+	pca = decomposition.PCA(n_components=2)
+    pca.fit(items_similarity)
+    features = pca.transform(items_similarity)
+\end{lstlisting}
+\subsubsection{Clustering hard}
+
+
+\subsubsection{Clustering Soft}
+
+
+\subsubsection{Validation du clustering}
+
+
 
 \section{Conclusion}
 

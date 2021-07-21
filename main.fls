@@ -1928,12 +1928,13 @@ INPUT .\main.mtc3
 INPUT main.mtc3
 INPUT main.mtc3
 INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
-INPUT .\images\chapitre1\Les étapes de l'extraction de connaissances à partir de données.png
-INPUT images\chapitre1\Les étapes de l'extraction de connaissances à partir de données.png
-INPUT .\images\chapitre1\Les étapes de l'extraction de connaissances à partir de données.png
-INPUT .\images\chapitre1\Les étapes de l'extraction de connaissances à partir de données.png
-INPUT .\images\chapitre1\Les étapes de l'extraction de connaissances à partir de données.png
-INPUT .\images\chapitre1\Les étapes de l'extraction de connaissances à partir de données.png
+INPUT .\images\chapitre1\extract_data_steps.png
+INPUT .\images\chapitre1\extract_data_steps.png
+INPUT images\chapitre1\extract_data_steps.png
+INPUT .\images\chapitre1\extract_data_steps.png
+INPUT .\images\chapitre1\extract_data_steps.png
+INPUT .\images\chapitre1\extract_data_steps.png
+INPUT .\images\chapitre1\extract_data_steps.png
 INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmcsc10.tfm
 INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmcsc10.tfm
 INPUT .\images\chapitre1\ITS architecture.png
@@ -2385,6 +2386,13 @@ INPUT .\images\chapitre7\roc_auc.png
 INPUT .\images\chapitre7\roc_auc.png
 INPUT .\images\chapitre7\roc_auc.png
 INPUT .\images\chapitre7\roc_auc.png
+INPUT .\images\chapitre7\similarity_steps.png
+INPUT .\images\chapitre7\similarity_steps.png
+INPUT images\chapitre7\similarity_steps.png
+INPUT .\images\chapitre7\similarity_steps.png
+INPUT .\images\chapitre7\similarity_steps.png
+INPUT .\images\chapitre7\similarity_steps.png
+INPUT .\images\chapitre7\similarity_steps.png
 INPUT .\conclusiongenerale.tex
 INPUT .\conclusiongenerale.tex
 INPUT .\conclusiongenerale.tex

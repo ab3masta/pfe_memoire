@@ -10,4 +10,9 @@
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.2}Compilation du modèle et échantillonnage }{\reset@font\mtcSSSfont 79}{subsubsection.6.3.3.2}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.3}Résultats d’échantillonnage, diagnostique du modèle, prédiction et validation}{\reset@font\mtcSSSfont 79}{subsubsection.6.3.3.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.4}Clustering hard et soft de la matrice de similarité}{\reset@font\mtcSSfont 84}{subsection.6.3.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.4}Conclusion}{\reset@font\mtcSfont 84}{section.6.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.4.1}Création de la matrice de similarité}{\reset@font\mtcSSSfont 84}{subsubsection.6.3.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.4.2}Analyse en composantes principales (ACP)}{\reset@font\mtcSSSfont 85}{subsubsection.6.3.4.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.4.3}Clustering hard}{\reset@font\mtcSSSfont 86}{subsubsection.6.3.4.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.4.4}Clustering Soft}{\reset@font\mtcSSSfont 86}{subsubsection.6.3.4.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.4.5}Validation du clustering}{\reset@font\mtcSSSfont 86}{subsubsection.6.3.4.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.4}Conclusion}{\reset@font\mtcSfont 86}{section.6.4}}

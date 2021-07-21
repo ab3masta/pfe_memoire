@@ -133,6 +133,11 @@
 \BOOKMARK [3][-]{subsubsection.6.3.3.2}{Compilation du mod\350le et \351chantillonnage }{subsection.6.3.3}% 133
 \BOOKMARK [3][-]{subsubsection.6.3.3.3}{R\351sultats d\220\351chantillonnage, diagnostique du mod\350le, pr\351diction et validation}{subsection.6.3.3}% 134
 \BOOKMARK [2][-]{subsection.6.3.4}{Clustering hard et soft de la matrice de similarit\351}{section.6.3}% 135
-\BOOKMARK [1][-]{section.6.4}{Conclusion}{chapter.6}% 136
-\BOOKMARK [-1][-]{section.6.4}{Conclusion G\351n\351rale}{}% 137
-\BOOKMARK [0][-]{chapter*.54}{Bibliographie}{section.6.4}% 138
+\BOOKMARK [3][-]{subsubsection.6.3.4.1}{Cr\351ation de la matrice de similarit\351}{subsection.6.3.4}% 136
+\BOOKMARK [3][-]{subsubsection.6.3.4.2}{Analyse en composantes principales \(ACP\)}{subsection.6.3.4}% 137
+\BOOKMARK [3][-]{subsubsection.6.3.4.3}{Clustering hard}{subsection.6.3.4}% 138
+\BOOKMARK [3][-]{subsubsection.6.3.4.4}{Clustering Soft}{subsection.6.3.4}% 139
+\BOOKMARK [3][-]{subsubsection.6.3.4.5}{Validation du clustering}{subsection.6.3.4}% 140
+\BOOKMARK [1][-]{section.6.4}{Conclusion}{chapter.6}% 141
+\BOOKMARK [-1][-]{section.6.4}{Conclusion G\351n\351rale}{}% 142
+\BOOKMARK [0][-]{chapter*.55}{Bibliographie}{section.6.4}% 143
