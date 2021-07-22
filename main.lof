@@ -51,3 +51,7 @@
 \contentsline {figure}{\numberline {6.7}{\ignorespaces La sortie de la divergence du modèle.\relax }}{82}{figure.caption.52}%
 \contentsline {figure}{\numberline {6.8}{\ignorespaces A table beside a figure\relax }}{83}{figure.6.8}%
 \contentsline {figure}{\numberline {6.9}{\ignorespaces Les étapes de calcule de la matrice de similarité.\relax }}{84}{figure.caption.53}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Le pourcentage de la variance préserver par les 10 premières composantes.}}}{87}{subfigure.10.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Visualisation en 2D des deux composantes.}}}{87}{subfigure.10.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Le pourcentage de la variance préserver par chacune des composantes.}}}{87}{subfigure.10.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering Visualisation de la composante 0 et 3 parmi les 392.}}}{87}{subfigure.10.4}%

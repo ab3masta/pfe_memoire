@@ -446,13 +446,51 @@ La matrice de similarité entre items est calculée avec le code \ref{similarity
 \end{lstlisting}
 
 \subsubsection{Analyse en composantes principales (ACP)}
+Les grands ensembles de données incluent souvent des mesures sur de nombreuses variables. Il peut être possible de réduire considérablement le nombre de variables tout en conservant une grande partie des informations dans l'ensemble de données d'origine. Un certain nombre de techniques de réduction de dimension existent pour ce faire, et l'analyse en composantes principales est probablement la plus largement utilisée d'entre elles. L'analyse en composantes principales réduira les dimensions et abstraire la signification des variables caractéristique et permet ainsi de saisir les facteurs qui influencent la variance des échantillons. \\
+L'analyse en composantes principales (ACP ou PCA en anglais pour principal component analysis), analyse un tableau de données représentant des observations décrites par plusieurs variables dépendantes, qui sont, en général, corrélées entre elles. Son objectif est d'extraire les informations importantes du tableau de données et d'exprimer ces informations sous la forme d'un ensemble de nouvelles variables orthogonales appelées composantes principales \cite{abdi2010principal}.
 
+Les objectifs de l’ACP sont :
+\begin{itemize}
+	\item Extraire les informations les plus importantes du tableau de données ;
+	\item Compresser la taille de l'ensemble de données en ne gardant que ces informations importantes ;
+	\item Simplifier la description de l'ensemble de données ; et
+	\item Analyser la structure des observations et les variables.
+\end{itemize}
+Afin d'atteindre ces objectifs, l'ACP calcule de nouvelles variables appelées composantes principales qui sont obtenues sous forme de combinaisons linéaires des variables d'origine. La première composante principale doit avoir la plus grande variance possible (c'est-à-dire l'inertie et donc cette composante « expliquera » ou « extraira » la plus grande partie de l'inertie du tableau de données). La deuxième composante est calculée sous la contrainte d'être orthogonale à la première composante et d'avoir la plus grande inertie possible. Les autres composantes sont calculées de la même manière. Les valeurs de ces nouvelles variables pour les observations sont appelées scores de facteurs, et ces scores de facteurs peuvent être interprétés géométriquement comme les projections des observations sur les composantes principales \cite{abdi2010principal}. \\
+Nous allons appliquer l'analyse en composantes principales avant le clustering, d’abord la visualisation des données ensuite la compression des données après quoi le clustering deviendra précis et efficace.
 
+\newpage
+
+\paragraph{Visualisation de données}
+On projette notre dataset dans un espace 2D.
+
+\begin{figure}[H]
+    \centering
+    \subfloat[\centering Le pourcentage de la variance préserver par les 10 premières composantes.]{{\includegraphics[width=7cm]{images/chapitre7/pca_features.png}}}%
+    \qquad
+    \subfloat[\centering Visualisation en 2D des deux composantes.]{{\includegraphics[width=7cm]{images/chapitre7/features_plot.png} }}%
+    %\caption{Dendrogramme}%
+\end{figure}
+
+\paragraph{Compression de données}
+
+La compression avec l’ACP réduit la taille du dataset tout en conservant 99\% de la variance des données.
+
+\begin{figure}[H]
+    \centering
+    \subfloat[\centering Le pourcentage de la variance préserver par chacune des composantes.]{{\includegraphics[width=7cm]{images/chapitre7/pca_variance_ratio.png}  }}%
+    \qquad
+    \subfloat[\centering Visualisation de la composante 0 et 3 parmi les 392.]{{\includegraphics[width=7cm]{images/chapitre7/pca_features_compress.png} } }%
+    %\caption{Dendrogramme}%
+\end{figure}
+
+Visualisation de la composante 0 et 3 parmi les \textbf{392} et l’objet \colorbox{gray!30}{features} ci-dessous sera utiliser pour faire le clustering.
 \begin{lstlisting}[language=Python,label={pca_code}, basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
-	pca = decomposition.PCA(n_components=2)
-    pca.fit(items_similarity)
-    features = pca.transform(items_similarity)
+	pca = decomposition.PCA(n_components=392)
+	pca.fit(items_similarity)
+	features = pca.transform(items_similarity)
 \end{lstlisting}
+
 \subsubsection{Clustering hard}
 
 

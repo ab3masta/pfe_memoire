@@ -140,9 +140,11 @@
 \contentsline {subsection}{\numberline {6.3.4}Clustering hard et soft de la matrice de similarité}{84}{subsection.6.3.4}%
 \contentsline {subsubsection}{\numberline {6.3.4.1}Création de la matrice de similarité}{84}{subsubsection.6.3.4.1}%
 \contentsline {subsubsection}{\numberline {6.3.4.2}Analyse en composantes principales (ACP)}{85}{subsubsection.6.3.4.2}%
-\contentsline {subsubsection}{\numberline {6.3.4.3}Clustering hard}{86}{subsubsection.6.3.4.3}%
-\contentsline {subsubsection}{\numberline {6.3.4.4}Clustering Soft}{86}{subsubsection.6.3.4.4}%
-\contentsline {subsubsection}{\numberline {6.3.4.5}Validation du clustering}{86}{subsubsection.6.3.4.5}%
-\contentsline {section}{\numberline {6.4}Conclusion}{86}{section.6.4}%
-\contentsline {part}{Conclusion Générale}{86}{section.6.4}%
-\contentsline {chapter}{Bibliographie}{88}{chapter*.55}%
+\contentsline {paragraph}{\numberline {6.3.4.2.1}Visualisation de données}{87}{paragraph.6.3.4.2.1}%
+\contentsline {paragraph}{\numberline {6.3.4.2.2}Compression de données}{87}{paragraph.6.3.4.2.2}%
+\contentsline {subsubsection}{\numberline {6.3.4.3}Clustering hard}{87}{subsubsection.6.3.4.3}%
+\contentsline {subsubsection}{\numberline {6.3.4.4}Clustering Soft}{87}{subsubsection.6.3.4.4}%
+\contentsline {subsubsection}{\numberline {6.3.4.5}Validation du clustering}{87}{subsubsection.6.3.4.5}%
+\contentsline {section}{\numberline {6.4}Conclusion}{87}{section.6.4}%
+\contentsline {part}{Conclusion Générale}{87}{section.6.4}%
+\contentsline {chapter}{Bibliographie}{89}{chapter*.57}%

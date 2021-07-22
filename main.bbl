@@ -500,4 +500,9 @@ R.~Kumar, C.~Carroll, A.~Hartikainen, and O.~Martin, ``Arviz a unified library
 S.~Blog, ``Kdd cup 2010 : Student performance evaluation.''
   \href{https://kdd.org/kdd-cup/view/kdd-cup-2010-student-performance-evaluation/Data}{\color{blue}{https://kdd.org/kdd-cup/view/kdd-cup-2010-student-performance-evaluation/Data}}.
 
+\bibitem{abdi2010principal}
+H.~Abdi and L.~J. Williams, ``Principal component analysis,'' {\em Wiley
+  interdisciplinary reviews: computational statistics}, vol.~2, no.~4,
+  pp.~433--459, 2010.
+
 \end{thebibliography}

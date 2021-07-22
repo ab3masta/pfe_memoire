@@ -135,9 +135,11 @@
 \BOOKMARK [2][-]{subsection.6.3.4}{Clustering hard et soft de la matrice de similarit\351}{section.6.3}% 135
 \BOOKMARK [3][-]{subsubsection.6.3.4.1}{Cr\351ation de la matrice de similarit\351}{subsection.6.3.4}% 136
 \BOOKMARK [3][-]{subsubsection.6.3.4.2}{Analyse en composantes principales \(ACP\)}{subsection.6.3.4}% 137
-\BOOKMARK [3][-]{subsubsection.6.3.4.3}{Clustering hard}{subsection.6.3.4}% 138
-\BOOKMARK [3][-]{subsubsection.6.3.4.4}{Clustering Soft}{subsection.6.3.4}% 139
-\BOOKMARK [3][-]{subsubsection.6.3.4.5}{Validation du clustering}{subsection.6.3.4}% 140
-\BOOKMARK [1][-]{section.6.4}{Conclusion}{chapter.6}% 141
-\BOOKMARK [-1][-]{section.6.4}{Conclusion G\351n\351rale}{}% 142
-\BOOKMARK [0][-]{chapter*.55}{Bibliographie}{section.6.4}% 143
+\BOOKMARK [4][-]{paragraph.6.3.4.2.1}{Visualisation de donn\351es}{subsubsection.6.3.4.2}% 138
+\BOOKMARK [4][-]{paragraph.6.3.4.2.2}{Compression de donn\351es}{subsubsection.6.3.4.2}% 139
+\BOOKMARK [3][-]{subsubsection.6.3.4.3}{Clustering hard}{subsection.6.3.4}% 140
+\BOOKMARK [3][-]{subsubsection.6.3.4.4}{Clustering Soft}{subsection.6.3.4}% 141
+\BOOKMARK [3][-]{subsubsection.6.3.4.5}{Validation du clustering}{subsection.6.3.4}% 142
+\BOOKMARK [1][-]{section.6.4}{Conclusion}{chapter.6}% 143
+\BOOKMARK [-1][-]{section.6.4}{Conclusion G\351n\351rale}{}% 144
+\BOOKMARK [0][-]{chapter*.57}{Bibliographie}{section.6.4}% 145
