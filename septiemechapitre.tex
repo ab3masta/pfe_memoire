@@ -493,6 +493,41 @@ Visualisation de la composante 0 et 3 parmi les \textbf{392} et l’objet \color
 
 \subsubsection{Clustering hard}
 
+\paragraph{Clustering hiérarchique agglomérative}
+
+Le clustering hiérarchique agglomérative est une approche « ascendante » qui utilise trois distance mesures principales : liaison unique, liaison complète et liaison moyenne, dont le but est de minimiser l’inertie intra-cluster et maximiser l’inertie inter-cluster. L’algorithme de la méthode agglomérative est :
+
+\begin{algorithm}[H]
+	\caption{Agglomerative Clustering.}
+	\begin{algorithmic}[1]
+	
+	\Procedure{HAC}{$matrix D, method$ $d$($A,B$)}       %\Comment{This is a test}
+		\State Initialize a cluster per sample $ \forall i \in x_{i} : C_{i} = i $
+		\State Initialize available cluster $S = \{C_{1},...,C_{n}\}$
+		
+		\While{S not empty} % \Comment{put some comments here}
+			\State $C_{j}, C_{k} = argmin_{C_{j},C_{k} \in S} d(C_{j}, C_{k})$  \Comment{Closest two clusters}
+			\State $C_{z} = C_{j} \cup C_{k}, S = S \backslash \{ C_{j},C_{k} \} $ \Comment{Merge and mark unavailable}
+			\If{$C_{z}$ not all samples}
+				\State $S = S \cup C_{z}$
+			\EndIf
+			\State $\forall C_{i}$ : update $D(C_{i},C_{z})$ \Comment{Update distances}
+		\EndWhile 
+	\EndProcedure
+	
+	\end{algorithmic}
+\end{algorithm}
+Cependant le critère de liaison utilisé influence les résultats du clustering. Pour remédier à cela, On peut utiliser le coefficient de Cophénétique pour trouver la méthode de liaison optimale.
+
+\begin{figure}[H]
+    \centering
+    \subfloat[\centering Les scores des méthodes de liaison.]{{\includegraphics[width=7cm]{images/chapitre7/linkage_method_score.png}  }}%
+    \qquad
+    \subfloat[\centering Le dendrogramme du dataset utilisant la méthode de liaison « average ».]{{\includegraphics[width=7cm]{images/chapitre7/dendrogram_of_dataset.png} } }%
+    %\caption{Dendrogramme}%
+\end{figure}
+
+
 
 \subsubsection{Clustering Soft}
 

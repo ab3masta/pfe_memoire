@@ -32,8 +32,8 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Clustering Hard et Soft}{51}{chapter.5}%
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Distances intracluster et intercluster.\relax }}{54}{figure.caption.32}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Les éléments du dataset.}}}{59}{subfigure.2.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Le dendrogramme.}}}{59}{subfigure.2.2}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Les éléments du dataset.}}}{58}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Le dendrogramme.}}}{58}{subfigure.2.2}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces La direction du clustering hiérarchique agglomérative et divisive.\relax }}{59}{figure.caption.34}%
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Les étapes de l'algorithme k-means.\relax }}{62}{figure.caption.35}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces La méthode Elbow.\relax }}{64}{figure.caption.36}%
@@ -55,3 +55,5 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Visualisation en 2D des deux composantes.}}}{87}{subfigure.10.2}%
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Le pourcentage de la variance préserver par chacune des composantes.}}}{87}{subfigure.10.3}%
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering Visualisation de la composante 0 et 3 parmi les 392.}}}{87}{subfigure.10.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\centering Les scores des méthodes de liaison.}}}{88}{subfigure.10.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\centering Le dendrogramme du dataset utilisant la méthode de liaison « average ».}}}{88}{subfigure.10.6}%

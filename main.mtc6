@@ -5,7 +5,7 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.3}L’approche Bayésienne}{\reset@font\mtcSSfont 40}{subsection.4.2.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.4}Théorème de bayes dans la cadre de l’application de l’approche Bayésienne}{\reset@font\mtcSSfont 40}{subsection.4.2.4}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.2.4.1}Posterior distribution}{\reset@font\mtcSSSfont 41}{subsubsection.4.2.4.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.2.4.2}Likelihood}{\reset@font\mtcSSSfont 42}{subsubsection.4.2.4.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.2.4.2}Likelihood}{\reset@font\mtcSSSfont 41}{subsubsection.4.2.4.2}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.2.4.3}Prior distribution}{\reset@font\mtcSSSfont 42}{subsubsection.4.2.4.3}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.2.4.4}Chaine de Markov Monte Carlo (MCMC)}{\reset@font\mtcSSSfont 42}{subsubsection.4.2.4.4}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.5}Model selection}{\reset@font\mtcSSfont 43}{subsection.4.2.5}}
