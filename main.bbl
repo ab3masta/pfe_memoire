@@ -505,4 +505,11 @@ H.~Abdi and L.~J. Williams, ``Principal component analysis,'' {\em Wiley
   interdisciplinary reviews: computational statistics}, vol.~2, no.~4,
   pp.~433--459, 2010.
 
+\bibitem{scikit_fuzzy_2019}
+J.~Warner, J.~Sexauer, Scikit-Fuzzy, Twmeggs, Alexsavio, A.~Unnikrishnan,
+  G.~Castelão, F.~A. Pontes, T.~Uelwer, pd2f, and et~al.,
+  ``Jdwarner/scikit-fuzzy: Scikit-fuzzy version 0.4.2.''
+  \href{https://zenodo.org/record/3541386}{\color{blue}{https://zenodo.org/record/3541386}},
+  Nov 2019.
+
 \end{thebibliography}

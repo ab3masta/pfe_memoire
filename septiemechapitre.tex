@@ -517,7 +517,14 @@ Le clustering hiérarchique agglomérative est une approche « ascendante » qui
 	
 	\end{algorithmic}
 \end{algorithm}
-Cependant le critère de liaison utilisé influence les résultats du clustering. Pour remédier à cela, On peut utiliser le coefficient de Cophénétique pour trouver la méthode de liaison optimale.
+Cependant le critère de liaison utilisé influence les résultats du clustering. Pour remédier à cela, On peut utiliser le coefficient de Cophénétique pour trouver la méthode de liaison optimale. Ensuite le script est utilisé pour faire le clustering hiérarchique agglomérative.
+
+\begin{lstlisting}[language=Python,label={pca_code}, basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+	dendogram = sch.dendrogram(sch.linkage(features, method="average"))
+	hc = AgglomerativeClustering(n_clusters=2,affinity="euclidean",linkage="average")
+	y_hc = hc.fit_predict(features)
+\end{lstlisting}
+
 
 \begin{figure}[H]
     \centering
@@ -527,14 +534,108 @@ Cependant le critère de liaison utilisé influence les résultats du clustering
     %\caption{Dendrogramme}%
 \end{figure}
 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.2]{images/chapitre7/agglo_clusters.png}
+	\end{center}
+	\caption{Clusters de la méthode agglomérante}
+	\label{agglo_clusters}
+\end{figure}
 
 
 \subsubsection{Clustering Soft}
+
+Le clustering flou C-Means est une approche de clustering soft, où chaque point de données se voit attribuer une probabilité ou un score de probabilité d'appartenir à un cluster. C'est un algorithme de clustering non supervisé qui dépend d'un paramètre m qui correspond au degré de flou des clusters. Le bon choix est d’utiliser m = 2.0 (Hathaway et Bezdek 2001). L’algorithme du clustering fuzzy c-means est :
+
+\begin{algorithm}
+	\caption{Fuzzy c-means algorithm.}
+	\begin{algorithmic}[1]
+		\State Initialize $U = \left[ u_{ij} \right] matrix, U^{(0)}$
+		\State At k-step: calculate the centers vectors $C^{(k)} = \left[ c_{j} \right] $ with $U^{(k)}$
+		\begin{equation}
+			c_{j} = \frac{ \sum_{i=1}^{N} u_{ij}^{m} \cdot  x_{i} }{\sum_{i=1}^{N} u_{ij}^{m} }
+		\end{equation}
+		\State Update $U^{(k)}$ , $U^{(k+1)}$
+		\begin{equation}
+			u_{ij} = \frac{ 1 }{\sum_{k=}^{C} \Bigg( \frac{\left\lVert x_{i} - c_{j}\right\rVert }{\left\lVert x_{i} - c_{k}\right\rVert} \Bigg)^{\frac{2}{m-1}} }
+		\end{equation}
+		\State If $\left\lVert U^{(k+1)} - U^{(k)}   \right\rVert \textless \epsilon$ the STOP; otherwise return to step 2.
+	\end{algorithmic}
+\end{algorithm}
+
+\noindent La méthode \colorbox{gray!30}{cmeans} de Scikit-Fuzzy \cite{scikit_fuzzy_2019} (qui est une collection d'algorithmes de logique floue écrits en python) permet d’implémenter l’algorithme FCM sur un jeu de données tout en ajustant certains paramètres. Cette méthode a été utiliser pour l’implémentation comme suit :
+
+\begin{lstlisting}[language=Python,label={pca_code}, basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+	cntr, u, u0, d, jm, p, fpc = fuzz.cluster.cmeans(data=features.T,c=2,m=2, error=0.005, maxiter=1000, init=None,seed=2021)
+\end{lstlisting}
+
+
+\noindent Où, les paramètres et les objets retournées par la méthode \colorbox{gray!30}{fuzz.cluster.cmeans()}  sont : \\
+\textbf{Paramètres:}
+
+\begin{itemize}
+	\item data: (tableau 2d, taille (S,N)), les données à regrouper. N est le nombre d'ensembles de données ; S est le nombre d'entités dans chaque vecteur d'échantillon. 
+	\item c: (int), Nombre de clusters souhaité.
+	\item m: (float), Exponentiation du tableau appliquée à la fonction d'appartenance \(\displaystyle u_{old} \) à chaque itération, où \(\displaystyle U_{new} = u_{old} ** m \). 
+	\item error: (float), critère d'arrêt ; arrêter tôt si la norme de \(\displaystyle (u[p] - u[p-1]) < erreur \). 
+	\item maxiter: (int), Nombre maximal d'itérations autorisées.
+	\item init: (tableau 2d, taille (S, N)), Matrice c-partitionnée floue initiale. Si aucun n'est fourni, l'algorithme est initialisé de manière aléatoire.
+	\item seed: (int), Si fourni, définit une valeur de départ aléatoire d' \colorbox{gray!30}{init}. Aucun effet si \colorbox{gray!30}{init} est fourni. Principalement à des fins de débogage/test.
+\end{itemize}
+
+
+\noindent \textbf{Retour:}
+
+\begin{itemize}
+	\item cntr: (tableau 2d, taille (S, c)), les centres de cluster. Données pour chaque centre le long de chaque caractéristique fournie pour chaque cluster (des \colorbox{gray!30}{c} clusters demandés).
+	\item u: (tableau 2d, (S, N)), Matrice c-partitionnée floue finale.
+	\item u0: (tableau 2d, (S, N)), Estimation initiale à la matrice c-partitionnée floue.
+	\item d: (tableau 2d, (S, N)), Matrice de distance euclidienne finale.
+	\item jm: (tableau 1d, longueur P), Historique de la fonction objective.
+	\item p: (int), Nombre d'itérations exécutées.
+	\item fpc: (float), le coefficient de partition floue final.
+\end{itemize}
+
+\noindent La figure \ref{fuzzy_partition_plot} affiche les clusters obtenus par la méthode FCM et le degré d’appartenance des points de données aux clusters.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre7/fuzzy_partition_plot.png}
+	\end{center}
+	\caption{}
+	\label{fuzzy_partition_plot}
+\end{figure}
 
 
 \subsubsection{Validation du clustering}
 
 
+\begin{table}[H]
+	\centering
+	\addtolength{\leftskip} {-4cm}
+	\addtolength{\rightskip}{-4.5cm}
+	\begin{tabular}{|m{2cm}|m{2cm}|m{2cm}|m{2cm}|m{2cm}|m{2cm}|m{3cm}|}
+	\hline
+	\rowcolor{blueforest}
+	\multicolumn{7}{|m{18cm}|}{\centering \color{white} \textbf{Kmeans clustering} } \\ \hline
+	& & \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
+	\textbf{Nombre d'items} &  \textbf{Nombre de clusters}  &   \textbf{Indice de Dunn} & \textbf{Indice Calinski Harabasz} & \textbf{Indice Davies-Bouldin}& \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
+	1084 & 2 & 0.5704 & 0.5766 & 2368.3262 & 0.6203 & 297 \(\displaystyle \thicksim  \) 787 \\ \hline
+	\rowcolor{blueforest}
+	\multicolumn{7}{|m{18cm}|}{\centering \color{white} \textbf{Agglomérative clustering} } \\ \hline
+	& & \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
+	\textbf{Nombre d'items} &  \textbf{Nombre de clusters}  &   \textbf{Indice de Dunn} & \textbf{Indice Calinski Harabasz} & \textbf{Indice Davies-Bouldin}& \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
+	1084 & 2 & 0.5704 & 0.5766 & 2368.3262 & 0.6203 & 297 \(\displaystyle \thicksim  \) 787 \\ \hline
+	\rowcolor{blueforest}
+	\multicolumn{7}{|m{18cm}|}{\centering \color{white} \textbf{Fuzzy clustering} } \\ \hline
+	& & \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
+	\textbf{Nombre d'items} &  \textbf{Nombre de clusters}  &   \textbf{Coefficient de Partition Floue } & \textbf{Indice Calinski Harabasz} & \textbf{Indice Davies-Bouldin}& \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
+	1084 & 2 & 0.5704 & 0.5766 & 2368.3262 & 0.6203 & 297 \(\displaystyle \thicksim  \) 787 \\ \hline
+  \end{tabular}
+	\caption{Description et statistiques du jeu de données.}
+	\label{dataset_features_describe}
+\end{table}
 
 \section{Conclusion}
 
+ 

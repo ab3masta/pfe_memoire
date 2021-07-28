@@ -1,8 +1,8 @@
 \babel@toc {english}{}
 \babel@toc {french}{}
 \contentsline {chapter}{Table des figures}{ix}{chapter*.3}%
-\contentsline {chapter}{Liste des tableaux}{x}{chapter*.4}%
-\contentsline {part}{Liste des Acronymes}{x}{chapter*.4}%
+\contentsline {chapter}{Liste des tableaux}{xi}{chapter*.4}%
+\contentsline {part}{Liste des Acronymes}{xi}{chapter*.4}%
 \babel@toc {french}{}
 \contentsline {part}{Introduction Générale}{1}{chapter*.5}%
 \contentsline {part}{I\hspace {1em}\'Etat de l'art}{4}{part.1}%
@@ -144,8 +144,8 @@
 \contentsline {paragraph}{\numberline {6.3.4.2.2}Compression de données}{87}{paragraph.6.3.4.2.2}%
 \contentsline {subsubsection}{\numberline {6.3.4.3}Clustering hard}{87}{subsubsection.6.3.4.3}%
 \contentsline {paragraph}{\numberline {6.3.4.3.1}Clustering hiérarchique agglomérative}{87}{paragraph.6.3.4.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.4.4}Clustering Soft}{88}{subsubsection.6.3.4.4}%
-\contentsline {subsubsection}{\numberline {6.3.4.5}Validation du clustering}{88}{subsubsection.6.3.4.5}%
-\contentsline {section}{\numberline {6.4}Conclusion}{88}{section.6.4}%
-\contentsline {part}{Conclusion Générale}{88}{section.6.4}%
-\contentsline {chapter}{Bibliographie}{90}{chapter*.58}%
+\contentsline {subsubsection}{\numberline {6.3.4.4}Clustering Soft}{89}{subsubsection.6.3.4.4}%
+\contentsline {subsubsection}{\numberline {6.3.4.5}Validation du clustering}{91}{subsubsection.6.3.4.5}%
+\contentsline {section}{\numberline {6.4}Conclusion}{92}{section.6.4}%
+\contentsline {part}{Conclusion Générale}{92}{section.6.4}%
+\contentsline {chapter}{Bibliographie}{94}{chapter*.61}%
