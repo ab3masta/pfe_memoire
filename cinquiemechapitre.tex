@@ -147,6 +147,55 @@ Dans cette situation, la théorie des réponses aux items tente de produire des 
 
 Sur le plan technique et mathématique, la théorie des réponses aux items utilise des modèles à un, deux ou trois paramètre(s), qui établissent la relation fondamentale entre le trait latent de l'individu (son niveau de compétence par exemple) et la probabilité pour cet individu de réussir un item donné. Cette relation est formalisée par une fonction (appelée fonction caractéristique de l'item), et peut être représentée géométriquement par une courbe (la courbe caractéristique de l'item). La forme la plus simple de cette fonction est celle qui repose sur le modèle de Rasch \cite{xcv_wiki}.\\
 L'objectif de la méthode est double, il s'agit, d'une part, d'estimer les propriétés métriques des items (calcul des paramètres dits de difficulté, de discrimination et, éventuellement, de pseudo-chance) et, d'autre part, d'estimer le niveau de l'individu par rapport au trait latent considéré. Par ailleurs, ces estimations sont supposées indépendantes des échantillons particuliers (d'individus d'une part et d'items de l'autre) à partir desquels l'étude est réalisée \cite{xcv_wiki}.
+\subsection{IRT dans la recherche organisationnelle}
+Les modèles de la théorie des réponses aux items (TRI) présentent plusieurs avantages pour la recherche organisationnelle. L’un des avantages méthodologiques de l’IRT est la détection des réponses aberrante parmi d’autre avantage comme la construction et l’évaluation des échelles et l’examen des biais de mesure. Le tableau \ref{irt_application} présente un résumé de ces applications ainsi que quelques avantages par rapport aux approches alternatives.
+\begin{table}[H]
+	\centering
+	\addtolength{\leftskip} {-4cm}
+	\addtolength{\rightskip}{-4.5cm}
+	\begin{tabular}{|m{4cm}|m{6cm}|m{6cm}|m{0.5cm}|}
+	\hline
+	\textbf{Problèmes méthodologiques} & \textbf{Applications de l'IRT} & \textbf{Avantages de l'IRT par rapport aux méthodes alternatives} & \\ \hline
+	Construction et évaluation de l'échelle & 
+	\begin{itemize}[leftmargin=*]
+	    \item Peut être utilisé pour raccourcir une échelle ou examiner la qualité des échelles existantes
+	    \item Peut être utilisé pour développer d'autres types d'évaluations.
+	\end{itemize}
+	& 
+	\begin{itemize}[leftmargin=*]
+		\item Contrairement au CTT, les paramètres des éléments IRT sont invariants d'un échantillon à l'autre.
+		\item IRT peut être utilisé pour créer des tests adaptatifs, mais pas CTT.
+		\item Bien que les méthodes CTT soient cohérentes avec les modèles de dominance, l'IRT peut être utilisé pour créer des mesures ponctuelles idéales.
+	\end{itemize} & \cite{borman2001examination} \cite{carter2011using} \cite{chernyshenko2007constructing} \cite{roznowski1989examination} \cite{tay2009fitting}\\ \hline
+
+	Identifier l'élément (l'item) et tester le biais &
+	\begin{itemize}[leftmargin=*]
+	    \item Peut différencier les différences moyennes observées du biais
+	    \item Peut détecter les DIF et DTF compensatoires
+	    \item Peut examiner les différences au niveau des options
+	\end{itemize}
+	&
+	\begin{itemize}[leftmargin=*]
+	    \item La comparaison des différences moyennes avec le CTT confond le biais avec de vraies différences dans le trait latent.
+	    \item Les modalités d'examen du DTF sont plus développées qu'en CFA.
+	\end{itemize}
+	& \cite{chan1999shelf} \cite{nye2010never} \cite{raju2002measurement} \cite{stark2004examining} \cite{tay2015overview} \\ \hline
+
+	Détection des réponses aberrantes &
+	\begin{itemize}[leftmargin=*]
+	    \item Peut être utilisé pour détecter différents types de réponses aberrantes telles que IER, falsification et réponse faussement faible.
+	\end{itemize}
+	&
+	\begin{itemize}[leftmargin=*]
+	    \item Les méthodes IRT peuvent détecter plusieurs types de réponses aberrantes tandis que d'autres méthodes ne peuvent détecter que des réponses imprudentes.
+	    \item Les méthodes IRT sont souvent plus efficaces pour détecter les réponses aberrantes que les méthodes traditionnelles de réponse à l'effort insuffisant (IER).
+	\end{itemize}
+	& \cite{stark2001effects} \cite{drasgow1996optimal} \cite{zickar1999modeling} \cite{zickar2004uncovering} \\ \hline
+    \end{tabular}
+	\caption{Résumé des applications de l'IRT \cite{nye2020advancing}.}
+	\label{irt_application}
+\end{table}
+
 
 \subsection{Les Modèles TRI}
 On distingue deux familles de modèle IRT : les modèles unidimensionnels qui nécessitent une seule dimension de trait et les modèles multidimensionnels qui sont supposées provenir de plusieurs traits. Cependant, en raison de la complexité considérablement accrue, la majorité des recherches et des applications IRT utilisent un modèle unidimensionnel.
@@ -154,6 +203,26 @@ On distingue deux familles de modèle IRT : les modèles unidimensionnels qui n�
 Les modèles IRT se distingue par le nombre de paramètre qu’il utilise. Le modèle à paramètre unique (1PL) suppose tous les éléments qui correspondent au modèle ont la même difficulté, de sorte que ces éléments sont décrits par un seul paramètre. C’est le cas du modèle de Rasch. Le modèle dit à deux paramètre (2PL) fait appel au paramètre de difficulté et de discrimination par exemple le modèle de Birnbaum. Par contre le modèle a trois paramètres (3PL) est celui qui cherche à estimer en plus le paramètre de difficulté et de discrimination, la pseudo chance. \\
 Il en résulte des modèles à un paramètre ayant la propriété d'objectivité spécifique, ce qui signifie que le rang de la difficulté de l'item est le même pour tous les répondants indépendamment de la capacité, et que le rang de la capacité de la personne est le même pour les items indépendamment de la difficulté. Ainsi, les modèles à 1 paramètre (comme ceux de Rasch) sont indépendants de l'échantillon, une propriété qui n'est pas valable pour les modèles à deux et trois paramètres \cite{fisher1922mathematical}. \\
 Le modèle général de Birnbaum, auquel le modèle de Rasch se rattache est plus complexe car il admet des courbes d’allures différentes pour chacun des items et suppose donc d’estimer plus d’un paramètre par item puisqu’il tient également compte du pouvoir discriminant de chacun d’eux. Le modèle proposé par Lazarsfeld est en quelque sorte une simplification du modèle général de Birnbaum puisqu’il postule des distributions linéaires de pentes variables \cite{yvonnick_2019}. \\
+Il existe aussi d’autre modèles IRT qui sont résumé dans le tableau \ref{irt_modeles}.
+
+\begin{table}[H]
+	\centering
+	\addtolength{\leftskip} {-4cm}
+	\addtolength{\rightskip}{-4.5cm}
+	\begin{tabular}{|m{4cm}|m{6cm}|m{6cm}|}
+	\hline
+	\textbf{Modèle IRT} & \textbf{Description} & \textbf{Application} \\ \hline
+	% Modèle logistique à un paramètre (One-parameter logistic model \textbf{1PL}) & & \\ \hline
+	% Modèle logistique à deux paramètres (Two-parameter logistic model \textbf{2PL}) & Suit un processus de réponse de dominance et suppose que tous les items varient en fonction de la discrimination \(\displaystyle (a_{i})\) et de la difficulté \(\displaystyle (b_{i})\). & Utilisé pour les éléments dichotomiques (par exemple, oui/non ou correcte/incorrecte) pour lesquels il est peu probable de deviner (par exemple, les questions ouvertes avec de nombreuses réponses possibles). \\ \hline
+	% Modèle logistique à trois paramètres (Three-parameter logistic model \textbf{3PL}) & Suit un processus de réponse de dominance et suppose que tous les items varient en fonction de la discrimination \(\displaystyle (a_{i})\), de la difficulté \(\displaystyle (b_{i})\) et de la pseudo-chance \(\displaystyle (c_{i})\). & Utilisé pour les éléments dichotomiques pour lesquels des devinettes sont susceptibles de se produire (par exemple, éléments avec une bonne ou une mauvaise réponse ou des options de réponse oui/non).\\ \hline
+	Modèle logistique multidimensionnel à deux paramètres (Multidimensional two-parameter logistic model \textbf{M2PL}) & Suit un processus de réponse de dominance et suppose que tous les items varient sur un vecteur de paramètres de discrimination \(\displaystyle (a_{i} = a_{1},...,a_{m} )\) et de difficulté \(\displaystyle (b_{i})\). & Utilisé pour les éléments dichotomiques où il est peu probable de deviner. Peut être utilisé lorsque les données sont multidimensionnelles.\\ \hline
+	Modèle de réponse graduée (Graded response model \textbf{GRM}) & Suit un processus de réponse de dominance et suppose que tous les items varient en fonction de la discrimination \(\displaystyle (a_{i})\) et que chaque option de réponse varie en fonction de la difficulté \(\displaystyle (b_{ik})\). En d'autres termes, chaque élément aura un paramètre a et \(\displaystyle C - 1 \) paramètres \(\displaystyle b \), où \(\displaystyle C \) est le nombre total d'options de réponse. & Utilisé pour les éléments polytomiques avec trois options de réponse ou plus.\\ \hline
+	Modèle de réponse graduée multidimensionnelle (Multidimensional graded response model \textbf{MGRM}) &Suit un processus de réponse de dominance et suppose que tous les items varient sur un vecteur de paramètres de discrimination \(\displaystyle (a_{i} = a_{1},...,a_{m} )\) et chaque option de réponse varie en fonction de la difficulté \(\displaystyle (b_{ik})\). Chaque élément aura un vecteur d'un paramètre pour chaque facteur latent et des paramètres \(\displaystyle C - 1 \) \(\displaystyle b \), où \(\displaystyle C \) est le nombre total d'options de réponse. & Utilisé pour les éléments polytomiques avec trois options de réponse ou plus. Peut être utilisé lorsque les données sont multidimensionnelles.\\ \hline
+	Modèle de dépliage gradué généralisé (Generalized graded unfolding model \textbf{GGUM}) & Suit un processus de réponse ponctuelle idéal et suppose que tous les éléments varient en fonction de la discrimination \(\displaystyle (a_{i})\), de l'emplacement de l'élément \(\displaystyle (\delta_{i})\) et des seuils \(\displaystyle (\tau_{i1})\). & Peut être utilisé pour les éléments ponctuels idéaux dichotomiques ou polytomiques. \\ \hline
+	\end{tabular}
+	\caption{Résumé des quelques modèles IRT \cite{nye2020advancing}.}
+	\label{irt_modeles}
+\end{table}
 
 \begin{figure}[H]
 	\begin{center}
@@ -268,5 +337,7 @@ generated quantities {
 		+ delta);
 }
 \end{lstlisting}
+
+\section{Related work}
 \section{Conclusion}
 

@@ -1,21 +1,21 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.1}Introduction}{\reset@font\mtcSfont 73}{section.6.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.2}Approche proposée}{\reset@font\mtcSfont 73}{section.6.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.3}Implémentations et résultats expérimentaux}{\reset@font\mtcSfont 73}{section.6.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.1}Outils de développement}{\reset@font\mtcSSfont 73}{subsection.6.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.1.1}Materiels}{\reset@font\mtcSSSfont 73}{subsubsection.6.3.1.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.1.2}Outils et packages}{\reset@font\mtcSSSfont 74}{subsubsection.6.3.1.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.2}Collecte et préparation des données}{\reset@font\mtcSSfont 76}{subsection.6.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.3}Modèle IRT pour une inférence bayésienne}{\reset@font\mtcSSfont 78}{subsection.6.3.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.1}Spécification et chargement du modèle}{\reset@font\mtcSSSfont 78}{subsubsection.6.3.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.2}Compilation du modèle et échantillonnage }{\reset@font\mtcSSSfont 79}{subsubsection.6.3.3.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.3}Résultats d’échantillonnage, diagnostique du modèle, prédiction et validation}{\reset@font\mtcSSSfont 79}{subsubsection.6.3.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.4}Clustering hard et soft de la matrice de similarité}{\reset@font\mtcSSfont 84}{subsection.6.3.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.4.1}Création de la matrice de similarité}{\reset@font\mtcSSSfont 84}{subsubsection.6.3.4.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.4.2}Analyse en composantes principales (ACP)}{\reset@font\mtcSSSfont 85}{subsubsection.6.3.4.2}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {6.3.4.2.1}Visualisation de données}{\reset@font\mtcPfont 87}{paragraph.6.3.4.2.1}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {6.3.4.2.2}Compression de données}{\reset@font\mtcPfont 87}{paragraph.6.3.4.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.4.3}Clustering hard}{\reset@font\mtcSSSfont 87}{subsubsection.6.3.4.3}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {6.3.4.3.1}Clustering hiérarchique agglomérative}{\reset@font\mtcPfont 87}{paragraph.6.3.4.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.4.4}Clustering Soft}{\reset@font\mtcSSSfont 89}{subsubsection.6.3.4.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.4.5}Validation du clustering}{\reset@font\mtcSSSfont 91}{subsubsection.6.3.4.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.4}Conclusion}{\reset@font\mtcSfont 92}{section.6.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.1}Introduction}{\reset@font\mtcSfont 76}{section.6.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.2}Approche proposée}{\reset@font\mtcSfont 76}{section.6.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.3}Implémentations et résultats expérimentaux}{\reset@font\mtcSfont 76}{section.6.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.1}Outils de développement}{\reset@font\mtcSSfont 76}{subsection.6.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.1.1}Materiels}{\reset@font\mtcSSSfont 76}{subsubsection.6.3.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.1.2}Outils et packages}{\reset@font\mtcSSSfont 77}{subsubsection.6.3.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.2}Collecte et préparation des données}{\reset@font\mtcSSfont 79}{subsection.6.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.3}Modèle IRT pour une inférence bayésienne}{\reset@font\mtcSSfont 81}{subsection.6.3.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.1}Spécification et chargement du modèle}{\reset@font\mtcSSSfont 82}{subsubsection.6.3.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.2}Compilation du modèle et échantillonnage }{\reset@font\mtcSSSfont 83}{subsubsection.6.3.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.3}Résultats d’échantillonnage, diagnostique du modèle, prédiction et validation}{\reset@font\mtcSSSfont 84}{subsubsection.6.3.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.4}Clustering hard et soft de la matrice de similarité}{\reset@font\mtcSSfont 88}{subsection.6.3.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.4.1}Création de la matrice de similarité}{\reset@font\mtcSSSfont 88}{subsubsection.6.3.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.4.2}Analyse en composantes principales (ACP)}{\reset@font\mtcSSSfont 89}{subsubsection.6.3.4.2}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {6.3.4.2.1}Visualisation de données}{\reset@font\mtcPfont 91}{paragraph.6.3.4.2.1}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {6.3.4.2.2}Compression de données}{\reset@font\mtcPfont 91}{paragraph.6.3.4.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.4.3}Clustering hard}{\reset@font\mtcSSSfont 91}{subsubsection.6.3.4.3}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {6.3.4.3.1}Clustering hiérarchique agglomérative}{\reset@font\mtcPfont 91}{paragraph.6.3.4.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.4.4}Clustering Soft}{\reset@font\mtcSSSfont 93}{subsubsection.6.3.4.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.4.5}Validation du clustering}{\reset@font\mtcSSSfont 95}{subsubsection.6.3.4.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.4}Conclusion}{\reset@font\mtcSfont 96}{section.6.4}}
