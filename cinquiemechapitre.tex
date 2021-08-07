@@ -96,10 +96,56 @@ Le calcule d’une intégrale avec un seul paramètres (intégrale a une dimensi
 L’approche Bayésienne d’aujourd’hui utilise des méthodes de simulation MCMC (chaine de Markov Monte Carlo) pour passer outre ce problème de calcule d’intégrale multiple. Nous verrons dans la section suivantes les chaines de Markov de Monte Carlo et leurs méthodes.
 
 \subsubsection{Chaine de Markov Monte Carlo (MCMC)}
-Malheureusement, dans la plupart des cas pratiques, il est impossible d'obtenir une solution analytique pour la distribution a posteriori. Le dénominateur sous la forme continue du théorème de Bayes consiste en une intégrale sur un espace potentiellement de grande dimension. L'un des moyens de résoudre ce problème est d'obtenir des échantillons de la distribution a posteriori. Ces échantillons sont distribués selon la distribution a posteriori.  \\
-Habituellement, les méthodes dites de Markov Chain Monte Carlo (MCMC) sont utilisées pour obtenir des échantillons à partir d'une distribution. Ces méthodes partent des valeurs initiales des paramètres. Ensuite, de nouvelles valeurs sont proposées et acceptées selon certaines fonctions de proposition et d'acceptation. Ce processus de proposition et d'acceptation est répété plusieurs fois pour créer un grand nombre d'échantillons. Différentes méthodes diffèrent principalement dans leurs implémentations des fonctions de proposition et d'acceptation. \\
-Les méthodes MCMC peuvent nécessiter un certain post-traitement des échantillons obtenus - par exemple, il peut être nécessaire d'ignorer les premiers (souvent des centaines ou des milliers) échantillons, car « ils ont été collectés loin des valeurs des paramètres pertinents » par exemple la figure ci-dessous. De plus, les échantillons sont généralement corrélés et donc souvent, seul un nième échantillon (après le retrait des échantillons initiaux) est retenu. De plus, les méthodes peuvent échouer (pour donner des échantillons représentatifs de la distribution). Il existe des moyens de diagnostiquer cela, par exemple en créant plusieurs « chaînes d'échantillonnage » (et en comparant leurs résultats). \\
+Malheureusement, dans la plupart des cas pratiques, il est impossible d’obtenir une solution analytique pour la distribution a posteriori. Le dénominateur sous la forme continue du théorème de Bayes consiste en une intégrale sur un espace potentiellement de grande dimension. L’un des moyens de résoudre ce problème est d’obtenir des échantillons de la distribution a posteriori. Parmi les approches les plus utilisées pour surmonter ces difficultés, on trouve les méthodes du Monte Carlo par chaînes de Markov et l’inférence variationnelle (dont nous n’évoquerons pas). Les méthodes de Monte Carlo par chaîne de Markov (MCMC) proposent des schémas pour dessiner (draw en anglais qui est présent dans les objets fit des résultats d’échantillonnages) une série d'échantillons corrélés qui convergent vers la distribution cible \cite{neal1993probabilistic}. \\
 
+Les algorithmes MCMC consistent à simuler séquentiellement une seule chaîne de Markov dont la distribution limite est celle choisie (par example, le maximum de la fonction de vraisemblance fois une densité de probabilité a priori des paramètres). Plus précisément, une chaîne de Markov est une séquence de variables aléatoires telle que la valeur suivante ou état de la séquence dépend uniquement de l’état présent et non des états passés \cite{neal1993probabilistic}. Alors, une séquence de variables aléatoires est générée \(\displaystyle \widehat{q}_{0}, \widehat{q}_{1}, ... \)  telle que l’état suivant \(\displaystyle \widehat{q}_{t+1} \) avec \(\displaystyle t \geq 0  \) est distribué selon la probabilité de transition \(\displaystyle T(\widehat{q}_{t} \rightarrow \widehat{q}_{t+1}) \overset{def}{=} P(\widehat{q}_{t+1}|\widehat{q}_{t}) \) \cite{gbedo2017techniques} tout en visant la convergence de la chaine, c’est-à-dire que la chaîne est ergodique (stationnaire, irréductible et non périodique). \\
+
+Une chaîne de Markov est définit par les valeurs initiales des distributions marginales des paramètres et la probabilité de transition entre deux états de l’espace des paramètres : \(\displaystyle T(\widehat{q} \rightarrow \widehat{q}\prime) \), pour aller d’un état \(\displaystyle \widehat{q} \) à l’autre état \(\displaystyle \widehat{q}\prime \). Les algorithmes MCMC sont généralement influencés lors de l’implémentation par le point de départ de la chaîne (ce qui conduit à une phase de « burn-in »), par le choix de la probabilité de transition, le taux de convergence, l’acceptance de l’algorithme, etc. \\
+
+Les algorithmes de Monte Carlo à chaînes de Markov (MCMC) sont donc des outils informatiques standard pour analyser les modèles complexes bayésiens \cite{gelfand1990sampling} même si des fois des problème peuvent surgir dans leurs implémentations \cite{robert2020markov}. Parmi les méthodes MCMC, il y’a l’algorithme de Metropolis , l’algorithme de Metropolis–Hastings, échantillonnage de Gibbs, échantillonnage par tranches, Metropolis à tentatives multiples, Méthode de sur-relaxation l'hamiltonien Monte Carlo (HMC), No-U-Turn Sampler (NUTS), la méthode MCMC de Langevin et les méthodes basées sur le changement de dimension. Bien que notre travail ne soit pas centré sur les algorithmes MCMC et leur convergence, nous passerons en revue quelques définitions et théories qui justifient le fonctionnement des méthodes MCMC, et un bref résumé de quelque algorithmes MCMC. \\
+% Malheureusement, dans la plupart des cas pratiques, il est impossible d'obtenir une solution analytique pour la distribution a posteriori. Le dénominateur sous la forme continue du théorème de Bayes consiste en une intégrale sur un espace potentiellement de grande dimension. L'un des moyens de résoudre ce problème est d'obtenir des échantillons de la distribution a posteriori. Ces échantillons sont distribués selon la distribution a posteriori.  \\
+% Habituellement, les méthodes dites de Markov Chain Monte Carlo (MCMC) sont utilisées pour obtenir des échantillons à partir d'une distribution. Ces méthodes partent des valeurs initiales des paramètres. Ensuite, de nouvelles valeurs sont proposées et acceptées selon certaines fonctions de proposition et d'acceptation. Ce processus de proposition et d'acceptation est répété plusieurs fois pour créer un grand nombre d'échantillons. Différentes méthodes diffèrent principalement dans leurs implémentations des fonctions de proposition et d'acceptation. \\
+% Les méthodes MCMC peuvent nécessiter un certain post-traitement des échantillons obtenus - par exemple, il peut être nécessaire d'ignorer les premiers (souvent des centaines ou des milliers) échantillons, car « ils ont été collectés loin des valeurs des paramètres pertinents » par exemple la figure ci-dessous. De plus, les échantillons sont généralement corrélés et donc souvent, seul un nième échantillon (après le retrait des échantillons initiaux) est retenu. De plus, les méthodes peuvent échouer (pour donner des échantillons représentatifs de la distribution). Il existe des moyens de diagnostiquer cela, par exemple en créant plusieurs « chaînes d'échantillonnage » (et en comparant leurs résultats). \\
+
+\paragraph{Théorème de convergence des chaînes de Markov \cite{entezari2018bayesian} \cite{meyn2012markov} \cite{rosenthal2006first}}
+Une chaîne de Markov à temps discret est définie par une séquence de variables aléatoires \(\displaystyle X_{0}, X_{2}, X_{3} ... \) qui peut prendre des valeurs possibles dans l'espace d'état \(\displaystyle X \) avec une distribution initiale définie pour \(\displaystyle X_{0}\) et des probabilités de transition définies comme :
+
+\begin{equation}
+	p(x,A) = P(X_{n+1} \in A | X_{n} = x), \hspace{1em} \forall A \subseteq X
+\end{equation}
+Où la propriété de Markov est :
+\begin{equation}
+	P(X_{n+1} \in A | X_{0},X_{1},...,X_{n}) = P(X_{n+1} \in A | X_{n})  \hspace{1em} \forall A \subseteq X
+\end{equation}
+Comme nous l’avons évoqué précédemment la probabilité que la chaîne passe à l'état suivant ne dépend que de l'état actuel et non des états précédents. \\
+\textbf{\underline{Définition 1: }} Considérons une chaîne de Markov \(\displaystyle \left\{ X_{i} \right\} \) sur l'espace d'états \(\displaystyle X \) avec une probabilité de transition \(\displaystyle P(x,.) \). Soit \(\displaystyle \pi (.) \) une distribution de probabilité définie sur \(\displaystyle X \) . Alors \(\displaystyle \pi \) est une distribution stationnaire pour la chaîne de Markov  \(\displaystyle x,y \in X \) :
+
+\begin{equation}
+	\int_{x \in X}^{}  \,\pi(dx)P(x,dy) = \pi(dy)
+\end{equation}
+
+\noindent \textbf{\underline{Définition 2: }} Une chaîne de Markov est \(\displaystyle \phi \)-irréductible, s'il existe une mesure \(\displaystyle \sigma\)-finie non nulle sur \(\displaystyle X \) telle que :
+
+\begin{equation}
+	\begin{split}
+	\forall A :  A \subseteq X \hspace{1em} avec \hspace{1em} \phi(A) > 0  \hspace{1em} \&  \hspace{1em} \forall x \in X \\
+	\implies \exists \hspace{0.3em} n \in \mathbb{N} : P_{n}(x,A) > 0
+	\end{split}
+\end{equation}
+
+\noindent \textbf{\underline{Définition 3: }} Une chaîne de Markov est apériodique, s'il n'y a pas de sous-ensembles disjoints non vides \(\displaystyle X_{1},...,X_{d} \subseteq X\) pour \(\displaystyle d \geq 2\) tel que \(\displaystyle P(x,X_{i+1}) = 1\) pour tout \(\displaystyle x \in X_{i} (1\leq i \leq d-1 ) \) et \(\displaystyle P(x,X_{1}) = 1 \) pour tout \(\displaystyle x \in X_{d}\). \\
+
+\noindent \textbf{\underline{Théorème 1: }} Considérons une chaîne de Markov apériodique et \(\displaystyle \phi \)-irréductible définie sur un espace d'états \(\displaystyle X \) de distribution stationnaire \(\displaystyle \pi \). Pour \(\displaystyle \pi.a.e. \) \(\displaystyle x \in X \) :
+\begin{equation}
+	\lim_{x \to \infty} \left\lVert P^{n}(x,.) - \pi(.) \right\rVert = 0
+\end{equation} 
+
+Soit \(\displaystyle \lim_{x \to \infty} P^{n}(x,A) = \pi(A) \hspace{1em} \forall A \subseteq  X \) . \\
+Dans la section suivante, nous décrirons quelques algorithmes MCMC les plus courants qui respectent l’aspect stationnaire, irréductible et non périodique des chaines de Markov.
+\paragraph{Metropolis-Hastings algorithm}
+\paragraph{Gibbs sampling}
+\paragraph{Hamiltonian Monte Carlo}
+\paragraph{No-U-Turn Sampler}
 
 \begin{figure}[H]
 	\begin{center}

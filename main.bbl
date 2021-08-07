@@ -1,5 +1,18 @@
 \begin{thebibliography}{100}
 
+\bibitem{entezari2018bayesian}
+R.~Entezari, {\em Bayesian Computations via MCMC, with Applications to Big Data
+  and Spatial Data}.
+\newblock PhD thesis, University of Toronto (Canada), 2018.
+
+\bibitem{meyn2012markov}
+S.~P. Meyn and R.~L. Tweedie, {\em Markov chains and stochastic stability}.
+\newblock Springer Science \& Business Media, 2012.
+
+\bibitem{rosenthal2006first}
+J.~S. Rosenthal, {\em First Look At Rigorous Probability Theory, A}.
+\newblock World Scientific Publishing Company, 2006.
+
 \bibitem{gelman2020bayesian}
 A.~Gelman, A.~Vehtari, D.~Simpson, C.~C. Margossian, B.~Carpenter, Y.~Yao,
   L.~Kennedy, J.~Gabry, P.-C. B{\"u}rkner, and M.~Modr{\'a}k, ``Bayesian
@@ -223,6 +236,27 @@ R.~A. Fisher, ``On the mathematical foundations of theoretical statistics,''
   {\em Philosophical Transactions of the Royal Society of London. Series A,
   Containing Papers of a Mathematical or Physical Character}, vol.~222,
   no.~594-604, pp.~309--368, 1922.
+
+\bibitem{neal1993probabilistic}
+R.~M. Neal, {\em Probabilistic inference using Markov chain Monte Carlo
+  methods}.
+\newblock Department of Computer Science, University of Toronto Toronto, ON,
+  Canada, 1993.
+
+\bibitem{gbedo2017techniques}
+Y.~G. Gbedo, {\em Les techniques Monte Carlo par cha{\^\i}nes de Markov
+  appliqu{\'e}es {\`a} la d{\'e}termination des distributions de partons}.
+\newblock PhD thesis, Universit{\'e} Grenoble Alpes, 2017.
+
+\bibitem{gelfand1990sampling}
+A.~E. Gelfand and A.~F. Smith, ``Sampling-based approaches to calculating
+  marginal densities,'' {\em Journal of the American statistical association},
+  vol.~85, no.~410, pp.~398--409, 1990.
+
+\bibitem{robert2020markov}
+C.~P. Robert and W.~Changye, ``Markov chain monte carlo methods, a survey with
+  some frequent misunderstandings,'' {\em arXiv preprint arXiv:2001.06249},
+  2020.
 
 \bibitem{xcv_wiki}
 ``Item response theory - wikipedia.''

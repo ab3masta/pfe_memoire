@@ -6,13 +6,13 @@ The style file: ieeetr.bst
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 Database file #1: biblo.bib
 Warning--entry type for "iris_dataset" isn't style-file defined
---line 1026 of file biblo.bib
+--line 1075 of file biblo.bib
 Warning--entry type for "python_cours" isn't style-file defined
---line 1051 of file biblo.bib
+--line 1100 of file biblo.bib
 Warning--entry type for "anaconda_website" isn't style-file defined
---line 1056 of file biblo.bib
+--line 1105 of file biblo.bib
 Warning--entry type for "conda_website" isn't style-file defined
---line 1062 of file biblo.bib
+--line 1111 of file biblo.bib
 Warning--empty publisher in data_mining_concepts_techniques
 Warning--empty publisher in handbook_of_educational_data_mining
 Warning--empty booktitle in user_modelling_help_systems
@@ -29,45 +29,45 @@ Warning--empty publisher in data_analysis_irt
 Warning--empty journal in pang2005introduction
 Warning--empty publisher in Finding_Groups_in_Data_An_Introduction_To_Cluster_Analysis
 Warning--empty journal in bezdek1973cluster
-You've used 123 entries,
+You've used 130 entries,
             1876 wiz_defined-function locations,
-            1159 strings with 25831 characters,
-and the built_in function-call counts, 32589 in all, are:
-= -- 3254
-> -- 1241
+            1190 strings with 26915 characters,
+and the built_in function-call counts, 33774 in all, are:
+= -- 3377
+> -- 1281
 < -- 0
-+ -- 466
-- -- 343
-* -- 2296
-:= -- 4532
-add.period$ -- 142
-call.type$ -- 123
-change.case$ -- 112
++ -- 483
+- -- 353
+* -- 2355
+:= -- 4712
+add.period$ -- 154
+call.type$ -- 130
+change.case$ -- 114
 chr.to.int$ -- 0
-cite$ -- 139
-duplicate$ -- 1667
-empty$ -- 3107
-format.name$ -- 343
-if$ -- 8008
+cite$ -- 146
+duplicate$ -- 1734
+empty$ -- 3236
+format.name$ -- 353
+if$ -- 8300
 int.to.chr$ -- 0
-int.to.str$ -- 123
-missing$ -- 115
-newline$ -- 393
-num.names$ -- 126
-pop$ -- 424
+int.to.str$ -- 130
+missing$ -- 123
+newline$ -- 419
+num.names$ -- 133
+pop$ -- 451
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1189
+skip$ -- 1214
 stack$ -- 0
-substring$ -- 2090
-swap$ -- 691
+substring$ -- 2122
+swap$ -- 706
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 16
-while$ -- 325
-width$ -- 126
-write$ -- 1197
+while$ -- 335
+width$ -- 133
+write$ -- 1263
 (There were 20 warnings)
