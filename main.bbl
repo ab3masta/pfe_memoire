@@ -258,6 +258,66 @@ C.~P. Robert and W.~Changye, ``Markov chain monte carlo methods, a survey with
   some frequent misunderstandings,'' {\em arXiv preprint arXiv:2001.06249},
   2020.
 
+\bibitem{metropolis1953equation}
+N.~Metropolis, A.~W. Rosenbluth, M.~N. Rosenbluth, A.~H. Teller, and E.~Teller,
+  ``Equation of state calculations by fast computing machines,'' {\em The
+  journal of chemical physics}, vol.~21, no.~6, pp.~1087--1092, 1953.
+
+\bibitem{hastings1970monte}
+W.~K. Hastings, ``Monte carlo sampling methods using markov chains and their
+  applications,'' 1970.
+
+\bibitem{neal2011mcmc}
+R.~M. Neal {\em et~al.}, ``Mcmc using hamiltonian dynamics,'' {\em Handbook of
+  markov chain monte carlo}, vol.~2, no.~11, p.~2, 2011.
+
+\bibitem{betancourt2015hamiltonian}
+M.~Betancourt and M.~Girolami, ``Hamiltonian monte carlo for hierarchical
+  models,'' {\em Current trends in Bayesian methodology with applications},
+  vol.~79, no.~30, pp.~2--4, 2015.
+
+\bibitem{gelman1997weak}
+A.~Gelman, W.~R. Gilks, and G.~O. Roberts, ``Weak convergence and optimal
+  scaling of random walk metropolis algorithms,'' {\em The annals of applied
+  probability}, vol.~7, no.~1, pp.~110--120, 1997.
+
+\bibitem{wu2018faster}
+C.~Wu, J.~Stoehr, and C.~P. Robert, ``Faster hamiltonian monte carlo by
+  learning leapfrog scale,'' {\em arXiv preprint arXiv:1810.04449}, 2018.
+
+\bibitem{hoffman2014no}
+M.~D. Hoffman, A.~Gelman, {\em et~al.}, ``The no-u-turn sampler: adaptively
+  setting path lengths in hamiltonian monte carlo.,'' {\em J. Mach. Learn.
+  Res.}, vol.~15, no.~1, pp.~1593--1623, 2014.
+
+\bibitem{hoffman2011no}
+M.~D. Hoffman and A.~Gelman, ``The no-u-turn sampler: Adaptively setting path
+  lengths in hamiltonian monte carlo. arxiv preprint arxiv: 1111.4246,'' 2011.
+
+\bibitem{spiegelhalter2003bayesian}
+D.~Spiegelhalter, N.~G. Best, B.~P. Carlin, and A.~van~der Linde, ``Bayesian
+  measures of model complexity and fit,'' {\em Quality control and applied
+  statistics}, vol.~48, no.~4, pp.~431--432, 2003.
+
+\bibitem{kass1995bayes}
+R.~E. Kass and A.~E. Raftery, ``Bayes factors,'' {\em Journal of the american
+  statistical association}, vol.~90, no.~430, pp.~773--795, 1995.
+
+\bibitem{o1995fractional}
+A.~O'Hagan, ``Fractional bayes factors for model comparison,'' {\em Journal of
+  the Royal Statistical Society: Series B (Methodological)}, vol.~57, no.~1,
+  pp.~99--118, 1995.
+
+\bibitem{watanabe2010asymptotic}
+S.~Watanabe and M.~Opper, ``Asymptotic equivalence of bayes cross validation
+  and widely applicable information criterion in singular learning theory.,''
+  {\em Journal of machine learning research}, vol.~11, no.~12, 2010.
+
+\bibitem{geisser1979predictive}
+S.~Geisser and W.~F. Eddy, ``A predictive approach to model selection,'' {\em
+  Journal of the American Statistical Association}, vol.~74, no.~365,
+  pp.~153--160, 1979.
+
 \bibitem{xcv_wiki}
 ``Item response theory - wikipedia.''
 

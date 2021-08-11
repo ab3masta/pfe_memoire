@@ -212,7 +212,7 @@ Les étapes suivies pour la collecte et la préparation du dataset sont illustr�
 \end{lstlisting}
 
 \subsection{Modèle IRT pour une inférence bayésienne}
-
+\label{irt_model_for_bayesian_inference}
 Dans l’implémentions nous utiliseront le workflow bayésien complet pour faire l’ajustement des réponses aux items plutôt qu’une simple inférence bayésienne. La différence est que l'inférence bayésienne n'est que la formulation et le calcul de probabilités conditionnelles ou de densités de probabilité, \(\displaystyle p(\theta|y) \infty  p(\theta)p(y|\theta) \) et le workflow bayésien comprend les trois étapes : création de modèle, inférence et vérification/amélioration de modèle, ainsi que la comparaison de différents modèles, non seulement à des fins de choix de modèle ou de moyenne de modèle, mais plus important encore pour mieux comprendre ces modèles \cite{gelman2020bayesian}. Les étapes du workflow (flux) sont illustrées par la figure \ref{irt_process}. 
 \begin{figure}[H]
 	\begin{center}

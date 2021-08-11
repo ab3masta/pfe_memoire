@@ -2186,6 +2186,11 @@ INPUT .\images\chapitre5\mcmc_iterations.png
 INPUT .\images\chapitre5\mcmc_iterations.png
 INPUT .\images\chapitre5\mcmc_iterations.png
 INPUT .\images\chapitre5\mcmc_iterations.png
+INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
+INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
+INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
 INPUT .\images\chapitre5\irt_models.jpg
 INPUT .\images\chapitre5\irt_models.jpg
 INPUT images\chapitre5\irt_models.jpg
@@ -2200,9 +2205,6 @@ INPUT .\images\chapitre5\parameters_probability.png
 INPUT .\images\chapitre5\parameters_probability.png
 INPUT .\images\chapitre5\parameters_probability.png
 INPUT .\images\chapitre5\parameters_probability.png
-INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
-INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
 INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
 INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
@@ -2267,7 +2269,6 @@ INPUT .\images\chapitre6\agglo_clustering.png
 INPUT .\images\chapitre6\agglo_clustering.png
 INPUT .\images\chapitre6\agglo_clustering.png
 INPUT .\images\chapitre6\agglo_clustering.png
-INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
 INPUT .\images\chapitre6\dendrogram.png
 INPUT .\images\chapitre6\dendrogram.png
 INPUT images\chapitre6\dendrogram.png
@@ -2570,11 +2571,11 @@ INPUT .\main.out
 INPUT .\main.out
 INPUT C:\Users\abdou\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\abdou\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\base\8r.enc
+INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
-INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\base\8r.enc
-INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
 INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
 INPUT C:\Users\abdou\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx10.pfb

@@ -96,16 +96,21 @@ Le calcule d’une intégrale avec un seul paramètres (intégrale a une dimensi
 L’approche Bayésienne d’aujourd’hui utilise des méthodes de simulation MCMC (chaine de Markov Monte Carlo) pour passer outre ce problème de calcule d’intégrale multiple. Nous verrons dans la section suivantes les chaines de Markov de Monte Carlo et leurs méthodes.
 
 \subsubsection{Chaine de Markov Monte Carlo (MCMC)}
-Malheureusement, dans la plupart des cas pratiques, il est impossible d’obtenir une solution analytique pour la distribution a posteriori. Le dénominateur sous la forme continue du théorème de Bayes consiste en une intégrale sur un espace potentiellement de grande dimension. L’un des moyens de résoudre ce problème est d’obtenir des échantillons de la distribution a posteriori. Parmi les approches les plus utilisées pour surmonter ces difficultés, on trouve les méthodes du Monte Carlo par chaînes de Markov et l’inférence variationnelle (dont nous n’évoquerons pas). Les méthodes de Monte Carlo par chaîne de Markov (MCMC) proposent des schémas pour dessiner (draw en anglais qui est présent dans les objets fit des résultats d’échantillonnages) une série d'échantillons corrélés qui convergent vers la distribution cible \cite{neal1993probabilistic}. \\
+Malheureusement, dans la plupart des cas pratiques, il est impossible d’obtenir une solution analytique pour la distribution a posteriori. Le dénominateur sous la forme continue du théorème de Bayes consiste en une intégrale sur un espace potentiellement de grande dimension. L’un des moyens de résoudre ce problème est d’obtenir des échantillons de la distribution a posteriori. Parmi les approches les plus utilisées pour surmonter ces difficultés, on trouve les méthodes du Monte Carlo par chaînes de Markov et l’inférence variationnelle (dont nous n’évoquerons pas). Les méthodes de Monte Carlo par chaîne de Markov (MCMC) proposent des schémas pour dessiner,tirer (draw en anglais qui est présent dans les objets fit des résultats d’échantillonnages) une série d'échantillons corrélés qui convergent vers la distribution cible \cite{neal1993probabilistic}. \\
 
 Les algorithmes MCMC consistent à simuler séquentiellement une seule chaîne de Markov dont la distribution limite est celle choisie (par example, le maximum de la fonction de vraisemblance fois une densité de probabilité a priori des paramètres). Plus précisément, une chaîne de Markov est une séquence de variables aléatoires telle que la valeur suivante ou état de la séquence dépend uniquement de l’état présent et non des états passés \cite{neal1993probabilistic}. Alors, une séquence de variables aléatoires est générée \(\displaystyle \widehat{q}_{0}, \widehat{q}_{1}, ... \)  telle que l’état suivant \(\displaystyle \widehat{q}_{t+1} \) avec \(\displaystyle t \geq 0  \) est distribué selon la probabilité de transition \(\displaystyle T(\widehat{q}_{t} \rightarrow \widehat{q}_{t+1}) \overset{def}{=} P(\widehat{q}_{t+1}|\widehat{q}_{t}) \) \cite{gbedo2017techniques} tout en visant la convergence de la chaine, c’est-à-dire que la chaîne est ergodique (stationnaire, irréductible et non périodique). \\
 
-Une chaîne de Markov est définit par les valeurs initiales des distributions marginales des paramètres et la probabilité de transition entre deux états de l’espace des paramètres : \(\displaystyle T(\widehat{q} \rightarrow \widehat{q}\prime) \), pour aller d’un état \(\displaystyle \widehat{q} \) à l’autre état \(\displaystyle \widehat{q}\prime \). Les algorithmes MCMC sont généralement influencés lors de l’implémentation par le point de départ de la chaîne (ce qui conduit à une phase de « burn-in »), par le choix de la probabilité de transition, le taux de convergence, l’acceptance de l’algorithme, etc. \\
+Une chaîne de Markov est définit par les valeurs initiales des distributions marginales des paramètres et la probabilité de transition entre deux états de l’espace des paramètres : \(\displaystyle T(\widehat{q} \rightarrow \widehat{q}^{\prime}) \), pour aller d’un état \(\displaystyle \widehat{q} \) à l’autre état \(\displaystyle \widehat{q}^{\prime} \). Les algorithmes MCMC sont généralement influencés lors de l’implémentation par le point de départ de la chaîne (ce qui conduit à une phase de « burn-in », comme l’illustre la figure \ref{mcmc_iterations}), par le choix de la probabilité de transition, le taux de convergence, l’acceptance de l’algorithme, etc. \\
 
-Les algorithmes de Monte Carlo à chaînes de Markov (MCMC) sont donc des outils informatiques standard pour analyser les modèles complexes bayésiens \cite{gelfand1990sampling} même si des fois des problème peuvent surgir dans leurs implémentations \cite{robert2020markov}. Parmi les méthodes MCMC, il y’a l’algorithme de Metropolis , l’algorithme de Metropolis–Hastings, échantillonnage de Gibbs, échantillonnage par tranches, Metropolis à tentatives multiples, Méthode de sur-relaxation l'hamiltonien Monte Carlo (HMC), No-U-Turn Sampler (NUTS), la méthode MCMC de Langevin et les méthodes basées sur le changement de dimension. Bien que notre travail ne soit pas centré sur les algorithmes MCMC et leur convergence, nous passerons en revue quelques définitions et théories qui justifient le fonctionnement des méthodes MCMC, et un bref résumé de quelque algorithmes MCMC. \\
-% Malheureusement, dans la plupart des cas pratiques, il est impossible d'obtenir une solution analytique pour la distribution a posteriori. Le dénominateur sous la forme continue du théorème de Bayes consiste en une intégrale sur un espace potentiellement de grande dimension. L'un des moyens de résoudre ce problème est d'obtenir des échantillons de la distribution a posteriori. Ces échantillons sont distribués selon la distribution a posteriori.  \\
-% Habituellement, les méthodes dites de Markov Chain Monte Carlo (MCMC) sont utilisées pour obtenir des échantillons à partir d'une distribution. Ces méthodes partent des valeurs initiales des paramètres. Ensuite, de nouvelles valeurs sont proposées et acceptées selon certaines fonctions de proposition et d'acceptation. Ce processus de proposition et d'acceptation est répété plusieurs fois pour créer un grand nombre d'échantillons. Différentes méthodes diffèrent principalement dans leurs implémentations des fonctions de proposition et d'acceptation. \\
-% Les méthodes MCMC peuvent nécessiter un certain post-traitement des échantillons obtenus - par exemple, il peut être nécessaire d'ignorer les premiers (souvent des centaines ou des milliers) échantillons, car « ils ont été collectés loin des valeurs des paramètres pertinents » par exemple la figure ci-dessous. De plus, les échantillons sont généralement corrélés et donc souvent, seul un nième échantillon (après le retrait des échantillons initiaux) est retenu. De plus, les méthodes peuvent échouer (pour donner des échantillons représentatifs de la distribution). Il existe des moyens de diagnostiquer cela, par exemple en créant plusieurs « chaînes d'échantillonnage » (et en comparant leurs résultats). \\
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre5/mcmc_iterations.png}
+	\end{center}
+	\caption{La phase « burn-in » d’une chaine de Markov et celle de la convergence de la chaine.}
+	\label{mcmc_iterations}
+\end{figure}
+
+Les algorithmes de Monte Carlo à chaînes de Markov (MCMC) sont donc des outils informatiques standard pour analyser les modèles complexes bayésiens \cite{gelfand1990sampling} même si des fois des problème peuvent surgir dans leurs implémentations \cite{robert2020markov}. Parmi les méthodes MCMC, il y’a l’algorithme de Metropolis , l’algorithme de Metropolis–Hastings, échantillonnage de Gibbs, échantillonnage par tranches, Metropolis à tentatives multiples, Méthode de sur-relaxation l'hamiltonien Monte Carlo (HMC), No-U-Turn Sampler (NUTS), la méthode MCMC de Langevin et les méthodes basées sur le changement de dimension. Bien que notre travail ne soit pas centré sur les algorithmes MCMC, nous passerons en revue quelques définitions et théories qui justifient le fonctionnement des méthodes MCMC, et un bref résumé de quelque algorithmes MCMC. \\
 
 \paragraph{Théorème de convergence des chaînes de Markov \cite{entezari2018bayesian} \cite{meyn2012markov} \cite{rosenthal2006first}}
 Une chaîne de Markov à temps discret est définie par une séquence de variables aléatoires \(\displaystyle X_{0}, X_{2}, X_{3} ... \) qui peut prendre des valeurs possibles dans l'espace d'état \(\displaystyle X \) avec une distribution initiale définie pour \(\displaystyle X_{0}\) et des probabilités de transition définies comme :
@@ -140,25 +145,153 @@ Comme nous l’avons évoqué précédemment la probabilité que la chaîne pass
 	\lim_{x \to \infty} \left\lVert P^{n}(x,.) - \pi(.) \right\rVert = 0
 \end{equation} 
 
-Soit \(\displaystyle \lim_{x \to \infty} P^{n}(x,A) = \pi(A) \hspace{1em} \forall A \subseteq  X \) . \\
+\noindent Soit \(\displaystyle \lim_{x \to \infty} P^{n}(x,A) = \pi(A) \hspace{1em} \forall A \subseteq  X \) . \\
 Dans la section suivante, nous décrirons quelques algorithmes MCMC les plus courants qui respectent l’aspect stationnaire, irréductible et non périodique des chaines de Markov.
-\paragraph{Metropolis-Hastings algorithm}
-\paragraph{Gibbs sampling}
+\paragraph{Algorithme de Metropolis-Hastings}
+L’algorithme de Metropolis-Hastings, proposé par METROPOLIS \cite{metropolis1953equation} et généralisé par HASTINGS \cite{hastings1970monte} est principalement utilisé comme moyen de simuler des observations à partir de distributions cibles. L'algorithme produit une chaîne de Markov dont la distribution limite des membres est la densité cible \(\displaystyle \pi(x) \) et qui s’itère en « sautant » de l’état actuel x de l’espace des paramètres à l’état suivant y avec une probabilité d’acceptation suivante :
+
+\begin{equation}
+	\alpha(x,y) = \min\Biggl( 1, \frac{\pi(y)q(y,x)}{\pi(x)q(x,y)} \Biggr)
+\end{equation}
+
+Où \(\displaystyle q(x,y) \) est la probabilité conditionnelle de proposer l'état \(\displaystyle y \) étant donné l'état \(\displaystyle x \). L'algorithme de Metropolis-Hastings est décrit dans l’algorithme \ref{m-c_algo}.
+
+\begin{algorithm}
+	\caption{Algorithme de Metropolis-Hastings \cite{entezari2018bayesian}}
+	\label{m-c_algo}
+	\begin{algorithmic}[1]
+		\State Initial: value $X_{0}$, burn-in iterations $B$, number of samples $M$
+		\State Output: $S_{1},...,S_{M}$ samples
+		\For{$n$ in \{ $1,...,(B+M)$ \}}
+			\State Draw $Y_{n}\sim Q(X_{n-1,.}) $, where $Q$ is the proposal distribution with probability density function q.
+			\State Calculate $A_{n}$ = $\frac{\pi(Y_{n})q(Y_{n},Y_{n-1})}{\pi(X_{n-1})q(X_{n-1},Y_{n})}$
+			\State Draw $U_{n} \sim $ Uniform[0,1]
+			\If{$U_{n} < A_{n}$}
+				\State $X_{n} = Y_{n}$ (« accept »)
+			\Else
+				\State $X_{n} = X_{n-1}$ (« reject »)
+			\EndIf
+		\EndFor
+		\State \Return $S_{1} = X_{B+1},...,S_{M} = X_{B+M}$.
+	\end{algorithmic}
+\end{algorithm}
+
+% \paragraph{Gibbs sampling}
 \paragraph{Hamiltonian Monte Carlo}
+L'hamiltonien Monte Carlo (HMC) est une méthode de Monte Carlo à chaîne de Markov (MCMC) capable de traiter des distributions cibles de grande dimension et qui utilise les dérivées de la fonction de densité échantillonnée pour générer des transitions efficaces couvrant la partie postérieure \cite{neal2011mcmc} \cite{betancourt2015hamiltonian}.Il utilise une simulation de dynamique hamiltonienne approximative basée sur une intégration numérique qui est ensuite corrigée en effectuant une étape d'acceptation Metropolis. Bien qu'il s'agisse d'un cas particulier d'échantillonneurs en temps continu, il peut être mis en œuvre en temps discret et est en fait à l'origine du succès du package Stan qui est utilisé dans la section implémentation \ref{irt_model_for_bayesian_inference}. L'hamiltonien Monte Carlo améliore l'efficacité en utilise le gradient du log postérieur pour diriger la chaîne de Markov vers les régions de densité postérieure plus élevée, où la plupart des échantillons sont prélevés, par conséquent, une chaîne HMC bien réglée acceptera les propositions à un taux beaucoup plus élevé que l'algorithme MH traditionnel \cite{gelman1997weak}. \\
+Le processus repose sur une variable auxiliaire \(\displaystyle v \in \mathbb{R}^{d} \) qui augmente la distribution cible tout en échantillonnant à partir de \(\displaystyle \pi \) (une mesure cible de probabilité \(\displaystyle \pi \) sur \(\displaystyle \varTheta \subset \mathbb{R}_{d}\) par rapport à la mesure de Lebesgue, notée \(\displaystyle \pi(\theta) \infty \exp\{-U(\theta)\} \), où \(\displaystyle U \) est une fonction continûment dérivable appelée fonction de potentiel \cite{wu2018faster}. 
+L’hamiltonien est défini par :
+\begin{equation}
+	H(\theta,v) = U(\theta) + \frac{1}{2}v^{T}M^{-1}v.
+\end{equation}
+\noindent Et HMC se base sur la dynamique hamiltonienne pour générer des propositions pour \(\displaystyle \theta \):
+\begin{equation}
+	\frac{d\theta}{dt} = \frac{\partial H}{\partial v} = M^{-1}v \hspace{0.5em} \text{et} \hspace{0.5em} \frac{dv}{dt} = - \frac{\partial H}{\partial \theta} = - \nabla U(\theta)
+\end{equation}
+
+\noindent L’algorithme HMC est :
+
+\begin{algorithm}
+	\caption{Algorithme de Monte Carlo hamiltonien \cite{wu2018faster}}
+	\label{hmc_algo}
+	\begin{algorithmic}[1]
+		\State Initial: Starting point $\theta_{0}$ , step size $\epsilon $, number of leapfrog steps $L$, covariance matrix $M$, number of iterations $N$.
+		\State Output: sample $\{ \theta_{0},...,\theta_{N}\}$ drawn from $\pi(\theta)$
+		\For{$n \leftarrow 1$ to $N$}
+			\State draw $v$ from $\mathcal{N}(\cdot|0,M)$ 
+			\State compute $\theta^{\star},v^{\star} = Leapfrog(\theta_{n-1,v,\epsilon,L})$ compute
+			\begin{equation}
+				\rho = 1 \wedge \exp \{ H(\theta_{n-1},v) - H(\theta^{\star},-v^{\star})\}
+			\end{equation}
+			\State set
+			\begin{equation}
+				(\theta_{n},v_{n}) = \Biggl\{
+				\begin{array}{ll}
+					(\theta^{\star},-v^{\star}), \text{with probability} \rho \\
+					(\theta_{n-1},v), \text{otherwise.}
+				\end{array}
+			\end{equation}
+		\EndFor
+		\State \Return $(\theta_{0},...,\theta_{N})$
+		\Function{Leapfrog}{$\theta,v,\epsilon,L$}
+			\State compute $(\theta_{0},v_{0}) = (\theta,v,- \epsilon / 2 \nabla U(\theta))$
+			\For{$l \leftarrow 1$ to $L$}
+				\State compute $\theta_{l} = \theta_{l-1} + \epsilon M^{-1}v_{l-1}$
+				\State compute $v{l} = v_{l-1} -\epsilon \nabla U(\theta_{l})$
+			\EndFor
+			\State \Return $(\theta_{l},v_{l},+ \epsilon / 2 \nabla U(\theta_{l})$
+		\EndFunction
+	\end{algorithmic}
+\end{algorithm}
+
 \paragraph{No-U-Turn Sampler}
+L’Hamiltonien Monte Carlo est un algorithme puissant, mais qui souffre de la nécessité d'ajuster le nombre d'étapes \(\displaystyle \mathcal{L}  \) par exemple en utilisant des heuristiques basées sur des statistiques d'autocorrélation à partir d'essais préliminaires coûteux \cite{neal2011mcmc}. Ce besoin de fixer le paramètre \(\displaystyle \mathcal{L}  \) est éliminé par l’algorithme No-U-Turn Sampler (NUTS). \\
 
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=\textwidth]{images/chapitre5/mcmc_iterations.png}
-	\end{center}
-	\caption{}
-	\label{mcmc_iterations}
-\end{figure}
+Un échantillonneur MCMC qui utilise l’algorithme NUTS conserve la capacité de HMC à supprimer le comportement de marche aléatoire sans avoir besoin de définir le nombre \(\displaystyle \mathcal{L}  \) d'étapes de saut que l'algorithme prend pour générer une proposition. Le critère utilisé se base sur le produit scalaire entre \(\displaystyle \widetilde{r}  \) (la quantité de mouvement actuelle) et \(\displaystyle \widetilde{\theta} - \theta  \) (le vecteur de la position initiale à la position actuelle), qui est la dérivée par rapport au temps (dans le système hamiltonien) de la moitié de la distance au carré entre la position initiale \(\displaystyle \theta  \) et la position actuelle \(\displaystyle \widetilde{\theta}  \) \cite{hoffman2014no}:
 
-Plusieurs méthodes sont utilisées pour construire ces chaines comme : Metropolis-Hastings, Gibbs sampler, Metropolis-within-Gibbs, HMC etc.
+\begin{equation}
+	\frac{d}{dt} \frac{ (\widetilde{\theta} - \theta)^{T} (\widetilde{\theta} - \theta )}{2} = (\widetilde{\theta} - \theta)^{T} \frac{d}{dt} (\widetilde{\theta} - \theta) = (\widetilde{\theta} - \theta)^{T} \widetilde{r}.  
+\end{equation}
 
-\subsection{Model selection}
-Pour faire de la sélection de model il faut vérifier s’il y’a un effet des valeurs des paramètres sur la variable cible (par exemple sur la réussite ou pas à un item). \\
+\noindent Le pseudocode implémentant NUTS est fourni dans l'algorithme \ref{nuts_algo}. L'échantillonneur par défaut (NUTS) de Stan est plus efficace pour explorer le postérieur \cite{hoffman2011no}  \cite{hoffman2014no} et adapte automatiquement le nombre de pas de saut, éliminant le besoin de spécifier les paramètres de réglage par l'utilisateur.
+
+\begin{algorithm}[H]
+	\caption{No-U-Turn Sampler \cite{hoffman2011no}}
+	\label{nuts_algo}
+	\begin{algorithmic}[1]
+		\State Resample $r \sim \mathcal{N} (0,I)$. ($I$ denote the identity matrix.)
+		\State Resample $u \sim$ Uniform$(0,\exp\{\mathcal{L}(\theta^{t}) - \frac{1}{2}r^{T}r\})$. 
+		\State Initalize $\theta^{-} = \theta^{t},\theta^{+} = \theta^{t}, r^{-} = r,r^{+} = r,j=0,\theta^{t+1} = \theta^{t},n=1,s=1.$
+		\While{$s=1$}
+			\State Chose a direction $v_{j} \sim$ Uniform$(\{-1,1\})$.
+			\If{$v_{j} = -1$}
+				\State $\{ \theta^{-},r^{-},-,-,\theta^{\prime},n^{\prime},s^{\prime} \} \leftarrow $ Recurse$(\theta^{-},r^{-},u,v_{j},j,\epsilon)$.
+			\Else
+				\State $\{ -,-,\theta^{+},r^{+},\theta^{\prime},n^{\prime},s^{\prime} \} \leftarrow $ Recurse$(\theta^{+},r^{+},u,v_{j},j,\epsilon)$.
+			\EndIf
+			\If{$s^{\prime} = 1$}
+				\State With probability $\min\{ 1,\frac{n^{\prime}}{n} \}$, set $\theta^{t+1} \leftarrow \theta^{\prime} $.
+			\EndIf
+			\State $n \leftarrow n + n^{\prime}$.
+			\State $s \leftarrow s^{\prime} \mathbb{I} \left[ (\theta^{+} - \theta^{-})^{T} r^{-} \geq 0  \right] \mathbb{I} \left[ (\theta^{+} - \theta^{-})^{T} r^{+} \geq 0  \right]  $.
+			\State $j \leftarrow j+1$.
+		\EndWhile
+		\Function{Recurse}{$\theta,r,u,v,j,\epsilon$}
+			\If{$j=0$}
+				\State Base case take one leapfrog step in the direction v.
+				\State $r^{\prime} \leftarrow \frac{v \epsilon}{2} \nabla_{\theta} \mathcal{L} (\theta)$.
+				\State $\theta^{\prime} \leftarrow v \epsilon r^{\prime}$.
+				\State $r^{\prime} \leftarrow \frac{v \epsilon}{2} \nabla_{\theta} \mathcal{L} (\theta^{\prime})$.
+				\State $n^{\prime} \leftarrow \mathbb{I} \left[ u \leq \exp \{ \mathcal{L} (\theta^{\prime}) - \frac{1}{2} r^{\prime T} r^{\prime}\} \right] $.
+				\State $s^{\prime} \leftarrow \mathbb{I} \left[ \mathcal{L} (\theta^{\prime}) - \frac{1}{2} r^{\prime T} r^{\prime} > u - \Delta_{\max}  \right] $
+				\State \Return $\{ \theta^{\prime},r^{\prime},\theta^{\prime},r^{\prime},\theta^{\prime},n^{\prime},s^{\prime} \}$.
+			\Else
+				\State Recursion implicitly build the left and right subtrees.
+				\State $\{ \theta^{-},r^{-},\theta^{+},r^{+},\theta^{\prime},n^{\prime},s^{\prime} \} \leftarrow $ Recurse$(\theta,r,u,v,j-1,\epsilon)$.
+				\If{$s^{\prime} = 1$}
+					\If{$v = -1$}
+						\State $\{ \theta^{-},r^{-},-,-,\theta^{\prime \prime},n^{\prime \prime},s^{\prime \prime} \} \leftarrow $ Recurse$(\theta^{-},r^{-},u,v,j-1,\epsilon)$.
+					\Else
+						\State $\{ -,-,\theta^{+},r^{+},\theta^{\prime \prime},n^{\prime \prime},s^{\prime \prime} \} \leftarrow $ Recurse$(\theta^{+},r^{+},u,v,j-1,\epsilon)$.
+					\EndIf
+					\State With probability $\frac{n^{\prime \prime}}{n^{\prime} + n^{\prime \prime}}$, set $\theta^{\prime} \leftarrow \theta^{\prime \prime}$.
+					\State $s \leftarrow s^{\prime \prime} \mathbb{I} \left[ (\theta^{+} - \theta^{-})^{T} r^{-} \geq 0  \right] \mathbb{I} \left[ (\theta^{+} - \theta^{-})^{T} r^{+} \geq 0  \right]  $. 
+				\EndIf
+				\State \Return $\{ \theta^{-},r^{-},\theta^{+},r^{+},\theta^{\prime},n^{\prime} + n^{\prime \prime},s^{\prime} \}$.
+			\EndIf
+		\EndFunction
+	\end{algorithmic}
+\end{algorithm}
+
+% Malheureusement, dans la plupart des cas pratiques, il est impossible d'obtenir une solution analytique pour la distribution a posteriori. Le dénominateur sous la forme continue du théorème de Bayes consiste en une intégrale sur un espace potentiellement de grande dimension. L'un des moyens de résoudre ce problème est d'obtenir des échantillons de la distribution a posteriori. Ces échantillons sont distribués selon la distribution a posteriori.  \\
+% Habituellement, les méthodes dites de Markov Chain Monte Carlo (MCMC) sont utilisées pour obtenir des échantillons à partir d'une distribution. Ces méthodes partent des valeurs initiales des paramètres. Ensuite, de nouvelles valeurs sont proposées et acceptées selon certaines fonctions de proposition et d'acceptation. Ce processus de proposition et d'acceptation est répété plusieurs fois pour créer un grand nombre d'échantillons. Différentes méthodes diffèrent principalement dans leurs implémentations des fonctions de proposition et d'acceptation. \\
+% Les méthodes MCMC peuvent nécessiter un certain post-traitement des échantillons obtenus - par exemple, il peut être nécessaire d'ignorer les premiers (souvent des centaines ou des milliers) échantillons, car « ils ont été collectés loin des valeurs des paramètres pertinents » par exemple la figure ci-dessous. De plus, les échantillons sont généralement corrélés et donc souvent, seul un nième échantillon (après le retrait des échantillons initiaux) est retenu. De plus, les méthodes peuvent échouer (pour donner des échantillons représentatifs de la distribution). Il existe des moyens de diagnostiquer cela, par exemple en créant plusieurs « chaînes d'échantillonnage » (et en comparant leurs résultats). \\
+%Plusieurs méthodes sont utilisées pour construire ces chaines comme : Metropolis-Hastings, Gibbs sampler, Metropolis-within-Gibbs, HMC etc.
+
+\subsection{Méthodes de vérifications et de comparaison de modèles}
+Les méthodes de vérifications de modèles sont différentes des méthodes de comparaisons du fait qu’elles permettent d'examiner si un modèle capture les caractéristiques importantes d'un ensemble de données, tandis que les méthodes de comparaisons répondent à la question de savoir quel modèle parmi un groupe de modèles candidats est le meilleur. \\
+La théorie des réponses aux items (TRI) dans le cadre bayésien comme tout autres méthodes permettent une analyse plus approfondie en utilisant des distributions postérieures du modèle. En général, certaines techniques populaires de vérification de modèle bayésien qui ont été appliquées à l'IRT comprennent l'analyse résiduelle bayésienne, les vérifications prédictives préalables et les vérifications prédictives postérieures, et les méthodes de comparaison de modèles bayésiens incluent le critère d'information sur la déviance DIC \cite{spiegelhalter2003bayesian}, le facteur de Bayes \cite{kass1995bayes} et la probabilité de validation croisée et le facteur de Bayes partiel \cite{o1995fractional}. \\
+Pour faire de la sélection de modèle (en comparant plusieurs modèles) il faut vérifier s’il y’a un effet des valeurs des paramètres sur la variable cible (par exemple sur la réussite ou pas à un item). \\
 Dans le cadre fréquentiste, l’idée est de pénalisé les modèles qui ont trop de paramètres. Pour le faire il y’a \(\displaystyle AIC \)  :
 
 \begin{equation}
@@ -170,7 +303,10 @@ Avec \(\displaystyle L \) la vraisemblance et \(\displaystyle k \) le nombre de 
 \(\displaystyle -2 \log (L(\widehat{\theta_{1}},...,\widehat{\theta_{k}} )) \) est la déviance qui mesure la qualité de l’ajustement du model de donnée. Plus il y’a de paramètres plus cette quantité est petite et mieux le model est ajuster aux données. \\
 \(\displaystyle 2k \) : c’est la pénalité, plus il y’a des paramètres plus cette quantité augmente. Cette pénalité est un équilibre entre l’ajustement du model des données et la complexité du model qui est capturer par le nombre de paramètres. \\ \\
 
-En bayésien il y’a WAIC (Watanabe Akaike Information Criteria) définit par :
+\noindent En bayésien, le critère d'information WAIC (Watanabe Akaike Information Criteria) et la validation croisée LOO (leave-one-out cross-validation) sont considéré comme des méthodes de sélection de modèles entièrement bayésiennes en raison de leur utilisation de l'ensemble a posteriori distribution autre que les estimations ponctuelles. \\
+
+\noindent WAIC \cite{watanabe2010asymptotic} est une méthode de sélection de modèle entièrement bayésienne basé sur un critère d'information et est considéré comme une version améliorée de DIC, définit comme suit :
+%\noindent En bayésien il y’a WAIC (Watanabe Akaike Information Criteria) définit par :
 
 \begin{equation}
 	WAIC = -2\sum_{i=1}^{n} \log E\left[ p(y_{i}|\theta) \right] + 2p_{WAIC}
@@ -179,8 +315,15 @@ En bayésien il y’a WAIC (Watanabe Akaike Information Criteria) définit par :
 
 Où \(\displaystyle E\left[ p(y_{i}|\theta) \right] \) est la moyenne a posteriori de la vraisemblance de la ième observation.
 \(\displaystyle Pwaic \)  est le nombre effectif de paramètres calculés en utilisant la variance postérieure de la vraisemblance.
-La valeur de waic est la somme entre la deviance + le nombre de paramètre pwaic.
+La valeur de waic est la somme entre la deviance + le nombre de paramètre pwaic. \\
 
+\noindent Une autre méthode de comparaison de modèles entièrement bayésienne est la validation croisée LOO \cite{geisser1979predictive} définit : \\
+
+\begin{equation}
+	LOO = -2\sum_{i=1}^{n} \log \int \,p(y_{i}|\theta)p_{post(-i)}(\theta)d\theta.
+	\label{loo_formula}
+\end{equation}
+ Où \(\displaystyle p_{post(-i)}(\theta) \) est la distribution postérieure basée sur les données moins le point de données \(\displaystyle i \).
 \section{La théorie des réponses aux items}
 La théorie des réponses aux items (TRI) aussi appelé théorie des traits latents, théorie du vrai score fort ou théorie moderne des tests mentaux est un paradigme pour la conception, l’analyse et la notation des test et des questionnaires \cite{fisher1922mathematical}. TRI intervient dans la mesure ou la théorie classique n’apporte pas toujours des réponses satisfaisantes. Par exemple un item jugé facile ou difficile peut ne plus l’être dans un échantillon différent qu’il appartenait.
 
@@ -386,4 +529,4 @@ generated quantities {
 
 \section{Related work}
 \section{Conclusion}
-
+En conclusion, l’inférence bayésienne est une méthode probabiliste qui prend en compte les informations apriori et cherche des résultats qui sont des distributions de probabilité. Sans oublier Les probabilités conditionnelles et le théorème de bayes qui jouent un rôle central dans le processus d’inférence, les méthodes de Monte Carlo par Chaine de Markov résolve une difficulté de calcule d’intégrale sur un espace de grande dimension causée par le dénominateur du théorème de bayes. En pratique les résultats des modèles utilisé dans la théorie des réponses au items offre des possibilités d’analyser les modèles utilisés et de sélectionner le meilleur modèle. Apres toute ces notions vues dans ce chapitre, le chapitre suivant évoquera le clustering hard et soft.
