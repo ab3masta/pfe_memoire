@@ -1,37 +1,37 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Introduction}{\reset@font\mtcSfont 61}{section.5.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Les métriques}{\reset@font\mtcSfont 62}{section.5.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Critère de liaison}{\reset@font\mtcSfont 62}{section.5.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.1}Distance inter-cluster}{\reset@font\mtcSSfont 63}{subsection.5.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.1.1}Distance de liaison unique}{\reset@font\mtcSSSfont 64}{subsubsection.5.3.1.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.1.2}Distance de liaison complète}{\reset@font\mtcSSSfont 64}{subsubsection.5.3.1.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.1.3}Distance de liaison moyenne}{\reset@font\mtcSSSfont 65}{subsubsection.5.3.1.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.1.4}Centroïde Linkage Distance}{\reset@font\mtcSSSfont 65}{subsubsection.5.3.1.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.1.5}Distance de liaison moyenne du centre de gravité}{\reset@font\mtcSSSfont 65}{subsubsection.5.3.1.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.2}Distance intra-cluster}{\reset@font\mtcSSfont 65}{subsection.5.3.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.1}Distance de diamètre complet}{\reset@font\mtcSSSfont 65}{subsubsection.5.3.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.2}Distance de diamètre moyen}{\reset@font\mtcSSSfont 66}{subsubsection.5.3.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.3}Diamètre barycentre Distance}{\reset@font\mtcSSSfont 66}{subsubsection.5.3.2.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Le clustering hiérarchique}{\reset@font\mtcSfont 66}{section.5.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.1}Introduction}{\reset@font\mtcSSfont 66}{subsection.5.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.2}Clustering hiérarchique agglomératif}{\reset@font\mtcSSfont 67}{subsection.5.4.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.2.1}Exemple de clustering agglomératif}{\reset@font\mtcSSSfont 67}{subsubsection.5.4.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.3}Clustering hiérarchique divisive}{\reset@font\mtcSSfont 68}{subsection.5.4.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.4}Procédures de fractionnement des clusters}{\reset@font\mtcSSfont 68}{subsection.5.4.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.5}Evaluations des bipartitions}{\reset@font\mtcSSfont 69}{subsection.5.4.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.6}Déterminations de niveaux de nœuds }{\reset@font\mtcSSfont 69}{subsection.5.4.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.7}Conclusion}{\reset@font\mtcSSfont 69}{subsection.5.4.7}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}Le clustering partitionnel}{\reset@font\mtcSfont 70}{section.5.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.1}K-means clustering}{\reset@font\mtcSSfont 70}{subsection.5.5.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.5.1.1}Le fonctionnement de l’algorithme k-means}{\reset@font\mtcSSSfont 70}{subsubsection.5.5.1.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.5.1.2}Les étapes de l’algorithme}{\reset@font\mtcSSSfont 70}{subsubsection.5.5.1.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.5.1.3}Les lacunes de l’algorithme k-means}{\reset@font\mtcSSSfont 71}{subsubsection.5.5.1.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.5.1.4}Les solutions aux lacunes de l’algorithme k-means}{\reset@font\mtcSSSfont 72}{subsubsection.5.5.1.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.6}Fuzzy clustering}{\reset@font\mtcSfont 73}{section.5.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.6.1}Introduction}{\reset@font\mtcSSfont 73}{subsection.5.6.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.6.2}Fuzzy C-means clustering :}{\reset@font\mtcSSfont 74}{subsection.5.6.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.6.2.1}Algorithme FCM :}{\reset@font\mtcSSSfont 74}{subsubsection.5.6.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.6.3}Conclusion}{\reset@font\mtcSSfont 75}{subsection.5.6.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.7}Les autres méthodes de clustering}{\reset@font\mtcSfont 76}{section.5.7}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.8}La différence entre le clustering hiérarchique, partitionnel et Fuzzy clustering}{\reset@font\mtcSfont 76}{section.5.8}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.9}Indice de validité du clustering}{\reset@font\mtcSfont 77}{section.5.9}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.10}Conclusion}{\reset@font\mtcSfont 79}{section.5.10}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Introduction}{\reset@font\mtcSfont 63}{section.5.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Les métriques}{\reset@font\mtcSfont 64}{section.5.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Critère de liaison}{\reset@font\mtcSfont 64}{section.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.1}Distance inter-cluster}{\reset@font\mtcSSfont 65}{subsection.5.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.1.1}Distance de liaison unique}{\reset@font\mtcSSSfont 66}{subsubsection.5.3.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.1.2}Distance de liaison complète}{\reset@font\mtcSSSfont 66}{subsubsection.5.3.1.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.1.3}Distance de liaison moyenne}{\reset@font\mtcSSSfont 67}{subsubsection.5.3.1.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.1.4}Centroïde Linkage Distance}{\reset@font\mtcSSSfont 67}{subsubsection.5.3.1.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.1.5}Distance de liaison moyenne du centre de gravité}{\reset@font\mtcSSSfont 67}{subsubsection.5.3.1.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.2}Distance intra-cluster}{\reset@font\mtcSSfont 67}{subsection.5.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.1}Distance de diamètre complet}{\reset@font\mtcSSSfont 67}{subsubsection.5.3.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.2}Distance de diamètre moyen}{\reset@font\mtcSSSfont 68}{subsubsection.5.3.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.3}Diamètre barycentre Distance}{\reset@font\mtcSSSfont 68}{subsubsection.5.3.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Le clustering hiérarchique}{\reset@font\mtcSfont 68}{section.5.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.1}Introduction}{\reset@font\mtcSSfont 68}{subsection.5.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.2}Clustering hiérarchique agglomératif}{\reset@font\mtcSSfont 69}{subsection.5.4.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.4.2.1}Exemple de clustering agglomératif}{\reset@font\mtcSSSfont 69}{subsubsection.5.4.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.3}Clustering hiérarchique divisive}{\reset@font\mtcSSfont 70}{subsection.5.4.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.4}Procédures de fractionnement des clusters}{\reset@font\mtcSSfont 70}{subsection.5.4.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.5}Evaluations des bipartitions}{\reset@font\mtcSSfont 71}{subsection.5.4.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.6}Déterminations de niveaux de nœuds }{\reset@font\mtcSSfont 71}{subsection.5.4.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.7}Conclusion}{\reset@font\mtcSSfont 71}{subsection.5.4.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}Le clustering partitionnel}{\reset@font\mtcSfont 72}{section.5.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.1}K-means clustering}{\reset@font\mtcSSfont 72}{subsection.5.5.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.5.1.1}Le fonctionnement de l’algorithme k-means}{\reset@font\mtcSSSfont 72}{subsubsection.5.5.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.5.1.2}Les étapes de l’algorithme}{\reset@font\mtcSSSfont 72}{subsubsection.5.5.1.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.5.1.3}Les lacunes de l’algorithme k-means}{\reset@font\mtcSSSfont 73}{subsubsection.5.5.1.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.5.1.4}Les solutions aux lacunes de l’algorithme k-means}{\reset@font\mtcSSSfont 74}{subsubsection.5.5.1.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.6}Fuzzy clustering}{\reset@font\mtcSfont 75}{section.5.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.6.1}Introduction}{\reset@font\mtcSSfont 75}{subsection.5.6.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.6.2}Fuzzy C-means clustering :}{\reset@font\mtcSSfont 76}{subsection.5.6.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.6.2.1}Algorithme FCM :}{\reset@font\mtcSSSfont 76}{subsubsection.5.6.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.6.3}Conclusion}{\reset@font\mtcSSfont 77}{subsection.5.6.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.7}Les autres méthodes de clustering}{\reset@font\mtcSfont 78}{section.5.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.8}La différence entre le clustering hiérarchique, partitionnel et Fuzzy clustering}{\reset@font\mtcSfont 78}{section.5.8}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.9}Indice de validité du clustering}{\reset@font\mtcSfont 79}{section.5.9}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.10}Conclusion}{\reset@font\mtcSfont 81}{section.5.10}}

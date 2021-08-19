@@ -321,85 +321,24 @@ S.~Geisser and W.~F. Eddy, ``A predictive approach to model selection,'' {\em
 \bibitem{xcv_wiki}
 ``Item response theory - wikipedia.''
 
-\bibitem{borman2001examination}
-W.~C. Borman, D.~E. Buck, M.~A. Hanson, S.~J. Motowidlo, S.~Stark, and
-  F.~Drasgow, ``An examination of the comparative reliability, validity, and
-  accuracy of performance ratings made using computerized adaptive rating
-  scales.,'' {\em Journal of applied psychology}, vol.~86, no.~5, p.~965, 2001.
-
-\bibitem{carter2011using}
-N.~T. Carter, D.~K. Dalal, C.~J. Lake, B.~C. Lin, and M.~J. Zickar, ``Using
-  mixed-model item response theory to analyze organizational survey responses:
-  An illustration using the job descriptive index,'' {\em Organizational
-  Research Methods}, vol.~14, no.~1, pp.~116--146, 2011.
-
-\bibitem{chernyshenko2007constructing}
-O.~S. Chernyshenko, S.~Stark, F.~Drasgow, and B.~W. Roberts, ``Constructing
-  personality scales under the assumptions of an ideal point response process:
-  Toward increasing the flexibility of personality measures.,'' {\em
-  Psychological assessment}, vol.~19, no.~1, p.~88, 2007.
-
-\bibitem{roznowski1989examination}
-M.~Roznowski, ``Examination of the measurement properties of the job
-  descriptive index with experimental items.,'' {\em Journal of applied
-  psychology}, vol.~74, no.~5, p.~805, 1989.
-
-\bibitem{tay2009fitting}
-L.~Tay, F.~Drasgow, J.~Rounds, and B.~A. Williams, ``Fitting measurement models
-  to vocational interest data: Are dominance models ideal?,'' {\em Journal of
-  Applied Psychology}, vol.~94, no.~5, p.~1287, 2009.
-
-\bibitem{chan1999shelf}
-K.-Y. Chan, F.~Drasgow, and L.~L. Sawin, ``What is the shelf life of a test?
-  the effect of time on the psychometrics of a cognitive ability test
-  battery.,'' {\em Journal of Applied Psychology}, vol.~84, no.~4, p.~610,
-  1999.
-
-\bibitem{nye2010never}
-C.~D. Nye, D.~A. Newman, and D.~L. Joseph, ``Never say ‘‘always’’?
-  extreme item wording effects on scalar invariance and item response curves,''
-  {\em Organizational Research Methods}, vol.~13, no.~4, pp.~806--830, 2010.
-
-\bibitem{raju2002measurement}
-N.~S. Raju, L.~J. Laffitte, and B.~M. Byrne, ``Measurement equivalence: A
-  comparison of methods based on confirmatory factor analysis and item response
-  theory.,'' {\em Journal of Applied Psychology}, vol.~87, no.~3, p.~517, 2002.
-
-\bibitem{stark2004examining}
-S.~Stark, O.~S. Chernyshenko, and F.~Drasgow, ``Examining the effects of
-  differential item (functioning and differential) test functioning on
-  selection decisions: When are statistically significant effects practically
-  important?,'' {\em Journal of Applied Psychology}, vol.~89, no.~3, p.~497,
-  2004.
-
-\bibitem{tay2015overview}
-L.~Tay, A.~W. Meade, and M.~Cao, ``An overview and practical guide to irt
-  measurement equivalence analysis,'' {\em Organizational Research Methods},
-  vol.~18, no.~1, pp.~3--46, 2015.
-
-\bibitem{stark2001effects}
-S.~Stark, O.~S. Chernyshenko, K.-Y. Chan, W.~C. Lee, and F.~Drasgow, ``Effects
-  of the testing situation on item responding: Cause for concern.,'' {\em
-  Journal of Applied psychology}, vol.~86, no.~5, p.~943, 2001.
-
-\bibitem{drasgow1996optimal}
-F.~Drasgow, M.~V. Levine, and M.~J. Zickar, ``Optimal identification of
-  mismeasured individuals,'' {\em Applied Measurement in Education}, vol.~9,
-  no.~1, pp.~47--64, 1996.
-
-\bibitem{zickar1999modeling}
-M.~J. Zickar and C.~Robie, ``Modeling faking good on personality items: An
-  item-level analysis.,'' {\em Journal of Applied Psychology}, vol.~84, no.~4,
-  p.~551, 1999.
-
-\bibitem{zickar2004uncovering}
-M.~J. Zickar, R.~E. Gibby, and C.~Robie, ``Uncovering faking samples in
-  applicant, incumbent, and experimental data sets: An application of
-  mixed-model item response theory,'' {\em Organizational Research Methods},
-  vol.~7, no.~2, pp.~168--190, 2004.
-
 \bibitem{yvonnick_2019}
 Y.~Noël, ``Introduction aux modèles de réponse à l'item (mri),'' Jan 2019.
+
+\bibitem{lunn2009bugs}
+D.~Lunn, D.~Spiegelhalter, A.~Thomas, and N.~Best, ``The bugs project:
+  Evolution, critique and future directions,'' {\em Statistics in medicine},
+  vol.~28, no.~25, pp.~3049--3067, 2009.
+
+\bibitem{plummer2003jags}
+M.~Plummer {\em et~al.}, ``Jags: A program for analysis of bayesian graphical
+  models using gibbs sampling,'' in {\em Proceedings of the 3rd international
+  workshop on distributed statistical computing}, vol.~124, pp.~1--10, Vienna,
+  Austria., 2003.
+
+\bibitem{stan}
+``Stan documentation.''
+  \href{https://mc-stan.org}{\color{blue}{https://mc-stan.org}}.
+\newblock accessed: 09-July-2021.
 
 \bibitem{data_analysis_irt}
 A.~Gelman and J.~Hill, {\em Data Analysis Using Regression And
@@ -658,11 +597,6 @@ J.~D. Hunter, ``Matplotlib: A 2d graphics environment,'' {\em Computing in
 S.~Tosi, {\em Matplotlib for Python Developers: Build Remarkable Publication
   Quality Plots the Easy Way}.
 \newblock From technologies to solutions, Packt Publishing, 2009.
-
-\bibitem{stan}
-``Stan documentation.''
-  \href{https://mc-stan.org/users/documentation/}{\color{blue}{https://mc-stan.org/users/documentation/}}.
-\newblock accessed: 09-July-2021.
 
 \bibitem{pystan}
 A.~Riddell, A.~Hartikainen, and M.~Carter, ``pystan (3.2.0).'' PyPI, Mar. 2021.

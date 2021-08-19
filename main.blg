@@ -6,13 +6,13 @@ The style file: ieeetr.bst
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 Database file #1: biblo.bib
 Warning--entry type for "iris_dataset" isn't style-file defined
---line 1190 of file biblo.bib
+--line 1210 of file biblo.bib
 Warning--entry type for "python_cours" isn't style-file defined
---line 1215 of file biblo.bib
+--line 1235 of file biblo.bib
 Warning--entry type for "anaconda_website" isn't style-file defined
---line 1220 of file biblo.bib
+--line 1240 of file biblo.bib
 Warning--entry type for "conda_website" isn't style-file defined
---line 1226 of file biblo.bib
+--line 1246 of file biblo.bib
 Warning--empty publisher in data_mining_concepts_techniques
 Warning--empty publisher in handbook_of_educational_data_mining
 Warning--empty booktitle in user_modelling_help_systems
@@ -26,50 +26,51 @@ Warning--empty booktitle in adaptive_assessment_using_granularity_hierarchies_an
 Warning--empty booktitle in Discovering_Prerequisite_Relationships_among_Knowledge_Components
 Warning--empty journal in hastings1970monte
 Warning--empty journal in hoffman2011no
+Warning--can't use both volume and number fields in plummer2003jags
 Warning--empty chapter and pages in data_analysis_irt
 Warning--empty publisher in data_analysis_irt
 Warning--empty journal in pang2005introduction
 Warning--empty publisher in Finding_Groups_in_Data_An_Introduction_To_Cluster_Analysis
 Warning--empty journal in bezdek1973cluster
-You've used 143 entries,
+You've used 131 entries,
             1876 wiz_defined-function locations,
-            1263 strings with 29175 characters,
-and the built_in function-call counts, 37264 in all, are:
-= -- 3741
-> -- 1401
+            1207 strings with 26590 characters,
+and the built_in function-call counts, 34045 in all, are:
+= -- 3422
+> -- 1252
 < -- 0
-+ -- 528
-- -- 385
-* -- 2608
-:= -- 5203
-add.period$ -- 167
-call.type$ -- 143
-change.case$ -- 127
++ -- 474
+- -- 343
+* -- 2363
+:= -- 4729
+add.period$ -- 155
+call.type$ -- 131
+change.case$ -- 115
 chr.to.int$ -- 0
-cite$ -- 161
-duplicate$ -- 1915
-empty$ -- 3561
-format.name$ -- 385
-if$ -- 9152
+cite$ -- 150
+duplicate$ -- 1736
+empty$ -- 3295
+format.name$ -- 343
+if$ -- 8356
 int.to.chr$ -- 0
-int.to.str$ -- 143
-missing$ -- 136
-newline$ -- 458
-num.names$ -- 146
-pop$ -- 479
+int.to.str$ -- 131
+missing$ -- 124
+newline$ -- 422
+num.names$ -- 134
+pop$ -- 461
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1337
+skip$ -- 1213
 stack$ -- 0
-substring$ -- 2375
-swap$ -- 781
+substring$ -- 2241
+swap$ -- 696
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 18
-while$ -- 373
-width$ -- 146
-write$ -- 1394
-(There were 22 warnings)
+warning$ -- 19
+while$ -- 343
+width$ -- 134
+write$ -- 1262
+(There were 23 warnings)

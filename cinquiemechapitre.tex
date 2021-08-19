@@ -342,10 +342,11 @@ Les modèles de la théorie des réponses aux items (TRI) présentent plusieurs 
 	\centering
 	\addtolength{\leftskip} {-4cm}
 	\addtolength{\rightskip}{-4.5cm}
-	\begin{tabular}{|m{4cm}|m{6cm}|m{6cm}|m{0.5cm}|}
+	\begin{tabular}{|m{4cm}|m{6cm}|m{6cm}|}
 	\hline
-	\textbf{Problèmes méthodologiques} & \textbf{Applications de l'IRT} & \textbf{Avantages de l'IRT par rapport aux méthodes alternatives} & \\ \hline
-	Construction et évaluation de l'échelle & 
+	\textbf{Problèmes méthodologiques} & \textbf{Applications de l'IRT} & \textbf{Avantages de l'IRT par rapport aux méthodes alternatives}  \\ \hline
+	Construction et évaluation de l'échelle 
+	 & 
 	\begin{itemize}[leftmargin=*]
 	    \item Peut être utilisé pour raccourcir une échelle ou examiner la qualité des échelles existantes
 	    \item Peut être utilisé pour développer d'autres types d'évaluations.
@@ -355,7 +356,8 @@ Les modèles de la théorie des réponses aux items (TRI) présentent plusieurs 
 		\item Contrairement au CTT, les paramètres des éléments IRT sont invariants d'un échantillon à l'autre.
 		\item IRT peut être utilisé pour créer des tests adaptatifs, mais pas CTT.
 		\item Bien que les méthodes CTT soient cohérentes avec les modèles de dominance, l'IRT peut être utilisé pour créer des mesures ponctuelles idéales.
-	\end{itemize} & \cite{borman2001examination} \cite{carter2011using} \cite{chernyshenko2007constructing} \cite{roznowski1989examination} \cite{tay2009fitting}\\ \hline
+	\end{itemize} \\ \hline
+	% & \cite{borman2001examination} \cite{carter2011using} \cite{chernyshenko2007constructing} \cite{roznowski1989examination} \cite{tay2009fitting}
 
 	Identifier l'élément (l'item) et tester le biais &
 	\begin{itemize}[leftmargin=*]
@@ -367,8 +369,8 @@ Les modèles de la théorie des réponses aux items (TRI) présentent plusieurs 
 	\begin{itemize}[leftmargin=*]
 	    \item La comparaison des différences moyennes avec le CTT confond le biais avec de vraies différences dans le trait latent.
 	    \item Les modalités d'examen du DTF sont plus développées qu'en CFA.
-	\end{itemize}
-	& \cite{chan1999shelf} \cite{nye2010never} \cite{raju2002measurement} \cite{stark2004examining} \cite{tay2015overview} \\ \hline
+	\end{itemize}\\ \hline
+	% & \cite{chan1999shelf} \cite{nye2010never} \cite{raju2002measurement} \cite{stark2004examining} \cite{tay2015overview} 
 
 	Détection des réponses aberrantes &
 	\begin{itemize}[leftmargin=*]
@@ -378,17 +380,17 @@ Les modèles de la théorie des réponses aux items (TRI) présentent plusieurs 
 	\begin{itemize}[leftmargin=*]
 	    \item Les méthodes IRT peuvent détecter plusieurs types de réponses aberrantes tandis que d'autres méthodes ne peuvent détecter que des réponses imprudentes.
 	    \item Les méthodes IRT sont souvent plus efficaces pour détecter les réponses aberrantes que les méthodes traditionnelles de réponse à l'effort insuffisant (IER).
-	\end{itemize}
-	& \cite{stark2001effects} \cite{drasgow1996optimal} \cite{zickar1999modeling} \cite{zickar2004uncovering} \\ \hline
+	\end{itemize}\\ \hline
+	% & \cite{stark2001effects} \cite{drasgow1996optimal} \cite{zickar1999modeling} \cite{zickar2004uncovering} 
     \end{tabular}
 	\caption{Résumé des applications de l'IRT \cite{nye2020advancing}.}
 	\label{irt_application}
 \end{table}
 
 
-\subsection{Les Modèles TRI}
-On distingue deux familles de modèle IRT : les modèles unidimensionnels qui nécessitent une seule dimension de trait et les modèles multidimensionnels qui sont supposées provenir de plusieurs traits. Cependant, en raison de la complexité considérablement accrue, la majorité des recherches et des applications IRT utilisent un modèle unidimensionnel.
-\subsubsection{Les modèles à un, deux ou trois paramètres}
+\subsection{Les Modèles IRT}
+On distingue deux familles de modèle IRT : les modèles unidimensionnels qui nécessitent une seule dimension de trait et les modèles multidimensionnels qui sont supposées provenir de plusieurs traits. Cependant, en raison de la complexité considérablement accrue, la majorité des recherches et des applications IRT utilisent un modèle unidimensionnel. \\
+
 Les modèles IRT se distingue par le nombre de paramètre qu’il utilise. Le modèle à paramètre unique (1PL) suppose tous les éléments qui correspondent au modèle ont la même difficulté, de sorte que ces éléments sont décrits par un seul paramètre. C’est le cas du modèle de Rasch. Le modèle dit à deux paramètre (2PL) fait appel au paramètre de difficulté et de discrimination par exemple le modèle de Birnbaum. Par contre le modèle a trois paramètres (3PL) est celui qui cherche à estimer en plus le paramètre de difficulté et de discrimination, la pseudo chance. \\
 Il en résulte des modèles à un paramètre ayant la propriété d'objectivité spécifique, ce qui signifie que le rang de la difficulté de l'item est le même pour tous les répondants indépendamment de la capacité, et que le rang de la capacité de la personne est le même pour les items indépendamment de la difficulté. Ainsi, les modèles à 1 paramètre (comme ceux de Rasch) sont indépendants de l'échantillon, une propriété qui n'est pas valable pour les modèles à deux et trois paramètres \cite{fisher1922mathematical}. \\
 Le modèle général de Birnbaum, auquel le modèle de Rasch se rattache est plus complexe car il admet des courbes d’allures différentes pour chacun des items et suppose donc d’estimer plus d’un paramètre par item puisqu’il tient également compte du pouvoir discriminant de chacun d’eux. Le modèle proposé par Lazarsfeld est en quelque sorte une simplification du modèle général de Birnbaum puisqu’il postule des distributions linéaires de pentes variables \cite{yvonnick_2019}. \\
@@ -417,18 +419,22 @@ Il existe aussi d’autre modèles IRT qui sont résumé dans le tableau \ref{ir
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/chapitre5/irt_models.jpg}
 	\end{center}
-	\caption{}
+	\caption{Les modèles IRT.}
 	\label{irt_models}
 \end{figure}
-\paragraph{Le modèle Rasch}
-La structure cumulative ou d’emboitement des items obtenue par le scalogramme de Guttman rend les analyses exploratoires traditionnelles mal appropriées (AFC par exemple) . Dans cette situation Rasch a proposé en 1960 une représentation numérique des niveaux de compétences de sujets et de difficulté d’items. Le modèle de Rasch qui est le modèle a un paramètre (1PL), est considéré comme l’approche la plus simple pour modéliser la relation entre le trait latent et la probabilité de réussir correctement un item. Dans le modèle de Rasch chaque sujet est caractérisé par un niveau \(\displaystyle \theta i \) d’aptitude \(\displaystyle (i=1,...,N) \) sur un continuum numérique latent.
+
+\subsubsection{Le modèle Rasch}
+La structure cumulative ou d’emboitement du scalogramme de Guttman rend les analyses exploratoires traditionnelles mal appropriées (AFC par exemple) . Dans cette situation Rasch a proposé en 1960 une représentation numérique des niveaux de compétences de sujets et de difficulté d’items. Le modèle de Rasch qui est le modèle a un paramètre (1PL), est considéré comme l’approche la plus simple pour modéliser la relation entre le trait latent et la probabilité de réussir correctement un item. Dans le modèle de Rasch chaque sujet est caractérisé par un niveau \(\displaystyle \theta i \) d’aptitude \(\displaystyle (i=1,...,N) \) sur un continuum numérique latent.
 Le modèle de Rasch cherche a donné du sens non pas seulement au classement des sujets par compétences, non pas seulement au classement des items par difficultés mais le modèle cherche à donner du sens dans le fait que les coordonnées d’un sujet peuvent être directement et numériquement comparer à la difficulté d’un item pour qu’on puisse dire par exemple que ce sujet à la compétence nécessaire pour pouvoir résoudre l’item de tel difficulté. Donc ça devient possible de les comparer directement à partir du moment où on les projette sur une seule et même dimension (cet \(\displaystyle \theta i \) de sujet et \(\displaystyle \beta i \) d’item). La probabilité de réussir l’item est une fonction croissante de la différence \(\displaystyle \theta i - \beta j\) \cite{yvonnick_2019}.
 Rasch propose la fonction logistique suivant \cite{mislevy1994evidence}:
+
+
+
 
 \begin{equation}
     \begin{split}
 		P(x_{1},...,x_{n} | \theta, \beta_{1},...,\beta_{n}) = \prod_{j=1}^{n} P(x_{j}| \theta, \beta_{j}), \hspace{10pt} avec, \\
-		P(x_{j}| \theta, \beta_{j}) = \frac{\exp \left[x_{j}(\theta - \beta_{j})\right]  }{1+ \exp (\theta - \beta_{j})}
+		P(x_{j}| \theta, \beta_{j}) = \frac{\exp \left[\theta - \beta_{j} \right]  }{1+ \exp \left[ \theta - \beta_{j} \right] }
 	\end{split}
 	\label{posterior_probability_distribution}
 \end{equation}
@@ -437,10 +443,48 @@ Rasch propose la fonction logistique suivant \cite{mislevy1994evidence}:
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/chapitre5/parameters_probability.png}
 	\end{center}
-	\caption{}
+	\caption{Probabilité de bonne réponse, conditionnelle à thêta, pour les items avec bêta = -1,0 et 1.}
 	\label{parameters_probability}
 \end{figure}
-Où \(\displaystyle x_{j} \)  est la réponse à l'élément \(\displaystyle j \) (1 pour correcte, 0 pour incorrecte). La figure \ref{parameters_probability} montre les probabilités de réponse correcte à trois éléments, avec les paramètres de difficulté - 1 , 0 et + 1, en fonction de theta. Des valeurs faibles de theta indiquent des chances plus faibles de réponse correcte et des valeurs élevées indiquent des chances plus élevées \cite{mislevy1994evidence}.
+Où \(\displaystyle x_{j} \)  est la réponse à l'élément \(\displaystyle j \) (1 pour correcte, 0 pour incorrecte). La figure \ref{parameters_probability} montre les probabilités de réponse correcte à trois éléments, avec les paramètres de difficulté - 1 , 0 et + 1, en fonction de \(\displaystyle \theta \). Des valeurs faibles de \(\displaystyle \theta \) indiquent des chances plus faibles de réponse correcte et des valeurs élevées indiquent des chances plus élevées \cite{mislevy1994evidence}.
+
+\subsubsection{Modèle logistique à deux paramètres}
+Le modèle de Rasch suppose que tous les items ont la même forme, mais cette hypothèse pourrait ne pas être raisonnable. Pour éviter cette hypothèse, le modèle logistique a deux paramètres inclut le paramètre de discrimination des items. Le paramètre de discrimination est une mesure de la capacité différentielle d'un élément. Une valeur élevée du paramètre de discrimination suggère un élément qui a une grande capacité à différencier les sujets. En pratique, une valeur élevée du paramètre de discrimination signifie que la probabilité d'une réponse correcte augmente plus rapidement à mesure que la capacité (trait latent) augmente. La probabilité d'une réponse correcte est donnée par la formule suivante. \\
+
+\begin{equation}
+    P_{i}(\theta_{j} | X=1) = \frac{\exp \left[ \alpha_{i}(\theta_{j}-\beta_{i}) \right]  }{1+ \exp \left[ \alpha_{i}(\theta_{j}-\beta_{i}) \right]  } 
+	\label{2pl_model_equation}
+\end{equation}
+
+\subsubsection{Modèle logistique à trois paramètres}
+Le modèle logistique a trois paramètres (3PL) a été proposé par Birnbaum en 1968 incluant le paramètre de pseudo-chance dans le modèle. Le modèle 3PL spécifie la probabilité de réponse correcte sur le ième élément à l'aide de l'équation suivante. \\
+
+\begin{equation}
+    P_{i}(\theta_{j}) = c_{i} +  \frac{1 - c_{i}}{1+ \exp \left[ -\alpha_{i}(\theta_{j}-\beta_{i}) \right]  } 
+	\label{3pl_model_equation}
+\end{equation}
+
+\subsection{Estimation des paramètres}
+L'estimation des paramètres surtout dans un cadre bayésien est effectuée à l’aide des méthodes Markov Chain Monte Carlo implémentée dans plusieurs logiciels comme OpenBUGS \cite{lunn2009bugs}, JAGS \cite{plummer2003jags}, Stan \cite{stan} etc. Les prior les plus utilisé dans les modèles pour l'estimation MCMC des paramètres du modèle sont : \\
+
+\begin{equation}
+	\begin{split}
+		\theta_{j} \sim Normal(0,1), \hspace{1em} j = 1,...N \hspace{1em} ou \\
+		\theta_{j} \sim Uniform(-4,4), \hspace{1em} j = 1,...N  \\
+	\end{split}	
+	\label{prior_subjects}
+\end{equation}
+\noindent Et,
+\begin{equation}
+	\begin{split}
+		\beta_{i} \sim Normal(0,1), \hspace{1em} i = 1,...n \\
+		\alpha_{i} \sim Normal(0,1), \hspace{0.5em} et \hspace{0.5em} \alpha_{i} > 0 , \hspace{0.1em} i = 1,...n \\
+		c_{i} \sim Beta(5,17) \hspace{0.5em}  et \hspace{0.5em} 0<c_{i}<0.3, \hspace{1em} i = 1,...n 
+	\end{split}	
+	\label{prior_items}
+\end{equation}
+
+% \subsection{Analyses de récupération d'items}
 
 \section{Un ajustement bayésien des réponses aux items avec Stan}
 Stan est une plate-forme pour la modélisation statistique, l'analyse de données et la prédiction dans les sciences sociales, biologiques et physiques, l'ingénierie et les affaires.
@@ -452,8 +496,8 @@ Il permet de spécifier les fonctions de densité de log afin d’obtenir :
 	\item Estimation du maximum de vraisemblance pénalisée avec optimisation (L-BFGS)
 \end{itemize}
 
-La bibliothèque mathématique de Stan fournit des fonctions de probabilité différentiables et une algèbre linéaire (C++ autodiff).
-Stan peut être utilisé avec les langages d'analyse de données les plus populaires (R, Python, shell, MATLAB, Julia, Stata) et fonctionne sur toutes les principales plates-formes (Linux, Mac, Windows).
+\noindent La bibliothèque mathématique de Stan fournit des fonctions de probabilité différentiables et une algèbre linéaire (C++ autodiff).
+Stan peut être utilisé avec les langages d'analyse de données les plus populaires (R, Python, shell, MATLAB, Julia, Stata) et fonctionne sur toutes les principales plates-formes (Linux, Mac, Windows) \cite{stan}.
 
 \subsection{IRT avec Stan}
 La théorie de l'item-réponse (TRI) modélise la situation dans laquelle un certain nombre d'étudiants répondent chacun à une ou plusieurs questions d'un groupe de questions de test. Le modèle est basé sur des paramètres pour la capacité des étudiants, la difficulté des questions, et dans des modèles plus articulés, le caractère discriminant des questions et la probabilité de deviner correctement \cite{data_analysis_irt}.
@@ -461,7 +505,7 @@ La théorie de l'item-réponse (TRI) modélise la situation dans laquelle un cer
 \subsubsection{Déclaration des données}
 Les données fournies pour un modèle IRT peuvent être déclarées comme suit pour tenir compte du fait que tous les étudiants ne sont pas tenus de répondre à toutes les questions. Ces données sont dans le bloc « data » où les informations pertinentes sur les données et les données elles-mêmes sont spécifier.
 
-\newpage
+
 \begin{lstlisting}[language=Stan,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
 data {
 	// numbers of things
@@ -472,12 +516,16 @@ data {
 	int<lower=1,upper=I> item[N];
 	int<lower=1,upper=S> subject[N];
 	int<lower=0,upper=1> grade[N];
+	// data for posterior prediction using new data also used for Cross-validation
+	int<lower=1> N_new;
+	int<lower=1,upper=I> item_new[N_new];
+	int<lower=1,upper=S> subject_new[N_new];
 }
 \end{lstlisting}
 Dans cette déclaration il y’a \(\displaystyle N \) un entier positif qui est le nombre d’observation, où pour toute valeurs \(\displaystyle n \) de \(\displaystyle 1 \) à \(\displaystyle N \) \(\displaystyle grade[n] \) est la réponse obtenue par l’étudiant \(\displaystyle subject[n] \) à la question \(\displaystyle item[n] \).
 
-\subsubsection{Les paramètres du model de Rasch (1PL)}
-Les paramètres du modèle IRT (1PL), également connu sous le nom de modèle Rash sont :
+\subsubsection{Les paramètres du model de Rasch, 2PL et 3PL}
+Les paramètres des modèles IRT sont :
 
 \begin{lstlisting}[language=Stan,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
 parameters {
@@ -485,48 +533,80 @@ parameters {
 	real ability[S];             //  alpha: ability of student
 	real difficulty[I];          //  beta: difficulty of question
 	real delta;                   // mean student ability
+	// end for Rasch model
+	vector<lower=0>[I] discrimination;      // discrimination of question
+	// end for 2PL
+	vector<lower=0,upper=1>[I] guessing;    //
+	// end for 3PL
 }
 \end{lstlisting}
-Le paramètre  \(\displaystyle ability_{i} \) est le coefficient de capacité de l'élève \(\displaystyle S_{i} \) et \(\displaystyle difficulty_{j} \) le coefficient de difficulté de la question \(\displaystyle I_{j} \). La paramétrisation non standard utilisée ici comprend également un terme d'interception delta, qui représente la réponse moyenne de l'étudiant à la question moyenne \cite{data_analysis_irt}.
+Le paramètre  \(\displaystyle ability_{i} \) est le coefficient de capacité de l'élève \(\displaystyle S_{i} \) , \(\displaystyle difficulty_{j} \) le coefficient de difficulté de la question \(\displaystyle I_{j} \), \(\displaystyle discrimination_{i} \) qui modélise à quel point l’item k est discriminant et \(\displaystyle guessing_{i} \) le paramètre de pseudo hasard. La paramétrisation non standard utilisée comprend également un terme d'interception delta, qui représente la réponse moyenne de l'étudiant à la question moyenne \cite{data_analysis_irt}.
 
-\subsubsection{Le modèle de Rasch}
-
+\subsubsection{Le model de Rasch, 2PL et 3PL}
+Le model de Rasch:
 \begin{lstlisting}[language=Stan,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
 model {
-	ability ~ std_normal();         
-	difficulty ~ std_normal();   
+	ability ~ normal(0,1);         
+	difficulty ~ normal(0,1);   
 	delta ~ normal(0.75,1);
 	for(n in 1:N)
 		grade[n] ~ bernoulli_logit(ability[subject[n]] - difficulty[item[n]] + delta);
 }
 \end{lstlisting}
-Ce modèle utilise la distribution de \(\displaystyle Bernoulli \) paramétrée en  \(\displaystyle logit \).
+Modèle logistique à deux paramètres:
+\begin{lstlisting}[language=Stan,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+model {
+	ability ~ normal(0,1);         
+	difficulty ~ normal(0,1);   
+	discrimination ~ lognormal(0,1);
+	delta ~ normal(0.75,1);
+	grade ~ bernoulli_logit(discrimination[item] .* (ability[subject] - (difficulty[item] + delta)));	
+}
+\end{lstlisting}
+Modèle logistique à trois paramètres:
+\begin{lstlisting}[language=Stan,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+model {
+	ability ~ normal(0,1);         
+	difficulty ~ normal(0,1);   
+	discrimination ~ lognormal(0,1);
+	guessing ~ beta(5,17);
+	delta ~ normal(0.75,1);
+	grade ~ bernoulli(guessing[item] + ((1-guessing[item]).*(inv_logit(discrimination[item] .* (ability[subject] - (difficulty[item] + delta))))));
+}
+\end{lstlisting}
+Ces modèles utilisent la distribution de \(\displaystyle Bernoulli \) paramétrée en  \(\displaystyle logit \).
 
 Si \(\displaystyle \alpha \in \mathbb{R} \), alors pour \(\displaystyle y \in \{ 0,1 \} \), 
 
 \begin{equation}
     BernoulliLogit(y|\alpha) = BernoulliLogit(y|logit^{-1} (\alpha)) = \Bigg \{ 
 \begin{tabular}{@{}l@{}}
-    \(\displaystyle logit^{-1} (\alpha)\)  if y = 1, et \\
-    \(\displaystyle 1-logit^{-1}(\alpha) \)  if y = 0. 
+    \(\displaystyle logit^{-1} (\alpha)\)  si y = 1, et \\
+    \(\displaystyle 1-logit^{-1}(\alpha) \)  si y = 0. 
 \end{tabular}
 \end{equation}
 
-
-\subsubsection{Les predictions}
-Ce bloc est utilisé pour calculer de nouvelles variables et d'obtenir leur distributions postérieures correspondantes comme prédire des nouvelles valeurs où récupérer le log-vraisemblance, qui est utilisée pour calculer l’indice de l'ajustement du modèle à des fins de comparaison et de sélection de modèles.
+\noindent Et aussi la distribution de \(\displaystyle Bernoulli \) avec la fonction \(\displaystyle inv\_logit(x) = \frac{\exp(x)}{1+ \exp(x)}  \) utilisée dans le modèle à trois paramètres.
+\subsubsection{Prédiction postérieure}
+Le bloc « generated quantities » est utilisé pour calculer de nouvelles variables et d'obtenir leur distributions postérieures correspondantes comme prédire des nouvelles valeurs où récupérer le log-vraisemblance, qui est utilisée pour calculer l’indice de l'ajustement du modèle à des fins de comparaison et de sélection de modèles. Pour le modèle de Rasch ce bloc est défini comme suit :
 
 \begin{lstlisting}[language=Stan,label={generated_quantities},basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
 generated quantities {
 	int<lower=0,upper=1> y_pred[N];
+	int<lower=0,upper=1> yNew_pred[N_new];
 	vector[N] log_lik;
-	for(n in 1:N)
-		y_pred[n] = bernoulli_logit_rgn(ability[subject[n]] - difficulty[item[n]] + delta);
+
+	for(n in 1:N){
+		y_pred[n] = bernoulli_logit_rng(ability[subject[n]] - difficulty[item[n]] + delta);
 		log_lik[n] = bernoulli_logit_lpmf( grade[n] | ability[subject[n]] - difficulty[item[n]]
 		+ delta);
+	}
+	for (n in 1:N_new) {
+		yNew_pred[n] = bernoulli_logit_rng(ability[subject_new[n]] - difficulty[item_new[n]] + delta);                                             
+	}
 }
 \end{lstlisting}
-
-\section{Related work}
+Dans l’implémentation en utilisant le workflow bayésien figure \ref{irt_process}, les distributions des prior peuvent change dans le but d’améliorer la précision du modèle.
+% \section{Related work}
 \section{Conclusion}
 En conclusion, l’inférence bayésienne est une méthode probabiliste qui prend en compte les informations apriori et cherche des résultats qui sont des distributions de probabilité. Sans oublier Les probabilités conditionnelles et le théorème de bayes qui jouent un rôle central dans le processus d’inférence, les méthodes de Monte Carlo par Chaine de Markov résolve une difficulté de calcule d’intégrale sur un espace de grande dimension causée par le dénominateur du théorème de bayes. En pratique les résultats des modèles utilisé dans la théorie des réponses au items offre des possibilités d’analyser les modèles utilisés et de sélectionner le meilleur modèle. Apres toute ces notions vues dans ce chapitre, le chapitre suivant évoquera le clustering hard et soft.

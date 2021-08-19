@@ -1,62 +1,64 @@
 \babel@toc {english}{}
 \babel@toc {french}{}
+\babel@toc {english}{}
+\babel@toc {french}{}
 \babel@toc {french}{}
 \contentsline {xpart}{\'Etat de l'art}{5}{part.1}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Educational data minig}{5}{chapter.1}%
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Les étapes de l'extraction de connaissances à partir de données\relax }}{7}{figure.caption.7}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces ITS architecture\relax }}{8}{figure.caption.8}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Principaux domaines liés à l'exploration de données éducatives\relax }}{10}{figure.caption.9}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Data mining application process applied in education\relax }}{11}{figure.caption.10}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces EDM techniques\relax }}{12}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Les étapes de l'extraction de connaissances à partir de données\relax }}{7}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces ITS architecture\relax }}{8}{figure.caption.10}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Principaux domaines liés à l'exploration de données éducatives\relax }}{10}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Data mining application process applied in education\relax }}{11}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces EDM techniques\relax }}{12}{figure.caption.13}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Modèle de l'apprenant et découverte des prérequis}{15}{chapter.2}%
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Composantes du modèle de l'apprenant\relax }}{18}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Deux alternatives pour modéliser les relations d'agrégation.\relax }}{22}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Agrégation de modélisation de réseau bayésien et relations préalables simultanément\relax }}{24}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Modèles d'équations structurelles\relax }}{25}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Composantes du modèle de l'apprenant\relax }}{18}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Deux alternatives pour modéliser les relations d'agrégation.\relax }}{22}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Agrégation de modélisation de réseau bayésien et relations préalables simultanément\relax }}{24}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Modèles d'équations structurelles\relax }}{25}{figure.caption.19}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{L'approche items-to-skills mapping}{26}{chapter.3}%
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Knowledge Component\relax }}{28}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Items-to-skills mapping Structure\relax }}{30}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Model based\relax }}{31}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Q-matrix\relax }}{32}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Illustration de l'approche générale de l'analyse des éléments basée sur la similarité des éléments.\relax }}{33}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces L'approche générale du calcul et de l'application de la similarité des éléments.\relax }}{34}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Knowledge Component\relax }}{28}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Items-to-skills mapping Structure\relax }}{30}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Model based\relax }}{31}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Q-matrix\relax }}{32}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Illustration de l'approche générale de l'analyse des éléments basée sur la similarité des éléments.\relax }}{33}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces L'approche générale du calcul et de l'application de la similarité des éléments.\relax }}{34}{figure.caption.25}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Inférence bayésienne et la théorie de la réponse aux items}{37}{chapter.4}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces La distribution à priori, à posteriori et celle de la fonction de vraisemblance.\relax }}{41}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces La phase « burn-in » d’une chaine de Markov et celle de la convergence de la chaine.\relax }}{43}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces \relax }}{55}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces \relax }}{56}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces La distribution à priori, à posteriori et celle de la fonction de vraisemblance.\relax }}{41}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces La phase « burn-in » d’une chaine de Markov et celle de la convergence de la chaine.\relax }}{43}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Les modèles IRT.\relax }}{55}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Probabilité de bonne réponse, conditionnelle à thêta, pour les items avec bêta = -1,0 et 1.\relax }}{56}{figure.caption.33}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Clustering Hard et Soft}{60}{chapter.5}%
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Distances intracluster et intercluster.\relax }}{63}{figure.caption.34}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Les éléments du dataset.}}}{67}{subfigure.2.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Le dendrogramme.}}}{67}{subfigure.2.2}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces La direction du clustering hiérarchique agglomérative et divisive.\relax }}{68}{figure.caption.36}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Les étapes de l'algorithme k-means.\relax }}{71}{figure.caption.37}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces La méthode Elbow.\relax }}{73}{figure.caption.38}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Les éléments du dataset Iris \cite {iris_dataset}.}}}{75}{subfigure.5.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Illustration du degré d’appartenance des éléments au cluster.}}}{75}{subfigure.5.2}%
-\contentsline {xpart}{Contributions}{81}{part.2}%
+\contentsline {xchapter}{Clustering Hard et Soft}{62}{chapter.5}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Distances intracluster et intercluster.\relax }}{65}{figure.caption.36}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Les éléments du dataset.}}}{69}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Le dendrogramme.}}}{69}{subfigure.2.2}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces La direction du clustering hiérarchique agglomérative et divisive.\relax }}{70}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Les étapes de l'algorithme k-means.\relax }}{73}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces La méthode Elbow.\relax }}{75}{figure.caption.40}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Les éléments du dataset Iris \cite {iris_dataset}.}}}{77}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Illustration du degré d’appartenance des éléments au cluster.}}}{77}{subfigure.5.2}%
+\contentsline {xpart}{Contributions}{83}{part.2}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Contribution and Results}{81}{chapter.6}%
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Le pre-processing du dataset.\relax }}{86}{figure.caption.48}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Les étapes du workflow bayésien \cite {gelman2020bayesian}.\relax }}{88}{figure.caption.49}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces L’objet stanfit de notre modèle.\relax }}{90}{figure.caption.50}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Les distributions postérieures du modèle.\relax }}{90}{figure.caption.51}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces La moyenne des distributions postérieures du modèle.\relax }}{91}{figure.caption.52}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces BFMI du modèle.\relax }}{92}{figure.caption.53}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Le Rhat du modèle.\relax }}{92}{figure.caption.54}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces La sortie de la divergence du modèle.\relax }}{92}{figure.caption.55}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces A table beside a figure\relax }}{93}{figure.6.9}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Les étapes de calcule de la matrice de similarité.\relax }}{94}{figure.caption.56}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Le pourcentage de la variance préserver par les 10 premières composantes.}}}{97}{subfigure.11.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Visualisation en 2D des deux composantes.}}}{97}{subfigure.11.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Le pourcentage de la variance préserver par chacune des composantes.}}}{97}{subfigure.11.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering Visualisation de la composante 0 et 3 parmi les 392.}}}{97}{subfigure.11.4}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\centering Les scores des méthodes de liaison.}}}{98}{subfigure.11.5}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\centering Le dendrogramme du dataset utilisant la méthode de liaison « average ».}}}{98}{subfigure.11.6}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Clusters de la méthode agglomérante\relax }}{98}{figure.caption.60}%
-\contentsline {figure}{\numberline {6.12}{\ignorespaces \relax }}{101}{figure.caption.61}%
+\contentsline {xchapter}{Contribution and Results}{83}{chapter.6}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Le pre-processing du dataset.\relax }}{88}{figure.caption.50}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Les étapes du workflow bayésien \cite {gelman2020bayesian}.\relax }}{90}{figure.caption.51}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces L’objet stanfit de notre modèle.\relax }}{92}{figure.caption.52}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Les distributions postérieures du modèle.\relax }}{92}{figure.caption.53}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces La moyenne des distributions postérieures du modèle.\relax }}{93}{figure.caption.54}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces BFMI du modèle.\relax }}{94}{figure.caption.55}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Le Rhat du modèle.\relax }}{94}{figure.caption.56}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces La sortie de la divergence du modèle.\relax }}{94}{figure.caption.57}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces A table beside a figure\relax }}{95}{figure.6.9}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Les étapes de calcule de la matrice de similarité.\relax }}{96}{figure.caption.58}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Le pourcentage de la variance préserver par les 10 premières composantes.}}}{99}{subfigure.11.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Visualisation en 2D des deux composantes.}}}{99}{subfigure.11.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Le pourcentage de la variance préserver par chacune des composantes.}}}{99}{subfigure.11.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering Visualisation de la composante 0 et 3 parmi les 392.}}}{99}{subfigure.11.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\centering Les scores des méthodes de liaison.}}}{100}{subfigure.11.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\centering Le dendrogramme du dataset utilisant la méthode de liaison « average ».}}}{100}{subfigure.11.6}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Clusters de la méthode agglomérante\relax }}{100}{figure.caption.62}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces \relax }}{103}{figure.caption.63}%
