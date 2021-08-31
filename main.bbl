@@ -23,20 +23,26 @@ C.~D. Nye, S.-H. Joo, B.~Zhang, and S.~Stark, ``Advancing and evaluating irt
   model data fit indices in organizational research,'' {\em Organizational
   Research Methods}, vol.~23, no.~3, pp.~457--486, 2020.
 
-\bibitem{Scheuer2012}
-O.~Scheuer and B.~M. McLaren, {\em Educational Data Mining}, pp.~1075--1079.
-\newblock Boston, MA: Springer US, 2012.
-
 \bibitem{data_mining_concepts_techniques}
 J.~Han and M.~Kamber, {\em Data Mining: Concepts and Techniques}.
 \newblock 01 2000.
+
+\bibitem{cabena1998discovering}
+P.~Cabena, P.~Hadjinian, R.~Stadler, J.~Verhees, and A.~Zanasi, {\em
+  Discovering data mining: from concept to implementation}.
+\newblock Prentice-Hall, Inc., 1998.
+
+\bibitem{veyssieres1998identification}
+M.~Veyssieres and R.~E. Plant, ``Identification of vegetation state and
+  transition domains in california’s hardwood rangelands,'' {\em University
+  of California}, vol.~101, 1998.
 
 \bibitem{Educational_data_mining_a_survey_from_1995_to_2005}
 C.~Romero and S.~Ventura, ``Educational data mining: A survey from 1995 to
   2005,'' {\em Expert Systems with Applications}, vol.~33, pp.~135--146, 07
   2007.
 
-\bibitem{buche:tel-00011223}
+\bibitem{buchecedric}
 C.~Buche, {\em {Un syst{\`e}me tutoriel intelligent et adaptatif pour
   l'apprentissage de comp{\'e}tences en environnement virtuel de formation}}.
 \newblock Theses, {Universit{\'e} de Bretagne occidentale - Brest}, Nov. 2005.
@@ -55,6 +61,10 @@ R.~Baker and K.~Yacef, ``The state of educational data mining in 2009: A review
 S.~Bendjebar, {\em Utilisation des Techniques de Data Mining pour la
   Modélisation des Tuteurs}.
 \newblock Theses, Université 8 mai 1945 Guelma, 2016.
+
+\bibitem{Scheuer2012}
+O.~Scheuer and B.~M. McLaren, {\em Educational Data Mining}, pp.~1075--1079.
+\newblock Boston, MA: Springer US, 2012.
 
 \bibitem{learner_model__adaptive_learning}
 L.~Nguyen and P.~Do, ``Learner model in adaptive learning,'' {\em Proceedings
@@ -171,6 +181,12 @@ R.~Pel{\'a}nek, T.~Effenberger, M.~Van{\v{e}}k, V.~Sassmann, and D.~Gmiterko,
 B.~S. Bloom {\em et~al.}, ``Taxonomy of educational objectives. vol. 1:
   Cognitive domain,'' {\em New York: McKay}, vol.~20, no.~24, p.~1, 1956.
 
+\bibitem{koedinger2012knowledge}
+K.~R. Koedinger, A.~T. Corbett, and C.~Perfetti, ``The
+  knowledge-learning-instruction framework: Bridging the science-practice chasm
+  to enhance robust student learning,'' {\em Cognitive science}, vol.~36,
+  no.~5, pp.~757--798, 2012.
+
 \bibitem{nazaretsky2018kappa}
 T.~Nazaretsky, S.~Hershkovitz, and G.~Alexandron, ``Kappa learning: A new
   method for measuring similarity between educational items using performance
@@ -220,6 +236,11 @@ S.~Nithya, A.~Srinivasan, M.~Senthilkumar, {\em et~al.}, ``Calculating the
   user-item similarity using pearson's and cosine correlation,'' in {\em 2017
   International Conference on Trends in Electronics and Informatics (ICEI)},
   pp.~1000--1004, IEEE, 2017.
+
+\bibitem{aitkin1986statistical}
+M.~Aitkin and N.~Longford, ``Statistical modelling issues in school
+  effectiveness studies,'' {\em Journal of the Royal Statistical Society:
+  Series A (General)}, vol.~149, no.~1, pp.~1--26, 1986.
 
 \bibitem{mislevy1994evidence}
 R.~J. Mislevy, ``Evidence and inference in educational assessment,'' {\em
@@ -478,6 +499,11 @@ D.~J. Bora, D.~Gupta, and A.~Kumar, ``A comparative study between fuzzy
 A.~Taherpour, A.~Cheshmeh~Sefidi, A.~Bemani, and T.~Hamule, ``Application of
   fuzzy c-means algorithm for the estimation of asphaltene precipitation,''
   {\em Petroleum Science and Technology}, vol.~36, no.~3, pp.~239--243, 2018.
+
+\bibitem{hathaway2001fuzzy}
+R.~J. Hathaway and J.~C. Bezdek, ``Fuzzy c-means clustering of incomplete
+  data,'' {\em IEEE Transactions on Systems, Man, and Cybernetics, Part B
+  (Cybernetics)}, vol.~31, no.~5, pp.~735--744, 2001.
 
 \bibitem{iris_dataset}
 R.A.Fisher, ``iris,'' 2018.

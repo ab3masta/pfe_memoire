@@ -185,7 +185,7 @@ Les étapes suivies pour la collecte et la préparation du dataset sont illustr�
 
 \begin{description}
     \item[\textbf{Première étape : }] dans notre travail, nous nous concentrons sur la performance de l'apprenant qui est liée à l'item, au résultat obtenu par l'apprenant : (correct/incorrect soit 0 ou 1), ou en prenant un indice (hint).
-    \item[\textbf{Deuxième étape : }] seuls les apprenants ayant au moins 10 interactions avec les items ont été sélectionner. Les valeurs qui ne sont pas binaire (0 ou 1) dans la colonne « correct » sont éliminées. Les valeurs de la colonne « user\char`_id »  et « item\char`_id » sont encoder et où « id = 0 » est remplacer par le nombre total des apprenants et des items respectivement. L’encodage permet d’encoder les identifiants en valeur numérique, parce que le modèle IRT prend seulement des valeurs numériques à partir de 1. La colonne « answers\char`_using\char`_hint » ajouter au dataset sera utilisé pour calculer la matrice de similarité entre items selon notre critère : réponse correcte avec aide (hints) et sans aide, et incorrecte avec aide et sans aide.Le script python avec lequel la colonne « answers\char`_using\char`_hint » est dans \ref{answersusinghint}.
+    \item[\textbf{Deuxième étape : }] seuls les apprenants ayant au moins une interactions avec les items ont été sélectionner. Les valeurs qui ne sont pas binaire (0 ou 1) dans la colonne « correct » sont éliminées. Les valeurs de la colonne « user\char`_id »  et « item\char`_id » sont encoder et où « id = 0 » est remplacer par le nombre total des apprenants et des items respectivement. L’encodage permet d’encoder les identifiants en valeur numérique, parce que le modèle IRT prend seulement des valeurs numériques à partir de 1. La colonne « answers\char`_using\char`_hint » ajouter au dataset sera utilisé pour calculer la matrice de similarité entre items selon notre critère : réponse correcte avec aide (hints) et sans aide, et incorrecte avec aide et sans aide.Le script python avec lequel la colonne « answers\char`_using\char`_hint » est dans \ref{answersusinghint}.
 \end{description}
 
 \newpage
@@ -223,7 +223,7 @@ Dans l’implémentions nous utiliseront le workflow bayésien complet pour fair
 \end{figure}
 
 \subsubsection{Spécification et chargement du modèle}
-Nous avons utilisé le modèle de Rasch pour faire l’ajustement bayésien avec Stan en utilisant le script en Stan définit dans le chapitre \ref{chap:irt}. Le script complet est :
+Nous avons utilisé le modèle de Rasch, 2PL et 3PL pour faire l’estimation des paramètres des modèles avec le logiciel Stan en utilisant le code Stan définit dans le chapitre \ref{chap:irt}, sauf le bloc « generated quantities » parce qu’en l'ajoutant, la taille de modèle ajusté devient déraisonnablement grande du fait qu’on a un grand nombre d’item, de sujet et d’observation. Le code stan pour le modèle de Rasch est :
 \begin{lstlisting}[language=Stan,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
 _1pl_model = """
 data {
@@ -251,42 +251,40 @@ model {
 }
 """
 \end{lstlisting}
-Nous n’avons pas utilisé le bloc « generated quantities » parce qu’en ajoutant ce bloc la taille de modèle ajusté devient déraisonnablement grande. Avant de charger et compiler le modèle, Stan prend les données dans un dictionnaire, où les noms des clés doivent être identiques aux noms spécifiés dans la section data du modèle. Les données de notre dataset dans format dictionnaire est :
+Avant de charger et compiler le modèle, Stan prend les données dans un dictionnaire, où les noms des clés doivent être identiques aux noms spécifiés dans la section data du modèle. Les données de notre dataset dans un format dictionnaire est :
 
 \begin{lstlisting}[language=Python,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
 	{'I': 1084,
-	'N': 809660,
-	'S': 569,
-	'grade': array([0, 1, 1, ..., 1, 1, 1]),
-	'item': array([563, 563, 563, ..., 482, 482, 482]),
-	'subject': array([ 72, 247, 249, ..., 392, 392, 392])}
+ 	 'N': 809694,
+ 	 'S': 574,
+ 	 'grade': array([0, 1, 1, ..., 1, 1, 1]),
+ 	 'item': array([563, 563, 563, ..., 482, 482, 482]),
+ 	 'subject': array([ 72, 249, 251, ..., 395, 395, 395])}
 \end{lstlisting}
 
 \subsubsection{Compilation du modèle et échantillonnage }
 
 Après avoir spécifier le modèle, la compilation (en code c++) est faite en utilisant la fonction \colorbox{gray!30}{stan.build()} qui prend en paramètre le modèle , les données et random\char`_seed qui contrôle l’effet aléatoire. Le script est :
-\begin{lstlisting}[language=Stan,basicstyle=\normalsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalsize\tiny\color{white}]
+\begin{lstlisting}[language=Stan,basicstyle=\small, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalsize\tiny\color{white}]
 	posteriori = stan.build(_1pl_model,data=train_data,random_seed=2021)
 \end{lstlisting}
 
-Une fois le modèle compiler avec les données, la méthode \colorbox{gray!30}{sample()} fait des échantillonnages dans les distributions spécifier dans le modèle. La méthode \colorbox{gray!30}{sample()} prend en paramètre \colorbox{gray!30}{num\char`_chains}   le nombre de chaine  qui sont exécuter en parallèle, \colorbox{gray!30}{num\char`_samples}  le nombre d’échantillon à générer, \colorbox{gray!30}{num\char`_warmup}  le nombre d’échantillon initial à rejeter qui sont généralement loin d'être optimales et \colorbox{gray!30}{num\char`_thin} spécifie un intervalle d'échantillonnage auquel les échantillons sont conservés.
+\noindent Une fois le modèle compiler avec les données, la méthode \colorbox{gray!30}{sample()} fait des échantillonnages dans les distributions spécifier dans le modèle. La méthode \colorbox{gray!30}{sample()} prend en paramètre \colorbox{gray!30}{num\char`_chains}   le nombre de chaine  qui sont exécuter en parallèle, \colorbox{gray!30}{num\char`_samples}  le nombre d’échantillon à générer, \colorbox{gray!30}{num\char`_warmup}  le nombre d’échantillon initial à rejeter qui sont généralement loin d'être optimales et \colorbox{gray!30}{num\char`_thin} spécifie un intervalle d'échantillonnage auquel les échantillons sont conservés.
 
-\begin{lstlisting}[language=Stan,basicstyle=\normalsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalsize\tiny\color{white}]
-	fit = posteriori.sample(num_chains=2, num_samples=50000,
-	      num_warmup=1000,num_thin=1)
+\begin{lstlisting}[language=Stan,basicstyle=\small, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalsize\tiny\color{white}]
+	fit = posteriori.sample(num_chains=4, num_samples=2000,num_warmup=1000,num_thin=1)
 \end{lstlisting}
-
 
 
 \subsubsection{Résultats d’échantillonnage, diagnostique du modèle, prédiction et validation}
 
 
-Une fois l’échantillonnage terminé, l’objet \colorbox{gray!30}{stanfit} renvoyer par la méthode \colorbox{gray!30}{sample()} contient la sortie dérivée de l’ajustement du modèle c’est-à dire les résultats de l’inférence. L’objet \colorbox{gray!30}{fit} du modèle est afficher dans le tableau de la figure \ref{stanfit_object}. La figure \ref{model_trace-plot} affiche les distributions postérieures des paramètres du modèle pour toute les itérations et la figure \ref{params_posterior_distribution} la moyenne des distributions postérieures.
+Une fois l’échantillonnage terminé, l’objet \colorbox{gray!30}{stanfit} renvoyer par la méthode \colorbox{gray!30}{sample()} contient la sortie dérivée de l’ajustement du modèle c’est-à dire les résultats de l’inférence. L’objet \colorbox{gray!30}{fit} du modèle de Rasch est afficher dans le tableau de la figure \ref{stanfit_object}. La figure \ref{model_trace-plot} affiche les distributions postérieures des paramètres du modèle de Rasch pour toute les itérations et la figure \ref{params_posterior_distribution} les distributions postérieures pour le paramètre \colorbox{gray!30}{ability} du premier sujet (apprenant) et \colorbox{gray!30}{difficulty} du premier item du modèle de Rasch.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/chapitre7/stanfit_object.png}
 	\end{center}
-	\caption{L’objet stanfit de notre modèle.}
+	\caption{L’objet stanfit du modèle de Rasch.}
 	\label{stanfit_object}
 \end{figure}
 
@@ -295,7 +293,7 @@ Une fois l’échantillonnage terminé, l’objet \colorbox{gray!30}{stanfit} re
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/chapitre7/model_plot-trace.png}
 	\end{center}
-	\caption{Les distributions postérieures du modèle.}
+	\caption{Les distributions postérieures du modèle de Rasch.}
 	\label{model_trace-plot}
 \end{figure}
 
@@ -303,43 +301,44 @@ Une fois l’échantillonnage terminé, l’objet \colorbox{gray!30}{stanfit} re
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/chapitre7/params_posterior_distribution.png}
 	\end{center}
-	\caption{La moyenne des distributions postérieures du modèle.}
+	\caption{Distribution postérieure de la capacité de l’apprenant[72] et de la difficulté de l’item[563] du modèle de Rasch.}
 	\label{params_posterior_distribution}
 \end{figure}
 
-En plus des valeurs des paramètres du modèle, le tableau de la figure contient également d’autre valeurs des paramètres utilisés par l'échantillonneur qui vont servir de diagnostique.
+\noindent En plus des valeurs des paramètres du modèle, le tableau de la figure contient également d’autre valeurs des paramètres utilisés par l'échantillonneur qui vont servir de diagnostique.
 L'étiquette \colorbox{gray!30}{lp\char`_\char`_} est pour les densités logarithmiques (jusqu'à une constante additive), \colorbox{gray!30}{accept\char`_stat\char`_\char`_} est pour les probabilités d'acceptation, \colorbox{gray!30}{stepsize\char`_\char`_} est pour la taille de pas de l'intégrateur leapfrog pour simuler l'hamiltonien, \colorbox{gray!30}{treedepth\char`_\char`_} est la profondeur de l'arbre exploré par l'échantillonneur sans demi-tour (Journal base 2 du nombre d'évaluations de densité et de gradient log), \colorbox{gray!30}{n\char`_leapfrog\char`_\char`_} est le nombre d'évaluations de densité et de gradient, \colorbox{gray!30}{divergent\char`_\char`_} est un indicateur indiquant une instabilité numérique lors de l'intégration numérique entraînant la non conservation de l'hamiltonien, et \colorbox{gray!30}{energy\char`_\char`_} est la valeur hamiltonienne. \\
 
-\textbf{Le BFMI :} Bayesian Fraction of Missing Information, bfmi inférieur à 0,2 indique qu’il faut peut-être reparamétrer votre modèle.
+\noindent \textbf{Le BFMI :} Bayesian Fraction of Missing Information, bfmi inférieur à 0,2 indique qu’il faut peut-être reparamétrer votre modèle.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.5]{images/chapitre7/model_energy.png}
 	\end{center}
-	\caption{BFMI du modèle.}
+	\caption{BFMI du modèle de Rasch.}
 	\label{bfmi_of_model}
 \end{figure}
 
-\textbf{Le Rhat :} un Rhat > 1.1 indique généralement des problèmes d'ajustement et si Rhat est d'environ 1, alors il n’y aura aucune diminution de la variance d'échantillonnage, quelle que soit la durée d’itération, et donc la chaîne de Markov est susceptible (mais pas garantie) d'avoir convergé. Celui ne notre modèle est d'environ 1 pour tous les paramètres.
+\noindent \textbf{Le Rhat :} un Rhat > 1.1 indique généralement des problèmes d'ajustement et si Rhat est d'environ 1, alors il n’y aura aucune diminution de la variance d'échantillonnage, quelle que soit la durée d’itération, et donc la chaîne de Markov est susceptible (mais pas garantie) d'avoir convergé. Celui ne notre modèle est d'environ 1 pour tous les paramètres.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/chapitre7/output_of_rhat.png}
 	\end{center}
-	\caption{Le Rhat du modèle.}
+	\caption{Le Rhat du modèle de Rasch.}
 	\label{output_of_rhat}
 \end{figure}
-\textbf{Vérification des divergences }: aucune divergence dans le modèle comme le montre la figure \ref{diverging_output}.
+
+\noindent \textbf{Vérification des divergences }: aucune divergence dans le modèle comme le montre la figure \ref{diverging_output}.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/chapitre7/diverging_output.png}
 	\end{center}
-	\caption{La sortie de la divergence du modèle.}
+	\caption{La sortie de la divergence du modèle de Rasch.}
 	\label{diverging_output}
 \end{figure}
 
-Ensuite après diagnostique du modèle, les valeurs des paramètres obtenu peuvent être utilisé pour faire des prédictions postérieures en utilisant la fonction logistique de Rasch \ref{posterior_probability_distribution} ou bien faire des prédictions directement en utilisant le bloc generated quantities \ref{generated_quantities} et aussi récupérer le log de vraisemblance (log likelihood) qui est utilisé pour comparer plusieurs modèles (sélection de modèle). Mais l’utilisation de ce bloc entraine un coût de calcul et d'utilisation de la mémoire. Le script est utilisé pour prédire la probabilité de réussite à un item \ref{pred_script}. C’est ainsi que l’ajustement bayésien des réponses aux items a été fait avec un modèle d’inférence bayésien.
+\noindent Après diagnostique du modèle, les valeurs des paramètres obtenu peuvent être utilisé pour faire des prédictions postérieures en utilisant la fonction logistique de Rasch \ref{posterior_probability_distribution} ou bien faire des prédictions directement en utilisant le bloc « generated quantities » \ref{generated_quantities} et aussi récupérer le log de vraisemblance (log likelihood) qui est utilisé pour comparer plusieurs modèles (sélection de modèle). Mais l’utilisation de ce bloc entraine un coût de calcul et d’utilisation de la mémoire surtout avec un jeu de données de grande dimension. Le script \ref{pred_script} est utilisé pour prédire la probabilité de réussite à un item pour le modèle de Rasch.
 
 \begin{lstlisting}[language=Python,label={pred_script},stringstyle=\color{deepgreen},basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
 ability = np.mean(fit['ability'],axis=1)
@@ -354,38 +353,84 @@ for i in range(0,len(needed)):
 y_pred = np.round(y_pred).astype(int)
 \end{lstlisting}
 
-Nous terminons donc cette étape avec la validation des prédictions faite par le script. Plusieurs métriques peuvent être utilisé pour valider les prédictions d’un modèle de classification parce qu’on a deux classes (réponses correcte ou incorrecte).
+\noindent Nous terminons donc cette étape avec la validation des prédictions faite par les modèles IRT utilisés en comparant les scores observés et les scores prédit, c’est-à-dire chercher à comprendre à quel point les modèles représentent les données. Plusieurs métriques peuvent être utilisé pour faire les contrôles prédictif postérieur.
 
-\begin{itemize}
-	\item \textbf{Accuracy :}
-	\item \textbf{Mean squared error :}
-	\item \textbf{Roc auc score :}
-	\item \textbf{Cohen kappa :}	
-\end{itemize}
-Celui du modèle sont afficher dans le tableau et roc\char`_auc\char`_score est illustré par la figure.
+% \begin{itemize}
+% 	\item \textbf{Accuracy :}
+% 	\item \textbf{Mean squared error :}
+% 	\item \textbf{Roc auc score :}
+% 	\item \textbf{Cohen kappa :}	
+% \end{itemize}
 
-\begin{minipage}{\textwidth}
-	\begin{minipage}[b]{0.49\textwidth}
+%Celui du modèle sont afficher dans le tableau et roc\char`_auc\char`_score est illustré par la figure.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.6]{images/chapitre7/roc_auc.png}
+	\end{center}
+	\caption{Représentation graphique du taux de vrais positifs par rapport au taux de faux positifs des trois modèles utilisés.}
+	\label{roc_auc}
+\end{figure}
+
+\begin{table}[H]
 	\centering
-	\includegraphics[width=\textwidth]{images/chapitre7/roc_auc.png}
-	\captionof{figure}{A table beside a figure}
-\end{minipage}
-\hfill
-\begin{minipage}[b]{0.49\textwidth}
-	\centering
-	\begin{tabular}{|m{3cm}|m{3cm}|}
+	\begin{tabular}{|m{3cm}|m{3cm}|m{3cm}|m{3cm}|}
 	\hline
 	\rowcolor{blueforest}
-	\color{white} \textbf{Métriques} & \color{white} \textbf{valeurs}  \\
+	\color{white} \textbf{Métriques} & \color{white} \textbf{Rasch Model} & \color{white} \textbf{2PL} & \color{white} \textbf{3PL} \\
 	\hline\hline
-	mse & 0.421189 \\ \hline
-	kappa & 0.1587 \\ \hline
-	auc & 0.611 \\ \hline
-	acc & 0.57881 \\ \hline
+	roc\_auc\_score & 0.611 & 0.59 & \\ \hline
+	accuracy & 0.58 & 0.56 & \\ \hline
+	recall\_score & 0.55 & 0.53 & \\ \hline
+	Average precision-recall score & 0.81 & 0.80 & \\ \hline
 	\end{tabular}
-	\captionof{table}{A table beside a figure}
-	\end{minipage}
-\end{minipage}
+	\caption{Les différents scores du modèle de Rasch, modèle logistique à deux paramètres et le modèle à trois paramètres.}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{m{4cm}m{2cm}m{2cm}m{2cm}m{2cm}}
+	& \textbf{precision} & \textbf{recall} & \textbf{f1-score} &  \textbf{support} \\
+	
+	0(incorrect) & 0.31 & 0.67 & 0.43 & 189052 \\ 
+	1(correct) & 0.85 & 0.55 & 0.67 & 620642\\ 
+	accuracy &  & & 0.58 & 809694 \\ 
+	macro avg  & 0.58 & 0.61 & 0.55 & 809694\\ 
+	weighted avg  & 0.72 & 0.58 & 0.61 & 809694\\ 
+	\end{tabular}
+	\caption{Rapport de classement (réponse correcte et incorrecte) entre les données observées et les prédictions du modèle de Rasch.}
+\end{table}
+
+\noindent Les évaluations des performances précédentes des modèles tournent autour de 55\% et 60\% pour toutes les métriques utilisées. Dans cette étude, en respectant le workflow bayésien, les calculs et les modèles sont provisoirement acceptés. Cependant, plusieurs problèmes peuvent être à l’origine des scores pas assez bon obtenu comme le manque de données (les étudiants n’ont pas répondu à toutes les questions). Il y’a donc un intérêt de collecter le jeu de données conte tenu des données manquantes. La question qui se pose ici est :
+\begin{itemize}
+	\item Est-ce-que les prédictions des modèles peuvent être considérer comme un ajustement bayésien des réponses aux items ?
+	\item Est-ce-que les modèles améliorent la notation des tests ?
+\end{itemize}
+
+\noindent Dans la section suivante, les données sont utilisées pour faire le clustering des items basés sur la similarité.
+
+% \begin{minipage}{\textwidth}
+% 	\begin{minipage}[b]{0.49\textwidth}
+% 	\centering
+% 	\includegraphics[width=\textwidth]{images/chapitre7/roc_auc.png}
+% 	\captionof{figure}{A table beside a figure}
+% \end{minipage}
+% \hfill
+% \begin{minipage}[b]{0.49\textwidth}
+% 	\centering
+% 	\begin{tabular}{|m{3cm}|m{3cm}|}
+% 	\hline
+% 	\rowcolor{blueforest}
+% 	\color{white} \textbf{Métriques} & \color{white} \textbf{valeurs}  \\
+% 	\hline\hline
+% 	mse & 0.421189 \\ \hline
+% 	kappa & 0.1587 \\ \hline
+% 	auc & 0.611 \\ \hline
+% 	acc & 0.57881 \\ \hline
+% 	\end{tabular}
+% 	\captionof{table}{A table beside a figure}
+% 	\end{minipage}
+% \end{minipage}
 
 \subsection{Clustering hard et soft de la matrice de similarité}
 
@@ -468,8 +513,6 @@ Les objectifs de l’ACP sont :
 Afin d'atteindre ces objectifs, l'ACP calcule de nouvelles variables appelées composantes principales qui sont obtenues sous forme de combinaisons linéaires des variables d'origine. La première composante principale doit avoir la plus grande variance possible (c'est-à-dire l'inertie et donc cette composante « expliquera » ou « extraira » la plus grande partie de l'inertie du tableau de données). La deuxième composante est calculée sous la contrainte d'être orthogonale à la première composante et d'avoir la plus grande inertie possible. Les autres composantes sont calculées de la même manière. Les valeurs de ces nouvelles variables pour les observations sont appelées scores de facteurs, et ces scores de facteurs peuvent être interprétés géométriquement comme les projections des observations sur les composantes principales \cite{abdi2010principal}. \\
 Nous allons appliquer l'analyse en composantes principales avant le clustering, d’abord la visualisation des données ensuite la compression des données après quoi le clustering deviendra précis et efficace.
 
-\newpage
-
 \paragraph{Visualisation de données}
 On projette notre dataset dans un espace 2D.
 
@@ -502,6 +545,38 @@ Visualisation de la composante 0 et 3 parmi les \textbf{392} et l’objet \color
 
 \subsubsection{Clustering hard}
 
+\paragraph{K-means Clustering}
+
+K-means est une méthode de clustering qui partitionne un ensemble de données en K clusters distincts et non chevauchants. Avant d’utilise cette méthode, on cherche d’abord le nombre optimal de cluster avec la méthode Elbow. Le nombre de clusters utilisé pour le clustering partitionnel avec l’algorithme k-means \ref{kmeans_algo} est choisi en se basant sur la figure.
+
+\begin{algorithm}[H]
+	\caption{K-means Clustering}
+	\label{kmeans_algo}
+	\begin{algorithmic}[1]
+	
+	\Procedure{Kmeans}{$X,k$}      
+		\State Initialize $k$ centroids $c_{1},...,_{k}$
+		\While{centroids not converged} % \Comment{put some comments here}
+			\ForAll{ $x_{i} \in X $}  \Comment{Expectation}
+			\begin{equation}
+				r_{ik} = \Biggl\{ 
+					\begin{tabular}{@{}l@{}}
+						1 \hspace{2em} if \(\displaystyle k = argmin_{k} \left\lVert x_{i} - c_{k} \right\rVert^{2}  \)  \\
+						0 \hspace{2em}  else 
+					\end{tabular}
+			\end{equation}
+			\EndFor
+			\ForAll{$centroids c_{j} $} \Comment{Maximization}
+			\begin{equation}
+				c_{j} = \frac{\sum_{i=1}^{n} r_{ij}x_{i}}{\sum_{i=1}^{n} r_{ij}}
+			\end{equation}
+			\EndFor
+		\EndWhile 
+		\State \Return For each $x_{i}$, return last k where $r_{k} == 1$ and $c_{1},...,_{k}$.
+	\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+
 \paragraph{Clustering hiérarchique agglomérative}
 
 Le clustering hiérarchique agglomérative est une approche « ascendante » qui utilise trois distance mesures principales : liaison unique, liaison complète et liaison moyenne, dont le but est de minimiser l’inertie intra-cluster et maximiser l’inertie inter-cluster. L’algorithme de la méthode agglomérative est :
@@ -526,6 +601,7 @@ Le clustering hiérarchique agglomérative est une approche « ascendante » qui
 	
 	\end{algorithmic}
 \end{algorithm}
+
 Cependant le critère de liaison utilisé influence les résultats du clustering. Pour remédier à cela, On peut utiliser le coefficient de Cophénétique pour trouver la méthode de liaison optimale. Ensuite le script est utilisé pour faire le clustering hiérarchique agglomérative.
 
 \begin{lstlisting}[language=Python,label={pca_code}, basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
@@ -611,7 +687,7 @@ Le clustering flou C-Means est une approche de clustering soft, où chaque point
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/chapitre7/fuzzy_partition_plot.png}
 	\end{center}
-	\caption{}
+	\caption{Visualisation des clusters de la méthode fuzzy et le degré d’appartenance des items à chaque cluster.}
 	\label{fuzzy_partition_plot}
 \end{figure}
 
@@ -623,28 +699,54 @@ Le clustering flou C-Means est une approche de clustering soft, où chaque point
 	\centering
 	\addtolength{\leftskip} {-4cm}
 	\addtolength{\rightskip}{-4.5cm}
-	\begin{tabular}{|m{2cm}|m{2cm}|m{2cm}|m{2cm}|m{2cm}|m{2cm}|m{3cm}|}
+	\begin{tabular}{|m{2cm}|m{2cm}|m{2cm}|m{2cm}|m{2cm}|m{3cm}|}
 	\hline
 	\rowcolor{blueforest}
-	\multicolumn{7}{|m{18cm}|}{\centering \color{white} \textbf{Kmeans clustering} } \\ \hline
-	& & \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
-	\textbf{Nombre d'items} &  \textbf{Nombre de clusters}  &   \textbf{Indice de Dunn} & \textbf{Indice Calinski Harabasz} & \textbf{Indice Davies-Bouldin}& \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
-	1084 & 2 & 0.5704 & 0.5766 & 2368.3262 & 0.6203 & 297 \(\displaystyle \thicksim  \) 787 \\ \hline
+	\multicolumn{6}{|m{16cm}|}{\centering \color{white} \textbf{Kmeans clustering} } \\ \hline
+	&  \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
+	\textbf{Nombre de clusters}  &   \textbf{Indice de Dunn} & \textbf{Indice Calinski Harabasz}& \textbf{Indice Davies-Bouldin} & \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
+	2  & 0.43  & \cellcolor{gray!40} 2414  & \cellcolor{gray!40} 0.58   &  \cellcolor{gray!40} 0.62   & 308  \(\displaystyle \thicksim  \) 776  \\ \hline %\cellcolor{gray!40}
+	3  & \cellcolor{gray!40} 0.51  & 1452  & 1.05   &  0.44   & 68   \(\displaystyle \thicksim  \) 719  \\ \hline
+	4  & 0.50  & 1126  & 1.21   &  0.38   & 68   \(\displaystyle \thicksim  \) 719  \\ \hline
+	5  & 0.47  & 937   & 1.27   &  0.306  & 52   \(\displaystyle \thicksim  \) 667  \\ \hline
+	6  & 0.46  & 810   & 1.30   &  0.295  & 43   \(\displaystyle \thicksim  \) 624  \\ \hline
+	7  & 0.45  & 711   & 1.33   &  0.285  & 33   \(\displaystyle \thicksim  \) 591  \\ \hline
+	8  & 0.45  & 626   & 1.29   &  0.289  & 7    \(\displaystyle \thicksim  \) 591  \\ \hline
+	9  & 0.38  & 566   & 1.33   &  0.26   & 7    \(\displaystyle \thicksim  \) 564  \\ \hline
+	10 & 0.37  & 527   & 1.47   &  0.24   & 7    \(\displaystyle \thicksim  \) 564  \\ \hline \hline
 	\rowcolor{blueforest}
-	\multicolumn{7}{|m{18cm}|}{\centering \color{white} \textbf{Agglomérative clustering} } \\ \hline
-	& & \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
-	\textbf{Nombre d'items} &  \textbf{Nombre de clusters}  &   \textbf{Indice de Dunn} & \textbf{Indice Calinski Harabasz} & \textbf{Indice Davies-Bouldin}& \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
-	1084 & 2 & 0.5704 & 0.5766 & 2368.3262 & 0.6203 & 297 \(\displaystyle \thicksim  \) 787 \\ \hline
+	\multicolumn{6}{|m{16cm}|}{\centering \color{white} \textbf{Agglomérative clustering} } \\ \hline
+	&  \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
+	\textbf{Nombre de clusters}  &   \textbf{Indice de Dunn} & \textbf{Indice Calinski Harabasz}& \textbf{Indice Davies-Bouldin} & \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
+	2  & \cellcolor{gray!40} 0.57 & \cellcolor{gray!40} 2368 & \cellcolor{gray!40} 0.58   & \cellcolor{gray!40} 0.62    &  297  \(\displaystyle \thicksim  \)  787  \\ \hline 	
+	3  & 0.51 & 1452 & 1.05   & 0.44    &  68   \(\displaystyle \thicksim  \)  719  \\ \hline
+	4  & 0.48 & 974  & 1.054  & 0.43    &  2    \(\displaystyle \thicksim  \)  717  \\ \hline
+	5  & 0.48 & 733  & 0.937  & 0.41    &  1    \(\displaystyle \thicksim  \)  716  \\ \hline
+	6  & 0.48 & 594  & 0.933  & 0.38    &  1    \(\displaystyle \thicksim  \)  716  \\ \hline
+	7  & 0.48 & 506  & 0.9366 & 0.354   &  1    \(\displaystyle \thicksim  \)  716  \\ \hline
+	8  & 0.48 & 435  & 0.80   & 0.352   &  1    \(\displaystyle \thicksim  \)  716  \\ \hline
+	9  & 0.56 & 444  & 0.89   & 0.34    &  1    \(\displaystyle \thicksim  \)  716  \\ \hline
+	10 & 0.52 & 438  & 0.95   & 0.30    &  1    \(\displaystyle \thicksim  \)  666  \\ \hline \hline
 	\rowcolor{blueforest}
-	\multicolumn{7}{|m{18cm}|}{\centering \color{white} \textbf{Fuzzy clustering} } \\ \hline
-	& & \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
-	\textbf{Nombre d'items} &  \textbf{Nombre de clusters}  &   \textbf{Coefficient de Partition Floue } & \textbf{Indice Calinski Harabasz} & \textbf{Indice Davies-Bouldin}& \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
-	1084 & 2 & 0.5704 & 0.5766 & 2368.3262 & 0.6203 & 297 \(\displaystyle \thicksim  \) 787 \\ \hline
+	\multicolumn{6}{|m{16cm}|}{\centering \color{white} \textbf{Fuzzy clustering} } \\ \hline
+	&  \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
+	\textbf{Nombre de clusters}  &   \textbf{FPC} & \textbf{Indice Calinski Harabasz}& \textbf{Indice Davies-Bouldin} & \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
+	2  & \cellcolor{gray!40} 0.865 & \cellcolor{gray!40} 2413.6  & \cellcolor{gray!40} 0.59   &  \cellcolor{gray!40} 0.62    &  308 \(\displaystyle \thicksim  \)  776  \\ \hline 	
+	3  & 0.54  & 1378    & 1.27   &  0.40    &  71  \(\displaystyle \thicksim  \)  705 \\ \hline
+	4  & 0.45  & 1394    & 1.02   &  0.53    &  1   \(\displaystyle \thicksim  \)  776 \\ \hline
+	5  & 0.35  & 708.51  & 2.30   &  -0.008  &  3   \(\displaystyle \thicksim  \)  757 \\ \hline
+	6  & 0.30  & 697     & 3.06   &  0.024   &  1   \(\displaystyle \thicksim  \)  766 \\ \hline
+	7  & 0.26  & 486.75  & 4.2    &  0.011   &  6   \(\displaystyle \thicksim  \)  735 \\ \hline
+	8  & 0.23  & 481.55  & 4.29   &  -0.022  &  1   \(\displaystyle \thicksim  \)  685 \\ \hline
+	9  & 0.20  & 666     & 2.57   &  0.21    &  1   \(\displaystyle \thicksim  \)  680 \\ \hline
+	10 & 0.18  & 408     & 3.72   &  -0.0094 &  1   \(\displaystyle \thicksim  \)  726 \\ \hline \hline
   \end{tabular}
-	\caption{Description et statistiques du jeu de données.}
-	\label{dataset_features_describe}
+	\caption{Résultats des indices de validité du clustering.}
+	\label{clusters_indice_score}
 \end{table}
 
 \section{Conclusion}
+Ce chapitre se résume comme un pipeline pour travailler avec les données éducatives. D’abord une analyse des réponses des apprenants en utilisant le workflow bayésien avec des modèles de la théorie des réponses aux items et une classification hard et soft des items basé sur la similarité. La théorie des réponses aux items a permis d’analyse les scores des apprenants afin d’estimer les propriétés métriques
+des items et le niveau des apprenants par rapport au trait latent considéré, ensuite les valeurs des paramètres des modèles ont été utilisé pour prédire la probabilité de réussite à un item. Les prédictions faites par les modèles permettent d’examiner la qualité de l’échelle de mesure qui a été utilisé par le système où les données ont été collecter et montrent la qualité du jeu de données, c’est-à-dire si le jeu de données peut être utilisé pour une étude. La classification hard et soft des items basé sur la similarité est l’étude qui a été réalisé avec le jeu de données.
 
  

@@ -2,4 +2,21 @@
 \chapter*{Conclusion Générale et Perspectives }
 \markboth{\textbf{CONCLUSION G\'EN\'ERALE ET PERSPECTIVES }}{}
 \thispagestyle{empty}
-	\section*{Conclusion Générale}
+\section*{Conclusion Générale}
+Dans ce mémoire, nous avons travaillé sur l'intégration des méthodes du data mining dans les systèmes d'apprentissage qui ont pour but d’optimiser les méthodes d'apprentissage, de construire et d’évaluer des échelles de mesure, de gérer un grand nombre d’item, ainsi que les techniques de regroupement des items en composants de connaissances. \\
+Les paramètres estimés à l’aide de l’inférence bayésienne pour les modèles de la théorie de la réponse aux items peuvent être utilisé pour évaluer la qualité des échelles de mesures et de prédire les scores des apprenants avant d’effectuer la collecte de données pour faire un regroupement des items selon leurs similitudes. \\
+Dans ce travail, nous avons eu deux contributions \\
+Dans la première contribution, nous avons proposé une étape d’analyse et de validation des données des systèmes éducatif à l’aide de l’inférence bayésienne et des modèles de la théorie de la réponse aux items. Cette étape a été utilisé comme un workflow bayésien, c’est-à-dire un processus itératif jusqu’à l’obtention d’un modèle acceptable ou provisoirement acceptable. Les paramètres des modèles IRT ainsi obtenu décrive les compétences des apprenants sur un continuum de trait latent d’une part et d’autre part les propriétés de l’item notamment, sa difficulté, son pouvoir de discrimination, le rôle que la "chance" (réponses "au hasard") peut jouer dans certains cas. Une fois l’obtention d’un modèle acceptable ou provisoirement acceptable, les valeurs de ces paramètres peuvent être utilise pour prédire la probabilité qu’un apprenant obtient une réponse correcte. Enfin les valeurs des métriques entre les données observées et ceux prédit par les modèles peuvent être utilisé pour comparer les modèles IRT avec des spécifications alternatives, ou pour éclairer une décision sur l'intérêt de collecter ce type de données. \\
+Dans la deuxième contribution, un regroupement des items en composante de connaissance a été appliquer avec une méthode de clustering partitionel (à l'aide de l'algorithme K-means), hiérarchique (à l'aide de l'algorithme hiérarchique agglomérative) et floue (à l'aide de l'algorithme c-means). Ces méthodes de clustering ont utilisé la matrice de similarité Item-Item calculer à partir du nombre correct et incorrect des réponses avec aide et sans aide, et le coefficient de kappa pour le calcul de degré de similarité. \\
+
+\section*{\textbf{Perspectives}}
+A la fin de ce projet de fin d’études, nous avons dégagé les perspectives suivantes à développer dans l’avenir pour une amélioration de ce travail :
+
+\begin{itemize}
+    \item Extension des modèles IRT mentionnés dans ce mémoire aux modèles à plusieurs niveaux de sorte qu'ils prennent en compte les variations de capacités entre les unités de groupe telles que les écoles, ainsi qu'au sein des unités de groupe. Ces modèles à plusieurs niveaux distingueront ainsi les capacités au niveau individuel(étudiants), au niveau du groupe (classes), ou les deux.
+    \item Estimations des probabilités de réussite a un item avec l’algorithme Bayesian Knowledge Tracing (BKT).
+    \item Appliquer d’autre coefficient de similarité comme Yule, Fisher, Sokal et aussi le critère de calcule de similitude entre items.
+\end{itemize}
+
+
+

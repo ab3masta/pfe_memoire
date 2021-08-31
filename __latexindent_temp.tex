@@ -1,0 +1,674 @@
+
+\chapter{Contribution and Results}
+\minitoc
+\thispagestyle{empty}
+\newpage
+
+\section{Introduction}
+Nous présentons dans ce chapitre les notions vues dans les chapitres précédents appliquer à un dataset. Partant de la collecte et la préparation du dataset, de l’application de la théorie des réponses aux items pour un ajustement bayésiens des réponses obtenues par les apprenants, jusqu’aux clustering hard et soft des items basés sur la similarité.
+
+\section{Approche proposée}
+
+
+\section{Implémentations et résultats expérimentaux}
+
+\subsection{Outils de développement}
+les outils matériels et logiciels utilisés pour le développement sont :
+
+\subsubsection{Materiels}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{cccc}
+    \toprule
+     \textbf{Marque} & \textbf{CPU} & \textbf{RAM} & \textbf{OS} \\
+     \midrule
+       \textbf{Lenovo Y40-80} & AMD Intel Core i5 2.20 GHz & 16Go & Windows10 64bits \\ \hline
+       \multicolumn{4}{m{14cm}}{\centering Et Linux Ubuntu 20.04 LTS installé sur WSL2 }\\
+    \bottomrule
+  \end{tabular}
+  \caption{Caractéristiques du matériels utilisés}
+  \label{tabmat}
+\end{table}
+
+\textbf{WSL2 :} Windows Subsystem for Linux (WSL) est une couche de compatibilité permettant d'exécuter des exécutables binaires Linux de manière native sur Windows 10 et Windows Server 2019. WSL2 est une version améliorer de WSL1 qui introduit d'importants changements, notamment la présence d'un véritable noyau Linux \cite{craigloewen_msft} via un sous-ensemble de fonctionnalités Hyper-V. 
+
+\subsubsection{Outils et packages}
+
+\begin{table}[H]
+	\centering
+	\addtolength{\leftskip} {-4cm}
+	\addtolength{\rightskip}{-4.5cm}
+	\begin{tabular}{|m{5cm}|m{14cm}|}
+	\hline
+	\rowcolor{blueforest}
+	\color{white} \textbf{Outils | Packages} & \color{white} \textbf{Description}  \\
+	\hline\hline
+	\multicolumn{2}{|m{19cm}|}{\centering Les outils et packages utilisés sur windows 10 : }\\ \hline
+	\begin{center}
+	    \begin{minipage}{.3\textwidth}
+      \includegraphics[width=\textwidth]{images/chapitre7/python.png}
+    \end{minipage}
+	\end{center}
+	\centering \textbf{Python} \cite{10.5555/1593511} & Créé par le développeur Guido Van Rossum et publié pour la première fois en 1991. Il permet aux programmeurs d'utiliser différents styles de programmation pour créer des programmes simples ou complexes. Python est l'un des langages de programmation les plus populaires pour la science des données. C'est un langage de programmation de haut niveau, structuré, open source, interprété et dynamique. Il est multiparadigme, multi-plateforme et multi-usages. La syntaxe de Python aide les programmeurs à coder en moins d'étapes par rapport à d'autres langages comme JAVA ou C++, ce qui facilite le travail et le rend plus rapide, facile et amusant à faire. Il possède une bibliothèque standard complète et volumineuse dotée d'une gestion automatique de la mémoire et de fonctionnalités dynamiques \cite{python_cours}. Dans notre travail, nous avons utilisé Python 3.5 intégré à Anaconda. \\ \hline
+  \begin{center}
+	    \begin{minipage}{.3\textwidth}
+      \includegraphics[width=\textwidth]{images/chapitre7/anaconda.png}
+    \end{minipage}
+	\end{center}
+	\centering \textbf{Anaconda} & Anaconda \cite{anaconda_citation} est une distribution libre et open source \cite{anaconda_website} des langages de programmation Python et R appliqué au développement d'applications dédiées à la science des données et à l'apprentissage automatique (traitement de données à grande échelle, analyse prédictive, calcul scientifique), qui vise à simplifier la gestion des paquets et de déploiement. Les versions de paquetages sont gérées par le système de gestion de paquets conda \cite{conda_website} et est adapté pour Windows, Linux et MacOS. Anaconda fournit interface graphique qui permet de lancer des applications, de gérer les librairies avec gestionnaire de paquets conda, et les environnements de développement. Plusieurs applications sont disponibles par défaut comme JupyterLab, Jupyter Notebook, QtConsole5, Spyder, Glue, Orange, RStudio, Visual Studio Code.  \\ \hline
+  
+  \begin{center}
+    \begin{minipage}{.3\textwidth}
+    \includegraphics[width=\textwidth]{images/chapitre7/jupyter.png}
+  \end{minipage}
+  \end{center}
+  \centering \textbf{Jupyter Notebook} \cite{Kluyver2016jupyter} & Jupyter Notebook est un environnement de programmation interactif basé sur le web utilisé pour programmer en python, R, Ruby, Julia ou encore Scala qui permet de réalisé des notebooks contenant à la fois du texte en markdown et du code en Julia, Python, R etc.  \\ \hline
+
+  \begin{center}
+    \begin{minipage}{.3\textwidth}
+    \includegraphics[width=\textwidth]{images/chapitre7/scikit_learn.png}
+  \end{minipage}
+  \end{center}
+  \centering \textbf{Scikit-learn} \cite{pedregosa2011scikit} & Scikit-learn est une bibliothèque libre Python destinée à l'apprentissage automatique. Elle propose un ensemble d'outils efficace clé en main pour l’analyse et l’exploration de données. Cette bibliothèque prend en charge les algorithmes de classifications, de régression, du clustering, la réduction de dimensionnalité et de prétraitement des données pour l'extraction et la normalisation des caractéristiques.  \\ \hline
+
+  \end{tabular}
+	\caption{Indice de validité du clustering Hard}
+	\label{tools}
+\end{table}
+
+\newpage
+
+\begin{table}[H]
+	\centering
+	\addtolength{\leftskip} {-4cm}
+	\addtolength{\rightskip}{-4.5cm}
+	\begin{tabular}{|m{5cm}|m{14cm}|}
+	\hline
+	\rowcolor{blueforest}
+	\color{white} \textbf{Outils | Packages} & \color{white} \textbf{Description}  \\
+	\hline\hline
+  %  >>>>>>>>>>>>>>
+	\begin{center}
+	    \begin{minipage}{.3\textwidth}
+      \includegraphics[width=\textwidth]{images/chapitre7/pandas.png}
+    \end{minipage}
+	\end{center}
+  \centering \textbf{Pandas} \cite{mckinney2010data} & Pandas est une bibliothèque écrite en Python qui permet la manipulation et l'analyse des données. Elle propose en particulier des structures de données et des opérations de manipulation de tableaux numériques et de séries temporelles. Elle propose principalement comme structures de données les Series, DataFrames, Panels, Panels4D. Et aussi des fonctionnalités comme la manipuler des données aisément et efficacement avec des index pouvant être des chaines de caractères, des outils pour lire et écrire des données structurées, gestion des données manquantes, le tri, le redimensionnement et , fusion et jointure de large volume de données et analyse de séries temporelles. \\ \hline
+  % <<<<<<<<<<<<<<
+
+  %  >>>>>>>>>>>>>>
+  \begin{center}
+	    \begin{minipage}{.3\textwidth}
+      \includegraphics[width=\textwidth]{images/chapitre7/numpy.png}
+    \end{minipage}
+	\end{center}
+	\centering \textbf{Numpy} \cite{2020NumPy-Array} & est une bibliothèque python pour le calcul scientifique qui fournit un objet tableau multidimensionnel, divers objets dérivés (tels que des tableaux et des matrices masqués) et un assortiment de routines pour des opérations rapides sur des tableaux, notamment mathématiques, logiques, manipulation de forme, tri, sélection, transformées de Fourier discrètes, algèbre linéaire de base, opérations statistiques de base, simulation aléatoire etc.  \\ \hline
+  % <<<<<<<<<<<<<<
+  \begin{center}
+    \begin{minipage}{.3\textwidth}
+    \includegraphics[width=\textwidth]{images/chapitre7/matplotlib.png}
+  \end{minipage}
+  \end{center}
+  \centering \textbf{Matplotlib} \cite{hunter2007matplotlib} & Matplotlib est une bibliothèque du langage de programmation Python destinée à tracer et visualiser des données sous formes de graphiques en 2 ou 3 dimensions \cite{tosi2009matplotlib}. Cette bibliothèque permet de produire divers tracés par exemple des histogrammes, des fonctions de Rosenbrock, spirale logarithmique, graphiques d'erreurs, nuages de points etc.  \\ \hline
+
+  \end{tabular}
+	\caption{Indice de validité du clustering Hard}
+	\label{tools}
+\end{table}
+
+\newpage
+
+\begin{table}[H]
+	\centering
+	\addtolength{\leftskip} {-4cm}
+	\addtolength{\rightskip}{-4.5cm}
+	\begin{tabular}{|m{5cm}|m{14cm}|}
+	\hline
+	\rowcolor{blueforest}
+	\color{white} \textbf{Outils | Packages} & \color{white} \textbf{Description}  \\
+	\hline\hline
+	\multicolumn{2}{|m{19cm}|}{\centering Les outils et packages supplémentaires utilisés sur Linux Ubuntu 20.04 LTS installé sur WSL2 : }\\ \hline
+	\begin{center}
+	    \begin{minipage}{.3\textwidth}
+      \includegraphics[width=\textwidth]{images/chapitre7/stan.png}
+    \end{minipage}
+	\end{center}
+	\centering \textbf{Stan} & Stan \cite{stan} est une plate-forme pour la modélisation statistique, l’analyse de données et la prédiction dans les sciences sociales, biologiques et physiques, l’ingénierie et les affaires. Il permet de spécifier les fonctions de densité de log afin d’obtenir une inférence statistique bayésienne complète avec échantillonnage MCMC (NUTS, HMC), une inférence bayésienne approximative avec inférence variationnelle (ADVI), une estimation du maximum de vraisemblance pénalisée avec optimisation (L-BFGS). La bibliothèque mathématique de Stan fournit des fonctions de probabilité différentiables et une algèbre linéaire (C++ autodiff). Stan peut être utilisé avec les langages d’analyse de données les plus populaires (R, Python, shell, MATLAB, Julia, Stata) et fonctionne sur toutes les principales plates-formes (Linux, Mac, Windows) \textbf{sauf la version 3 qui fonctionne sur Linux et Mac, c’est ce qui nous a poussée a utilisé Linux Ubuntu 20.04 LTS sur WSL2}. Dans l’implémentation nous avons utilisé Pystan 3.2.0 \cite{pystan} qui est une interface Python pour Stan, un package pour l'inférence bayésienne. \\ \hline
+  \begin{center}
+	    \begin{minipage}{.3\textwidth}
+      \includegraphics[width=\textwidth]{images/chapitre7/arviz2.png}
+    \end{minipage}
+	\end{center}
+	\centering \textbf{ArviZ} & ArviZ \cite{arviz_2019} est un package Python pour l'analyse exploratoire des modèles bayésiens. Comprend des fonctions d'analyse postérieure, de stockage de données, de diagnostic d'échantillons, de vérification de modèle et de comparaison. Ce package de fournir des outils backend indépendants pour les diagnostics et les visualisations de l'inférence bayésienne en Python, en convertissant d'abord les données d'inférence en objets xarray \cite{arviz}.  \\ \hline
+  
+  \end{tabular}
+	\caption{Indice de validité du clustering Hard}
+	\label{tools}
+\end{table}
+
+\subsection{Collecte et préparation des données}
+\label{collect_encoding}
+\href{https://kdd.org/kdd-cup/view/kdd-cup-2010-student-performance-evaluation/Intro}{\color{blue}{KDD Cup 2010}} est une compétition d'exploration de données éducatives dans laquelle les participants sont chargés de prédire les performances des élèves aux problèmes algébriques en fonction des informations concernant les performances passées. \\
+\textbf{Algèbre I 2005-2006} \cite{blog_kdd} est un jeu de données qui est fourni pour débuter et se familiarisé avec le format et le développement d’un modèle d’apprentissage. Une brève description du dataset initial avant l’étape du pre-processing est dans le tableau \ref{dataset_features_describe}.
+
+\begin{table}[H]
+	\centering
+	\addtolength{\leftskip} {-4cm}
+	\addtolength{\rightskip}{-4.5cm}
+	\begin{tabular}{|m{5cm}|m{8cm}|m{4cm}|}
+	\hline
+	\rowcolor{blueforest}
+	\color{white} \textbf{Caractéristique} & \color{white} \textbf{Description}  & \color{white} \textbf{Nombre Total}\\
+	\hline
+	\multicolumn{3}{|m{17cm}|}{\centering le nombre total de transactions = 809694. }\\ \hline
+    \textbf{Anon Student Id} &  identifiant unique et anonyme d'un étudiant & 574 \\ \hline
+    \textbf{Problem Name} &  identifiant unique d'un problème & 1084 \\ \hline 
+    \textbf{Correct First Attempt} &  l'évaluation par le tuteur de la première tentative de l'étudiant 1 si correcte, 0 sinon. &  \\ \hline
+
+    \multicolumn{3}{|m{17cm}|}{ \centering Et 11 autres carateristiques du dataset : \textbf{Row}, \textbf{Problem View}, \textbf{Step Start Time}, etc.} \\ \hline
+  \end{tabular}
+	\caption{Description et statistiques du jeu de données.}
+	\label{dataset_features_describe}
+\end{table}
+
+\newpage
+Les étapes suivies pour la collecte et la préparation du dataset sont illustré par la figure.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre7/preprocessing_steps.png}
+	\end{center}
+	\caption{Le pre-processing du dataset.}
+	\label{datatset_pre-processing}
+\end{figure}
+
+\begin{description}
+    \item[\textbf{Première étape : }] dans notre travail, nous nous concentrons sur la performance de l'apprenant qui est liée à l'item, au résultat obtenu par l'apprenant : (correct/incorrect soit 0 ou 1), ou en prenant un indice (hint).
+    \item[\textbf{Deuxième étape : }] seuls les apprenants ayant au moins 10 interactions avec les items ont été sélectionner. Les valeurs qui ne sont pas binaire (0 ou 1) dans la colonne « correct » sont éliminées. Les valeurs de la colonne « user\char`_id »  et « item\char`_id » sont encoder et où « id = 0 » est remplacer par le nombre total des apprenants et des items respectivement. L’encodage permet d’encoder les identifiants en valeur numérique, parce que le modèle IRT prend seulement des valeurs numériques à partir de 1. La colonne « answers\char`_using\char`_hint » ajouter au dataset sera utilisé pour calculer la matrice de similarité entre items selon notre critère : réponse correcte avec aide (hints) et sans aide, et incorrecte avec aide et sans aide.Le script python avec lequel la colonne « answers\char`_using\char`_hint » est dans \ref{answersusinghint}.
+\end{description}
+
+\newpage
+\begin{lstlisting}[language=Python,label={answersusinghint}, 
+	morekeywords={self},
+	keywordstyle=\ttb\color{deepblue},
+	emph={MyClass,__init__},
+	emphstyle=\ttb\color{deepred},
+	stringstyle=\color{deepgreen},basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+	conditions = [
+		(needed['correct'] == 1) & (needed['nb_hint'] > 0),
+		(needed['correct'] == 1) & (needed['nb_hint'] == 0),
+		(needed['correct'] == 0) & (needed['nb_hint'] > 0),
+		(needed['correct'] == 0) & (needed['nb_hint'] == 0)
+		]
+	# 1 ==> Correct avec hint
+	# 2 ==> Correct sans hint
+	# 3 ==> Incorrect avec hint
+	# 4 ==> Incorrect sans hint
+	values = [1, 2, 3, 4]
+	
+	# create a new column and use np.select to assign values to it using our lists as arguments
+	needed['answers_using_hint'] = np.select(conditions, values)
+\end{lstlisting}
+
+\subsection{Modèle IRT pour une inférence bayésienne}
+\label{irt_model_for_bayesian_inference}
+Dans l’implémentions nous utiliseront le workflow bayésien complet pour faire l’ajustement des réponses aux items plutôt qu’une simple inférence bayésienne. La différence est que l'inférence bayésienne n'est que la formulation et le calcul de probabilités conditionnelles ou de densités de probabilité, \(\displaystyle p(\theta|y) \infty  p(\theta)p(y|\theta) \) et le workflow bayésien comprend les trois étapes : création de modèle, inférence et vérification/amélioration de modèle, ainsi que la comparaison de différents modèles, non seulement à des fins de choix de modèle ou de moyenne de modèle, mais plus important encore pour mieux comprendre ces modèles \cite{gelman2020bayesian}. Les étapes du workflow (flux) sont illustrées par la figure \ref{irt_process}. 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre5/irt_process.png}
+	\end{center}
+	\caption{Les étapes du workflow bayésien \cite{gelman2020bayesian}.}
+	\label{irt_process}
+\end{figure}
+
+\subsubsection{Spécification et chargement du modèle}
+Nous avons utilisé le modèle de Rasch, 2PL et 3PL pour faire l’estimation des paramètres des modèles avec le logiciel Stan en utilisant le code Stan définit dans le chapitre \ref{chap:irt}, sauf le bloc « generated quantities » parce qu’en ajoutant, la taille de modèle ajusté devient déraisonnablement grande du fait qu’on a un grand nombre d’item, de sujet et d’observation. Le code stan pour le modèle de Rasch est :
+\begin{lstlisting}[language=Stan,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+_1pl_model = """
+data {
+	// numbers of things
+	int<lower=1> N;  // number of observations
+	int<lower=1> I;  // items,  number of questions  
+	int<lower=1> S;  // subjects,  number of users 
+	// data
+	int<lower=1,upper=I> item[N];
+	int<lower=1,upper=S> subject[N];
+	int<lower=0,upper=1> grade[N];
+}
+parameters {
+	// parameters
+	real ability[S];             //  alpha: ability of student
+	real difficulty[I];          //  beta: difficulty of question
+	real delta;                   // mean student ability
+}
+model {
+	ability ~ std_normal();         
+	difficulty ~ std_normal();   
+	delta ~ normal(0.75,1);
+	for(n in 1:N)
+		grade[n] ~ bernoulli_logit(ability[subject[n]] - difficulty[item[n]] + delta);
+}
+"""
+\end{lstlisting}
+Avant de charger et compiler le modèle, Stan prend les données dans un dictionnaire, où les noms des clés doivent être identiques aux noms spécifiés dans la section data du modèle. Les données de notre dataset dans un format dictionnaire est :
+
+\begin{lstlisting}[language=Python,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+	{'I': 1084,
+	'N': 809660,
+	'S': 569,
+	'grade': array([0, 1, 1, ..., 1, 1, 1]),
+	'item': array([563, 563, 563, ..., 482, 482, 482]),
+	'subject': array([ 72, 247, 249, ..., 392, 392, 392])}
+\end{lstlisting}
+
+\subsubsection{Compilation du modèle et échantillonnage }
+
+Après avoir spécifier le modèle, la compilation (en code c++) est faite en utilisant la fonction \colorbox{gray!30}{stan.build()} qui prend en paramètre le modèle , les données et random\char`_seed qui contrôle l’effet aléatoire. Le script est :
+\begin{lstlisting}[language=Stan,basicstyle=\small, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalsize\tiny\color{white}]
+	posteriori = stan.build(_1pl_model,data=train_data,random_seed=2021)
+\end{lstlisting}
+
+\noindent Une fois le modèle compiler avec les données, la méthode \colorbox{gray!30}{sample()} fait des échantillonnages dans les distributions spécifier dans le modèle. La méthode \colorbox{gray!30}{sample()} prend en paramètre \colorbox{gray!30}{num\char`_chains}   le nombre de chaine  qui sont exécuter en parallèle, \colorbox{gray!30}{num\char`_samples}  le nombre d’échantillon à générer, \colorbox{gray!30}{num\char`_warmup}  le nombre d’échantillon initial à rejeter qui sont généralement loin d'être optimales et \colorbox{gray!30}{num\char`_thin} spécifie un intervalle d'échantillonnage auquel les échantillons sont conservés.
+
+\begin{lstlisting}[language=Stan,basicstyle=\small, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalsize\tiny\color{white}]
+	fit = posteriori.sample(num_chains=4, num_samples=2000,num_warmup=1000,num_thin=1)
+\end{lstlisting}
+
+
+\subsubsection{Résultats d’échantillonnage, diagnostique du modèle, prédiction et validation}
+
+
+Une fois l’échantillonnage terminé, l’objet \colorbox{gray!30}{stanfit} renvoyer par la méthode \colorbox{gray!30}{sample()} contient la sortie dérivée de l’ajustement du modèle c’est-à dire les résultats de l’inférence. L’objet \colorbox{gray!30}{fit} du modèle de Rasch est afficher dans le tableau de la figure \ref{stanfit_object}. La figure \ref{model_trace-plot} affiche les distributions postérieures des paramètres du modèle de Rasch pour toute les itérations et la figure \ref{params_posterior_distribution} les distributions postérieures pour le paramètre \colorbox{gray!30}{ability} du premier sujet (apprenant) et \colorbox{gray!30}{difficulty} du premier item du modèle de Rasch.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre7/stanfit_object.png}
+	\end{center}
+	\caption{L’objet stanfit de notre modèle.}
+	\label{stanfit_object}
+\end{figure}
+
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre7/model_plot-trace.png}
+	\end{center}
+	\caption{Les distributions postérieures du modèle.}
+	\label{model_trace-plot}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre7/params_posterior_distribution.png}
+	\end{center}
+	\caption{La moyenne des distributions postérieures du modèle.}
+	\label{params_posterior_distribution}
+\end{figure}
+
+\noindent En plus des valeurs des paramètres du modèle, le tableau de la figure contient également d’autre valeurs des paramètres utilisés par l'échantillonneur qui vont servir de diagnostique.
+L'étiquette \colorbox{gray!30}{lp\char`_\char`_} est pour les densités logarithmiques (jusqu'à une constante additive), \colorbox{gray!30}{accept\char`_stat\char`_\char`_} est pour les probabilités d'acceptation, \colorbox{gray!30}{stepsize\char`_\char`_} est pour la taille de pas de l'intégrateur leapfrog pour simuler l'hamiltonien, \colorbox{gray!30}{treedepth\char`_\char`_} est la profondeur de l'arbre exploré par l'échantillonneur sans demi-tour (Journal base 2 du nombre d'évaluations de densité et de gradient log), \colorbox{gray!30}{n\char`_leapfrog\char`_\char`_} est le nombre d'évaluations de densité et de gradient, \colorbox{gray!30}{divergent\char`_\char`_} est un indicateur indiquant une instabilité numérique lors de l'intégration numérique entraînant la non conservation de l'hamiltonien, et \colorbox{gray!30}{energy\char`_\char`_} est la valeur hamiltonienne. \\
+
+\noindent \textbf{Le BFMI :} Bayesian Fraction of Missing Information, bfmi inférieur à 0,2 indique qu’il faut peut-être reparamétrer votre modèle.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{images/chapitre7/model_energy.png}
+	\end{center}
+	\caption{BFMI du modèle.}
+	\label{bfmi_of_model}
+\end{figure}
+
+\noindent \textbf{Le Rhat :} un Rhat > 1.1 indique généralement des problèmes d'ajustement et si Rhat est d'environ 1, alors il n’y aura aucune diminution de la variance d'échantillonnage, quelle que soit la durée d’itération, et donc la chaîne de Markov est susceptible (mais pas garantie) d'avoir convergé. Celui ne notre modèle est d'environ 1 pour tous les paramètres.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre7/output_of_rhat.png}
+	\end{center}
+	\caption{Le Rhat du modèle.}
+	\label{output_of_rhat}
+\end{figure}
+
+\noindent \textbf{Vérification des divergences }: aucune divergence dans le modèle comme le montre la figure \ref{diverging_output}.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre7/diverging_output.png}
+	\end{center}
+	\caption{La sortie de la divergence du modèle.}
+	\label{diverging_output}
+\end{figure}
+
+\noindent Après diagnostique du modèle, les valeurs des paramètres obtenu peuvent être utilisé pour faire des prédictions postérieures en utilisant la fonction logistique de Rasch \ref{posterior_probability_distribution} ou bien faire des prédictions directement en utilisant le bloc « generated quantities » \ref{generated_quantities} et aussi récupérer le log de vraisemblance (log likelihood) qui est utilisé pour comparer plusieurs modèles (sélection de modèle). Mais l’utilisation de ce bloc entraine un coût de calcul et d’utilisation de la mémoire surtout avec un jeu de données de grande dimension. Le script \ref{pred_script} est utilisé pour prédire la probabilité de réussite à un item pour le modèle de Rasch.
+
+\begin{lstlisting}[language=Python,label={pred_script},stringstyle=\color{deepgreen},basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+ability = np.mean(fit['ability'],axis=1)
+difficulty = np.mean(fit['difficulty'],axis=1)
+y_pred = []
+for i in range(0,len(needed)):
+	diff = train_data['item'][i] # Item index
+	abilt = train_data['subject'][i] # Subject index
+	p = np.exp(ability[abilt - 1 ] - difficulty[diff - 1])/(1+np.exp(ability[abilt - 1] 
+	   - difficulty[diff - 1]))
+	y_pred.append(p)
+y_pred = np.round(y_pred).astype(int)
+\end{lstlisting}
+
+\noindent Nous terminons donc cette étape avec la validation des prédictions faite par les modèles IRT utilisés en comparant les scores observés et les scores prédit, c’est-à-dire chercher à comprendre à quel point les modèles représentent les données. Plusieurs métriques peuvent être utilisé pour faire les contrôles prédictif postérieur.
+
+% \begin{itemize}
+% 	\item \textbf{Accuracy :}
+% 	\item \textbf{Mean squared error :}
+% 	\item \textbf{Roc auc score :}
+% 	\item \textbf{Cohen kappa :}	
+% \end{itemize}
+
+Celui du modèle sont afficher dans le tableau et roc\char`_auc\char`_score est illustré par la figure.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre7/roc_auc.png}
+	\end{center}
+	\captionof{A table beside a figure}
+	\label{roc_auc}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|m{3cm}|m{3cm}|}
+	\hline
+	\rowcolor{blueforest}
+	\color{white} \textbf{Métriques} & \color{white} \textbf{valeurs}  \\
+	\hline\hline
+	mse & 0.421189 \\ \hline
+	kappa & 0.1587 \\ \hline
+	auc & 0.611 \\ \hline
+	acc & 0.57881 \\ \hline
+	\end{tabular}
+	\caption{A table beside a figure}
+\end{table}
+
+
+% \begin{minipage}{\textwidth}
+% 	\begin{minipage}[b]{0.49\textwidth}
+% 	\centering
+% 	\includegraphics[width=\textwidth]{images/chapitre7/roc_auc.png}
+% 	\captionof{figure}{A table beside a figure}
+% \end{minipage}
+% \hfill
+% \begin{minipage}[b]{0.49\textwidth}
+% 	\centering
+% 	\begin{tabular}{|m{3cm}|m{3cm}|}
+% 	\hline
+% 	\rowcolor{blueforest}
+% 	\color{white} \textbf{Métriques} & \color{white} \textbf{valeurs}  \\
+% 	\hline\hline
+% 	mse & 0.421189 \\ \hline
+% 	kappa & 0.1587 \\ \hline
+% 	auc & 0.611 \\ \hline
+% 	acc & 0.57881 \\ \hline
+% 	\end{tabular}
+% 	\captionof{table}{A table beside a figure}
+% 	\end{minipage}
+% \end{minipage}
+
+\subsection{Clustering hard et soft de la matrice de similarité}
+
+\subsubsection{Création de la matrice de similarité}
+Les données collecter dans la partie [\ref{collect_encoding}] et ceux de l’ajustement bayésien avec le modèle de Rasch (c’est-à dire les prédictions faites faire le modèle d’inférence bayésien) sont utilisée pour créer la matrice de réponse selon quatre catégories : correct avec aide (CH) et sans aide (CS), et incorrect avec aide (IH) et sans aide (IS). La matrice de réponses est ensuite utilisée pour créer la matrice de similarité entre items avec le coefficient de kappa. La figure \ref{similarity_steps} illustre toutes les étapes. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre7/similarity_steps.png}
+	\end{center}
+	\caption{Les étapes de calcule de la matrice de similarité.}
+	\label{similarity_steps}
+\end{figure}
+
+Le script utiliser pour calculer la matrice des sommes des réponses est :
+\begin{lstlisting}[language=Python,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+	def createSumMatrix(data):
+    column_names = data['item_id'].unique()
+    rows_name = ["CH","CS","IH","IS"]
+    columns = pd.DataFrame(columns = column_names)
+    index = pd.DataFrame(rows_name, columns = ['catégories'])
+    sumOfAnswers_df = pd.concat([index,columns], axis=1)
+    sumOfAnswers_df = sumOfAnswers_df.set_index("catégories")
+    sumOfAnswers_df = sumOfAnswers_df.replace(np.nan,0)
+    column_name = data['item_id'].unique()
+    rows_name = data['user_id'].unique()
+    for i in tqdm(rows_name):
+        for j in column_name:
+            dictVal = data[(data["user_id"] == i) & (data["item_id"] == j)]['answers_using_hint'].value_counts()
+            chVal = sumOfAnswers_df.loc["CH",j]
+            csVal = sumOfAnswers_df.loc["CS",j]
+            ihVal = sumOfAnswers_df.loc["IH",j]
+            isVal = sumOfAnswers_df.loc["IS",j]
+            if len(dictVal) != 0:
+                for key, value in dictVal.items():
+                    key = int(key)
+                    if key == 1:
+                        chVal = int(chVal) + value
+                    elif key == 2:
+                        csVal = int(csVal) + value
+                    elif key == 3:
+                        ihVal = int(ihVal) + value
+                    elif key == 4:
+                        isVal = int(isVal) + value
+                sumOfAnswers_df.loc["CH",j] = chVal
+                sumOfAnswers_df.loc["CS",j] = csVal
+                sumOfAnswers_df.loc["IH",j] = ihVal
+                sumOfAnswers_df.loc["IS",j] = isVal
+	return sumOfAnswers_df
+	
+\end{lstlisting}
+
+La matrice de similarité entre items est calculée avec le code \ref{similarity_code}.
+\begin{lstlisting}[language=Python,label={similarity_code}, basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+	def item_to_item_similarity1(data):
+    column_names = data.columns
+    columns = pd.DataFrame(columns = column_names)
+    items = pd.DataFrame(column_names, columns = ['item_id'])
+    items_similarity = pd.concat([items,columns], axis=1)
+    items_similarity = items_similarity.set_index("item_id")
+    index = data.columns
+    for i in tqdm(index):
+        for j in index:
+            val = cohen_kappa_score(data[i],data[j])
+            items_similarity.loc[i,j] = val
+    return items_similarity
+\end{lstlisting}
+
+\subsubsection{Analyse en composantes principales (ACP)}
+Les grands ensembles de données incluent souvent des mesures sur de nombreuses variables. Il peut être possible de réduire considérablement le nombre de variables tout en conservant une grande partie des informations dans l'ensemble de données d'origine. Un certain nombre de techniques de réduction de dimension existent pour ce faire, et l'analyse en composantes principales est probablement la plus largement utilisée d'entre elles. L'analyse en composantes principales réduira les dimensions et abstraire la signification des variables caractéristique et permet ainsi de saisir les facteurs qui influencent la variance des échantillons. \\
+L'analyse en composantes principales (ACP ou PCA en anglais pour principal component analysis), analyse un tableau de données représentant des observations décrites par plusieurs variables dépendantes, qui sont, en général, corrélées entre elles. Son objectif est d'extraire les informations importantes du tableau de données et d'exprimer ces informations sous la forme d'un ensemble de nouvelles variables orthogonales appelées composantes principales \cite{abdi2010principal}.
+
+Les objectifs de l’ACP sont :
+\begin{itemize}
+	\item Extraire les informations les plus importantes du tableau de données ;
+	\item Compresser la taille de l'ensemble de données en ne gardant que ces informations importantes ;
+	\item Simplifier la description de l'ensemble de données ; et
+	\item Analyser la structure des observations et les variables.
+\end{itemize}
+Afin d'atteindre ces objectifs, l'ACP calcule de nouvelles variables appelées composantes principales qui sont obtenues sous forme de combinaisons linéaires des variables d'origine. La première composante principale doit avoir la plus grande variance possible (c'est-à-dire l'inertie et donc cette composante « expliquera » ou « extraira » la plus grande partie de l'inertie du tableau de données). La deuxième composante est calculée sous la contrainte d'être orthogonale à la première composante et d'avoir la plus grande inertie possible. Les autres composantes sont calculées de la même manière. Les valeurs de ces nouvelles variables pour les observations sont appelées scores de facteurs, et ces scores de facteurs peuvent être interprétés géométriquement comme les projections des observations sur les composantes principales \cite{abdi2010principal}. \\
+Nous allons appliquer l'analyse en composantes principales avant le clustering, d’abord la visualisation des données ensuite la compression des données après quoi le clustering deviendra précis et efficace.
+
+\newpage
+
+\paragraph{Visualisation de données}
+On projette notre dataset dans un espace 2D.
+
+\begin{figure}[H]
+    \centering
+    \subfloat[\centering Le pourcentage de la variance préserver par les 10 premières composantes.]{{\includegraphics[width=7cm]{images/chapitre7/pca_features.png}}}%
+    \qquad
+    \subfloat[\centering Visualisation en 2D des deux composantes.]{{\includegraphics[width=7cm]{images/chapitre7/features_plot.png} }}%
+    %\caption{Dendrogramme}%
+\end{figure}
+
+\paragraph{Compression de données}
+
+La compression avec l’ACP réduit la taille du dataset tout en conservant 99\% de la variance des données.
+
+\begin{figure}[H]
+    \centering
+    \subfloat[\centering Le pourcentage de la variance préserver par chacune des composantes.]{{\includegraphics[width=7cm]{images/chapitre7/pca_variance_ratio.png}  }}%
+    \qquad
+    \subfloat[\centering Visualisation de la composante 0 et 3 parmi les 392.]{{\includegraphics[width=7cm]{images/chapitre7/pca_features_compress.png} } }%
+    %\caption{Dendrogramme}%
+\end{figure}
+
+Visualisation de la composante 0 et 3 parmi les \textbf{392} et l’objet \colorbox{gray!30}{features} ci-dessous sera utiliser pour faire le clustering.
+\begin{lstlisting}[language=Python,label={pca_code}, basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+	pca = decomposition.PCA(n_components=392)
+	pca.fit(items_similarity)
+	features = pca.transform(items_similarity)
+\end{lstlisting}
+
+\subsubsection{Clustering hard}
+
+\paragraph{Clustering hiérarchique agglomérative}
+
+Le clustering hiérarchique agglomérative est une approche « ascendante » qui utilise trois distance mesures principales : liaison unique, liaison complète et liaison moyenne, dont le but est de minimiser l’inertie intra-cluster et maximiser l’inertie inter-cluster. L’algorithme de la méthode agglomérative est :
+
+\begin{algorithm}[H]
+	\caption{Agglomerative Clustering.}
+	\begin{algorithmic}[1]
+	
+	\Procedure{HAC}{$matrix D, method$ $d$($A,B$)}       %\Comment{This is a test}
+		\State Initialize a cluster per sample $ \forall i \in x_{i} : C_{i} = i $
+		\State Initialize available cluster $S = \{C_{1},...,C_{n}\}$
+		
+		\While{S not empty} % \Comment{put some comments here}
+			\State $C_{j}, C_{k} = argmin_{C_{j},C_{k} \in S} d(C_{j}, C_{k})$  \Comment{Closest two clusters}
+			\State $C_{z} = C_{j} \cup C_{k}, S = S \backslash \{ C_{j},C_{k} \} $ \Comment{Merge and mark unavailable}
+			\If{$C_{z}$ not all samples}
+				\State $S = S \cup C_{z}$
+			\EndIf
+			\State $\forall C_{i}$ : update $D(C_{i},C_{z})$ \Comment{Update distances}
+		\EndWhile 
+	\EndProcedure
+	
+	\end{algorithmic}
+\end{algorithm}
+Cependant le critère de liaison utilisé influence les résultats du clustering. Pour remédier à cela, On peut utiliser le coefficient de Cophénétique pour trouver la méthode de liaison optimale. Ensuite le script est utilisé pour faire le clustering hiérarchique agglomérative.
+
+\begin{lstlisting}[language=Python,label={pca_code}, basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+	dendogram = sch.dendrogram(sch.linkage(features, method="average"))
+	hc = AgglomerativeClustering(n_clusters=2,affinity="euclidean",linkage="average")
+	y_hc = hc.fit_predict(features)
+\end{lstlisting}
+
+
+\begin{figure}[H]
+    \centering
+    \subfloat[\centering Les scores des méthodes de liaison.]{{\includegraphics[width=7cm]{images/chapitre7/linkage_method_score.png}  }}%
+    \qquad
+    \subfloat[\centering Le dendrogramme du dataset utilisant la méthode de liaison « average ».]{{\includegraphics[width=7cm]{images/chapitre7/dendrogram_of_dataset.png} } }%
+    %\caption{Dendrogramme}%
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.2]{images/chapitre7/agglo_clusters.png}
+	\end{center}
+	\caption{Clusters de la méthode agglomérante}
+	\label{agglo_clusters}
+\end{figure}
+
+
+\subsubsection{Clustering Soft}
+
+Le clustering flou C-Means est une approche de clustering soft, où chaque point de données se voit attribuer une probabilité ou un score de probabilité d'appartenir à un cluster. C'est un algorithme de clustering non supervisé qui dépend d'un paramètre m qui correspond au degré de flou des clusters. Le bon choix est d’utiliser m = 2.0 (Hathaway et Bezdek 2001). L’algorithme du clustering fuzzy c-means est :
+
+\begin{algorithm}
+	\caption{Fuzzy c-means algorithm.}
+	\begin{algorithmic}[1]
+		\State Initialize $U = \left[ u_{ij} \right] matrix, U^{(0)}$
+		\State At k-step: calculate the centers vectors $C^{(k)} = \left[ c_{j} \right] $ with $U^{(k)}$
+		\begin{equation}
+			c_{j} = \frac{ \sum_{i=1}^{N} u_{ij}^{m} \cdot  x_{i} }{\sum_{i=1}^{N} u_{ij}^{m} }
+		\end{equation}
+		\State Update $U^{(k)}$ , $U^{(k+1)}$
+		\begin{equation}
+			u_{ij} = \frac{ 1 }{\sum_{k=}^{C} \Bigg( \frac{\left\lVert x_{i} - c_{j}\right\rVert }{\left\lVert x_{i} - c_{k}\right\rVert} \Bigg)^{\frac{2}{m-1}} }
+		\end{equation}
+		\State If $\left\lVert U^{(k+1)} - U^{(k)}   \right\rVert \textless \epsilon$ the STOP; otherwise return to step 2.
+	\end{algorithmic}
+\end{algorithm}
+
+\noindent La méthode \colorbox{gray!30}{cmeans} de Scikit-Fuzzy \cite{scikit_fuzzy_2019} (qui est une collection d'algorithmes de logique floue écrits en python) permet d’implémenter l’algorithme FCM sur un jeu de données tout en ajustant certains paramètres. Cette méthode a été utiliser pour l’implémentation comme suit :
+
+\begin{lstlisting}[language=Python,label={pca_code}, basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
+	cntr, u, u0, d, jm, p, fpc = fuzz.cluster.cmeans(data=features.T,c=2,m=2, error=0.005, maxiter=1000, init=None,seed=2021)
+\end{lstlisting}
+
+
+\noindent Où, les paramètres et les objets retournées par la méthode \colorbox{gray!30}{fuzz.cluster.cmeans()}  sont : \\
+\textbf{Paramètres:}
+
+\begin{itemize}
+	\item data: (tableau 2d, taille (S,N)), les données à regrouper. N est le nombre d'ensembles de données ; S est le nombre d'entités dans chaque vecteur d'échantillon. 
+	\item c: (int), Nombre de clusters souhaité.
+	\item m: (float), Exponentiation du tableau appliquée à la fonction d'appartenance \(\displaystyle u_{old} \) à chaque itération, où \(\displaystyle U_{new} = u_{old} ** m \). 
+	\item error: (float), critère d'arrêt ; arrêter tôt si la norme de \(\displaystyle (u[p] - u[p-1]) < erreur \). 
+	\item maxiter: (int), Nombre maximal d'itérations autorisées.
+	\item init: (tableau 2d, taille (S, N)), Matrice c-partitionnée floue initiale. Si aucun n'est fourni, l'algorithme est initialisé de manière aléatoire.
+	\item seed: (int), Si fourni, définit une valeur de départ aléatoire d' \colorbox{gray!30}{init}. Aucun effet si \colorbox{gray!30}{init} est fourni. Principalement à des fins de débogage/test.
+\end{itemize}
+
+
+\noindent \textbf{Retour:}
+
+\begin{itemize}
+	\item cntr: (tableau 2d, taille (S, c)), les centres de cluster. Données pour chaque centre le long de chaque caractéristique fournie pour chaque cluster (des \colorbox{gray!30}{c} clusters demandés).
+	\item u: (tableau 2d, (S, N)), Matrice c-partitionnée floue finale.
+	\item u0: (tableau 2d, (S, N)), Estimation initiale à la matrice c-partitionnée floue.
+	\item d: (tableau 2d, (S, N)), Matrice de distance euclidienne finale.
+	\item jm: (tableau 1d, longueur P), Historique de la fonction objective.
+	\item p: (int), Nombre d'itérations exécutées.
+	\item fpc: (float), le coefficient de partition floue final.
+\end{itemize}
+
+\noindent La figure \ref{fuzzy_partition_plot} affiche les clusters obtenus par la méthode FCM et le degré d’appartenance des points de données aux clusters.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre7/fuzzy_partition_plot.png}
+	\end{center}
+	\caption{}
+	\label{fuzzy_partition_plot}
+\end{figure}
+
+
+\subsubsection{Validation du clustering}
+
+
+\begin{table}[H]
+	\centering
+	\addtolength{\leftskip} {-4cm}
+	\addtolength{\rightskip}{-4.5cm}
+	\begin{tabular}{|m{2cm}|m{2cm}|m{2cm}|m{2cm}|m{2cm}|m{2cm}|m{3cm}|}
+	\hline
+	\rowcolor{blueforest}
+	\multicolumn{7}{|m{18cm}|}{\centering \color{white} \textbf{Kmeans clustering} } \\ \hline
+	& & \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
+	\textbf{Nombre d'items} &  \textbf{Nombre de clusters}  &   \textbf{Indice de Dunn} & \textbf{Indice Calinski Harabasz} & \textbf{Indice Davies-Bouldin}& \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
+	1084 & 2 & 0.5704 & 0.5766 & 2368.3262 & 0.6203 & 297 \(\displaystyle \thicksim  \) 787 \\ \hline
+	\rowcolor{blueforest}
+	\multicolumn{7}{|m{18cm}|}{\centering \color{white} \textbf{Agglomérative clustering} } \\ \hline
+	& & \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
+	\textbf{Nombre d'items} &  \textbf{Nombre de clusters}  &   \textbf{Indice de Dunn} & \textbf{Indice Calinski Harabasz} & \textbf{Indice Davies-Bouldin}& \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
+	1084 & 2 & 0.5704 & 0.5766 & 2368.3262 & 0.6203 & 297 \(\displaystyle \thicksim  \) 787 \\ \hline
+	\rowcolor{blueforest}
+	\multicolumn{7}{|m{18cm}|}{\centering \color{white} \textbf{Fuzzy clustering} } \\ \hline
+	& & \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
+	\textbf{Nombre d'items} &  \textbf{Nombre de clusters}  &   \textbf{Coefficient de Partition Floue } & \textbf{Indice Calinski Harabasz} & \textbf{Indice Davies-Bouldin}& \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
+	1084 & 2 & 0.5704 & 0.5766 & 2368.3262 & 0.6203 & 297 \(\displaystyle \thicksim  \) 787 \\ \hline
+  \end{tabular}
+	\caption{Description et statistiques du jeu de données.}
+	\label{dataset_features_describe}
+\end{table}
+
+\section{Conclusion}
+
+ 

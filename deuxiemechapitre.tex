@@ -1,15 +1,16 @@
 \chapter{Modèle de l'apprenant et découverte des prérequis} 
+\label{chap2}
 \minitoc
 \thispagestyle{empty}
 \newpage
 \section{Introduction}
-Le terme "apprentissage" fait souvent référence à l'apprentissage électronique ou e-learning. L’apprentissage en ligne, l'apprentissage à distance et l'apprentissage en ligne. L'apprentissage en ligne est connu comme des activités d'étude avec le soutien d'un ordinateur et d'un réseau (Fröschl, 2005, p. 12). \\
-Dans l'apprentissage en ligne, la communication entre les apprenants et les enseignants ou les apprenants et les apprenants se fait sur le réseau ou sur Internet, les supports d'apprentissage sont souvent des documents électroniques tels que des pages Web et des fichiers au lieu de livres traditionnels sur papier \cite{learner_model__adaptive_learning}. Dans ce chapitre, nous décrivons la modélisation de l'apprenant compte tenu de son importance dans tous les domaines de recherche. Nous commençons par une présentation des notions du modèle de l'apprenant et des caractéristiques des méthodes utilisées pour la modélisation de l'apprenant. Puis nous terminons avec la Découverte des prérequis.
+Le terme "apprentissage" fait souvent référence à l'apprentissage électronique ou e-learning. L’apprentissage en ligne, l'apprentissage à distance et l'apprentissage en ligne. L'apprentissage en ligne est connu comme des activités d'étude avec le soutien d'un ordinateur et d'un réseau. \\
+Dans l'apprentissage en ligne, la communication entre les apprenants et les enseignants ou les apprenants et les systèmes se fait sur le réseau ou sur Internet, les supports d'apprentissage sont souvent des documents électroniques tels que des pages Web et des fichiers au lieu de livres traditionnels sur papier \cite{learner_model__adaptive_learning}. Dans ce chapitre, nous décrivons la modélisation de l'apprenant compte tenu de son importance dans tous les domaines de recherche. Nous commençons par une présentation des notions du modèle de l'apprenant et des caractéristiques des méthodes utilisées pour la modélisation de l'apprenant. Puis nous terminons avec la Découverte des prérequis.
 
 \section{Learner Model}
 
 \subsection{Définition}
-Winkels décrit le modèle de l'apprenant comme une structure de données qui reflète l'état des connaissances supposées de l'apprenant sur un domaine cible (le domaine d'apprentissage) \cite{user_modelling_help_systems}. Selon Self, le modèle de l'apprenant devrait inclure les informations suivantes : les connaissances et les idées fausses de l'apprenant, ses compétences et son comportement. Pour déterminer ce que l’apprenant a fait, Self souligne qu’il est nécessaire d’avoir un historique des interactions de l’apprenant avec le système \cite{user_learner_modeling_workbench}. \\
+Winkels décrit le modèle de l'apprenant comme une structure de données qui reflète l'état des connaissances supposées de l'apprenant sur un domaine cible (le domaine d'apprentissage) \cite{user_modelling_help_systems}. Selon Self, le modèle de l'apprenant devrait inclure les informations suivantes : les connaissances et les idées fausses de l'apprenant, ses compétences et son comportement. Pour déterminer ce que l’apprenant a fait, Self souligne qu’il est nécessaire d’avoir un historique des interactions de l’apprenant avec le système \cite{user_learner_modeling_workbench}.
 Greer considère le modèle de l'apprenant comme une représentation abstraite des croyances, des connaissances et des compétences de l'apprenant dans le système, y compris l'historique des actions de l'apprenant qui peut être analysé et interprété \cite{psycho_oncology}.
 
 \subsection{Caractéristiques des méthodes utilisées pour la modélisation de l'apprenant}
@@ -55,8 +56,8 @@ Il existe plusieurs modèles existants classés selon la nature des informations
 
 \begin{table}[H]
 	\centering
-	\addtolength{\leftskip} {-4.5cm}
-	\addtolength{\rightskip}{-4cm}
+	\addtolength{\leftskip} {-4cm}
+	\addtolength{\rightskip}{-4.5cm}
 	\begin{tabular}{|m{3cm}|m{5cm}|m{5cm}|m{4cm}|}
 	\hline
 	\rowcolor{blueforest}
@@ -101,7 +102,7 @@ Il existe plusieurs modèles existants classés selon la nature des informations
 \label{learnerModel}
 \end{figure}
 Carr et Goldstein citent, par exemple, quatre informations nécessaires pour maintenir ce modèle : la difficulté du sujet, les questions directement posées par l’apprenant, la performance de l’apprenant et son expérience d’apprentissage \cite{knowledge_based_scheduling_program}. Self définit le modèle de l'apprenant comme un 4-tuplet contenant les variables P (connaissance procédurale), C (connaissance conceptuelle), T (caractéristiques individuelles) et H (histoire) \cite{Elster1987self}. \\
-Un modèle de l'apprenant \ref{learnerModel} comprend toujours des connaissances liées au domaine d'enseignement : ce que l'apprenant sait et ce que l'apprenant peut faire. Dans son état le plus complet, ce modèle comprend également des connaissances indépendantes du domaine enseigné. Certaines de ces connaissances sont liées à ses mécanismes d'apprentissage : comment fonctionne l'apprenant ? Comment découvre-t-il de nouveaux concepts ? De nouvelles techniques ? Etc. Les autres concernent les stratégies pédagogiques correspondantes : quels sont les types et modalités d'intervention les plus efficaces ? Etc. \\
+Un modèle de l'apprenant \ref{learnerModel} comprend toujours des connaissances liées au domaine d'enseignement : ce que l'apprenant sait et ce que l'apprenant peut faire. Dans son état le plus complet, ce modèle comprend également des connaissances indépendantes du domaine enseigné. Certaines de ces connaissances sont liées à ses mécanismes d'apprentissage : comment fonctionne l'apprenant ? Comment découvre-t-il de nouveaux concepts ? De nouvelles techniques ? Etc. Les autres concernent les stratégies pédagogiques correspondantes : quels sont les types et modalités d'intervention les plus efficaces ? Etc.
 Selon Nkambou, le modèle de l'apprenant est identifié en trois parties: \cite{modeles_outils_applications}
 
 \subsubsection{Modèle cognitif}
@@ -117,7 +118,7 @@ Description de l’état des connaissances de l’apprenant par rapport au sujet
 Cette partie est une sorte de moteur d’inférence qui fonctionne en permanence pour ajuster le modèle de l’apprenant. Il contient des règles qui lui permettent de raisonner sur le modèle cognitif et sur le modèle psychologique (modèle affectif) pour inférer de nouvelles connaissances dans le modèle de l’apprenant.
 
 \subsubsection{Modèle émotionnel}
-Ce modèle est un ensemble de données qui nous permet d'identifier la personnalité et les différentes facettes d'un apprenant. Il contient des connaissances sur les caractéristiques permanentes ou momentanées particulières de l’apprenant. Parmi ceux-ci, nous avons :
+Ce modèle est un ensemble de données qui permettent d'identifier la personnalité et les différentes facettes d'un apprenant. Il contient des connaissances sur les caractéristiques permanentes ou momentanées particulières de l’apprenant. Parmi ceux-ci, nous avons :
 \begin{itemize}
 	\item[$\bullet$] Connaissance des conditions mentales PUX. Par exemple, l'apprenant est spatial ou verbal, réfléchi ou impulsif, etc.
 	\item[$\bullet$] Connaissance des sentiments et de la personnalité. Par exemple, l'apprenant est calme ou anxieux. Il est attentif ou distrait. Etc.
@@ -154,7 +155,7 @@ Le choix du contenu dépendra essentiellement du domaine d'enseignement, des obj
 Un modèle de compétences auquel il est fait référence ici ne concerne que les couches cachées du graphe des « couches de modélisation de l'apprenant » \cite{log_Files_to_Assessment_Metrics}.
 
 \subsection{Granularité}
-La hiérarchie de granularité est une représentation courante d'un modèle d'apprennant \cite{bayesian_networks_student_model_engineering}. Il décrit comment un domaine est décomposé en composants. Les composants de connaissance dans un modèle de domaine sont généralement décrits à différents niveaux de granularité. Une hiérarchie de granularité capture différents niveaux de détail dans un type de réseau sémantique. Les relations d'agrégation sont utilisées pour décrire les relations entre les composants de connaissances à différents niveaux. Les relations d'agrégation peuvent être utilisées pour diviser un composant de connaissance composite en plusieurs composants de connaissance à une granulométrie plus fine. Les observateurs sont généralement liés aux éléments de connaissance à un niveau plus fin. Les informations observées sont propagées par agrégation des liens vers les composants de connaissances aux niveaux plus grossiers.\\
+La hiérarchie de granularité est une représentation courante d'un modèle d'apprennant \cite{bayesian_networks_student_model_engineering}. Il décrit comment un domaine est décomposé en composante. Les composantes de connaissance dans un modèle de domaine sont généralement décrits à différents niveaux de granularité. Une hiérarchie de granularité capture différents niveaux de détail dans un type de réseau sémantique. Les relations d'agrégation sont utilisées pour décrire les relations entre les composants de connaissances à différents niveaux. Les relations d'agrégation peuvent être utilisées pour diviser un composant de connaissance composite en plusieurs composants de connaissance à une granulométrie plus fine. Les observations sont généralement liés aux éléments de connaissance à un niveau plus fin. Les informations observées sont propagées par agrégation des liens vers les composants de connaissances aux niveaux plus grossiers.\\
 Le schéma de clustering AND-OR est proposé par Collins et al pour capturer les relations d'agrégation et les groupes équivalents dans leur hiérarchie de granularité \cite{adaptive_assessment_using_granularity_hierarchies_and_bayesian_nets}.
 \begin{figure}[H]
 	\begin{center}
@@ -170,13 +171,14 @@ Carmona et Conejo ont utilisé dans la figure \ref{two_agregationrelationships} 
 Dans ces approches, les modèles de compétences n'impliquent que les éléments de connaissance les plus fins, qui expliquent directement les comportements des apprenants. Un problème permanent dans un modèle d’apprenant est de savoir à quel niveau de granularité les compétences des apprenants doivent être modélisées \cite{learner_model_in_distributed_environment}. Pardos et Heffernan ont exploré des modèles avec différents niveaux de granularité (modèles de compétences 1, 5, 39 et 106) et mesuré la précision de ces modèles en prédisant la performance des apprenants dans leur SIT, c'est-à-dire ASSISTment, ainsi que dans un test. Leurs résultats ont montré que plus la granularité du modèle de compétence est fine, meilleure est la prédiction des performances de l'apprenant \cite{Effect_Model_Granularity_on_Student_Performance_Prediction_Using_Bayesian_Networks}.
 
 \subsection{Relations pré-requises}
-Des relations préalables existent généralement entre les éléments de connaissance de certains domaines. \\
-Reye a analysé comment utiliser les réseaux bayésiens pour modéliser les relations antérieures. Ils ont déclaré que les probabilités conditionnelles dans un réseau bayésien devraient remplir certaines conditions. Par exemple, si la composante de connaissance A est une condition préalable de la composante de connaissance B, l'équation II.1 doit être satisfaite. Cependant, ils ont également déclaré que la relation préalable n'est pas toujours stricte, de sorte qu'ils permettent une incertitude pour les probabilités conditionnelles. Les valeurs d'incertitude pour ces probabilités conditionnelles sont spécifiées par des experts dans leur méthode \cite{Student_Modelling_Based_on_Belief_Networks}.
+Des relations préalables existent généralement entre les éléments de connaissance de certains domaines.
+Reye a analysé comment utiliser les réseaux bayésiens pour modéliser les relations antérieures. Ils ont déclaré que les probabilités conditionnelles dans un réseau bayésien devraient remplir certaines conditions. Par exemple, si la composante de connaissance A est une condition préalable de la composante de connaissance B, l'équation \ref{learner_equation} doit être satisfaite. Cependant, ils ont également déclaré que la relation préalable n'est pas toujours stricte, de sorte qu'ils permettent une incertitude pour les probabilités conditionnelles. Les valeurs d'incertitude pour ces probabilités conditionnelles sont spécifiées par des experts dans leur méthode \cite{Student_Modelling_Based_on_Belief_Networks}.
 \begin{equation}
 	\begin{split}
 		P(learnerKnows(A) \vee  learnerKnows(B)) = 1\\
 	P(learnerKnows(B) \vee learnerKnows(A)) = 0
 	\end{split}
+	\label{learner_equation}
 \end{equation}
 Carmona et al. ont présenté les relations préalables à un modèle générique d'apprentissage du BN pour MEDEA, afin d'améliorer l'efficacité des mécanismes d'adaptation et le processus d'inférence. Ils ont utilisé une porte ET bruyante modifiée ou une porte OU bruyante modifiée pour modéliser les relations de prédicat \cite{Prerequisite_Relations_in_Multilayered_Bayesian_Student_Model}. \\
 Ferguson et al ont utilisé l'algorithme EM pour apprendre les paramètres cachés dans les BN et ont comparé le modèle de compétence plat (les compétences sont mutuellement indépendantes) avec le modèle de compétence hiérarchique (relations a priori entre des compétences données a priori) selon le critère d'information bayésien (BIC). Leurs résultats montrent qu'un modèle hiérarchique correspond mieux à leurs données que le modèle plat. [20==> a chercher]
@@ -207,7 +209,6 @@ En supposant que le modèle de mesure est connu, nous pouvons rechercher le mod�
 
 \section{Conclusion}
 Tout au long de ce chapitre, nous avons présenté les principaux concepts liés au modèle de l'apprenant dans l'environnement de l'apprentissage basé sur le Web, qui permet aux apprenants de travailler en collaboration sur un projet ou de coconstruire le sens des concepts en utilisant la technologie comme un tuyau pour le développement des connaissances partagées, aussi, la modélisation des compétences est importante pour découvrir les prérequis d'un apprenant en représentant le degré auquel il a maîtrisé.
-Le prochain chapitre sera consacré à la présentation de l'exploration de données éducatives.
 
 
 

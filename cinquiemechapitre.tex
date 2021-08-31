@@ -5,9 +5,9 @@
 \newpage
 
 \section{Introduction}
-Lors du 25e anniversaire de la Psychometric Society en 1961, Harold Gulliksen a décrit « le problème de la théorie des tests » comme « la relation entre la capacité de l'individu et son score au test" (Gulliksen, 1961). Vingt-cinq ans plus tard, Charles Lewis a observé qu' « une grande partie des progrès récents de la théorie des tests a été réalisée en traitant l'étude de la relation entre les réponses à un ensemble d'items de test et un trait hypothétique (ou traits) d'un individu comme un problème d'inférence statistique" (Lewis, 1986), apportant ainsi des solutions à des problèmes autrefois insolubles tels que l'adaptation des tests aux candidats individuels (par exemple, Lord, 1980, chap. 10), le tri des relations dans les modèles de réussite dans les systèmes scolaires hiérarchiques (par exemple, Aitkin \& Longford, 1986) et l’estimation des paramètre des modèles IRT. Et les concepts et outils d'inférence statistique aider à expliquer les relations entre les preuves et l'inférence sur les connaissances, l'apprentissage et les réalisations des élèves que ce qui est traditionnellement associé à la théorie des tests standard et aux résultats standardisés \cite{mislevy1994evidence}. \\
-L'inférence peut être défini comme un raisonnement à partir de ce que nous savons et de ce que nous observons jusqu'aux explications, conclusions ou prédictions parce que nous raisonnons toujours en présence d'incertitude et les informations avec lesquelles nous travaillons sont généralement incomplètes, peu concluantes, se prêtent à plus d’une explication. L’utilisation de l’inférence bayésienne permet donc d’estimer à partir d’observations les paramètres d’écrivant la distribution de probabilité en tenant compte des informations supplémentaire appelé aussi des informations apriori. Par exemple dans le cas où on cherche à estimer les paramètre \(\displaystyle \theta1 \) et \(\displaystyle \theta2 \) venant du problème où 30\% des machines à sous ont une probabilité \(\displaystyle \theta1 \)  de donner 1EUR, le reste a une probabilité \(\displaystyle \theta2 \).\\
-L'évaluation pédagogique concerne l'inférence sur les connaissances, les compétences et les réalisations des élèves, c’est-à-dire qu’il existe un intérêt pour l'étude des variables latentes \cite{azevedo2011bayesian}, utilisé surtout dans La théorie de la réponse aux items (TRI). Parce que les données ne sont jamais aussi complètes et sans équivoque qu'elles garantissent la certitude, la théorie des tests a évolué en partie pour répondre aux questions de poids, de couverture et d'importation des données. Les concepts et techniques qui en résultent peuvent être considérés comme des applications de principes plus généraux d'inférence en présence d’incertitude. Comme le dit Glen Shafer (cité dans Pearl, 1988) « La probabilité n'est pas vraiment une question de nombres ; il s'agit de la structure du raisonnement. ». \\
+Lors du 25e anniversaire de la Psychometric Society en 1961, Harold Gulliksen a décrit « le problème de la théorie des tests » comme « la relation entre la capacité de l'individu et son score au test». Vingt-cinq ans plus tard, Charles Lewis a observé qu' « une grande partie des progrès récents de la théorie des tests a été réalisée en traitant l'étude de la relation entre les réponses à un ensemble d'items de test et un trait hypothétique (ou traits latents) d'un individu comme un problème d'inférence statistique », apportant ainsi des solutions à des problèmes autrefois insolubles tels que l'adaptation des tests aux candidats individuels, le tri des relations dans les modèles de réussite dans les systèmes scolaires hiérarchiques \cite{aitkin1986statistical} et l’estimation des paramètre des modèles IRT. Et les concepts et outils d'inférence statistique aider à expliquer les relations entre les preuves et l'inférence sur les connaissances, l'apprentissage et les réalisations des élèves que ce qui est traditionnellement associé à la théorie des tests standard et aux résultats standardisés \cite{mislevy1994evidence}. \\
+L'inférence peut être défini comme un raisonnement à partir de ce que nous savons et de ce que nous observons jusqu'aux explications, conclusions ou prédictions parce que nous raisonnons toujours en présence d'incertitude et les informations avec lesquelles nous travaillons sont généralement incomplètes, peu concluantes, se prêtent à plus d’une explication. L’utilisation de l’inférence bayésienne permet donc d’estimer à partir d’observations les paramètres d’écrivant la distribution de probabilité en tenant compte des informations supplémentaire appelé aussi des informations apriori. Par exemple dans le cas où on cherche à estimer les paramètre \(\displaystyle \theta1 \) et \(\displaystyle \theta2 \) venant du problème où 30\% des machines à sous ont une probabilité \(\displaystyle \theta1 \)  de donner 1 euro, le reste a une probabilité \(\displaystyle \theta2 \).\\
+L'évaluation pédagogique concerne l'inférence sur les connaissances, les compétences et les réalisations des élèves, c’est-à-dire qu’il existe un intérêt pour l'étude des variables latentes \cite{azevedo2011bayesian}, utilisé surtout dans La théorie de la réponse aux items (TRI). Parce que les données ne sont jamais aussi complètes et sans équivoque qu'elles garantissent la certitude, la théorie des tests a évolué en partie pour répondre aux questions de poids, de couverture et d'importation des données. Les concepts et techniques qui en résultent peuvent être considérés comme des applications de principes plus généraux d'inférence en présence d’incertitude. Comme le dit Glen Shafer « La probabilité n'est pas vraiment une question de nombres ; il s'agit de la structure du raisonnement. ». \\
 Dans cette partie nous verrons l’inférence bayésienne appliquer à la théorie des réponses aux items et la plateforme Stan qui permet d’appliquer cette inférence à partir des données.\\
 
 \section{Inférence bayésienne}
@@ -51,7 +51,7 @@ En remplaçant hypothèse (hypothesis) par \(\displaystyle \theta \) de l’équ
 Où,
 \begin{itemize}
     \item \(\displaystyle Pr(\theta|data) \) (Posterior distribution) : est la distribution à posteriori du paramètre \(\displaystyle \theta \). C’est l’estimation de \(\displaystyle \theta \) a posteriori (après avoir vu les données).
-    \item \(\displaystyle Pr(data|\theta) \) (Likelihood) : c’est la vraisemblance qui est capturer à partir des données sachant le model utiliser pour faire l’inférence.
+    \item \(\displaystyle Pr(data|\theta) \) (Likelihood) : c’est la vraisemblance qui est capturer à partir des données sachant le modèle utiliser pour faire l’inférence.
     \item \(\displaystyle Pr(\theta) \) (prior distribution) : c’est la distribution a priori sur le paramètre \(\displaystyle \theta \). 
     \item \(\displaystyle Pr(data) \) : qui est la probabilité des données.
 \end{itemize}
@@ -80,7 +80,7 @@ Par exemple, les données historiques suggèrent qu'environ 60\% des étudiants 
 La distribution à posteriori est un moyen de résumer les connaissances ou les informations sur les quantités incertaines en analyse bayésienne. C'est une combinaison de la distribution a priori et de la fonction de vraisemblance, qui indique les informations contenues dans les données observées (les « nouvelles preuves »).
 
 \subsubsection{Likelihood}
-Habituellement lorsque l’on parle de distribution de probabilité, on suppose que nous connaissons les valeurs des paramètres. Aussi appelé fonction de vraisemblance (ou plus simplement vraisemblance), c’est une fonction des paramètres d'un modèle statistique calculée à partir de données observées \cite{fisher1922mathematical}. C’est-à-dire la probabilité d’observer les données sous un certain model. Par exemple, la probabilité des données sachant \(\displaystyle \theta \) en utilisant \ref{theoreme_bayes3}.
+Habituellement lorsque l’on parle de distribution de probabilité, on suppose que nous connaissons les valeurs des paramètres. Aussi appelé fonction de vraisemblance (ou plus simplement vraisemblance), c’est une fonction des paramètres d'un modèle statistique calculée à partir de données observées \cite{fisher1922mathematical}. C’est-à-dire la probabilité d’observer les données sous un certain modèle. Par exemple, la probabilité des données sachant \(\displaystyle \theta \) en utilisant l'equation \ref{theoreme_bayes3}.
 En inférence bayésienne, cette vraisemblance peut être interprète comme la densité de probabilité des données conditionnellement à une valeur des paramètres et comme une mesure de l'information apportée par les données sur la valeur des paramètres.
 
 \subsubsection{Prior distribution}
@@ -112,7 +112,7 @@ Une chaîne de Markov est définit par les valeurs initiales des distributions m
 
 Les algorithmes de Monte Carlo à chaînes de Markov (MCMC) sont donc des outils informatiques standard pour analyser les modèles complexes bayésiens \cite{gelfand1990sampling} même si des fois des problème peuvent surgir dans leurs implémentations \cite{robert2020markov}. Parmi les méthodes MCMC, il y’a l’algorithme de Metropolis , l’algorithme de Metropolis–Hastings, échantillonnage de Gibbs, échantillonnage par tranches, Metropolis à tentatives multiples, Méthode de sur-relaxation l'hamiltonien Monte Carlo (HMC), No-U-Turn Sampler (NUTS), la méthode MCMC de Langevin et les méthodes basées sur le changement de dimension. Bien que notre travail ne soit pas centré sur les algorithmes MCMC, nous passerons en revue quelques définitions et théories qui justifient le fonctionnement des méthodes MCMC, et un bref résumé de quelque algorithmes MCMC. \\
 
-\paragraph{Théorème de convergence des chaînes de Markov \cite{entezari2018bayesian} \cite{meyn2012markov} \cite{rosenthal2006first}}
+\paragraph{Théorème de convergence des chaînes de Markov \cite{entezari2018bayesian} \cite{meyn2012markov} \cite{rosenthal2006first} \\}
 Une chaîne de Markov à temps discret est définie par une séquence de variables aléatoires \(\displaystyle X_{0}, X_{2}, X_{3} ... \) qui peut prendre des valeurs possibles dans l'espace d'état \(\displaystyle X \) avec une distribution initiale définie pour \(\displaystyle X_{0}\) et des probabilités de transition définies comme :
 
 \begin{equation}
@@ -147,7 +147,7 @@ Comme nous l’avons évoqué précédemment la probabilité que la chaîne pass
 
 \noindent Soit \(\displaystyle \lim_{x \to \infty} P^{n}(x,A) = \pi(A) \hspace{1em} \forall A \subseteq  X \) . \\
 Dans la section suivante, nous décrirons quelques algorithmes MCMC les plus courants qui respectent l’aspect stationnaire, irréductible et non périodique des chaines de Markov.
-\paragraph{Algorithme de Metropolis-Hastings}
+\paragraph{Algorithme de Metropolis-Hastings \\}
 L’algorithme de Metropolis-Hastings, proposé par METROPOLIS \cite{metropolis1953equation} et généralisé par HASTINGS \cite{hastings1970monte} est principalement utilisé comme moyen de simuler des observations à partir de distributions cibles. L'algorithme produit une chaîne de Markov dont la distribution limite des membres est la densité cible \(\displaystyle \pi(x) \) et qui s’itère en « sautant » de l’état actuel x de l’espace des paramètres à l’état suivant y avec une probabilité d’acceptation suivante :
 
 \begin{equation}
@@ -177,7 +177,7 @@ Où \(\displaystyle q(x,y) \) est la probabilité conditionnelle de proposer l'�
 \end{algorithm}
 
 % \paragraph{Gibbs sampling}
-\paragraph{Hamiltonian Monte Carlo}
+\paragraph{Hamiltonian Monte Carlo \\}
 L'hamiltonien Monte Carlo (HMC) est une méthode de Monte Carlo à chaîne de Markov (MCMC) capable de traiter des distributions cibles de grande dimension et qui utilise les dérivées de la fonction de densité échantillonnée pour générer des transitions efficaces couvrant la partie postérieure \cite{neal2011mcmc} \cite{betancourt2015hamiltonian}.Il utilise une simulation de dynamique hamiltonienne approximative basée sur une intégration numérique qui est ensuite corrigée en effectuant une étape d'acceptation Metropolis. Bien qu'il s'agisse d'un cas particulier d'échantillonneurs en temps continu, il peut être mis en œuvre en temps discret et est en fait à l'origine du succès du package Stan qui est utilisé dans la section implémentation \ref{irt_model_for_bayesian_inference}. L'hamiltonien Monte Carlo améliore l'efficacité en utilise le gradient du log postérieur pour diriger la chaîne de Markov vers les régions de densité postérieure plus élevée, où la plupart des échantillons sont prélevés, par conséquent, une chaîne HMC bien réglée acceptera les propositions à un taux beaucoup plus élevé que l'algorithme MH traditionnel \cite{gelman1997weak}. \\
 Le processus repose sur une variable auxiliaire \(\displaystyle v \in \mathbb{R}^{d} \) qui augmente la distribution cible tout en échantillonnant à partir de \(\displaystyle \pi \) (une mesure cible de probabilité \(\displaystyle \pi \) sur \(\displaystyle \varTheta \subset \mathbb{R}_{d}\) par rapport à la mesure de Lebesgue, notée \(\displaystyle \pi(\theta) \infty \exp\{-U(\theta)\} \), où \(\displaystyle U \) est une fonction continûment dérivable appelée fonction de potentiel \cite{wu2018faster}. 
 L’hamiltonien est défini par :
@@ -224,7 +224,7 @@ L’hamiltonien est défini par :
 	\end{algorithmic}
 \end{algorithm}
 
-\paragraph{No-U-Turn Sampler}
+\paragraph{No-U-Turn Sampler \\}
 L’Hamiltonien Monte Carlo est un algorithme puissant, mais qui souffre de la nécessité d'ajuster le nombre d'étapes \(\displaystyle \mathcal{L}  \) par exemple en utilisant des heuristiques basées sur des statistiques d'autocorrélation à partir d'essais préliminaires coûteux \cite{neal2011mcmc}. Ce besoin de fixer le paramètre \(\displaystyle \mathcal{L}  \) est éliminé par l’algorithme No-U-Turn Sampler (NUTS). \\
 
 Un échantillonneur MCMC qui utilise l’algorithme NUTS conserve la capacité de HMC à supprimer le comportement de marche aléatoire sans avoir besoin de définir le nombre \(\displaystyle \mathcal{L}  \) d'étapes de saut que l'algorithme prend pour générer une proposition. Le critère utilisé se base sur le produit scalaire entre \(\displaystyle \widetilde{r}  \) (la quantité de mouvement actuelle) et \(\displaystyle \widetilde{\theta} - \theta  \) (le vecteur de la position initiale à la position actuelle), qui est la dérivée par rapport au temps (dans le système hamiltonien) de la moitié de la distance au carré entre la position initiale \(\displaystyle \theta  \) et la position actuelle \(\displaystyle \widetilde{\theta}  \) \cite{hoffman2014no}:
@@ -300,10 +300,10 @@ Dans le cadre fréquentiste, l’idée est de pénalisé les modèles qui ont tr
 \end{equation}
 
 Avec \(\displaystyle L \) la vraisemblance et \(\displaystyle k \) le nombre de paramètres \(\displaystyle \theta \), et \\
-\(\displaystyle -2 \log (L(\widehat{\theta_{1}},...,\widehat{\theta_{k}} )) \) est la déviance qui mesure la qualité de l’ajustement du model de donnée. Plus il y’a de paramètres plus cette quantité est petite et mieux le model est ajuster aux données. \\
-\(\displaystyle 2k \) : c’est la pénalité, plus il y’a des paramètres plus cette quantité augmente. Cette pénalité est un équilibre entre l’ajustement du model des données et la complexité du model qui est capturer par le nombre de paramètres. \\ \\
+\(\displaystyle -2 \log (L(\widehat{\theta_{1}},...,\widehat{\theta_{k}} )) \) est la déviance qui mesure la qualité de l’ajustement du modèle de donnée. Plus il y’a de paramètres plus cette quantité est petite et mieux le modèle est ajuster aux données. \\
+\(\displaystyle 2k \) : c’est la pénalité, plus il y’a des paramètres plus cette quantité augmente. Cette pénalité est un équilibre entre l’ajustement du modèle des données et la complexité du modèle qui est capturer par le nombre de paramètres. \\ \\
 
-\noindent En bayésien, le critère d'information WAIC (Watanabe Akaike Information Criteria) et la validation croisée LOO (leave-one-out cross-validation) sont considéré comme des méthodes de sélection de modèles entièrement bayésiennes en raison de leur utilisation de l'ensemble a posteriori distribution autre que les estimations ponctuelles. \\
+\noindent En bayésien, le critère d'information WAIC (Watanabe Akaike Information Criteria) et la validation croisée LOO (leave-one-out cross-validation) sont considéré comme des méthodes de sélection de modèles entièrement bayésiennes en raison de leur utilisation de l'ensemble de la distribution postérieure autre que les estimations ponctuelles. \\
 
 \noindent WAIC \cite{watanabe2010asymptotic} est une méthode de sélection de modèle entièrement bayésienne basé sur un critère d'information et est considéré comme une version améliorée de DIC, définit comme suit :
 %\noindent En bayésien il y’a WAIC (Watanabe Akaike Information Criteria) définit par :
@@ -391,7 +391,7 @@ Les modèles de la théorie des réponses aux items (TRI) présentent plusieurs 
 \subsection{Les Modèles IRT}
 On distingue deux familles de modèle IRT : les modèles unidimensionnels qui nécessitent une seule dimension de trait et les modèles multidimensionnels qui sont supposées provenir de plusieurs traits. Cependant, en raison de la complexité considérablement accrue, la majorité des recherches et des applications IRT utilisent un modèle unidimensionnel. \\
 
-Les modèles IRT se distingue par le nombre de paramètre qu’il utilise. Le modèle à paramètre unique (1PL) suppose tous les éléments qui correspondent au modèle ont la même difficulté, de sorte que ces éléments sont décrits par un seul paramètre. C’est le cas du modèle de Rasch. Le modèle dit à deux paramètre (2PL) fait appel au paramètre de difficulté et de discrimination par exemple le modèle de Birnbaum. Par contre le modèle a trois paramètres (3PL) est celui qui cherche à estimer en plus le paramètre de difficulté et de discrimination, la pseudo chance. \\
+Les modèles IRT se distingue par le nombre de paramètre qu’il utilise. Le modèle à paramètre unique (1PL) suppose tous les éléments qui correspondent au modèle ont la même difficulté, de sorte que ces éléments sont décrits par un seul paramètre. C’est le cas du modèle de Rasch. Le modèle dit à deux paramètre (2PL) fait appel au paramètre de difficulté et de discrimination. Par contre le modèle a trois paramètres (3PL) est celui qui cherche à estimer en plus le paramètre de difficulté et de discrimination, la pseudo chance. \\
 Il en résulte des modèles à un paramètre ayant la propriété d'objectivité spécifique, ce qui signifie que le rang de la difficulté de l'item est le même pour tous les répondants indépendamment de la capacité, et que le rang de la capacité de la personne est le même pour les items indépendamment de la difficulté. Ainsi, les modèles à 1 paramètre (comme ceux de Rasch) sont indépendants de l'échantillon, une propriété qui n'est pas valable pour les modèles à deux et trois paramètres \cite{fisher1922mathematical}. \\
 Le modèle général de Birnbaum, auquel le modèle de Rasch se rattache est plus complexe car il admet des courbes d’allures différentes pour chacun des items et suppose donc d’estimer plus d’un paramètre par item puisqu’il tient également compte du pouvoir discriminant de chacun d’eux. Le modèle proposé par Lazarsfeld est en quelque sorte une simplification du modèle général de Birnbaum puisqu’il postule des distributions linéaires de pentes variables \cite{yvonnick_2019}. \\
 Il existe aussi d’autre modèles IRT qui sont résumé dans le tableau \ref{irt_modeles}.
@@ -443,7 +443,7 @@ Rasch propose la fonction logistique suivant \cite{mislevy1994evidence}:
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/chapitre5/parameters_probability.png}
 	\end{center}
-	\caption{Probabilité de bonne réponse, conditionnelle à thêta, pour les items avec bêta = -1,0 et 1.}
+	\caption{Probabilité de bonne réponse, conditionnelle à \(\displaystyle \theta \), pour les items avec \(\displaystyle \beta \) = -1,0 et 1.}
 	\label{parameters_probability}
 \end{figure}
 Où \(\displaystyle x_{j} \)  est la réponse à l'élément \(\displaystyle j \) (1 pour correcte, 0 pour incorrecte). La figure \ref{parameters_probability} montre les probabilités de réponse correcte à trois éléments, avec les paramètres de difficulté - 1 , 0 et + 1, en fonction de \(\displaystyle \theta \). Des valeurs faibles de \(\displaystyle \theta \) indiquent des chances plus faibles de réponse correcte et des valeurs élevées indiquent des chances plus élevées \cite{mislevy1994evidence}.
@@ -465,7 +465,7 @@ Le modèle logistique a trois paramètres (3PL) a été proposé par Birnbaum en
 \end{equation}
 
 \subsection{Estimation des paramètres}
-L'estimation des paramètres surtout dans un cadre bayésien est effectuée à l’aide des méthodes Markov Chain Monte Carlo implémentée dans plusieurs logiciels comme OpenBUGS \cite{lunn2009bugs}, JAGS \cite{plummer2003jags}, Stan \cite{stan} etc. Les prior les plus utilisé dans les modèles pour l'estimation MCMC des paramètres du modèle sont : \\
+L'estimation des paramètres surtout dans un cadre bayésien est effectuée à l’aide des méthodes Markov Chain Monte Carlo implémentée dans plusieurs logiciels comme OpenBUGS \cite{lunn2009bugs}, JAGS \cite{plummer2003jags}, Stan \cite{stan} etc. Les priors les plus utilisé dans les modèles pour l'estimation MCMC des paramètres des modèle IRT sont : \\
 
 \begin{equation}
 	\begin{split}
@@ -524,7 +524,7 @@ data {
 \end{lstlisting}
 Dans cette déclaration il y’a \(\displaystyle N \) un entier positif qui est le nombre d’observation, où pour toute valeurs \(\displaystyle n \) de \(\displaystyle 1 \) à \(\displaystyle N \) \(\displaystyle grade[n] \) est la réponse obtenue par l’étudiant \(\displaystyle subject[n] \) à la question \(\displaystyle item[n] \).
 
-\subsubsection{Les paramètres du model de Rasch, 2PL et 3PL}
+\subsubsection{Les paramètres du modèle de Rasch, 2PL et 3PL}
 Les paramètres des modèles IRT sont :
 
 \begin{lstlisting}[language=Stan,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
@@ -542,8 +542,8 @@ parameters {
 \end{lstlisting}
 Le paramètre  \(\displaystyle ability_{i} \) est le coefficient de capacité de l'élève \(\displaystyle S_{i} \) , \(\displaystyle difficulty_{j} \) le coefficient de difficulté de la question \(\displaystyle I_{j} \), \(\displaystyle discrimination_{i} \) qui modélise à quel point l’item k est discriminant et \(\displaystyle guessing_{i} \) le paramètre de pseudo hasard. La paramétrisation non standard utilisée comprend également un terme d'interception delta, qui représente la réponse moyenne de l'étudiant à la question moyenne \cite{data_analysis_irt}.
 
-\subsubsection{Le model de Rasch, 2PL et 3PL}
-Le model de Rasch:
+\subsubsection{Le modèle de Rasch, 2PL et 3PL}
+Le modèle de Rasch:
 \begin{lstlisting}[language=Stan,basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
 model {
 	ability ~ normal(0,1);         
@@ -606,7 +606,7 @@ generated quantities {
 	}
 }
 \end{lstlisting}
-Dans l’implémentation en utilisant le workflow bayésien figure \ref{irt_process}, les distributions des prior peuvent change dans le but d’améliorer la précision du modèle.
+Dans l’implémentation en utilisant le workflow bayésien figure \ref{irt_process}, les distributions des priors peuvent changer dans le but d’améliorer la précision du modèle.
 % \section{Related work}
 \section{Conclusion}
-En conclusion, l’inférence bayésienne est une méthode probabiliste qui prend en compte les informations apriori et cherche des résultats qui sont des distributions de probabilité. Sans oublier Les probabilités conditionnelles et le théorème de bayes qui jouent un rôle central dans le processus d’inférence, les méthodes de Monte Carlo par Chaine de Markov résolve une difficulté de calcule d’intégrale sur un espace de grande dimension causée par le dénominateur du théorème de bayes. En pratique les résultats des modèles utilisé dans la théorie des réponses au items offre des possibilités d’analyser les modèles utilisés et de sélectionner le meilleur modèle. Apres toute ces notions vues dans ce chapitre, le chapitre suivant évoquera le clustering hard et soft.
+L’inférence bayésienne est une méthode probabiliste qui prend en compte les informations apriori et cherche des résultats qui sont des distributions de probabilité. Sans oublier Les probabilités conditionnelles et le théorème de bayes qui jouent un rôle central dans le processus d’inférence, les méthodes de Monte Carlo par Chaine de Markov résolve une difficulté de calcule d’intégrale sur un espace de grande dimension causée par le dénominateur du théorème de bayes. En pratique les résultats des modèles utilisé dans la théorie des réponses au items offre des possibilités d’analyser les modèles utilisés et de sélectionner le meilleur modèle. Apres toute ces notions vues dans ce chapitre, le chapitre suivant évoquera le clustering hard et soft.

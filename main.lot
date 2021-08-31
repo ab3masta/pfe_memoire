@@ -12,26 +12,31 @@
 \contentsline {table}{\numberline {2.2}{\ignorespaces Caractéristiques des méthodes utilisées pour la modélisation des apprenants partie[2]\relax }}{18}{table.caption.15}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{L'approche items-to-skills mapping}{26}{chapter.3}%
-\contentsline {table}{\numberline {3.1}{\ignorespaces La matrice d’accord pour deux items.\relax }}{35}{table.caption.26}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Coefficients de mesures de similarités.\relax }}{35}{table.caption.27}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces La matrice d’accord pour deux items.\relax }}{33}{table.caption.26}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Coefficients de mesures de similarités.\relax }}{34}{table.caption.27}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Inférence bayésienne et la théorie de la réponse aux items}{37}{chapter.4}%
-\contentsline {table}{\numberline {4.1}{\ignorespaces Résumé des applications de l'IRT \cite {nye2020advancing}.\relax }}{52}{table.caption.30}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Résumé des quelques modèles IRT \cite {nye2020advancing}.\relax }}{54}{table.caption.31}%
+\contentsline {xchapter}{Inférence bayésienne et la théorie de la réponse aux items}{35}{chapter.4}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Résumé des applications de l'IRT \cite {nye2020advancing}.\relax }}{50}{table.caption.30}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Résumé des quelques modèles IRT \cite {nye2020advancing}.\relax }}{52}{table.caption.31}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Clustering Hard et Soft}{62}{chapter.5}%
-\contentsline {table}{\numberline {5.1}{\ignorespaces Les métriques \relax }}{64}{table.caption.34}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Les critères de liaison \relax }}{65}{table.caption.35}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Les autres méthodes de clustering\relax }}{78}{table.caption.42}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Indice de validité du clustering Hard\relax }}{80}{table.caption.43}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces Indice de validité du clustering Soft\relax }}{81}{table.caption.44}%
-\contentsline {xpart}{Contributions}{83}{part.2}%
+\contentsline {xchapter}{Clustering Hard et Soft}{60}{chapter.5}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Les métriques \relax }}{62}{table.caption.34}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Les critères de liaison \relax }}{62}{table.caption.35}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Les autres méthodes de clustering\relax }}{75}{table.caption.42}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Indice de validité du clustering Hard\relax }}{77}{table.caption.43}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Indice de validité du clustering Soft\relax }}{78}{table.caption.44}%
+\contentsline {xpart}{Contributions}{80}{part.2}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Contribution and Results}{83}{chapter.6}%
-\contentsline {table}{\numberline {6.1}{\ignorespaces Caractéristiques du matériels utilisés\relax }}{84}{table.caption.45}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces Indice de validité du clustering Hard\relax }}{85}{table.caption.46}%
-\contentsline {table}{\numberline {6.3}{\ignorespaces Indice de validité du clustering Hard\relax }}{86}{table.caption.47}%
-\contentsline {table}{\numberline {6.4}{\ignorespaces Indice de validité du clustering Hard\relax }}{87}{table.caption.48}%
-\contentsline {table}{\numberline {6.5}{\ignorespaces Description et statistiques du jeu de données.\relax }}{87}{table.caption.49}%
-\contentsline {table}{\numberline {6.6}{\ignorespaces A table beside a figure\relax }}{95}{table.6.6}%
-\contentsline {table}{\numberline {6.7}{\ignorespaces Description et statistiques du jeu de données.\relax }}{103}{table.caption.64}%
+\contentsline {xchapter}{Contribution and Results}{80}{chapter.6}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Caractéristiques du matériels utilisés\relax }}{81}{table.caption.45}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Indice de validité du clustering Hard\relax }}{82}{table.caption.46}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Indice de validité du clustering Hard\relax }}{83}{table.caption.47}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Indice de validité du clustering Hard\relax }}{84}{table.caption.48}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces Description et statistiques du jeu de données.\relax }}{84}{table.caption.49}%
+\contentsline {table}{\numberline {6.6}{\ignorespaces Les différents scores du modèle de Rasch, modèle logistique à deux paramètres et le modèle à trois paramètres.\relax }}{93}{table.caption.59}%
+\contentsline {table}{\numberline {6.7}{\ignorespaces Rapport de classement (réponse correcte et incorrecte) entre les données observées et les prédictions du modèle de Rasch.\relax }}{93}{table.caption.60}%
+\contentsline {table}{\numberline {6.8}{\ignorespaces Résultats des indices de validité du clustering.\relax }}{102}{table.caption.67}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Les modèles IRT en code Stan.}{106}{appendix.A}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Les distributions des modèles.}{112}{appendix.B}%

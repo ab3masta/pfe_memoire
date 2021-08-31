@@ -1,11 +1,10 @@
 \babel@toc {english}{}
-\contentsline {part}{Remerciement}{i}{chapter*.2}%
 \babel@toc {french}{}
 \babel@toc {english}{}
 \babel@toc {french}{}
-\contentsline {chapter}{Table des figures}{ix}{chapter*.5}%
-\contentsline {chapter}{Liste des tableaux}{xi}{chapter*.6}%
-\contentsline {part}{Liste des Acronymes}{xi}{chapter*.6}%
+\contentsline {chapter}{Table des figures}{x}{chapter*.5}%
+\contentsline {chapter}{Liste des tableaux}{xii}{chapter*.6}%
+\contentsline {part}{Liste des Acronymes}{xii}{chapter*.6}%
 \babel@toc {french}{}
 \contentsline {part}{Introduction Générale}{1}{chapter*.7}%
 \contentsline {part}{I\hspace {1em}\'Etat de l'art}{4}{part.1}%
@@ -15,19 +14,19 @@
 \contentsline {section}{\numberline {1.2}Data mining}{6}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Définition}{6}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Les méthodes du data mining}{7}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Intelligent Tutorial Systems (ITS)}{8}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Définition}{8}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}ITS architecture}{8}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.3}Intelligent Tutorial Systems (ITS)}{7}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Définition}{7}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}L’architecture d’un ITS}{8}{subsection.1.3.2}%
 \contentsline {section}{\numberline {1.4}Educational Data mining}{9}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}Définition}{9}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}Processus d'application du DM en éducation}{10}{subsection.1.4.2}%
 \contentsline {subsubsection}{\numberline {1.4.2.1}Les méthodes d’analyse et d’exploration appliquer dans EDM}{11}{subsubsection.1.4.2.1}%
-\contentsline {paragraph}{\numberline {1.4.2.1.1}L'induction de modèle supervisée}{12}{paragraph.1.4.2.1.1}%
-\contentsline {paragraph}{\numberline {1.4.2.1.2}L'induction de modèle non supervisée}{12}{paragraph.1.4.2.1.2}%
-\contentsline {paragraph}{\numberline {1.4.2.1.3}L'estimation des paramètres}{13}{paragraph.1.4.2.1.3}%
-\contentsline {paragraph}{\numberline {1.4.2.1.4}L'exploration de relations (Relationship mining)}{13}{paragraph.1.4.2.1.4}%
-\contentsline {paragraph}{\numberline {1.4.2.1.5}La distillation des données pour le jugement humain (Distillation of data for human judgment)}{13}{paragraph.1.4.2.1.5}%
-\contentsline {paragraph}{\numberline {1.4.2.1.6}Discovery with models}{14}{paragraph.1.4.2.1.6}%
+\contentsline {paragraph}{\numberline {1.4.2.1.1}Modèle supervisée \\}{12}{paragraph.1.4.2.1.1}%
+\contentsline {paragraph}{\numberline {1.4.2.1.2}Modèle non supervisée \\}{12}{paragraph.1.4.2.1.2}%
+\contentsline {paragraph}{\numberline {1.4.2.1.3}L'estimation des paramètres \\}{12}{paragraph.1.4.2.1.3}%
+\contentsline {paragraph}{\numberline {1.4.2.1.4}L'exploration de relations (Relationship mining) \\}{13}{paragraph.1.4.2.1.4}%
+\contentsline {paragraph}{\numberline {1.4.2.1.5}La distillation des données pour le jugement humain (Distillation of data for human judgment) \\}{13}{paragraph.1.4.2.1.5}%
+\contentsline {paragraph}{\numberline {1.4.2.1.6}Discovery with models \\}{13}{paragraph.1.4.2.1.6}%
 \contentsline {section}{\numberline {1.5}Conclusion}{14}{section.1.5}%
 \contentsline {chapter}{\numberline {2}Modèle de l'apprenant et découverte des prérequis}{15}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introduction}{16}{section.2.1}%
@@ -48,115 +47,119 @@
 \contentsline {section}{\numberline {2.5}Conclusion}{25}{section.2.5}%
 \contentsline {chapter}{\numberline {3}L'approche items-to-skills mapping}{26}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introduction}{27}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Knowledge}{27}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Connaissance(Knowledge)}{27}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Définition}{27}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Knowledge component}{27}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Composante connaissance(Knowledge component)}{27}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Les types de composante de connaissance}{28}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Items-to-skills mapping}{29}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Mappage des éléments aux compétences}{29}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Définition}{29}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}items-to-skills mapping Structure}{29}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}Model-Based approach}{30}{subsubsection.3.3.2.1}%
-\contentsline {paragraph}{\numberline {3.3.2.1.1}Définition}{30}{paragraph.3.3.2.1.1}%
-\contentsline {paragraph}{\numberline {3.3.2.1.2}Model Based Techniques}{31}{paragraph.3.3.2.1.2}%
-\contentsline {subsection}{\numberline {3.3.3}Similarity-based approach}{32}{subsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.3.1}Définition}{32}{subsubsection.3.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.3.2}Processus de similarité des items (éléments)}{33}{subsubsection.3.3.3.2}%
-\contentsline {paragraph}{\numberline {3.3.3.2.1}Input Data}{34}{paragraph.3.3.3.2.1}%
-\contentsline {paragraph}{\numberline {3.3.3.2.2}Computed Data}{34}{paragraph.3.3.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.3.3.3}Item-Similarity measures}{35}{subsubsection.3.3.3.3}%
-\contentsline {section}{\numberline {3.4}Related work}{36}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Conclusion}{36}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Inférence bayésienne et la théorie de la réponse aux items}{37}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{38}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Inférence bayésienne}{39}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Définition}{39}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}probabilité conditionnelle et théorème de bayes}{39}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}L’approche Bayésienne}{40}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Théorème de bayes dans la cadre de l’application de l’approche Bayésienne}{40}{subsection.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.4.1}Posterior distribution}{41}{subsubsection.4.2.4.1}%
-\contentsline {subsubsection}{\numberline {4.2.4.2}Likelihood}{41}{subsubsection.4.2.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.4.3}Prior distribution}{42}{subsubsection.4.2.4.3}%
-\contentsline {subsubsection}{\numberline {4.2.4.4}Chaine de Markov Monte Carlo (MCMC)}{42}{subsubsection.4.2.4.4}%
-\contentsline {paragraph}{\numberline {4.2.4.4.1}Théorème de convergence des chaînes de Markov \cite {entezari2018bayesian} \cite {meyn2012markov} \cite {rosenthal2006first}}{44}{paragraph.4.2.4.4.1}%
-\contentsline {paragraph}{\numberline {4.2.4.4.2}Algorithme de Metropolis-Hastings}{45}{paragraph.4.2.4.4.2}%
-\contentsline {paragraph}{\numberline {4.2.4.4.3}Hamiltonian Monte Carlo}{45}{paragraph.4.2.4.4.3}%
-\contentsline {paragraph}{\numberline {4.2.4.4.4}No-U-Turn Sampler}{47}{paragraph.4.2.4.4.4}%
-\contentsline {subsection}{\numberline {4.2.5}Méthodes de vérifications et de comparaison de modèles}{48}{subsection.4.2.5}%
-\contentsline {section}{\numberline {4.3}La théorie des réponses aux items}{50}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}IRT dans la recherche organisationnelle}{51}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Les Modèles IRT}{53}{subsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.2.1}Le modèle Rasch}{55}{subsubsection.4.3.2.1}%
-\contentsline {subsubsection}{\numberline {4.3.2.2}Modèle logistique à deux paramètres}{56}{subsubsection.4.3.2.2}%
-\contentsline {subsubsection}{\numberline {4.3.2.3}Modèle logistique à trois paramètres}{57}{subsubsection.4.3.2.3}%
-\contentsline {subsection}{\numberline {4.3.3}Estimation des paramètres}{57}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Un ajustement bayésien des réponses aux items avec Stan}{57}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}IRT avec Stan}{58}{subsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.1.1}Déclaration des données}{58}{subsubsection.4.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.4.1.2}Les paramètres du model de Rasch, 2PL et 3PL}{59}{subsubsection.4.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.4.1.3}Le model de Rasch, 2PL et 3PL}{59}{subsubsection.4.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.4.1.4}Prédiction postérieure}{60}{subsubsection.4.4.1.4}%
-\contentsline {section}{\numberline {4.5}Conclusion}{60}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Clustering Hard et Soft}{62}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{63}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Les métriques}{64}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Critère de liaison}{64}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Distance inter-cluster}{65}{subsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.1.1}Distance de liaison unique}{66}{subsubsection.5.3.1.1}%
-\contentsline {subsubsection}{\numberline {5.3.1.2}Distance de liaison complète}{66}{subsubsection.5.3.1.2}%
-\contentsline {subsubsection}{\numberline {5.3.1.3}Distance de liaison moyenne}{67}{subsubsection.5.3.1.3}%
-\contentsline {subsubsection}{\numberline {5.3.1.4}Centroïde Linkage Distance}{67}{subsubsection.5.3.1.4}%
-\contentsline {subsubsection}{\numberline {5.3.1.5}Distance de liaison moyenne du centre de gravité}{67}{subsubsection.5.3.1.5}%
-\contentsline {subsection}{\numberline {5.3.2}Distance intra-cluster}{67}{subsection.5.3.2}%
-\contentsline {subsubsection}{\numberline {5.3.2.1}Distance de diamètre complet}{67}{subsubsection.5.3.2.1}%
-\contentsline {subsubsection}{\numberline {5.3.2.2}Distance de diamètre moyen}{68}{subsubsection.5.3.2.2}%
-\contentsline {subsubsection}{\numberline {5.3.2.3}Diamètre barycentre Distance}{68}{subsubsection.5.3.2.3}%
-\contentsline {section}{\numberline {5.4}Le clustering hiérarchique}{68}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Introduction}{68}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Clustering hiérarchique agglomératif}{69}{subsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.2.1}Exemple de clustering agglomératif}{69}{subsubsection.5.4.2.1}%
-\contentsline {subsection}{\numberline {5.4.3}Clustering hiérarchique divisive}{70}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}Procédures de fractionnement des clusters}{70}{subsection.5.4.4}%
-\contentsline {subsection}{\numberline {5.4.5}Evaluations des bipartitions}{71}{subsection.5.4.5}%
-\contentsline {subsection}{\numberline {5.4.6}Déterminations de niveaux de nœuds }{71}{subsection.5.4.6}%
-\contentsline {subsection}{\numberline {5.4.7}Conclusion}{71}{subsection.5.4.7}%
-\contentsline {section}{\numberline {5.5}Le clustering partitionnel}{72}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}K-means clustering}{72}{subsection.5.5.1}%
-\contentsline {subsubsection}{\numberline {5.5.1.1}Le fonctionnement de l’algorithme k-means}{72}{subsubsection.5.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.5.1.2}Les étapes de l’algorithme}{72}{subsubsection.5.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.5.1.3}Les lacunes de l’algorithme k-means}{73}{subsubsection.5.5.1.3}%
-\contentsline {subsubsection}{\numberline {5.5.1.4}Les solutions aux lacunes de l’algorithme k-means}{74}{subsubsection.5.5.1.4}%
-\contentsline {section}{\numberline {5.6}Fuzzy clustering}{75}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}Introduction}{75}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}Fuzzy C-means clustering :}{76}{subsection.5.6.2}%
-\contentsline {subsubsection}{\numberline {5.6.2.1}Algorithme FCM :}{76}{subsubsection.5.6.2.1}%
-\contentsline {subsection}{\numberline {5.6.3}Conclusion}{77}{subsection.5.6.3}%
-\contentsline {section}{\numberline {5.7}Les autres méthodes de clustering}{78}{section.5.7}%
-\contentsline {section}{\numberline {5.8}La différence entre le clustering hiérarchique, partitionnel et Fuzzy clustering}{78}{section.5.8}%
-\contentsline {section}{\numberline {5.9}Indice de validité du clustering}{79}{section.5.9}%
-\contentsline {section}{\numberline {5.10}Conclusion}{81}{section.5.10}%
-\contentsline {part}{II\hspace {1em}Contributions}{82}{part.2}%
-\contentsline {xpart}{Contributions}{83}{part.2}%
-\contentsline {chapter}{\numberline {6}Contribution and Results}{83}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introduction}{84}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Approche proposée}{84}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Implémentations et résultats expérimentaux}{84}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Outils de développement}{84}{subsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.1}Materiels}{84}{subsubsection.6.3.1.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.2}Outils et packages}{85}{subsubsection.6.3.1.2}%
-\contentsline {subsection}{\numberline {6.3.2}Collecte et préparation des données}{87}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Modèle IRT pour une inférence bayésienne}{89}{subsection.6.3.3}%
-\contentsline {subsubsection}{\numberline {6.3.3.1}Spécification et chargement du modèle}{90}{subsubsection.6.3.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.3.2}Compilation du modèle et échantillonnage }{91}{subsubsection.6.3.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.3.3}Résultats d’échantillonnage, diagnostique du modèle, prédiction et validation}{92}{subsubsection.6.3.3.3}%
-\contentsline {subsection}{\numberline {6.3.4}Clustering hard et soft de la matrice de similarité}{96}{subsection.6.3.4}%
-\contentsline {subsubsection}{\numberline {6.3.4.1}Création de la matrice de similarité}{96}{subsubsection.6.3.4.1}%
-\contentsline {subsubsection}{\numberline {6.3.4.2}Analyse en composantes principales (ACP)}{97}{subsubsection.6.3.4.2}%
-\contentsline {paragraph}{\numberline {6.3.4.2.1}Visualisation de données}{99}{paragraph.6.3.4.2.1}%
-\contentsline {paragraph}{\numberline {6.3.4.2.2}Compression de données}{99}{paragraph.6.3.4.2.2}%
-\contentsline {subsubsection}{\numberline {6.3.4.3}Clustering hard}{99}{subsubsection.6.3.4.3}%
-\contentsline {paragraph}{\numberline {6.3.4.3.1}Clustering hiérarchique agglomérative}{99}{paragraph.6.3.4.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.4.4}Clustering Soft}{101}{subsubsection.6.3.4.4}%
-\contentsline {subsubsection}{\numberline {6.3.4.5}Validation du clustering}{103}{subsubsection.6.3.4.5}%
-\contentsline {section}{\numberline {6.4}Conclusion}{104}{section.6.4}%
-\contentsline {part}{Conclusion Générale}{104}{section.6.4}%
-\contentsline {chapter}{Bibliographie}{106}{chapter*.66}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}L’approche basée sur un modèle}{30}{subsubsection.3.3.2.1}%
+\contentsline {paragraph}{\numberline {3.3.2.1.1}Définition \\}{30}{paragraph.3.3.2.1.1}%
+\contentsline {paragraph}{\numberline {3.3.2.1.2}Model Based Techniques \\}{31}{paragraph.3.3.2.1.2}%
+\contentsline {subsection}{\numberline {3.3.3}Similarity-based approach}{31}{subsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}Définition}{31}{subsubsection.3.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}Processus de calcul de la similarité des items}{32}{subsubsection.3.3.3.2}%
+\contentsline {paragraph}{\numberline {3.3.3.2.1}Données d'entrée \\}{33}{paragraph.3.3.3.2.1}%
+\contentsline {paragraph}{\numberline {3.3.3.2.2}Données calculées \\}{33}{paragraph.3.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}Mesures de similarité des items}{33}{subsubsection.3.3.3.3}%
+\contentsline {section}{\numberline {3.4}Conclusion}{34}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Inférence bayésienne et la théorie de la réponse aux items}{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{36}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Inférence bayésienne}{37}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Définition}{37}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}probabilité conditionnelle et théorème de bayes}{37}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}L’approche Bayésienne}{38}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Théorème de bayes dans la cadre de l’application de l’approche Bayésienne}{38}{subsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}Posterior distribution}{39}{subsubsection.4.2.4.1}%
+\contentsline {subsubsection}{\numberline {4.2.4.2}Likelihood}{39}{subsubsection.4.2.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.4.3}Prior distribution}{40}{subsubsection.4.2.4.3}%
+\contentsline {subsubsection}{\numberline {4.2.4.4}Chaine de Markov Monte Carlo (MCMC)}{40}{subsubsection.4.2.4.4}%
+\contentsline {paragraph}{\numberline {4.2.4.4.1}Théorème de convergence des chaînes de Markov \cite {entezari2018bayesian} \cite {meyn2012markov} \cite {rosenthal2006first} \\}{42}{paragraph.4.2.4.4.1}%
+\contentsline {paragraph}{\numberline {4.2.4.4.2}Algorithme de Metropolis-Hastings \\}{43}{paragraph.4.2.4.4.2}%
+\contentsline {paragraph}{\numberline {4.2.4.4.3}Hamiltonian Monte Carlo \\}{43}{paragraph.4.2.4.4.3}%
+\contentsline {paragraph}{\numberline {4.2.4.4.4}No-U-Turn Sampler \\}{44}{paragraph.4.2.4.4.4}%
+\contentsline {subsection}{\numberline {4.2.5}Méthodes de vérifications et de comparaison de modèles}{46}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}La théorie des réponses aux items}{48}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}IRT dans la recherche organisationnelle}{49}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Les Modèles IRT}{51}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}Le modèle Rasch}{53}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}Modèle logistique à deux paramètres}{54}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}Modèle logistique à trois paramètres}{55}{subsubsection.4.3.2.3}%
+\contentsline {subsection}{\numberline {4.3.3}Estimation des paramètres}{55}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Un ajustement bayésien des réponses aux items avec Stan}{55}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}IRT avec Stan}{56}{subsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1.1}Déclaration des données}{56}{subsubsection.4.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.4.1.2}Les paramètres du modèle de Rasch, 2PL et 3PL}{57}{subsubsection.4.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.4.1.3}Le modèle de Rasch, 2PL et 3PL}{57}{subsubsection.4.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.4.1.4}Prédiction postérieure}{58}{subsubsection.4.4.1.4}%
+\contentsline {section}{\numberline {4.5}Conclusion}{58}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Clustering Hard et Soft}{60}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{61}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Les métriques}{62}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Critère de liaison}{62}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Distance inter-cluster}{63}{subsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.1}Distance de liaison unique}{63}{subsubsection.5.3.1.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.2}Distance de liaison complète}{64}{subsubsection.5.3.1.2}%
+\contentsline {subsubsection}{\numberline {5.3.1.3}Distance de liaison moyenne}{64}{subsubsection.5.3.1.3}%
+\contentsline {subsubsection}{\numberline {5.3.1.4}Centroïde Linkage Distance}{64}{subsubsection.5.3.1.4}%
+\contentsline {subsubsection}{\numberline {5.3.1.5}Distance de liaison moyenne du centre de gravité}{64}{subsubsection.5.3.1.5}%
+\contentsline {subsection}{\numberline {5.3.2}Distance intra-cluster}{65}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}Distance de diamètre complet}{65}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {5.3.2.2}Distance de diamètre moyen}{65}{subsubsection.5.3.2.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.3}Diamètre barycentre Distance}{65}{subsubsection.5.3.2.3}%
+\contentsline {section}{\numberline {5.4}Le clustering hiérarchique}{65}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Introduction}{65}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Clustering hiérarchique agglomératif}{66}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}Exemple de clustering agglomératif}{66}{subsubsection.5.4.2.1}%
+\contentsline {subsection}{\numberline {5.4.3}Clustering hiérarchique divisive}{67}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Procédures de fractionnement des clusters}{68}{subsection.5.4.4}%
+\contentsline {subsection}{\numberline {5.4.5}Evaluations des bipartitions}{68}{subsection.5.4.5}%
+\contentsline {subsection}{\numberline {5.4.6}Déterminations de niveaux de nœuds }{68}{subsection.5.4.6}%
+\contentsline {subsection}{\numberline {5.4.7}Conclusion}{69}{subsection.5.4.7}%
+\contentsline {section}{\numberline {5.5}Le clustering partitionnel}{69}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}K-means clustering}{69}{subsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.1.1}Le fonctionnement de l’algorithme k-means}{69}{subsubsection.5.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.5.1.2}Les étapes de l’algorithme}{69}{subsubsection.5.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.5.1.3}Les lacunes de l’algorithme k-means}{71}{subsubsection.5.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.5.1.4}Les solutions aux lacunes de l’algorithme k-means}{71}{subsubsection.5.5.1.4}%
+\contentsline {section}{\numberline {5.6}Fuzzy clustering}{72}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Introduction}{72}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Fuzzy C-means clustering :}{73}{subsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.1}Algorithme FCM :}{74}{subsubsection.5.6.2.1}%
+\contentsline {subsection}{\numberline {5.6.3}Conclusion}{74}{subsection.5.6.3}%
+\contentsline {section}{\numberline {5.7}Les autres méthodes de clustering}{75}{section.5.7}%
+\contentsline {section}{\numberline {5.8}La différence entre le clustering hiérarchique, partitionnel et Fuzzy clustering}{75}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Indice de validité du clustering}{76}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Conclusion}{78}{section.5.10}%
+\contentsline {part}{II\hspace {1em}Contributions}{79}{part.2}%
+\contentsline {xpart}{Contributions}{80}{part.2}%
+\contentsline {chapter}{\numberline {6}Contribution and Results}{80}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{81}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Approche proposée}{81}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Implémentations et résultats expérimentaux}{81}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Outils de développement}{81}{subsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.1}Materiels}{81}{subsubsection.6.3.1.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.2}Outils et packages}{82}{subsubsection.6.3.1.2}%
+\contentsline {subsection}{\numberline {6.3.2}Collecte et préparation des données}{84}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Modèle IRT pour une inférence bayésienne}{86}{subsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.1}Spécification et chargement du modèle}{87}{subsubsection.6.3.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.3.2}Compilation du modèle et échantillonnage }{88}{subsubsection.6.3.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3.3}Résultats d’échantillonnage, diagnostique du modèle, prédiction et validation}{89}{subsubsection.6.3.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Clustering hard et soft de la matrice de similarité}{94}{subsection.6.3.4}%
+\contentsline {subsubsection}{\numberline {6.3.4.1}Création de la matrice de similarité}{94}{subsubsection.6.3.4.1}%
+\contentsline {subsubsection}{\numberline {6.3.4.2}Analyse en composantes principales (ACP)}{96}{subsubsection.6.3.4.2}%
+\contentsline {paragraph}{\numberline {6.3.4.2.1}Visualisation de données}{97}{paragraph.6.3.4.2.1}%
+\contentsline {paragraph}{\numberline {6.3.4.2.2}Compression de données}{97}{paragraph.6.3.4.2.2}%
+\contentsline {subsubsection}{\numberline {6.3.4.3}Clustering hard}{97}{subsubsection.6.3.4.3}%
+\contentsline {paragraph}{\numberline {6.3.4.3.1}K-means Clustering}{97}{paragraph.6.3.4.3.1}%
+\contentsline {paragraph}{\numberline {6.3.4.3.2}Clustering hiérarchique agglomérative}{98}{paragraph.6.3.4.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.4.4}Clustering Soft}{99}{subsubsection.6.3.4.4}%
+\contentsline {subsubsection}{\numberline {6.3.4.5}Validation du clustering}{102}{subsubsection.6.3.4.5}%
+\contentsline {section}{\numberline {6.4}Conclusion}{103}{section.6.4}%
+\contentsline {part}{Conclusion Générale}{103}{section.6.4}%
+\contentsline {part}{Annexe}{106}{chapter*.68}%
+\contentsline {chapter}{\numberline {A}Les modèles IRT en code Stan.}{106}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Les distributions des modèles.}{112}{appendix.B}%
+\vspace \bigskipamount 
+\contentsline {chapter}{Bibliographie}{116}{appendix*.73}%

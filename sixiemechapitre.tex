@@ -12,7 +12,7 @@ Le clustering est donc une méthode qui cherche à minimiser l’inertie intra-c
 
 Avant de rentrer directement sur le fonctionnement des algorithmes de clustering, nous verrons d’abord les métriques et les critères de liaison qui sont utiliser dans le processus du clustering ensuite le clustering hiérarchique, partitionnel et l’indice de validité du clustering.
 \section{Les métriques}
-Le choix d'une métrique appropriée influencera la forme des grappes, car certains éléments peuvent être relativement plus proches les uns des autres sous une métrique que dans une autre. \\
+Le choix d'une métrique appropriée influencera la forme des grappes, car certains éléments peuvent être relativement plus proches les uns des autres sous une métrique que dans une autre.
 Par exemple, en deux dimensions, sous la métrique de distance Manhattan, la distance entre l'origine (0,0) et (.5, .5) est la même que la distance entre l'origine et (0, 1), tandis que sous le distance euclidienne métrique, cette dernière est strictement supérieure. \\
 Certaines métriques couramment utilisées pour le clustering hiérarchique sont :
 
@@ -59,7 +59,7 @@ Puisque le clustering est une méthode qui cherche à minimiser l'inertie au sei
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=\textwidth]{images/chapitre6/iris_inter_intra_clusters.png}
+		\includegraphics[scale=0.3]{images/chapitre6/iris_inter_intra_clusters.png}
 	\end{center}
 \caption{Distances intracluster et intercluster.}
 \label{inter_intra_clusters}
@@ -80,7 +80,7 @@ La distance de liaison unique est la distance la plus proche entre deux objets a
 % \end{figure}
 
 \begin{equation}
-	\vcenter{\hbox{\includegraphics[scale=0.3]{images/chapitre6/single_linkage.png}}}
+	\vcenter{\hbox{\includegraphics[scale=0.2]{images/chapitre6/single_linkage.png}}}
 	\qquad
 	\begin{aligned}
 		 \delta (S,T) = \min  \Bigg\{
@@ -113,7 +113,7 @@ Le principal avantage de la liaison simple est qu'elle peut gérer des formes no
 La distance de liaison complète est la distance entre deux objets les plus éloignés appartenant à deux clusters différents. La liaison complète est la plus grande distance entre les points de données dans deux clusters S et T définit par la formule suivante :
 
 \begin{equation}
-	\vcenter{\hbox{\includegraphics[scale=0.3]{images/chapitre6/complet_linkage.png}}}
+	\vcenter{\hbox{\includegraphics[scale=0.2]{images/chapitre6/complet_linkage.png}}}
 	\qquad
 	\begin{aligned}
 		\delta (S,T) = \max  \Bigg\{
@@ -216,7 +216,7 @@ Dans le clustering hiérarchique agglomératif classique, une paire de clusters 
 \subsubsection{Exemple de clustering agglomératif}
 
 Par exemple, supposons que les données de la figure \ref{agglo_clustering} doivent être regroupées et que la métrique de distance est la distance euclidienne.
-Le dendrogramme obtenu après le clustering serait comme tel : \ref{dendrogramme} \\
+Le dendrogramme obtenu après le clustering serait comme la celui de la figure \ref{dendrogramme} \\
 Et pour obtenir le nombre de clusters optimal avec le dendrogramme, la méthode la plus connue est celle qui cherche la distance verticale la plus élevée qui ne croise aucun cluster et les lignes verticales franchissent le seuil représente le nombre optimal de clusters. En utilisant le dendrogramme précédant on obtient 2 clusters comme le montre la figure \ref{dendrogramme}.
 
 \begin{figure}[H]
@@ -256,7 +256,7 @@ Le clustering hiérarchique dans la recherche d'informations identifie donc des 
 \section{Le clustering partitionnel}
 
 \subsection{K-means clustering}
-K-means est un algorithme de clustering qui est largement utiliser pour analyser les clusters des grands ensembles de données. Il a été proposé par MacQueen en 1967 et c’était l’un des algorithmes d’apprentissage non supervisé le plus simple, qui a été appliqué pour résoudre les problèmes du clustering \cite{sun2008clustering}. Il s'agit d'un algorithme de partitionnement des clusters, cette méthode consiste à classer les objets d’un jeu de donnés en k clusters différents, de telle sorte que les clusters générés sont compacts et indépendants \cite{na2010research}.
+K-means est un algorithme de clustering qui est largement utiliser pour analyser les clusters des grands ensembles de données. Il a été proposé par MacQueen en 1967 et c’était l’un des algorithmes d’apprentissage non supervisé le plus simple, qui a été appliqué pour résoudre les problèmes du clustering \cite{sun2008clustering}. Il s'agit d'un algorithme de partitionnement des clusters qui consiste à classer les objets d’un jeu de donnés en k clusters différents, de telle sorte que les clusters générés sont compacts et indépendants \cite{na2010research}.
 
 \subsubsection{Le fonctionnement de l’algorithme k-means}
 K-Means clustering fonctionne de cette façon : par exemple pour regrouper les données en trois clusters on commence par placer trois point appelé centroïde au hasard dans le jeu de données ensuite on affecte chaque point de data set au centroïde le plus proche ce qui nous donne trois clusters puis on déplace chaque centroïde au milieu de son cluster, on recommence jusqu’à ce que les centroïdes converge vers une position d’équilibre. L’algorithme requière donc à l’initialisation le nombre k de cluster à générer et k centroïdes (les centre des clusters) sont initialise avec des coordonnées aléatoires.
@@ -300,10 +300,10 @@ L'algorithme de clustering k-means converge toujours vers le minimum local. Avan
 
 \subsubsection{Les solutions aux lacunes de l’algorithme k-means}
 
-Il n’est pas nécessaire de calculer la distance entre chaque objet de données et chaque centre de cluster dans chaque itération. En supposant que le cluster \(\displaystyle C \) s'est formé après le premier l' itération \(\displaystyle j \), l'objet de données \(\displaystyle x \) est affecté au cluster \(\displaystyle C \), mais dans quelques itérations, l'objet de données \(\displaystyle x \) est toujours affecté au cluster C. Donc si on constate que la distance de l'objet de données \(\displaystyle x \) aux autre cluster est petite que au cluster \(\displaystyle C \), il est possible d’arrêter le calcul de la distance lié l’objet x, car ceci provoque un long temps d'exécution affectant ainsi l'efficacité du clustering \cite{na2010research}. \\
+Il n’est pas nécessaire de calculer la distance entre chaque objet de données et chaque centre de cluster dans chaque itération. En supposant que le cluster \(\displaystyle C \) s'est formé après l' itération \(\displaystyle j \), l'objet de données \(\displaystyle x \) est affecté au cluster \(\displaystyle C \), mais dans quelques itérations, l'objet de données \(\displaystyle x \) est toujours affecté au cluster C. Donc si on constate que la distance de l'objet de données \(\displaystyle x \) aux autre cluster est petite que au cluster \(\displaystyle C \), il est possible d’arrêter le calcul de la distance lié l’objet x, car ceci provoque un long temps d'exécution affectant ainsi l'efficacité du clustering \cite{na2010research}. \\
 
 Selon la position initiale des centroïdes, K-means peut donner de mauvais clusters. La configuration des clusters trouver par K-means peut ne pas être la plus optimale. On parle d’optimum local. La solution est d’exécuter K-means avec différentes positions de d´épart des centroïdes. La solution retenue est celle qui minimise la somme des distances entre les points \(\displaystyle (x) \) d’un cluster et son centre \(\displaystyle (u) \). Cela équivaut à minimiser la variance des clusters. K-means cherche la position des centroïdes qui minimise la distance entre les points
-d’un cluster \(\displaystyle (X_{i}) \) et le centre \(\displaystyle (U_{i}) \) de ce dernier. L'algorithme de K-means cherche donc à minimise une fonction cout appeler Inertie et qui représente la distance entre le point d’un cluster et le centre de ce dernier. Les paramètres de la méthode kmeans() à optimiser pour le langage R :
+d’un cluster \(\displaystyle (X_{i}) \) et le centre \(\displaystyle (U_{i}) \) de ce dernier. L'algorithme de K-means cherche donc à minimise une fonction coût appeler inertie et qui représente la distance entre le point d’un cluster et le centre de ce dernier. Les paramètres de la méthode kmeans() à optimiser pour le langage R :
 
 \begin{itemize}
 	\item  \textbf{Centers :} les clusters obtenus par l’algorithme son plus cohérant lorsque le nombre de centers demander par l’algorithme est le même que celui des clusters naturels du data set. Dans un data set avec de nombreuses dimensions il est difficile de voir un nombre de clusters à l’œil nu. Pour choisir le bon nombre de cluster il faut utiliser la méthode Elbow qui consiste à tracer l’évolution du cout du model en fonction du nombre de cluster et de détecter une zone de coude, cette zone nous indique le nombre de cluster optimale. C’est-`a-dire celui qui nous permet de réduire au maximum le cout du model tout en conservant un nombre raisonnable de cluster.
@@ -311,7 +311,7 @@ d’un cluster \(\displaystyle (X_{i}) \) et le centre \(\displaystyle (U_{i}) \
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.5]{images/chapitre6/elbow_methods.png}
+		\includegraphics[scale=0.4]{images/chapitre6/elbow_methods.png}
 	\end{center}
 	\caption{La méthode Elbow.}
 	\label{elbow_methods}
@@ -328,11 +328,11 @@ d’un cluster \(\displaystyle (X_{i}) \) et le centre \(\displaystyle (U_{i}) \
 \subsection{Introduction}
 Les méthodes de clustering traditionnelles (Hard) se limitent du fait que chaque point de l'ensemble de données appartient à un seul cluster. La théorie des ensembles flous proposée par Zadeh \cite{zadeh1965information} en 1965 a fait jaillir le concept d'incertitude d'appartenance, qui est décrit par la fonction d'appartenance \cite{yang1993survey}. L'utilisation d'ensembles flous fournit des informations d'appartenance de classe imprécises. L'application de la théorie des ensembles flous dans l'analyse de cluster a été proposée pour la première fois dans les travaux de Bellman, Kalaba et Zadeh \cite{zadeh1965information} et Ruspini \cite{ruspini1969new}. \\
 Ruspini a proposé l'utilisation d'ensembles flous dans le clustering sous la forme d'une fonction objective qui obtient une meilleure partition floue des données en utilisant des méthodes Fuzzy (flou). Et cette méthode devient un problème d’optimisation de de fonction objective qui appartient à la catégorie du clustering flou basé sur les fonctions objectives. Il existe aussi le clustering flou basé sur une relation floue et le clustering « fuzzy generalized k-nearest neighbor rule ».\\
-De nombreuses méthodes de regroupement flou ont été proposées en raison de modifications des fonctions objectives, qui visent à améliorer le résultat en ce qui concerne le bruit, les valeurs aberrantes, etc \cite{zhou2016method}. La methodes la plus est Fuzzy c-means (FCM) est une technique non supervisée qui classe les points de données similaires en clusters \cite{gurrutxaga2010sep}.\\
-Dans de nombreuses situations, le clustering Soft est plus naturel que le clustering Hard parce que les objets situés aux limites entre plusieurs classes ne sont pas forcés d'appartenir entièrement à l'un des clusters, mais se voient plutôt attribuer des degrés d'appartenance compris entre 0 et 1 indiquant leur appartenance partielle. Au contraire, dans les techniques de clustering dur, les données sont groupées de manière exclusive, de sorte que si une certaine donnée appartient à un cluster défini, elle ne peut pas être incluse dans un autre cluster \cite{bora2014comparative}. Nous verrons dans cette section le Fuzzy c-means qui est une technique de clustering flou très populaire.\\
+De nombreuses méthodes de regroupement flou ont été proposées en raison de modifications des fonctions objectives, qui visent à améliorer le résultat en ce qui concerne le bruit, les valeurs aberrantes, etc \cite{zhou2016method}. La méthode la plus utilisée est c-means (FCM) qui est une technique non supervisée qui classe les points de données similaires en clusters \cite{gurrutxaga2010sep}.\\
+Dans de nombreuses situations, le clustering Soft est plus naturel que le clustering Hard parce que les objets situés aux limites entre plusieurs classes ne sont pas forcés d'appartenir entièrement à l'un des clusters, mais se voient plutôt attribuer des degrés d'appartenance compris entre 0 et 1 indiquant leur appartenance partielle. Au contraire, dans les techniques de clustering hard, les données sont groupées de manière exclusive, de sorte que si une certaine donnée appartient à un cluster défini, elle ne peut pas être incluse dans un autre cluster \cite{bora2014comparative}. Nous verrons dans cette section le Fuzzy c-means qui est une technique de clustering flou très populaire.\\
 
 \subsection{Fuzzy C-means clustering :}
-Fuzzy C-means (FCM) est une technique de regroupement de données dans laquelle chaque point de données appartient à un cluster dans une certaine mesure spécifiée par un degré d'appartenance. Cette technique a été initialement développé par Dunn 1973 et améliorer par Jim Bezdek en 1981 par rapport aux méthodes de clustering antérieures \cite{taherpour2018application}. Il fournit une méthode de regroupement des points de données qui peuplent un espace multidime nsionnel dans un nombre spécifique de clusters différents. Le principal avantage de cette methodes est qu’elle fournit des appartenances graduelles de points de données à des clusters mesurés en degrés dans un intervalle [0,1]. Cela donne la flexibilité d'exprimer que les points de données peuvent appartenir à plus d'un cluster.
+Fuzzy C-means (FCM) est une technique de regroupement de données dans laquelle chaque point de données appartient à un cluster dans une certaine mesure spécifiée par un degré d'appartenance. Cette technique a été initialement développé par Dunn 1973 et améliorer par Jim Bezdek en 1981 par rapport aux méthodes de clustering antérieures \cite{taherpour2018application}. Il fournit une méthode de regroupement des points de données qui peuplent un espace multidimensionnel dans un nombre spécifique de clusters différents. Le principal avantage de cette methode est qu’elle fournit des appartenances graduelles de points de données à des clusters mesurés en degrés dans un intervalle [0,1]. Cela donne la flexibilité d'exprimer que les points de données peuvent appartenir à plus d'un cluster.
 \subsubsection{Algorithme FCM :}
 Le but est de minimiser la fonction objective définie comme suit :
 
@@ -345,7 +345,7 @@ On remarque que FCM differe de k-means  du fait que FCM utilise les valeurs d’
 \begin{equation}
     U_{ij}^{m} = \frac{1}{\sum_{k=1}^{C} \Bigg ( \frac{\left\lVert x_{i} - c_{j} \right\rVert }{\left\lVert x_{i} - c_{k} \right\rVert} \Bigg )^{\frac{2}{m-1}}}
 \end{equation}
-Le paramètre m est un nombre réel supérieur à 1 \(\displaystyle (1 \leq m \textless \infty) \) et il définit le niveau de flou du cluster. Une valeur de \(\displaystyle m \) proche de 1 donne une solution de cluster qui devient de plus en plus similaire à la solution de clustering \textbf{Hard} tel que k-means ; alors qu’une valeur de m proche de l’infini conduit à un flou complet. Le bon choix est d’utiliser \(\displaystyle m = 2.0 \)  (Hathaway et Bezdek 2001). \\
+Le paramètre \(\displaystyle m \) est un nombre réel supérieur à 1 \(\displaystyle (1 \leq m \textless \infty) \) et il définit le niveau de flou du cluster. Une valeur de \(\displaystyle m \) proche de 1 donne une solution de cluster qui devient de plus en plus similaire à la solution de clustering \textbf{Hard} tel que k-means ; alors qu’une valeur de m proche de l’infini conduit à un flou complet. Le bon choix est d’utiliser \(\displaystyle m = 2.0 \) \cite{hathaway2001fuzzy}. \\
 Enfin le centroïde d’un cluster est la moyenne de tous les points, pondérée par leur degré d’appartenance au cluster. 
 
 \begin{equation}
@@ -367,9 +367,9 @@ Le clustering flou c-means peut être considéré comme un meilleur algorithme p
 En dehors des méthodes de clustering hiérarchique, partitionnel et floue (fuzzy) vu précédemment, les autres méthodes de clustering sont énoncées de façon brève dans le tableau \ref{other_clustering_methods} . 
 \begin{table}[H]
 	\centering
-	\addtolength{\leftskip} {-4cm}
-	\addtolength{\rightskip}{-3cm}
-	\begin{tabular}{|m{3cm}|m{4cm}|m{5cm}|m{3cm}|m{3cm}|} %\rule{0pt}{1.5\normalbaselineskip}
+	\addtolength{\leftskip} {-3cm}
+	\addtolength{\rightskip}{-4cm}
+	\begin{tabular}{|m{3cm}|m{4cm}|m{5cm}|m{3cm}|m{2cm}|} %\rule{0pt}{1.5\normalbaselineskip}
 	\hline
 	\rowcolor{blueforest}
 	\color{white} \textbf{Clustering Method} & \color{white} \textbf{Description} & \color{white} \textbf{Advantages} & \color{white} \textbf{Disadvantages} & \color{white} \textbf{Algorithms}\\
@@ -383,19 +383,19 @@ En dehors des méthodes de clustering hiérarchique, partitionnel et floue (fuzz
 \end{table}
 
 \section{La différence entre le clustering hiérarchique, partitionnel et Fuzzy clustering}
-Le clustering hiérarchique et partitionnel présente des différences essentielles en termes de temps d’exécution, d’hypothèses, de paramètres d’entrée et de clusters résultants. En règle générale, le clustering partitionnel est plus rapide que le clustering hiérarchique. La classification hiérarchique nécessite uniquement une mesure de similarité, tandis que la classification partitionnelle requiert des hypothèses plus strictes telles que le nombre de classes et les centres initiaux. La mise en cluster hiérarchique ne nécessite aucun paramètre d’entrée, tandis que les algorithmes de mise en cluster partiels nécessitent le nombre de clusters à exécuter. La classification hiérarchique renvoie une division beaucoup plus significative et subjective des grappes, mais la classification partitionnelle produit exactement k clusters. Les algorithmes de classification hiérarchique conviennent mieux aux données catégoriques, à condition qu’une mesure de similarité puisse être définie en conséquence. En terme générale ils sont considérés comme des méthodes de clustering Hard, où chaque élément est affecté à un seul cluster. Par contre les méthodes de clustering Soft comme le Fuzzy clustering regroupent les éléments de données de telle sorte qu'un élément puisse exister dans plusieurs clusters.
+Le clustering hiérarchique et partitionnel présentent des différences essentielles en termes de temps d’exécution, d’hypothèses, de paramètres d’entrée et de clusters résultants. En règle générale, le clustering partitionnel est plus rapide que le clustering hiérarchique. La classification hiérarchique nécessite uniquement une mesure de similarité, tandis que la classification partitionnelle requiert des hypothèses plus strictes telles que le nombre de classes et les centres initiaux. La mise en cluster hiérarchique ne nécessite aucun paramètre d’entrée, tandis que les algorithmes de mise en cluster partiels nécessitent le nombre de clusters à exécuter. La classification hiérarchique renvoie une division beaucoup plus significative et subjective des grappes, mais la classification partitionnelle produit exactement k clusters. Les algorithmes de classification hiérarchique conviennent mieux aux données catégoriques, à condition qu’une mesure de similarité puisse être définie en conséquence. En terme générale ils sont considérés comme des méthodes de clustering Hard, où chaque élément est affecté à un seul cluster. Par contre les méthodes de clustering Soft comme le Fuzzy clustering regroupent les éléments de données de telle sorte qu'un élément puisse exister dans plusieurs clusters.
 \section{Indice de validité du clustering}
-Les algorithmes supervisés ont beaucoup de métriques pour vérifier leur qualité d'ajustement comme la précision, la valeur r carré, la sensibilité, la spécificité, etc. Concernant les algorithmes non supervisés et plus précisément les algorithmes de clustering l’indice de validité de cluster est utilisé pour mesurer la qualité de la partition trouvée et aussi les partitions optimales. L’indice de validité de cluster est utilisé donc pour mesurer la qualité des clusters et pour rechercher le nombre optimal de clusters lorsque le nombre de clusters dans les données l'ensemble n'est pas connu à l'avance \cite{rezaee1998new}. Il utilise les propriétés des clusters telles que la compacité (ou la variation) et la séparation (ou l'isolement) qui sont souvent considérées comme des caractéristiques majeures permettant de valider les clusters. La compacité indique la variation ou la dispersion des données au sein d'un cluster, et la séparation indique l'isolement des clusters les uns des autres \cite{ZHANG20081205} . Plusieurs indices de validité courants sont énoncés dans le tableau suivant :
+Les algorithmes supervisés ont beaucoup de métriques pour vérifier leur qualité d'ajustement comme la précision, la valeur \(\displaystyle R^{2}\), la sensibilité, la spécificité, etc. Concernant les algorithmes non supervisés et plus précisément les algorithmes de clustering l’indice de validité de cluster est utilisé pour mesurer la qualité de la partition trouvée et aussi les partitions optimales. L’indice de validité de cluster est utilisé donc pour mesurer la qualité des clusters et pour rechercher le nombre optimal de clusters lorsque le nombre de clusters dans les données l'ensemble n'est pas connu à l'avance \cite{rezaee1998new}. Il utilise les propriétés des clusters telles que la compacité (ou la variation) et la séparation (ou l'isolement) qui sont souvent considérées comme des caractéristiques majeures permettant de valider les clusters. La compacité indique la variation ou la dispersion des données au sein d'un cluster, et la séparation indique l'isolement des clusters les uns des autres \cite{ZHANG20081205} . Plusieurs indices de validité courants sont énoncés dans le tableau suivant :
 \begin{table}[H]
 	\centering
 	\addtolength{\leftskip} {-4cm}
 	\addtolength{\rightskip}{-4.5cm}
-	\begin{tabular}{|m{2cm}|m{5cm}|m{12cm}|}
+	\begin{tabular}{|m{2cm}|m{5cm}|m{11cm}|}
 	\hline
 	\rowcolor{blueforest}
 	\color{white} \textbf{Indice} & \color{white} \textbf{Description} & \color{white} \textbf{Formule}  \\
 	\hline\hline
-	\multicolumn{3}{|m{19cm}|}{\centering \textbf{Les indices de validité adaptés aux clustering partitionnelle} }\\ \hline
+	\multicolumn{3}{|m{18cm}|}{\centering \textbf{Les indices de validité adaptés aux clustering partitionnelle} }\\ \hline
 	\textbf{Indice de Dunn}  &
 	Il est l'un des indices les plus anciens et les plus cités est proposé par \cite{dunn1974well}. L'index de Dunn (DU) identifie les clusters qui sont bien séparés et compacts. Le but est donc de maximiser la distance inter-clusters tout en minimisant la distance intra-cluster. &  \(\displaystyle DU_{k} = \min_{i=1,..,k} \Bigg \{ \min_{j=1+1,..,k} \Bigg ( \frac{diss(c_{i},c_{j})}{\max_{m=1,...,k}diam(c_{m})} \Bigg ) \Bigg \} \) \newline \newline où \(\displaystyle diss(c_{i},c_{j}) = \min_{x \in c_{i},y \in c_{j}}d(x,y) \) est la dissemblance entre les clusters \(\displaystyle c_{i} \) et \(\displaystyle c_{j}  \), et \(\displaystyle diam(C) = \max_{x,y \in C}d(x,y) \) est la fonction intra-cluster (ou diamètre) du cluster. Si l'index de Dunn est grand, cela signifie qu'il existe des clusters compacts et bien séparés \cite{Saitta2008}. \\ \hline
 	\textbf{Indice Calinski-Harabasz}  &
