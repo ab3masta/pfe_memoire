@@ -23,7 +23,7 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}Un ajustement bayésien des réponses aux items avec Stan}{\reset@font\mtcSfont 55}{section.4.4}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.1}IRT avec Stan}{\reset@font\mtcSSfont 56}{subsection.4.4.1}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.4.1.1}Déclaration des données}{\reset@font\mtcSSSfont 56}{subsubsection.4.4.1.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.4.1.2}Les paramètres du modèle de Rasch, 2PL et 3PL}{\reset@font\mtcSSSfont 57}{subsubsection.4.4.1.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.4.1.2}Les paramètres du modèle de Rasch, 2PL et 3PL}{\reset@font\mtcSSSfont 56}{subsubsection.4.4.1.2}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.4.1.3}Le modèle de Rasch, 2PL et 3PL}{\reset@font\mtcSSSfont 57}{subsubsection.4.4.1.3}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.4.1.4}Prédiction postérieure}{\reset@font\mtcSSSfont 58}{subsubsection.4.4.1.4}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.5}Conclusion}{\reset@font\mtcSfont 58}{section.4.5}}

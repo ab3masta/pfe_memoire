@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.7.15)  31 AUG 2021 17:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.7.15)  1 SEP 2021 22:37
 entering extended mode
 **c:/Users/abdou/Documents/1111____PFE/pfe_memoire/main.tex
 (c:/Users/abdou/Documents/1111____PFE/pfe_memoire/main.tex
@@ -1277,47 +1277,30 @@ Package pdftex.def Info: Images/Logo.png  used on input line 105.
  [1{C:/Users/abdou/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
- <./Images/Logo.png>] (dedicaces.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--11
-
- []
-
-
-Overfull \hbox (0.39758pt too wide) in paragraph at lines 14--20
-\T1/ptm/m/n/12 Au-tant de phrases et d'expressions aussi �lo-quente soient elles, ne sauraient ex-primer l'amour
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--20
-
- []
-
-) (remerciement.tex [1
+ <./Images/Logo.png>] (remerciement.tex) (abstractresume.tex [1
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
-
- []
-
-) (abstractresume.tex [2
-
-] [3] [4]) (main.toc [5
+[4]) (main.toc [5
 
 ]
 Overfull \hbox (1.61145pt too wide) in paragraph at lines 73--73
@@ -1428,7 +1411,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-<images/chapitre1/extract_data_steps.png, id=1053, 4015.0pt x 2007.5pt>
+<images/chapitre1/extract_data_steps.png, id=1047, 4015.0pt x 2007.5pt>
 File: images/chapitre1/extract_data_steps.png Graphic file (type png)
 <use images/chapitre1/extract_data_steps.png>
 Package pdftex.def Info: images/chapitre1/extract_data_steps.png  used on input line 17.
@@ -1440,13 +1423,13 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 [6] [7 <./images/chapitre1/extract_data_steps.png (PNG copy)>]
-<images/chapitre1/ITS architecture.png, id=1072, 1405.25pt x 702.625pt>
+<images/chapitre1/ITS architecture.png, id=1067, 1405.25pt x 702.625pt>
 File: images/chapitre1/ITS architecture.png Graphic file (type png)
 <use images/chapitre1/ITS architecture.png>
 Package pdftex.def Info: images/chapitre1/ITS architecture.png  used on input line 36.
 (pdftex.def)             Requested size: 441.01773pt x 220.5025pt.
  [8 <./images/chapitre1/ITS architecture.png>]
-<images/chapitre1/Principaux domaines liés à l'exploration de données éducatives.png, id=1086, 1003.75pt x 702.625pt>
+<images/chapitre1/Principaux domaines liés à l'exploration de données éducatives.png, id=1081, 1003.75pt x 702.625pt>
 File: images/chapitre1/Principaux domaines liés à l'exploration de données éducatives.png Graphic file (type png)
 <use images/chapitre1/Principaux domaines liés à l'exploration de données éducatives.png>
 Package pdftex.def Info: images/chapitre1/Principaux domaines liés à l'exploration de données éducatives.png  used on input line 59.
@@ -1456,7 +1439,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-<images/chapitre1/Data mining application process applied in education.png, id=1094, 2007.5pt x 803.0pt>
+<images/chapitre1/Data mining application process applied in education.png, id=1089, 2007.5pt x 803.0pt>
 File: images/chapitre1/Data mining application process applied in education.png Graphic file (type png)
 <use images/chapitre1/Data mining application process applied in education.png>
 Package pdftex.def Info: images/chapitre1/Data mining application process applied in education.png  used on input line 74.
@@ -1466,7 +1449,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
-<images/chapitre1/edm techniques.png, id=1101, 2007.5pt x 903.375pt>
+<images/chapitre1/edm techniques.png, id=1096, 2007.5pt x 903.375pt>
 File: images/chapitre1/edm techniques.png Graphic file (type png)
 <use images/chapitre1/edm techniques.png>
 Package pdftex.def Info: images/chapitre1/edm techniques.png  used on input line 85.
@@ -1610,7 +1593,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [17]
-<images/chapitre2/Composante_modele_apprenant.png, id=1158, 1806.75pt x 1204.5pt>
+<images/chapitre2/Composante_modele_apprenant.png, id=1152, 1806.75pt x 1204.5pt>
 File: images/chapitre2/Composante_modele_apprenant.png Graphic file (type png)
 <use images/chapitre2/Composante_modele_apprenant.png>
 Package pdftex.def Info: images/chapitre2/Composante_modele_apprenant.png  used on input line 99.
@@ -1640,7 +1623,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [20]
-<images/chapitre2/Modèles-d'équations-structurelles.png, id=1186, 1806.75pt x 803.0pt>
+<images/chapitre2/Modèles-d'équations-structurelles.png, id=1181, 1806.75pt x 803.0pt>
 File: images/chapitre2/Modèles-d'équations-structurelles.png Graphic file (type png)
 <use images/chapitre2/Modèles-d'équations-structurelles.png>
 Package pdftex.def Info: images/chapitre2/Modèles-d'équations-structurelles.png  used on input line 162.
@@ -1666,7 +1649,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [22 <./images/chapitre2/Modèles-d'équations-structurelles.png>]
-<images/chapitre2/bayesian_network_modeling_aggregationai.png, id=1211, 1806.75pt x 803.0pt>
+<images/chapitre2/bayesian_network_modeling_aggregationai.png, id=1206, 1806.75pt x 803.0pt>
 File: images/chapitre2/bayesian_network_modeling_aggregationai.png Graphic file (type png)
 <use images/chapitre2/bayesian_network_modeling_aggregationai.png>
 Package pdftex.def Info: images/chapitre2/bayesian_network_modeling_aggregationai.png  used on input line 188.
@@ -1680,7 +1663,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [23]
-<images/chapitre2/modèle_equation_structurelles.png, id=1224, 1806.75pt x 803.0pt>
+<images/chapitre2/modèle_equation_structurelles.png, id=1218, 1806.75pt x 803.0pt>
 File: images/chapitre2/modèle_equation_structurelles.png Graphic file (type png)
 <use images/chapitre2/modèle_equation_structurelles.png>
 Package pdftex.def Info: images/chapitre2/modèle_equation_structurelles.png  used on input line 201.
@@ -1710,13 +1693,13 @@ Chapitre 3.
 (main.mtc5) [26
 
 ]
-<images/chapitre3/Knowledge_component.png, id=1257, 1907.125pt x 903.375pt>
+<images/chapitre3/Knowledge_component.png, id=1252, 1907.125pt x 903.375pt>
 File: images/chapitre3/Knowledge_component.png Graphic file (type png)
 <use images/chapitre3/Knowledge_component.png>
 Package pdftex.def Info: images/chapitre3/Knowledge_component.png  used on input line 17.
 (pdftex.def)             Requested size: 441.01773pt x 208.90219pt.
  [27] [28 <./images/chapitre3/Knowledge_component.png>]
-<images/chapitre3/Items_mapping_structure.png, id=1279, 1405.25pt x 803.0pt>
+<images/chapitre3/Items_mapping_structure.png, id=1274, 1405.25pt x 803.0pt>
 File: images/chapitre3/Items_mapping_structure.png Graphic file (type png)
 <use images/chapitre3/Items_mapping_structure.png>
 Package pdftex.def Info: images/chapitre3/Items_mapping_structure.png  used on input line 47.
@@ -1727,7 +1710,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 54.
 
 [29 <./images/chapitre3/Items_mapping_structure.png>]
-<images/chapitre3/Model_based.png, id=1292, 2509.375pt x 1003.75pt>
+<images/chapitre3/Model_based.png, id=1286, 2509.375pt x 1003.75pt>
 File: images/chapitre3/Model_based.png Graphic file (type png)
 <use images/chapitre3/Model_based.png>
 Package pdftex.def Info: images/chapitre3/Model_based.png  used on input line 60.
@@ -1738,18 +1721,18 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 69.
 
 [30 <./images/chapitre3/Model_based.png>]
-<images/chapitre3/q_matrix.png, id=1304, 2509.375pt x 1003.75pt>
+<images/chapitre3/q_matrix.png, id=1299, 2509.375pt x 1003.75pt>
 File: images/chapitre3/q_matrix.png Graphic file (type png)
 <use images/chapitre3/q_matrix.png>
 Package pdftex.def Info: images/chapitre3/q_matrix.png  used on input line 78.
 (pdftex.def)             Requested size: 441.01773pt x 176.39404pt.
-<images/chapitre3/Illustration_item_smilarity.png, id=1308, 241.40187pt x 172.14313pt>
+<images/chapitre3/Illustration_item_smilarity.png, id=1303, 241.40187pt x 172.14313pt>
 File: images/chapitre3/Illustration_item_smilarity.png Graphic file (type png)
 <use images/chapitre3/Illustration_item_smilarity.png>
 Package pdftex.def Info: images/chapitre3/Illustration_item_smilarity.png  used on input line 91.
 (pdftex.def)             Requested size: 193.12175pt x 137.71466pt.
  [31 <./images/chapitre3/q_matrix.png>]
-<images/chapitre3/calcul_application_similarity.png, id=1319, 577.15625pt x 282.05376pt>
+<images/chapitre3/calcul_application_similarity.png, id=1314, 577.15625pt x 282.05376pt>
 File: images/chapitre3/calcul_application_similarity.png Graphic file (type png)
 <use images/chapitre3/calcul_application_similarity.png>
 Package pdftex.def Info: images/chapitre3/calcul_application_similarity.png  used on input line 104.
@@ -1796,7 +1779,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [37]
-<images/chapitre5/prior_likelihood_posterior.png, id=1368, 721.69624pt x 238.39063pt>
+<images/chapitre5/prior_likelihood_posterior.png, id=1363, 721.69624pt x 238.39063pt>
 File: images/chapitre5/prior_likelihood_posterior.png Graphic file (type png)
 <use images/chapitre5/prior_likelihood_posterior.png>
 Package pdftex.def Info: images/chapitre5/prior_likelihood_posterior.png  used on input line 62.
@@ -1843,7 +1826,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
-<images/chapitre5/mcmc_iterations.png, id=1394, 590.205pt x 262.48062pt>
+<images/chapitre5/mcmc_iterations.png, id=1389, 590.205pt x 262.48062pt>
 File: images/chapitre5/mcmc_iterations.png Graphic file (type png)
 <use images/chapitre5/mcmc_iterations.png>
 Package pdftex.def Info: images/chapitre5/mcmc_iterations.png  used on input line 107.
@@ -2066,7 +2049,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [51]
-<images/chapitre5/irt_models.jpg, id=1525, 540.48734pt x 387.49022pt>
+<images/chapitre5/irt_models.jpg, id=1520, 540.48734pt x 387.49022pt>
 File: images/chapitre5/irt_models.jpg Graphic file (type jpg)
 <use images/chapitre5/irt_models.jpg>
 Package pdftex.def Info: images/chapitre5/irt_models.jpg  used on input line 420.
@@ -2088,13 +2071,18 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [53 <./images/chapitre5/irt_models.jpg>]
-<images/chapitre5/parameters_probability.png, id=1537, 453.19313pt x 298.11375pt>
+<images/chapitre5/parameters_probability.png, id=1531, 453.19313pt x 298.11375pt>
 File: images/chapitre5/parameters_probability.png Graphic file (type png)
 <use images/chapitre5/parameters_probability.png>
 Package pdftex.def Info: images/chapitre5/parameters_probability.png  used on input line 444.
-(pdftex.def)             Requested size: 441.01773pt x 290.10706pt.
+(pdftex.def)             Requested size: 271.91797pt x 178.86963pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 452--453
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
 
  []
 
@@ -2106,11 +2094,6 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [54 <./images/chapitre5/parameters_probability.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 460--461
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 468--469
 
  []
@@ -2187,18 +2170,18 @@ Overfull \hbox (30.26167pt too wide) in paragraph at lines 40--54
  []
 
 [62]
-<images/chapitre6/iris_inter_intra_clusters.png, id=1689, 987.69pt x 690.58pt>
+<images/chapitre6/iris_inter_intra_clusters.png, id=1684, 987.69pt x 690.58pt>
 File: images/chapitre6/iris_inter_intra_clusters.png Graphic file (type png)
 <use images/chapitre6/iris_inter_intra_clusters.png>
 Package pdftex.def Info: images/chapitre6/iris_inter_intra_clusters.png  used on input line 62.
 (pdftex.def)             Requested size: 296.30928pt x 207.1756pt.
-<images/chapitre6/single_linkage.png, id=1691, 798.985pt x 581.17125pt>
+<images/chapitre6/single_linkage.png, id=1686, 798.985pt x 581.17125pt>
 File: images/chapitre6/single_linkage.png Graphic file (type png)
 <use images/chapitre6/single_linkage.png>
 Package pdftex.def Info: images/chapitre6/single_linkage.png  used on input line 83.
 (pdftex.def)             Requested size: 159.79416pt x 116.23218pt.
  [63 <./images/chapitre6/iris_inter_intra_clusters.png> <./images/chapitre6/single_linkage.png>]
-<images/chapitre6/complet_linkage.png, id=1706, 798.985pt x 581.17125pt>
+<images/chapitre6/complet_linkage.png, id=1701, 798.985pt x 581.17125pt>
 File: images/chapitre6/complet_linkage.png Graphic file (type png)
 <use images/chapitre6/complet_linkage.png>
 Package pdftex.def Info: images/chapitre6/complet_linkage.png  used on input line 116.
@@ -2208,18 +2191,18 @@ Package pdftex.def Info: images/chapitre6/complet_linkage.png  used on input lin
 LaTeX Warning: Command \` invalid in math mode on input line 203.
 
 [65]
-<images/chapitre6/agglo_clustering.png, id=1737, 798.985pt x 581.17125pt>
+<images/chapitre6/agglo_clustering.png, id=1731, 798.985pt x 581.17125pt>
 File: images/chapitre6/agglo_clustering.png Graphic file (type png)
 <use images/chapitre6/agglo_clustering.png>
 Package pdftex.def Info: images/chapitre6/agglo_clustering.png  used on input line 224.
 (pdftex.def)             Requested size: 199.16928pt x 144.87566pt.
-<images/chapitre6/dendrogram.png, id=1738, 798.985pt x 577.15625pt>
+<images/chapitre6/dendrogram.png, id=1732, 798.985pt x 577.15625pt>
 File: images/chapitre6/dendrogram.png Graphic file (type png)
 <use images/chapitre6/dendrogram.png>
 Package pdftex.def Info: images/chapitre6/dendrogram.png  used on input line 226.
 (pdftex.def)             Requested size: 199.16928pt x 143.87479pt.
  [66]
-<images/chapitre6/hierarchical_agglo_divisive.png, id=1750, 1505.625pt x 903.375pt>
+<images/chapitre6/hierarchical_agglo_divisive.png, id=1745, 1505.625pt x 903.375pt>
 File: images/chapitre6/hierarchical_agglo_divisive.png Graphic file (type png)
 <use images/chapitre6/hierarchical_agglo_divisive.png>
 Package pdftex.def Info: images/chapitre6/hierarchical_agglo_divisive.png  used on input line 237.
@@ -2230,7 +2213,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--248
  []
 
 [67 <./images/chapitre6/agglo_clustering.png> <./images/chapitre6/dendrogram.png> <./images/chapitre6/hierarchical_agglo_divisive.png>] [68] [69]
-<images/chapitre6/kmeans_steps.png, id=1790, 3011.25pt x 1505.625pt>
+<images/chapitre6/kmeans_steps.png, id=1785, 3011.25pt x 1505.625pt>
 File: images/chapitre6/kmeans_steps.png Graphic file (type png)
 <use images/chapitre6/kmeans_steps.png>
 Package pdftex.def Info: images/chapitre6/kmeans_steps.png  used on input line 280.
@@ -2244,7 +2227,7 @@ LaTeX Info: Symbol \textasciiacute not provided by
             font family ptm in TS1 encoding.
             Default family used instead on input line 305.
 [71]
-<images/chapitre6/elbow_methods.png, id=1810, 727.71875pt x 486.81876pt>
+<images/chapitre6/elbow_methods.png, id=1804, 727.71875pt x 486.81876pt>
 File: images/chapitre6/elbow_methods.png Graphic file (type png)
 <use images/chapitre6/elbow_methods.png>
 Package pdftex.def Info: images/chapitre6/elbow_methods.png  used on input line 314.
@@ -2261,12 +2244,12 @@ LaTeX Warning: Command \textless invalid in math mode on input line 340.
 
 LaTeX Warning: Command \textless invalid in math mode on input line 348.
 
-<images/chapitre6/data_for_fuzzy.png, id=1833, 1067.99pt x 620.3175pt>
+<images/chapitre6/data_for_fuzzy.png, id=1828, 1067.99pt x 620.3175pt>
 File: images/chapitre6/data_for_fuzzy.png Graphic file (type png)
 <use images/chapitre6/data_for_fuzzy.png>
 Package pdftex.def Info: images/chapitre6/data_for_fuzzy.png  used on input line 357.
 (pdftex.def)             Requested size: 199.16928pt x 115.67506pt.
-<images/chapitre6/fuzzyExemple.png, id=1836, 1067.99pt x 620.3175pt>
+<images/chapitre6/fuzzyExemple.png, id=1831, 1067.99pt x 620.3175pt>
 File: images/chapitre6/fuzzyExemple.png Graphic file (type png)
 <use images/chapitre6/fuzzyExemple.png>
 Package pdftex.def Info: images/chapitre6/fuzzyExemple.png  used on input line 359.
@@ -2457,55 +2440,55 @@ Chapitre 6.
 (main.mtc8) [80
 
 ]
-<images/chapitre7/python.png, id=1909, 1156.32pt x 1154.3125pt>
+<images/chapitre7/python.png, id=1904, 1156.32pt x 1154.3125pt>
 File: images/chapitre7/python.png Graphic file (type png)
 <use images/chapitre7/python.png>
 Package pdftex.def Info: images/chapitre7/python.png  used on input line 50.
 (pdftex.def)             Requested size: 132.30666pt x 132.06503pt.
-<images/chapitre7/anaconda.png, id=1912, 1758.57pt x 873.2625pt>
+<images/chapitre7/anaconda.png, id=1907, 1758.57pt x 873.2625pt>
 File: images/chapitre7/anaconda.png Graphic file (type png)
 <use images/chapitre7/anaconda.png>
 Package pdftex.def Info: images/chapitre7/anaconda.png  used on input line 56.
 (pdftex.def)             Requested size: 132.30666pt x 65.69173pt.
-<images/chapitre7/jupyter.png, id=1916, 822.272pt x 822.272pt>
+<images/chapitre7/jupyter.png, id=1911, 822.272pt x 822.272pt>
 File: images/chapitre7/jupyter.png Graphic file (type png)
 <use images/chapitre7/jupyter.png>
 Package pdftex.def Info: images/chapitre7/jupyter.png  used on input line 63.
 (pdftex.def)             Requested size: 132.30666pt x 132.30647pt.
-<images/chapitre7/scikit_learn.png, id=1918, 237.13594pt x 126.65877pt>
+<images/chapitre7/scikit_learn.png, id=1913, 237.13594pt x 126.65877pt>
 File: images/chapitre7/scikit_learn.png Graphic file (type png)
 <use images/chapitre7/scikit_learn.png>
 Package pdftex.def Info: images/chapitre7/scikit_learn.png  used on input line 70.
 (pdftex.def)             Requested size: 132.30666pt x 70.66943pt.
  [81] [82 <./images/chapitre7/python.png> <./images/chapitre7/anaconda.png> <./images/chapitre7/jupyter.png> <./images/chapitre7/scikit_learn.png>]
-<images/chapitre7/pandas.png, id=1940, 822.07124pt x 332.24126pt>
+<images/chapitre7/pandas.png, id=1935, 822.07124pt x 332.24126pt>
 File: images/chapitre7/pandas.png Graphic file (type png)
 <use images/chapitre7/pandas.png>
 Package pdftex.def Info: images/chapitre7/pandas.png  used on input line 94.
 (pdftex.def)             Requested size: 132.30666pt x 53.46892pt.
-<images/chapitre7/numpy.png, id=1942, 1204.5pt x 476.78125pt>
+<images/chapitre7/numpy.png, id=1937, 1204.5pt x 476.78125pt>
 File: images/chapitre7/numpy.png Graphic file (type png)
 <use images/chapitre7/numpy.png>
 Package pdftex.def Info: images/chapitre7/numpy.png  used on input line 103.
 (pdftex.def)             Requested size: 132.30666pt x 52.36606pt.
-<images/chapitre7/matplotlib.png, id=1944, 1204.5pt x 289.08pt>
+<images/chapitre7/matplotlib.png, id=1939, 1204.5pt x 289.08pt>
 File: images/chapitre7/matplotlib.png Graphic file (type png)
 <use images/chapitre7/matplotlib.png>
 Package pdftex.def Info: images/chapitre7/matplotlib.png  used on input line 110.
 (pdftex.def)             Requested size: 132.30666pt x 31.75037pt.
  [83 <./images/chapitre7/pandas.png> <./images/chapitre7/numpy.png> <./images/chapitre7/matplotlib.png>]
-<images/chapitre7/stan.png, id=1959, 250.9375pt x 251.60667pt>
+<images/chapitre7/stan.png, id=1953, 250.9375pt x 251.60667pt>
 File: images/chapitre7/stan.png Graphic file (type png)
 <use images/chapitre7/stan.png>
 Package pdftex.def Info: images/chapitre7/stan.png  used on input line 134.
 (pdftex.def)             Requested size: 132.30666pt x 132.66368pt.
-<images/chapitre7/arviz2.png, id=1962, 336.0555pt x 122.859pt>
+<images/chapitre7/arviz2.png, id=1956, 336.0555pt x 122.859pt>
 File: images/chapitre7/arviz2.png Graphic file (type png)
 <use images/chapitre7/arviz2.png>
 Package pdftex.def Info: images/chapitre7/arviz2.png  used on input line 140.
 (pdftex.def)             Requested size: 132.30666pt x 48.37035pt.
  [84 <./images/chapitre7/stan.png> <./images/chapitre7/arviz2.png>]
-<images/chapitre7/preprocessing_steps.png, id=1978, 2509.375pt x 1806.75pt>
+<images/chapitre7/preprocessing_steps.png, id=1973, 2509.375pt x 1806.75pt>
 File: images/chapitre7/preprocessing_steps.png Graphic file (type png)
 <use images/chapitre7/preprocessing_steps.png>
 Package pdftex.def Info: images/chapitre7/preprocessing_steps.png  used on input line 180.
@@ -2513,13 +2496,13 @@ Package pdftex.def Info: images/chapitre7/preprocessing_steps.png  used on input
  [85 <./images/chapitre7/preprocessing_steps.png>] (C:\Users\abdou\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-<images/chapitre5/irt_process.png, id=1988, 313.67188pt x 325.71687pt>
+<images/chapitre5/irt_process.png, id=1983, 313.67188pt x 325.71687pt>
 File: images/chapitre5/irt_process.png Graphic file (type png)
 <use images/chapitre5/irt_process.png>
 Package pdftex.def Info: images/chapitre5/irt_process.png  used on input line 219.
 (pdftex.def)             Requested size: 441.01773pt x 457.9736pt.
  [86] [87 <./images/chapitre5/irt_process.png>] [88]
-<images/chapitre7/stanfit_object.png, id=2057, 747.9945pt x 280.6485pt>
+<images/chapitre7/stanfit_object.png, id=2052, 747.9945pt x 280.6485pt>
 File: images/chapitre7/stanfit_object.png Graphic file (type png)
 <use images/chapitre7/stanfit_object.png>
 Package pdftex.def Info: images/chapitre7/stanfit_object.png  used on input line 285.
@@ -2529,13 +2512,13 @@ Overfull \hbox (5.47444pt too wide) in paragraph at lines 282--289
 \T1/ptm/m/n/12 Une fois l'�chan-tillon-nage ter-min�, l'ob-jet [][][][][][] ren-voyer par la m�-thode [][][][][][] contient
  []
 
-<images/chapitre7/model_plot-trace.png, id=2058, 867.24pt x 433.62pt>
+<images/chapitre7/model_plot-trace.png, id=2053, 867.24pt x 433.62pt>
 File: images/chapitre7/model_plot-trace.png Graphic file (type png)
 <use images/chapitre7/model_plot-trace.png>
 Package pdftex.def Info: images/chapitre7/model_plot-trace.png  used on input line 294.
 (pdftex.def)             Requested size: 441.01773pt x 220.50809pt.
 [89 <./images/chapitre7/stanfit_object.png>]
-<images/chapitre7/params_posterior_distribution.png, id=2067, 1134.2375pt x 628.3475pt>
+<images/chapitre7/params_posterior_distribution.png, id=2061, 1134.2375pt x 628.3475pt>
 File: images/chapitre7/params_posterior_distribution.png Graphic file (type png)
 <use images/chapitre7/params_posterior_distribution.png>
 Package pdftex.def Info: images/chapitre7/params_posterior_distribution.png  used on input line 302.
@@ -2551,27 +2534,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--310
  []
 
 [90 <./images/chapitre7/model_plot-trace.png> <./images/chapitre7/params_posterior_distribution.png>]
-<images/chapitre7/model_energy.png, id=2074, 433.62pt x 289.08pt>
+<images/chapitre7/model_energy.png, id=2069, 433.62pt x 289.08pt>
 File: images/chapitre7/model_energy.png Graphic file (type png)
 <use images/chapitre7/model_energy.png>
 Package pdftex.def Info: images/chapitre7/model_energy.png  used on input line 315.
 (pdftex.def)             Requested size: 216.80946pt x 144.53964pt.
-<images/chapitre7/output_of_rhat.png, id=2075, 803.0pt x 203.76125pt>
+<images/chapitre7/output_of_rhat.png, id=2070, 803.0pt x 203.76125pt>
 File: images/chapitre7/output_of_rhat.png Graphic file (type png)
 <use images/chapitre7/output_of_rhat.png>
 Package pdftex.def Info: images/chapitre7/output_of_rhat.png  used on input line 325.
 (pdftex.def)             Requested size: 441.01773pt x 111.91046pt.
-<images/chapitre7/diverging_output.png, id=2077, 936.49875pt x 412.54124pt>
+<images/chapitre7/diverging_output.png, id=2072, 936.49875pt x 412.54124pt>
 File: images/chapitre7/diverging_output.png Graphic file (type png)
 <use images/chapitre7/diverging_output.png>
 Package pdftex.def Info: images/chapitre7/diverging_output.png  used on input line 335.
 (pdftex.def)             Requested size: 441.01773pt x 194.2784pt.
  [91 <./images/chapitre7/model_energy.png> <./images/chapitre7/output_of_rhat.png (PNG copy)>]
-<images/chapitre7/roc_auc.png, id=2086, 430.60875pt x 307.1475pt>
+<images/chapitre7/roc_auc.png, id=2081, 431.211pt x 307.1475pt>
 File: images/chapitre7/roc_auc.png Graphic file (type png)
 <use images/chapitre7/roc_auc.png>
 Package pdftex.def Info: images/chapitre7/roc_auc.png  used on input line 369.
-(pdftex.def)             Requested size: 258.36723pt x 184.28992pt.
+(pdftex.def)             Requested size: 344.96927pt x 245.71832pt.
  [92 <./images/chapitre7/diverging_output.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 385--385
 []|\T1/lmr/m/n/12 (+20) Average
@@ -2583,46 +2566,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 385--385
  []
 
 [93 <./images/chapitre7/roc_auc.png>]
-<images/chapitre7/similarity_steps.png, id=2109, 3011.25pt x 2007.5pt>
+<images/chapitre7/similarity_steps.png, id=2104, 3011.25pt x 2007.5pt>
 File: images/chapitre7/similarity_steps.png Graphic file (type png)
 <use images/chapitre7/similarity_steps.png>
 Package pdftex.def Info: images/chapitre7/similarity_steps.png  used on input line 442.
 (pdftex.def)             Requested size: 441.01773pt x 294.0054pt.
  [94 <./images/chapitre7/similarity_steps.png (PNG copy)>] [95]
-<images/chapitre7/pca_features.png, id=2169, 984.67876pt x 660.4675pt>
+<images/chapitre7/pca_features.png, id=2163, 984.67876pt x 660.4675pt>
 File: images/chapitre7/pca_features.png Graphic file (type png)
 <use images/chapitre7/pca_features.png>
 Package pdftex.def Info: images/chapitre7/pca_features.png  used on input line 521.
 (pdftex.def)             Requested size: 199.16928pt x 133.58269pt.
-<images/chapitre7/features_plot.png, id=2170, 982.67125pt x 660.4675pt>
+<images/chapitre7/features_plot.png, id=2164, 982.67125pt x 660.4675pt>
 File: images/chapitre7/features_plot.png Graphic file (type png)
 <use images/chapitre7/features_plot.png>
 Package pdftex.def Info: images/chapitre7/features_plot.png  used on input line 523.
 (pdftex.def)             Requested size: 199.16928pt x 133.86487pt.
  [96]
-<images/chapitre7/pca_variance_ratio.png, id=2176, 984.67876pt x 660.4675pt>
+<images/chapitre7/pca_variance_ratio.png, id=2171, 984.67876pt x 660.4675pt>
 File: images/chapitre7/pca_variance_ratio.png Graphic file (type png)
 <use images/chapitre7/pca_variance_ratio.png>
 Package pdftex.def Info: images/chapitre7/pca_variance_ratio.png  used on input line 533.
 (pdftex.def)             Requested size: 199.16928pt x 133.58269pt.
-<images/chapitre7/pca_features_compress.png, id=2177, 995.72pt x 660.4675pt>
+<images/chapitre7/pca_features_compress.png, id=2172, 995.72pt x 660.4675pt>
 File: images/chapitre7/pca_features_compress.png Graphic file (type png)
 <use images/chapitre7/pca_features_compress.png>
 Package pdftex.def Info: images/chapitre7/pca_features_compress.png  used on input line 535.
 (pdftex.def)             Requested size: 199.16928pt x 132.11131pt.
  [97 <./images/chapitre7/pca_features.png> <./images/chapitre7/features_plot.png> <./images/chapitre7/pca_variance_ratio.png> <./images/chapitre7/pca_features_compress.png>]
-<images/chapitre7/linkage_method_score.png, id=2198, 1112.155pt x 732.7375pt>
+<images/chapitre7/linkage_method_score.png, id=2193, 1112.155pt x 732.7375pt>
 File: images/chapitre7/linkage_method_score.png Graphic file (type png)
 <use images/chapitre7/linkage_method_score.png>
 Package pdftex.def Info: images/chapitre7/linkage_method_score.png  used on input line 616.
 (pdftex.def)             Requested size: 199.16928pt x 131.21622pt.
-<images/chapitre7/dendrogram_of_dataset.png, id=2199, 937.5025pt x 658.46pt>
+<images/chapitre7/dendrogram_of_dataset.png, id=2194, 937.5025pt x 658.46pt>
 File: images/chapitre7/dendrogram_of_dataset.png Graphic file (type png)
 <use images/chapitre7/dendrogram_of_dataset.png>
 Package pdftex.def Info: images/chapitre7/dendrogram_of_dataset.png  used on input line 618.
 (pdftex.def)             Requested size: 199.16928pt x 139.87819pt.
  [98]
-<images/chapitre7/agglo_clusters.png, id=2211, 1003.75pt x 687.56876pt>
+<images/chapitre7/agglo_clusters.png, id=2206, 1003.75pt x 687.56876pt>
 File: images/chapitre7/agglo_clusters.png Graphic file (type png)
 <use images/chapitre7/agglo_clusters.png>
 Package pdftex.def Info: images/chapitre7/agglo_clusters.png  used on input line 624.
@@ -2632,7 +2615,7 @@ Package pdftex.def Info: images/chapitre7/agglo_clusters.png  used on input line
 LaTeX Warning: Command \textless invalid in math mode on input line 647.
 
 [99 <./images/chapitre7/linkage_method_score.png> <./images/chapitre7/dendrogram_of_dataset.png> <./images/chapitre7/agglo_clusters.png>] [100]
-<images/chapitre7/fuzzy_partition_plot.png, id=2234, 746.03719pt x 520.94624pt>
+<images/chapitre7/fuzzy_partition_plot.png, id=2229, 746.03719pt x 520.94624pt>
 File: images/chapitre7/fuzzy_partition_plot.png Graphic file (type png)
 <use images/chapitre7/fuzzy_partition_plot.png>
 Package pdftex.def Info: images/chapitre7/fuzzy_partition_plot.png  used on input line 688.
@@ -2809,12 +2792,12 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 
 [111]
 Annexe B.
-<images/annexe/model_plot-trace2.png, id=2493, 867.24pt x 578.16pt>
+<images/annexe/model_plot-trace2.png, id=2488, 867.24pt x 578.16pt>
 File: images/annexe/model_plot-trace2.png Graphic file (type png)
 <use images/annexe/model_plot-trace2.png>
 Package pdftex.def Info: images/annexe/model_plot-trace2.png  used on input line 232.
 (pdftex.def)             Requested size: 441.01773pt x 294.01079pt.
-<images/annexe/params_posterior_distribution2.png, id=2494, 1134.2375pt x 628.3475pt>
+<images/annexe/params_posterior_distribution2.png, id=2489, 1134.2375pt x 628.3475pt>
 File: images/annexe/params_posterior_distribution2.png Graphic file (type png)
 <use images/annexe/params_posterior_distribution2.png>
 Package pdftex.def Info: images/annexe/params_posterior_distribution2.png  used on input line 240.
@@ -2822,7 +2805,7 @@ Package pdftex.def Info: images/annexe/params_posterior_distribution2.png  used 
 [112
 
  <./images/annexe/model_plot-trace2.png>]
-<images/annexe/model_plot-trace3.png, id=2500, 867.24pt x 722.7pt>
+<images/annexe/model_plot-trace3.png, id=2495, 867.24pt x 722.7pt>
 File: images/annexe/model_plot-trace3.png Graphic file (type png)
 <use images/annexe/model_plot-trace3.png>
 Package pdftex.def Info: images/annexe/model_plot-trace3.png  used on input line 248.
@@ -2836,7 +2819,7 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.35403pt}.
 
 [113 <./images/annexe/params_posterior_distribution2.png>]
-<images/annexe/params_posterior_distribution3.png, id=2507, 1134.2375pt x 628.3475pt>
+<images/annexe/params_posterior_distribution3.png, id=2501, 1134.2375pt x 628.3475pt>
 File: images/annexe/params_posterior_distribution3.png Graphic file (type png)
 <use images/annexe/params_posterior_distribution3.png>
 Package pdftex.def Info: images/annexe/params_posterior_distribution3.png  used on input line 256.
@@ -2879,24 +2862,24 @@ Package minitoc(hints) Warning: W0024
 
 [124] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 91F62E7A1CE4A87557FE96F4FB3D32A6;13491.
+(rerunfilecheck)             Checksum: 44710FFAD7F97F152B21B775D1FD3C1B;13491.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 44928 strings out of 479697
- 964086 string characters out of 2867133
- 1938965 words of memory out of 3000000
- 59714 multiletter control sequences out of 15000+200000
+ 44920 strings out of 479697
+ 963941 string characters out of 2867133
+ 1939979 words of memory out of 3000000
+ 59711 multiletter control sequences out of 15000+200000
  513832 words of font info for 193 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,19n,111p,1933b,2063s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 108i,19n,111p,2055b,2063s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <C:\Users\abdou\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (138 pages, 5361539 bytes).
+Output written on main.pdf (137 pages, 5445054 bytes).
 PDF statistics:
- 2835 PDF objects out of 2984 (max. 8388607)
- 954 named destinations out of 1000 (max. 500000)
+ 2830 PDF objects out of 2984 (max. 8388607)
+ 952 named destinations out of 1000 (max. 500000)
  52262 words of extra memory for PDF output out of 61914 (max. 10000000)
 

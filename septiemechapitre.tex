@@ -230,7 +230,7 @@ data {
 	// numbers of things
 	int<lower=1> N;  // number of observations
 	int<lower=1> I;  // items,  number of questions  
-	int<lower=1> S;  // subjects,  number of users 
+	int<lower=1> S;  // subjects,  number of learners 
 	// data
 	int<lower=1,upper=I> item[N];
 	int<lower=1,upper=S> subject[N];
@@ -243,8 +243,8 @@ parameters {
 	real delta;                   // mean student ability
 }
 model {
-	ability ~ std_normal();         
-	difficulty ~ std_normal();   
+	ability ~ normal(0,1);         
+	difficulty ~ normal(0,1);   
 	delta ~ normal(0.75,1);
 	for(n in 1:N)
 		grade[n] ~ bernoulli_logit(ability[subject[n]] - difficulty[item[n]] + delta);
@@ -366,7 +366,7 @@ y_pred = np.round(y_pred).astype(int)
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.6]{images/chapitre7/roc_auc.png}
+		\includegraphics[scale=0.8]{images/chapitre7/roc_auc.png}
 	\end{center}
 	\caption{Représentation graphique du taux de vrais positifs par rapport au taux de faux positifs des trois modèles utilisés.}
 	\label{roc_auc}
@@ -379,10 +379,10 @@ y_pred = np.round(y_pred).astype(int)
 	\rowcolor{blueforest}
 	\color{white} \textbf{Métriques} & \color{white} \textbf{Rasch Model} & \color{white} \textbf{2PL} & \color{white} \textbf{3PL} \\
 	\hline\hline
-	roc\_auc\_score & 0.611 & 0.59 & \\ \hline
-	accuracy & 0.58 & 0.56 & \\ \hline
-	recall\_score & 0.55 & 0.53 & \\ \hline
-	Average precision-recall score & 0.81 & 0.80 & \\ \hline
+	roc\_auc\_score & 0.611 & 0.58 & \\ \hline
+	accuracy & 0.58 & 0.56 & 0.73\\ \hline
+	recall\_score & 0.55 & 0.53 & 0.86\\ \hline
+	Average precision-recall score & 0.81 & 0.80 & 0.80\\ \hline
 	\end{tabular}
 	\caption{Les différents scores du modèle de Rasch, modèle logistique à deux paramètres et le modèle à trois paramètres.}
 \end{table}
