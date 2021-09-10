@@ -1,14 +1,25 @@
 
-\chapter{Contribution and Results}
+\chapter{Contribution et résultats}
 \minitoc
 \thispagestyle{empty}
 \newpage
 
 \section{Introduction}
 Nous présentons dans ce chapitre les notions vues dans les chapitres précédents appliquer à un dataset. Partant de la collecte et la préparation du dataset, de l’application de la théorie des réponses aux items pour un ajustement bayésiens des réponses obtenues par les apprenants, jusqu’aux clustering hard et soft des items basés sur la similarité.
-
 \section{Approche proposée}
+L’approche proposée se résume comme un pipeline qui évalue la qualité du jeu de données éducative ensuite le regroupement des items basé sur la similarité. La figure \ref{approch} illustre l’approche proposée. \\
+Ces sont les modèles de la théorie des réponses aux items qui sont prit en compte pour prédire la probabilité de réussite. Cette étape est illustrée par le workflow bayésien de la figure \ref{irt_process}. \\
+Et la matrice de similarité des items construite en calculant le coefficient de kappa entre les items qui ont chacun le nombre des réponses correcte et incorrecte avec aide et sans aide obtenu par les apprenants. Cette étape est illustrée par la figure \ref{similarity_steps}. \\
 
+\newpage
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre7/approch.png}
+	\end{center}
+	\caption{L'approche proposée.}
+	\label{approch}
+\end{figure}
 
 \section{Implémentations et résultats expérimentaux}
 
@@ -39,12 +50,12 @@ les outils matériels et logiciels utilisés pour le développement sont :
 	\centering
 	\addtolength{\leftskip} {-4cm}
 	\addtolength{\rightskip}{-4.5cm}
-	\begin{tabular}{|m{5cm}|m{14cm}|}
+	\begin{tabular}{|m{5cm}|m{12cm}|}
 	\hline
 	\rowcolor{blueforest}
 	\color{white} \textbf{Outils | Packages} & \color{white} \textbf{Description}  \\
 	\hline\hline
-	\multicolumn{2}{|m{19cm}|}{\centering Les outils et packages utilisés sur windows 10 : }\\ \hline
+	\multicolumn{2}{|m{17cm}|}{\centering Les outils et packages utilisés sur windows 10 : }\\ \hline
 	\begin{center}
 	    \begin{minipage}{.3\textwidth}
       \includegraphics[width=\textwidth]{images/chapitre7/python.png}
@@ -65,13 +76,6 @@ les outils matériels et logiciels utilisés pour le développement sont :
   \end{center}
   \centering \textbf{Jupyter Notebook} \cite{Kluyver2016jupyter} & Jupyter Notebook est un environnement de programmation interactif basé sur le web utilisé pour programmer en python, R, Ruby, Julia ou encore Scala qui permet de réalisé des notebooks contenant à la fois du texte en markdown et du code en Julia, Python, R etc.  \\ \hline
 
-  \begin{center}
-    \begin{minipage}{.3\textwidth}
-    \includegraphics[width=\textwidth]{images/chapitre7/scikit_learn.png}
-  \end{minipage}
-  \end{center}
-  \centering \textbf{Scikit-learn} \cite{pedregosa2011scikit} & Scikit-learn est une bibliothèque libre Python destinée à l'apprentissage automatique. Elle propose un ensemble d'outils efficace clé en main pour l’analyse et l’exploration de données. Cette bibliothèque prend en charge les algorithmes de classifications, de régression, du clustering, la réduction de dimensionnalité et de prétraitement des données pour l'extraction et la normalisation des caractéristiques.  \\ \hline
-
   \end{tabular}
 	\caption{Indice de validité du clustering Hard}
 	\label{tools}
@@ -83,11 +87,18 @@ les outils matériels et logiciels utilisés pour le développement sont :
 	\centering
 	\addtolength{\leftskip} {-4cm}
 	\addtolength{\rightskip}{-4.5cm}
-	\begin{tabular}{|m{5cm}|m{14cm}|}
+	\begin{tabular}{|m{5cm}|m{12cm}|}
 	\hline
 	\rowcolor{blueforest}
 	\color{white} \textbf{Outils | Packages} & \color{white} \textbf{Description}  \\
 	\hline\hline
+	\begin{center}
+		\begin{minipage}{.3\textwidth}
+		\includegraphics[width=\textwidth]{images/chapitre7/scikit_learn.png}
+	  \end{minipage}
+	  \end{center}
+	  \centering \textbf{Scikit-learn} \cite{pedregosa2011scikit} & Scikit-learn est une bibliothèque libre Python destinée à l'apprentissage automatique. Elle propose un ensemble d'outils efficace clé en main pour l’analyse et l’exploration de données. Cette bibliothèque prend en charge les algorithmes de classifications, de régression, du clustering, la réduction de dimensionnalité et de prétraitement des données pour l'extraction et la normalisation des caractéristiques.  \\ \hline
+	
   %  >>>>>>>>>>>>>>
 	\begin{center}
 	    \begin{minipage}{.3\textwidth}
@@ -123,12 +134,12 @@ les outils matériels et logiciels utilisés pour le développement sont :
 	\centering
 	\addtolength{\leftskip} {-4cm}
 	\addtolength{\rightskip}{-4.5cm}
-	\begin{tabular}{|m{5cm}|m{14cm}|}
+	\begin{tabular}{|m{5cm}|m{12cm}|}
 	\hline
 	\rowcolor{blueforest}
 	\color{white} \textbf{Outils | Packages} & \color{white} \textbf{Description}  \\
 	\hline\hline
-	\multicolumn{2}{|m{19cm}|}{\centering Les outils et packages supplémentaires utilisés sur Linux Ubuntu 20.04 LTS installé sur WSL2 : }\\ \hline
+	\multicolumn{2}{|m{17cm}|}{\centering Les outils et packages supplémentaires utilisés sur Linux Ubuntu 20.04 LTS installé sur WSL2 : }\\ \hline
 	\begin{center}
 	    \begin{minipage}{.3\textwidth}
       \includegraphics[width=\textwidth]{images/chapitre7/stan.png}
@@ -379,7 +390,7 @@ y_pred = np.round(y_pred).astype(int)
 	\rowcolor{blueforest}
 	\color{white} \textbf{Métriques} & \color{white} \textbf{Rasch Model} & \color{white} \textbf{2PL} & \color{white} \textbf{3PL} \\
 	\hline\hline
-	roc\_auc\_score & 0.611 & 0.58 & \\ \hline
+	roc\_auc\_score & 0.611 & 0.59 & 0.58 \\ \hline
 	accuracy & 0.58 & 0.56 & 0.73\\ \hline
 	recall\_score & 0.55 & 0.53 & 0.86\\ \hline
 	Average precision-recall score & 0.81 & 0.80 & 0.80\\ \hline
@@ -401,11 +412,11 @@ y_pred = np.round(y_pred).astype(int)
 	\caption{Rapport de classement (réponse correcte et incorrecte) entre les données observées et les prédictions du modèle de Rasch.}
 \end{table}
 
-\noindent Les évaluations des performances précédentes des modèles tournent autour de 55\% et 60\% pour toutes les métriques utilisées. Dans cette étude, en respectant le workflow bayésien, les calculs et les modèles sont provisoirement acceptés. Cependant, plusieurs problèmes peuvent être à l’origine des scores pas assez bon obtenu comme le manque de données (les étudiants n’ont pas répondu à toutes les questions). Il y’a donc un intérêt de collecter le jeu de données conte tenu des données manquantes. La question qui se pose ici est :
-\begin{itemize}
-	\item Est-ce-que les prédictions des modèles peuvent être considérer comme un ajustement bayésien des réponses aux items ?
-	\item Est-ce-que les modèles améliorent la notation des tests ?
-\end{itemize}
+\noindent Les évaluations des performances précédentes des modèles tournent autour de 55\% et 80\% pour toutes les métriques utilisées. Dans cette étude, en respectant le workflow bayésien, les calculs et les modèles sont provisoirement acceptés. Cependant, plusieurs problèmes peuvent être à l’origine des scores pas assez bon obtenu comme le manque de données (les étudiants n’ont pas répondu à toutes les questions). Il y’a donc un intérêt de collecter le jeu de données conte tenu des données manquantes. %La question qui se pose ici est :
+% \begin{itemize}
+% 	\item Est-ce-que les prédictions des modèles peuvent être considérer comme un ajustement bayésien des réponses aux items ?
+% 	\item Est-ce-que les modèles améliorent la notation des tests ?
+% \end{itemize}
 
 \noindent Dans la section suivante, les données sont utilisées pour faire le clustering des items basés sur la similarité.
 
@@ -435,7 +446,7 @@ y_pred = np.round(y_pred).astype(int)
 \subsection{Clustering hard et soft de la matrice de similarité}
 
 \subsubsection{Création de la matrice de similarité}
-Les données collecter dans la partie [\ref{collect_encoding}] et ceux de l’ajustement bayésien avec le modèle de Rasch (c’est-à dire les prédictions faites faire le modèle d’inférence bayésien) sont utilisée pour créer la matrice de réponse selon quatre catégories : correct avec aide (CH) et sans aide (CS), et incorrect avec aide (IH) et sans aide (IS). La matrice de réponses est ensuite utilisée pour créer la matrice de similarité entre items avec le coefficient de kappa. La figure \ref{similarity_steps} illustre toutes les étapes. 
+Les données collecter dans la partie [\ref{collect_encoding}] et ceux de l’ajustement bayésien avec le modèle de Rasch (c’est-à dire les prédictions faites faire le modèle d’inférence bayésien) sont utilisées pour créer la matrice de réponse selon quatre catégories : correct avec aide (CH) et sans aide (CS), et incorrect avec aide (IH) et sans aide (IS). La matrice de réponses est ensuite utilisée pour créer la matrice de similarité entre items avec le coefficient de kappa. La figure \ref{similarity_steps} illustre toutes les étapes. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -513,32 +524,33 @@ Les objectifs de l’ACP sont :
 Afin d'atteindre ces objectifs, l'ACP calcule de nouvelles variables appelées composantes principales qui sont obtenues sous forme de combinaisons linéaires des variables d'origine. La première composante principale doit avoir la plus grande variance possible (c'est-à-dire l'inertie et donc cette composante « expliquera » ou « extraira » la plus grande partie de l'inertie du tableau de données). La deuxième composante est calculée sous la contrainte d'être orthogonale à la première composante et d'avoir la plus grande inertie possible. Les autres composantes sont calculées de la même manière. Les valeurs de ces nouvelles variables pour les observations sont appelées scores de facteurs, et ces scores de facteurs peuvent être interprétés géométriquement comme les projections des observations sur les composantes principales \cite{abdi2010principal}. \\
 Nous allons appliquer l'analyse en composantes principales avant le clustering, d’abord la visualisation des données ensuite la compression des données après quoi le clustering deviendra précis et efficace.
 
-\paragraph{Visualisation de données}
+\newpage
+\paragraph{Visualisation de données\\}
 On projette notre dataset dans un espace 2D.
 
 \begin{figure}[H]
     \centering
-    \subfloat[\centering Le pourcentage de la variance préserver par les 10 premières composantes.]{{\includegraphics[width=7cm]{images/chapitre7/pca_features.png}}}%
+    \subfloat[\centering Le pourcentage de la variance préserver par les 10 premières composantes.]{{\includegraphics[width=7cm]{images/chapitre7/pca_features1.png}}}%
     \qquad
-    \subfloat[\centering Visualisation en 2D des deux composantes.]{{\includegraphics[width=7cm]{images/chapitre7/features_plot.png} }}%
+    \subfloat[\centering Visualisation en 2D des deux composantes.]{{\includegraphics[width=7cm]{images/chapitre7/features_plot1.png} }}%
     %\caption{Dendrogramme}%
 \end{figure}
 
-\paragraph{Compression de données}
+\paragraph{Compression de données \\}
 
 La compression avec l’ACP réduit la taille du dataset tout en conservant 99\% de la variance des données.
 
 \begin{figure}[H]
     \centering
-    \subfloat[\centering Le pourcentage de la variance préserver par chacune des composantes.]{{\includegraphics[width=7cm]{images/chapitre7/pca_variance_ratio.png}  }}%
+    \subfloat[\centering Le pourcentage de la variance préserver par chacune des composantes.]{{\includegraphics[width=7cm]{images/chapitre7/pca_variance_ratio1.png}  }}%
     \qquad
-    \subfloat[\centering Visualisation de la composante 0 et 3 parmi les 392.]{{\includegraphics[width=7cm]{images/chapitre7/pca_features_compress.png} } }%
+    \subfloat[\centering Visualisation de la composante 0 et 3 parmi les 471.]{{\includegraphics[width=7cm]{images/chapitre7/pca_features_compress1.png} } }%
     %\caption{Dendrogramme}%
 \end{figure}
 
-Visualisation de la composante 0 et 3 parmi les \textbf{392} et l’objet \colorbox{gray!30}{features} ci-dessous sera utiliser pour faire le clustering.
+Visualisation de la composante 0 et 3 parmi les \textbf{471} et l’objet \colorbox{gray!30}{features} ci-dessous sera utiliser pour faire le clustering.
 \begin{lstlisting}[language=Python,label={pca_code}, basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
-	pca = decomposition.PCA(n_components=392)
+	pca = decomposition.PCA(n_components=471)
 	pca.fit(items_similarity)
 	features = pca.transform(items_similarity)
 \end{lstlisting}
@@ -606,22 +618,21 @@ Cependant le critère de liaison utilisé influence les résultats du clustering
 
 \begin{lstlisting}[language=Python,label={pca_code}, basicstyle=\scriptsize, frame=l,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{blueforest!70},rulecolor=\color{blueforest},numberstyle=\normalfont\tiny\color{white}]
 	dendogram = sch.dendrogram(sch.linkage(features, method="average"))
-	hc = AgglomerativeClustering(n_clusters=2,affinity="euclidean",linkage="average")
+	hc = AgglomerativeClustering(n_clusters=3,affinity="euclidean",linkage="average")
 	y_hc = hc.fit_predict(features)
 \end{lstlisting}
 
-
 \begin{figure}[H]
     \centering
-    \subfloat[\centering Les scores des méthodes de liaison.]{{\includegraphics[width=7cm]{images/chapitre7/linkage_method_score.png}  }}%
+    \subfloat[\centering Les scores des méthodes de liaison.]{{\includegraphics[width=7cm]{images/chapitre7/linkage_method_score1.png}  }}%
     \qquad
-    \subfloat[\centering Le dendrogramme du dataset utilisant la méthode de liaison « average ».]{{\includegraphics[width=7cm]{images/chapitre7/dendrogram_of_dataset.png} } }%
+    \subfloat[\centering Le dendrogramme du dataset utilisant la méthode de liaison « average ».]{{\includegraphics[width=7cm]{images/chapitre7/dendrogram_of_dataset1.png} } }%
     %\caption{Dendrogramme}%
 \end{figure}
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[scale=0.2]{images/chapitre7/agglo_clusters.png}
+		\includegraphics[scale=0.4]{images/chapitre7/agglo_clusters1.png}
 	\end{center}
 	\caption{Clusters de la méthode agglomérante}
 	\label{agglo_clusters}
@@ -685,7 +696,7 @@ Le clustering flou C-Means est une approche de clustering soft, où chaque point
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=\textwidth]{images/chapitre7/fuzzy_partition_plot.png}
+		\includegraphics[width=\textwidth]{images/chapitre7/fuzzy_partition_plot1.png}
 	\end{center}
 	\caption{Visualisation des clusters de la méthode fuzzy et le degré d’appartenance des items à chaque cluster.}
 	\label{fuzzy_partition_plot}
@@ -705,48 +716,50 @@ Le clustering flou C-Means est une approche de clustering soft, où chaque point
 	\multicolumn{6}{|m{16cm}|}{\centering \color{white} \textbf{Kmeans clustering} } \\ \hline
 	&  \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
 	\textbf{Nombre de clusters}  &   \textbf{Indice de Dunn} & \textbf{Indice Calinski Harabasz}& \textbf{Indice Davies-Bouldin} & \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
-	2  & 0.43  & \cellcolor{gray!40} 2414  & \cellcolor{gray!40} 0.58   &  \cellcolor{gray!40} 0.62   & 308  \(\displaystyle \thicksim  \) 776  \\ \hline %\cellcolor{gray!40}
-	3  & \cellcolor{gray!40} 0.51  & 1452  & 1.05   &  0.44   & 68   \(\displaystyle \thicksim  \) 719  \\ \hline
-	4  & 0.50  & 1126  & 1.21   &  0.38   & 68   \(\displaystyle \thicksim  \) 719  \\ \hline
-	5  & 0.47  & 937   & 1.27   &  0.306  & 52   \(\displaystyle \thicksim  \) 667  \\ \hline
-	6  & 0.46  & 810   & 1.30   &  0.295  & 43   \(\displaystyle \thicksim  \) 624  \\ \hline
-	7  & 0.45  & 711   & 1.33   &  0.285  & 33   \(\displaystyle \thicksim  \) 591  \\ \hline
-	8  & 0.45  & 626   & 1.29   &  0.289  & 7    \(\displaystyle \thicksim  \) 591  \\ \hline
-	9  & 0.38  & 566   & 1.33   &  0.26   & 7    \(\displaystyle \thicksim  \) 564  \\ \hline
-	10 & 0.37  & 527   & 1.47   &  0.24   & 7    \(\displaystyle \thicksim  \) 564  \\ \hline \hline
+	2  & 0.37  & 811  & \cellcolor{gray!40} 0.87   &  0.435   & 251  \(\displaystyle \thicksim  \) 833  \\ \hline %\cellcolor{gray!40}
+	3  & \cellcolor{gray!40} 0.53  &\cellcolor{gray!40}  938  & 0.94   &  \cellcolor{gray!40} 0.456   & 162  \(\displaystyle \thicksim  \) 671  \\ \hline
+	4  & 0.27  & 802  & 0.9984   &  0.4023   & 116  \(\displaystyle \thicksim  \) 670  \\ \hline
+	5  & 0.29  & 704   & 1.13   &  0.4044  & 79   \(\displaystyle \thicksim  \) 670  \\ \hline
+	6  & 0.50  & 638   & 1.165   &  0.32  & 64   \(\displaystyle \thicksim  \) 607  \\ \hline
+	7  & 0.50  & 583   & 1.07   &  0.337  & 35   \(\displaystyle \thicksim  \) 607  \\ \hline
+	8  & 0.4218  & 539   & 1.16   &  0.315  & 35   \(\displaystyle \thicksim  \) 555  \\ \hline
+	9  & 0.4218  & 503   & 1.10   &  0.318   & 17   \(\displaystyle \thicksim  \) 555  \\ \hline
+	10 & 0.4199  & 474   & 1.17   &  0.309   & 17   \(\displaystyle \thicksim  \) 510  \\ \hline \hline
 	\rowcolor{blueforest}
 	\multicolumn{6}{|m{16cm}|}{\centering \color{white} \textbf{Agglomérative clustering} } \\ \hline
 	&  \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
 	\textbf{Nombre de clusters}  &   \textbf{Indice de Dunn} & \textbf{Indice Calinski Harabasz}& \textbf{Indice Davies-Bouldin} & \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
-	2  & \cellcolor{gray!40} 0.57 & \cellcolor{gray!40} 2368 & \cellcolor{gray!40} 0.58   & \cellcolor{gray!40} 0.62    &  297  \(\displaystyle \thicksim  \)  787  \\ \hline 	
-	3  & 0.51 & 1452 & 1.05   & 0.44    &  68   \(\displaystyle \thicksim  \)  719  \\ \hline
-	4  & 0.48 & 974  & 1.054  & 0.43    &  2    \(\displaystyle \thicksim  \)  717  \\ \hline
-	5  & 0.48 & 733  & 0.937  & 0.41    &  1    \(\displaystyle \thicksim  \)  716  \\ \hline
-	6  & 0.48 & 594  & 0.933  & 0.38    &  1    \(\displaystyle \thicksim  \)  716  \\ \hline
-	7  & 0.48 & 506  & 0.9366 & 0.354   &  1    \(\displaystyle \thicksim  \)  716  \\ \hline
-	8  & 0.48 & 435  & 0.80   & 0.352   &  1    \(\displaystyle \thicksim  \)  716  \\ \hline
-	9  & 0.56 & 444  & 0.89   & 0.34    &  1    \(\displaystyle \thicksim  \)  716  \\ \hline
-	10 & 0.52 & 438  & 0.95   & 0.30    &  1    \(\displaystyle \thicksim  \)  666  \\ \hline \hline
+	2  & 0.3686 & 573     & \cellcolor{gray!40} 0.91   & 0.4259    &  162  \(\displaystyle \thicksim  \)  922  \\ \hline 	
+	3  & 0.533  & \cellcolor{gray!40} 938     & 0.94   & \cellcolor{gray!40} 0.456    &  162  \(\displaystyle \thicksim  \)  671  \\ \hline
+	4  & 0.561  & 722     & 1.143  & 0.407    &  79   \(\displaystyle \thicksim  \)  671  \\ \hline
+	5  & 0.561  & 704     & 1.127  & 0.404    &  79   \(\displaystyle \thicksim  \)  671  \\ \hline
+	6  & 0.561  & 614     & 1.026  & 0.41    &  35   \(\displaystyle \thicksim  \)  671  \\ \hline
+	7  & 0.561  & 542     & 0.976  & 0.406   &  17   \(\displaystyle \thicksim  \)  671  \\ \hline
+	8  & \cellcolor{gray!40} 0.584  & 490.56  & 0.977  & 0.38   &  16   \(\displaystyle \thicksim  \)  655  \\ \hline
+	9  & 0.494  & 441     & 0.963  & 0.373    &  15   \(\displaystyle \thicksim  \)  655  \\ \hline
+	10 & 0.5227 & 451     & 1      & 0.35    &  15   \(\displaystyle \thicksim  \)  591  \\ \hline \hline
 	\rowcolor{blueforest}
 	\multicolumn{6}{|m{16cm}|}{\centering \color{white} \textbf{Fuzzy clustering} } \\ \hline
 	&  \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
 	\textbf{Nombre de clusters}  &   \textbf{FPC} & \textbf{Indice Calinski Harabasz}& \textbf{Indice Davies-Bouldin} & \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
-	2  & \cellcolor{gray!40} 0.865 & \cellcolor{gray!40} 2413.6  & \cellcolor{gray!40} 0.59   &  \cellcolor{gray!40} 0.62    &  308 \(\displaystyle \thicksim  \)  776  \\ \hline 	
-	3  & 0.54  & 1378    & 1.27   &  0.40    &  71  \(\displaystyle \thicksim  \)  705 \\ \hline
-	4  & 0.45  & 1394    & 1.02   &  0.53    &  1   \(\displaystyle \thicksim  \)  776 \\ \hline
-	5  & 0.35  & 708.51  & 2.30   &  -0.008  &  3   \(\displaystyle \thicksim  \)  757 \\ \hline
-	6  & 0.30  & 697     & 3.06   &  0.024   &  1   \(\displaystyle \thicksim  \)  766 \\ \hline
-	7  & 0.26  & 486.75  & 4.2    &  0.011   &  6   \(\displaystyle \thicksim  \)  735 \\ \hline
-	8  & 0.23  & 481.55  & 4.29   &  -0.022  &  1   \(\displaystyle \thicksim  \)  685 \\ \hline
-	9  & 0.20  & 666     & 2.57   &  0.21    &  1   \(\displaystyle \thicksim  \)  680 \\ \hline
-	10 & 0.18  & 408     & 3.72   &  -0.0094 &  1   \(\displaystyle \thicksim  \)  726 \\ \hline \hline
+	2  & \cellcolor{gray!40} 0.72  & 811  & \cellcolor{gray!40} 0.89   &  0.435    &  251 \(\displaystyle \thicksim  \)  833  \\ \hline 	
+	3  & 0.66  & \cellcolor{gray!40} 938  & 0.94   & \cellcolor{gray!40}  0.456    &  162 \(\displaystyle \thicksim  \)  671 \\ \hline
+	4  & 0.47  & 638  & 1.81   &  0.25     &  151 \(\displaystyle \thicksim  \)  574 \\ \hline
+	5  & 0.37  & 664  & 1.53   &  0.29     &  1   \(\displaystyle \thicksim  \)  610 \\ \hline
+	6  & 0.31  & 511  & 1.70   &  0.176    &  1   \(\displaystyle \thicksim  \)  615 \\ \hline
+	7  & 0.27  & 349  & 2.37   &  0.186    &  2   \(\displaystyle \thicksim  \)  615 \\ \hline
+	8  & 0.24  & 418  & 2.15   &  0.194    &  1   \(\displaystyle \thicksim  \)  621 \\ \hline
+	9  & 0.21  & 423  & 2.11   &  0.17     &  1   \(\displaystyle \thicksim  \)  624 \\ \hline
+	10 & 0.20  & 507  & 1.7    &  0.28     &  1   \(\displaystyle \thicksim  \)  603 \\ \hline
   \end{tabular}
 	\caption{Résultats des indices de validité du clustering.}
 	\label{clusters_indice_score}
 \end{table}
 
+Le tableau \ref{clusters_indice_score} montre que le nombre de clusters optimal est 2 avec un indice silhouette de 62\% pour les trois méthodes de clustering utilisées. Cependant le tableau permet de choisir le nombre de clusters qui seront considérer comme des composantes de connaissance. Cette approche peut donc être utilise pour recommander les items qui sont dans un même cluster (composantes de connaissance) où utilise les clusters de la méthodes fuzzy c-means pour séquencer l’apprentissage en recommandant à l’apprenant les items d’un même cluster qui ont des degrés d’appartenance proche c’est-à-dire de proposé un item qui a un degré d’appartenance plus ou moins que celui de l’item précédant selon le score sur le précédant item, où de changer de cluster si l’apprenant réussi l’item qui a un plus faible degré d’appartenance.
+
 \section{Conclusion}
 Ce chapitre se résume comme un pipeline pour travailler avec les données éducatives. D’abord une analyse des réponses des apprenants en utilisant le workflow bayésien avec des modèles de la théorie des réponses aux items et une classification hard et soft des items basé sur la similarité. La théorie des réponses aux items a permis d’analyse les scores des apprenants afin d’estimer les propriétés métriques
-des items et le niveau des apprenants par rapport au trait latent considéré, ensuite les valeurs des paramètres des modèles ont été utilisé pour prédire la probabilité de réussite à un item. Les prédictions faites par les modèles permettent d’examiner la qualité de l’échelle de mesure qui a été utilisé par le système où les données ont été collecter et montrent la qualité du jeu de données, c’est-à-dire si le jeu de données peut être utilisé pour une étude. La classification hard et soft des items basé sur la similarité est l’étude qui a été réalisé avec le jeu de données.
+des items et le niveau des apprenants par rapport au trait latent considéré, ensuite les valeurs des paramètres des modèles ont été utilisé pour prédire la probabilité de réussite à un item. Les prédictions faites par les modèles permettent d’examiner la qualité de l’échelle de mesure qui a été utilisé par le système où les données ont été collecter et montrent la qualité du jeu de données, c’est-à-dire si le jeu de données peut être utilisé pour une étude. La classification hard et soft des items basé sur la similarité est l’étude qui a été réalisé avec le jeu de données pour regrouper les items en composante de connaissance.
 
  

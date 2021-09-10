@@ -369,7 +369,7 @@ En dehors des méthodes de clustering hiérarchique, partitionnel et floue (fuzz
 	\centering
 	\addtolength{\leftskip} {-3cm}
 	\addtolength{\rightskip}{-4cm}
-	\begin{tabular}{|m{3cm}|m{4cm}|m{5cm}|m{3cm}|m{2cm}|} %\rule{0pt}{1.5\normalbaselineskip}
+	\begin{tabular}{|m{3cm}|m{4cm}|m{4cm}|m{3cm}|m{2cm}|} %\rule{0pt}{1.5\normalbaselineskip}
 	\hline
 	\rowcolor{blueforest}
 	\color{white} \textbf{Clustering Method} & \color{white} \textbf{Description} & \color{white} \textbf{Advantages} & \color{white} \textbf{Disadvantages} & \color{white} \textbf{Algorithms}\\
@@ -390,12 +390,12 @@ Les algorithmes supervisés ont beaucoup de métriques pour vérifier leur quali
 	\centering
 	\addtolength{\leftskip} {-4cm}
 	\addtolength{\rightskip}{-4.5cm}
-	\begin{tabular}{|m{2cm}|m{5cm}|m{11cm}|}
+	\begin{tabular}{|m{2cm}|m{5cm}|m{10cm}|}
 	\hline
 	\rowcolor{blueforest}
 	\color{white} \textbf{Indice} & \color{white} \textbf{Description} & \color{white} \textbf{Formule}  \\
 	\hline\hline
-	\multicolumn{3}{|m{18cm}|}{\centering \textbf{Les indices de validité adaptés aux clustering partitionnelle} }\\ \hline
+	\multicolumn{3}{|m{17cm}|}{\centering \textbf{Les indices de validité adaptés aux clustering partitionnelle} }\\ \hline
 	\textbf{Indice de Dunn}  &
 	Il est l'un des indices les plus anciens et les plus cités est proposé par \cite{dunn1974well}. L'index de Dunn (DU) identifie les clusters qui sont bien séparés et compacts. Le but est donc de maximiser la distance inter-clusters tout en minimisant la distance intra-cluster. &  \(\displaystyle DU_{k} = \min_{i=1,..,k} \Bigg \{ \min_{j=1+1,..,k} \Bigg ( \frac{diss(c_{i},c_{j})}{\max_{m=1,...,k}diam(c_{m})} \Bigg ) \Bigg \} \) \newline \newline où \(\displaystyle diss(c_{i},c_{j}) = \min_{x \in c_{i},y \in c_{j}}d(x,y) \) est la dissemblance entre les clusters \(\displaystyle c_{i} \) et \(\displaystyle c_{j}  \), et \(\displaystyle diam(C) = \max_{x,y \in C}d(x,y) \) est la fonction intra-cluster (ou diamètre) du cluster. Si l'index de Dunn est grand, cela signifie qu'il existe des clusters compacts et bien séparés \cite{Saitta2008}. \\ \hline
 	\textbf{Indice Calinski-Harabasz}  &
@@ -411,12 +411,12 @@ Les algorithmes supervisés ont beaucoup de métriques pour vérifier leur quali
 	\centering
 	\addtolength{\leftskip} {-4cm}
 	\addtolength{\rightskip}{-4.5cm}
-	\begin{tabular}{|m{7cm}|m{12cm}|}
+	\begin{tabular}{|m{7cm}|m{10cm}|}
 	\hline
 	\rowcolor{blueforest}
 	\color{white} \textbf{Indice} & \color{white} \textbf{Formule}  \\
 	\hline\hline
-	\multicolumn{2}{|m{19cm}|}{Il y’a aussi d’autre indice de validité de clustering partitionnel comme l’indice de Maulik-Bandyopadhyay et Geometric index. Les indices de validité utilisé pour le fuzzy clustering sont : }\\ \hline
+	\multicolumn{2}{|m{17cm}|}{Il y’a aussi d’autre indice de validité de clustering partitionnel comme l’indice de Maulik-Bandyopadhyay et Geometric index. Les indices de validité utilisé pour le fuzzy clustering sont : }\\ \hline
 	  \textbf{Le coefficient de partition \(\displaystyle PC \) \cite{bezdek1974numerical} }  & \(\displaystyle V_{PC} = \frac{1}{n} \sum_{i=1}^{c} \sum_{j=1}^{n} u_{ij}^{2} \) \\ \hline
 	  \textbf{L'entropie de partition \(\displaystyle PE \) \cite{bezdek1973cluster} }  & \(\displaystyle V_{PE} = - \frac{1}{n} \sum_{i=1}^{c} \sum_{j=1}^{n} u_{ij} \log u_{ij} \) \\ \hline
 	  \textbf{Fonction de validité proposée par Wu et Yang \cite{wu2005cluster} }  & \(\displaystyle V_{PCAES} = \sum_{i=1}^{c} PCAES_{i} = \sum_{i=1}^{c} \sum_{j=1}^{n}u_{ij}^{2}/u_{M} - \sum_{i=1}^{c} \exp (- \min_{k \neq i} \{ \left\lVert v_{i} - v_{k} \right\rVert^{2} / \beta_{T}   \} ) \) \newline où \(\displaystyle u_{M} = \min_{1 \leq i \leq  c} \Bigg \{ \sum_{j=1}^{n} u_{ij}^{2} \Bigg \}\), \(\displaystyle \beta_{T} = \frac{\sum_{l=1}^{c} \left\lVert v_{l} - \overline{v} \right\rVert^{2} }{c}   \) et \(\displaystyle \overline{v} = \sum_{j=1}^{n} x_{j}/n  \) \newline La grande valeur VPCAES signifie que les \(\displaystyle c  \) clusters sont compact et séparé les uns des autres, et la petite valeur VPCAES implique qu’ils ne sont pas compacts ou séparés.  \\ \hline

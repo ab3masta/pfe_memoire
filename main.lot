@@ -27,16 +27,19 @@
 \contentsline {table}{\numberline {5.5}{\ignorespaces Indice de validité du clustering Soft\relax }}{78}{table.caption.43}%
 \contentsline {xpart}{Contributions}{80}{part.2}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Contribution and Results}{80}{chapter.6}%
-\contentsline {table}{\numberline {6.1}{\ignorespaces Caractéristiques du matériels utilisés\relax }}{81}{table.caption.44}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces Indice de validité du clustering Hard\relax }}{82}{table.caption.45}%
-\contentsline {table}{\numberline {6.3}{\ignorespaces Indice de validité du clustering Hard\relax }}{83}{table.caption.46}%
-\contentsline {table}{\numberline {6.4}{\ignorespaces Indice de validité du clustering Hard\relax }}{84}{table.caption.47}%
-\contentsline {table}{\numberline {6.5}{\ignorespaces Description et statistiques du jeu de données.\relax }}{84}{table.caption.48}%
-\contentsline {table}{\numberline {6.6}{\ignorespaces Les différents scores du modèle de Rasch, modèle logistique à deux paramètres et le modèle à trois paramètres.\relax }}{93}{table.caption.58}%
-\contentsline {table}{\numberline {6.7}{\ignorespaces Rapport de classement (réponse correcte et incorrecte) entre les données observées et les prédictions du modèle de Rasch.\relax }}{93}{table.caption.59}%
-\contentsline {table}{\numberline {6.8}{\ignorespaces Résultats des indices de validité du clustering.\relax }}{102}{table.caption.66}%
+\contentsline {xchapter}{Contribution et résultats}{80}{chapter.6}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Caractéristiques du matériels utilisés\relax }}{83}{table.caption.45}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Indice de validité du clustering Hard\relax }}{84}{table.caption.46}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Indice de validité du clustering Hard\relax }}{85}{table.caption.47}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Indice de validité du clustering Hard\relax }}{86}{table.caption.48}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces Description et statistiques du jeu de données.\relax }}{86}{table.caption.49}%
+\contentsline {table}{\numberline {6.6}{\ignorespaces Les différents scores du modèle de Rasch, modèle logistique à deux paramètres et le modèle à trois paramètres.\relax }}{95}{table.caption.59}%
+\contentsline {table}{\numberline {6.7}{\ignorespaces Rapport de classement (réponse correcte et incorrecte) entre les données observées et les prédictions du modèle de Rasch.\relax }}{95}{table.caption.60}%
+\contentsline {table}{\numberline {6.8}{\ignorespaces Résultats des indices de validité du clustering.\relax }}{104}{table.caption.67}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Les modèles IRT en code Stan.}{106}{appendix.A}%
+\contentsline {xchapter}{Les modèles IRT en code Stan.}{108}{appendix.A}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Les distributions des modèles.}{112}{appendix.B}%
+\contentsline {xchapter}{Les distributions des modèles.}{114}{appendix.B}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Comparaison des résultats utilisant les scores observés et les scores prédit par les modèles IRT.}{118}{appendix.C}%
+\contentsline {table}{\numberline {C.1}{\ignorespaces Résultats des indices de validité du clustering utilisant la matrice de similarité créer avec les prédit par les modèles IRT.\relax }}{120}{table.caption.76}%

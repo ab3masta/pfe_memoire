@@ -65,9 +65,9 @@
 \BOOKMARK [2][-]{subsection.4.2.2}{probabilit\351 conditionnelle et th\351or\350me de bayes}{section.4.2}% 65
 \BOOKMARK [2][-]{subsection.4.2.3}{L\220approche Bay\351sienne}{section.4.2}% 66
 \BOOKMARK [2][-]{subsection.4.2.4}{Th\351or\350me de bayes dans la cadre de l\220application de l\220approche Bay\351sienne}{section.4.2}% 67
-\BOOKMARK [3][-]{subsubsection.4.2.4.1}{Posterior distribution}{subsection.4.2.4}% 68
-\BOOKMARK [3][-]{subsubsection.4.2.4.2}{Likelihood}{subsection.4.2.4}% 69
-\BOOKMARK [3][-]{subsubsection.4.2.4.3}{Prior distribution}{subsection.4.2.4}% 70
+\BOOKMARK [3][-]{subsubsection.4.2.4.1}{La distribution \340 posteriori}{subsection.4.2.4}% 68
+\BOOKMARK [3][-]{subsubsection.4.2.4.2}{Fonction de vraisemblance}{subsection.4.2.4}% 69
+\BOOKMARK [3][-]{subsubsection.4.2.4.3}{La distribution \340 priori}{subsection.4.2.4}% 70
 \BOOKMARK [3][-]{subsubsection.4.2.4.4}{Chaine de Markov Monte Carlo \(MCMC\)}{subsection.4.2.4}% 71
 \BOOKMARK [4][-]{paragraph.4.2.4.4.1}{Th\351or\350me de convergence des cha\356nes de Markov entezari2018bayesian meyn2012markov rosenthal2006first }{subsubsection.4.2.4.4}% 72
 \BOOKMARK [4][-]{paragraph.4.2.4.4.2}{Algorithme de Metropolis-Hastings }{subsubsection.4.2.4.4}% 73
@@ -127,7 +127,7 @@
 \BOOKMARK [1][-]{section.5.9}{Indice de validit\351 du clustering}{chapter.5}% 127
 \BOOKMARK [1][-]{section.5.10}{Conclusion}{chapter.5}% 128
 \BOOKMARK [-1][-]{part.2}{II Contributions}{}% 129
-\BOOKMARK [0][-]{chapter.6}{Contribution and Results}{part.2}% 130
+\BOOKMARK [0][-]{chapter.6}{Contribution et r\351sultats}{part.2}% 130
 \BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 131
 \BOOKMARK [1][-]{section.6.2}{Approche propos\351e}{chapter.6}% 132
 \BOOKMARK [1][-]{section.6.3}{Impl\351mentations et r\351sultats exp\351rimentaux}{chapter.6}% 133
@@ -143,7 +143,7 @@
 \BOOKMARK [3][-]{subsubsection.6.3.4.1}{Cr\351ation de la matrice de similarit\351}{subsection.6.3.4}% 143
 \BOOKMARK [3][-]{subsubsection.6.3.4.2}{Analyse en composantes principales \(ACP\)}{subsection.6.3.4}% 144
 \BOOKMARK [4][-]{paragraph.6.3.4.2.1}{Visualisation de donn\351es}{subsubsection.6.3.4.2}% 145
-\BOOKMARK [4][-]{paragraph.6.3.4.2.2}{Compression de donn\351es}{subsubsection.6.3.4.2}% 146
+\BOOKMARK [4][-]{paragraph.6.3.4.2.2}{Compression de donn\351es }{subsubsection.6.3.4.2}% 146
 \BOOKMARK [3][-]{subsubsection.6.3.4.3}{Clustering hard}{subsection.6.3.4}% 147
 \BOOKMARK [4][-]{paragraph.6.3.4.3.1}{K-means Clustering}{subsubsection.6.3.4.3}% 148
 \BOOKMARK [4][-]{paragraph.6.3.4.3.2}{Clustering hi\351rarchique agglom\351rative}{subsubsection.6.3.4.3}% 149
@@ -151,7 +151,8 @@
 \BOOKMARK [3][-]{subsubsection.6.3.4.5}{Validation du clustering}{subsection.6.3.4}% 151
 \BOOKMARK [1][-]{section.6.4}{Conclusion}{chapter.6}% 152
 \BOOKMARK [-1][-]{section.6.4}{Conclusion G\351n\351rale}{}% 153
-\BOOKMARK [-1][-]{chapter*.67}{Annexe}{}% 154
-\BOOKMARK [0][-]{appendix.A}{Les mod\350les IRT en code Stan.}{chapter*.67}% 155
-\BOOKMARK [0][-]{appendix.B}{Les distributions des mod\350les.}{chapter*.67}% 156
-\BOOKMARK [0][-]{appendix*.72}{Bibliographie}{chapter*.67}% 157
+\BOOKMARK [-1][-]{chapter*.68}{Annexe}{}% 154
+\BOOKMARK [0][-]{appendix.A}{Les mod\350les IRT en code Stan.}{chapter*.68}% 155
+\BOOKMARK [0][-]{appendix.B}{Les distributions des mod\350les.}{chapter*.68}% 156
+\BOOKMARK [0][-]{appendix.C}{Comparaison des r\351sultats utilisant les scores observ\351s et les scores pr\351dit par les mod\350les IRT.}{chapter*.68}% 157
+\BOOKMARK [0][-]{appendix*.77}{Bibliographie}{chapter*.68}% 158

@@ -4,9 +4,9 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}probabilité conditionnelle et théorème de bayes}{\reset@font\mtcSSfont 37}{subsection.4.2.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.3}L’approche Bayésienne}{\reset@font\mtcSSfont 38}{subsection.4.2.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.4}Théorème de bayes dans la cadre de l’application de l’approche Bayésienne}{\reset@font\mtcSSfont 38}{subsection.4.2.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.2.4.1}Posterior distribution}{\reset@font\mtcSSSfont 39}{subsubsection.4.2.4.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.2.4.2}Likelihood}{\reset@font\mtcSSSfont 39}{subsubsection.4.2.4.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.2.4.3}Prior distribution}{\reset@font\mtcSSSfont 40}{subsubsection.4.2.4.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.2.4.1}La distribution à posteriori}{\reset@font\mtcSSSfont 39}{subsubsection.4.2.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.2.4.2}Fonction de vraisemblance}{\reset@font\mtcSSSfont 39}{subsubsection.4.2.4.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.2.4.3}La distribution à priori}{\reset@font\mtcSSSfont 40}{subsubsection.4.2.4.3}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.2.4.4}Chaine de Markov Monte Carlo (MCMC)}{\reset@font\mtcSSSfont 40}{subsubsection.4.2.4.4}}
 {\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {4.2.4.4.1}Théorème de convergence des chaînes de Markov \cite {entezari2018bayesian} \cite {meyn2012markov} \cite {rosenthal2006first} \\}{\reset@font\mtcPfont 42}{paragraph.4.2.4.4.1}}
 {\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode \numberline {4.2.4.4.2}Algorithme de Metropolis-Hastings \\}{\reset@font\mtcPfont 43}{paragraph.4.2.4.4.2}}

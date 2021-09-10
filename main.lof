@@ -43,30 +43,38 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Illustration du degré d’appartenance des éléments au cluster.}}}{74}{subfigure.5.2}%
 \contentsline {xpart}{Contributions}{80}{part.2}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Contribution and Results}{80}{chapter.6}%
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Le pre-processing du dataset.\relax }}{85}{figure.caption.49}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Les étapes du workflow bayésien \cite {gelman2020bayesian}.\relax }}{87}{figure.caption.50}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces L’objet stanfit du modèle de Rasch.\relax }}{89}{figure.caption.51}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Les distributions postérieures du modèle de Rasch.\relax }}{90}{figure.caption.52}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Distribution postérieure de la capacité de l’apprenant[72] et de la difficulté de l’item[563] du modèle de Rasch.\relax }}{90}{figure.caption.53}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces BFMI du modèle de Rasch.\relax }}{91}{figure.caption.54}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Le Rhat du modèle de Rasch.\relax }}{91}{figure.caption.55}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces La sortie de la divergence du modèle de Rasch.\relax }}{92}{figure.caption.56}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Représentation graphique du taux de vrais positifs par rapport au taux de faux positifs des trois modèles utilisés.\relax }}{93}{figure.caption.57}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Les étapes de calcule de la matrice de similarité.\relax }}{94}{figure.caption.60}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Le pourcentage de la variance préserver par les 10 premières composantes.}}}{97}{subfigure.11.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Visualisation en 2D des deux composantes.}}}{97}{subfigure.11.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Le pourcentage de la variance préserver par chacune des composantes.}}}{97}{subfigure.11.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering Visualisation de la composante 0 et 3 parmi les 392.}}}{97}{subfigure.11.4}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\centering Les scores des méthodes de liaison.}}}{99}{subfigure.11.5}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\centering Le dendrogramme du dataset utilisant la méthode de liaison « average ».}}}{99}{subfigure.11.6}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Clusters de la méthode agglomérante\relax }}{99}{figure.caption.64}%
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Visualisation des clusters de la méthode fuzzy et le degré d’appartenance des items à chaque cluster.\relax }}{101}{figure.caption.65}%
+\contentsline {xchapter}{Contribution et résultats}{80}{chapter.6}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces L'approche proposée.\relax }}{82}{figure.caption.44}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Le pre-processing du dataset.\relax }}{87}{figure.caption.50}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Les étapes du workflow bayésien \cite {gelman2020bayesian}.\relax }}{89}{figure.caption.51}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces L’objet stanfit du modèle de Rasch.\relax }}{91}{figure.caption.52}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Les distributions postérieures du modèle de Rasch.\relax }}{92}{figure.caption.53}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Distribution postérieure de la capacité de l’apprenant[72] et de la difficulté de l’item[563] du modèle de Rasch.\relax }}{92}{figure.caption.54}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces BFMI du modèle de Rasch.\relax }}{93}{figure.caption.55}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Le Rhat du modèle de Rasch.\relax }}{93}{figure.caption.56}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces La sortie de la divergence du modèle de Rasch.\relax }}{94}{figure.caption.57}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Représentation graphique du taux de vrais positifs par rapport au taux de faux positifs des trois modèles utilisés.\relax }}{95}{figure.caption.58}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Les étapes de calcule de la matrice de similarité.\relax }}{96}{figure.caption.61}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Le pourcentage de la variance préserver par les 10 premières composantes.}}}{99}{subfigure.12.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Visualisation en 2D des deux composantes.}}}{99}{subfigure.12.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Le pourcentage de la variance préserver par chacune des composantes.}}}{99}{subfigure.12.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering Visualisation de la composante 0 et 3 parmi les 471.}}}{99}{subfigure.12.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\centering Les scores des méthodes de liaison.}}}{101}{subfigure.12.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\centering Le dendrogramme du dataset utilisant la méthode de liaison « average ».}}}{101}{subfigure.12.6}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Clusters de la méthode agglomérante\relax }}{101}{figure.caption.65}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Visualisation des clusters de la méthode fuzzy et le degré d’appartenance des items à chaque cluster.\relax }}{103}{figure.caption.66}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Les modèles IRT en code Stan.}{106}{appendix.A}%
+\contentsline {xchapter}{Les modèles IRT en code Stan.}{108}{appendix.A}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Les distributions des modèles.}{112}{appendix.B}%
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Les distributions postérieures du modèle logistique à deux paramètres.\relax }}{112}{figure.caption.68}%
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Distribution postérieure de la capacité de l’apprenant[72], de la difficulté de l’item[563] et de la discrimination de l’item[563] du modèle 2PL.\relax }}{113}{figure.caption.69}%
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Les distributions postérieures du modèle logistique à trois paramètres.\relax }}{114}{figure.caption.70}%
-\contentsline {figure}{\numberline {B.4}{\ignorespaces Distribution postérieure de la capacité de l’apprenant[72], de la difficulté de l’item[563], de la discrimination de l’item[563] et de la chance de deviner la reponse correcte de l'item[563] du modèle 2PL.\relax }}{115}{figure.caption.71}%
+\contentsline {xchapter}{Les distributions des modèles.}{114}{appendix.B}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Les distributions postérieures du modèle logistique à deux paramètres.\relax }}{114}{figure.caption.69}%
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Distribution postérieure de la capacité de l’apprenant[72], de la difficulté de l’item[563] et de la discrimination de l’item[563] du modèle 2PL.\relax }}{115}{figure.caption.70}%
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Les distributions postérieures du modèle logistique à trois paramètres.\relax }}{116}{figure.caption.71}%
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Distribution postérieure de la capacité de l’apprenant[72], de la difficulté de l’item[563], de la discrimination de l’item[563] et de la chance de deviner la reponse correcte de l'item[563] du modèle 2PL.\relax }}{117}{figure.caption.72}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Comparaison des résultats utilisant les scores observés et les scores prédit par les modèles IRT.}{118}{appendix.C}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Visualisation en 2D des deux premières composantes de la matrice de similarité créer avec les scores observés.}}}{118}{subfigure.1.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Visualisation en 2D des deux premières composantes de la matrice de similarité créer avec les scores prédit par les modèles IRT.}}}{118}{subfigure.1.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Le dendrogramme utilisant la méthode de liaison « average » de la matrice de similarité créer avec les scores observés.}}}{118}{subfigure.1.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering Le dendrogramme utilisant la méthode de liaison « average » de la matrice de similarité créer avec les prédit par les modèles IRT.}}}{118}{subfigure.1.4}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Visualisation des clusters de la méthode fuzzy et le degré d’appartenance des items à chaque cluster utilisant la matrice de similarité créer avec les prédit par les modèles IRT.\relax }}{119}{figure.caption.75}%

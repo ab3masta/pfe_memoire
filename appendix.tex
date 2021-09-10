@@ -227,6 +227,7 @@
 \end{lstlisting}
 
 \chapter{Les distributions des modèles.}
+
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/annexe/model_plot-trace2.png}
@@ -258,3 +259,84 @@
 	\caption{Distribution postérieure de la capacité de l’apprenant[72], de la difficulté de l’item[563], de la discrimination de l’item[563] et de la chance de deviner la reponse correcte de l'item[563] du modèle 2PL.}
 	\label{params_posterior_distribution_3pl}
 \end{figure}
+
+\chapter{Comparaison des résultats utilisant les scores observés et les scores prédit par les modèles IRT.}
+
+\begin{figure}[H]
+    \centering
+    \subfloat[\centering Visualisation en 2D des deux premières composantes de la matrice de similarité créer avec les scores observés.]{{\includegraphics[width=7cm]{images/chapitre7/features_plot.png}}}%
+    \qquad
+    \subfloat[\centering Visualisation en 2D des deux premières composantes de la matrice de similarité créer avec les scores prédit par les modèles IRT.]{{\includegraphics[width=7cm]{images/chapitre7/features_plot1.png} }}%
+    %\caption{Dendrogramme}%
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \subfloat[\centering Le dendrogramme utilisant la méthode de liaison « average » de la matrice de similarité créer avec les scores observés.]{{\includegraphics[width=7cm]{images/chapitre7/dendrogram_of_dataset.png}  }}%
+    \qquad
+    \subfloat[\centering Le dendrogramme utilisant la méthode de liaison « average » de la matrice de similarité créer avec les prédit par les modèles IRT.]{{\includegraphics[width=7cm]{images/chapitre7/dendrogram_of_dataset1.png} } }%
+    %\caption{Dendrogramme}%
+\end{figure}
+
+\newpage
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\textwidth]{images/chapitre7/fuzzy_partition_plot.png}
+	\end{center}
+	\caption{Visualisation des clusters de la méthode fuzzy et le degré d’appartenance des items à chaque cluster utilisant la matrice de similarité créer avec les prédit par les modèles IRT.}
+	\label{fuzzy_partition_plot0}
+\end{figure}
+
+\newpage
+
+\vspace{2em}
+\begin{table}[H]
+	\centering
+	\addtolength{\leftskip} {-4cm}
+	\addtolength{\rightskip}{-4.5cm}
+	\begin{tabular}{|m{2cm}|m{2cm}|m{2cm}|m{2cm}|m{2cm}|m{3cm}|}
+	\hline
+	\rowcolor{blueforest}
+	\multicolumn{6}{|m{16cm}|}{\centering \color{white} \textbf{Kmeans clustering} } \\ \hline
+	&  \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
+	\textbf{Nombre de clusters}  &   \textbf{Indice de Dunn} & \textbf{Indice Calinski Harabasz}& \textbf{Indice Davies-Bouldin} & \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
+	2  & 0.43  & \cellcolor{gray!40} 2414  & \cellcolor{gray!40} 0.58   &  \cellcolor{gray!40} 0.62   & 308  \(\displaystyle \thicksim  \) 776  \\ \hline %\cellcolor{gray!40}
+	3  & \cellcolor{gray!40} 0.51  & 1452  & 1.05   &  0.44   & 68   \(\displaystyle \thicksim  \) 719  \\ \hline
+	4  & 0.50  & 1126  & 1.21   &  0.38   & 68   \(\displaystyle \thicksim  \) 719  \\ \hline
+	5  & 0.47  & 937   & 1.27   &  0.306  & 52   \(\displaystyle \thicksim  \) 667  \\ \hline
+	6  & 0.46  & 810   & 1.30   &  0.295  & 43   \(\displaystyle \thicksim  \) 624  \\ \hline
+	7  & 0.45  & 711   & 1.33   &  0.285  & 33   \(\displaystyle \thicksim  \) 591  \\ \hline
+	8  & 0.45  & 626   & 1.29   &  0.289  & 7    \(\displaystyle \thicksim  \) 591  \\ \hline
+	9  & 0.38  & 566   & 1.33   &  0.26   & 7    \(\displaystyle \thicksim  \) 564  \\ \hline
+	10 & 0.37  & 527   & 1.47   &  0.24   & 7    \(\displaystyle \thicksim  \) 564  \\ \hline \hline
+	\rowcolor{blueforest}
+	\multicolumn{6}{|m{16cm}|}{\centering \color{white} \textbf{Agglomérative clustering} } \\ \hline
+	&  \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
+	\textbf{Nombre de clusters}  &   \textbf{Indice de Dunn} & \textbf{Indice Calinski Harabasz}& \textbf{Indice Davies-Bouldin} & \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
+	2  & \cellcolor{gray!40} 0.57 & \cellcolor{gray!40} 2368 & \cellcolor{gray!40} 0.58   & \cellcolor{gray!40} 0.62    &  297  \(\displaystyle \thicksim  \)  787  \\ \hline 	
+	3  & 0.51 & 1452 & 1.05   & 0.44    &  68   \(\displaystyle \thicksim  \)  719  \\ \hline
+	4  & 0.48 & 974  & 1.054  & 0.43    &  2    \(\displaystyle \thicksim  \)  717  \\ \hline
+	5  & 0.48 & 733  & 0.937  & 0.41    &  1    \(\displaystyle \thicksim  \)  716  \\ \hline
+	6  & 0.48 & 594  & 0.933  & 0.38    &  1    \(\displaystyle \thicksim  \)  716  \\ \hline
+	7  & 0.48 & 506  & 0.9366 & 0.354   &  1    \(\displaystyle \thicksim  \)  716  \\ \hline
+	8  & 0.48 & 435  & 0.80   & 0.352   &  1    \(\displaystyle \thicksim  \)  716  \\ \hline
+	9  & 0.56 & 444  & 0.89   & 0.34    &  1    \(\displaystyle \thicksim  \)  716  \\ \hline
+	10 & 0.52 & 438  & 0.95   & 0.30    &  1    \(\displaystyle \thicksim  \)  666  \\ \hline \hline
+	\rowcolor{blueforest}
+	\multicolumn{6}{|m{16cm}|}{\centering \color{white} \textbf{Fuzzy clustering} } \\ \hline
+	&  \multicolumn{4}{|m{8cm}|}{\centering \textbf{Indice de validité} } & \\ \hline
+	\textbf{Nombre de clusters}  &   \textbf{FPC} & \textbf{Indice Calinski Harabasz}& \textbf{Indice Davies-Bouldin} & \textbf{Silhouette score}  &  \textbf{Nombre d'items dans un cluster }\\ \hline
+	2  & \cellcolor{gray!40} 0.865 & \cellcolor{gray!40} 2413.6  & \cellcolor{gray!40} 0.59   &  \cellcolor{gray!40} 0.62    &  308 \(\displaystyle \thicksim  \)  776  \\ \hline 	
+	3  & 0.54  & 1378    & 1.27   &  0.40    &  71  \(\displaystyle \thicksim  \)  705 \\ \hline
+	4  & 0.45  & 1394    & 1.02   &  0.53    &  1   \(\displaystyle \thicksim  \)  776 \\ \hline
+	5  & 0.35  & 708.51  & 2.30   &  -0.008  &  3   \(\displaystyle \thicksim  \)  757 \\ \hline
+	6  & 0.30  & 697     & 3.06   &  0.024   &  1   \(\displaystyle \thicksim  \)  766 \\ \hline
+	7  & 0.26  & 486.75  & 4.2    &  0.011   &  6   \(\displaystyle \thicksim  \)  735 \\ \hline
+	8  & 0.23  & 481.55  & 4.29   &  -0.022  &  1   \(\displaystyle \thicksim  \)  685 \\ \hline
+	9  & 0.20  & 666     & 2.57   &  0.21    &  1   \(\displaystyle \thicksim  \)  680 \\ \hline
+	10 & 0.18  & 408     & 3.72   &  -0.0094 &  1   \(\displaystyle \thicksim  \)  726 \\ \hline
+  \end{tabular}
+	\caption{Résultats des indices de validité du clustering utilisant la matrice de similarité créer avec les prédit par les modèles IRT.}
+	\label{clusters_indice_score0}
+\end{table}

@@ -18,7 +18,7 @@ L'inférence bayésienne est une méthode d'apprentissage des valeurs des param�
 Les probabilités conditionnelles jouent un rôle central dans le processus d'inférence sur le monde incertain. La probabilité conditionnelle est définie comme la probabilité qu'un événement ou un résultat se produise, sur la base de l'occurrence d'un événement ou d'un résultat précédent. La probabilité conditionnelle fait référence aux chances qu'un résultat se produise étant donné qu'un autre événement s'est également produit. Il est souvent indiqué comme la probabilité de B étant donné A et s'écrit P(B|A), où la probabilité de B dépend de celle que A se produise. La formule de la probabilité conditionnelle est :
 
 \begin{equation}
-	Pr(B|A) = \frac{Pr(A|B)}{Pr(A)}
+	Pr(B|A) = \frac{Pr(A \cap B)}{Pr(A)}
 	\label{conditionnelle_probability}
 \end{equation}
 
@@ -65,7 +65,7 @@ Où,
 	\label{prior_likelihood_posterior}
 \end{figure}
 
-\subsubsection{Posterior distribution}
+\subsubsection{La distribution à posteriori}
 La probabilité postérieure est la probabilité qu'un événement se produise après que toutes les informations sur le système étudier aient été prises en compte. Elle est étroitement liée à la probabilité antérieure, qui est la probabilité qu'un événement se produise avant la pris en compte de nouvelles preuves. Elle est comme un ajustement sur la probabilité antérieure.
 
 \begin{equation}
@@ -79,11 +79,11 @@ La probabilité postérieure est la probabilité qu'un événement se produise a
 Par exemple, les données historiques suggèrent qu'environ 60\% des étudiants qui commencent l'université obtiendront leur diplôme dans les 6 ans. C'est la probabilité a priori. Cependant, ce chiffre est en réalité bien inférieur. Alors les preuves collecter peuvent suggérer que le chiffre réel est en fait plus proche de 50\% ; c'est la probabilité postérieure. \\
 La distribution à posteriori est un moyen de résumer les connaissances ou les informations sur les quantités incertaines en analyse bayésienne. C'est une combinaison de la distribution a priori et de la fonction de vraisemblance, qui indique les informations contenues dans les données observées (les « nouvelles preuves »).
 
-\subsubsection{Likelihood}
+\subsubsection{Fonction de vraisemblance}
 Habituellement lorsque l’on parle de distribution de probabilité, on suppose que nous connaissons les valeurs des paramètres. Aussi appelé fonction de vraisemblance (ou plus simplement vraisemblance), c’est une fonction des paramètres d'un modèle statistique calculée à partir de données observées \cite{fisher1922mathematical}. C’est-à-dire la probabilité d’observer les données sous un certain modèle. Par exemple, la probabilité des données sachant \(\displaystyle \theta \) en utilisant l'equation \ref{theoreme_bayes3}.
 En inférence bayésienne, cette vraisemblance peut être interprète comme la densité de probabilité des données conditionnellement à une valeur des paramètres et comme une mesure de l'information apportée par les données sur la valeur des paramètres.
 
-\subsubsection{Prior distribution}
+\subsubsection{La distribution à priori}
 La distribution à priori capture la connaissance ou l’information apriori. Elle permet de mettre en forme les connaissances ou les informations avant de faire l’expérimentation. Ces sont des distribution subjective sans tenir compte des données. \\
 Ensuite Il y’a la probabilité des données, qui est défini par :
 

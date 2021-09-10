@@ -358,7 +358,7 @@ M.~Plummer {\em et~al.}, ``Jags: A program for analysis of bayesian graphical
 
 \bibitem{stan}
 ``Stan documentation.''
-  \href{https://mc-stan.org}{\color{blue}{https://mc-stan.org}}.
+  \href{https://mc-stan.org}{\color{black}{https://mc-stan.org}}.
 \newblock accessed: 09-July-2021.
 
 \bibitem{data_analysis_irt}
@@ -572,7 +572,7 @@ G.~Van~Rossum and F.~L. Drake, {\em Python 3 Reference Manual}.
 
 \bibitem{python_cours}
 ``Python.''
-  \href{https://pythonprogramminglanguage.com}{\color{blue}{https://pythonprogramminglanguage.com}}.
+  \href{https://pythonprogramminglanguage.com}{\color{black}{https://pythonprogramminglanguage.com}}.
 \newblock accessed: 09-July-2021.
 
 \bibitem{anaconda_citation}
@@ -580,12 +580,12 @@ G.~Van~Rossum and F.~L. Drake, {\em Python 3 Reference Manual}.
 
 \bibitem{anaconda_website}
 ``Anaconda.''
-  \href{https://www.anaconda.com/}{\color{blue}{https://www.anaconda.com/}}.
+  \href{https://www.anaconda.com/}{\color{black}{https://www.anaconda.com/}}.
 \newblock accessed: 09-July-2021.
 
 \bibitem{conda_website}
 ``Conda.''
-  \href{https://conda.io/en/latest/}{\color{blue}{https://conda.io/en/latest/}}.
+  \href{https://conda.io/en/latest/}{\color{black}{https://conda.io/en/latest/}}.
 \newblock accessed: 09-July-2021.
 
 \bibitem{Kluyver2016jupyter}
@@ -634,12 +634,12 @@ R.~Kumar, C.~Carroll, A.~Hartikainen, and O.~Martin, ``Arviz a unified library
 
 \bibitem{arviz}
 ``Exploratory analysis of bayesian models.''
-  \href{https://arviz-devs.github.io/arviz/}{\color{blue}{https://arviz-devs.github.io/arviz/}}.
+  \href{https://arviz-devs.github.io/arviz/}{\color{black}{https://arviz-devs.github.io/arviz/}}.
 \newblock accessed: 09-July-2021.
 
 \bibitem{blog_kdd}
 S.~Blog, ``Kdd cup 2010 : Student performance evaluation.''
-  \href{https://kdd.org/kdd-cup/view/kdd-cup-2010-student-performance-evaluation/Data}{\color{blue}{https://kdd.org/kdd-cup/view/kdd-cup-2010-student-performance-evaluation/Data}}.
+  \href{https://kdd.org/kdd-cup/view/kdd-cup-2010-student-performance-evaluation/Data}{\color{black}{https://kdd.org/kdd-cup/view/kdd-cup-2010-student-performance-evaluation/Data}}.
 
 \bibitem{abdi2010principal}
 H.~Abdi and L.~J. Williams, ``Principal component analysis,'' {\em Wiley
@@ -650,7 +650,7 @@ H.~Abdi and L.~J. Williams, ``Principal component analysis,'' {\em Wiley
 J.~Warner, J.~Sexauer, Scikit-Fuzzy, Twmeggs, Alexsavio, A.~Unnikrishnan,
   G.~Castelão, F.~A. Pontes, T.~Uelwer, pd2f, and et~al.,
   ``Jdwarner/scikit-fuzzy: Scikit-fuzzy version 0.4.2.''
-  \href{https://zenodo.org/record/3541386}{\color{blue}{https://zenodo.org/record/3541386}},
+  \href{https://zenodo.org/record/3541386}{\color{black}{https://zenodo.org/record/3541386}},
   Nov 2019.
 
 \end{thebibliography}

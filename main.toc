@@ -71,9 +71,9 @@
 \contentsline {subsection}{\numberline {4.2.2}probabilité conditionnelle et théorème de bayes}{37}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}L’approche Bayésienne}{38}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Théorème de bayes dans la cadre de l’application de l’approche Bayésienne}{38}{subsection.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.4.1}Posterior distribution}{39}{subsubsection.4.2.4.1}%
-\contentsline {subsubsection}{\numberline {4.2.4.2}Likelihood}{39}{subsubsection.4.2.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.4.3}Prior distribution}{40}{subsubsection.4.2.4.3}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}La distribution à posteriori}{39}{subsubsection.4.2.4.1}%
+\contentsline {subsubsection}{\numberline {4.2.4.2}Fonction de vraisemblance}{39}{subsubsection.4.2.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.4.3}La distribution à priori}{40}{subsubsection.4.2.4.3}%
 \contentsline {subsubsection}{\numberline {4.2.4.4}Chaine de Markov Monte Carlo (MCMC)}{40}{subsubsection.4.2.4.4}%
 \contentsline {paragraph}{\numberline {4.2.4.4.1}Théorème de convergence des chaînes de Markov \cite {entezari2018bayesian} \cite {meyn2012markov} \cite {rosenthal2006first} \\}{42}{paragraph.4.2.4.4.1}%
 \contentsline {paragraph}{\numberline {4.2.4.4.2}Algorithme de Metropolis-Hastings \\}{43}{paragraph.4.2.4.4.2}%
@@ -129,37 +129,38 @@
 \contentsline {subsubsection}{\numberline {5.6.2.1}Algorithme FCM :}{74}{subsubsection.5.6.2.1}%
 \contentsline {subsection}{\numberline {5.6.3}Conclusion}{74}{subsection.5.6.3}%
 \contentsline {section}{\numberline {5.7}Les autres méthodes de clustering}{75}{section.5.7}%
-\contentsline {section}{\numberline {5.8}La différence entre le clustering hiérarchique, partitionnel et Fuzzy clustering}{75}{section.5.8}%
+\contentsline {section}{\numberline {5.8}La différence entre le clustering hiérarchique, partitionnel et Fuzzy clustering}{76}{section.5.8}%
 \contentsline {section}{\numberline {5.9}Indice de validité du clustering}{76}{section.5.9}%
 \contentsline {section}{\numberline {5.10}Conclusion}{78}{section.5.10}%
 \contentsline {part}{II\hspace {1em}Contributions}{79}{part.2}%
 \contentsline {xpart}{Contributions}{80}{part.2}%
-\contentsline {chapter}{\numberline {6}Contribution and Results}{80}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Contribution et résultats}{80}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Introduction}{81}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Approche proposée}{81}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Implémentations et résultats expérimentaux}{81}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Outils de développement}{81}{subsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.1}Materiels}{81}{subsubsection.6.3.1.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.2}Outils et packages}{82}{subsubsection.6.3.1.2}%
-\contentsline {subsection}{\numberline {6.3.2}Collecte et préparation des données}{84}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Modèle IRT pour une inférence bayésienne}{86}{subsection.6.3.3}%
-\contentsline {subsubsection}{\numberline {6.3.3.1}Spécification et chargement du modèle}{87}{subsubsection.6.3.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.3.2}Compilation du modèle et échantillonnage }{88}{subsubsection.6.3.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.3.3}Résultats d’échantillonnage, diagnostique du modèle, prédiction et validation}{89}{subsubsection.6.3.3.3}%
-\contentsline {subsection}{\numberline {6.3.4}Clustering hard et soft de la matrice de similarité}{94}{subsection.6.3.4}%
-\contentsline {subsubsection}{\numberline {6.3.4.1}Création de la matrice de similarité}{94}{subsubsection.6.3.4.1}%
-\contentsline {subsubsection}{\numberline {6.3.4.2}Analyse en composantes principales (ACP)}{96}{subsubsection.6.3.4.2}%
-\contentsline {paragraph}{\numberline {6.3.4.2.1}Visualisation de données}{97}{paragraph.6.3.4.2.1}%
-\contentsline {paragraph}{\numberline {6.3.4.2.2}Compression de données}{97}{paragraph.6.3.4.2.2}%
-\contentsline {subsubsection}{\numberline {6.3.4.3}Clustering hard}{97}{subsubsection.6.3.4.3}%
-\contentsline {paragraph}{\numberline {6.3.4.3.1}K-means Clustering}{97}{paragraph.6.3.4.3.1}%
-\contentsline {paragraph}{\numberline {6.3.4.3.2}Clustering hiérarchique agglomérative}{98}{paragraph.6.3.4.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.4.4}Clustering Soft}{99}{subsubsection.6.3.4.4}%
-\contentsline {subsubsection}{\numberline {6.3.4.5}Validation du clustering}{102}{subsubsection.6.3.4.5}%
-\contentsline {section}{\numberline {6.4}Conclusion}{103}{section.6.4}%
-\contentsline {part}{Conclusion Générale}{103}{section.6.4}%
-\contentsline {part}{Annexe}{106}{chapter*.67}%
-\contentsline {chapter}{\numberline {A}Les modèles IRT en code Stan.}{106}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Les distributions des modèles.}{112}{appendix.B}%
+\contentsline {section}{\numberline {6.3}Implémentations et résultats expérimentaux}{83}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Outils de développement}{83}{subsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.1}Materiels}{83}{subsubsection.6.3.1.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.2}Outils et packages}{84}{subsubsection.6.3.1.2}%
+\contentsline {subsection}{\numberline {6.3.2}Collecte et préparation des données}{86}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Modèle IRT pour une inférence bayésienne}{88}{subsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.1}Spécification et chargement du modèle}{89}{subsubsection.6.3.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.3.2}Compilation du modèle et échantillonnage }{90}{subsubsection.6.3.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3.3}Résultats d’échantillonnage, diagnostique du modèle, prédiction et validation}{91}{subsubsection.6.3.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Clustering hard et soft de la matrice de similarité}{96}{subsection.6.3.4}%
+\contentsline {subsubsection}{\numberline {6.3.4.1}Création de la matrice de similarité}{96}{subsubsection.6.3.4.1}%
+\contentsline {subsubsection}{\numberline {6.3.4.2}Analyse en composantes principales (ACP)}{97}{subsubsection.6.3.4.2}%
+\contentsline {paragraph}{\numberline {6.3.4.2.1}Visualisation de données\\}{99}{paragraph.6.3.4.2.1}%
+\contentsline {paragraph}{\numberline {6.3.4.2.2}Compression de données \\}{99}{paragraph.6.3.4.2.2}%
+\contentsline {subsubsection}{\numberline {6.3.4.3}Clustering hard}{99}{subsubsection.6.3.4.3}%
+\contentsline {paragraph}{\numberline {6.3.4.3.1}K-means Clustering}{99}{paragraph.6.3.4.3.1}%
+\contentsline {paragraph}{\numberline {6.3.4.3.2}Clustering hiérarchique agglomérative}{100}{paragraph.6.3.4.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.4.4}Clustering Soft}{101}{subsubsection.6.3.4.4}%
+\contentsline {subsubsection}{\numberline {6.3.4.5}Validation du clustering}{104}{subsubsection.6.3.4.5}%
+\contentsline {section}{\numberline {6.4}Conclusion}{105}{section.6.4}%
+\contentsline {part}{Conclusion Générale}{105}{section.6.4}%
+\contentsline {part}{Annexe}{108}{chapter*.68}%
+\contentsline {chapter}{\numberline {A}Les modèles IRT en code Stan.}{108}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Les distributions des modèles.}{114}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Comparaison des résultats utilisant les scores observés et les scores prédit par les modèles IRT.}{118}{appendix.C}%
 \vspace \bigskipamount 
-\contentsline {chapter}{Bibliographie}{116}{appendix*.72}%
+\contentsline {chapter}{Bibliographie}{121}{appendix*.77}%
