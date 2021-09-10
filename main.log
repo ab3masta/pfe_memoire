@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.7.15)  10 SEP 2021 02:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.7.15)  10 SEP 2021 13:38
 entering extended mode
 **c:/Users/abdou/Documents/1111____PFE/pfe_memoire/main.tex
 (c:/Users/abdou/Documents/1111____PFE/pfe_memoire/main.tex
@@ -3016,23 +3016,23 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 
 [113]
 Annexe B.
-<images/annexe/model_plot-trace2.png, id=2519, 867.24pt x 578.16pt>
+<images/annexe/model_plot-trace2.png, id=2511, 867.24pt x 578.16pt>
 File: images/annexe/model_plot-trace2.png Graphic file (type png)
 <use images/annexe/model_plot-trace2.png>
-Package pdftex.def Info: images/annexe/model_plot-trace2.png  used on input line 233.
+Package pdftex.def Info: images/annexe/model_plot-trace2.png  used on input line 225.
 (pdftex.def)             Requested size: 441.01773pt x 294.01079pt.
-<images/annexe/params_posterior_distribution2.png, id=2520, 1134.2375pt x 628.3475pt>
+<images/annexe/params_posterior_distribution2.png, id=2512, 1134.2375pt x 628.3475pt>
 File: images/annexe/params_posterior_distribution2.png Graphic file (type png)
 <use images/annexe/params_posterior_distribution2.png>
-Package pdftex.def Info: images/annexe/params_posterior_distribution2.png  used on input line 241.
+Package pdftex.def Info: images/annexe/params_posterior_distribution2.png  used on input line 233.
 (pdftex.def)             Requested size: 441.01773pt x 244.31627pt.
 [114
 
  <./images/annexe/model_plot-trace2.png>]
-<images/annexe/model_plot-trace3.png, id=2527, 867.24pt x 722.7pt>
+<images/annexe/model_plot-trace3.png, id=2519, 867.24pt x 722.7pt>
 File: images/annexe/model_plot-trace3.png Graphic file (type png)
 <use images/annexe/model_plot-trace3.png>
-Package pdftex.def Info: images/annexe/model_plot-trace3.png  used on input line 249.
+Package pdftex.def Info: images/annexe/model_plot-trace3.png  used on input line 241.
 (pdftex.def)             Requested size: 441.01773pt x 367.51347pt.
 
 
@@ -3043,10 +3043,10 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.35403pt}.
 
 [115 <./images/annexe/params_posterior_distribution2.png>]
-<images/annexe/params_posterior_distribution3.png, id=2533, 1134.2375pt x 628.3475pt>
+<images/annexe/params_posterior_distribution3.png, id=2525, 1134.2375pt x 628.3475pt>
 File: images/annexe/params_posterior_distribution3.png Graphic file (type png)
 <use images/annexe/params_posterior_distribution3.png>
-Package pdftex.def Info: images/annexe/params_posterior_distribution3.png  used on input line 257.
+Package pdftex.def Info: images/annexe/params_posterior_distribution3.png  used on input line 249.
 (pdftex.def)             Requested size: 441.01773pt x 244.31627pt.
 
 
@@ -3066,31 +3066,31 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 
 [117 <./images/annexe/params_posterior_distribution3.png>]
 Annexe C.
-<images/chapitre7/features_plot.png, id=2544, 982.67125pt x 660.4675pt>
+<images/chapitre7/features_plot.png, id=2536, 982.67125pt x 660.4675pt>
 File: images/chapitre7/features_plot.png Graphic file (type png)
 <use images/chapitre7/features_plot.png>
-Package pdftex.def Info: images/chapitre7/features_plot.png  used on input line 267.
+Package pdftex.def Info: images/chapitre7/features_plot.png  used on input line 259.
 (pdftex.def)             Requested size: 199.16928pt x 133.86487pt.
 File: images/chapitre7/features_plot1.png Graphic file (type png)
 <use images/chapitre7/features_plot1.png>
-Package pdftex.def Info: images/chapitre7/features_plot1.png  used on input line 269.
+Package pdftex.def Info: images/chapitre7/features_plot1.png  used on input line 261.
 (pdftex.def)             Requested size: 199.16928pt x 131.18414pt.
-<images/chapitre7/dendrogram_of_dataset.png, id=2545, 937.5025pt x 658.46pt>
+<images/chapitre7/dendrogram_of_dataset.png, id=2537, 937.5025pt x 658.46pt>
 File: images/chapitre7/dendrogram_of_dataset.png Graphic file (type png)
 <use images/chapitre7/dendrogram_of_dataset.png>
-Package pdftex.def Info: images/chapitre7/dendrogram_of_dataset.png  used on input line 275.
+Package pdftex.def Info: images/chapitre7/dendrogram_of_dataset.png  used on input line 267.
 (pdftex.def)             Requested size: 199.16928pt x 139.87819pt.
 File: images/chapitre7/dendrogram_of_dataset1.png Graphic file (type png)
 <use images/chapitre7/dendrogram_of_dataset1.png>
-Package pdftex.def Info: images/chapitre7/dendrogram_of_dataset1.png  used on input line 277.
+Package pdftex.def Info: images/chapitre7/dendrogram_of_dataset1.png  used on input line 269.
 (pdftex.def)             Requested size: 199.16928pt x 132.56493pt.
 [118
 
  <./images/chapitre7/features_plot.png> <./images/chapitre7/dendrogram_of_dataset.png>]
-<images/chapitre7/fuzzy_partition_plot.png, id=2558, 746.03719pt x 520.94624pt>
+<images/chapitre7/fuzzy_partition_plot.png, id=2550, 746.03719pt x 520.94624pt>
 File: images/chapitre7/fuzzy_partition_plot.png Graphic file (type png)
 <use images/chapitre7/fuzzy_partition_plot.png>
-Package pdftex.def Info: images/chapitre7/fuzzy_partition_plot.png  used on input line 285.
+Package pdftex.def Info: images/chapitre7/fuzzy_partition_plot.png  used on input line 277.
 (pdftex.def)             Requested size: 441.01773pt x 307.9518pt.
 
 
@@ -3101,107 +3101,107 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-14.85403pt}.
 
 [119 <./images/chapitre7/fuzzy_partition_plot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 303--303
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 []|\T1/lmr/bx/n/12 (+20) Nombre
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--303
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 \T1/lmr/bx/n/12 (+20) de clus-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--303
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 []|\T1/lmr/bx/n/12 (+20) Indice
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--303
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 \T1/lmr/bx/n/12 (+20) Davies-
  []
 
 
-Overfull \hbox (1.47311pt too wide) in paragraph at lines 303--303
+Overfull \hbox (1.47311pt too wide) in paragraph at lines 295--295
 []|\T1/lmr/bx/n/12 (-20) Silhouette
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--303
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 []|\T1/lmr/bx/n/12 (+20) Nombre
  []
 
 
-Underfull \hbox (badness 7722) in paragraph at lines 303--303
+Underfull \hbox (badness 7722) in paragraph at lines 295--295
 \T1/lmr/bx/n/12 (+20) d'items dans
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--316
+Underfull \hbox (badness 10000) in paragraph at lines 308--308
 []|\T1/lmr/bx/n/12 (+20) Nombre
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--316
+Underfull \hbox (badness 10000) in paragraph at lines 308--308
 \T1/lmr/bx/n/12 (+20) de clus-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--316
+Underfull \hbox (badness 10000) in paragraph at lines 308--308
 []|\T1/lmr/bx/n/12 (+20) Indice
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--316
+Underfull \hbox (badness 10000) in paragraph at lines 308--308
 \T1/lmr/bx/n/12 (+20) Davies-
  []
 
 
-Overfull \hbox (1.47311pt too wide) in paragraph at lines 316--316
+Overfull \hbox (1.47311pt too wide) in paragraph at lines 308--308
 []|\T1/lmr/bx/n/12 (-20) Silhouette
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--316
+Underfull \hbox (badness 10000) in paragraph at lines 308--308
 []|\T1/lmr/bx/n/12 (+20) Nombre
  []
 
 
-Underfull \hbox (badness 7722) in paragraph at lines 316--316
+Underfull \hbox (badness 7722) in paragraph at lines 308--308
 \T1/lmr/bx/n/12 (+20) d'items dans
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
 []|\T1/lmr/bx/n/12 (+20) Nombre
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
 \T1/lmr/bx/n/12 (+20) de clus-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
 []|\T1/lmr/bx/n/12 (+20) Indice
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
 \T1/lmr/bx/n/12 (+20) Davies-
  []
 
 
-Overfull \hbox (1.47311pt too wide) in paragraph at lines 329--329
+Overfull \hbox (1.47311pt too wide) in paragraph at lines 321--321
 []|\T1/lmr/bx/n/12 (-20) Silhouette
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
 []|\T1/lmr/bx/n/12 (+20) Nombre
  []
 
 
-Underfull \hbox (badness 7722) in paragraph at lines 329--329
+Underfull \hbox (badness 7722) in paragraph at lines 321--321
 \T1/lmr/bx/n/12 (+20) d'items dans
  []
 
@@ -3242,17 +3242,17 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 44970 strings out of 479697
- 965187 string characters out of 2867133
- 1910085 words of memory out of 3000000
- 59737 multiletter control sequences out of 15000+200000
+ 44956 strings out of 479697
+ 964951 string characters out of 2867133
+ 1907074 words of memory out of 3000000
+ 59731 multiletter control sequences out of 15000+200000
  513909 words of font info for 194 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,19n,111p,2055b,2063s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <C:\Users\abdou\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (142 pages, 5729497 bytes).
+Output written on main.pdf (142 pages, 5728051 bytes).
 PDF statistics:
- 2889 PDF objects out of 2984 (max. 8388607)
- 967 named destinations out of 1000 (max. 500000)
+ 2879 PDF objects out of 2984 (max. 8388607)
+ 959 named destinations out of 1000 (max. 500000)
  52290 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -6,7 +6,6 @@
 
 
 \begin{lstlisting}[language=Stan,caption={Code Stan pour le modèle de Rasch},basicstyle=\scriptsize, frame=lines,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{white},rulecolor=\color{black},numberstyle=\normalfont\scriptsize\color{black}]
-    _1pl_model = """
     data {
         // numbers of things
         int<lower=1> N;  // number of observations
@@ -48,12 +47,10 @@
             yNew_pred[n] = bernoulli_logit_rng(ability[subject_new[n]] - difficulty[item_new[n]] + delta);                                             
         }
     }
-    """
 \end{lstlisting}
 \newpage
 
 \begin{lstlisting}[language=Stan,caption={Code Stan pour 2PL},basicstyle=\scriptsize, frame=lines,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{white},rulecolor=\color{black},numberstyle=\normalfont\scriptsize\color{black}]
-    _2pl_model = """
     data {
         // numbers of things
         int<lower=1> N;  // number of observations
@@ -95,13 +92,11 @@
             yNew_pred[n] = bernoulli_logit_rng(discrimination[item[n]] * (ability[subject_new[n]] - (difficulty[item_new[n]] + delta)));                             
         }
     }
-    """
 \end{lstlisting}
 
 \newpage
 
 \begin{lstlisting}[language=Stan,caption={Code Stan pour 3PL},basicstyle=\scriptsize, frame=lines,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{white},rulecolor=\color{black},numberstyle=\normalfont\scriptsize\color{black}]
-    _3pl_model = """
     data {
         // numbers of things
         int<lower=1> N;  // number of observations
@@ -145,11 +140,9 @@
             yNew_pred[n] = bernoulli_rng(guessing[item[n]] + ((1-guessing[item[n]]) * (inv_logit(discrimination[item[n]] .* (ability[subject[n]] - (difficulty[item[n]] + delta))))));                                             
         }
     }
-    """
 \end{lstlisting}
 
 \begin{lstlisting}[language=Stan,caption={Code Stan pour le modèle de Rasch avec cross-validation},basicstyle=\scriptsize, frame=lines,framesep=4.5mm,framexleftmargin=2.5mm,tabsize=2,numbers=left,fillcolor=\color{white},rulecolor=\color{black},numberstyle=\normalfont\scriptsize\color{black}]
-    _1pl_cross_val_model = """
     functions {
         int[] permutation_rng(int N) {
             int y[N];
@@ -223,7 +216,6 @@
         grade_pred[n] = bernoulli_logit_rng(ability[subject_test[n]] - difficulty[item_test[n]] + delta);
       }
     }
-    """
 \end{lstlisting}
 
 \chapter{Les distributions des modèles.}
@@ -274,7 +266,7 @@
     \centering
     \subfloat[\centering Le dendrogramme utilisant la méthode de liaison « average » de la matrice de similarité créer avec les scores observés.]{{\includegraphics[width=7cm]{images/chapitre7/dendrogram_of_dataset.png}  }}%
     \qquad
-    \subfloat[\centering Le dendrogramme utilisant la méthode de liaison « average » de la matrice de similarité créer avec les prédit par les modèles IRT.]{{\includegraphics[width=7cm]{images/chapitre7/dendrogram_of_dataset1.png} } }%
+    \subfloat[\centering Le dendrogramme utilisant la méthode de liaison « average » de la matrice de similarité créer avec les scores prédit par les modèles IRT.]{{\includegraphics[width=7cm]{images/chapitre7/dendrogram_of_dataset1.png} } }%
     %\caption{Dendrogramme}%
 \end{figure}
 
@@ -284,7 +276,7 @@
 	\begin{center}
 		\includegraphics[width=\textwidth]{images/chapitre7/fuzzy_partition_plot.png}
 	\end{center}
-	\caption{Visualisation des clusters de la méthode fuzzy et le degré d’appartenance des items à chaque cluster utilisant la matrice de similarité créer avec les prédit par les modèles IRT.}
+	\caption{Visualisation des clusters de la méthode fuzzy et le degré d’appartenance des items à chaque cluster utilisant la matrice de similarité créer avec les scores observés.}
 	\label{fuzzy_partition_plot0}
 \end{figure}
 
